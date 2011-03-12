@@ -117,9 +117,9 @@ public:
 	/** Appends the integer value, after converting it to a string,
 		to the content of the builder.
 		@param i An integer value. */
-	void append(int32 i);
-	void append(uint32 i); /**< See above. */
-	void append(uint64 i); /**< See above. */
+	void append(const int32 i);
+	void append(const uint32 i); /**< See above. */
+	void append(const uint64 i); /**< See above. */
 
 	/** Appends the integer value, after converting it to a
 		fm::string, in hexadecimal, to the content of the builder.
@@ -135,10 +135,9 @@ public:
 #else
 	inline void append(unsigned int i) { append((uint32) i); } /**< See above. */
 #endif
-#else
-	inline void append(unsigned long i) { append((uint32) i); } /**< See above. */
-	inline void append(long i) { append((int32) i); } /**< See above. */
-#endif // platform-switch.
+#elif defined(__APPLE__)
+	inline void append(size_t i) { append((uint64)i); }
+#endif // defined(WIN32)
 
 	/** Appends the floating-point value, after converting it to a string,
 		to the content of the builder. If the floating-point value is the special token

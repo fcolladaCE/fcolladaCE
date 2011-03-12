@@ -214,7 +214,7 @@ bool FUFileManager::MakeDirectory(const fstring& directory)
 	if (mkdir(TO_STRING(absoluteDirectory).c_str(), ~0u) == 0) return true; // I think this means all permissions..
 #elif defined(__APPLE__)
 	fm::string _fname = TO_STRING(directory);
-	OSErr err = AddFolderDescriptor('extn', 0, 'relf', 0, 0, 0, _fname.c_str(), false);
+	OSErr err = AddFolderDescriptor('extn', 0, 'relf', 0, 0, 0, (ConstStrFileNameParam)_fname.c_str(), false);
 #endif // WIN32
 
 	return false;
@@ -389,7 +389,7 @@ fstring FUFileManager::GetApplicationFolderName()
 		}
 		else
 		{
-			path[max(1023u, size)] = '\0';
+			path[max(size_t(1023), size)] = '\0';
 			int i = stat (path, &stat_buf);
 			if (i == -1) break; 
 			else if (!S_ISLNK(stat_buf.st_mode)) break;
