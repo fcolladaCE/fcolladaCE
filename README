@@ -1,3 +1,13 @@
+successfully merged and build OMK fcollada and WF fcollada. O3D fcollada uses chrome basetypes, requires more work to fix and bring over.
+
+TODO:
+need to put 64 bit guards in FUStringBuilder.h
+probably autotools build based on the WF makefile (I know it better than cmake).
+test code with 0AD
+doxygen?
+
+-- March 13, 2011, Scott Howard <showard@debian.org>
+
 Feeling Software created the fcollada library(last released in 2008), but has since stopped support. There are no available downloads or information on fcollada on feeling software's website.
 
 Multiple projects now use this library, each adding their own patches.

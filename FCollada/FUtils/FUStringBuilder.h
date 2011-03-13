@@ -136,11 +136,11 @@ public:
 #else
 	inline void append(unsigned int i) { append((uint32) i); } /**< See above. */
 #endif
-#elif defined(__APPLE__)
-	inline void append(size_t i) { append((uint64)i); }
-#endif // defined(WIN32)
+//#elif defined(__APPLE__)
+//	inline void append(size_t i) { append((uint64)i); }
+//#endif // WIN32
 #else
-#ifndef PLATFORM_X86_64
+#ifndef _LP64
 	// the following method is also append(uint64) on a 64 bits platform!
 	inline void append(unsigned long i) { append((uint32) i); } /**< See above. */
 #endif
