@@ -9,6 +9,9 @@
 #include "StdAfx.h"
 #include "FUTestBed.h"
 #include "FUString.h"
+#ifndef __APPLE__
+#include "FUStringBuilder.hpp"
+#endif
 
 TESTSUITE_START(FUStringConversion)
 

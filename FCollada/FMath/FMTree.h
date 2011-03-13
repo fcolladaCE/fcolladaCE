@@ -74,7 +74,7 @@ namespace fm
 			node* right;
 			node* parent;
 
-			int32 weight;
+			::int32 weight;
 
 			pair data;
 

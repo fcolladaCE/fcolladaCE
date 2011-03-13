@@ -25,6 +25,7 @@
 #ifndef _FCOLLADA_H_
 #define _FCOLLADA_H_
 
+
 /**
 	FCollada exception handling.
 	Force this #define to 0 to disallow exception handling within the FCollada library.

@@ -127,7 +127,7 @@ public:
 
 	/** Retrieves the smallest component of the vector.
 		@return The smallest component of the vector. */
-	inline float ComponentMinimum() const { return min(fabsf(x), min(fabsf(y), fabsf(z))); }
+	float ComponentMinimum() const ;
 
 	/** Update each component of this FMVector to the maximum of two FMVector3s.
 		Updates each of the three components to be the maximum of the current
@@ -137,7 +137,7 @@ public:
 
 	/** Retrieves the largest component of the vector.
 		@return The largest component of the vector. */
-	inline float ComponentMaximum() const { return max(fabsf(x), max(fabsf(y), fabsf(z))); }
+	float ComponentMaximum() const ;
 
 	/** Clamp each component of this FMVector by the corresponding components
 		in the specified min and max FMVector3.

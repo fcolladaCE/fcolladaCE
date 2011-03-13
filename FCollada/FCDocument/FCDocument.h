@@ -40,6 +40,13 @@ class FCDAnimation;
 class FCDAnimationChannel;
 class FCDAnimationClip;
 class FCDAsset;
+
+// CODE ADDED
+	
+class FCDScene;
+	
+// / CODE ADDED
+
 class FCDCamera;
 class FCDController;
 class FCDEffect;
@@ -122,7 +129,15 @@ private:
 	DeclareParameterContainer(FCDEntityReference, physicsSceneRoots, FC("Root Physics Scenes"));
 
 	// Document parameters
+
 	DeclareParameterRef(FCDAsset, asset, FC("Asset Tag"));
+	
+	// CODE ADDED
+	
+	DeclareParameterRef(FCDScene, scene, FC("Scene Node"));
+	
+	// / CODE ADDED
+
 	DeclareParameterRef(FCDExtra, extra, FC("Extra Tree"));
 	bool hasStartTime, hasEndTime;
 	DeclareParameter(float, FUParameterQualifiers::SIMPLE, startTime, FC("Start Time"));
@@ -161,6 +176,15 @@ public:
 		@return A pointer to the asset information structure. This pointer should never be NULL. */
 	inline FCDAsset* GetAsset() { return asset; }
 	inline const FCDAsset* GetAsset() const { return asset; } /**< See above. */
+	
+	// CODE ADDED
+	
+	/** Retrieves the scene node information for this COLLADA document. An extra tree should always be present, but is likely to be empty
+		@return A pointer to the scene node information structure. This pointer should never be NULL. */
+	inline FCDScene* GetScene() { return scene; }
+	inline const FCDScene* GetScene() const { return scene; } /**< See above. */
+	
+	// / CODE ADDED
 
 	/** Retrieves the base extra tree for this COLLADA document. An extra tree should always be present,
 		but is likely to be empty.

@@ -35,7 +35,7 @@ private:
 	MPCriticalRegionID criticalSection;
 #elif defined (LINUX)
 #else
-#warning "FUCriticalSection: Critical section not implemented for other platforms."
+#  warning "FUCriticalSection: Critical section not implemented for other platforms."
 #endif
 
 public:

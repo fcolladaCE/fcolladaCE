@@ -16,79 +16,79 @@
 #define _FU_PLATFORMS_H_
 
 #ifdef FCOLLADA_DLL
-#ifdef WIN32
+#  ifdef WIN32
 // Disable the "private member not available for export" warning,
 // because I don't feel like writing interfaces
-#pragma warning(disable:4251) 
-#ifdef FCOLLADA_INTERNAL
-#define FCOLLADA_EXPORT __declspec(dllexport)
-#define FCOLLADA_LOCAL
-#else
-#define FCOLLADA_EXPORT __declspec(dllimport)
-#define FCOLLADA_LOCAL
-#endif // FCOLLADA_INTERNAL
-#elif defined(__APPLE__) || defined(LINUX)
-#define FCOLLADA_EXPORT __attribute__((visibility("default")))
-#define FCOLLADA_LOCAL __attribute__((visibility("hidden")))
-#endif
+#    pragma warning(disable:4251) 
+#    ifdef FCOLLADA_INTERNAL
+#      define FCOLLADA_EXPORT __declspec(dllexport)
+#      define FCOLLADA_LOCAL
+#    else
+#      define FCOLLADA_EXPORT __declspec(dllimport)
+#      define FCOLLADA_LOCAL
+#    endif // FCOLLADA_INTERNAL
+#  elif defined(__APPLE__) || defined(LINUX)
+#    define FCOLLADA_EXPORT __attribute__((visibility("default")))
+#    define FCOLLADA_LOCAL __attribute__((visibility("hidden")))
+#  endif
 #else // FCOLLADA_DLL
-#define FCOLLADA_EXPORT
-#define FCOLLADA_LOCAL
+#  define FCOLLADA_EXPORT
+#  define FCOLLADA_LOCAL
 #endif // FCOLLADA_DLL
 
 #ifdef __PPU__
-#define UNICODE
+#  define UNICODE
 #endif // __PPU__
 
 // Ensure that both UNICODE and _UNICODE are set.
 #ifdef UNICODE
-#ifndef _UNICODE
-#define _UNICODE
-#endif
+#  ifndef _UNICODE
+#    define _UNICODE
+#  endif
 #else
-#ifdef _UNICODE
-#define UNICODE
-#endif
+#  ifdef _UNICODE
+#    define UNICODE
+#  endif
 #endif
 
 #ifndef _INC_MATH
-#include <math.h>
+#  include <math.h>
 #endif // _INC_MATH
 
 #ifdef WIN32
 
-#pragma warning(disable:4702)
-#ifndef _WIN32_WINNT		// Allow use of features specific to Windows XP or later.                   
-#define _WIN32_WINNT 0x0501	// Change this to the appropriate value to target other versions of Windows.
-#endif
+#  pragma warning(disable:4702)
+#  ifndef _WIN32_WINNT		// Allow use of features specific to Windows XP or later.                   
+#    define _WIN32_WINNT 0x0501	// Change this to the appropriate value to target other versions of Windows.
+#  endif
 
-#include <windows.h>
-#include <stdio.h>
-#include <wchar.h>
+#  include <windows.h>
+#  include <stdio.h>
+#  include <wchar.h>
 #else
-#ifdef __APPLE__
-#include <ctype.h>
-#include <wctype.h>
-#include <unistd.h>
-#include <string.h>
-#include <wchar.h>
-#include <stdint.h>
-#else // __APPLE__
-#if defined(LINUX) || defined(__PPU__)
-#include <ctype.h>
-#include <wctype.h>
-#include <unistd.h>
-#include <string.h>
-#include <wchar.h>
-#include <stdarg.h>
-#include <malloc.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <stdint.h>
-#else // OTHER... 
-#error "Unsupported platform."
-#endif // LINUX || __PPU__
-#endif // __APPLE__
+#  ifdef __APPLE__
+#    include <ctype.h>
+#    include <wctype.h>
+#    include <unistd.h>
+#    include <string.h>
+#    include <wchar.h>
+#    include <stdint.h>
+#  else // __APPLE__
+#    if defined(LINUX) || defined(__PPU__)
+#      include <ctype.h>
+#      include <wctype.h>
+#      include <unistd.h>
+#      include <string.h>
+#      include <wchar.h>
+#      include <stdarg.h>
+#      include <malloc.h>
+#      include <stdlib.h>
+#      include <stdio.h>
+#      include <stdint.h>
+#    else // OTHER... 
+#      error "Unsupported platform."
+#    endif // LINUX || __PPU__
+#  endif // __APPLE__
 
 #endif // WIN32
 
@@ -117,7 +117,7 @@ typedef uint64_t uint64;
 typedef uint8_t byte;
 
 #ifndef _CLIMITS_
-#include <climits>
+#  include <climits>
 #endif // _CLIMITS_
 
 #endif // PLATFORMS
@@ -127,36 +127,36 @@ typedef uint8_t byte;
 inline char* strlower(char* str) { char* it = str; while (*it != 0) { *it = tolower(*it); ++it; } return str; }
 inline wchar_t* wcslwr(wchar_t* str) { wchar_t* it = str; while (*it != 0) { *it = towlower(*it); ++it; } return str; }
 inline int wcsicmp(const wchar_t* s1, const wchar_t* s2) { wchar_t c1 = *s1, c2 = *s2; while (c1 != 0 && c2 != 0) { if (c1 >= 'a' && c1 <= 'z') c1 -= 'a' + 'A'; if (c2 >= 'a' && c2 <= 'z') c2 -= 'a' + 'A'; if (c2 < c1) return -1; else if (c2 > c1) return 1; c1 = *(++s1); c2 = *(++s2); } return 0; }
-#ifndef isinf
-#define isinf __isinff
-#endif
-#define _stricmp strcasecmp
-#define _getcwd getcwd
-#define _chdir chdir
+#  ifndef isinf
+#    define isinf __isinff
+#  endif
+#  define _stricmp strcasecmp
+#  define _getcwd getcwd
+#  define _chdir chdir
 
 #elif defined(__PPU__)
-#define glClearDepth glClearDepthf
+#  define glClearDepth glClearDepthf
 
 #endif // __APPLE__ and LINUX
 
 // Cross-platform needed functions
 #ifdef WIN32
 
-#define vsnprintf _vsnprintf
-#define snprintf _snprintf
-#define vsnwprintf _vsnwprintf
-#if _MSC_VER >= 1400 //vc8.0 use new secure
-	#define snwprintf _snwprintf_s
-#else
-	#define snwprintf _snwprintf
-#endif // _MSC_VER
+#  define vsnprintf _vsnprintf
+#  define snprintf _snprintf
+#  define vsnwprintf _vsnwprintf
+#  if _MSC_VER >= 1400 //vc8.0 use new secure
+#    define snwprintf _snwprintf_s
+#  else
+#    define snwprintf _snwprintf
+#  endif // _MSC_VER
 
-#define strlower _strlwr
+#  define strlower _strlwr
 
 #else // WIN32
 
-#define vsnwprintf vswprintf
-#define snwprintf swprintf
+#  define vsnwprintf vswprintf
+#  define snwprintf swprintf
 
 #endif // WIN32
 

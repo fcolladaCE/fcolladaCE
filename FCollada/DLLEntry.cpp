@@ -37,11 +37,15 @@ BOOL WINAPI DllMain(HINSTANCE _hInstance, ULONG fdwReason, LPVOID UNUSED(lpvRese
 		}
 		break;
 
+#ifdef DLL_PROCESS_VERIFIER
+	// WTF?? What's this token?!
 	case DLL_PROCESS_VERIFIER:
+#endif // DLL_PROCESS_VERIFIER
 	default:
 		break;
 	}
 	hInstance = _hInstance;
+
 	return TRUE;
 }
 #elif defined(__APPLE__) || defined(LINUX)

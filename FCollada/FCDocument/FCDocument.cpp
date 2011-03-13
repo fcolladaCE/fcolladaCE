@@ -20,6 +20,13 @@
 #include "FCDocument/FCDAnimationClip.h"
 #include "FCDocument/FCDAnimationCurve.h"
 #include "FCDocument/FCDAsset.h"
+
+// CODE ADDED
+
+#include "FCDocument/FCDScene.h"
+
+// / CODE ADDED
+
 #include "FCDocument/FCDCamera.h"
 #include "FCDocument/FCDController.h"
 #include "FCDocument/FCDEffect.h"
@@ -53,6 +60,11 @@ ImplementObjectType(FCDocument);
 ImplementParameterObject(FCDocument, FCDEntityReference, visualSceneRoot, new FCDEntityReference(parent->GetDocument(), NULL));
 ImplementParameterObject(FCDocument, FCDEntityReference, physicsSceneRoots, new FCDEntityReference(parent->GetDocument(), NULL));
 ImplementParameterObject(FCDocument, FCDAsset, asset, new FCDAsset(parent->GetDocument()));
+
+// CODE ADDED
+ImplementParameterObject(FCDocument, FCDScene, scene, new FCDScene(parent->GetDocument(), parent));
+// / CODE ADDED
+
 ImplementParameterObject(FCDocument, FCDExtra, extra, new FCDExtra(parent->GetDocument(), parent));
 ImplementParameterObject(FCDocument, FCDAnimationLibrary, animationLibrary, new FCDAnimationLibrary(parent->GetDocument()));
 ImplementParameterObject(FCDocument, FCDAnimationClipLibrary, animationClipLibrary, new FCDAnimationClipLibrary(parent->GetDocument()));
@@ -76,6 +88,13 @@ FCDocument::FCDocument()
 ,	InitializeParameterNoArg(visualSceneRoot)
 ,	InitializeParameterNoArg(physicsSceneRoots)
 ,	InitializeParameterNoArg(asset)
+
+// CODE ADDED
+
+,	InitializeParameterNoArg(scene)
+
+// / CODE ADDED
+
 ,	InitializeParameterNoArg(extra)
 ,	hasStartTime(false), hasEndTime(false)
 ,	InitializeParameter(startTime, 0.0f)
@@ -99,6 +118,12 @@ FCDocument::FCDocument()
 	fileManager = new FUFileManager();
 	version = new FCDVersion(DAE_SCHEMA_VERSION);
 	uniqueNameMap = new FUSUniqueStringMap();
+
+// CODE ADDED
+
+	scene = new FCDScene(this,this);
+
+// / CODE ADDED
 
 	asset = new FCDAsset(this);
 	externalReferenceManager = new FCDExternalReferenceManager(this);
@@ -147,6 +172,12 @@ FCDocument::~FCDocument()
 	physicsModelLibrary = NULL;
 	physicsSceneLibrary = NULL;
 	asset = NULL;
+
+// CODE ADDED
+
+	scene = NULL;
+
+// / CODE ADDED
 
 	// Must be released last
 	CLEAR_POINTER_VECTOR(layers);
