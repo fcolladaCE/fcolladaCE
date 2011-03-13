@@ -1,3 +1,16 @@
+fcollada O3D uses google chrome's basetypes, causing some extra problems.
+
+Will try again with only using OMKFCollada and Wildfire Games fcollada.
+
+Worse case scenario is to just use Wildfire fcollada and release it similar to how freecad released a community edition port of qcad.
+
+-- March 13, 2011, Scott Howard <showard@debian.org>
+
+
+
+
+
+
 Feeling Software created the fcollada library(last released in 2008), but has since stopped support. There are no available downloads or information on fcollada on feeling software's website.
 
 Multiple projects now use this library, each adding their own patches.
