@@ -213,19 +213,8 @@ bool FUFileManager::MakeDirectory(const fstring& directory)
 #elif defined(LINUX)
 	if (mkdir(TO_STRING(absoluteDirectory).c_str(), ~0u) == 0) return true; // I think this means all permissions..
 #elif defined(__APPLE__)
-  // begin google modification
-  
-  assert(0);   // not implemented
-  // TODO : the following is wrong - filename needs to be a pascal-string
-  // and not a c-string
-  //
-
-	// fm::string _fname = TO_STRING(directory);
-	// OSErr err = AddFolderDescriptor('extn', 0, 'relf', 0, 0, 0, _fname.c_str(), false);
-  
-  // end google_modification
-
-
+	fm::string _fname = TO_STRING(directory);
+	OSErr err = AddFolderDescriptor('extn', 0, 'relf', 0, 0, 0, (ConstStrFileNameParam)_fname.c_str(), false);
 #endif // WIN32
 
 	return false;
