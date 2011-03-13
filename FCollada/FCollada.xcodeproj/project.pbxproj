@@ -1356,40 +1356,40 @@
 /* Begin PBXFileReference section */
 		C315DFDB097840EB005D77BE /* libFColladaS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFColladaS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D608B40ADFD5FC00019D9C /* libFColladaSU.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFColladaSU.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D027BD8E0CA801AE00BD95DA /* FArchiveXML.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FArchiveXML.cpp; path = ../FColladaPlugins/FArchiveXML/FArchiveXML.cpp; sourceTree = SOURCE_ROOT; };
-		D027BD8F0CA801AE00BD95DA /* FArchiveXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FArchiveXML.h; path = ../FColladaPlugins/FArchiveXML/FArchiveXML.h; sourceTree = SOURCE_ROOT; };
-		D027BD960CA8024000BD95DA /* FAXAnimationExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXAnimationExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXAnimationExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BD970CA8024000BD95DA /* FAXAnimationImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXAnimationImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXAnimationImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BD980CA8024000BD95DA /* FAXCameraExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXCameraExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXCameraExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BD990CA8024100BD95DA /* FAXCameraImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXCameraImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXCameraImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BD9A0CA8024100BD95DA /* FAXColladaParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXColladaParser.cpp; path = ../FColladaPlugins/FArchiveXML/FAXColladaParser.cpp; sourceTree = SOURCE_ROOT; };
-		D027BD9B0CA8024100BD95DA /* FAXColladaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAXColladaParser.h; path = ../FColladaPlugins/FArchiveXML/FAXColladaParser.h; sourceTree = SOURCE_ROOT; };
-		D027BD9C0CA8024100BD95DA /* FAXColladaWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXColladaWriter.cpp; path = ../FColladaPlugins/FArchiveXML/FAXColladaWriter.cpp; sourceTree = SOURCE_ROOT; };
-		D027BD9D0CA8024100BD95DA /* FAXColladaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAXColladaWriter.h; path = ../FColladaPlugins/FArchiveXML/FAXColladaWriter.h; sourceTree = SOURCE_ROOT; };
-		D027BD9E0CA8024100BD95DA /* FAXControllerExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXControllerExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXControllerExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BD9F0CA8024100BD95DA /* FAXControllerImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXControllerImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXControllerImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA00CA8024100BD95DA /* FAXEmitterExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXEmitterExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXEmitterExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA10CA8024100BD95DA /* FAXEmitterImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXEmitterImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXEmitterImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA20CA8024100BD95DA /* FAXEntityExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXEntityExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXEntityExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA30CA8024100BD95DA /* FAXEntityImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXEntityImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXEntityImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA40CA8024100BD95DA /* FAXForceFieldExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXForceFieldExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXForceFieldExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA50CA8024100BD95DA /* FAXForceFieldImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXForceFieldImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXForceFieldImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA60CA8024100BD95DA /* FAXGeometryExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXGeometryExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXGeometryExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA70CA8024100BD95DA /* FAXGeometryImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXGeometryImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXGeometryImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA80CA8024100BD95DA /* FAXImportLinking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXImportLinking.cpp; path = ../FColladaPlugins/FArchiveXML/FAXImportLinking.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDA90CA8024100BD95DA /* FAXInstanceExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXInstanceExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXInstanceExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDAA0CA8024100BD95DA /* FAXInstanceImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXInstanceImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXInstanceImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDAB0CA8024100BD95DA /* FAXLightExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXLightExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXLightExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDAC0CA8024100BD95DA /* FAXLightImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXLightImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXLightImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDAD0CA8024100BD95DA /* FAXMaterialExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXMaterialExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXMaterialExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDAE0CA8024100BD95DA /* FAXMaterialImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXMaterialImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXMaterialImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDAF0CA8024100BD95DA /* FAXPhysicsExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXPhysicsExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXPhysicsExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDB00CA8024100BD95DA /* FAXPhysicsImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXPhysicsImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXPhysicsImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDB10CA8024100BD95DA /* FAXSceneExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXSceneExport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXSceneExport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDB20CA8024100BD95DA /* FAXSceneImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXSceneImport.cpp; path = ../FColladaPlugins/FArchiveXML/FAXSceneImport.cpp; sourceTree = SOURCE_ROOT; };
-		D027BDB30CA8024100BD95DA /* FAXStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAXStructures.h; path = ../FColladaPlugins/FArchiveXML/FAXStructures.h; sourceTree = SOURCE_ROOT; };
-		D027BE0E0CA8025900BD95DA /* StdAfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StdAfx.cpp; path = ../FColladaPlugins/FArchiveXML/StdAfx.cpp; sourceTree = SOURCE_ROOT; };
-		D027BE0F0CA8025900BD95DA /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StdAfx.h; path = ../FColladaPlugins/FArchiveXML/StdAfx.h; sourceTree = SOURCE_ROOT; };
+		D027BD8E0CA801AE00BD95DA /* FArchiveXML.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FArchiveXML.cpp; path = FArchiveXML/FArchiveXML.cpp; sourceTree = "<group>"; };
+		D027BD8F0CA801AE00BD95DA /* FArchiveXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FArchiveXML.h; path = FArchiveXML/FArchiveXML.h; sourceTree = "<group>"; };
+		D027BD960CA8024000BD95DA /* FAXAnimationExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXAnimationExport.cpp; path = FArchiveXML/FAXAnimationExport.cpp; sourceTree = "<group>"; };
+		D027BD970CA8024000BD95DA /* FAXAnimationImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXAnimationImport.cpp; path = FArchiveXML/FAXAnimationImport.cpp; sourceTree = "<group>"; };
+		D027BD980CA8024000BD95DA /* FAXCameraExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXCameraExport.cpp; path = FArchiveXML/FAXCameraExport.cpp; sourceTree = "<group>"; };
+		D027BD990CA8024100BD95DA /* FAXCameraImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXCameraImport.cpp; path = FArchiveXML/FAXCameraImport.cpp; sourceTree = "<group>"; };
+		D027BD9A0CA8024100BD95DA /* FAXColladaParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXColladaParser.cpp; path = FArchiveXML/FAXColladaParser.cpp; sourceTree = "<group>"; };
+		D027BD9B0CA8024100BD95DA /* FAXColladaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAXColladaParser.h; path = FArchiveXML/FAXColladaParser.h; sourceTree = "<group>"; };
+		D027BD9C0CA8024100BD95DA /* FAXColladaWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXColladaWriter.cpp; path = FArchiveXML/FAXColladaWriter.cpp; sourceTree = "<group>"; };
+		D027BD9D0CA8024100BD95DA /* FAXColladaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAXColladaWriter.h; path = FArchiveXML/FAXColladaWriter.h; sourceTree = "<group>"; };
+		D027BD9E0CA8024100BD95DA /* FAXControllerExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXControllerExport.cpp; path = FArchiveXML/FAXControllerExport.cpp; sourceTree = "<group>"; };
+		D027BD9F0CA8024100BD95DA /* FAXControllerImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXControllerImport.cpp; path = FArchiveXML/FAXControllerImport.cpp; sourceTree = "<group>"; };
+		D027BDA00CA8024100BD95DA /* FAXEmitterExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXEmitterExport.cpp; path = FArchiveXML/FAXEmitterExport.cpp; sourceTree = "<group>"; };
+		D027BDA10CA8024100BD95DA /* FAXEmitterImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXEmitterImport.cpp; path = FArchiveXML/FAXEmitterImport.cpp; sourceTree = "<group>"; };
+		D027BDA20CA8024100BD95DA /* FAXEntityExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXEntityExport.cpp; path = FArchiveXML/FAXEntityExport.cpp; sourceTree = "<group>"; };
+		D027BDA30CA8024100BD95DA /* FAXEntityImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXEntityImport.cpp; path = FArchiveXML/FAXEntityImport.cpp; sourceTree = "<group>"; };
+		D027BDA40CA8024100BD95DA /* FAXForceFieldExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXForceFieldExport.cpp; path = FArchiveXML/FAXForceFieldExport.cpp; sourceTree = "<group>"; };
+		D027BDA50CA8024100BD95DA /* FAXForceFieldImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXForceFieldImport.cpp; path = FArchiveXML/FAXForceFieldImport.cpp; sourceTree = "<group>"; };
+		D027BDA60CA8024100BD95DA /* FAXGeometryExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXGeometryExport.cpp; path = FArchiveXML/FAXGeometryExport.cpp; sourceTree = "<group>"; };
+		D027BDA70CA8024100BD95DA /* FAXGeometryImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXGeometryImport.cpp; path = FArchiveXML/FAXGeometryImport.cpp; sourceTree = "<group>"; };
+		D027BDA80CA8024100BD95DA /* FAXImportLinking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXImportLinking.cpp; path = FArchiveXML/FAXImportLinking.cpp; sourceTree = "<group>"; };
+		D027BDA90CA8024100BD95DA /* FAXInstanceExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXInstanceExport.cpp; path = FArchiveXML/FAXInstanceExport.cpp; sourceTree = "<group>"; };
+		D027BDAA0CA8024100BD95DA /* FAXInstanceImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXInstanceImport.cpp; path = FArchiveXML/FAXInstanceImport.cpp; sourceTree = "<group>"; };
+		D027BDAB0CA8024100BD95DA /* FAXLightExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXLightExport.cpp; path = FArchiveXML/FAXLightExport.cpp; sourceTree = "<group>"; };
+		D027BDAC0CA8024100BD95DA /* FAXLightImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXLightImport.cpp; path = FArchiveXML/FAXLightImport.cpp; sourceTree = "<group>"; };
+		D027BDAD0CA8024100BD95DA /* FAXMaterialExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXMaterialExport.cpp; path = FArchiveXML/FAXMaterialExport.cpp; sourceTree = "<group>"; };
+		D027BDAE0CA8024100BD95DA /* FAXMaterialImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXMaterialImport.cpp; path = FArchiveXML/FAXMaterialImport.cpp; sourceTree = "<group>"; };
+		D027BDAF0CA8024100BD95DA /* FAXPhysicsExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXPhysicsExport.cpp; path = FArchiveXML/FAXPhysicsExport.cpp; sourceTree = "<group>"; };
+		D027BDB00CA8024100BD95DA /* FAXPhysicsImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXPhysicsImport.cpp; path = FArchiveXML/FAXPhysicsImport.cpp; sourceTree = "<group>"; };
+		D027BDB10CA8024100BD95DA /* FAXSceneExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXSceneExport.cpp; path = FArchiveXML/FAXSceneExport.cpp; sourceTree = "<group>"; };
+		D027BDB20CA8024100BD95DA /* FAXSceneImport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FAXSceneImport.cpp; path = FArchiveXML/FAXSceneImport.cpp; sourceTree = "<group>"; };
+		D027BDB30CA8024100BD95DA /* FAXStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAXStructures.h; path = FArchiveXML/FAXStructures.h; sourceTree = "<group>"; };
+		D027BE0E0CA8025900BD95DA /* StdAfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StdAfx.cpp; path = FArchiveXML/StdAfx.cpp; sourceTree = "<group>"; };
+		D027BE0F0CA8025900BD95DA /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StdAfx.h; path = FArchiveXML/StdAfx.h; sourceTree = "<group>"; };
 		D027BE160CA802CC00BD95DA /* acconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = acconfig.h; path = LibXML/acconfig.h; sourceTree = SOURCE_ROOT; };
 		D027BE170CA802CC00BD95DA /* c14n.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = c14n.c; path = LibXML/c14n.c; sourceTree = SOURCE_ROOT; };
 		D027BE180CA802CC00BD95DA /* catalog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = catalog.c; path = LibXML/catalog.c; sourceTree = SOURCE_ROOT; };
@@ -1794,7 +1794,7 @@
 		D027C6240CA8506900BD95DA /* FCTestParameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FCTestParameters.cpp; path = FColladaTest/FCTestParameters.cpp; sourceTree = SOURCE_ROOT; };
 		D0683BF30D6623DB005653CA /* FCDSceneNodeIterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FCDSceneNodeIterator.hpp; path = FCDocument/FCDSceneNodeIterator.hpp; sourceTree = "<group>"; };
 		D09B10BA0B866F5500122B1F /* FColladaTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FColladaTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D09F2DB30BD9527300447337 /* libFColladaU.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFColladaU.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09F2DB30BD9527300447337 /* libFColladaU.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFColladaU.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E7E2630D16D225000785CD /* FUErrorLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FUErrorLog.cpp; path = FUtils/FUErrorLog.cpp; sourceTree = "<group>"; };
 		D0E7E2640D16D225000785CD /* FUErrorLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FUErrorLog.h; path = FUtils/FUErrorLog.h; sourceTree = "<group>"; };
 		D0E7E2650D16D225000785CD /* FUParameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FUParameter.cpp; path = FUtils/FUParameter.cpp; sourceTree = "<group>"; };
@@ -1886,7 +1886,7 @@
 				C315DFDB097840EB005D77BE /* libFColladaS.a */,
 				C3D608B40ADFD5FC00019D9C /* libFColladaSU.a */,
 				D09B10BA0B866F5500122B1F /* FColladaTest */,
-				D09F2DB30BD9527300447337 /* libFColladaU.dylib */,
+				D09F2DB30BD9527300447337 /* libFColladaU.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3162,7 +3162,7 @@
 			);
 			name = FColladaU;
 			productName = "FCollada Unicode (so)";
-			productReference = D09F2DB30BD9527300447337 /* libFColladaU.dylib */;
+			productReference = D09F2DB30BD9527300447337 /* libFColladaU.a */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -3901,10 +3901,8 @@
 		C315DF6109783EFB005D77BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
 				GCC_MODEL_TUNING = G4;
@@ -3919,7 +3917,9 @@
 					/usr/include,
 					.,
 					./LibXML/include,
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1)",
 				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1 = "\"$(SRCROOT)/../../../native_client/include\"";
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = /usr/lib;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -3933,10 +3933,8 @@
 		C315DF6209783EFB005D77BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
 				GCC_MODEL_TUNING = G4;
@@ -3953,7 +3951,9 @@
 					/usr/include,
 					.,
 					./LibXML/include,
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1)",
 				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1 = "\"$(SRCROOT)/../../../native_client/include\"";
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = /usr/lib;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -4104,9 +4104,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_EXTENSION = a;
 				EXECUTABLE_PREFIX = lib;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -4118,7 +4120,7 @@
 					LibXML/include,
 					/usr/include,
 				);
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				PREBINDING = NO;
 				PRODUCT_NAME = FColladaU;
 			};
@@ -4128,13 +4130,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				EXECUTABLE_EXTENSION = a;
 				EXECUTABLE_PREFIX = lib;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					FCOLLADA_DLL,
 				);
+				MACH_O_TYPE = staticlib;
 				PREBINDING = NO;
 				PRODUCT_NAME = FColladaU;
 			};

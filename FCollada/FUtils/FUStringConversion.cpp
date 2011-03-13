@@ -317,3 +317,65 @@ extern void TrickLinkerFUStringConversion(void)
 	FUStringConversion::ToInterleavedUInt32List(c, pul);
 	FUStringConversion::ToInterleavedUInt32List(fc, pul);
 }
+
+template bool FUStringConversion::ToBoolean(const char* value);
+template int32 FUStringConversion::ToInt32(const char** value);
+template float FUStringConversion::ToFloat(const char** value);
+template uint32 FUStringConversion::ToUInt32(const char** value);
+template uint32 FUStringConversion::HexToUInt32(const char** value, uint32 count);
+template void FUStringConversion::ToMatrix(const char** s, FMMatrix44& mx);
+template void FUStringConversion::ToDateTime(const char* value, FUDateTime& dateTime);
+template FMVector2 FUStringConversion::ToVector2(const char** value);
+template FMVector3 FUStringConversion::ToVector3(const char** value);
+template FMVector4 FUStringConversion::ToVector4(const char** value);
+template void FUStringConversion::ToString(FUStringBuilderT<char>& builder, const FMMatrix44& m);
+template void FUStringConversion::ToString(FUStringBuilderT<char>& builder, const FMVector2& p);
+template void FUStringConversion::ToString(FUStringBuilderT<char>& builder, const FMVector3& p);
+template void FUStringConversion::ToString(FUStringBuilderT<char>& builder, const FMVector4& p);
+template size_t FUStringConversion::CountValues(const char* sz);
+
+template bool FUStringConversion::ToBoolean(const wchar_t* value);
+template int32 FUStringConversion::ToInt32(const wchar_t** value);
+template float FUStringConversion::ToFloat(const wchar_t** value);
+template uint32 FUStringConversion::ToUInt32(const wchar_t** value);
+template uint32 FUStringConversion::HexToUInt32(const wchar_t** value, uint32 count);
+template void FUStringConversion::ToMatrix(const wchar_t** s, FMMatrix44& mx);
+template void FUStringConversion::ToDateTime(const wchar_t* value, FUDateTime& dateTime);
+template FMVector2 FUStringConversion::ToVector2(const wchar_t** value);
+template FMVector3 FUStringConversion::ToVector3(const wchar_t** value);
+template FMVector4 FUStringConversion::ToVector4(const wchar_t** value);
+template void FUStringConversion::ToString(FUStringBuilderT<wchar_t>& builder, const FMMatrix44& m);
+template void FUStringConversion::ToString(FUStringBuilderT<wchar_t>& builder, const FMVector2& p);
+template void FUStringConversion::ToString(FUStringBuilderT<wchar_t>& builder, const FMVector3& p);
+template void FUStringConversion::ToString(FUStringBuilderT<wchar_t>& builder, const FMVector4& p);
+template size_t FUStringConversion::CountValues(const wchar_t* sz);
+
+#ifdef HAS_VECTORTYPES
+template void FUStringConversion::ToBooleanList(const char* value, BooleanList& array);
+template void FUStringConversion::ToInt32List(const char* value, Int32List& array);
+template void FUStringConversion::ToUInt32List(const char* value, UInt32List& array);
+template void FUStringConversion::ToFloatList(const char* value, FloatList& array);
+template void FUStringConversion::ToInterleavedFloatList(const char* value, fm::pvector<FloatList>& arrays);
+template void FUStringConversion::ToInterleavedUInt32List(const char* value, fm::pvector<UInt32List>& arrays);
+template void FUStringConversion::ToMatrixList(const char* value, FMMatrix44List& array);
+template void FUStringConversion::ToVector2List(const char* value, FMVector2List& array);
+template void FUStringConversion::ToVector3List(const char* value, FMVector3List& array);
+template void FUStringConversion::ToVector4List(const char* value, FMVector4List& array);
+template void FUStringConversion::ToString(FUStringBuilderT<char>& builder, const FloatList& values);
+template void FUStringConversion::ToString(FUStringBuilderT<char>& builder, const Int32List& values);
+template void FUStringConversion::ToString(FUStringBuilderT<char>& builder, const uint32* values, size_t count);
+
+template void FUStringConversion::ToBooleanList(const wchar_t* value, BooleanList& array);
+template void FUStringConversion::ToInt32List(const wchar_t* value, Int32List& array);
+template void FUStringConversion::ToUInt32List(const wchar_t* value, UInt32List& array);
+template void FUStringConversion::ToFloatList(const wchar_t* value, FloatList& array);
+template void FUStringConversion::ToInterleavedFloatList(const wchar_t* value, fm::pvector<FloatList>& arrays);
+template void FUStringConversion::ToInterleavedUInt32List(const wchar_t* value, fm::pvector<UInt32List>& arrays);
+template void FUStringConversion::ToMatrixList(const wchar_t* value, FMMatrix44List& array);
+template void FUStringConversion::ToVector2List(const wchar_t* value, FMVector2List& array);
+template void FUStringConversion::ToVector3List(const wchar_t* value, FMVector3List& array);
+template void FUStringConversion::ToVector4List(const wchar_t* value, FMVector4List& array);
+template void FUStringConversion::ToString(FUStringBuilderT<wchar_t>& builder, const FloatList& values);
+template void FUStringConversion::ToString(FUStringBuilderT<wchar_t>& builder, const Int32List& values);
+template void FUStringConversion::ToString(FUStringBuilderT<wchar_t>& builder, const uint32* values, size_t count);
+#endif // HAS_VECTORTYPES

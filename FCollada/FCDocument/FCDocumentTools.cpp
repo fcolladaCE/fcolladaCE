@@ -6,6 +6,8 @@
 	MIT License: http://www.opensource.org/licenses/mit-license.php
 */
 
+#include <map>
+
 #include "StdAfx.h"
 #include "FCDocument/FCDocument.h"
 #include "FCDocument/FCDocumentTools.h"
@@ -35,7 +37,7 @@
 #include "FCDocument/FCDMorphController.h"
 #include "FCDocument/FCDAnimationCurveTools.h"
 #include "FCDocument/FCDAnimationMultiCurve.h"
-
+#include "FCollada.h"
 //
 // FCDocumentTools
 // 
@@ -481,9 +483,16 @@ namespace FCDocumentTools
 
 			// Iterate over the scene graph, modifying the transforms.
 			VisualSceneNodeIterator visualSceneNodeIt(document->GetVisualSceneLibrary());
+			// Begin Google modifications
+			std::map<FCDSceneNode*,bool> nodesDone;
+			// End Google modifications
 			while (!visualSceneNodeIt.IsDone())
 			{
 				FCDSceneNode* node = visualSceneNodeIt.Next();
+				// Begin Google modifications
+				if (nodesDone[node]) continue;
+				nodesDone[node] = true;
+				// End Google modifications
 				GetAssetFunctors(node, document->GetVisualSceneLibrary()->GetAsset(false), lengthFunctor, upAxisFunctor);
 				if (lengthFunctor.HasConversion() || upAxisFunctor.HasConversion())
 				{

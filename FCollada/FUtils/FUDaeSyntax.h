@@ -616,6 +616,9 @@
 // FCollada profile
 #define DAE_FCOLLADA_PROFILE							"FCOLLADA"
 
+// OpenCOLLADA profiles
+#define DAE_OPENCOLLADAMAYA_PROFILE           "OpenCOLLADAMaya"
+
 // Extra types
 #define DAEFC_LIBRARIES_TYPE							"libraries"
 #define DAEFC_INSTANCES_TYPE							"instances"

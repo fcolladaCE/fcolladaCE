@@ -297,6 +297,7 @@ FCDGeometryPolygons* FCDGeometryPolygons::Clone(FCDGeometryPolygons* clone, cons
 	clone->faceVertexOffset = faceVertexOffset;
 	clone->holeOffset = holeOffset;
 	clone->holeFaces = holeFaces;
+        clone->primitiveType = primitiveType;
 	
 	// Clone the geometry inputs
 	// Note that the vertex source inputs are usually created by default.

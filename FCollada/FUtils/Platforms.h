@@ -92,6 +92,13 @@
 
 #endif // WIN32
 
+// begin Google change (by piman@)
+// Comment out int* and uint* definitions, they conflict with Chrome's
+// definitions. Instead use the same as <base/basictypes.h>
+#ifndef __APPLE__
+#include <base/basictypes.h>
+#else
+// end Google change
 // Cross-platform type definitions
 #ifdef WIN32
 
@@ -120,7 +127,12 @@ typedef uint8_t byte;
 #include <climits>
 #endif // _CLIMITS_
 
+
 #endif // PLATFORMS
+
+// begin Google change (by piman@)
+#endif
+// end Google change
 
 // Important functions that some OSes have missing!
 #if defined(__APPLE__) || defined (LINUX)
@@ -142,13 +154,17 @@ inline int wcsicmp(const wchar_t* s1, const wchar_t* s2) { wchar_t c1 = *s1, c2 
 // Cross-platform needed functions
 #ifdef WIN32
 
-#define vsnprintf _vsnprintf
 #define snprintf _snprintf
 #define vsnwprintf _vsnwprintf
-#if _MSC_VER >= 1400 //vc8.0 use new secure
+#if _MSC_VER >= 1500
+	// VC 9 doesn't like it when you define vsnprintf to be _vsnprintf
 	#define snwprintf _snwprintf_s
+#elif _MSC_VER >= 1400 // VC 8
+	#define snwprintf _snwprintf_s
+	#define vsnprintf _vsnprintf
 #else
 	#define snwprintf _snwprintf
+	#define vsnprintf _vsnprintf
 #endif // _MSC_VER
 
 #define strlower _strlwr

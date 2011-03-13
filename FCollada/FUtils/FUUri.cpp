@@ -85,17 +85,25 @@ FUUri::FUUri(const fstring& uri, bool escape)
 	}
 	else
 	{
+    bool isFile = false;
+
 #ifdef WIN32
 		// Check for windows file path
 		if (schemeDelimiterIndex == 1)
 		{
 			path = FC("/") + _uri;
-#else
+      isFile = true;
+    }
+#endif
+
 		// Check for file path
-		if (schemeDelimiterIndex == fstring::npos && _uri[0] == (fchar) '/')
+		if (!isFile && schemeDelimiterIndex == fstring::npos && _uri[0] == (fchar) '/')
 		{
 			path = _uri;
-#endif
+      isFile = true;
+    }
+    if (isFile)
+    {
 			schemeDelimiter = FC("://");
 
 			// We got a file path
@@ -283,10 +291,10 @@ fstring FUUri::GetAbsolutePath() const
 	if (scheme == FUUri::FILE)
 	{
 		if (GetHostname().empty())
-		{
+    {
 #ifdef WIN32
 			// Check if we have a drive letter
-			if (path[0] == '/' && path[3] == '/')
+      if (path.size() > 3 && path[0] == '/' && path[2] == ':' && path[3] == '/')
 			{
 				fstring absolutePath;
 				fstring uri = path;
@@ -305,15 +313,17 @@ fstring FUUri::GetAbsolutePath() const
 
 				return absolutePath;
 			}
-			else 
+      // Careful not to mess with POSIX absolute paths (starting with '/')
+			else if ((path.size() > 0 && path[0] != '/') ||
+        (path.size() > 1 && path[1] == '/')) // handle "//"
 			{
-				fstring uri = path.substr(1);
+ 				fstring uri = path.substr(1);
 				uri.replace(UNWANTED_FOLDER_CHAR, FOLDER_CHAR);
 				return uri;
-			}
-#else
-			return path;
-#endif
+      }
+#endif  // WIN32
+
+      return path;
 		}
 	}
 
@@ -573,7 +583,6 @@ void FUUri::MakeAbsolute(FUUri& uri) const
 				uri.path.replace(FC('\\'), FC('/'));
 			}
 #endif
-			
 			// Path is already absolute
 			return;
 		}

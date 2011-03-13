@@ -146,3 +146,19 @@ FCOLLADA_EXPORT void TrickLinkerFCDLibrary()
 	LibraryExport<FCDPhysicsMaterial>();
 	LibraryExport<FCDPhysicsScene>();
 }
+
+template class FCDLibrary<FCDAnimation>; 
+template class FCDLibrary<FCDAnimationClip>; 
+template class FCDLibrary<FCDCamera>; 
+template class FCDLibrary<FCDController>; 
+template class FCDLibrary<FCDEffect>; 
+template class FCDLibrary<FCDEmitter>; 
+template class FCDLibrary<FCDForceField>; 
+template class FCDLibrary<FCDGeometry>; 
+template class FCDLibrary<FCDImage>; 
+template class FCDLibrary<FCDLight>; 
+template class FCDLibrary<FCDMaterial>; 
+template class FCDLibrary<FCDSceneNode>; 
+template class FCDLibrary<FCDPhysicsModel>; 
+template class FCDLibrary<FCDPhysicsMaterial>; 
+template class FCDLibrary<FCDPhysicsScene>;

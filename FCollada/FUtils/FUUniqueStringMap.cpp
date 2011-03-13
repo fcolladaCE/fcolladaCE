@@ -101,3 +101,6 @@ void FUUniqueStringMapT<CH>::erase(const fm::stringT<CH>& str)
 		itV->second.erase(suffix);
 	}
 }
+
+template class FUUniqueStringMapT<char>;
+template class FUUniqueStringMapT<fchar>;

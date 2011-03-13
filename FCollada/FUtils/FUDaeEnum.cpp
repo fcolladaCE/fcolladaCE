@@ -163,6 +163,9 @@ namespace FUDaeTextureFilterFunction
 		{
 		case NONE: return DAE_TEXTURE_FILTER_NONE;
 		case NEAREST: return DAE_TEXTURE_FILTER_NEAREST;
+// Begin Google modifications
+		case LINEAR: return DAE_TEXTURE_FILTER_LINEAR;
+// End Google modifications
 		case NEAREST_MIPMAP_NEAREST: return DAE_TEXTURE_FILTER_NEAR_MIP_NEAR;
 		case LINEAR_MIPMAP_NEAREST: return DAE_TEXTURE_FILTER_LIN_MIP_NEAR;
 		case NEAREST_MIPMAP_LINEAR: return DAE_TEXTURE_FILTER_NEAR_MIP_LIN;

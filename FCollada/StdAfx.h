@@ -10,6 +10,20 @@
 #define _STDAFX_H_
 
 #define FCOLLADA_INTERNAL
+
+// begin Google change
+#ifndef OS_WINDOWS
+
+#ifdef __cplusplus
+#include <vector>
+using std::min;
+using std::max;
+#endif
+
+#endif
+// end Google Change
+
+
 #include "FCollada.h"
 
 #endif // _STDAFX_H_

@@ -128,6 +128,18 @@ public:
 	void appendHex(uint8 i);
 	template <class T> inline void appendHex(const T& i) { for (size_t j = 0; j < sizeof(T); ++j) appendHex(*(((uint8*)&i) + j)); } /**< See above. */
 
+// begin Google modifications (by piman)
+// These definitions were necessary originally because int32/uint32 were
+// defined as (unsigned) long, but now that they are defined as (unsigned) int,
+// the following definitions would conflict with the definitions above.
+
+#if !defined(OS_WINDOWS) && !__LP64__
+	inline void append(unsigned long i) { append(static_cast<uint32>(i)); } /**< See above. */
+	inline void append(long i) { append(static_cast<uint32>(i)); } /**< See above. */
+#endif
+
+#if 0
+// end Google modifications
 #if defined(WIN32)
 	inline void append(int i) { append((int32) i); } /**< See above. */
 #ifdef _W64
@@ -139,6 +151,9 @@ public:
 	inline void append(unsigned long i) { append((uint32) i); } /**< See above. */
 	inline void append(long i) { append((int32) i); } /**< See above. */
 #endif // platform-switch.
+// begin Google modifications (by piman)
+#endif
+// end Google modifications
 
 	/** Appends the floating-point value, after converting it to a string,
 		to the content of the builder. If the floating-point value is the special token
@@ -231,4 +246,3 @@ typedef FUStringBuilderT<char> FUSStringBuilder;  /**< A 8-bit string builder. *
 #endif // __APPLE__
 
 #endif // _FCU_STRING_BUILDER_
-

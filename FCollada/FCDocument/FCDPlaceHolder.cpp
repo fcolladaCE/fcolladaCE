@@ -13,6 +13,7 @@
 #include "FCDocument/FCDExternalReferenceManager.h"
 #include "FCDocument/FCDPlaceHolder.h"
 #include "FUtils/FUFileManager.h"
+#include "FCollada.h"
 
 //
 // FCDPlaceHolder

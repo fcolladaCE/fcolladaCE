@@ -33,7 +33,11 @@
 #pragma warning(disable:4702)
 #endif // _WIN32
 
+// Begin Google modifications (piman)
+#ifndef NOMINMAX
 #define NOMINMAX /**< Rid us of the default versions of MINMAX. */
+#endif // NOMINMAX
+// End Google modifications
 #ifdef max
 #undef max
 #endif // max
@@ -41,6 +45,13 @@
 #undef min
 #endif // min
 
+// Begin Google modifications (piman)
+// min and max conflict with Chrome's default includes
+#define FCOLLADA_NOMINMAX
+#include <algorithm>
+using std::min;
+using std::max;
+// End Google modifications
 #ifndef FCOLLADA_NOMINMAX
 /** Retrieves the largest of two values. */
 template<class T>

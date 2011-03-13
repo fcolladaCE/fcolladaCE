@@ -142,3 +142,6 @@ FCOLLADA_EXPORT void TrickLinker2()
 	extern void TrickLinkerFUStringConversion();
 	TrickLinkerFUStringConversion();
 }
+
+template class FUStringBuilderT<char>;
+template class FUStringBuilderT<wchar_t>;

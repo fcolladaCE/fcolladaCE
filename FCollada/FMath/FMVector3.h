@@ -13,6 +13,8 @@
 #ifndef _FM_VECTOR3_H_
 #define _FM_VECTOR3_H_
 
+#include <algorithm>
+
 class FMVector4;
 
 /**
@@ -127,7 +129,7 @@ public:
 
 	/** Retrieves the smallest component of the vector.
 		@return The smallest component of the vector. */
-	inline float ComponentMinimum() const { return min(fabsf(x), min(fabsf(y), fabsf(z))); }
+	inline float ComponentMinimum() const { return std::min(fabsf(x), std::min(fabsf(y), fabsf(z))); }
 
 	/** Update each component of this FMVector to the maximum of two FMVector3s.
 		Updates each of the three components to be the maximum of the current
@@ -137,7 +139,7 @@ public:
 
 	/** Retrieves the largest component of the vector.
 		@return The largest component of the vector. */
-	inline float ComponentMaximum() const { return max(fabsf(x), max(fabsf(y), fabsf(z))); }
+	inline float ComponentMaximum() const { return std::max(fabsf(x), std::max(fabsf(y), fabsf(z))); }
 
 	/** Clamp each component of this FMVector by the corresponding components
 		in the specified min and max FMVector3.

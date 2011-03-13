@@ -29,3 +29,6 @@ extern void TrickLinker3()
 	it1.IsDone();
 	it2.IsDone();
 }
+
+template class FCDSceneNodeIteratorT<FCDSceneNode>;
+template class FCDSceneNodeIteratorT<const FCDSceneNode>;

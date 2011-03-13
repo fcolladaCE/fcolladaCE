@@ -12,6 +12,11 @@
 #define __XML_STRING_H__
 
 #include <stdarg.h>
+
+#ifdef OS_MACINTOSH
+#include <stdint.h>
+#endif
+
 #include <libxml/xmlversion.h>
 
 #ifdef __cplusplus
