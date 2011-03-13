@@ -164,7 +164,14 @@ public:
 	static bool LoadExtra(FCDObject* object, xmlNode* node);	
 	static bool LoadExtraNode(FCDObject* object, xmlNode* node);				
 	static bool LoadExtraTechnique(FCDObject* object, xmlNode* node);	
-	static bool LoadExtraType(FCDObject* object, xmlNode* node);	
+	static bool LoadExtraType(FCDObject* object, xmlNode* node);
+	
+	// CODE ADDED
+	
+	static bool LoadScene(FCDObject* object, xmlNode* node);
+	
+	// / CODE ADDED
+		
 	static bool LoadAsset(FCDObject* object, xmlNode* node);				
 	static bool LoadAssetContributor(FCDObject* object, xmlNode* node);	
 	static bool LoadEntityReference(FCDObject* object, xmlNode* node);	
@@ -400,6 +407,13 @@ public:
 	static xmlNode* WriteExtra(FCDObject* object, xmlNode* parentNode);	
 	static xmlNode* WriteExtraTechnique(FCDObject* object, xmlNode* parentNode);	
 	static xmlNode* WriteExtraType(FCDObject* object, xmlNode* parentNode);	
+	
+	// CODE ADDED
+	
+	static xmlNode* WriteScene(FCDObject* object, xmlNode* parentNode);
+	
+	// / CODE ADDED
+	
 	static xmlNode* WriteAsset(FCDObject* object, xmlNode* parentNode);				
 	static xmlNode* WriteAssetContributor(FCDObject* object, xmlNode* parentNode);	
 	static xmlNode* WriteEntityReference(FCDObject* object, xmlNode* parentNode);	

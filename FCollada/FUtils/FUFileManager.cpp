@@ -2,7 +2,7 @@
 	Copyright (C) 2005-2007 Feeling Software Inc.
 	Portions of the code are:
 	Copyright (C) 2005-2007 Sony Computer Entertainment America
-	
+
 	MIT License: http://www.opensource.org/licenses/mit-license.php
 */
 /*
@@ -16,6 +16,8 @@
 #include "FUFile.h"
 #include "FUFileManager.h"
 #include "FUStringConversion.h"
+
+#include <algorithm>
 
 #include <errno.h>
 
@@ -375,7 +377,7 @@ fstring FUFileManager::GetApplicationFolderName()
 	buffer[1023] = 0;
 	_uri = buffer;
 #elif defined(LINUX)
-	char path[1024]; 
+	char path[1024];
 	char path2[1024];
 	struct stat stat_buf;
 	strncpy(path2, "/proc/self/exe", 1023);
@@ -389,9 +391,9 @@ fstring FUFileManager::GetApplicationFolderName()
 		}
 		else
 		{
-			path[max(1023u, size)] = '\0';
+			path[std::max( size_t( 1023 ), size)] = '\0';
 			int i = stat (path, &stat_buf);
-			if (i == -1) break; 
+			if (i == -1) break;
 			else if (!S_ISLNK(stat_buf.st_mode)) break;
 			strncpy(path, path2, 1023);
 		}

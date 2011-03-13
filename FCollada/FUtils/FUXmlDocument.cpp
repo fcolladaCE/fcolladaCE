@@ -24,6 +24,7 @@ FUXmlDocument::FUXmlDocument(FUFileManager* manager, const fchar* _filename, boo
 {
 	if (isParsing)
 	{
+#if 0
 		FUFile* file = NULL;
 		if (manager != NULL) file = manager->OpenFile(filename, FUFile::READ);
 		else file = new FUFile(filename, FUFile::READ);
@@ -40,6 +41,32 @@ FUXmlDocument::FUXmlDocument(FUFileManager* manager, const fchar* _filename, boo
 			SAFE_DELETE_ARRAY(fileData);
 		}
 		SAFE_DELETE(file);
+#else
+		//push 1kb of data at a time
+		FILE *f;
+    	f = fopen(_filename, "r");
+    	if (f != NULL) 
+		{
+      		int res, size = 1024;
+      		char chars[1024];
+      		xmlParserCtxtPtr ctxt;
+
+      		res = fread(chars, 1, 4, f);
+	      	if (res > 0) 
+			{
+    		    ctxt = xmlCreatePushParserCtxt(NULL, NULL, chars, res, _filename);
+    		    while ((res = fread(chars, 1, size, f)) > 0) 
+				{
+    		      xmlParseChunk(ctxt, chars, res, 0);
+    		    }
+    		    xmlParseChunk(ctxt, chars, 0, 1);
+    		    xmlDocument = ctxt->myDoc;
+    		    xmlFreeParserCtxt(ctxt);
+			}
+
+			fclose(f);
+    	}
+#endif
 	}
 	else
 	{

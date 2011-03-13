@@ -2,7 +2,7 @@
 	Copyright (C) 2005-2007 Feeling Software Inc.
 	Portions of the code are:
 	Copyright (C) 2005-2007 Sony Computer Entertainment America
-	
+
 	MIT License: http://www.opensource.org/licenses/mit-license.php
 */
 /*
@@ -278,8 +278,12 @@ int32 FCDGeometryPolygons::TestPolyType() const
 	if (!faceVertexCounts.empty())
 	{
 		uint32 fCount = *itC;
-		for (itC ; itC != faceVertexCounts.end() && *itC == fCount; ++itC) {}
-		if (itC == faceVertexCounts.end()) return fCount;
+		for (itC ; itC != faceVertexCounts.end() && *itC == fCount; ++itC)
+		  ;
+		if (itC == faceVertexCounts.end())
+		{
+		  return fCount;
+		}
 	}
 	return -1;
 }
@@ -297,7 +301,7 @@ FCDGeometryPolygons* FCDGeometryPolygons::Clone(FCDGeometryPolygons* clone, cons
 	clone->faceVertexOffset = faceVertexOffset;
 	clone->holeOffset = holeOffset;
 	clone->holeFaces = holeFaces;
-	
+
 	// Clone the geometry inputs
 	// Note that the vertex source inputs are usually created by default.
 	size_t inputCount = inputs.size();

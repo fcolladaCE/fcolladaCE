@@ -106,3 +106,6 @@ FMVector3 FMVector4::ToHSVColor()
 	else hsv.x = hsv.y = 0; // black
 	return hsv;
 }
+
+float FMVector3::ComponentMinimum() const { return min(fabsf(x), min(fabsf(y), fabsf(z))); }
+float FMVector3::ComponentMaximum() const { return max(fabsf(x), max(fabsf(y), fabsf(z))); }

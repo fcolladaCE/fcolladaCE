@@ -2,9 +2,9 @@
 	Copyright (C) 2005-2007 Feeling Software Inc.
 	Portions of the code are:
 	Copyright (C) 2005-2007 Sony Computer Entertainment America
-	
+
 	MIT License: http://www.opensource.org/licenses/mit-license.php
-*/
+ */
 
 #include "StdAfx.h"
 #include "FCDocument/FCDocument.h"
@@ -199,9 +199,9 @@ void FCDENode::SetContent(const fchar* _content)
 }
 
 void FCDENode::SetAnimated(FCDAnimatedCustom* animatedCustom)
-{ 
-	SAFE_RELEASE(animated); 
-	animated = animatedCustom; 
+{
+	SAFE_RELEASE(animated);
+	animated = animatedCustom;
 }
 
 // Search for a children with a specific name
@@ -245,10 +245,13 @@ void FCDENode::FindParameters(FCDENodeList& nodes, StringList& names)
 	}
 }
 
-void FCDENode::SetName(fm::string& _name)
+void FCDENode::SetName(fm::string& _name, bool cleanName)
 {
 	name = _name;
-	CleanName(name);
+	if(cleanName)
+	{
+	  CleanName(name);
+	}
 	SetDirtyFlag();
 }
 
@@ -280,9 +283,12 @@ const fchar* FCDENode::GetContent() const
 }
 
 // Adds a new attribute to this extra tree node.
-FCDEAttribute* FCDENode::AddAttribute(fm::string& _name, const fchar* _value)
+FCDEAttribute* FCDENode::AddAttribute(fm::string& _name, const fchar* _value, bool cleanName)
 {
-	CleanName(_name);
+	if(cleanName)
+	{
+		CleanName(_name);
+	}
 	FCDEAttribute* attribute = FindAttribute(_name.c_str());
 	if (attribute == NULL)
 	{
@@ -350,15 +356,15 @@ FCDENode* FCDENode::AddChildNode()
 {
 	FCDENode* node = new FCDENode(GetDocument(), this);
 	children.push_back(node);
-	SetNewChildFlag(); 
-	return node; 
+	SetNewChildFlag();
+	return node;
 }
 
-FCDENode* FCDENode::AddChildNode(const char* name) 
+FCDENode* FCDENode::AddChildNode(const char* name, bool cleanName)
 {
 	FCDENode* node = new FCDENode(GetDocument(), this);
 	children.push_back(node);
-	node->SetName(name); 
+	node->SetName(name, cleanName);
 	SetNewChildFlag();
 	return node;
 }

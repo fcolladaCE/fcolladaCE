@@ -83,15 +83,16 @@ inline const T& min(const T& x,const T& y) { return (x < y) ? x : y; } /**< See 
 
 // LibXML
 #ifndef NO_LIBXML
-#define HAS_LIBXML /**< Used by FCollada, implies that we are including LibXML functions in the library interface. */
-#if !defined(FCOLLADA_DLL) || defined(FCOLLADA_INTERNAL)
-#define LIBXML_STATIC /**< Used by LibXML, implies that we are statically-linking the LibXML. */
-#endif // !FCOLLADA_DLL || !FCOLLADA_INTERNAL
-#ifndef __XML_TREE_H__
-#include <libxml/tree.h>
-#endif // __XML_TREE_H__
+  #define HAS_LIBXML /**< Used by FCollada, implies that we are including LibXML functions in the library interface. */
+  #if !defined(FCOLLADA_DLL) || defined(LIBXML_STATIC_LINKING)
+    // || defined(FCOLLADA_INTERNAL)
+    #define LIBXML_STATIC /**< Used by LibXML, implies that we are statically-linking the LibXML. */
+  #endif // !FCOLLADA_DLL || !FCOLLADA_INTERNAL
+  #ifndef __XML_TREE_H__
+    #include <libxml/tree.h>
+  #endif // __XML_TREE_H__
 #else // NO_LIBXML
-typedef struct _xmlNode xmlNode;
+  typedef struct _xmlNode xmlNode;
 #endif // NO_LIBXML
 
 // SAFE_DELETE Macro set.
