@@ -431,6 +431,8 @@ bool FArchiveXML::LoadAnimation(FCDObject* object, xmlNode* node)
 	return status;
 }			
 
+// CODE EDITED
+
 bool FArchiveXML::LoadAnimationClip(FCDObject* object, xmlNode* clipNode)
 { 
 	FCDAnimationClip* animationClip = (FCDAnimationClip*)object;
@@ -465,6 +467,29 @@ bool FArchiveXML::LoadAnimationClip(FCDObject* object, xmlNode* clipNode)
 
 		fm::string name = ReadNodeProperty(*itI, DAE_NAME_ATTRIBUTE);
 		animationClip->SetAnimationName(name, animationClip->GetAnimationCount() - 1);
+
+		FUUri animationId = ReadNodeUrl(*itI);
+		FCDAnimation* animation = animationClip->GetDocument()->FindAnimation(animationId.GetFragment());
+		if (animation == NULL) continue;
+
+		// Retrieve all the curves created under this animation node
+		FCDAnimationCurveList animationCurves;
+		animation->GetCurves(animationCurves);
+		if (animationCurves.empty())
+		{
+			FUError::Error(FUError::WARNING_LEVEL, FUError::WARNING_CURVES_MISSING, (*itI)->line);
+		}
+	    
+		for (FCDAnimationCurveList::iterator itC = animationCurves.begin(); itC != animationCurves.end(); ++itC)
+		{
+			// Keep only newly listed curves
+			FCDAnimationCurve* curve = *itC;
+			FCDAnimationCurveTrackList::iterator itF = animationClip->GetClipCurves().find(curve);
+			if (itF == animationClip->GetClipCurves().end())
+			{
+				animationClip->AddClipCurve(curve);
+			}
+		}
 	}
 
 	// Check for an empty clip
@@ -476,6 +501,8 @@ bool FArchiveXML::LoadAnimationClip(FCDObject* object, xmlNode* clipNode)
 	animationClip->SetDirtyFlag();
 	return status;
 }		
+
+// / CODE EDITED
 
 void FArchiveXML::LoadAnimatable(FCDParameterAnimatable* animatable, xmlNode* node)
 {

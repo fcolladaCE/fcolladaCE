@@ -23,6 +23,7 @@
 
 namespace fm
 {
+
 	/** An allocation function type.
 		@param size The size, in bytes, to allocate.
 		@return The allocated buffer or NULL if not enough memory is available.*/

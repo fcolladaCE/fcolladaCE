@@ -2,7 +2,7 @@
 	Copyright (C) 2005-2007 Feeling Software Inc.
 	Portions of the code are:
 	Copyright (C) 2005-2007 Sony Computer Entertainment America
-	
+
 	MIT License: http://www.opensource.org/licenses/mit-license.php
 */
 
@@ -249,10 +249,11 @@ public:
 
 	/** Sets the name of the extra tree node.
 		The name of the extra tree node is the name of the equivalent XML tree node.
-		@param _name The name of the extra tree node. */
-	inline void SetName(const char* _name) { fm::string n = _name; SetName(n); }
-	inline void SetName(const fm::string& _name) { fm::string n = _name; SetName(n); } /**< See above. */
-	void SetName(fm::string& _name);
+		@param _name The name of the extra tree node.
+		@param cleanName If set to true, \ref CleanName will be applied on _name. */
+	inline void SetName(const char* _name, bool cleanName = true) { fm::string n = _name; SetName(n, cleanName); }
+	inline void SetName(const fm::string& _name, bool cleanName = true) { fm::string n = _name; SetName(n, cleanName); } /**< See above. */
+	void SetName(fm::string& _name, bool cleanName = true);
 
 	/** Cleans up extra tree node names and extra tree attribute names in order to
 		always start with an alphabetic character or an underscore, as well as contain
@@ -321,9 +322,10 @@ public:
 	/** Adds a new, named, child extra tree to this extra tree node.
 		@see AddParameter
 		@param name The name of the child node.
+		@param cleanName Allow to set a namespace in the node name by setting this boolean to false (otherwise all the non-alphanumeric characters are replaced by underscores).
 		@return The new child extra tree node. */
-	FCDENode* AddChildNode(const char* name);
-	inline FCDENode* AddChildNode(const fm::string& name) { return AddChildNode(name.c_str()); } /**< See above. */
+	FCDENode* AddChildNode(const char* name, bool cleanName = true);
+	inline FCDENode* AddChildNode(const fm::string& name, bool cleanName = true) { return AddChildNode(name.c_str(), cleanName); } /**< See above. */
 
 	/** Retrieves the child extra tree node with the given name.
 		@param name A name.
@@ -379,16 +381,17 @@ public:
 		@param _name The name of the attribute. If this parameter is
 			a non-constant fm::string reference, it will be updated with the cleaned name.
 		@param _value The value of the attribute.
+		@param cleanName If set to true, \ref CleanName will be applied on _name.
 		@return The new attribute. */
-	FCDEAttribute* AddAttribute(fm::string& _name, const fchar* _value);
-	inline FCDEAttribute* AddAttribute(const char* _name, const fchar* _value) { fm::string n = _name; return AddAttribute(n, _value); } /**< See above. */
-	inline FCDEAttribute* AddAttribute(const fm::string& _name, const fchar* _value) { fm::string n = _name; return AddAttribute(n, _value); } /**< See above. */
-	inline FCDEAttribute* AddAttribute(const char* _name, const fstring& _value) { fm::string n = _name; return AddAttribute(n, _value.c_str()); } /**< See above. */
-	inline FCDEAttribute* AddAttribute(fm::string& _name, const fstring& _value) { return AddAttribute(_name, _value.c_str()); } /**< See above. */
-	inline FCDEAttribute* AddAttribute(const fm::string& _name, const fstring& _value) { fm::string n = _name; return AddAttribute(n, _value.c_str()); } /**< See above. */
-	template <typename T> inline FCDEAttribute* AddAttribute(const char* _name, const T& _value) { fm::string n = _name; return AddAttribute(n, TO_FSTRING(_value)); } /**< See above. */
-	template <typename T> inline FCDEAttribute* AddAttribute(fm::string& _name, const T& _value) { return AddAttribute(_name, TO_FSTRING(_value)); } /**< See above. */
-	template <typename T> inline FCDEAttribute* AddAttribute(const fm::string& _name, const T& _value) { fm::string n = _name; return AddAttribute(n, TO_FSTRING(_value)); } /**< See above. */
+	FCDEAttribute* AddAttribute(fm::string& _name, const fchar* _value, bool cleanName = true);
+	inline FCDEAttribute* AddAttribute(const char* _name, const fchar* _value, bool cleanName = true) { fm::string n = _name; return AddAttribute(n, _value, cleanName); } /**< See above. */
+	inline FCDEAttribute* AddAttribute(const fm::string& _name, const fchar* _value, bool cleanName = true) { fm::string n = _name; return AddAttribute(n, _value, cleanName); } /**< See above. */
+	inline FCDEAttribute* AddAttribute(const char* _name, const fstring& _value, bool cleanName = true) { fm::string n = _name; return AddAttribute(n, _value.c_str(), cleanName); } /**< See above. */
+	inline FCDEAttribute* AddAttribute(fm::string& _name, const fstring& _value, bool cleanName = true) { return AddAttribute(_name, _value.c_str(), cleanName); } /**< See above. */
+	inline FCDEAttribute* AddAttribute(const fm::string& _name, const fstring& _value, bool cleanName = true) { fm::string n = _name; return AddAttribute(n, _value.c_str(), cleanName); } /**< See above. */
+	template <typename T> inline FCDEAttribute* AddAttribute(const char* _name, const T& _value, bool cleanName = true) { fm::string n = _name; return AddAttribute(n, TO_FSTRING(_value), cleanName); } /**< See above. */
+	template <typename T> inline FCDEAttribute* AddAttribute(fm::string& _name, const T& _value, bool cleanName = true) { return AddAttribute(_name, TO_FSTRING(_value), cleanName); } /**< See above. */
+	template <typename T> inline FCDEAttribute* AddAttribute(const fm::string& _name, const T& _value, bool cleanName = true) { fm::string n = _name; return AddAttribute(n, TO_FSTRING(_value), cleanName); } /**< See above. */
 
 	/** Retrieve the attribute of this extra tree node with the given name.
 		Attribute names are unique within an extra tree node.
@@ -431,7 +434,7 @@ public:
 	A COLLADA extra tree technique.
 
 	For convenience, this extra tree technique is based on top of the FCDENode class.
-	An extra tree technique is the root of the extra tree specific to 
+	An extra tree technique is the root of the extra tree specific to
 	the profile of an application.
 
 	@ingroup FCDocument

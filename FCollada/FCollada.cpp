@@ -33,20 +33,24 @@ namespace FCollada
 	static size_t libraryInitializationCount = 0;
 	static FUTrackedList<FCDocument> topDocuments;
 	static bool dereferenceFlag = true;
-	FColladaPluginManager* pluginManager = NULL; // Externed in FCDExtra.cpp.
 	CancelLoadingCallback cancelLoadingCallback = NULL;
 
-	FCOLLADA_EXPORT FColladaPluginManager* GetPluginManager() { return pluginManager; }
-
-	FCOLLADA_EXPORT unsigned long GetVersion() { return FCOLLADA_VERSION; }
-
-	FCOLLADA_EXPORT void Initialize()
-	{
+	FCOLLADA_EXPORT FColladaPluginManager* GetPluginManager() 
+  { 
+    static FColladaPluginManager* pluginManager = NULL; // Externed in FCDExtra.cpp.
 		if (pluginManager == NULL)
 		{
 			pluginManager = new FColladaPluginManager();
 			pluginManager->RegisterPlugin(CreatePlugin(0));
 		}
+    return pluginManager; 
+  }
+
+	FCOLLADA_EXPORT unsigned long GetVersion() { return FCOLLADA_VERSION; }
+
+	FCOLLADA_EXPORT void Initialize()
+	{
+    GetPluginManager() ;
 		++libraryInitializationCount;
 	}
 
@@ -57,7 +61,8 @@ namespace FCollada
 		if (--libraryInitializationCount == 0)
 		{
 			// Detach all the plug-ins.
-			SAFE_RELEASE(pluginManager);
+      GetPluginManager()->Release() ;
+			//SAFE_RELEASE(pluginManager);
 
 			FUAssert(topDocuments.empty(),);
 			while (!topDocuments.empty()) topDocuments.back()->Release();
@@ -104,7 +109,7 @@ namespace FCollada
 
 	FCOLLADA_EXPORT FCDocument* LoadDocumentFromFile(const fchar* filename)
 	{
-		FUAssert(pluginManager != NULL, return NULL);
+		FUAssert(GetPluginManager() != NULL, return NULL);
 		FCDocument* theDocument = FCollada::NewTopDocument();
 		
 		if (!LoadDocumentFromFile(theDocument, filename))
@@ -116,8 +121,8 @@ namespace FCollada
 
 	FCOLLADA_EXPORT bool LoadDocumentFromFile(FCDocument* document, const fchar* filename)
 	{
-		FUAssert(pluginManager != NULL, return false);
-		return pluginManager->LoadDocumentFromFile(document, filename);
+		FUAssert(GetPluginManager() != NULL, return false);
+		return GetPluginManager()->LoadDocumentFromFile(document, filename);
 	}
 
 	FCOLLADA_EXPORT FCDocument* LoadDocument(const fchar* filename)
@@ -130,14 +135,14 @@ namespace FCollada
 
 	FCOLLADA_EXPORT bool LoadDocumentFromMemory(const fchar* filename, FCDocument* document, void* data, size_t length)
 	{
-		FUAssert(pluginManager != NULL, return false);
-		return pluginManager->LoadDocumentFromMemory(filename, document, data, length);
+		FUAssert(GetPluginManager() != NULL, return false);
+		return GetPluginManager()->LoadDocumentFromMemory(filename, document, data, length);
 	}
 
 	FCOLLADA_EXPORT bool SaveDocument(FCDocument* document, const fchar* filename)
 	{
-		FUAssert(pluginManager != NULL, return false);
-		return pluginManager->SaveDocumentToFile(document, filename);
+		FUAssert(GetPluginManager() != NULL, return false);
+		return GetPluginManager()->SaveDocumentToFile(document, filename);
 	}
 
 	FCOLLADA_EXPORT bool GetDereferenceFlag()
@@ -153,8 +158,8 @@ namespace FCollada
 	FCOLLADA_EXPORT bool RegisterPlugin(FUPlugin* plugin)
 	{
 		// This function is deprecated.
-		FUAssert(pluginManager != NULL, return false);
-		return pluginManager->RegisterPlugin(plugin);
+		FUAssert(GetPluginManager() != NULL, return false);
+		return GetPluginManager()->RegisterPlugin(plugin);
 	}
 
 	FCOLLADA_EXPORT void SetCancelLoadingCallback(CancelLoadingCallback callback)

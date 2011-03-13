@@ -2,7 +2,7 @@
 	Copyright (C) 2005-2007 Feeling Software Inc.
 	Portions of the code are:
 	Copyright (C) 2005-2007 Sony Computer Entertainment America
-	
+
 	MIT License: http://www.opensource.org/licenses/mit-license.php
 */
 
@@ -12,6 +12,13 @@
 #include "FCDocument/FCDEntity.h"
 #include "FCDocument/FCDTargetedEntity.h"
 #include "FCDocument/FCDAsset.h"
+
+// CODE ADDED
+
+#include "FCDocument/FCDScene.h"
+
+// / CODE ADDED
+
 #include "FCDocument/FCDExtra.h"
 #include "FCDocument/FCDAnimated.h"
 
@@ -61,6 +68,18 @@ xmlNode* FArchiveXML::WriteExtraType(FCDObject* object, xmlNode* parentNode)
 	return extraNode;
 }
 
+// CODE ADDED
+
+xmlNode* FArchiveXML::WriteScene(FCDObject* object, xmlNode* parentNode)
+{
+	xmlNode* sceneNode = AddChild(parentNode, DAE_SCENE_ELEMENT);
+
+	return sceneNode;
+}
+
+// / CODE ADDED
+
+
 xmlNode* FArchiveXML::WriteAsset(FCDObject* object, xmlNode* parentNode)
 {
 	FCDAsset* asset = (FCDAsset*)object;
@@ -102,7 +121,7 @@ xmlNode* FArchiveXML::WriteAsset(FCDObject* object, xmlNode* parentNode)
 		AddChild(assetNode, DAE_UPAXIS_ASSET_PARAMETER, upAxisString);
 	}
 	return assetNode;
-	
+
 }
 
 xmlNode* FArchiveXML::WriteAssetContributor(FCDObject* object, xmlNode* parentNode)
@@ -163,7 +182,7 @@ xmlNode* FArchiveXML::WriteExtraNode(FCDObject* object, xmlNode* parentNode)
 	FCDENode* eNode = (FCDENode*)object;
 
 	xmlNode* customNode = AddChild(parentNode, eNode->GetName(), TO_FSTRING(eNode->GetContent()));
-	
+
 	// Write out the attributes
 	size_t attributeCount = eNode->GetAttributeCount();
 	for (size_t i = 0; i < attributeCount; ++i)

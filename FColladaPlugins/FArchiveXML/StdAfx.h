@@ -9,7 +9,6 @@
 #ifndef _STD_AFX_PCH_H_
 #define _STD_AFX_PCH_H_
 
-#define FCOLLADA_INTERNAL
 #include "FCollada.h"
 
 #include "FAXColladaParser.h"

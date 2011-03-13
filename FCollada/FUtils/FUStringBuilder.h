@@ -2,7 +2,7 @@
 	Copyright (C) 2005-2007 Feeling Software Inc.
 	Portions of the code are:
 	Copyright (C) 2005-2007 Sony Computer Entertainment America
-	
+
 	MIT License: http://www.opensource.org/licenses/mit-license.php
 */
 /*
@@ -20,6 +20,7 @@
 
 #ifndef _FCU_STRING_BUILDER_
 #define _FCU_STRING_BUILDER_
+#include "FUString.h"
 
 /**
 	A dynamically-sized string object.
@@ -57,7 +58,7 @@ public:
 		@param count The number of times to repeat the given character. */
 	FUStringBuilderT(Char ch, size_t count);
 
-	/** Creates a new builder with an empty buffer. 
+	/** Creates a new builder with an empty buffer.
 		@see reserve
 		@param reserved The number of character slots to reserve within the empty buffer. */
 	FUStringBuilderT(size_t reserved);
@@ -65,7 +66,7 @@ public:
 	/** Creates a new builder with an empty buffer. */
 	FUStringBuilderT();
 
-	/** Deletes the builder. Its buffer will be cleared. 
+	/** Deletes the builder. Its buffer will be cleared.
 		Any pointers to its data will be dangling. */
 	~FUStringBuilderT();
 
@@ -148,7 +149,10 @@ public:
 	inline void append(unsigned int i) { append((uint32) i); } /**< See above. */
 #endif
 #else
+#ifndef PLATFORM_X86_64
+	// the following method is also append(uint64) on a 64 bits platform!
 	inline void append(unsigned long i) { append((uint32) i); } /**< See above. */
+#endif
 	inline void append(long i) { append((int32) i); } /**< See above. */
 #endif // platform-switch.
 // begin Google modifications (by piman)

@@ -9,7 +9,6 @@
 #ifndef _STD_AFX_H_
 #define _STD_AFX_H_
 
-#define NO_LIBXML
 #include "FUtils/FUtils.h"
 
 #endif // _STD_AFX_H_

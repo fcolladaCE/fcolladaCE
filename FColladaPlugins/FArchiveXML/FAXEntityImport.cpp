@@ -8,6 +8,13 @@
 
 #include "StdAfx.h"
 #include "FArchiveXML.h"
+
+// CODE ADDED
+
+#include "FCDocument/FCDScene.h"
+
+// / CODE ADDED
+ 
 #include "FCDocument/FCDocument.h"
 #include "FCDocument/FCDEntity.h"
 #include "FCDocument/FCDTargetedEntity.h"
@@ -98,6 +105,28 @@ bool FArchiveXML::LoadExtraType(FCDObject* object, xmlNode* extraNode)
 	eType->SetDirtyFlag();
 	return status;
 }
+
+// CODE ADDED
+
+bool FArchiveXML::LoadScene(FCDObject* object, xmlNode* sceneNode)
+{ 
+	FCDScene* scene = (FCDScene*)object;
+
+	bool status = true;
+	
+	// Read in the extra nodes
+	xmlNodeList extraNodes;
+	FindChildrenByType(sceneNode, DAE_EXTRA_ELEMENT, extraNodes);
+	for (xmlNodeList::iterator it = extraNodes.begin(); it != extraNodes.end(); ++it)
+	{
+		xmlNode* extraNode = (*it);
+		FArchiveXML::LoadExtra(scene->GetExtra(), extraNode);
+	}
+	
+	return status;
+}
+
+// / CODE ADDED
 
 bool FArchiveXML::LoadAsset(FCDObject* object, xmlNode* assetNode)
 { 

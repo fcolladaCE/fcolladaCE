@@ -15,6 +15,13 @@
 #include "FCDocument/FCDAnimationCurve.h"
 #include "FCDocument/FCDAnimationMultiCurve.h"
 #include "FCDocument/FCDAsset.h"
+
+// CODE ADDED
+
+#include "FCDocument/FCDScene.h"
+
+// / CODE ADDED
+
 #include "FCDocument/FCDEffect.h"
 #include "FCDocument/FCDEffectCode.h"
 #include "FCDocument/FCDEffectParameterSampler.h"
@@ -171,6 +178,13 @@ void FArchiveXML::Initialize()
 		xmlLoadFuncs.insert(&FCDENode::GetClassType(), FArchiveXML::LoadExtraNode);
 		xmlLoadFuncs.insert(&FCDETechnique::GetClassType(), FArchiveXML::LoadExtraTechnique);
 		xmlLoadFuncs.insert(&FCDEType::GetClassType(), FArchiveXML::LoadExtraType);
+		
+		// CODE ADDED
+		
+		xmlLoadFuncs.insert(&FCDScene::GetClassType(), FArchiveXML::LoadScene);
+		
+		// / CODE ADDED		
+		
 		xmlLoadFuncs.insert(&FCDAsset::GetClassType(), FArchiveXML::LoadAsset);
 		xmlLoadFuncs.insert(&FCDAssetContributor::GetClassType(), FArchiveXML::LoadAssetContributor);
 		xmlLoadFuncs.insert(&FCDEntityReference::GetClassType(), FArchiveXML::LoadEntityReference);
@@ -275,6 +289,13 @@ void FArchiveXML::Initialize()
 		xmlWriteFuncs.insert(&FCDENode::GetClassType(), FArchiveXML::WriteExtraNode);
 		xmlWriteFuncs.insert(&FCDETechnique::GetClassType(), FArchiveXML::WriteExtraTechnique);
 		xmlWriteFuncs.insert(&FCDEType::GetClassType(), FArchiveXML::WriteExtraType);
+		
+		// CODE ADDED
+		
+		xmlWriteFuncs.insert(&FCDScene::GetClassType(), FArchiveXML::WriteScene);
+		
+		// / CODE ADDED		
+		
 		xmlWriteFuncs.insert(&FCDAsset::GetClassType(), FArchiveXML::WriteAsset);
 		xmlWriteFuncs.insert(&FCDAssetContributor::GetClassType(), FArchiveXML::WriteAssetContributor);
 		xmlWriteFuncs.insert(&FCDEntityReference::GetClassType(), FArchiveXML::WriteEntityReference);
@@ -604,6 +625,11 @@ bool FArchiveXML::Import(FCDocument* theDocument, xmlNode* colladaNode)
 		{
 			// The <scene> element should be the last element of the document
 			sceneNode = child;
+			// CODE ADDED
+		
+			status &= (FArchiveXML::LoadScene(theDocument->GetScene(), sceneNode));
+		
+			// /CODE ADDED
 			continue;
 		}
 		else if (IsEquivalent(child->name, DAE_EXTRA_ELEMENT))
@@ -704,8 +730,20 @@ bool FArchiveXML::Import(FCDocument* theDocument, xmlNode* colladaNode)
 	if (sceneNode != NULL)
 	{
 		bool oneVisualSceneInstanceFound = false;
+		
 		for (xmlNode* child = sceneNode->children; child != NULL; child = child->next)
 		{
+			
+			// CODE ADDED
+			
+			if (IsEquivalent(child->name, DAE_EXTRA_ELEMENT))
+			{
+				extraNodes.push_back(child);
+				continue;
+			}
+			
+			// /CODE ADDED
+			
 			if (child->type != XML_ELEMENT_NODE) continue;
 			bool isVisualSceneInstance = IsEquivalent(child->name, DAE_INSTANCE_VSCENE_ELEMENT) && !oneVisualSceneInstanceFound;
 			bool isPhysicsSceneInstance = IsEquivalent(child->name, DAE_INSTANCE_PHYSICS_SCENE_ELEMENT);

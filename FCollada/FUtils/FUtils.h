@@ -102,7 +102,7 @@ inline const T& min(const T& x,const T& y) { return (x < y) ? x : y; } /**< See 
 #include <libxml/tree.h>
 #endif // __XML_TREE_H__
 #else // NO_LIBXML
-typedef struct _xmlNode xmlNode;
+  typedef struct _xmlNode xmlNode;
 #endif // NO_LIBXML
 
 // SAFE_DELETE Macro set.
