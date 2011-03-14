@@ -102,6 +102,7 @@ SOURCE = \
 	FCollada/FCDocument/FCDPhysicsScene.cpp \
 	FCollada/FCDocument/FCDPhysicsShape.cpp \
 	FCollada/FCDocument/FCDPlaceHolder.cpp \
+	FCollada/FCDocument/FCDScene.cpp \
 	FCollada/FCDocument/FCDSceneNode.cpp \
 	FCollada/FCDocument/FCDSceneNodeIterator.cpp \
 	FCollada/FCDocument/FCDSceneNodeTools.cpp \
