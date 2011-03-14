@@ -1,10 +1,22 @@
 successfully merged and build OMK fcollada and WF fcollada. O3D fcollada uses chrome basetypes, requires more work to fix and bring over.
 
+While building 0AD from wildfire games I got this error:
+../../../libraries/fcollada/lib/libFColladaSR.a(FCDocument.o): In function `FCDocument::FCDocument()':
+FCDocument.cpp:(.text+0x107f): undefined reference to `FCDScene::FCDScene(FCDocument*, FUObject*)'
+../../../libraries/fcollada/lib/libFColladaSR.a(FCDocument.o): In function `FCDocument::FCDocument()':
+FCDocument.cpp:(.text+0x24d1): undefined reference to `FCDScene::FCDScene(FCDocument*, FUObject*)'
+../../../libraries/fcollada/lib/libFColladaSR.a(FArchiveXML.o): In function `FArchiveXML::Initialize()':
+FArchiveXML.cpp:(.text+0x20c): undefined reference to `FCDScene::__classType'
+FArchiveXML.cpp:(.text+0x1670): undefined reference to `FCDScene::__classType'
+collect2: ld returned 1 exit status
+
+don't quite get it - haven't looked into it yet
+
 TODO:
 need to put 64 bit guards in FUStringBuilder.h
 probably autotools build based on the WF makefile (I know it better than cmake).
 test code with 0AD
-doxygen?
+finish doxygen?
 
 -- March 13, 2011, Scott Howard <showard@debian.org>
 
