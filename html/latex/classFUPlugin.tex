@@ -1,0 +1,81 @@
+\hypertarget{classFUPlugin}{
+\section{FUPlugin Class Reference}
+\label{classFUPlugin}\index{FUPlugin@{FUPlugin}}
+}
+
+
+{\ttfamily \#include $<$FUPlugin.h$>$}
+
+Inheritance diagram for FUPlugin:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFUPlugin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const char $\ast$ \hyperlink{classFUPlugin_a18b5c936391bcc0e44c9d0552ea5f99f}{GetPluginName} () const =0
+\item 
+virtual uint32 \hyperlink{classFUPlugin_a65f40e837051a381b3922a0db8f871f7}{GetPluginVersion} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classFUPlugin_a15533ec6c09ebc9570d1584312565db8}{$\sim$FUPlugin} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic plug-\/in interface structure. Used by \hyperlink{namespaceFCollada}{FCollada} within the FCPlugin structure. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUPlugin_a15533ec6c09ebc9570d1584312565db8}{
+\index{FUPlugin@{FUPlugin}!$\sim$FUPlugin@{$\sim$FUPlugin}}
+\index{$\sim$FUPlugin@{$\sim$FUPlugin}!FUPlugin@{FUPlugin}}
+\subsubsection[{$\sim$FUPlugin}]{\setlength{\rightskip}{0pt plus 5cm}virtual FUPlugin::$\sim$FUPlugin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classFUPlugin_a15533ec6c09ebc9570d1584312565db8}
+Destructor. This destructor is protected as no application should release the memory of a plug-\/in directly. Instead, use the \hyperlink{classFUObject_a33be6852b877d7f29520bbe4722b846b}{FUObject::Release} function. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUPlugin_a18b5c936391bcc0e44c9d0552ea5f99f}{
+\index{FUPlugin@{FUPlugin}!GetPluginName@{GetPluginName}}
+\index{GetPluginName@{GetPluginName}!FUPlugin@{FUPlugin}}
+\subsubsection[{GetPluginName}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ FUPlugin::GetPluginName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFUPlugin_a18b5c936391bcc0e44c9d0552ea5f99f}
+Retrieves the name of the plug-\/in. \begin{DoxyReturn}{Returns}
+The name of the plug-\/in. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFArchiveXML_abd9ac092eff78dbc8f8249fa402fe644}{FArchiveXML}.
+
+\hypertarget{classFUPlugin_a65f40e837051a381b3922a0db8f871f7}{
+\index{FUPlugin@{FUPlugin}!GetPluginVersion@{GetPluginVersion}}
+\index{GetPluginVersion@{GetPluginVersion}!FUPlugin@{FUPlugin}}
+\subsubsection[{GetPluginVersion}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint32 FUPlugin::GetPluginVersion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFUPlugin_a65f40e837051a381b3922a0db8f871f7}
+Retrieves the version of the plug-\/in. For now, no version string formatting is suggested for this integer. It is unused and exists for future expansion only. \begin{DoxyReturn}{Returns}
+The version number of the plug-\/in. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFArchiveXML_a2fb1d4d2d6d862e023d8510ea404bd60}{FArchiveXML}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/FUPlugin.h\end{DoxyCompactItemize}

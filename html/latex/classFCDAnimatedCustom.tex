@@ -1,0 +1,116 @@
+\hypertarget{classFCDAnimatedCustom}{
+\section{FCDAnimatedCustom Class Reference}
+\label{classFCDAnimatedCustom}\index{FCDAnimatedCustom@{FCDAnimatedCustom}}
+}
+
+
+{\ttfamily \#include $<$FCDAnimated.h$>$}
+
+Inheritance diagram for FCDAnimatedCustom:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDAnimatedCustom}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDAnimatedCustom_a4e15071aff5b34b08ca8c39754331225}{FCDAnimatedCustom} (\hyperlink{classFCDObject}{FCDObject} $\ast$object)
+\item 
+void \hyperlink{classFCDAnimatedCustom_a2e53d1c7918e81312d507e6c196e778f}{Copy} (const \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$copy)
+\item 
+float \& \hyperlink{classFCDAnimatedCustom_ac23677b9bcc764c90c2a2256c2665c6b}{GetDummy} ()
+\item 
+const float \& \hyperlink{classFCDAnimatedCustom_ae2e70908717bea35adcb50162066ee97}{GetDummy} () const 
+\item 
+void \hyperlink{classFCDAnimatedCustom_a22c9c44059742d2571f5d9bacf7c39ed}{Resize} (size\_\-t count, const char $\ast$$\ast$\hyperlink{classFCDAnimated_a02ab9175d25055cd2d10d924de312490}{qualifiers}=NULL, bool prependDot=true)
+\item 
+void \hyperlink{classFCDAnimatedCustom_ad231a2f2902a351b29a171b3540823d9}{Resize} (const \hyperlink{classfm_1_1vector}{StringList} \&\hyperlink{classFCDAnimated_a02ab9175d25055cd2d10d924de312490}{qualifiers}=NULL, bool prependDot=true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA custom animated value. Used for animated extra elements. A single value is used multiple times to hold as many value pointers are necessary to hold the animation curves. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDAnimatedCustom_a4e15071aff5b34b08ca8c39754331225}{
+\index{FCDAnimatedCustom@{FCDAnimatedCustom}!FCDAnimatedCustom@{FCDAnimatedCustom}}
+\index{FCDAnimatedCustom@{FCDAnimatedCustom}!FCDAnimatedCustom@{FCDAnimatedCustom}}
+\subsubsection[{FCDAnimatedCustom}]{\setlength{\rightskip}{0pt plus 5cm}FCDAnimatedCustom::FCDAnimatedCustom (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDObject} $\ast$}]{ object}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDAnimatedCustom_a4e15071aff5b34b08ca8c39754331225}
+\mbox{[}INTERNAL\mbox{]} Don't build directly. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]The object that owns this animated value. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDAnimatedCustom_a2e53d1c7918e81312d507e6c196e778f}{
+\index{FCDAnimatedCustom@{FCDAnimatedCustom}!Copy@{Copy}}
+\index{Copy@{Copy}!FCDAnimatedCustom@{FCDAnimatedCustom}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimatedCustom::Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDAnimated} $\ast$}]{ copy}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDAnimatedCustom_a2e53d1c7918e81312d507e6c196e778f}
+\mbox{[}INTERNAL\mbox{]} Initialized a custom animated element from another animated element. The custom animated element will be resized to copy the given animated element. 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The animated element to copy. \end{DoxyParams}
+\hypertarget{classFCDAnimatedCustom_ac23677b9bcc764c90c2a2256c2665c6b}{
+\index{FCDAnimatedCustom@{FCDAnimatedCustom}!GetDummy@{GetDummy}}
+\index{GetDummy@{GetDummy}!FCDAnimatedCustom@{FCDAnimatedCustom}}
+\subsubsection[{GetDummy}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDAnimatedCustom::GetDummy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimatedCustom_ac23677b9bcc764c90c2a2256c2665c6b}
+Retrieves the floating-\/point value used for all the value pointers. \begin{DoxyReturn}{Returns}
+The dummy floating-\/point value. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimatedCustom_ae2e70908717bea35adcb50162066ee97}{
+\index{FCDAnimatedCustom@{FCDAnimatedCustom}!GetDummy@{GetDummy}}
+\index{GetDummy@{GetDummy}!FCDAnimatedCustom@{FCDAnimatedCustom}}
+\subsubsection[{GetDummy}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDAnimatedCustom::GetDummy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimatedCustom_ae2e70908717bea35adcb50162066ee97}
+See above. \hypertarget{classFCDAnimatedCustom_a22c9c44059742d2571f5d9bacf7c39ed}{
+\index{FCDAnimatedCustom@{FCDAnimatedCustom}!Resize@{Resize}}
+\index{Resize@{Resize}!FCDAnimatedCustom@{FCDAnimatedCustom}}
+\subsubsection[{Resize}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimatedCustom::Resize (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count, }
+\item[{const char $\ast$$\ast$}]{ qualifiers = {\ttfamily NULL}, }
+\item[{bool}]{ prependDot = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDAnimatedCustom_a22c9c44059742d2571f5d9bacf7c39ed}
+Resizes the wanted qualifiers. Using the \hyperlink{namespaceFUDaeAccessor}{FUDaeAccessor} types or the \hyperlink{namespaceFCDAnimatedStandardQualifiers}{FCDAnimatedStandardQualifiers} types is recommended. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The new size of the animated element. \item[{\em qualifiers}]The new qualifiers for the animated element. \item[{\em prependDot}]Whether to prepend the '.' character for all the qualifiers of the animated element. \end{DoxyParams}
+\hypertarget{classFCDAnimatedCustom_ad231a2f2902a351b29a171b3540823d9}{
+\index{FCDAnimatedCustom@{FCDAnimatedCustom}!Resize@{Resize}}
+\index{Resize@{Resize}!FCDAnimatedCustom@{FCDAnimatedCustom}}
+\subsubsection[{Resize}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimatedCustom::Resize (
+\begin{DoxyParamCaption}
+\item[{const {\bf StringList} \&}]{ qualifiers = {\ttfamily NULL}, }
+\item[{bool}]{ prependDot = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDAnimatedCustom_ad231a2f2902a351b29a171b3540823d9}
+Resizes the wanted qualifiers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em qualifiers}]The new qualifiers for the animated element. \item[{\em prependDot}]Whether to prepend the '.' character for all the qualifiers of the animated element. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDAnimated_8h}{FCDAnimated.h}\item 
+FCollada/FCDocument/FCDAnimated.cpp\end{DoxyCompactItemize}

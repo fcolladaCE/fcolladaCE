@@ -1,0 +1,210 @@
+\hypertarget{classFCDObject}{
+\section{FCDObject Class Reference}
+\label{classFCDObject}\index{FCDObject@{FCDObject}}
+}
+
+
+{\ttfamily \#include $<$FCDObject.h$>$}
+
+Inheritance diagram for FCDObject:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classFCDObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDObject_aca79d8d610d29be4d162e674ccb006f5}{DeclareFlag} (Transient, 0)
+\item 
+\hyperlink{classFCDObject_a86effe001056e7eb435a76852706857f}{DeclareFlag} (NewChild, 1)
+\item 
+\hyperlink{classFCDObject_a829bea1d332894b2f803754b8832a818}{DeclareFlagCount} (2)
+\item 
+\hyperlink{classFCDObject_abb787f16c30ad2788684869045a99dd6}{FCDObject} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDObject_afbb15500235ce725aa634128406fcd9d}{$\sim$FCDObject} ()
+\item 
+\hyperlink{classFCDocument}{FCDocument} $\ast$ \hyperlink{classFCDObject_a6c8a748e2691d69586ab87b46b01e072}{GetDocument} ()
+\item 
+const \hyperlink{classFCDocument}{FCDocument} $\ast$ \hyperlink{classFCDObject_aa2ff1f1ca238df9dfa5c633ae2e27dc1}{GetDocument} () const 
+\item 
+bool \hyperlink{classFCDObject_a00962a83267c742d2d5c37dba993c57b}{IsLocal} (const \hyperlink{classFCDObject}{FCDObject} $\ast$object) const 
+\item 
+bool \hyperlink{classFCDObject_a80b3ead3bd7925339fc704819b5a8cdf}{IsExternal} (const \hyperlink{classFCDObject}{FCDObject} $\ast$object) const 
+\item 
+void $\ast$ \hyperlink{classFCDObject_ab77b02a9672a50cfe041bac026a26ea7}{GetUserHandle} () const 
+\item 
+void \hyperlink{classFCDObject_a32714d741f0673992de087516a79b9e7}{SetUserHandle} (void $\ast$handle)
+\item 
+virtual void \hyperlink{classFCDObject_a26513baaf8b9a2996f9c050e4a7c16d8}{SetValueChange} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic COLLADA document object.
+
+All the objects owned by the COLLADA document derive from this class. The \hyperlink{classFCDocument}{FCDocument} object is accessible through this interface to all the object which it owns.
+
+Space for an handle which has no meaning to \hyperlink{namespaceFCollada}{FCollada} is available in this base class, for our users. You can therefore attach your own objects to most \hyperlink{namespaceFCollada}{FCollada} objects. If you assign memory buffers to the user-\/specified handle, be aware that \hyperlink{namespaceFCollada}{FCollada} will make no attempt to release it.
+
+32 flags are also available within this object. You can use the DeclareFlag and DeclareFlagCount macros to include flags within your custom classes. This object reverses the first four bits for its own flags: dirty, value changed, transient and new child.
+
+All \hyperlink{namespaceFCollada}{FCollada} objects should set the dirty flag when modifications are made to the objects, but \hyperlink{namespaceFCollada}{FCollada} will never reset it. This flag should be used by multi-\/tier applications. This flag defaults to 'true'. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDObject_abb787f16c30ad2788684869045a99dd6}{
+\index{FCDObject@{FCDObject}!FCDObject@{FCDObject}}
+\index{FCDObject@{FCDObject}!FCDObject@{FCDObject}}
+\subsubsection[{FCDObject}]{\setlength{\rightskip}{0pt plus 5cm}FCDObject::FCDObject (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDObject_abb787f16c30ad2788684869045a99dd6}
+Constructor: sets the COLLADA document object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document which owns this object. \end{DoxyParams}
+\hypertarget{classFCDObject_afbb15500235ce725aa634128406fcd9d}{
+\index{FCDObject@{FCDObject}!$\sim$FCDObject@{$\sim$FCDObject}}
+\index{$\sim$FCDObject@{$\sim$FCDObject}!FCDObject@{FCDObject}}
+\subsubsection[{$\sim$FCDObject}]{\setlength{\rightskip}{0pt plus 5cm}FCDObject::$\sim$FCDObject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDObject_afbb15500235ce725aa634128406fcd9d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDObject_aca79d8d610d29be4d162e674ccb006f5}{
+\index{FCDObject@{FCDObject}!DeclareFlag@{DeclareFlag}}
+\index{DeclareFlag@{DeclareFlag}!FCDObject@{FCDObject}}
+\subsubsection[{DeclareFlag}]{\setlength{\rightskip}{0pt plus 5cm}FCDObject::DeclareFlag (
+\begin{DoxyParamCaption}
+\item[{Transient}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDObject_aca79d8d610d29be4d162e674ccb006f5}
+Declare the flags to set various states available on an \hyperlink{classFCDObject}{FCDObject} Each Declare flag requires its local index. It is required to DeclareFlagCount, declaring the amount of flags specified locally \mbox{[}EXPERIMENTAL\mbox{]} This object exists for the application to use. This object should be not archived/saved. \hypertarget{classFCDObject_a86effe001056e7eb435a76852706857f}{
+\index{FCDObject@{FCDObject}!DeclareFlag@{DeclareFlag}}
+\index{DeclareFlag@{DeclareFlag}!FCDObject@{FCDObject}}
+\subsubsection[{DeclareFlag}]{\setlength{\rightskip}{0pt plus 5cm}FCDObject::DeclareFlag (
+\begin{DoxyParamCaption}
+\item[{NewChild}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDObject_a86effe001056e7eb435a76852706857f}
+\mbox{[}EXPERIMENTAL\mbox{]} A new child has been assigned to this object. Should be replaced by the StructureChanged flag in future versions. \hypertarget{classFCDObject_a829bea1d332894b2f803754b8832a818}{
+\index{FCDObject@{FCDObject}!DeclareFlagCount@{DeclareFlagCount}}
+\index{DeclareFlagCount@{DeclareFlagCount}!FCDObject@{FCDObject}}
+\subsubsection[{DeclareFlagCount}]{\setlength{\rightskip}{0pt plus 5cm}FCDObject::DeclareFlagCount (
+\begin{DoxyParamCaption}
+\item[{2}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDObject_a829bea1d332894b2f803754b8832a818}
+5 flags are locally declared. 
+
+Reimplemented in \hyperlink{classFCDAsset_a570cdb41df882da6b1870d1fc2a832c4}{FCDAsset}, \hyperlink{classFCDCamera_a4d7c2057f783fbb34201c94899b124f7}{FCDCamera}, \hyperlink{classFCDObjectWithId_a8289e2d57d75f2302effb07b0aee47f8}{FCDObjectWithId}, and \hyperlink{classFCDSceneNode_a014d704b3c4a43bd5a5031d0f09488ff}{FCDSceneNode}.
+
+\hypertarget{classFCDObject_a6c8a748e2691d69586ab87b46b01e072}{
+\index{FCDObject@{FCDObject}!GetDocument@{GetDocument}}
+\index{GetDocument@{GetDocument}!FCDObject@{FCDObject}}
+\subsubsection[{GetDocument}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDocument}$\ast$ FCDObject::GetDocument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDObject_a6c8a748e2691d69586ab87b46b01e072}
+Retrieves the COLLADA document which owns this object. \begin{DoxyReturn}{Returns}
+The COLLADA document. 
+\end{DoxyReturn}
+\hypertarget{classFCDObject_aa2ff1f1ca238df9dfa5c633ae2e27dc1}{
+\index{FCDObject@{FCDObject}!GetDocument@{GetDocument}}
+\index{GetDocument@{GetDocument}!FCDObject@{FCDObject}}
+\subsubsection[{GetDocument}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDocument}$\ast$ FCDObject::GetDocument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDObject_aa2ff1f1ca238df9dfa5c633ae2e27dc1}
+See above. \hypertarget{classFCDObject_ab77b02a9672a50cfe041bac026a26ea7}{
+\index{FCDObject@{FCDObject}!GetUserHandle@{GetUserHandle}}
+\index{GetUserHandle@{GetUserHandle}!FCDObject@{FCDObject}}
+\subsubsection[{GetUserHandle}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ FCDObject::GetUserHandle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDObject_ab77b02a9672a50cfe041bac026a26ea7}
+Retrieves the object's user-\/specified handle. This handle is available for users and has no meaning to \hyperlink{namespaceFCollada}{FCollada}. \begin{DoxyReturn}{Returns}
+The object user-\/specified handle. 
+\end{DoxyReturn}
+\hypertarget{classFCDObject_a80b3ead3bd7925339fc704819b5a8cdf}{
+\index{FCDObject@{FCDObject}!IsExternal@{IsExternal}}
+\index{IsExternal@{IsExternal}!FCDObject@{FCDObject}}
+\subsubsection[{IsExternal}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDObject::IsExternal (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDObject} $\ast$}]{ object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDObject_a80b3ead3bd7925339fc704819b5a8cdf}
+Retrieves whether a given object is an external reference from this object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]A data object. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether a reference from this object to the given object is external. 
+\end{DoxyReturn}
+\hypertarget{classFCDObject_a00962a83267c742d2d5c37dba993c57b}{
+\index{FCDObject@{FCDObject}!IsLocal@{IsLocal}}
+\index{IsLocal@{IsLocal}!FCDObject@{FCDObject}}
+\subsubsection[{IsLocal}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDObject::IsLocal (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDObject} $\ast$}]{ object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDObject_a00962a83267c742d2d5c37dba993c57b}
+Retrieves whether a given object is a local reference from this object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]A data object. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether a reference from this object to the given object is local. 
+\end{DoxyReturn}
+\hypertarget{classFCDObject_a32714d741f0673992de087516a79b9e7}{
+\index{FCDObject@{FCDObject}!SetUserHandle@{SetUserHandle}}
+\index{SetUserHandle@{SetUserHandle}!FCDObject@{FCDObject}}
+\subsubsection[{SetUserHandle}]{\setlength{\rightskip}{0pt plus 5cm}void FCDObject::SetUserHandle (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDObject_a32714d741f0673992de087516a79b9e7}
+Sets the object's user-\/specified handle. This handle is available for users and has no meaning to \hyperlink{namespaceFCollada}{FCollada}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em handle}]The user-\/specified handle. \end{DoxyParams}
+\hypertarget{classFCDObject_a26513baaf8b9a2996f9c050e4a7c16d8}{
+\index{FCDObject@{FCDObject}!SetValueChange@{SetValueChange}}
+\index{SetValueChange@{SetValueChange}!FCDObject@{FCDObject}}
+\subsubsection[{SetValueChange}]{\setlength{\rightskip}{0pt plus 5cm}virtual void FCDObject::SetValueChange (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDObject_a26513baaf8b9a2996f9c050e4a7c16d8}
+ValueChangedFlag override, this allows objects to react if necessary. 
+
+Reimplemented from \hyperlink{classFUParameterizable_af6fbf123f3488d0af7607aae8241aaf8}{FUParameterizable}.
+
+
+
+Reimplemented in \hyperlink{classFCDTransform_adb72479a86149a1f93a3dfdf84569b91}{FCDTransform}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDObject_8h}{FCDObject.h}\item 
+FCollada/FCDocument/FCDObject.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,448 @@
+\hypertarget{classFUError}{
+\section{FUError Class Reference}
+\label{classFUError}\index{FUError@{FUError}}
+}
+
+
+{\ttfamily \#include $<$FUError.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classFUError_adb409c35dc05786e6742818fc7643d7d}{Code} \{ \par
+{\bfseries ERROR\_\-DEFAULT\_\-ERROR} =  0, 
+{\bfseries ERROR\_\-MALFORMED\_\-XML}, 
+{\bfseries ERROR\_\-PARSING\_\-FAILED}, 
+{\bfseries ERROR\_\-INVALID\_\-ELEMENT}, 
+\par
+{\bfseries ERROR\_\-MISSING\_\-ELEMENT}, 
+{\bfseries ERROR\_\-UNKNOWN\_\-ELEMENT}, 
+{\bfseries ERROR\_\-MISSING\_\-INPUT}, 
+{\bfseries ERROR\_\-INVALID\_\-URI}, 
+\par
+{\bfseries ERROR\_\-WRITE\_\-FILE}, 
+{\bfseries ERROR\_\-MISSING\_\-PROPERTY}, 
+{\bfseries NO\_\-MATCHING\_\-PLUGIN}, 
+{\bfseries ERROR\_\-ANIM\_\-CURVE\_\-DRIVER\_\-MISSING}, 
+\par
+{\bfseries ERROR\_\-SOURCE\_\-SIZE}, 
+{\bfseries ERROR\_\-IB\_\-MATRIX\_\-MISSING}, 
+{\bfseries ERROR\_\-VCOUNT\_\-MISSING}, 
+{\bfseries ERROR\_\-V\_\-ELEMENT\_\-MISSING}, 
+\par
+{\bfseries ERROR\_\-JC\_\-BPMC\_\-NOT\_\-EQUAL}, 
+{\bfseries ERROR\_\-INVALID\_\-VCOUNT}, 
+{\bfseries ERROR\_\-PARSING\_\-PROG\_\-ERROR}, 
+{\bfseries ERROR\_\-UNKNOWN\_\-CHILD}, 
+\par
+{\bfseries ERROR\_\-UNKNOWN\_\-GEO\_\-CH}, 
+{\bfseries ERROR\_\-UNKNOWN\_\-MESH\_\-ID}, 
+{\bfseries ERROR\_\-INVALID\_\-U\_\-KNOT}, 
+{\bfseries ERROR\_\-INVALID\_\-V\_\-KNOT}, 
+\par
+{\bfseries ERROR\_\-NOT\_\-ENOUGHT\_\-V\_\-KNOT}, 
+{\bfseries ERROR\_\-NOT\_\-ENOUGHT\_\-U\_\-KNOT}, 
+{\bfseries ERROR\_\-INVALID\_\-CONTROL\_\-VERTICES}, 
+{\bfseries ERROR\_\-NO\_\-CONTROL\_\-VERTICES}, 
+\par
+{\bfseries ERROR\_\-UNKNOWN\_\-POLYGONS}, 
+{\bfseries WARNING\_\-NO\_\-POLYGON}, 
+{\bfseries ERROR\_\-NO\_\-VERTEX\_\-INPUT}, 
+{\bfseries ERROR\_\-NO\_\-VCOUNT}, 
+\par
+{\bfseries ERROR\_\-MISPLACED\_\-VCOUNT}, 
+{\bfseries ERROR\_\-UNKNOWN\_\-PH\_\-ELEMENT}, 
+{\bfseries ERROR\_\-INVALID\_\-FACE\_\-COUNT}, 
+{\bfseries ERROR\_\-DUPLICATE\_\-ID}, 
+\par
+{\bfseries ERROR\_\-INVALID\_\-CVS\_\-WEIGHTS}, 
+{\bfseries ERROR\_\-INVALID\_\-SPLINE}, 
+{\bfseries ERROR\_\-UNKNOWN\_\-EFFECT\_\-CODE}, 
+{\bfseries ERROR\_\-BAD\_\-FLOAT\_\-VALUE}, 
+\par
+{\bfseries ERROR\_\-BAD\_\-BOOLEAN\_\-VALUE}, 
+{\bfseries ERROR\_\-BAD\_\-FLOAT\_\-PARAM}, 
+{\bfseries ERROR\_\-BAD\_\-FLOAT\_\-PARAM2}, 
+{\bfseries ERROR\_\-BAD\_\-FLOAT\_\-PARAM3}, 
+\par
+{\bfseries ERROR\_\-BAD\_\-FLOAT\_\-PARAM4}, 
+{\bfseries ERROR\_\-BAD\_\-MATRIX}, 
+{\bfseries ERROR\_\-PROG\_\-NODE\_\-MISSING}, 
+{\bfseries ERROR\_\-INVALID\_\-TEXTURE\_\-SAMPLER}, 
+\par
+{\bfseries ERROR\_\-PARAM\_\-NODE\_\-MISSING}, 
+{\bfseries ERROR\_\-INVALID\_\-IMAGE\_\-FILENAME}, 
+{\bfseries ERROR\_\-UNKNOWN\_\-TEXTURE\_\-SAMPLER}, 
+{\bfseries ERROR\_\-COMMON\_\-TECHNIQUE\_\-MISSING}, 
+\par
+{\bfseries ERROR\_\-TECHNIQUE\_\-NODE\_\-MISSING}, 
+{\bfseries ERROR\_\-PHYSICS\_\-MODEL\_\-CYCLE\_\-DETECTED}, 
+{\bfseries ERROR\_\-MAX\_\-CANNOT\_\-RESIZE\_\-MUT\_\-LIST}, 
+{\bfseries WARNING\_\-UNSUPPORTED\_\-TEXTURE\_\-UVS}, 
+\par
+{\bfseries WARNING\_\-MISSING\_\-URI\_\-TARGET}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-CHILD\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-AC\_\-CHILD\_\-ELEMENT}, 
+{\bfseries WARNING\_\-BASE\_\-NODE\_\-TYPE}, 
+\par
+{\bfseries WARNING\_\-INST\_\-ENTITY\_\-MISSING}, 
+{\bfseries WARNING\_\-INVALID\_\-MATERIAL\_\-BINDING}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-MAT\_\-ID}, 
+{\bfseries WARNING\_\-RIGID\_\-CONSTRAINT\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-INVALID\_\-ANIM\_\-LIB}, 
+{\bfseries WARNING\_\-INVALID\_\-ANIM\_\-TARGET}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-ANIM\_\-LIB\_\-ELEMENT}, 
+{\bfseries WARNING\_\-INVALID\_\-SE\_\-PAIR}, 
+\par
+{\bfseries WARNING\_\-CURVES\_\-MISSING}, 
+{\bfseries WARNING\_\-EMPTY\_\-ANIM\_\-CLIP}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-CAM\_\-ELEMENT}, 
+{\bfseries WARNING\_\-NO\_\-STD\_\-PROG\_\-TYPE}, 
+\par
+{\bfseries WARNING\_\-PARAM\_\-ROOT\_\-MISSING}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-CAM\_\-PROG\_\-TYPE}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-CAM\_\-PARAM}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-LIGHT\_\-LIB\_\-ELEMENT}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-LIGHT\_\-TYPE\_\-VALUE}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-LT\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-LIGHT\_\-PROG\_\-PARAM}, 
+{\bfseries WARNING\_\-INVALID\_\-CONTROLLER\_\-LIB\_\-NODE}, 
+\par
+{\bfseries WARNING\_\-CONTROLLER\_\-TYPE\_\-CONFLICT}, 
+{\bfseries WARNING\_\-SM\_\-BASE\_\-MISSING}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-MC\_\-PROC\_\-METHOD}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-MC\_\-BASE\_\-TARGET\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-MORPH\_\-TARGET\_\-TYPE}, 
+{\bfseries WARNING\_\-TARGET\_\-GEOMETRY\_\-MISSING}, 
+{\bfseries WARNING\_\-CONTROLLER\_\-TARGET\_\-MISSING}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-SC\_\-VERTEX\_\-INPUT}, 
+\par
+{\bfseries WARNING\_\-INVALID\_\-TARGET\_\-GEOMETRY\_\-OP}, 
+{\bfseries WARNING\_\-INVALID\_\-JOINT\_\-INDEX}, 
+{\bfseries WARNING\_\-INVALID\_\-WEIGHT\_\-INDEX}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-JOINT}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-GL\_\-ELEMENT}, 
+{\bfseries WARNING\_\-EMPTY\_\-GEOMETRY}, 
+{\bfseries WARNING\_\-MESH\_\-VERTICES\_\-MISSING}, 
+{\bfseries WARNING\_\-VP\_\-INPUT\_\-NODE\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-GEOMETRY\_\-VERTICES\_\-MISSING}, 
+{\bfseries WARNING\_\-MESH\_\-TESSELLATION\_\-MISSING}, 
+{\bfseries WARNING\_\-INVALID\_\-POLYGON\_\-MAT\_\-SYMBOL}, 
+{\bfseries WARNING\_\-EXTRA\_\-VERTEX\_\-INPUT}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-POLYGONS\_\-INPUT}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-POLYGON\_\-CHILD}, 
+{\bfseries WARNING\_\-INVALID\_\-PRIMITIVE\_\-COUNT}, 
+{\bfseries WARNING\_\-INVALID\_\-GEOMETRY\_\-SOURCE\_\-ID}, 
+\par
+{\bfseries WARNING\_\-EMPTY\_\-SOURCE}, 
+{\bfseries WARNING\_\-EMPTY\_\-POLYGONS}, 
+{\bfseries WARNING\_\-SPLINE\_\-CONTROL\_\-INPUT\_\-MISSING}, 
+{\bfseries WARNING\_\-CONTROL\_\-VERTICES\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-VARYING\_\-SPLINE\_\-TYPE}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-EFFECT\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNSUPPORTED\_\-PROFILE}, 
+{\bfseries WARNING\_\-SID\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-INVALID\_\-ANNO\_\-TYPE}, 
+{\bfseries WARNING\_\-GEN\_\-REF\_\-ATTRIBUTE\_\-MISSING}, 
+{\bfseries WARNING\_\-MOD\_\-REF\_\-ATTRIBUTE\_\-MISSING}, 
+{\bfseries WARNING\_\-SAMPLER\_\-NODE\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-EMPTY\_\-SURFACE\_\-SOURCE}, 
+{\bfseries WARNING\_\-EMPTY\_\-INIT\_\-FROM}, 
+{\bfseries WARNING\_\-EMPTY\_\-IMAGE\_\-NAME}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-PASS\_\-ELEMENT}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-PASS\_\-SHADER\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNAMED\_\-EFFECT\_\-PASS\_\-SHADER}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-EPS\_\-STAGE}, 
+{\bfseries WARNING\_\-INVALID\_\-PROFILE\_\-INPUT\_\-NODE}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-STD\_\-MAT\_\-BASE\_\-ELEMENT}, 
+{\bfseries WARNING\_\-TECHNIQUE\_\-MISSING}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-MAT\_\-INPUT\_\-SEMANTIC}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-INPUT\_\-TEXTURE}, 
+\par
+{\bfseries WARNING\_\-UNSUPPORTED\_\-SHADER\_\-TYPE}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-MAT\_\-PARAM\_\-NAME}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-TECHNIQUE\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-IMAGE\_\-LIB\_\-ELEMENT}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-TEX\_\-LIB\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-CHANNEL\_\-USAGE}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-INPUTE\_\-SEMANTIC}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-IMAGE\_\-SOURCE}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-MAT\_\-LIB\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNSUPPORTED\_\-REF\_\-EFFECTS}, 
+{\bfseries WARNING\_\-EMPTY\_\-INSTANCE\_\-EFFECT}, 
+{\bfseries WARNING\_\-EFFECT\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-FORCE\_\-FIELD\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-ELEMENT}, 
+{\bfseries WARNING\_\-INVALID\_\-BOX\_\-TYPE}, 
+{\bfseries WARNING\_\-INVALID\_\-PLANE\_\-TYPE}, 
+\par
+{\bfseries WARNING\_\-INVALID\_\-SPHERE\_\-TYPE}, 
+{\bfseries WARNING\_\-INVALID\_\-CAPSULE\_\-TYPE}, 
+{\bfseries WARNING\_\-INVALID\_\-TCAPSULE\_\-TYPE}, 
+{\bfseries WARNING\_\-INVALID\_\-TCYLINDER\_\-TYPE}, 
+\par
+{\bfseries WARNING\_\-UNKNOWN\_\-PHYS\_\-MAT\_\-LIB\_\-ELEMENT}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-PHYS\_\-LIB\_\-ELEMENT}, 
+{\bfseries WARNING\_\-CORRUPTED\_\-INSTANCE}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-PRB\_\-LIB\_\-ELEMENT}, 
+\par
+{\bfseries WARNING\_\-PHYS\_\-MAT\_\-INST\_\-MISSING}, 
+{\bfseries WARNING\_\-PHYS\_\-MAT\_\-DEF\_\-MISSING}, 
+{\bfseries WARNING\_\-UNKNOWN\_\-RGC\_\-LIB\_\-ELEMENT}, 
+{\bfseries WARNING\_\-INVALID\_\-NODE\_\-TRANSFORM}, 
+\par
+{\bfseries WARNING\_\-RF\_\-NODE\_\-MISSING}, 
+{\bfseries WARNING\_\-RF\_\-REF\_\-NODE\_\-MISSING}, 
+{\bfseries WARNING\_\-TARGET\_\-BS\_\-NODE\_\-MISSING}, 
+{\bfseries WARNING\_\-TARGE\_\-BS\_\-REF\_\-NODE\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-UNKNOW\_\-PS\_\-LIB\_\-ELEMENT}, 
+{\bfseries WARNING\_\-FCDGEOMETRY\_\-INST\_\-MISSING}, 
+{\bfseries WARNING\_\-INVALID\_\-SHAPE\_\-NODE}, 
+{\bfseries WARNING\_\-SHAPE\_\-NODE\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-UNKNOW\_\-NODE\_\-ELEMENT\_\-TYPE}, 
+{\bfseries WARNING\_\-CYCLE\_\-DETECTED}, 
+{\bfseries WARNING\_\-INVALID\_\-NODE\_\-INST}, 
+{\bfseries WARNING\_\-INVALID\_\-WEAK\_\-NODE\_\-INST}, 
+\par
+{\bfseries WARNING\_\-UNSUPPORTED\_\-EXTERN\_\-REF}, 
+{\bfseries WARNING\_\-UNEXPECTED\_\-ASSET}, 
+{\bfseries WARNING\_\-INVALID\_\-TRANSFORM}, 
+{\bfseries WARNING\_\-TARGET\_\-SCENE\_\-NODE\_\-MISSING}, 
+\par
+{\bfseries WARNING\_\-UNSUPPORTED\_\-EXTERN\_\-REF\_\-NODE}, 
+{\bfseries WARNING\_\-XREF\_\-UNASSIGNED}, 
+{\bfseries WARNING\_\-MASS\_\-AND\_\-DENSITY\_\-MISSING}, 
+{\bfseries DEBUG\_\-LOAD\_\-SUCCESSFUL}, 
+\par
+{\bfseries DEBUG\_\-WRITE\_\-SUCCESSFUL}, 
+{\bfseries ERROR\_\-CUSTOM\_\-STRING} =  5000
+ \}
+\item 
+enum \hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{Level} \{ {\bfseries DEBUG\_\-LEVEL} =  0, 
+{\bfseries WARNING\_\-LEVEL} =  1, 
+{\bfseries ERROR\_\-LEVEL} =  2, 
+{\bfseries LEVEL\_\-COUNT}
+ \}
+\item 
+typedef \hyperlink{classIFunctor3}{IFunctor3}$<$ \hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level}, uint32, uint32, void $>$ \hyperlink{classFUError_af681c10c56bca8c0ca09d2a996a85b4b}{FUErrorFunctor}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classFUError_a9110b516618c009f9d7385b9be5f5aec}{Error} (\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} errorLevel, uint32 errorCode, uint32 line=0)
+\item 
+static void \hyperlink{classFUError_abfccbf69fc3aab1c0c93d734d835f239}{AddErrorCallback} (\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} errorLevel, \hyperlink{classIFunctor3}{FUErrorFunctor} $\ast$callback)
+\item 
+{\footnotesize template$<$class Class $>$ }\\static void \hyperlink{classFUError_af997111fb6cfdb5a0aab1ecaf1252e8e}{AddErrorCallback} (\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} errorLevel, Class $\ast$handle, void(Class::$\ast$\_\-function)(\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level}, uint32, uint32))
+\item 
+static void \hyperlink{classFUError_a03947f8a2510b8bfef8e93e67892d12d}{AddErrorCallback} (\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} errorLevel, void($\ast$\_\-function)(\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level}, uint32, uint32))
+\item 
+static void \hyperlink{classFUError_aa3de1b87525cf37fb279b20164429a76}{RemoveErrorCallback} (\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} errorLevel, void $\ast$object, void $\ast$function)
+\item 
+{\footnotesize template$<$class Class $>$ }\\static void \hyperlink{classFUError_a80c5c18c086f567648f00c0b4ab8c74f}{RemoveErrorCallback} (\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} errorLevel, Class $\ast$handle, void(Class::$\ast$\_\-function)(\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level}, uint32, uint32))
+\item 
+static void \hyperlink{classFUError_a96ca4bf271028a7956c71d4d1af72911}{RemoveErrorCallback} (\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} errorLevel, void($\ast$\_\-function)(\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level}, uint32, uint32))
+\item 
+static const char $\ast$ \hyperlink{classFUError_a234f541a90298631a0cf8180513aed3d}{GetErrorString} (\hyperlink{classFUError_adb409c35dc05786e6742818fc7643d7d}{FUError::Code} errorCode)
+\item 
+static void \hyperlink{classFUError_a4a3b8a2c8f75bcdc5fcbc064386bab6c}{SetCustomErrorString} (const char $\ast$customErrorString)
+\item 
+static \hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} \hyperlink{classFUError_a2362a05e0d3722c056cef1409712aa0a}{GetFatalityLevel} ()
+\item 
+static void \hyperlink{classFUError_a4fba4a813a0a10357f4415fb38bfd8d5}{SetFatalityLevel} (\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} \_\-fatalLevel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Windows API defines this. This class deals with error message generated by \hyperlink{namespaceFCollada}{FCollada}. The constructor and the destructor are private: this class is meant to be used as a namespace. All error handler is wrapped around a critical section to work correctly in a multi-\/threaded environment. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classFUError_af681c10c56bca8c0ca09d2a996a85b4b}{
+\index{FUError@{FUError}!FUErrorFunctor@{FUErrorFunctor}}
+\index{FUErrorFunctor@{FUErrorFunctor}!FUError@{FUError}}
+\subsubsection[{FUErrorFunctor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf IFunctor3}$<${\bf FUError::Level}, uint32, uint32, void$>$ {\bf FUError::FUErrorFunctor}}}
+\label{classFUError_af681c10c56bca8c0ca09d2a996a85b4b}
+Callback functor definition. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classFUError_adb409c35dc05786e6742818fc7643d7d}{
+\index{FUError@{FUError}!Code@{Code}}
+\index{Code@{Code}!FUError@{FUError}}
+\subsubsection[{Code}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUError::Code}}}
+\label{classFUError_adb409c35dc05786e6742818fc7643d7d}
+Error code used to retrieve localized error message. \hypertarget{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{
+\index{FUError@{FUError}!Level@{Level}}
+\index{Level@{Level}!FUError@{FUError}}
+\subsubsection[{Level}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUError::Level}}}
+\label{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}
+Error level defines supported error message levels in \hyperlink{namespaceFCollada}{FCollada} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUError_abfccbf69fc3aab1c0c93d734d835f239}{
+\index{FUError@{FUError}!AddErrorCallback@{AddErrorCallback}}
+\index{AddErrorCallback@{AddErrorCallback}!FUError@{FUError}}
+\subsubsection[{AddErrorCallback}]{\setlength{\rightskip}{0pt plus 5cm}void FUError::AddErrorCallback (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Level}}]{ errorLevel, }
+\item[{{\bf FUError::FUErrorFunctor} $\ast$}]{ callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFUError_abfccbf69fc3aab1c0c93d734d835f239}
+Add callback for error messages. 
+\begin{DoxyParams}{Parameters}
+\item[{\em errorLevel}]The error level whose callback is to be set. \item[{\em callback}]Callback to be called when \hyperlink{namespaceFCollada}{FCollada} generates error message. \end{DoxyParams}
+\hypertarget{classFUError_a03947f8a2510b8bfef8e93e67892d12d}{
+\index{FUError@{FUError}!AddErrorCallback@{AddErrorCallback}}
+\index{AddErrorCallback@{AddErrorCallback}!FUError@{FUError}}
+\subsubsection[{AddErrorCallback}]{\setlength{\rightskip}{0pt plus 5cm}static void FUError::AddErrorCallback (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Level}}]{ errorLevel, }
+\item[{void($\ast$)({\bf FUError::Level}, uint32, uint32)}]{ \_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classFUError_a03947f8a2510b8bfef8e93e67892d12d}
+Adds a new callback that handles the event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em errorLevel}]The error level whose callback is to be set. \item[{\em \_\-function}]The static function to callback. \end{DoxyParams}
+\hypertarget{classFUError_af997111fb6cfdb5a0aab1ecaf1252e8e}{
+\index{FUError@{FUError}!AddErrorCallback@{AddErrorCallback}}
+\index{AddErrorCallback@{AddErrorCallback}!FUError@{FUError}}
+\subsubsection[{AddErrorCallback}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class $>$ static void FUError::AddErrorCallback (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Level}}]{ errorLevel, }
+\item[{Class $\ast$}]{ handle, }
+\item[{void(Class::$\ast$)({\bf FUError::Level}, uint32, uint32)}]{ \_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classFUError_af997111fb6cfdb5a0aab1ecaf1252e8e}
+Adds a new callback that handles the event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em errorLevel}]The error level whose callback is to be set. \item[{\em handle}]The object that contains the member function. \item[{\em \_\-function}]The member function to callback. \end{DoxyParams}
+\hypertarget{classFUError_a9110b516618c009f9d7385b9be5f5aec}{
+\index{FUError@{FUError}!Error@{Error}}
+\index{Error@{Error}!FUError@{FUError}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}bool FUError::Error (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Level}}]{ errorLevel, }
+\item[{uint32}]{ errorCode, }
+\item[{uint32}]{ line = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFUError_a9110b516618c009f9d7385b9be5f5aec}
+Logs and error message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em errorLevel}]The error level of this error. Different callback is called for corresponding error level. \item[{\em errorCode}]The error code for the error message \item[{\em line}]The line number to indicate where the error has occured \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the error is non-\/fatal. 
+\end{DoxyReturn}
+\hypertarget{classFUError_a234f541a90298631a0cf8180513aed3d}{
+\index{FUError@{FUError}!GetErrorString@{GetErrorString}}
+\index{GetErrorString@{GetErrorString}!FUError@{FUError}}
+\subsubsection[{GetErrorString}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ FUError::GetErrorString (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Code}}]{ errorCode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFUError_a234f541a90298631a0cf8180513aed3d}
+Retrieves the string description of the error code 
+\begin{DoxyParams}{Parameters}
+\item[{\em errorCode}]The error code whose string description is to be obtained.  The string description in raw pointer to array of characters. \end{DoxyParams}
+\hypertarget{classFUError_a2362a05e0d3722c056cef1409712aa0a}{
+\index{FUError@{FUError}!GetFatalityLevel@{GetFatalityLevel}}
+\index{GetFatalityLevel@{GetFatalityLevel}!FUError@{FUError}}
+\subsubsection[{GetFatalityLevel}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf FUError::Level} FUError::GetFatalityLevel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classFUError_a2362a05e0d3722c056cef1409712aa0a}
+Retrieves the level at which errors are considered fatal. \begin{DoxyReturn}{Returns}
+The fatality level. 
+\end{DoxyReturn}
+\hypertarget{classFUError_a80c5c18c086f567648f00c0b4ab8c74f}{
+\index{FUError@{FUError}!RemoveErrorCallback@{RemoveErrorCallback}}
+\index{RemoveErrorCallback@{RemoveErrorCallback}!FUError@{FUError}}
+\subsubsection[{RemoveErrorCallback}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class $>$ static void FUError::RemoveErrorCallback (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Level}}]{ errorLevel, }
+\item[{Class $\ast$}]{ handle, }
+\item[{void(Class::$\ast$)({\bf FUError::Level}, uint32, uint32)}]{ \_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classFUError_a80c5c18c086f567648f00c0b4ab8c74f}
+Removes and releases a callback for error messages. 
+\begin{DoxyParams}{Parameters}
+\item[{\em errorLevel}]The error level whose callback is to be removed. @param handle The object that contains the member function. \item[{\em \_\-function}]The member function callback to unregister. \end{DoxyParams}
+\hypertarget{classFUError_a96ca4bf271028a7956c71d4d1af72911}{
+\index{FUError@{FUError}!RemoveErrorCallback@{RemoveErrorCallback}}
+\index{RemoveErrorCallback@{RemoveErrorCallback}!FUError@{FUError}}
+\subsubsection[{RemoveErrorCallback}]{\setlength{\rightskip}{0pt plus 5cm}static void FUError::RemoveErrorCallback (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Level}}]{ errorLevel, }
+\item[{void($\ast$)({\bf FUError::Level}, uint32, uint32)}]{ \_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classFUError_a96ca4bf271028a7956c71d4d1af72911}
+Removes and releases a static callback for error messages. 
+\begin{DoxyParams}{Parameters}
+\item[{\em errorLevel}]The error level whose callback is to be removed. @param \_\-function The static function callback to unregister. \end{DoxyParams}
+\hypertarget{classFUError_aa3de1b87525cf37fb279b20164429a76}{
+\index{FUError@{FUError}!RemoveErrorCallback@{RemoveErrorCallback}}
+\index{RemoveErrorCallback@{RemoveErrorCallback}!FUError@{FUError}}
+\subsubsection[{RemoveErrorCallback}]{\setlength{\rightskip}{0pt plus 5cm}void FUError::RemoveErrorCallback (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Level}}]{ errorLevel, }
+\item[{void $\ast$}]{ object, }
+\item[{void $\ast$}]{ function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFUError_aa3de1b87525cf37fb279b20164429a76}
+Removes and releases a callback for error messages. 
+\begin{DoxyParams}{Parameters}
+\item[{\em errorLevel}]The error level whose callback is to be removed. \item[{\em object}]The object that contains the callback. \item[{\em function}]Callback that was registered to be called when \hyperlink{namespaceFCollada}{FCollada} generates error message. \end{DoxyParams}
+\hypertarget{classFUError_a4a3b8a2c8f75bcdc5fcbc064386bab6c}{
+\index{FUError@{FUError}!SetCustomErrorString@{SetCustomErrorString}}
+\index{SetCustomErrorString@{SetCustomErrorString}!FUError@{FUError}}
+\subsubsection[{SetCustomErrorString}]{\setlength{\rightskip}{0pt plus 5cm}void FUError::SetCustomErrorString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ customErrorString}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFUError_a4a3b8a2c8f75bcdc5fcbc064386bab6c}
+Sets the error string for the custom error (ERROR\_\-CUSTOM\_\-STRING) Used mainly for the \hyperlink{classFUDebug}{FUDebug} structure. We encourage applications to also use it in conjunction with the \hyperlink{classFUErrorLog}{FUErrorLog} class. 
+\begin{DoxyParams}{Parameters}
+\item[{\em customErrorString.}]\end{DoxyParams}
+\hypertarget{classFUError_a4fba4a813a0a10357f4415fb38bfd8d5}{
+\index{FUError@{FUError}!SetFatalityLevel@{SetFatalityLevel}}
+\index{SetFatalityLevel@{SetFatalityLevel}!FUError@{FUError}}
+\subsubsection[{SetFatalityLevel}]{\setlength{\rightskip}{0pt plus 5cm}static void FUError::SetFatalityLevel (
+\begin{DoxyParamCaption}
+\item[{{\bf FUError::Level}}]{ \_\-fatalLevel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classFUError_a4fba4a813a0a10357f4415fb38bfd8d5}
+Sets the level at which errors will cancel the processing of a COLLADA document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-fatalLevel}]The fatality level. Is it highly recommended to leave this value at 'FUErrorERROR\_\-LEVEL'. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUError_8h}{FUError.h}\item 
+FCollada/FUtils/FUError.cpp\end{DoxyCompactItemize}

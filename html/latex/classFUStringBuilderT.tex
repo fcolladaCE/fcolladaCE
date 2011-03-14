@@ -1,0 +1,577 @@
+\hypertarget{classFUStringBuilderT}{
+\section{FUStringBuilderT$<$ Char $>$ Class Template Reference}
+\label{classFUStringBuilderT}\index{FUStringBuilderT@{FUStringBuilderT}}
+}
+
+
+{\ttfamily \#include $<$FUStringBuilder.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classfm_1_1stringT}{fm::stringT}$<$ Char $>$ \hyperlink{classFUStringBuilderT_a2e14969ddb2b31c67625cb3b721d36c0}{String}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUStringBuilderT_a91f7ece52aa74e753f4b6062fa5e8b86}{FUStringBuilderT} (const \hyperlink{classfm_1_1stringT}{String} \&sz)
+\item 
+\hyperlink{classFUStringBuilderT_afa5973392532db8eeb34bb3a3e7d05b7}{FUStringBuilderT} (const Char $\ast$sz)
+\item 
+\hyperlink{classFUStringBuilderT_abe37ba1c75915d13b45acd8da4e7f635}{FUStringBuilderT} (Char ch, size\_\-t count)
+\item 
+\hyperlink{classFUStringBuilderT_a5e9d1bc5be1082bf90a938162ad6a884}{FUStringBuilderT} (size\_\-t reserved)
+\item 
+\hyperlink{classFUStringBuilderT_a00171f846b560f6aeb8dfdeba64f8a80}{FUStringBuilderT} ()
+\item 
+\hyperlink{classFUStringBuilderT_a361e0a5d63664f81da9b05398744d6fc}{$\sim$FUStringBuilderT} ()
+\item 
+void \hyperlink{classFUStringBuilderT_a7b5318f7e8d9141c872d598486cca38a}{reserve} (size\_\-t length)
+\item 
+size\_\-t \hyperlink{classFUStringBuilderT_a5355e1bb17d7a1289fda368791f9bc65}{length} ()
+\item 
+void \hyperlink{classFUStringBuilderT_ac96aef7b03a2422724cec6dc25045685}{clear} ()
+\item 
+bool \hyperlink{classFUStringBuilderT_af5b84ae04c1472ef5a83a6dfc4743622}{empty} () const 
+\item 
+void \hyperlink{classFUStringBuilderT_af33b4c42583e46843d6a59bdc223d256}{append} (Char c)
+\item 
+void \hyperlink{classFUStringBuilderT_a4cd340250d45997ba2647b06073a09cd}{append} (const \hyperlink{classfm_1_1stringT}{String} \&sz)
+\item 
+void \hyperlink{classFUStringBuilderT_a93fa36e1388dbb2947195f93dcf5fe6d}{append} (const Char $\ast$sz)
+\item 
+void \hyperlink{classFUStringBuilderT_a312b24a1809d3837304c3db9993454a3}{append} (const Char $\ast$sz, size\_\-t len)
+\item 
+void \hyperlink{classFUStringBuilderT_a4b79b3acdf1974ba46b53f158b3241d8}{append} (const \hyperlink{classFUStringBuilderT}{FUStringBuilderT} \&b)
+\item 
+void \hyperlink{classFUStringBuilderT_a9f6cb1cc412a4f668aa4f13c96e3123f}{append} (const int32 i)
+\item 
+void \hyperlink{classFUStringBuilderT_a1a16bb77d7263cf01c2c1a830486ea65}{append} (const uint32 i)
+\item 
+void \hyperlink{classFUStringBuilderT_a8bb9b4972083b2ed3f8e468e08433f00}{append} (const uint64 i)
+\item 
+void \hyperlink{classFUStringBuilderT_a79b11382b7de987fcd39dd3e5e1c46df}{appendHex} (uint8 i)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classFUStringBuilderT_a0161b2dbfccbb2bdd9b6dff22d36cbe4}{appendHex} (const T \&i)
+\item 
+void \hyperlink{classFUStringBuilderT_a5a7e03af7f6bba4b7ac6bf80578b6c60}{append} (unsigned long i)
+\item 
+void \hyperlink{classFUStringBuilderT_a4f3055b60d9c69e3bebdddd15e1d9944}{append} (long i)
+\item 
+void \hyperlink{classFUStringBuilderT_a76bfc61012979ee1a8d35ec620eb1565}{append} (float f)
+\item 
+void \hyperlink{classFUStringBuilderT_ad7d3c928169a05d84ed0d0018a81605c}{append} (double f)
+\item 
+void \hyperlink{classFUStringBuilderT_a0b3ed525e7d516e0fbe3de41af5aeca4}{append} (const \hyperlink{classFMVector2}{FMVector2} \&v)
+\item 
+void \hyperlink{classFUStringBuilderT_a494dcb8522bb0512f71bde1fea45fdcc}{append} (const \hyperlink{classFMVector3}{FMVector3} \&v)
+\item 
+void \hyperlink{classFUStringBuilderT_ac031ffc7004c46f3c3a0ec0799733e75}{append} (const \hyperlink{classFMVector4}{FMVector4} \&v)
+\item 
+{\footnotesize template$<$typename TYPE $>$ }\\\hyperlink{classFUStringBuilderT}{FUStringBuilderT} \& \hyperlink{classFUStringBuilderT_ab721552d7de380e056fd7bf0eb4005dd}{operator+=} (const TYPE \&val)
+\item 
+void \hyperlink{classFUStringBuilderT_a97010c6e8578f54c69e3b63f86f0a22f}{appendLine} (const Char $\ast$sz)
+\item 
+void \hyperlink{classFUStringBuilderT_a4c9b7d5e462ef7e71e789de3e6c602ea}{remove} (int32 start)
+\item 
+void \hyperlink{classFUStringBuilderT_afe012eb9649bab74ad823f2cfc8e8482}{remove} (int32 start, int32 end)
+\item 
+void \hyperlink{classFUStringBuilderT_a3ad0d96a574dd270bc8c0308ab54dd17}{pop\_\-back} ()
+\item 
+{\footnotesize template$<$typename TYPE $>$ }\\void \hyperlink{classFUStringBuilderT_aeabb270f37052f15eb733d15a69e49dc}{set} (const TYPE \&val)
+\item 
+{\footnotesize template$<$typename TYPE $>$ }\\\hyperlink{classFUStringBuilderT}{FUStringBuilderT} \& \hyperlink{classFUStringBuilderT_a7795fa3b99f62378fc69f7487d8de878}{operator=} (const TYPE \&val)
+\item 
+\hyperlink{classfm_1_1stringT}{String} \hyperlink{classFUStringBuilderT_a34ae55c7b7b7fcf4f08e734852680c22}{ToString} () const 
+\item 
+const Char $\ast$ \hyperlink{classFUStringBuilderT_a8b1dfaf8fd3a994c6a6188c53d209867}{ToCharPtr} () const 
+\item 
+\hyperlink{classFUStringBuilderT_ad7f5199bf848c011bb7879653bfc783c}{operator const Char $\ast$} () const 
+\item 
+int32 \hyperlink{classFUStringBuilderT_a5e9eb78dce319fc878d4ad3a932aff8a}{index} (Char c) const 
+\item 
+int32 \hyperlink{classFUStringBuilderT_ad3b62c0467b20a859c25bc5acd1949c9}{rindex} (Char c) const 
+\item 
+Char \hyperlink{classFUStringBuilderT_ae9c746ac5c0dc87b84ee53e51c1ab683}{back} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Char$>$ class FUStringBuilderT$<$ Char $>$}
+
+A dynamically-\/sized string object. The template has two arguments: the character definition and the sprintf() functor class for float to string conversions.
+
+This class should be used for all the string operations, as it contains a dynamically-\/resized buffer that is not directly tied to its content's length. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classFUStringBuilderT_a2e14969ddb2b31c67625cb3b721d36c0}{
+\index{FUStringBuilderT@{FUStringBuilderT}!String@{String}}
+\index{String@{String}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ typedef {\bf fm::stringT}$<$Char$>$ {\bf FUStringBuilderT}$<$ Char $>$::{\bf String}}}
+\label{classFUStringBuilderT_a2e14969ddb2b31c67625cb3b721d36c0}
+The standard string object which correspond to the builder. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUStringBuilderT_a91f7ece52aa74e753f4b6062fa5e8b86}{
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{FUStringBuilderT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char $>$ {\bf FUStringBuilderT}$<$ Char $>$::{\bf FUStringBuilderT} (
+\begin{DoxyParamCaption}
+\item[{const {\bf String} \&}]{ sz}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a91f7ece52aa74e753f4b6062fa5e8b86}
+Creates a new builder with the content of the given string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sz}]A string. Its content will be copied within the builder. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_afa5973392532db8eeb34bb3a3e7d05b7}{
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{FUStringBuilderT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ {\bf FUStringBuilderT}$<$ Char $>$::{\bf FUStringBuilderT} (
+\begin{DoxyParamCaption}
+\item[{const Char $\ast$}]{ sz}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_afa5973392532db8eeb34bb3a3e7d05b7}
+Creates a new builder with the content of the given character array. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sz}]A character array. Its content will be copied within the builder. It must terminate with an element containing the 'zero' value. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_abe37ba1c75915d13b45acd8da4e7f635}{
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{FUStringBuilderT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ {\bf FUStringBuilderT}$<$ Char $>$::{\bf FUStringBuilderT} (
+\begin{DoxyParamCaption}
+\item[{Char}]{ ch, }
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_abe37ba1c75915d13b45acd8da4e7f635}
+Creates a new builder with the given character repeated multiple times over the array. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ch}]A character to repeat. \item[{\em count}]The number of times to repeat the given character. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a5e9d1bc5be1082bf90a938162ad6a884}{
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{FUStringBuilderT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ {\bf FUStringBuilderT}$<$ Char $>$::{\bf FUStringBuilderT} (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ reserved}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a5e9d1bc5be1082bf90a938162ad6a884}
+Creates a new builder with an empty buffer. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFUStringBuilderT_a7b5318f7e8d9141c872d598486cca38a}{reserve} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em reserved}]The number of character slots to reserve within the empty buffer. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a00171f846b560f6aeb8dfdeba64f8a80}{
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\index{FUStringBuilderT@{FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{FUStringBuilderT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ {\bf FUStringBuilderT}$<$ Char $>$::{\bf FUStringBuilderT} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a00171f846b560f6aeb8dfdeba64f8a80}
+Creates a new builder with an empty buffer. \hypertarget{classFUStringBuilderT_a361e0a5d63664f81da9b05398744d6fc}{
+\index{FUStringBuilderT@{FUStringBuilderT}!$\sim$FUStringBuilderT@{$\sim$FUStringBuilderT}}
+\index{$\sim$FUStringBuilderT@{$\sim$FUStringBuilderT}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{$\sim$FUStringBuilderT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char $>$ {\bf FUStringBuilderT}$<$ Char $>$::$\sim${\bf FUStringBuilderT} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a361e0a5d63664f81da9b05398744d6fc}
+Deletes the builder. Its buffer will be cleared. Any pointers to its data will be dangling. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUStringBuilderT_af33b4c42583e46843d6a59bdc223d256}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{Char}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_af33b4c42583e46843d6a59bdc223d256}
+Appends a character to the content of the builder. 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]A character. May not be the 'zero' value. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a312b24a1809d3837304c3db9993454a3}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{const Char $\ast$}]{ sz, }
+\item[{size\_\-t}]{ len}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a312b24a1809d3837304c3db9993454a3}
+Appends a character array to the content of the builder. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sz}]A character array. It should not contain any 'zero' characters before 'len' \item[{\em len}]The number of characters to read from sz. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a4b79b3acdf1974ba46b53f158b3241d8}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUStringBuilderT}$<$ Char $>$ \&}]{ b}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a4b79b3acdf1974ba46b53f158b3241d8}
+Appends the content of a builder to the content of this builder. 
+\begin{DoxyParams}{Parameters}
+\item[{\em b}]A string builder. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a4f3055b60d9c69e3bebdddd15e1d9944}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{long}]{ i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_a4f3055b60d9c69e3bebdddd15e1d9944}
+See above. \hypertarget{classFUStringBuilderT_a76bfc61012979ee1a8d35ec620eb1565}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{float}]{ f}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a76bfc61012979ee1a8d35ec620eb1565}
+Appends the floating-\/point value, after converting it to a string, to the content of the builder. If the floating-\/point value is the special token that represents infinity, the string \char`\"{}INF\char`\"{} is appended. If it represents the negative infinity, the string \char`\"{}-\/INF\char`\"{} is appended. If it represents the impossibility, the string \char`\"{}NaN\char`\"{} is appended. 
+\begin{DoxyParams}{Parameters}
+\item[{\em f}]A floating-\/point value. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_ad7d3c928169a05d84ed0d0018a81605c}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{double}]{ f}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_ad7d3c928169a05d84ed0d0018a81605c}
+See above. \hypertarget{classFUStringBuilderT_a0b3ed525e7d516e0fbe3de41af5aeca4}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector2} \&}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a0b3ed525e7d516e0fbe3de41af5aeca4}
+Appends a vector to the content of the builder. 
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]A vector. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a9f6cb1cc412a4f668aa4f13c96e3123f}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}void FUStringBuilder::append (
+\begin{DoxyParamCaption}
+\item[{const int32}]{ i}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a9f6cb1cc412a4f668aa4f13c96e3123f}
+Appends the integer value, after converting it to a string, to the content of the builder. 
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]An integer value. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a494dcb8522bb0512f71bde1fea45fdcc}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a494dcb8522bb0512f71bde1fea45fdcc}
+See above. \hypertarget{classFUStringBuilderT_ac031ffc7004c46f3c3a0ec0799733e75}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_ac031ffc7004c46f3c3a0ec0799733e75}
+See above. \hypertarget{classFUStringBuilderT_a1a16bb77d7263cf01c2c1a830486ea65}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}void FUStringBuilder::append (
+\begin{DoxyParamCaption}
+\item[{const uint32}]{ i}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a1a16bb77d7263cf01c2c1a830486ea65}
+See above. \hypertarget{classFUStringBuilderT_a4cd340250d45997ba2647b06073a09cd}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{const {\bf String} \&}]{ sz}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a4cd340250d45997ba2647b06073a09cd}
+Appends a string to the content of the builder. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sz}]A string. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a8bb9b4972083b2ed3f8e468e08433f00}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}void FUStringBuilder::append (
+\begin{DoxyParamCaption}
+\item[{const uint64}]{ i}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a8bb9b4972083b2ed3f8e468e08433f00}
+See above. \hypertarget{classFUStringBuilderT_a93fa36e1388dbb2947195f93dcf5fe6d}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{const Char $\ast$}]{ sz}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a93fa36e1388dbb2947195f93dcf5fe6d}
+Appends a character array to the content of the builder. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sz}]A character array. It must terminate with an element containing the 'zero' value. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a5a7e03af7f6bba4b7ac6bf80578b6c60}{
+\index{FUStringBuilderT@{FUStringBuilderT}!append@{append}}
+\index{append@{append}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::append (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{ i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_a5a7e03af7f6bba4b7ac6bf80578b6c60}
+See above. \hypertarget{classFUStringBuilderT_a79b11382b7de987fcd39dd3e5e1c46df}{
+\index{FUStringBuilderT@{FUStringBuilderT}!appendHex@{appendHex}}
+\index{appendHex@{appendHex}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{appendHex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char $>$ void {\bf FUStringBuilderT}$<$ Char $>$::appendHex (
+\begin{DoxyParamCaption}
+\item[{uint8}]{ i}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a79b11382b7de987fcd39dd3e5e1c46df}
+Appends the integer value, after converting it to a \hyperlink{namespacefm_ac112eb8f56d62ea729aa6d1edd7233a4}{fm::string}, in hexadecimal, to the content of the builder. The size of the integer will determine the number of characters used. 
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]An unsigned integer value. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a0161b2dbfccbb2bdd9b6dff22d36cbe4}{
+\index{FUStringBuilderT@{FUStringBuilderT}!appendHex@{appendHex}}
+\index{appendHex@{appendHex}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{appendHex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ template$<$class T $>$ void {\bf FUStringBuilderT}$<$ Char $>$::appendHex (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{ i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_a0161b2dbfccbb2bdd9b6dff22d36cbe4}
+See above. \hypertarget{classFUStringBuilderT_a97010c6e8578f54c69e3b63f86f0a22f}{
+\index{FUStringBuilderT@{FUStringBuilderT}!appendLine@{appendLine}}
+\index{appendLine@{appendLine}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{appendLine}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::appendLine (
+\begin{DoxyParamCaption}
+\item[{const Char $\ast$}]{ sz}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a97010c6e8578f54c69e3b63f86f0a22f}
+Appends a character array to the content of the builder. A newline character will be appended after the character array. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sz}]A character array. It must terminate with an element containing the 'zero' value. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_ae9c746ac5c0dc87b84ee53e51c1ab683}{
+\index{FUStringBuilderT@{FUStringBuilderT}!back@{back}}
+\index{back@{back}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ Char {\bf FUStringBuilderT}$<$ Char $>$::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_ae9c746ac5c0dc87b84ee53e51c1ab683}
+Retrieves the last character within the content of the builder. \begin{DoxyReturn}{Returns}
+The last character of the builder. 
+\end{DoxyReturn}
+\hypertarget{classFUStringBuilderT_ac96aef7b03a2422724cec6dc25045685}{
+\index{FUStringBuilderT@{FUStringBuilderT}!clear@{clear}}
+\index{clear@{clear}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char $>$ void {\bf FUStringBuilderT}$<$ Char $>$::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_ac96aef7b03a2422724cec6dc25045685}
+Clears the content of the builder. This does not re-\/allocate a new buffer. \hypertarget{classFUStringBuilderT_af5b84ae04c1472ef5a83a6dfc4743622}{
+\index{FUStringBuilderT@{FUStringBuilderT}!empty@{empty}}
+\index{empty@{empty}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ bool {\bf FUStringBuilderT}$<$ Char $>$::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_af5b84ae04c1472ef5a83a6dfc4743622}
+Retrieves whether the builder is empty. A builder is considered empty when it has no content, regardless of the size or allocation status of its buffer. \begin{DoxyReturn}{Returns}
+Whether the builder is empty. 
+\end{DoxyReturn}
+\hypertarget{classFUStringBuilderT_a5e9eb78dce319fc878d4ad3a932aff8a}{
+\index{FUStringBuilderT@{FUStringBuilderT}!index@{index}}
+\index{index@{index}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ int32 {\bf FUStringBuilderT}$<$ Char $>$::index (
+\begin{DoxyParamCaption}
+\item[{Char}]{ c}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUStringBuilderT_a5e9eb78dce319fc878d4ad3a932aff8a}
+Retrieves the index of the first character within the content of the builder that is equivalent to the given character. 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]The character to match. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the first equivalent character. -\/1 is returned if no character matches the given character. 
+\end{DoxyReturn}
+\hypertarget{classFUStringBuilderT_a5355e1bb17d7a1289fda368791f9bc65}{
+\index{FUStringBuilderT@{FUStringBuilderT}!length@{length}}
+\index{length@{length}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ size\_\-t {\bf FUStringBuilderT}$<$ Char $>$::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_a5355e1bb17d7a1289fda368791f9bc65}
+Retrieves the length of the content within the builder. \begin{DoxyReturn}{Returns}
+The length of the string. 
+\end{DoxyReturn}
+\hypertarget{classFUStringBuilderT_ad7f5199bf848c011bb7879653bfc783c}{
+\index{FUStringBuilderT@{FUStringBuilderT}!operator const Char $\ast$@{operator const Char $\ast$}}
+\index{operator const Char $\ast$@{operator const Char $\ast$}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{operator const Char $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ {\bf FUStringBuilderT}$<$ Char $>$::operator const Char $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_ad7f5199bf848c011bb7879653bfc783c}
+See above. \hypertarget{classFUStringBuilderT_ab721552d7de380e056fd7bf0eb4005dd}{
+\index{FUStringBuilderT@{FUStringBuilderT}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ template$<$typename TYPE $>$ {\bf FUStringBuilderT}\& {\bf FUStringBuilderT}$<$ Char $>$::operator+= (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_ab721552d7de380e056fd7bf0eb4005dd}
+Appends a value to the content of the builder. This is a shortcut for the append function. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFUStringBuilderT_af33b4c42583e46843d6a59bdc223d256}{append} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em val}]A value. This may be numerical, a character, a character array or a string. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a7795fa3b99f62378fc69f7487d8de878}{
+\index{FUStringBuilderT@{FUStringBuilderT}!operator=@{operator=}}
+\index{operator=@{operator=}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ template$<$typename TYPE $>$ {\bf FUStringBuilderT}\& {\bf FUStringBuilderT}$<$ Char $>$::operator= (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_a7795fa3b99f62378fc69f7487d8de878}
+See above. \hypertarget{classFUStringBuilderT_a3ad0d96a574dd270bc8c0308ab54dd17}{
+\index{FUStringBuilderT@{FUStringBuilderT}!pop\_\-back@{pop\_\-back}}
+\index{pop\_\-back@{pop\_\-back}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{pop\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ void {\bf FUStringBuilderT}$<$ Char $>$::pop\_\-back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_a3ad0d96a574dd270bc8c0308ab54dd17}
+Removes the last character of the content of the builder. \hypertarget{classFUStringBuilderT_afe012eb9649bab74ad823f2cfc8e8482}{
+\index{FUStringBuilderT@{FUStringBuilderT}!remove@{remove}}
+\index{remove@{remove}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char $>$ void {\bf FUStringBuilderT}$<$ Char $>$::remove (
+\begin{DoxyParamCaption}
+\item[{int32}]{ start, }
+\item[{int32}]{ end}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_afe012eb9649bab74ad823f2cfc8e8482}
+Removes a section of the content of the builder. The substring defined by the 'start' and 'end' indices will be removed. The 'start' character is removed and is replaced by the 'end' character. 
+\begin{DoxyParams}{Parameters}
+\item[{\em start}]The index of the first character of the substring to remove. \item[{\em end}]The index of the first character after the removed substring. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a4c9b7d5e462ef7e71e789de3e6c602ea}{
+\index{FUStringBuilderT@{FUStringBuilderT}!remove@{remove}}
+\index{remove@{remove}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char $>$ void {\bf FUStringBuilderT}$<$ Char $>$::remove (
+\begin{DoxyParamCaption}
+\item[{int32}]{ start}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a4c9b7d5e462ef7e71e789de3e6c602ea}
+Removes a section of the content of the builder. Every character that occurs after the given index will be removed, resulting in a shrunk string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em start}]An index within the content of the builder. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a7b5318f7e8d9141c872d598486cca38a}{
+\index{FUStringBuilderT@{FUStringBuilderT}!reserve@{reserve}}
+\index{reserve@{reserve}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{reserve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char $>$ void {\bf FUStringBuilderT}$<$ Char $>$::reserve (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ length}
+\end{DoxyParamCaption}
+)}}
+\label{classFUStringBuilderT_a7b5318f7e8d9141c872d598486cca38a}
+Reserves a given number of character slots. If the builder has a buffer with a different number of character slots, a new buffer will be allocated. If the builder has contents, it will be copied within the new buffer. If there is more content than the new buffer can handle, it will be discarded. 
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]The number of character slots to reserve. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_ad3b62c0467b20a859c25bc5acd1949c9}{
+\index{FUStringBuilderT@{FUStringBuilderT}!rindex@{rindex}}
+\index{rindex@{rindex}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{rindex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ int32 {\bf FUStringBuilderT}$<$ Char $>$::rindex (
+\begin{DoxyParamCaption}
+\item[{Char}]{ c}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUStringBuilderT_ad3b62c0467b20a859c25bc5acd1949c9}
+Retrieves the index of the last character within the content of the builder that is equivalent to the given character. 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]The character to match. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the last equivalent character. -\/1 is returned if no character matches the given character. 
+\end{DoxyReturn}
+\hypertarget{classFUStringBuilderT_aeabb270f37052f15eb733d15a69e49dc}{
+\index{FUStringBuilderT@{FUStringBuilderT}!set@{set}}
+\index{set@{set}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char$>$ template$<$typename TYPE $>$ void {\bf FUStringBuilderT}$<$ Char $>$::set (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStringBuilderT_aeabb270f37052f15eb733d15a69e49dc}
+Sets the content of the builder to a given value. This clears the builder of all its content and appends the given value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em val}]A value. This may be numerical, a character, a character array or a string. \end{DoxyParams}
+\hypertarget{classFUStringBuilderT_a8b1dfaf8fd3a994c6a6188c53d209867}{
+\index{FUStringBuilderT@{FUStringBuilderT}!ToCharPtr@{ToCharPtr}}
+\index{ToCharPtr@{ToCharPtr}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{ToCharPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Char $>$ const Char $\ast$ {\bf FUStringBuilderT}$<$ Char $>$::ToCharPtr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUStringBuilderT_a8b1dfaf8fd3a994c6a6188c53d209867}
+Converts the content of the builder to a character array. \begin{DoxyReturn}{Returns}
+A character array with the content of the builder. This pointer is valid for the lifetime of the buffer of the builder, so do not keep it around. This character array should not be modified. 
+\end{DoxyReturn}
+\hypertarget{classFUStringBuilderT_a34ae55c7b7b7fcf4f08e734852680c22}{
+\index{FUStringBuilderT@{FUStringBuilderT}!ToString@{ToString}}
+\index{ToString@{ToString}!FUStringBuilderT@{FUStringBuilderT}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fstring} FUStringBuilder::ToString (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUStringBuilderT_a34ae55c7b7b7fcf4f08e734852680c22}
+Converts the content of the builder to a standard string. \begin{DoxyReturn}{Returns}
+A string with the content of the builder. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUStringBuilder_8h}{FUStringBuilder.h}\item 
+FCollada/FUtils/FUStringBuilder.cpp\item 
+FCollada/FUtils/FUStringBuilder.hpp\end{DoxyCompactItemize}

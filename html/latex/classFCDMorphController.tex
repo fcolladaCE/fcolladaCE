@@ -1,0 +1,251 @@
+\hypertarget{classFCDMorphController}{
+\section{FCDMorphController Class Reference}
+\label{classFCDMorphController}\index{FCDMorphController@{FCDMorphController}}
+}
+
+
+{\ttfamily \#include $<$FCDMorphController.h$>$}
+
+Inheritance diagram for FCDMorphController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDMorphController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDMorphController_a7ca19cd7aa4ee0e8ddac751037aa9fb0}{FCDMorphController} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDController}{FCDController} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDMorphController_a5e655cfc4e3e9419dc6fc6fd61c9b2e4}{$\sim$FCDMorphController} ()
+\item 
+\hyperlink{classFCDController}{FCDController} $\ast$ \hyperlink{classFCDMorphController_aa30efb4684a80d2c7226e3ad8819a24a}{GetParent} ()
+\item 
+const \hyperlink{classFCDController}{FCDController} $\ast$ \hyperlink{classFCDMorphController_a78fc1ba6858842513dc3a37ae553a786}{GetParent} () const 
+\item 
+\hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDMorphController_a7ccafd403cc1abeec2a0324b583fd452}{GetBaseTarget} ()
+\item 
+const \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDMorphController_a485e835aae8d8764fd0b0deaf5ea8659}{GetBaseTarget} () const 
+\item 
+void \hyperlink{classFCDMorphController_a11196ee1bd50c02cbd82e75397816272}{SetBaseTarget} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$entity)
+\item 
+\hyperlink{classFCDMorphController_a7ed532b78b17ff96e5cd1f888ecbf1b8}{DEPRECATED} (3.05A, GetTargetCount and GetTarget(index)) void GetTargets() const 
+\item 
+size\_\-t \hyperlink{classFCDMorphController_aec95e35c6454c09cfdd5bb76d5f79cc6}{GetTargetCount} () const 
+\item 
+\hyperlink{classFCDMorphTarget}{FCDMorphTarget} $\ast$ \hyperlink{classFCDMorphController_a8a6aeeb920cd60af2ae403cdb2bbfb36}{GetTarget} (size\_\-t index)
+\item 
+const \hyperlink{classFCDMorphTarget}{FCDMorphTarget} $\ast$ \hyperlink{classFCDMorphController_a2c08dbafbb92f3f22c660953249f7a76}{GetTarget} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDMorphTarget}{FCDMorphTarget} $\ast$ \hyperlink{classFCDMorphController_a396c0633ba33ff55e8706fdf3a2e00d1}{AddTarget} (\hyperlink{classFCDGeometry}{FCDGeometry} $\ast$geometry=NULL, float weight=0.0f)
+\item 
+\hyperlink{namespaceFUDaeMorphMethod_a097fa073638c4df9edf9479f8561329e}{FUDaeMorphMethod::Method} \hyperlink{classFCDMorphController_a71ff7b5ac5470f189b0f04f8674d2c3c}{GetMethod} () const 
+\item 
+void \hyperlink{classFCDMorphController_af7519da3b3d47febca0b7a36f34aa3ec}{SetMethod} (\hyperlink{namespaceFUDaeMorphMethod_a097fa073638c4df9edf9479f8561329e}{FUDaeMorphMethod::Method} \_\-method)
+\item 
+bool \hyperlink{classFCDMorphController_a43685ec9f55c43b66e75f62c8b820980}{IsSimilar} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$entity)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA morpher.
+
+A morpher holds a base geometry and a set of morph targets that contains a geometry and a weight. The geometry must be similar to the base geometry and the weights are used to interpolate the vertex positions of the base geometry. To be similar, two meshes must have the same number of vertices and two splines must have the same number of control points. The morphing weights can be animated.
+
+There are two interpolation functions defined in COLLADA. See the \hyperlink{namespaceFUDaeMorphMethod_a097fa073638c4df9edf9479f8561329e}{FUDaeMorphMethod::Method} enumerated type for more information.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDMorphTarget}{FCDMorphTarget} \hyperlink{namespaceFUDaeMorphMethod}{FUDaeMorphMethod} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDMorphController_a7ca19cd7aa4ee0e8ddac751037aa9fb0}{
+\index{FCDMorphController@{FCDMorphController}!FCDMorphController@{FCDMorphController}}
+\index{FCDMorphController@{FCDMorphController}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{FCDMorphController}]{\setlength{\rightskip}{0pt plus 5cm}FCDMorphController::FCDMorphController (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDController} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMorphController_a7ca19cd7aa4ee0e8ddac751037aa9fb0}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDController_a7c96f2438b2cd4e69385c9c7d0172371}{FCDController::CreateMorphController} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the morpher. \item[{\em parent}]The COLLADA controller that contains this morpher. \end{DoxyParams}
+\hypertarget{classFCDMorphController_a5e655cfc4e3e9419dc6fc6fd61c9b2e4}{
+\index{FCDMorphController@{FCDMorphController}!$\sim$FCDMorphController@{$\sim$FCDMorphController}}
+\index{$\sim$FCDMorphController@{$\sim$FCDMorphController}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{$\sim$FCDMorphController}]{\setlength{\rightskip}{0pt plus 5cm}FCDMorphController::$\sim$FCDMorphController (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDMorphController_a5e655cfc4e3e9419dc6fc6fd61c9b2e4}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDMorphController_a396c0633ba33ff55e8706fdf3a2e00d1}{
+\index{FCDMorphController@{FCDMorphController}!AddTarget@{AddTarget}}
+\index{AddTarget@{AddTarget}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{AddTarget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMorphTarget} $\ast$ FCDMorphController::AddTarget (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometry} $\ast$}]{ geometry = {\ttfamily NULL}, }
+\item[{float}]{ weight = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMorphController_a396c0633ba33ff55e8706fdf3a2e00d1}
+Adds a new morph target. 
+\begin{DoxyParams}{Parameters}
+\item[{\em geometry}]The morph target geometry. \item[{\em weight}]The morphing weight. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new morph target. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphController_a7ed532b78b17ff96e5cd1f888ecbf1b8}{
+\index{FCDMorphController@{FCDMorphController}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMorphController::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetTargetCount and }]{ GetTargetindex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_a7ed532b78b17ff96e5cd1f888ecbf1b8}
+Retrieves the list of the morph targets. All the morph target geometries should be similar to the base entity. \begin{DoxyReturn}{Returns}
+The morph targets. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphController_a485e835aae8d8764fd0b0deaf5ea8659}{
+\index{FCDMorphController@{FCDMorphController}!GetBaseTarget@{GetBaseTarget}}
+\index{GetBaseTarget@{GetBaseTarget}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{GetBaseTarget}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEntity}$\ast$ FCDMorphController::GetBaseTarget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_a485e835aae8d8764fd0b0deaf5ea8659}
+See above. \hypertarget{classFCDMorphController_a7ccafd403cc1abeec2a0324b583fd452}{
+\index{FCDMorphController@{FCDMorphController}!GetBaseTarget@{GetBaseTarget}}
+\index{GetBaseTarget@{GetBaseTarget}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{GetBaseTarget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity}$\ast$ FCDMorphController::GetBaseTarget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_a7ccafd403cc1abeec2a0324b583fd452}
+Retrieves the base entity controlled by this morpher. This entity may be a geometry or another controller. \begin{DoxyReturn}{Returns}
+The base target. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphController_a71ff7b5ac5470f189b0f04f8674d2c3c}{
+\index{FCDMorphController@{FCDMorphController}!GetMethod@{GetMethod}}
+\index{GetMethod@{GetMethod}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{GetMethod}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUDaeMorphMethod::Method} FCDMorphController::GetMethod (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_a71ff7b5ac5470f189b0f04f8674d2c3c}
+Retrieves the method used to interpolate between the different morph targets. \begin{DoxyReturn}{Returns}
+The interpolation method. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphController_a78fc1ba6858842513dc3a37ae553a786}{
+\index{FCDMorphController@{FCDMorphController}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDController}$\ast$ FCDMorphController::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_a78fc1ba6858842513dc3a37ae553a786}
+See above. \hypertarget{classFCDMorphController_aa30efb4684a80d2c7226e3ad8819a24a}{
+\index{FCDMorphController@{FCDMorphController}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDController}$\ast$ FCDMorphController::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_aa30efb4684a80d2c7226e3ad8819a24a}
+Retrieves the parent entity for the morpher. \begin{DoxyReturn}{Returns}
+The parent controller entity. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphController_a2c08dbafbb92f3f22c660953249f7a76}{
+\index{FCDMorphController@{FCDMorphController}!GetTarget@{GetTarget}}
+\index{GetTarget@{GetTarget}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{GetTarget}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDMorphTarget}$\ast$ FCDMorphController::GetTarget (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_a2c08dbafbb92f3f22c660953249f7a76}
+See above. \hypertarget{classFCDMorphController_a8a6aeeb920cd60af2ae403cdb2bbfb36}{
+\index{FCDMorphController@{FCDMorphController}!GetTarget@{GetTarget}}
+\index{GetTarget@{GetTarget}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{GetTarget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMorphTarget}$\ast$ FCDMorphController::GetTarget (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_a8a6aeeb920cd60af2ae403cdb2bbfb36}
+Retrieves a specific morph target. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the morph target. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The morph target. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphController_aec95e35c6454c09cfdd5bb76d5f79cc6}{
+\index{FCDMorphController@{FCDMorphController}!GetTargetCount@{GetTargetCount}}
+\index{GetTargetCount@{GetTargetCount}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{GetTargetCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDMorphController::GetTargetCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_aec95e35c6454c09cfdd5bb76d5f79cc6}
+Retrieves the number of morph targets. \begin{DoxyReturn}{Returns}
+The number of morph targets. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphController_a43685ec9f55c43b66e75f62c8b820980}{
+\index{FCDMorphController@{FCDMorphController}!IsSimilar@{IsSimilar}}
+\index{IsSimilar@{IsSimilar}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{IsSimilar}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDMorphController::IsSimilar (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ entity}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMorphController_a43685ec9f55c43b66e75f62c8b820980}
+Retrieves whether a given entity is similar to the base target. Entities must be similar to be able to morph between them. 
+\begin{DoxyParams}{Parameters}
+\item[{\em entity}]An entity. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the given entity is similar to the base target. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphController_a11196ee1bd50c02cbd82e75397816272}{
+\index{FCDMorphController@{FCDMorphController}!SetBaseTarget@{SetBaseTarget}}
+\index{SetBaseTarget@{SetBaseTarget}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{SetBaseTarget}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMorphController::SetBaseTarget (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ entity}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMorphController_a11196ee1bd50c02cbd82e75397816272}
+Sets the base entity controlled by this morpher. This entity may be a geometry or another controller. Since the morph targets must be similar to this entity, all the morph targets that are not similar to the new base entity will be removed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em entity}]The new base entity. \end{DoxyParams}
+\hypertarget{classFCDMorphController_af7519da3b3d47febca0b7a36f34aa3ec}{
+\index{FCDMorphController@{FCDMorphController}!SetMethod@{SetMethod}}
+\index{SetMethod@{SetMethod}!FCDMorphController@{FCDMorphController}}
+\subsubsection[{SetMethod}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMorphController::SetMethod (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeMorphMethod::Method}}]{ \_\-method}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphController_af7519da3b3d47febca0b7a36f34aa3ec}
+Sets the method used to interpolate between the different morph targets. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-method}]The interpolation method. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDMorphController_8h}{FCDMorphController.h}\item 
+FCollada/FCDocument/FCDMorphController.cpp\end{DoxyCompactItemize}

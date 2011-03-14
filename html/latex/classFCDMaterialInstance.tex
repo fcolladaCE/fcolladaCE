@@ -1,0 +1,474 @@
+\hypertarget{classFCDMaterialInstance}{
+\section{FCDMaterialInstance Class Reference}
+\label{classFCDMaterialInstance}\index{FCDMaterialInstance@{FCDMaterialInstance}}
+}
+
+
+{\ttfamily \#include $<$FCDMaterialInstance.h$>$}
+
+Inheritance diagram for FCDMaterialInstance:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDMaterialInstance}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDMaterialInstance_aeead20fe8adce58d86d40b4c026a6c01}{FCDMaterialInstance} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDMaterialInstance_a19ef000f5b34ee9d4fe7688a4e4b17af}{$\sim$FCDMaterialInstance} ()
+\item 
+\hyperlink{classFCDMaterialInstance_a43aeb69d042dcf821de74a63b2ef0e1d}{DEPRECATED} (3.05A, HasType(FCDMaterialInstance::GetClassType())) virtual Type GetType() const 
+\item 
+\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDMaterialInstance_a84d82c5789d224a2112e076fc730943c}{GetParent} ()
+\item 
+const \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDMaterialInstance_aae8d59b1e623f5b85b3dfc8c5aeaa58e}{GetParent} () const 
+\item 
+const \hyperlink{classfm_1_1stringT}{fstring} \& \hyperlink{classFCDMaterialInstance_afb39d26ab1e0eaedcedb9ec7be0ba492}{GetSemantic} () const 
+\item 
+void \hyperlink{classFCDMaterialInstance_a8b74872facbef6ce4de3c3eea3ed524a}{SetSemantic} (const fchar $\ast$\_\-semantic)
+\item 
+void \hyperlink{classFCDMaterialInstance_a7a1930462c50ff340e40f60fc1642ebd}{SetSemantic} (const \hyperlink{classfm_1_1stringT}{fstring} \&\_\-semantic)
+\item 
+\hyperlink{classFCDMaterial}{FCDMaterial} $\ast$ \hyperlink{classFCDMaterialInstance_a190f2bb81d391892a0edc501c682bba7}{GetMaterial} ()
+\item 
+const \hyperlink{classFCDMaterial}{FCDMaterial} $\ast$ \hyperlink{classFCDMaterialInstance_a8dd52145748ea4424bd6d5ce67ce4110}{GetMaterial} () const 
+\item 
+void \hyperlink{classFCDMaterialInstance_ade599811f26176190f8174d50bacb2b7}{SetMaterial} (\hyperlink{classFCDMaterial}{FCDMaterial} $\ast$\_\-material)
+\item 
+\hyperlink{classFCDMaterialInstance_ac6ed7f1448b38726d9bd293e30cda6bb}{DEPRECATED} (3.05A, GetBindingCount and GetBinding(index)) inline void GetBindings() const 
+\item 
+const \hyperlink{classFCDMaterialInstanceBind}{FCDMaterialInstanceBind} $\ast$ \hyperlink{classFCDMaterialInstance_a41a476a7b82d8406b8bdd321612d041f}{FindBinding} (const char $\ast$semantic)
+\item 
+size\_\-t \hyperlink{classFCDMaterialInstance_aad2749897b63b5ccb090dc2f3e2b6b95}{GetBindingCount} () const 
+\item 
+\hyperlink{classFCDMaterialInstanceBind}{FCDMaterialInstanceBind} $\ast$ \hyperlink{classFCDMaterialInstance_a2b1e047084ed5191337e369733b74641}{GetBinding} (size\_\-t index)
+\item 
+const \hyperlink{classFCDMaterialInstanceBind}{FCDMaterialInstanceBind} $\ast$ \hyperlink{classFCDMaterialInstance_a8adfe57c81d757c46d1598f782079090}{GetBinding} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDObject}{FCDObject} $\ast$ \hyperlink{classFCDMaterialInstance_a855175cc0d660ed54e5c87b33229f969}{GetGeometryTarget} ()
+\item 
+\hyperlink{classFCDMaterialInstanceBind}{FCDMaterialInstanceBind} $\ast$ \hyperlink{classFCDMaterialInstance_acfaa4897f0acf6d89bd62bfcc7690760}{AddBinding} ()
+\item 
+\hyperlink{classFCDMaterialInstanceBind}{FCDMaterialInstanceBind} $\ast$ \hyperlink{classFCDMaterialInstance_a7f4dafda2db965c0841e62be86280701}{AddBinding} (const char $\ast$semantic, const char $\ast$target)
+\item 
+void \hyperlink{classFCDMaterialInstance_a80cf10dc7af55794335d3ac676373cda}{RemoveBinding} (size\_\-t index)
+\item 
+\hyperlink{classFCDMaterialInstance_a8665a75d8a9fbe2d8f2c882a7a6d48cb}{DEPRECATED} (3.05A, GetVertexInputBindingCount and GetVertexInputBinding(index)) inline void GetVertexInputBindings()
+\item 
+size\_\-t \hyperlink{classFCDMaterialInstance_afaf92b900b38ecacc565a2823a9d7639}{GetVertexInputBindingCount} () const 
+\item 
+\hyperlink{classFCDMaterialInstanceBindVertexInput}{FCDMaterialInstanceBindVertexInput} $\ast$ \hyperlink{classFCDMaterialInstance_a1372de985b79a51a54cc5674b275e60d}{GetVertexInputBinding} (size\_\-t index)
+\item 
+const \hyperlink{classFCDMaterialInstanceBindVertexInput}{FCDMaterialInstanceBindVertexInput} $\ast$ \hyperlink{classFCDMaterialInstance_a7beb53b836aba0e36f82d251264030c7}{GetVertexInputBinding} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDMaterialInstanceBindVertexInput}{FCDMaterialInstanceBindVertexInput} $\ast$ \hyperlink{classFCDMaterialInstance_a5081cea89492e19506ac31ae9d01fcf0}{FindVertexInputBinding} (const char $\ast$semantic)
+\item 
+const \hyperlink{classFCDMaterialInstanceBindVertexInput}{FCDMaterialInstanceBindVertexInput} $\ast$ \hyperlink{classFCDMaterialInstance_a32cb9141f1becbc35212537e18e9ab42}{FindVertexInputBinding} (const char $\ast$semantic) const 
+\item 
+\hyperlink{classFCDMaterialInstanceBindVertexInput}{FCDMaterialInstanceBindVertexInput} $\ast$ \hyperlink{classFCDMaterialInstance_a91776fc1c3d21da97183a6b066056cc3}{AddVertexInputBinding} ()
+\item 
+\hyperlink{classFCDMaterialInstanceBindVertexInput}{FCDMaterialInstanceBindVertexInput} $\ast$ \hyperlink{classFCDMaterialInstance_a96bb0dc2620bf91c873bc44371d7aa74}{AddVertexInputBinding} (const char $\ast$semantic, \hyperlink{namespaceFUDaeGeometryInput_a0f887d29f54b10338ebcf73789a7a061}{FUDaeGeometryInput::Semantic} inputSemantic, int32 inputSet)
+\item 
+\hyperlink{classFCDMaterialInstance_aa0f7bd7b6f5e4e7f20c40fedbe0022b0}{DEPRECATED} (3.05A, not recommended) FCDMaterial $\ast$FlattenMaterial()
+\item 
+virtual \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDMaterialInstance_afcf47870beed21fcce66de36b57ba216}{Clone} (\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA material instance. A material instance is used to given polygon sets with a COLLADA material entity. It is also used to bind data sources with the inputs of an effect. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDMaterialInstance_aeead20fe8adce58d86d40b4c026a6c01}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!FCDMaterialInstance@{FCDMaterialInstance}}
+\index{FCDMaterialInstance@{FCDMaterialInstance}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{FCDMaterialInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstance::FCDMaterialInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDEntityInstance} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstance_aeead20fe8adce58d86d40b4c026a6c01}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em parent}]The entity instance that owns this material instance. \end{DoxyParams}
+\hypertarget{classFCDMaterialInstance_a19ef000f5b34ee9d4fe7688a4e4b17af}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!$\sim$FCDMaterialInstance@{$\sim$FCDMaterialInstance}}
+\index{$\sim$FCDMaterialInstance@{$\sim$FCDMaterialInstance}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{$\sim$FCDMaterialInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstance::$\sim$FCDMaterialInstance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDMaterialInstance_a19ef000f5b34ee9d4fe7688a4e4b17af}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDMaterialInstance_acfaa4897f0acf6d89bd62bfcc7690760}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!AddBinding@{AddBinding}}
+\index{AddBinding@{AddBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{AddBinding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterialInstanceBind} $\ast$ FCDMaterialInstance::AddBinding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstance_acfaa4897f0acf6d89bd62bfcc7690760}
+Adds a new parameter binding. \begin{DoxyReturn}{Returns}
+An empty parameter binding. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a7f4dafda2db965c0841e62be86280701}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!AddBinding@{AddBinding}}
+\index{AddBinding@{AddBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{AddBinding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterialInstanceBind} $\ast$ FCDMaterialInstance::AddBinding (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ semantic, }
+\item[{const char $\ast$}]{ target}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstance_a7f4dafda2db965c0841e62be86280701}
+Adds a new parameter binding. 
+\begin{DoxyParams}{Parameters}
+\item[{\em semantic}]The token that identifies the material or effect parameter. \item[{\em target}]The fully-\/qualified target pointer to the bind scene graph object. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parameter binding. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a91776fc1c3d21da97183a6b066056cc3}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!AddVertexInputBinding@{AddVertexInputBinding}}
+\index{AddVertexInputBinding@{AddVertexInputBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{AddVertexInputBinding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterialInstanceBindVertexInput} $\ast$ FCDMaterialInstance::AddVertexInputBinding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstance_a91776fc1c3d21da97183a6b066056cc3}
+Adds a new vertex input binding. \begin{DoxyReturn}{Returns}
+An empty vertex input binding. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a96bb0dc2620bf91c873bc44371d7aa74}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!AddVertexInputBinding@{AddVertexInputBinding}}
+\index{AddVertexInputBinding@{AddVertexInputBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{AddVertexInputBinding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterialInstanceBindVertexInput} $\ast$ FCDMaterialInstance::AddVertexInputBinding (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ semantic, }
+\item[{{\bf FUDaeGeometryInput::Semantic}}]{ inputSemantic, }
+\item[{int32}]{ inputSet}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstance_a96bb0dc2620bf91c873bc44371d7aa74}
+Adds a new vertex input binding. Together, the data source type and set should always define a unique data source. 
+\begin{DoxyParams}{Parameters}
+\item[{\em semantic}]The token identify the shader varying input. \item[{\em inputSemantic}]The polygons set data source type to bind. \item[{\em inputSet}]The polygons set data source set to bind. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new vertex input binding. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_afcf47870beed21fcce66de36b57ba216}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance} $\ast$ FCDMaterialInstance::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntityInstance} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDMaterialInstance_afcf47870beed21fcce66de36b57ba216}
+Clones the material instance. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The material instance to become the clone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned material instance. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a64b11d12fcf0151800084f66bbbeb2d6}{FCDEntityInstance}.
+
+\hypertarget{classFCDMaterialInstance_a43aeb69d042dcf821de74a63b2ef0e1d}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstance::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{HasType(FCDMaterialInstance::GetClassType())}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a43aeb69d042dcf821de74a63b2ef0e1d}
+Retrieves the type of entity instance. \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000011}{Deprecated}]Use the following code, instead: entityInstance-\/$>$HasType(\hyperlink{classFUObject_a907d4f6d284b3ac4f8203d557af41668}{FCDMaterialInstance::GetClassType()}). \end{Desc}
+\begin{DoxyReturn}{Returns}
+The type of entity instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_ac6ed7f1448b38726d9bd293e30cda6bb}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstance::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetBindingCount and }]{ GetBindingindex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_ac6ed7f1448b38726d9bd293e30cda6bb}
+Retrieves the parameter bindings of the instance. Each material instance may re-\/define any number of material or effect parameters. \begin{DoxyReturn}{Returns}
+The parameter bindings. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a8665a75d8a9fbe2d8f2c882a7a6d48cb}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstance::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetVertexInputBindingCount and }]{ GetVertexInputBindingindex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a8665a75d8a9fbe2d8f2c882a7a6d48cb}
+Retrieves the vertex input bindings. \begin{DoxyReturn}{Returns}
+The vertex input bindings. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_aa0f7bd7b6f5e4e7f20c40fedbe0022b0}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstance::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{not}]{ recommended}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_aa0f7bd7b6f5e4e7f20c40fedbe0022b0}
+Creates a flattened version of the instantiated material. This is the preferred way to generate viewer materials from a COLLADA document. \begin{DoxyReturn}{Returns}
+The flattened version of the instantiated material. You will need to delete this pointer manually. This pointer will be NULL when there is no material attached to this instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a41a476a7b82d8406b8bdd321612d041f}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!FindBinding@{FindBinding}}
+\index{FindBinding@{FindBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{FindBinding}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDMaterialInstanceBind} $\ast$ FCDMaterialInstance::FindBinding (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ semantic}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstance_a41a476a7b82d8406b8bdd321612d041f}
+Retrieves a given binding. 
+\begin{DoxyParams}{Parameters}
+\item[{\em semantic}]The binding's semantic. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found binding, or NULL if there is no such binding. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a5081cea89492e19506ac31ae9d01fcf0}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!FindVertexInputBinding@{FindVertexInputBinding}}
+\index{FindVertexInputBinding@{FindVertexInputBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{FindVertexInputBinding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterialInstanceBindVertexInput}$\ast$ FCDMaterialInstance::FindVertexInputBinding (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ semantic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a5081cea89492e19506ac31ae9d01fcf0}
+Retrieves a given vertex input binding. This is useful when trying to match textures with the texture coordinate sets. 
+\begin{DoxyParams}{Parameters}
+\item[{\em semantic}]A given vertex input binding semantic. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vertex input binding information structure. This pointer will be NULL if the given semantic is not bound within the material instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a32cb9141f1becbc35212537e18e9ab42}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!FindVertexInputBinding@{FindVertexInputBinding}}
+\index{FindVertexInputBinding@{FindVertexInputBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{FindVertexInputBinding}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDMaterialInstanceBindVertexInput} $\ast$ FCDMaterialInstance::FindVertexInputBinding (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ semantic}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDMaterialInstance_a32cb9141f1becbc35212537e18e9ab42}
+See above. \hypertarget{classFCDMaterialInstance_a2b1e047084ed5191337e369733b74641}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetBinding@{GetBinding}}
+\index{GetBinding@{GetBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetBinding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterialInstanceBind}$\ast$ FCDMaterialInstance::GetBinding (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a2b1e047084ed5191337e369733b74641}
+Retrieves a parameter binding. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the parameter binding. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parameter binding at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a8adfe57c81d757c46d1598f782079090}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetBinding@{GetBinding}}
+\index{GetBinding@{GetBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetBinding}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDMaterialInstanceBind}$\ast$ FCDMaterialInstance::GetBinding (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a8adfe57c81d757c46d1598f782079090}
+See above. \hypertarget{classFCDMaterialInstance_aad2749897b63b5ccb090dc2f3e2b6b95}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetBindingCount@{GetBindingCount}}
+\index{GetBindingCount@{GetBindingCount}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetBindingCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDMaterialInstance::GetBindingCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_aad2749897b63b5ccb090dc2f3e2b6b95}
+Retrieves the number of parameter bindings for this instance. \begin{DoxyReturn}{Returns}
+The number of parameter bindings. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a855175cc0d660ed54e5c87b33229f969}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetGeometryTarget@{GetGeometryTarget}}
+\index{GetGeometryTarget@{GetGeometryTarget}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetGeometryTarget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDObject} $\ast$ FCDMaterialInstance::GetGeometryTarget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstance_a855175cc0d660ed54e5c87b33229f969}
+Retrieves the geometry target that this instance affects. Note that this function uses the parent geometry instance and searches for the polygon set. Therefore, the application should buffer the retrieved pointer. \hypertarget{classFCDMaterialInstance_a8dd52145748ea4424bd6d5ce67ce4110}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetMaterial@{GetMaterial}}
+\index{GetMaterial@{GetMaterial}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetMaterial}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDMaterial}$\ast$ FCDMaterialInstance::GetMaterial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a8dd52145748ea4424bd6d5ce67ce4110}
+See above. \hypertarget{classFCDMaterialInstance_a190f2bb81d391892a0edc501c682bba7}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetMaterial@{GetMaterial}}
+\index{GetMaterial@{GetMaterial}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetMaterial}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterial}$\ast$ FCDMaterialInstance::GetMaterial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a190f2bb81d391892a0edc501c682bba7}
+Retrieves the material entity used by this instance. \begin{DoxyReturn}{Returns}
+The instanced material. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_aae8d59b1e623f5b85b3dfc8c5aeaa58e}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEntityInstance}$\ast$ FCDMaterialInstance::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_aae8d59b1e623f5b85b3dfc8c5aeaa58e}
+See above. 
+
+Reimplemented from \hyperlink{classFCDEntityInstance_acb1d825d422ab6484db2b5e862b18bfa}{FCDEntityInstance}.
+
+\hypertarget{classFCDMaterialInstance_a84d82c5789d224a2112e076fc730943c}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance}$\ast$ FCDMaterialInstance::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a84d82c5789d224a2112e076fc730943c}
+Retrieves the parent instance. \begin{DoxyReturn}{Returns}
+The parent instance. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a3b384a12ff92c1ac984a1772e562d87a}{FCDEntityInstance}.
+
+\hypertarget{classFCDMaterialInstance_afb39d26ab1e0eaedcedb9ec7be0ba492}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetSemantic@{GetSemantic}}
+\index{GetSemantic@{GetSemantic}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetSemantic}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fstring}\& FCDMaterialInstance::GetSemantic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_afb39d26ab1e0eaedcedb9ec7be0ba492}
+Retrieves the symbolic name used to link the polygons sets with the material of this instance. \begin{DoxyReturn}{Returns}
+The symbolic name of the material instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a7beb53b836aba0e36f82d251264030c7}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetVertexInputBinding@{GetVertexInputBinding}}
+\index{GetVertexInputBinding@{GetVertexInputBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetVertexInputBinding}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDMaterialInstanceBindVertexInput}$\ast$ FCDMaterialInstance::GetVertexInputBinding (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a7beb53b836aba0e36f82d251264030c7}
+See above. \hypertarget{classFCDMaterialInstance_a1372de985b79a51a54cc5674b275e60d}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetVertexInputBinding@{GetVertexInputBinding}}
+\index{GetVertexInputBinding@{GetVertexInputBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetVertexInputBinding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterialInstanceBindVertexInput}$\ast$ FCDMaterialInstance::GetVertexInputBinding (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a1372de985b79a51a54cc5674b275e60d}
+Retrieves a vertex input binding. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the vertex input binding. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vertex input binding at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_afaf92b900b38ecacc565a2823a9d7639}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!GetVertexInputBindingCount@{GetVertexInputBindingCount}}
+\index{GetVertexInputBindingCount@{GetVertexInputBindingCount}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{GetVertexInputBindingCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDMaterialInstance::GetVertexInputBindingCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_afaf92b900b38ecacc565a2823a9d7639}
+Retrieves the number of vertex input bindings. \begin{DoxyReturn}{Returns}
+The number of vertex input bindings. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterialInstance_a80cf10dc7af55794335d3ac676373cda}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!RemoveBinding@{RemoveBinding}}
+\index{RemoveBinding@{RemoveBinding}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{RemoveBinding}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMaterialInstance::RemoveBinding (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstance_a80cf10dc7af55794335d3ac676373cda}
+Removes a parameter binding. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the parameter binding to remove. \end{DoxyParams}
+\hypertarget{classFCDMaterialInstance_ade599811f26176190f8174d50bacb2b7}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!SetMaterial@{SetMaterial}}
+\index{SetMaterial@{SetMaterial}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{SetMaterial}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMaterialInstance::SetMaterial (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDMaterial} $\ast$}]{ \_\-material}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_ade599811f26176190f8174d50bacb2b7}
+Sets the material entity used by this instance. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-material}]The new instanced material. \end{DoxyParams}
+\hypertarget{classFCDMaterialInstance_a8b74872facbef6ce4de3c3eea3ed524a}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!SetSemantic@{SetSemantic}}
+\index{SetSemantic@{SetSemantic}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{SetSemantic}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMaterialInstance::SetSemantic (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ \_\-semantic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a8b74872facbef6ce4de3c3eea3ed524a}
+Sets the symbolic name used to link polygons sets with this instance. This name should always match against the symbolic name assigned to a polygons set. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDGeometryPolygons}{FCDGeometryPolygons}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-semantic}]The new symbolic name of this instance. \end{DoxyParams}
+\hypertarget{classFCDMaterialInstance_a7a1930462c50ff340e40f60fc1642ebd}{
+\index{FCDMaterialInstance@{FCDMaterialInstance}!SetSemantic@{SetSemantic}}
+\index{SetSemantic@{SetSemantic}!FCDMaterialInstance@{FCDMaterialInstance}}
+\subsubsection[{SetSemantic}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMaterialInstance::SetSemantic (
+\begin{DoxyParamCaption}
+\item[{const {\bf fstring} \&}]{ \_\-semantic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstance_a7a1930462c50ff340e40f60fc1642ebd}
+See above. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDMaterialInstance_8h}{FCDMaterialInstance.h}\item 
+FCollada/FCDocument/FCDMaterialInstance.cpp\end{DoxyCompactItemize}

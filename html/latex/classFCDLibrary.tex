@@ -1,0 +1,219 @@
+\hypertarget{classFCDLibrary}{
+\section{FCDLibrary$<$ T $>$ Class Template Reference}
+\label{classFCDLibrary}\index{FCDLibrary@{FCDLibrary}}
+}
+
+
+{\ttfamily \#include $<$FCDLibrary.h$>$}
+
+Inheritance diagram for FCDLibrary$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDLibrary}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDLibrary_a9cf3270dce2286c94003cabe65602bd3}{FCDLibrary} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDLibrary_aca8cf97f6797c52ff37422d7e7158afd}{$\sim$FCDLibrary} ()
+\item 
+T $\ast$ \hyperlink{classFCDLibrary_aa5cdcac5a447298d5e3816e4f8c864d0}{AddEntity} ()
+\item 
+void \hyperlink{classFCDLibrary_a5dba04c94673e18b2a1a2e7c8ca1eeaa}{AddEntity} (T $\ast$entity)
+\item 
+T $\ast$ \hyperlink{classFCDLibrary_a64376436cd35baea0992cc343138aaca}{FindDaeId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&daeId)
+\item 
+const T $\ast$ \hyperlink{classFCDLibrary_af502e24b810e9957b820f6a7f6759b60}{FindDaeId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&daeId) const 
+\item 
+bool \hyperlink{classFCDLibrary_a5045adb8f08e9a8f51fada3fdce63470}{IsEmpty} () const 
+\item 
+size\_\-t \hyperlink{classFCDLibrary_ab79bd9b55bce87bcb597a3343a94957a}{GetEntityCount} () const 
+\item 
+T $\ast$ \hyperlink{classFCDLibrary_ab2aa913794a0ceaafe3b3773deac3398}{GetEntity} (size\_\-t index)
+\item 
+const T $\ast$ \hyperlink{classFCDLibrary_a3a53f0a1500d48e935f1469f002f27ce}{GetEntity} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDAsset}{FCDAsset} $\ast$ \hyperlink{classFCDLibrary_ab4c9390266912c40fa1d910380996f01}{GetAsset} (bool create=true)
+\item 
+\hypertarget{classFCDLibrary_a9c99ce7f639393804d9ce27a05f1beb6}{
+const \hyperlink{classFCDAsset}{FCDAsset} $\ast$ {\bfseries GetAsset} () const }
+\label{classFCDLibrary_a9c99ce7f639393804d9ce27a05f1beb6}
+
+\item 
+\hyperlink{classFCDExtra}{FCDExtra} $\ast$ \hyperlink{classFCDLibrary_ae95b2810d4f77c1c2d83d07e69d0d3a3}{GetExtra} ()
+\item 
+\hypertarget{classFCDLibrary_a01f67955c9edcc08876564f5ab1ad93d}{
+const \hyperlink{classFCDExtra}{FCDExtra} $\ast$ {\bfseries GetExtra} () const }
+\label{classFCDLibrary_a01f67955c9edcc08876564f5ab1ad93d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$ class FCDLibrary$<$ T $>$}
+
+A COLLADA library.
+
+A COLLADA library holds a list of entities. There are libraries for the following entities: animations (\hyperlink{classFCDAnimation}{FCDAnimation}), animation clips (\hyperlink{classFCDAnimationClip}{FCDAnimationClip}), meshes and splines (\hyperlink{classFCDGeometry}{FCDGeometry}), materials (\hyperlink{classFCDMaterial}{FCDMaterial}), effects (\hyperlink{classFCDEffect}{FCDEffect}), images (\hyperlink{classFCDImage}{FCDImage}), skins and morphers (\hyperlink{classFCDController}{FCDController}), cameras (\hyperlink{classFCDCamera}{FCDCamera}), lights (\hyperlink{classFCDLight}{FCDLight}), physics models (\hyperlink{classFCDPhysicsModel}{FCDPhysicsModel}), physics materials (\hyperlink{classFCDPhysicsMaterial}{FCDPhysicsMaterial}), physics scenes (\hyperlink{classFCDPhysicsScene}{FCDPhysicsScene}) and visual scenes (\hyperlink{classFCDSceneNode}{FCDSceneNode}).
+
+The COLLADA libraries are contained within the \hyperlink{classFCDocument}{FCDocument} object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDLibrary_a9cf3270dce2286c94003cabe65602bd3}{
+\index{FCDLibrary@{FCDLibrary}!FCDLibrary@{FCDLibrary}}
+\index{FCDLibrary@{FCDLibrary}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{FCDLibrary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf FCDLibrary}$<$ T $>$::{\bf FCDLibrary} (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDLibrary_a9cf3270dce2286c94003cabe65602bd3}
+Constructor: do not use directly. All the necessary libraries are created by the \hyperlink{classFCDocument}{FCDocument} object during its creation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The parent document. \end{DoxyParams}
+\hypertarget{classFCDLibrary_aca8cf97f6797c52ff37422d7e7158afd}{
+\index{FCDLibrary@{FCDLibrary}!$\sim$FCDLibrary@{$\sim$FCDLibrary}}
+\index{$\sim$FCDLibrary@{$\sim$FCDLibrary}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{$\sim$FCDLibrary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf FCDLibrary}$<$ T $>$::$\sim${\bf FCDLibrary} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDLibrary_aca8cf97f6797c52ff37422d7e7158afd}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDLibrary_aa5cdcac5a447298d5e3816e4f8c864d0}{
+\index{FCDLibrary@{FCDLibrary}!AddEntity@{AddEntity}}
+\index{AddEntity@{AddEntity}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{AddEntity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T $\ast$ {\bf FCDLibrary}$<$ T $>$::AddEntity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDLibrary_aa5cdcac5a447298d5e3816e4f8c864d0}
+Creates a new entity within this library. \begin{DoxyReturn}{Returns}
+The newly created entity. 
+\end{DoxyReturn}
+\hypertarget{classFCDLibrary_a5dba04c94673e18b2a1a2e7c8ca1eeaa}{
+\index{FCDLibrary@{FCDLibrary}!AddEntity@{AddEntity}}
+\index{AddEntity@{AddEntity}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{AddEntity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf FCDLibrary}$<$ T $>$::AddEntity (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{ entity}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDLibrary_a5dba04c94673e18b2a1a2e7c8ca1eeaa}
+Inserts a new entity to this library. This function is useful if you are adding cloned entites back inside the library. 
+\begin{DoxyParams}{Parameters}
+\item[{\em entity}]The entity to insert in the library. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entity to insert. 
+\end{DoxyReturn}
+\hypertarget{classFCDLibrary_af502e24b810e9957b820f6a7f6759b60}{
+\index{FCDLibrary@{FCDLibrary}!FindDaeId@{FindDaeId}}
+\index{FindDaeId@{FindDaeId}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{FindDaeId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ const T $\ast$ {\bf FCDLibrary}$<$ T $>$::FindDaeId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ daeId}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDLibrary_af502e24b810e9957b820f6a7f6759b60}
+See above. \hypertarget{classFCDLibrary_a64376436cd35baea0992cc343138aaca}{
+\index{FCDLibrary@{FCDLibrary}!FindDaeId@{FindDaeId}}
+\index{FindDaeId@{FindDaeId}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{FindDaeId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf FCDLibrary}$<$ T $>$::FindDaeId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ daeId}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDLibrary_a64376436cd35baea0992cc343138aaca}
+Retrieves the library entity with the given COLLADA id. 
+\begin{DoxyParams}{Parameters}
+\item[{\em daeId}]The COLLADA id of the entity. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The library entity which matches the COLLADA id. This pointer will be NULL if no matching entity was found. 
+\end{DoxyReturn}
+\hypertarget{classFCDLibrary_ab4c9390266912c40fa1d910380996f01}{
+\index{FCDLibrary@{FCDLibrary}!GetAsset@{GetAsset}}
+\index{GetAsset@{GetAsset}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{GetAsset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf FCDAsset} $\ast$ {\bf FCDLibrary}$<$ T $>$::GetAsset (
+\begin{DoxyParamCaption}
+\item[{bool}]{ create = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDLibrary_ab4c9390266912c40fa1d910380996f01}
+Retrieves the asset information for the library. The non-\/const version of this function can create an empty asset structure for this library. 
+\begin{DoxyParams}{Parameters}
+\item[{\em create}]Whether to create the asset tag if it is missing. Defaults to true. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The asset tag for the library. 
+\end{DoxyReturn}
+\hypertarget{classFCDLibrary_a3a53f0a1500d48e935f1469f002f27ce}{
+\index{FCDLibrary@{FCDLibrary}!GetEntity@{GetEntity}}
+\index{GetEntity@{GetEntity}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{GetEntity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const T$\ast$ {\bf FCDLibrary}$<$ T $>$::GetEntity (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDLibrary_a3a53f0a1500d48e935f1469f002f27ce}
+See above. \hypertarget{classFCDLibrary_ab2aa913794a0ceaafe3b3773deac3398}{
+\index{FCDLibrary@{FCDLibrary}!GetEntity@{GetEntity}}
+\index{GetEntity@{GetEntity}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{GetEntity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf FCDLibrary}$<$ T $>$::GetEntity (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDLibrary_ab2aa913794a0ceaafe3b3773deac3398}
+Retrieves an indexed entity from the library. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the entity to retrieve. Should be within the range \mbox{[}0, \hyperlink{classFCDLibrary_ab79bd9b55bce87bcb597a3343a94957a}{GetEntityCount()}\mbox{[}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The indexed entity. 
+\end{DoxyReturn}
+\hypertarget{classFCDLibrary_ab79bd9b55bce87bcb597a3343a94957a}{
+\index{FCDLibrary@{FCDLibrary}!GetEntityCount@{GetEntityCount}}
+\index{GetEntityCount@{GetEntityCount}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{GetEntityCount}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ size\_\-t {\bf FCDLibrary}$<$ T $>$::GetEntityCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDLibrary_ab79bd9b55bce87bcb597a3343a94957a}
+Retrieves the number of entities within the library. \begin{DoxyReturn}{Returns}
+the number of entities contained within the library. 
+\end{DoxyReturn}
+\hypertarget{classFCDLibrary_ae95b2810d4f77c1c2d83d07e69d0d3a3}{
+\index{FCDLibrary@{FCDLibrary}!GetExtra@{GetExtra}}
+\index{GetExtra@{GetExtra}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{GetExtra}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf FCDExtra}$\ast$ {\bf FCDLibrary}$<$ T $>$::GetExtra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDLibrary_ae95b2810d4f77c1c2d83d07e69d0d3a3}
+See above. Retrieves the asset information for the library. \begin{DoxyReturn}{Returns}
+The asset tag for the library. 
+\end{DoxyReturn}
+\hypertarget{classFCDLibrary_a5045adb8f08e9a8f51fada3fdce63470}{
+\index{FCDLibrary@{FCDLibrary}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!FCDLibrary@{FCDLibrary}}
+\subsubsection[{IsEmpty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf FCDLibrary}$<$ T $>$::IsEmpty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDLibrary_a5045adb8f08e9a8f51fada3fdce63470}
+Returns whether the library contains no entities. \begin{DoxyReturn}{Returns}
+Whether the library is empty. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDLibrary_8h}{FCDLibrary.h}\item 
+FCollada/FCDocument/FCDLibrary.hpp\end{DoxyCompactItemize}

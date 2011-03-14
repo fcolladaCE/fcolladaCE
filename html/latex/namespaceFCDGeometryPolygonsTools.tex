@@ -1,0 +1,312 @@
+\hypertarget{namespaceFCDGeometryPolygonsTools}{
+\section{FCDGeometryPolygonsTools Namespace Reference}
+\label{namespaceFCDGeometryPolygonsTools}\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structFCDGeometryPolygonsTools_1_1TangentialVertex}{TangentialVertex}
+\item 
+struct \hyperlink{structFCDGeometryPolygonsTools_1_1HashIndexMapItem}{HashIndexMapItem}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceFCDGeometryPolygonsTools_a324eb52831fd68edec9f4c53179cef54}{
+typedef \hyperlink{classfm_1_1vector}{fm::vector}$<$ \hyperlink{structFCDGeometryPolygonsTools_1_1TangentialVertex}{TangentialVertex} $>$ {\bfseries TangentialVertexList}}
+\label{namespaceFCDGeometryPolygonsTools_a324eb52831fd68edec9f4c53179cef54}
+
+\item 
+\hypertarget{namespaceFCDGeometryPolygonsTools_af4e70eb8c889999cd7be13dca990efd0}{
+typedef \hyperlink{classfm_1_1vector}{fm::vector}$<$ \hyperlink{classfm_1_1vector}{UInt32List} $>$ {\bfseries UInt32ListList}}
+\label{namespaceFCDGeometryPolygonsTools_af4e70eb8c889999cd7be13dca990efd0}
+
+\item 
+\hypertarget{namespaceFCDGeometryPolygonsTools_ab4f309281805c91af6496bb9bbbc99b2}{
+typedef \hyperlink{classfm_1_1pvector}{fm::pvector}$<$ \hyperlink{classFCDGeometryPolygonsInput}{FCDGeometryPolygonsInput} $>$ {\bfseries InputList}}
+\label{namespaceFCDGeometryPolygonsTools_ab4f309281805c91af6496bb9bbbc99b2}
+
+\item 
+\hypertarget{namespaceFCDGeometryPolygonsTools_a1535da557d2ffde70da72e32142eb4cc}{
+typedef \hyperlink{classfm_1_1map}{fm::map}$<$ uint32, \hyperlink{structFCDGeometryPolygonsTools_1_1HashIndexMapItem}{HashIndexMapItem} $>$ {\bfseries HashIndexMap}}
+\label{namespaceFCDGeometryPolygonsTools_a1535da557d2ffde70da72e32142eb4cc}
+
+\item 
+\hypertarget{namespaceFCDGeometryPolygonsTools_a4a62dc14a8576eecb47c671629babd95}{
+typedef \hyperlink{classfm_1_1pvector}{fm::pvector}$<$ \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} $>$ {\bfseries FCDGeometryIndexTranslationMapList}}
+\label{namespaceFCDGeometryPolygonsTools_a4a62dc14a8576eecb47c671629babd95}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_acc34609095c4d934983f65f5bf068d3d}{Triangulate} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_acf2b155dd5781c2a781841097c745396}{Triangulate} (\hyperlink{classFCDGeometryPolygons}{FCDGeometryPolygons} $\ast$polygons, bool recalculate)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_ac750730d04e82ff25157d06bb77996ce}{GenerateTextureTangentBasis} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh, \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$texcoordSource, bool generateBinormals)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a7541340d15de908be8cc7f95d568d32c}{GenerateUniqueIndices} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh, \hyperlink{classFCDGeometryPolygons}{FCDGeometryPolygons} $\ast$polygonsToProcess, \hyperlink{classfm_1_1vector}{FCDNewIndicesList} \&outIndices, \hyperlink{classfm_1_1pvector}{FCDGeometryIndexTranslationMapList} \&outTranslationMaps)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_af02df362078a3e7467a978862fbf99d5}{GenerateUniqueIndices} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh, \hyperlink{classFCDGeometryPolygons}{FCDGeometryPolygons} $\ast$polygonsToProcess, \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} $\ast$translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_ad2bfb87fea582dbdd9dcc2021d9e5628}{ApplyUniqueIndices} (float $\ast$targData, float $\ast$srcData, uint32 stride, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} $\ast$translationMap)
+\item 
+\hypertarget{namespaceFCDGeometryPolygonsTools_af5bbb2041c56544d97232372e5856ceb}{
+void {\bfseries ApplyUniqueIndices} (\hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$targSource, uint32 nValues, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} $\ast$translationMap)}
+\label{namespaceFCDGeometryPolygonsTools_af5bbb2041c56544d97232372e5856ceb}
+
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a2b715708a01eab1beb8e3b29de70dd0d}{ApplyUniqueIndices} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$targMesh, \hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$baseMesh, const \hyperlink{classfm_1_1vector}{UInt32List} \&newIndices, const \hyperlink{classfm_1_1pvector}{FCDGeometryIndexTranslationMapList} \&translationMaps)
+\item 
+\hypertarget{namespaceFCDGeometryPolygonsTools_a4984fab27cf1ea08f70b33345bc8a589}{
+{\footnotesize template$<$class VAL , bool translateValue, bool isColor$>$ }\\void {\bfseries PackVertexBuffers} (uint8 $\ast$destBuffer, uint32 destBuffStride, const \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$source, uint32 vCount, uint16 $\ast$vtxPackingMap, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)}
+\label{namespaceFCDGeometryPolygonsTools_a4984fab27cf1ea08f70b33345bc8a589}
+
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a4f9f9b1a23da8801703894929ed78c77}{PackVertexBufferV3} (uint8 $\ast$destBuffer, uint32 destBuffStride, const \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$source, uint32 vCount, uint16 $\ast$vtxPackingMap, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_ac59d7b587eccb025da8318018b966de6}{PackVertexBufferColor} (uint8 $\ast$destBuffer, uint32 destBuffStride, const \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$source, uint32 vCount, uint16 $\ast$vtxPackingMap, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a75da2add1b594593c04bcf253d015567}{PackVertexBufferV2} (uint8 $\ast$destBuffer, uint32 destBuffStride, const \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$source, uint32 vCount, uint16 $\ast$vtxPackingMap, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)
+\item 
+uint16 \hyperlink{namespaceFCDGeometryPolygonsTools_a18a4eb68e6b187f573ca808d78b7cf37}{GenerateVertexPackingMap} (size\_\-t maxIndex, size\_\-t maxIndices, size\_\-t maxVertices, const uint32 $\ast$inIndices, uint16 $\ast$outIndices, \hyperlink{classfm_1_1vector}{UInt16List} $\ast$outPackingMap, uint16 $\ast$outNVertices)
+\item 
+uint32 \hyperlink{namespaceFCDGeometryPolygonsTools_a10e774316ed58ca98bbf78a24e833ee4}{FindLargestUniqueIndex} (const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&aMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_ab46f2b9cf9e9e830f32e37c4af4ca6a7}{RevertUniqueIndices} (const \hyperlink{classFCDGeometryPolygonsInput}{FCDGeometryPolygonsInput} \&inPInput, \hyperlink{classFCDGeometryPolygonsInput}{FCDGeometryPolygonsInput} \&outPInput, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_aa53f5d46accb9d94e71029dcabe10510}{FitIndexBuffers} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh, size\_\-t maximumIndexCount)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a25f9608e5084b711403e38aafd52e990}{ReverseNormals} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds commonly-\/used transformation functions for meshes and polygons sets. 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFCDGeometryPolygonsTools_ad2bfb87fea582dbdd9dcc2021d9e5628}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!ApplyUniqueIndices@{ApplyUniqueIndices}}
+\index{ApplyUniqueIndices@{ApplyUniqueIndices}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{ApplyUniqueIndices}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::ApplyUniqueIndices (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ targData, }
+\item[{float $\ast$}]{ srcData, }
+\item[{uint32}]{ stride, }
+\item[{const {\bf FCDGeometryIndexTranslationMap} $\ast$}]{ translationMap}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_ad2bfb87fea582dbdd9dcc2021d9e5628}
+Applies the translation map onto some vertex data. Refer to the information within the translation map to pre-\/cache the necessary amount of vertices. 
+\begin{DoxyParams}{Parameters}
+\item[{\em targData}]The vertex buffer data to be filled-\/in. \item[{\em srcData}]The original vertex data. \item[{\em stride}]The stride within the target vertex buffer data and within the orignal vertex data. \item[{\em translationMap}]How to relocate the vertex data. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_a2b715708a01eab1beb8e3b29de70dd0d}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!ApplyUniqueIndices@{ApplyUniqueIndices}}
+\index{ApplyUniqueIndices@{ApplyUniqueIndices}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{ApplyUniqueIndices}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::ApplyUniqueIndices (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ targMesh, }
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ baseMesh, }
+\item[{const {\bf UInt32List} \&}]{ newIndices, }
+\item[{const {\bf FCDGeometryIndexTranslationMapList} \&}]{ translationMaps}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_a2b715708a01eab1beb8e3b29de70dd0d}
+Applies the translation map onto some vertex data. Refer to the information within the translation map to pre-\/cache the necessary amount of vertices. 
+\begin{DoxyParams}{Parameters}
+\item[{\em targMesh}]The mesh object to be modified in-\/place. \item[{\em baseMesh}]The original mesh object that contains the original vertex data. \item[{\em newIndices}]The unique index buffer data. \item[{\em translationMaps}]How the vertex data needs to be relocated in order to use the unique index buffer data. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_a10e774316ed58ca98bbf78a24e833ee4}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!FindLargestUniqueIndex@{FindLargestUniqueIndex}}
+\index{FindLargestUniqueIndex@{FindLargestUniqueIndex}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{FindLargestUniqueIndex}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT uint32 FCDGeometryPolygonsTools::FindLargestUniqueIndex (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDGeometryIndexTranslationMap} \&}]{ translationMap}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_a10e774316ed58ca98bbf78a24e833ee4}
+Retrieves the largest unique index within a given translation map. This function is unnecessary expensive and we suggest that you cache its results. 
+\begin{DoxyParams}{Parameters}
+\item[{\em translationMap}]A translation map. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The largest unique index within the translation map. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCDGeometryPolygonsTools_aa53f5d46accb9d94e71029dcabe10510}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!FitIndexBuffers@{FitIndexBuffers}}
+\index{FitIndexBuffers@{FitIndexBuffers}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{FitIndexBuffers}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::FitIndexBuffers (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ mesh, }
+\item[{size\_\-t}]{ maximumIndexCount}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_aa53f5d46accb9d94e71029dcabe10510}
+Splits the mesh's polygons sets to ensure that none of them have more than a given number of indices within their index buffers. If you intend of using the GenerateUniqueIndices tool on your meshes, you should run it before this tool. This function affects only the indices and the number of polygon sets within a mesh and therefore has no impact on skins or morphers attached to the given mesh. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mesh}]The mesh to process. \item[{\em maximumIndexCount}]The maximum number of indices to have within each polygons set. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_ac750730d04e82ff25157d06bb77996ce}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!GenerateTextureTangentBasis@{GenerateTextureTangentBasis}}
+\index{GenerateTextureTangentBasis@{GenerateTextureTangentBasis}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{GenerateTextureTangentBasis}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::GenerateTextureTangentBasis (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ mesh, }
+\item[{{\bf FCDGeometrySource} $\ast$}]{ texcoordSource, }
+\item[{bool}]{ generateBinormals = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_ac750730d04e82ff25157d06bb77996ce}
+Generates the texture tangents and binormals for a given source of texture coordinates. A source of normals and a source of vertex positions will be expected. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mesh}]The mesh that contains the texture coordinate source. \item[{\em texcoordSource}]The source of texture coordinates that needs its tangents and binormals generated. \item[{\em generateBinormals}]Whether the binormals should also be generated. Do note that the binormal is always the cross-\/product of the tangent and the normal at a vertex-\/face pair. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_a7541340d15de908be8cc7f95d568d32c}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!GenerateUniqueIndices@{GenerateUniqueIndices}}
+\index{GenerateUniqueIndices@{GenerateUniqueIndices}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{GenerateUniqueIndices}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::GenerateUniqueIndices (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ mesh, }
+\item[{{\bf FCDGeometryPolygons} $\ast$}]{ polygonsToProcess, }
+\item[{{\bf FCDNewIndicesList} \&}]{ outIndices, }
+\item[{{\bf FCDGeometryIndexTranslationMapList} \&}]{ outTranslationMaps}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_a7541340d15de908be8cc7f95d568d32c}
+Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer. This is useful for older engines and the applications that only support one index per face-\/vertex pair. This version of the GenerateUniqueIndices function fills in the outTranslationMaps, but does not modify the data in the FCDGeometryPolygon objects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mesh}]The mesh to process. \item[{\em polygons}]The polygons set to isolate and process. If this pointer is NULL, the whole mesh is processed for one index buffer. \item[{\em outIndices}]The unique index buffer data. \item[{\em outTranslationMaps}]How the vertex data needs to be relocated in order to use the unique index buffer data. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_af02df362078a3e7467a978862fbf99d5}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!GenerateUniqueIndices@{GenerateUniqueIndices}}
+\index{GenerateUniqueIndices@{GenerateUniqueIndices}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{GenerateUniqueIndices}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::GenerateUniqueIndices (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ mesh, }
+\item[{{\bf FCDGeometryPolygons} $\ast$}]{ polygons = {\ttfamily NULL}, }
+\item[{{\bf FCDGeometryIndexTranslationMap} $\ast$}]{ translationMap = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_af02df362078a3e7467a978862fbf99d5}
+Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer. This is useful for older engines and the applications that only support one index per face-\/vertex pair. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mesh}]The mesh to process. \item[{\em polygons}]The polygons set to isolate and process. If this pointer is NULL, the whole mesh is processed for one index buffer. \item[{\em translationMap}]Optional map that returns how to translate old vertex position indices into new indices. This map is necessary to support skins and morphers. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_a18a4eb68e6b187f573ca808d78b7cf37}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!GenerateVertexPackingMap@{GenerateVertexPackingMap}}
+\index{GenerateVertexPackingMap@{GenerateVertexPackingMap}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{GenerateVertexPackingMap}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT uint16 FCDGeometryPolygonsTools::GenerateVertexPackingMap (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ maxIndex, }
+\item[{size\_\-t}]{ maxIndices, }
+\item[{size\_\-t}]{ maxVertices, }
+\item[{const uint32 $\ast$}]{ inIndices, }
+\item[{uint16 $\ast$}]{ outIndices, }
+\item[{{\bf UInt16List} $\ast$}]{ outPackingMap, }
+\item[{uint16 $\ast$}]{ outNVertices = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_a18a4eb68e6b187f573ca808d78b7cf37}
+Generates a packing map for a mesh' given vertex data. 
+\begin{DoxyParams}{Parameters}
+\item[{\em maxIndex}]The total number of indices in the input index data. \item[{\em maxIndices}]The maximum number of indices to include in one packing map. Generally, this number would be 2$^\wedge$16-\/1. \item[{\em maxVertices}]The maximum number of vertices to include in one packing map. Generally, this number would also be 2$^\wedge$16-\/1. \item[{\em inIndices}]The input unique index data. \item[{\em outIndices}]The resulting indices. \item[{\em outPackingMap}]The packing maps. These maps are used to identify \item[{\em outNVertices}]The number of vertices for each split packing map. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of indices packed away. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCDGeometryPolygonsTools_ac59d7b587eccb025da8318018b966de6}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!PackVertexBufferColor@{PackVertexBufferColor}}
+\index{PackVertexBufferColor@{PackVertexBufferColor}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{PackVertexBufferColor}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::PackVertexBufferColor (
+\begin{DoxyParamCaption}
+\item[{uint8 $\ast$}]{ destBuffer, }
+\item[{uint32}]{ destBuffStride, }
+\item[{const {\bf FCDGeometrySource} $\ast$}]{ source, }
+\item[{uint32}]{ vCount, }
+\item[{uint16 $\ast$}]{ vtxPackingMap, }
+\item[{const {\bf FCDGeometryIndexTranslationMap} \&}]{ translationMap}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_ac59d7b587eccb025da8318018b966de6}
+Used to pack a vertex buffer object object with 4 bytes color data. 
+\begin{DoxyParams}{Parameters}
+\item[{\em destBuffer}]The vertex buffer memory. \item[{\em destBufferStride}]The size of one vertex in the vertex buffer. \item[{\em source}]The original mesh vertex data. \item[{\em vCount}]The number of vertex elements in the original mesh vertex data. \item[{\em vtxPackingMap}]The packing map, generated by GenerateVertexPackingMap, for this vertex data. \item[{\em translationMap}]The translation map, generated by GenerateUniqueIndices, for this vertex data. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_a75da2add1b594593c04bcf253d015567}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!PackVertexBufferV2@{PackVertexBufferV2}}
+\index{PackVertexBufferV2@{PackVertexBufferV2}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{PackVertexBufferV2}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::PackVertexBufferV2 (
+\begin{DoxyParamCaption}
+\item[{uint8 $\ast$}]{ destBuffer, }
+\item[{uint32}]{ destBuffStride, }
+\item[{const {\bf FCDGeometrySource} $\ast$}]{ source, }
+\item[{uint32}]{ vCount, }
+\item[{uint16 $\ast$}]{ vtxPackingMap, }
+\item[{const {\bf FCDGeometryIndexTranslationMap} \&}]{ translationMap}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_a75da2add1b594593c04bcf253d015567}
+Used to pack a vertex buffer object object with 2D float vertex data. 
+\begin{DoxyParams}{Parameters}
+\item[{\em destBuffer}]The vertex buffer memory. \item[{\em destBufferStride}]The size of one vertex in the vertex buffer. \item[{\em source}]The original mesh vertex data. \item[{\em vCount}]The number of vertex elements in the original mesh vertex data. \item[{\em vtxPackingMap}]The packing map, generated by GenerateVertexPackingMap, for this vertex data. \item[{\em translationMap}]The translation map, generated by GenerateUniqueIndices, for this vertex data. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_a4f9f9b1a23da8801703894929ed78c77}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!PackVertexBufferV3@{PackVertexBufferV3}}
+\index{PackVertexBufferV3@{PackVertexBufferV3}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{PackVertexBufferV3}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::PackVertexBufferV3 (
+\begin{DoxyParamCaption}
+\item[{uint8 $\ast$}]{ destBuffer, }
+\item[{uint32}]{ destBuffStride, }
+\item[{const {\bf FCDGeometrySource} $\ast$}]{ source, }
+\item[{uint32}]{ vCount, }
+\item[{uint16 $\ast$}]{ vtxPackingMap, }
+\item[{const {\bf FCDGeometryIndexTranslationMap} \&}]{ translationMap}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_a4f9f9b1a23da8801703894929ed78c77}
+Used to pack a vertex buffer object with 3D float vertex data. 
+\begin{DoxyParams}{Parameters}
+\item[{\em destBuffer}]The vertex buffer memory. \item[{\em destBufferStride}]The size of one vertex in the vertex buffer. \item[{\em source}]The original mesh vertex data. \item[{\em vCount}]The number of vertex elements in the original mesh vertex data. \item[{\em vtxPackingMap}]The packing map, generated by GenerateVertexPackingMap, for this vertex data. \item[{\em translationMap}]The translation map, generated by GenerateUniqueIndices, for this vertex data. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_a25f9608e5084b711403e38aafd52e990}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!ReverseNormals@{ReverseNormals}}
+\index{ReverseNormals@{ReverseNormals}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{ReverseNormals}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::ReverseNormals (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ mesh}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_a25f9608e5084b711403e38aafd52e990}
+Reverses all the normals of a mesh. Since they are related to normals, this function also reverses geometric tangents and binormals as well as texture tangents and binormals. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mesh}]The mesh to process. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_ab46f2b9cf9e9e830f32e37c4af4ca6a7}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!RevertUniqueIndices@{RevertUniqueIndices}}
+\index{RevertUniqueIndices@{RevertUniqueIndices}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{RevertUniqueIndices}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::RevertUniqueIndices (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDGeometryPolygonsInput} \&}]{ inSrc, }
+\item[{{\bf FCDGeometryPolygonsInput} \&}]{ outSrc, }
+\item[{const {\bf FCDGeometryIndexTranslationMap} \&}]{ translationMap}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_ab46f2b9cf9e9e830f32e37c4af4ca6a7}
+Reverts the modifications done when applying the unique index buffer data translation unto some polygons input. IMPORTANT: this function is un-\/tested, DO NOT USE. 
+\begin{DoxyParams}{Parameters}
+\item[{\em inSrc}]? \item[{\em outSrc}]? \item[{\em translationMap}]? \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_acc34609095c4d934983f65f5bf068d3d}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!Triangulate@{Triangulate}}
+\index{Triangulate@{Triangulate}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{Triangulate}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::Triangulate (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ mesh}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_acc34609095c4d934983f65f5bf068d3d}
+Triangulates a mesh. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mesh}]The mesh to triangulate. \end{DoxyParams}
+\hypertarget{namespaceFCDGeometryPolygonsTools_acf2b155dd5781c2a781841097c745396}{
+\index{FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}!Triangulate@{Triangulate}}
+\index{Triangulate@{Triangulate}!FCDGeometryPolygonsTools@{FCDGeometryPolygonsTools}}
+\subsubsection[{Triangulate}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCDGeometryPolygonsTools::Triangulate (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryPolygons} $\ast$}]{ polygons, }
+\item[{bool}]{ recalculate = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDGeometryPolygonsTools_acf2b155dd5781c2a781841097c745396}
+Triangulates a polygons set. 
+\begin{DoxyParams}{Parameters}
+\item[{\em polygons}]The polygons set to triangulate. \item[{\em recalculate}]Whether the statistics of the mesh should be recalculated after the tool has completed. \end{DoxyParams}

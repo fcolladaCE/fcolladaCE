@@ -1,0 +1,142 @@
+\hypertarget{classFCDTargetedEntity}{
+\section{FCDTargetedEntity Class Reference}
+\label{classFCDTargetedEntity}\index{FCDTargetedEntity@{FCDTargetedEntity}}
+}
+
+
+{\ttfamily \#include $<$FCDTargetedEntity.h$>$}
+
+Inheritance diagram for FCDTargetedEntity:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{classFCDTargetedEntity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDTargetedEntity_a1b8288f98ecd87c6d67c160fdbc84c8e}{FCDTargetedEntity} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, const char $\ast$baseId)
+\item 
+virtual \hyperlink{classFCDTargetedEntity_af219ef0c612e1db887770ee173c4b0fc}{$\sim$FCDTargetedEntity} ()
+\item 
+bool \hyperlink{classFCDTargetedEntity_aa3b365694bdf46b5be98518607b66518}{HasTarget} () const 
+\item 
+\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDTargetedEntity_a50896d5a2017ab08f63bb499e8c09343}{GetTargetNode} ()
+\item 
+const \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDTargetedEntity_a9261ef2dc3b5d387fb62f52ea20efa21}{GetTargetNode} () const 
+\item 
+void \hyperlink{classFCDTargetedEntity_a297fa32e4899f799318e814645772a35}{SetTargetNode} (\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$target)
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDTargetedEntity_a58caa60f030e5eba714015adf54dbd54}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A targeted entity.
+
+COLLADA doesn't have targeted entity. Therefore: the behavior of a targeted entity is application-\/defined.
+
+This class is used to support 3dsMax's targeted cameras and lights and we also plan to support Maya's targeted cameras and lights.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDCamera}{FCDCamera} \hyperlink{classFCDLight}{FCDLight} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDTargetedEntity_a1b8288f98ecd87c6d67c160fdbc84c8e}{
+\index{FCDTargetedEntity@{FCDTargetedEntity}!FCDTargetedEntity@{FCDTargetedEntity}}
+\index{FCDTargetedEntity@{FCDTargetedEntity}!FCDTargetedEntity@{FCDTargetedEntity}}
+\subsubsection[{FCDTargetedEntity}]{\setlength{\rightskip}{0pt plus 5cm}FCDTargetedEntity::FCDTargetedEntity (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{const char $\ast$}]{ baseId}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTargetedEntity_a1b8288f98ecd87c6d67c160fdbc84c8e}
+Constructor: do not use directly. Instead, create objects of the up-\/classes. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the targeted entity. \item[{\em baseId}]The prefix COLLADA id to be used if no COLLADA id is provided. \end{DoxyParams}
+\hypertarget{classFCDTargetedEntity_af219ef0c612e1db887770ee173c4b0fc}{
+\index{FCDTargetedEntity@{FCDTargetedEntity}!$\sim$FCDTargetedEntity@{$\sim$FCDTargetedEntity}}
+\index{$\sim$FCDTargetedEntity@{$\sim$FCDTargetedEntity}!FCDTargetedEntity@{FCDTargetedEntity}}
+\subsubsection[{$\sim$FCDTargetedEntity}]{\setlength{\rightskip}{0pt plus 5cm}FCDTargetedEntity::$\sim$FCDTargetedEntity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTargetedEntity_af219ef0c612e1db887770ee173c4b0fc}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDTargetedEntity_a58caa60f030e5eba714015adf54dbd54}{
+\index{FCDTargetedEntity@{FCDTargetedEntity}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDTargetedEntity@{FCDTargetedEntity}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDTargetedEntity::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTargetedEntity_a58caa60f030e5eba714015adf54dbd54}
+Copies the entity target information into a entity clone. All the overwriting functions of this function should call this function to copy the target information. The cloned entity may reside in another document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new entity will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDTargetedEntity_a50896d5a2017ab08f63bb499e8c09343}{
+\index{FCDTargetedEntity@{FCDTargetedEntity}!GetTargetNode@{GetTargetNode}}
+\index{GetTargetNode@{GetTargetNode}!FCDTargetedEntity@{FCDTargetedEntity}}
+\subsubsection[{GetTargetNode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSceneNode}$\ast$ FCDTargetedEntity::GetTargetNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTargetedEntity_a50896d5a2017ab08f63bb499e8c09343}
+Retrieves the target visual scene node for this entity. \begin{DoxyReturn}{Returns}
+The target visual scene node. 
+\end{DoxyReturn}
+\hypertarget{classFCDTargetedEntity_a9261ef2dc3b5d387fb62f52ea20efa21}{
+\index{FCDTargetedEntity@{FCDTargetedEntity}!GetTargetNode@{GetTargetNode}}
+\index{GetTargetNode@{GetTargetNode}!FCDTargetedEntity@{FCDTargetedEntity}}
+\subsubsection[{GetTargetNode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSceneNode}$\ast$ FCDTargetedEntity::GetTargetNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTargetedEntity_a9261ef2dc3b5d387fb62f52ea20efa21}
+See above. \hypertarget{classFCDTargetedEntity_aa3b365694bdf46b5be98518607b66518}{
+\index{FCDTargetedEntity@{FCDTargetedEntity}!HasTarget@{HasTarget}}
+\index{HasTarget@{HasTarget}!FCDTargetedEntity@{FCDTargetedEntity}}
+\subsubsection[{HasTarget}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDTargetedEntity::HasTarget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTargetedEntity_aa3b365694bdf46b5be98518607b66518}
+Retrieves whether a target is defined for this entity. \begin{DoxyReturn}{Returns}
+Whether a target is defined for this entity. 
+\end{DoxyReturn}
+\hypertarget{classFCDTargetedEntity_a297fa32e4899f799318e814645772a35}{
+\index{FCDTargetedEntity@{FCDTargetedEntity}!SetTargetNode@{SetTargetNode}}
+\index{SetTargetNode@{SetTargetNode}!FCDTargetedEntity@{FCDTargetedEntity}}
+\subsubsection[{SetTargetNode}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTargetedEntity::SetTargetNode (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDSceneNode} $\ast$}]{ target}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTargetedEntity_a297fa32e4899f799318e814645772a35}
+Sets the target visual scene node for this entity. 
+\begin{DoxyParams}{Parameters}
+\item[{\em target}]The new target node. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDTargetedEntity_8h}{FCDTargetedEntity.h}\item 
+FCollada/FCDocument/FCDTargetedEntity.cpp\end{DoxyCompactItemize}

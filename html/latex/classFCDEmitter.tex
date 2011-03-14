@@ -1,0 +1,99 @@
+\hypertarget{classFCDEmitter}{
+\section{FCDEmitter Class Reference}
+\label{classFCDEmitter}\index{FCDEmitter@{FCDEmitter}}
+}
+
+
+{\ttfamily \#include $<$FCDEmitter.h$>$}
+
+Inheritance diagram for FCDEmitter:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDEmitter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEmitter_a49f90e56fcc799ae7c87bca9ba5d2a8e}{FCDEmitter} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+\hyperlink{classFCDEmitter_a5903b5d66d3877e062549c433ea98d1d}{$\sim$FCDEmitter} ()
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDEmitter_a2921acf052b38f68d148b0fdcaa366b9}{GetType} () const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDEmitter_afdd49a87fe2fdb95b425f62bac8150d6}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA generic emitter.
+
+This class does not belong to the COLLADA COMMON profile. It is used to define both particle and sound emitters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEmitter_a49f90e56fcc799ae7c87bca9ba5d2a8e}{
+\index{FCDEmitter@{FCDEmitter}!FCDEmitter@{FCDEmitter}}
+\index{FCDEmitter@{FCDEmitter}!FCDEmitter@{FCDEmitter}}
+\subsubsection[{FCDEmitter}]{\setlength{\rightskip}{0pt plus 5cm}FCDEmitter::FCDEmitter (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEmitter_a49f90e56fcc799ae7c87bca9ba5d2a8e}
+Constructor. Do not use directly, emitters should be created using the AddEntity function on the FCDEmitterLibrary 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the emitter. \end{DoxyParams}
+\hypertarget{classFCDEmitter_a5903b5d66d3877e062549c433ea98d1d}{
+\index{FCDEmitter@{FCDEmitter}!$\sim$FCDEmitter@{$\sim$FCDEmitter}}
+\index{$\sim$FCDEmitter@{$\sim$FCDEmitter}!FCDEmitter@{FCDEmitter}}
+\subsubsection[{$\sim$FCDEmitter}]{\setlength{\rightskip}{0pt plus 5cm}FCDEmitter::$\sim$FCDEmitter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEmitter_a5903b5d66d3877e062549c433ea98d1d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEmitter_afdd49a87fe2fdb95b425f62bac8150d6}{
+\index{FCDEmitter@{FCDEmitter}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDEmitter@{FCDEmitter}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDEmitter::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEmitter_afdd49a87fe2fdb95b425f62bac8150d6}
+Clones the emitter information. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The cloned emitter. If this pointer is NULL, a new emitter is created and you will need to release it manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDEmitter_a2921acf052b38f68d148b0fdcaa366b9}{
+\index{FCDEmitter@{FCDEmitter}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDEmitter@{FCDEmitter}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDEmitter::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDEmitter_a2921acf052b38f68d148b0fdcaa366b9}
+Retrieves the entity class type. \begin{DoxyReturn}{Returns}
+The entity class type: EMITTER 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEmitter_8h}{FCDEmitter.h}\item 
+FCollada/FCDocument/FCDEmitter.cpp\end{DoxyCompactItemize}

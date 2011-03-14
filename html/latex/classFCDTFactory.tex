@@ -1,0 +1,42 @@
+\hypertarget{classFCDTFactory}{
+\section{FCDTFactory Class Reference}
+\label{classFCDTFactory}\index{FCDTFactory@{FCDTFactory}}
+}
+
+
+{\ttfamily \#include $<$FCDTransform.h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDTFactory_ab1725d09d03056146e8eda137db32fa8}{CreateTransform} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent, \hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{FCDTransform::Type} type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{[}INTERNAL\mbox{]} A factory for COLLADA transforms. Creates the correct transform object for a given transform type/XML tree node. To create new transforms, use the \hyperlink{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{FCDSceneNode::AddTransform} function. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDTFactory_ab1725d09d03056146e8eda137db32fa8}{
+\index{FCDTFactory@{FCDTFactory}!CreateTransform@{CreateTransform}}
+\index{CreateTransform@{CreateTransform}!FCDTFactory@{FCDTFactory}}
+\subsubsection[{CreateTransform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDTFactory::CreateTransform (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent, }
+\item[{{\bf FCDTransform::Type}}]{ type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFCDTFactory_ab1725d09d03056146e8eda137db32fa8}
+Creates a new COLLADA transform, given a transform type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that will own the new transform. \item[{\em parent}]The visual scene node that will contain the transform. \item[{\em type}]The type of transform object to create. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new COLLADA transform. This pointer will be NULL if the given type is invalid. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDTransform_8h}{FCDTransform.h}\item 
+FCollada/FCDocument/FCDTransform.cpp\end{DoxyCompactItemize}

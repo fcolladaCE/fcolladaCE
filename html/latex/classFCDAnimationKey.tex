@@ -1,0 +1,54 @@
+\hypertarget{classFCDAnimationKey}{
+\section{FCDAnimationKey Class Reference}
+\label{classFCDAnimationKey}\index{FCDAnimationKey@{FCDAnimationKey}}
+}
+
+
+{\ttfamily \#include $<$FCDAnimationKey.h$>$}
+
+Inheritance diagram for FCDAnimationKey:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFCDAnimationKey}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classFCDAnimationKey_a1591f4d28aac7dff40d92b0308809a7f}{input}
+\item 
+float \hyperlink{classFCDAnimationKey_aa779e0e946f47dbc9a2d6b9eeb58d6c2}{output}
+\item 
+uint32 \hyperlink{classFCDAnimationKey_a09ea6034885bc7a3c8af91afa68a52ed}{interpolation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple animation key. This class is the base for the more complex one-\/dimensional keys and it is used directly for linear and step keys.
+
+Do not create directly. Instead call FCDAnimationCurve::AddKey(FUDaeInterpolation::LINEAR) or FCDAnimationCurve::AddKey(FUDaeInterpolation::STEP). 
+
+\subsection{Member Data Documentation}
+\hypertarget{classFCDAnimationKey_a1591f4d28aac7dff40d92b0308809a7f}{
+\index{FCDAnimationKey@{FCDAnimationKey}!input@{input}}
+\index{input@{input}!FCDAnimationKey@{FCDAnimationKey}}
+\subsubsection[{input}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FCDAnimationKey::input}}}
+\label{classFCDAnimationKey_a1591f4d28aac7dff40d92b0308809a7f}
+The key input. Typically, this will be a time value, in seconds. For driven curves, the dimension of this value will depend on the driver. \hypertarget{classFCDAnimationKey_a09ea6034885bc7a3c8af91afa68a52ed}{
+\index{FCDAnimationKey@{FCDAnimationKey}!interpolation@{interpolation}}
+\index{interpolation@{interpolation}!FCDAnimationKey@{FCDAnimationKey}}
+\subsubsection[{interpolation}]{\setlength{\rightskip}{0pt plus 5cm}uint32 {\bf FCDAnimationKey::interpolation}}}
+\label{classFCDAnimationKey_a09ea6034885bc7a3c8af91afa68a52ed}
+The key interpolation type. \begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUDaeInterpolation_a209a941c2fb6ece1325352968aa0374f}{FUDaeInterpolation::Interpolation} 
+\end{DoxySeeAlso}
+\hypertarget{classFCDAnimationKey_aa779e0e946f47dbc9a2d6b9eeb58d6c2}{
+\index{FCDAnimationKey@{FCDAnimationKey}!output@{output}}
+\index{output@{output}!FCDAnimationKey@{FCDAnimationKey}}
+\subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FCDAnimationKey::output}}}
+\label{classFCDAnimationKey_aa779e0e946f47dbc9a2d6b9eeb58d6c2}
+The key output. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDAnimationKey_8h}{FCDAnimationKey.h}\end{DoxyCompactItemize}

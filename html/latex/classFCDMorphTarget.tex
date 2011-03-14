@@ -1,0 +1,203 @@
+\hypertarget{classFCDMorphTarget}{
+\section{FCDMorphTarget Class Reference}
+\label{classFCDMorphTarget}\index{FCDMorphTarget@{FCDMorphTarget}}
+}
+
+
+{\ttfamily \#include $<$FCDMorphController.h$>$}
+
+Inheritance diagram for FCDMorphTarget:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDMorphTarget}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDMorphTarget_a3704c6c2176ffabe20c3b10ef3c36e90}{FCDMorphTarget} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDMorphController}{FCDMorphController} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDMorphTarget_a751a40449c5a945fc233dd0a0ee32df7}{$\sim$FCDMorphTarget} ()
+\item 
+\hyperlink{classFCDMorphController}{FCDMorphController} $\ast$ \hyperlink{classFCDMorphTarget_a1cfed74a428ce68c944e487c335753f8}{GetParent} ()
+\item 
+const \hyperlink{classFCDMorphController}{FCDMorphController} $\ast$ \hyperlink{classFCDMorphTarget_a1e29057218a17fa7ab31b76fde8715cf}{GetParent} () const 
+\item 
+\hyperlink{classFCDGeometry}{FCDGeometry} $\ast$ \hyperlink{classFCDMorphTarget_ae96770062ed44c9fdb01681750b490c5}{GetGeometry} ()
+\item 
+const \hyperlink{classFCDGeometry}{FCDGeometry} $\ast$ \hyperlink{classFCDMorphTarget_ad21ba74ba248acddeef276d5e9298e24}{GetGeometry} () const 
+\item 
+void \hyperlink{classFCDMorphTarget_a998bd66544b91f0f41bbc2739acf65c2}{SetGeometry} (\hyperlink{classFCDGeometry}{FCDGeometry} $\ast$geometry)
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableFloat} \& \hyperlink{classFCDMorphTarget_ad4e39bc98f3a51075ff634e06b41b698}{GetWeight} ()
+\item 
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableFloat} \& \hyperlink{classFCDMorphTarget_a05c47b340b76af0d11a2de74dbb4a7e7}{GetWeight} () const 
+\item 
+void \hyperlink{classFCDMorphTarget_a1019a25890e87253afde129c4ad3e002}{SetWeight} (float \_\-weight)
+\item 
+\hyperlink{classFCDMorphTarget_a7086a6fcc6e9e10858e9a53dad2026d6}{DEPRECATED} (3.05A, GetWeight().IsAnimated()) bool IsAnimated() const 
+\item 
+\hyperlink{classFCDMorphTarget_abd8e297427d97a916989b8ac35c9ba4f}{DEPRECATED} (3.05A, GetWeight().GetAnimated()) FCDAnimated $\ast$GetAnimatedWeight()
+\item 
+\hyperlink{classFCDMorphTarget_a2a57b4224f12097e288e07c7574fa90e}{DEPRECATED} (3.05A, GetWeight().GetAnimated()) const FCDAnimated $\ast$GetAnimatedWeight() const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA morph target. A morph target is just a geometric entity with a weight assigned. The weight may be animated. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDMorphTarget_a3704c6c2176ffabe20c3b10ef3c36e90}{
+\index{FCDMorphTarget@{FCDMorphTarget}!FCDMorphTarget@{FCDMorphTarget}}
+\index{FCDMorphTarget@{FCDMorphTarget}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{FCDMorphTarget}]{\setlength{\rightskip}{0pt plus 5cm}FCDMorphTarget::FCDMorphTarget (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDMorphController} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMorphTarget_a3704c6c2176ffabe20c3b10ef3c36e90}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDMorphController_a396c0633ba33ff55e8706fdf3a2e00d1}{FCDMorphController::AddTarget} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the morph target. \item[{\em parent}]The morph controller that contains the morph target. \end{DoxyParams}
+\hypertarget{classFCDMorphTarget_a751a40449c5a945fc233dd0a0ee32df7}{
+\index{FCDMorphTarget@{FCDMorphTarget}!$\sim$FCDMorphTarget@{$\sim$FCDMorphTarget}}
+\index{$\sim$FCDMorphTarget@{$\sim$FCDMorphTarget}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{$\sim$FCDMorphTarget}]{\setlength{\rightskip}{0pt plus 5cm}FCDMorphTarget::$\sim$FCDMorphTarget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDMorphTarget_a751a40449c5a945fc233dd0a0ee32df7}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDMorphTarget_a7086a6fcc6e9e10858e9a53dad2026d6}{
+\index{FCDMorphTarget@{FCDMorphTarget}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMorphTarget::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetWeight().IsAnimated()}]{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDMorphTarget_a7086a6fcc6e9e10858e9a53dad2026d6}
+Retrieves whether the morphing weight is animated. \begin{DoxyReturn}{Returns}
+Whether the morphing weight is animated. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphTarget_abd8e297427d97a916989b8ac35c9ba4f}{
+\index{FCDMorphTarget@{FCDMorphTarget}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMorphTarget::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetWeight().GetAnimated()}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMorphTarget_abd8e297427d97a916989b8ac35c9ba4f}
+Retrieves the animation associated with the morphing weight. \begin{DoxyReturn}{Returns}
+The animated value associated with the morphing weight. This pointer will be NULL if the morphing weight is not animated. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphTarget_a2a57b4224f12097e288e07c7574fa90e}{
+\index{FCDMorphTarget@{FCDMorphTarget}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMorphTarget::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetWeight().GetAnimated()}]{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDMorphTarget_a2a57b4224f12097e288e07c7574fa90e}
+See above. \hypertarget{classFCDMorphTarget_ad21ba74ba248acddeef276d5e9298e24}{
+\index{FCDMorphTarget@{FCDMorphTarget}!GetGeometry@{GetGeometry}}
+\index{GetGeometry@{GetGeometry}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{GetGeometry}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDGeometry}$\ast$ FCDMorphTarget::GetGeometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphTarget_ad21ba74ba248acddeef276d5e9298e24}
+See above. \hypertarget{classFCDMorphTarget_ae96770062ed44c9fdb01681750b490c5}{
+\index{FCDMorphTarget@{FCDMorphTarget}!GetGeometry@{GetGeometry}}
+\index{GetGeometry@{GetGeometry}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{GetGeometry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometry}$\ast$ FCDMorphTarget::GetGeometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphTarget_ae96770062ed44c9fdb01681750b490c5}
+Retrieves the target geometry. This is what the morphed geometry should look like if the morphing weight is set to 1.0f. \begin{DoxyReturn}{Returns}
+The target geometry. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphTarget_a1e29057218a17fa7ab31b76fde8715cf}{
+\index{FCDMorphTarget@{FCDMorphTarget}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDMorphController}$\ast$ FCDMorphTarget::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphTarget_a1e29057218a17fa7ab31b76fde8715cf}
+See above. \hypertarget{classFCDMorphTarget_a1cfed74a428ce68c944e487c335753f8}{
+\index{FCDMorphTarget@{FCDMorphTarget}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMorphController}$\ast$ FCDMorphTarget::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphTarget_a1cfed74a428ce68c944e487c335753f8}
+Retrieves the morph controller which contains this target. \begin{DoxyReturn}{Returns}
+The parent morpher. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphTarget_a05c47b340b76af0d11a2de74dbb4a7e7}{
+\index{FCDMorphTarget@{FCDMorphTarget}!GetWeight@{GetWeight}}
+\index{GetWeight@{GetWeight}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{GetWeight}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDParameterAnimatableFloat}\& FCDMorphTarget::GetWeight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphTarget_a05c47b340b76af0d11a2de74dbb4a7e7}
+See above. \hypertarget{classFCDMorphTarget_ad4e39bc98f3a51075ff634e06b41b698}{
+\index{FCDMorphTarget@{FCDMorphTarget}!GetWeight@{GetWeight}}
+\index{GetWeight@{GetWeight}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{GetWeight}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableFloat}\& FCDMorphTarget::GetWeight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphTarget_ad4e39bc98f3a51075ff634e06b41b698}
+Retrieves the morphing weight. \begin{DoxyReturn}{Returns}
+The morphing weight. 
+\end{DoxyReturn}
+\hypertarget{classFCDMorphTarget_a998bd66544b91f0f41bbc2739acf65c2}{
+\index{FCDMorphTarget@{FCDMorphTarget}!SetGeometry@{SetGeometry}}
+\index{SetGeometry@{SetGeometry}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{SetGeometry}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMorphTarget::SetGeometry (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometry} $\ast$}]{ geometry}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMorphTarget_a998bd66544b91f0f41bbc2739acf65c2}
+Sets the target geometry. This is what the morphed geometry should look like if the morphing weight is set to 1.0f. As such, the target geometry should be similar to the base target geometry. You can verify this using the \hyperlink{classFCDMorphController_a43685ec9f55c43b66e75f62c8b820980}{FCDMorphController::IsSimilar} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em geometry}]The target geometry. \end{DoxyParams}
+\hypertarget{classFCDMorphTarget_a1019a25890e87253afde129c4ad3e002}{
+\index{FCDMorphTarget@{FCDMorphTarget}!SetWeight@{SetWeight}}
+\index{SetWeight@{SetWeight}!FCDMorphTarget@{FCDMorphTarget}}
+\subsubsection[{SetWeight}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMorphTarget::SetWeight (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-weight}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMorphTarget_a1019a25890e87253afde129c4ad3e002}
+Sets the morphing weight. This function has no impact on any animations that target the morphing weight. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-weight}]The morphing weight. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDMorphController_8h}{FCDMorphController.h}\item 
+FCollada/FCDocument/FCDMorphController.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classFUSemaphore}{
+\section{FUSemaphore Class Reference}
+\label{classFUSemaphore}\index{FUSemaphore@{FUSemaphore}}
+}
+
+
+{\ttfamily \#include $<$FUSemaphore.h$>$}
+
+Inheritance diagram for FUSemaphore:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFUSemaphore}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUSemaphore_a500637e0b015a001f806df962e1f7d43}{FUSemaphore} (uint32 initialValue, uint32 maximumValue)
+\item 
+\hyperlink{classFUSemaphore_aa6e9b5ac7309727e8098ee52ca3cb3f4}{$\sim$FUSemaphore} ()
+\item 
+void \hyperlink{classFUSemaphore_a9d47923ee3be0bc9ba97407d048ba9bb}{Up} ()
+\item 
+void \hyperlink{classFUSemaphore_acd9e7cf6338ba21d90656f8a038ec944}{Down} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An OS independent semaphore.
+
+Currently only supported for WIN32. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUSemaphore_a500637e0b015a001f806df962e1f7d43}{
+\index{FUSemaphore@{FUSemaphore}!FUSemaphore@{FUSemaphore}}
+\index{FUSemaphore@{FUSemaphore}!FUSemaphore@{FUSemaphore}}
+\subsubsection[{FUSemaphore}]{\setlength{\rightskip}{0pt plus 5cm}FUSemaphore::FUSemaphore (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ initialValue, }
+\item[{uint32}]{ maximumValue}
+\end{DoxyParamCaption}
+)}}
+\label{classFUSemaphore_a500637e0b015a001f806df962e1f7d43}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em initialValue}]The initial value for the semaphore. \item[{\em maximumValue}]The maximum value for the semaphore. Must be higher than initialValue. \end{DoxyParams}
+\hypertarget{classFUSemaphore_aa6e9b5ac7309727e8098ee52ca3cb3f4}{
+\index{FUSemaphore@{FUSemaphore}!$\sim$FUSemaphore@{$\sim$FUSemaphore}}
+\index{$\sim$FUSemaphore@{$\sim$FUSemaphore}!FUSemaphore@{FUSemaphore}}
+\subsubsection[{$\sim$FUSemaphore}]{\setlength{\rightskip}{0pt plus 5cm}FUSemaphore::$\sim$FUSemaphore (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUSemaphore_aa6e9b5ac7309727e8098ee52ca3cb3f4}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUSemaphore_acd9e7cf6338ba21d90656f8a038ec944}{
+\index{FUSemaphore@{FUSemaphore}!Down@{Down}}
+\index{Down@{Down}!FUSemaphore@{FUSemaphore}}
+\subsubsection[{Down}]{\setlength{\rightskip}{0pt plus 5cm}void FUSemaphore::Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUSemaphore_acd9e7cf6338ba21d90656f8a038ec944}
+Decrements the value of the semaphore.
+
+The value of the semaphore never drops below 0. If the current value is 0, and this method is called, then this method blocks until it is possible to decrement it and then does so. This is made possible when another thread calls Up.
+
+If more than one thread is blocked, and Up is called, any one of the waiting threads may be unblocked. \hypertarget{classFUSemaphore_a9d47923ee3be0bc9ba97407d048ba9bb}{
+\index{FUSemaphore@{FUSemaphore}!Up@{Up}}
+\index{Up@{Up}!FUSemaphore@{FUSemaphore}}
+\subsubsection[{Up}]{\setlength{\rightskip}{0pt plus 5cm}void FUSemaphore::Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUSemaphore_a9d47923ee3be0bc9ba97407d048ba9bb}
+Increments the value of the semaphore. Do not increment it above the maximum value set in the constructor. No check is made. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUSemaphore_8h}{FUSemaphore.h}\item 
+FCollada/FUtils/FUSemaphore.cpp\end{DoxyCompactItemize}

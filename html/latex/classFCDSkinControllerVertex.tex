@@ -1,0 +1,94 @@
+\hypertarget{classFCDSkinControllerVertex}{
+\section{FCDSkinControllerVertex Class Reference}
+\label{classFCDSkinControllerVertex}\index{FCDSkinControllerVertex@{FCDSkinControllerVertex}}
+}
+
+
+{\ttfamily \#include $<$FCDSkinController.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\_\-t \hyperlink{classFCDSkinControllerVertex_a698817cdf93a642d47b4f9428516a025}{GetPairCount} () const 
+\item 
+void \hyperlink{classFCDSkinControllerVertex_a3dcfd3c7cd7f0694295d87d0c8478c9c}{SetPairCount} (size\_\-t count)
+\item 
+\hyperlink{structFCDJointWeightPair}{FCDJointWeightPair} $\ast$ \hyperlink{classFCDSkinControllerVertex_a344bac52a2519a2ab482836994c412d5}{GetPair} (size\_\-t index)
+\item 
+const \hyperlink{structFCDJointWeightPair}{FCDJointWeightPair} $\ast$ \hyperlink{classFCDSkinControllerVertex_a55fd0bfcc9015a5c81249ba18b574834}{GetPair} (size\_\-t index) const 
+\item 
+void \hyperlink{classFCDSkinControllerVertex_a57770871bd7a86c7959144463228b927}{AddPair} (int32 jointIndex, float weight)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA skin controller vertex. This structure contains a list of joint-\/weight pairs that defines how to modify a given mesh vertex in order to skin it properly. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDSkinControllerVertex_a57770871bd7a86c7959144463228b927}{
+\index{FCDSkinControllerVertex@{FCDSkinControllerVertex}!AddPair@{AddPair}}
+\index{AddPair@{AddPair}!FCDSkinControllerVertex@{FCDSkinControllerVertex}}
+\subsubsection[{AddPair}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSkinControllerVertex::AddPair (
+\begin{DoxyParamCaption}
+\item[{int32}]{ jointIndex, }
+\item[{float}]{ weight}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinControllerVertex_a57770871bd7a86c7959144463228b927}
+Adds a new joint-\/weight pair to this vertex. No verification will be made to ensure that the sum of the weights equal 1.0. 
+\begin{DoxyParams}{Parameters}
+\item[{\em jointIndex}]The index of the joint within the skin controller's joint list. \item[{\em weight}]The influence weight for this joint, on this vertex. \end{DoxyParams}
+\hypertarget{classFCDSkinControllerVertex_a55fd0bfcc9015a5c81249ba18b574834}{
+\index{FCDSkinControllerVertex@{FCDSkinControllerVertex}!GetPair@{GetPair}}
+\index{GetPair@{GetPair}!FCDSkinControllerVertex@{FCDSkinControllerVertex}}
+\subsubsection[{GetPair}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDJointWeightPair}$\ast$ FCDSkinControllerVertex::GetPair (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinControllerVertex_a55fd0bfcc9015a5c81249ba18b574834}
+See above. \hypertarget{classFCDSkinControllerVertex_a344bac52a2519a2ab482836994c412d5}{
+\index{FCDSkinControllerVertex@{FCDSkinControllerVertex}!GetPair@{GetPair}}
+\index{GetPair@{GetPair}!FCDSkinControllerVertex@{FCDSkinControllerVertex}}
+\subsubsection[{GetPair}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDJointWeightPair}$\ast$ FCDSkinControllerVertex::GetPair (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinControllerVertex_a344bac52a2519a2ab482836994c412d5}
+Retrieves a joint-\/weight pair. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the joint-\/weight pair. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The joint-\/weight pair at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinControllerVertex_a698817cdf93a642d47b4f9428516a025}{
+\index{FCDSkinControllerVertex@{FCDSkinControllerVertex}!GetPairCount@{GetPairCount}}
+\index{GetPairCount@{GetPairCount}!FCDSkinControllerVertex@{FCDSkinControllerVertex}}
+\subsubsection[{GetPairCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDSkinControllerVertex::GetPairCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinControllerVertex_a698817cdf93a642d47b4f9428516a025}
+Retrieve the number of joint-\/weight pairs defined for this vertex. \begin{DoxyReturn}{Returns}
+The number of joint-\/weight pairs. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinControllerVertex_a3dcfd3c7cd7f0694295d87d0c8478c9c}{
+\index{FCDSkinControllerVertex@{FCDSkinControllerVertex}!SetPairCount@{SetPairCount}}
+\index{SetPairCount@{SetPairCount}!FCDSkinControllerVertex@{FCDSkinControllerVertex}}
+\subsubsection[{SetPairCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSkinControllerVertex::SetPairCount (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinControllerVertex_a3dcfd3c7cd7f0694295d87d0c8478c9c}
+Sets the number of joint-\/weight pairs defined for this vertex. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The number of joint-\/weight pairs defined for this vertex. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDSkinController_8h}{FCDSkinController.h}\item 
+FCollada/FCDocument/FCDSkinController.cpp\end{DoxyCompactItemize}

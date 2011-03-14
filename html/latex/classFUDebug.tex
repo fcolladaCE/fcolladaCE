@@ -1,0 +1,46 @@
+\hypertarget{classFUDebug}{
+\section{FUDebug Class Reference}
+\label{classFUDebug}\index{FUDebug@{FUDebug}}
+}
+
+
+{\ttfamily \#include $<$FUDebug.h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classFUDebug_a8497ac8f011328a86b4aedbaf85504dc}{DebugOut} (uint8 level, uint32 line, const char $\ast$filename, const char $\ast$message,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A debugging logging facility. Do not use this static class directly. Instead, use the macros listed below. This class is based on top of the \hyperlink{classFUError}{FUError} sinks.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{FUDebug_8h_a20c2b8fc53eb5fc7c525a1a8b201e6f3}{DEBUG\_\-OUT} \hyperlink{FUDebug_8h_aad84ea318f0287c9b741da8ac0f0ed56}{WARNING\_\-OUT} \hyperlink{FUDebug_8h_a48e135959518fe8f1103622a977bd400}{ERROR\_\-OUT} \hyperlink{classFUError}{FUError} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUDebug_a8497ac8f011328a86b4aedbaf85504dc}{
+\index{FUDebug@{FUDebug}!DebugOut@{DebugOut}}
+\index{DebugOut@{DebugOut}!FUDebug@{FUDebug}}
+\subsubsection[{DebugOut}]{\setlength{\rightskip}{0pt plus 5cm}void FUDebug::DebugOut (
+\begin{DoxyParamCaption}
+\item[{uint8}]{ level, }
+\item[{uint32}]{ line, }
+\item[{const char $\ast$}]{ filename, }
+\item[{const char $\ast$}]{ message, }
+\item[{}]{ ...}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFUDebug_a8497ac8f011328a86b4aedbaf85504dc}
+Outputs a string to the debug monitor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em level}]The error level: FUError::DEBUG\_\-LEVEL is recommended. \item[{\em filename}]The filename of the code to trace. \item[{\em line}]The line number of the code trace. \item[{\em message}]The formatted message to output. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUDebug_8h}{FUDebug.h}\item 
+FCollada/FUtils/FUDebug.cpp\end{DoxyCompactItemize}

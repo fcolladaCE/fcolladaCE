@@ -1,0 +1,742 @@
+\hypertarget{classFCDSceneNode}{
+\section{FCDSceneNode Class Reference}
+\label{classFCDSceneNode}\index{FCDSceneNode@{FCDSceneNode}}
+}
+
+
+{\ttfamily \#include $<$FCDSceneNode.h$>$}
+
+Inheritance diagram for FCDSceneNode:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDSceneNode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDSceneNode_ac460b0c44f59a0f74481b8575759ee32}{DeclareFlag} (TransformsDirty, 0)
+\item 
+\hyperlink{classFCDSceneNode_a2f96f35092cee2a7bd41026abf969398}{DeclareFlag} (Joint, 1)
+\item 
+\hyperlink{classFCDSceneNode_a014d704b3c4a43bd5a5031d0f09488ff}{DeclareFlagCount} (2)
+\item 
+\hyperlink{classFCDSceneNode_aca298791ceb66267f0c8856c404a5a92}{FCDSceneNode} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDSceneNode_a71261a699dc97a679e0ba35a31e06f65}{$\sim$FCDSceneNode} ()
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDSceneNode_a5dad40efa762d2cb7b3df38288c7f5aa}{GetType} () const 
+\item 
+size\_\-t \hyperlink{classFCDSceneNode_acce55d7e3bbcb7219e1f568ade78a33e}{GetParentCount} () const 
+\item 
+\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDSceneNode_ae8d1c192e6c14a332d5e60b8956b00f5}{GetParent} (size\_\-t index=0)
+\item 
+const \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDSceneNode_a95e707d6ae9e15397c5c2128e0ddea86}{GetParent} (size\_\-t index=0) const 
+\item 
+const \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$$\ast$ \hyperlink{classFCDSceneNode_a383c128774398aff23dd47990511f86a}{GetParents} () const 
+\item 
+size\_\-t \hyperlink{classFCDSceneNode_a3d626d46b55be55ecebdb44036705c62}{GetChildrenCount} () const 
+\item 
+\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDSceneNode_a4137a5a0035341285adc7ae30cf4523b}{GetChild} (size\_\-t index)
+\item 
+const \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDSceneNode_a48e743198b721783eec2058f719c4c8d}{GetChild} (size\_\-t index) const 
+\item 
+const \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$$\ast$ \hyperlink{classFCDSceneNode_a2f1e9396f8a6a8c150bf7c53fe76073a}{GetChildren} () const 
+\item 
+\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDSceneNode_a1d2cca80ae66e0ceef9a093e37284b03}{AddChildNode} ()
+\item 
+bool \hyperlink{classFCDSceneNode_a2aa73a31353db13b3c9cb9931c8479e8}{AddChildNode} (\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$sceneNode)
+\item 
+void \hyperlink{classFCDSceneNode_a07a1b64efd68b7a88b42cff860347859}{RemoveChildNode} (\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$childNode)
+\item 
+size\_\-t \hyperlink{classFCDSceneNode_a191a57fdbb1ae5ddab8b45b4d4984e63}{GetInstanceCount} () const 
+\item 
+\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDSceneNode_a5289e4d1feedb3af83a0719d04da348e}{GetInstance} (size\_\-t index)
+\item 
+const \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDSceneNode_adaee3075febbaa2443fba9bd6c1fe56b}{GetInstance} (size\_\-t index) const 
+\item 
+const \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$$\ast$ \hyperlink{classFCDSceneNode_a5a027253c1b201a213404b3635be224a}{GetInstances} () const 
+\item 
+\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDSceneNode_a38826dd9b894ad2371511f0228cb04c0}{AddInstance} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$entity)
+\item 
+\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDSceneNode_ac9133483ba61e9b690d4ff0509678255}{AddInstance} (\hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{FCDEntity::Type} type)
+\item 
+size\_\-t \hyperlink{classFCDSceneNode_a3767ecd3e9c672a4e13e7185ccd7305c}{GetTransformCount} () const 
+\item 
+\hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDSceneNode_a77f7cd7f791b74d161f5b0a88d21018c}{GetTransform} (size\_\-t index)
+\item 
+const \hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDSceneNode_aa21348079b3e12aaa49ffa80c931bc97}{GetTransform} (size\_\-t index) const 
+\item 
+const \hyperlink{classFCDTransform}{FCDTransform} $\ast$$\ast$ \hyperlink{classFCDSceneNode_a76eb38bae0f0388e8f7aea9d193b0f74}{GetTransforms} () const 
+\item 
+\hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{AddTransform} (\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{FCDTransform::Type} type, size\_\-t index=(size\_\-t)-\/1)
+\item 
+void \hyperlink{classFCDSceneNode_aeab0e88d0beeb832bd1b5fd457700c45}{GetHierarchicalAssets} (\hyperlink{classfm_1_1pvector}{FCDAssetList} \&assets)
+\item 
+virtual void \hyperlink{classFCDSceneNode_ae3b739c9548ec44effd945a30590098f}{GetHierarchicalAssets} (\hyperlink{classfm_1_1pvector}{FCDAssetConstList} \&assets) const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDSceneNode_ab4963aa56327cbb6b6d871d1483f4f43}{FindDaeId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&daeId)
+\item 
+virtual const \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDSceneNode_a55654ef3acc406b4ca7d1aafda9edcce}{FindDaeId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&daeId) const 
+\item 
+const \hyperlink{classfm_1_1stringT}{fm::string} \& \hyperlink{classFCDSceneNode_a13704a88612d130a6fb93c9795340508}{GetSubId} () const 
+\item 
+void \hyperlink{classFCDSceneNode_a1c122c00f8c75a74228043cdb584e6ba}{SetSubId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&id)
+\item 
+\hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDSceneNode_a662b611fcb6becf807c61f2271a0dd90}{FindSubId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&subId)
+\item 
+const \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDSceneNode_a044b42776197433885e2950ba7531f9d}{FindSubId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&subId) const 
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableFloat} \& \hyperlink{classFCDSceneNode_aa433451cde90a143a376d1fa8d62b42b}{GetVisibility} ()
+\item 
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableFloat} \& \hyperlink{classFCDSceneNode_a4f7afd39c98b61b80dc3cbee97b3f132}{GetVisibility} () const 
+\item 
+bool \hyperlink{classFCDSceneNode_ac8302f5ea740d300e9525cef4afd40a3}{IsVisible} () const 
+\item 
+void \hyperlink{classFCDSceneNode_a03230a78e14fc4be25c8e0b60b4e0222}{SetVisibility} (bool isVisible)
+\item 
+bool \hyperlink{classFCDSceneNode_a0c06b667e6f1545745e0ce30f8f8a044}{IsTarget} () const 
+\item 
+\hyperlink{classFCDSceneNode_a065c60f2bca63753e5cf1a3a6164af27}{DEPRECATED} (3.05A, GetJointFlag) bool IsJoint() const 
+\item 
+\hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDSceneNode_ad14e7dc6ec8ff1755f40eade0e607f70}{ToMatrix} () const 
+\item 
+\hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDSceneNode_a3b5a25aad0f37490746a081de68aaa7b}{CalculateLocalTransform} () const 
+\item 
+\hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDSceneNode_a1cf1f54c879c9ea5a6ae86fc5e1b7f70}{CalculateWorldTransform} () const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDSceneNode_a5e115ea183d284ebcdff42d358c06e2e}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\item 
+void \hyperlink{classFCDSceneNode_a8d2667408080453df148768c648695e9}{IncrementTargetCount} ()
+\item 
+void \hyperlink{classFCDSceneNode_a80bef3c1b93bc7f746a4d2af9c4e5883}{DecrementTargetCount} ()
+\item 
+virtual void \hyperlink{classFCDSceneNode_a58a0797e6705aa5fc048521a28e04f3b}{CleanSubId} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA visual scene node. This class is also used to represent COLLADA visual scene entities.
+
+A visual scene node contains child scene nodes to make a tree. A visual scene node may appear multiple times within the scene graph, but checks are made to verify that there are no cycles within the graph.
+
+A visual scene node also contained an ordered list of transformations and a list of entity instances.
+
+NOTE: The GenerateSampledMatrixAnimation function was moved to the \hyperlink{namespaceFCDSceneNodeTools}{FCDSceneNodeTools} namespace to improve DLL support. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDSceneNode_aca298791ceb66267f0c8856c404a5a92}{
+\index{FCDSceneNode@{FCDSceneNode}!FCDSceneNode@{FCDSceneNode}}
+\index{FCDSceneNode@{FCDSceneNode}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{FCDSceneNode}]{\setlength{\rightskip}{0pt plus 5cm}FCDSceneNode::FCDSceneNode (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_aca298791ceb66267f0c8856c404a5a92}
+Constructor: do not use directly. Instead, use the FCDSceneNode::AddChild function for child visual scene nodes or the \hyperlink{classFCDLibrary_aa5cdcac5a447298d5e3816e4f8c864d0}{FCDLibrary::AddEntity} function for visual scenes. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the scene node.\end{DoxyParams}
+Needs custom construction in the UI \hypertarget{classFCDSceneNode_a71261a699dc97a679e0ba35a31e06f65}{
+\index{FCDSceneNode@{FCDSceneNode}!$\sim$FCDSceneNode@{$\sim$FCDSceneNode}}
+\index{$\sim$FCDSceneNode@{$\sim$FCDSceneNode}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{$\sim$FCDSceneNode}]{\setlength{\rightskip}{0pt plus 5cm}FCDSceneNode::$\sim$FCDSceneNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDSceneNode_a71261a699dc97a679e0ba35a31e06f65}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDSceneNode_a1d2cca80ae66e0ceef9a093e37284b03}{
+\index{FCDSceneNode@{FCDSceneNode}!AddChildNode@{AddChildNode}}
+\index{AddChildNode@{AddChildNode}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{AddChildNode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSceneNode} $\ast$ FCDSceneNode::AddChildNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_a1d2cca80ae66e0ceef9a093e37284b03}
+Creates a new child scene node. \begin{DoxyReturn}{Returns}
+The new child scene node. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a2aa73a31353db13b3c9cb9931c8479e8}{
+\index{FCDSceneNode@{FCDSceneNode}!AddChildNode@{AddChildNode}}
+\index{AddChildNode@{AddChildNode}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{AddChildNode}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDSceneNode::AddChildNode (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDSceneNode} $\ast$}]{ sceneNode}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_a2aa73a31353db13b3c9cb9931c8479e8}
+Attaches a existing scene node to this visual scene node. This function will fail if attaching the given scene node to this visual scene node creates a cycle within the scene graph. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sceneNode}]The scene node to attach. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the given scene node was attached to this scene node. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a38826dd9b894ad2371511f0228cb04c0}{
+\index{FCDSceneNode@{FCDSceneNode}!AddInstance@{AddInstance}}
+\index{AddInstance@{AddInstance}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{AddInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance} $\ast$ FCDSceneNode::AddInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ entity}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_a38826dd9b894ad2371511f0228cb04c0}
+Creates a new entity instance. Only geometric entities, controllers, light and cameras can be instantiated in the scene graph. To instantiate visual scene nodes, use the AddChildNode function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em entity}]The entity to instantiate. This pointer cannot be NULL. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entity instance structure. This pointer will be NULL if the entity cannot be instantiated here or if the entity is a scene node. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_ac9133483ba61e9b690d4ff0509678255}{
+\index{FCDSceneNode@{FCDSceneNode}!AddInstance@{AddInstance}}
+\index{AddInstance@{AddInstance}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{AddInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance} $\ast$ FCDSceneNode::AddInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity::Type}}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_ac9133483ba61e9b690d4ff0509678255}
+Creates a new entity instance. Only geometric entities, controllers, light and cameras can be instantiated in the scene graph. To instantiate visual scene nodes, use the AddChildNode function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of entity to instantiate. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entity instance structure. This pointer will be NULL if the entity cannot be instantiated here. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{
+\index{FCDSceneNode@{FCDSceneNode}!AddTransform@{AddTransform}}
+\index{AddTransform@{AddTransform}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{AddTransform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDSceneNode::AddTransform (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform::Type}}]{ type, }
+\item[{size\_\-t}]{ index = {\ttfamily (size\_\-t)-\/1}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}
+Creates a new transform for this visual scene node. The transforms are processed in order and COLLADA is column-\/major. For row-\/major matrix stacks, such as DirectX, this implies that the transformations will be processed in reverse order. By default, a transform is added at the end of the list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of transform to create. \item[{\em index}]The index at which to insert the transform. Set this value to -\/1 to indicate that you want this transform at the end of the stack. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created transform. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a3b5a25aad0f37490746a081de68aaa7b}{
+\index{FCDSceneNode@{FCDSceneNode}!CalculateLocalTransform@{CalculateLocalTransform}}
+\index{CalculateLocalTransform@{CalculateLocalTransform}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{CalculateLocalTransform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCDSceneNode::CalculateLocalTransform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a3b5a25aad0f37490746a081de68aaa7b}
+Retrieves the local transform for this visual scene node. This is a shortcut to the above function. The above function will be deprecated in the future. \begin{DoxyReturn}{Returns}
+The local transform. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a1cf1f54c879c9ea5a6ae86fc5e1b7f70}{
+\index{FCDSceneNode@{FCDSceneNode}!CalculateWorldTransform@{CalculateWorldTransform}}
+\index{CalculateWorldTransform@{CalculateWorldTransform}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{CalculateWorldTransform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCDSceneNode::CalculateWorldTransform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDSceneNode_a1cf1f54c879c9ea5a6ae86fc5e1b7f70}
+Retrieves the world transform for this visual scene node. This function is not optimized and will not work with node instances. \begin{DoxyReturn}{Returns}
+The world transform. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a58a0797e6705aa5fc048521a28e04f3b}{
+\index{FCDSceneNode@{FCDSceneNode}!CleanSubId@{CleanSubId}}
+\index{CleanSubId@{CleanSubId}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{CleanSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSceneNode::CleanSubId (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDSceneNode_a58a0797e6705aa5fc048521a28e04f3b}
+\mbox{[}INTERNAL\mbox{]} Cleans up the sub identifiers. The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. \hypertarget{classFCDSceneNode_a5e115ea183d284ebcdff42d358c06e2e}{
+\index{FCDSceneNode@{FCDSceneNode}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDSceneNode::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDSceneNode_a5e115ea183d284ebcdff42d358c06e2e}
+Copies the entity information into a clone. All the overwriting functions of this function should call this function to copy the COLLADA id and the other entity-\/level information. All the up-\/classes of this class should implement this function. The cloned entity may reside in another document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new entity will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDSceneNode_a2f96f35092cee2a7bd41026abf969398}{
+\index{FCDSceneNode@{FCDSceneNode}!DeclareFlag@{DeclareFlag}}
+\index{DeclareFlag@{DeclareFlag}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{DeclareFlag}]{\setlength{\rightskip}{0pt plus 5cm}FCDSceneNode::DeclareFlag (
+\begin{DoxyParamCaption}
+\item[{Joint}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_a2f96f35092cee2a7bd41026abf969398}
+Whether the scene node is a joint. \hypertarget{classFCDSceneNode_ac460b0c44f59a0f74481b8575759ee32}{
+\index{FCDSceneNode@{FCDSceneNode}!DeclareFlag@{DeclareFlag}}
+\index{DeclareFlag@{DeclareFlag}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{DeclareFlag}]{\setlength{\rightskip}{0pt plus 5cm}FCDSceneNode::DeclareFlag (
+\begin{DoxyParamCaption}
+\item[{TransformsDirty}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_ac460b0c44f59a0f74481b8575759ee32}
+Whether the transforms have been dirtied. \hypertarget{classFCDSceneNode_a014d704b3c4a43bd5a5031d0f09488ff}{
+\index{FCDSceneNode@{FCDSceneNode}!DeclareFlagCount@{DeclareFlagCount}}
+\index{DeclareFlagCount@{DeclareFlagCount}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{DeclareFlagCount}]{\setlength{\rightskip}{0pt plus 5cm}FCDSceneNode::DeclareFlagCount (
+\begin{DoxyParamCaption}
+\item[{2}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_a014d704b3c4a43bd5a5031d0f09488ff}
+
+
+Reimplemented from \hyperlink{classFCDObjectWithId_a8289e2d57d75f2302effb07b0aee47f8}{FCDObjectWithId}.
+
+\hypertarget{classFCDSceneNode_a80bef3c1b93bc7f746a4d2af9c4e5883}{
+\index{FCDSceneNode@{FCDSceneNode}!DecrementTargetCount@{DecrementTargetCount}}
+\index{DecrementTargetCount@{DecrementTargetCount}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{DecrementTargetCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSceneNode::DecrementTargetCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a80bef3c1b93bc7f746a4d2af9c4e5883}
+\mbox{[}INTERNAL\mbox{]} Decrements the number of entities target this node. To set targets, use the FCDTargetedEntity::SetTarget function. \hypertarget{classFCDSceneNode_a065c60f2bca63753e5cf1a3a6164af27}{
+\index{FCDSceneNode@{FCDSceneNode}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDSceneNode::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetJointFlag}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a065c60f2bca63753e5cf1a3a6164af27}
+Retrieves whether this visual scene node is a joint. Joints are called bones in 3dsMax. A joint is a scene node that is used in skinning. \begin{DoxyReturn}{Returns}
+Whether this node is a joint. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_ab4963aa56327cbb6b6d871d1483f4f43}{
+\index{FCDSceneNode@{FCDSceneNode}!FindDaeId@{FindDaeId}}
+\index{FindDaeId@{FindDaeId}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{FindDaeId}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FCDEntity}$\ast$ FCDSceneNode::FindDaeId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ daeId}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDSceneNode_ab4963aa56327cbb6b6d871d1483f4f43}
+Retrieves the visual scene node with the given id. This function looks through the whole sub-\/tree of visual scene nodes for the wanted COLLADA id. 
+\begin{DoxyParams}{Parameters}
+\item[{\em daeId}]The COLLADA id to look for. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The visual scene node which has the given COLLADA id. This pointer will be NULL if no visual scene node can be found with the given COLLADA id. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_a308cd3366b76e70ded4f09d05e4d7294}{FCDEntity}.
+
+\hypertarget{classFCDSceneNode_a55654ef3acc406b4ca7d1aafda9edcce}{
+\index{FCDSceneNode@{FCDSceneNode}!FindDaeId@{FindDaeId}}
+\index{FindDaeId@{FindDaeId}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{FindDaeId}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEntity} $\ast$ FCDSceneNode::FindDaeId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ daeId}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDSceneNode_a55654ef3acc406b4ca7d1aafda9edcce}
+See above. 
+
+Reimplemented from \hyperlink{classFCDEntity_a1a17dca81798431f54ec10f5da5c5c6b}{FCDEntity}.
+
+\hypertarget{classFCDSceneNode_a662b611fcb6becf807c61f2271a0dd90}{
+\index{FCDSceneNode@{FCDSceneNode}!FindSubId@{FindSubId}}
+\index{FindSubId@{FindSubId}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{FindSubId}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity}$\ast$ FCDSceneNode::FindSubId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ subId}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a662b611fcb6becf807c61f2271a0dd90}
+Retrieves the visual scene node with the given sub-\/id. This function looks through the whole sub-\/tree of visual scene nodes for the wanted COLLADA sub-\/id. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subId}]The COLLADA sub-\/id to look for. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The visual scene node which has the given COLLADA sub-\/id. This pointer will be NULL if no visual scene node can be found with the given COLLADA sub-\/id. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a044b42776197433885e2950ba7531f9d}{
+\index{FCDSceneNode@{FCDSceneNode}!FindSubId@{FindSubId}}
+\index{FindSubId@{FindSubId}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{FindSubId}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEntity} $\ast$ FCDSceneNode::FindSubId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ subId}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDSceneNode_a044b42776197433885e2950ba7531f9d}
+See above. \hypertarget{classFCDSceneNode_a4137a5a0035341285adc7ae30cf4523b}{
+\index{FCDSceneNode@{FCDSceneNode}!GetChild@{GetChild}}
+\index{GetChild@{GetChild}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetChild}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSceneNode}$\ast$ FCDSceneNode::GetChild (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a4137a5a0035341285adc7ae30cf4523b}
+Retrieves a specific child of the visual scene node. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the child. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The child scene node. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a48e743198b721783eec2058f719c4c8d}{
+\index{FCDSceneNode@{FCDSceneNode}!GetChild@{GetChild}}
+\index{GetChild@{GetChild}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetChild}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSceneNode}$\ast$ FCDSceneNode::GetChild (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a48e743198b721783eec2058f719c4c8d}
+See above. \hypertarget{classFCDSceneNode_a2f1e9396f8a6a8c150bf7c53fe76073a}{
+\index{FCDSceneNode@{FCDSceneNode}!GetChildren@{GetChildren}}
+\index{GetChildren@{GetChildren}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetChildren}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSceneNode}$\ast$$\ast$ FCDSceneNode::GetChildren (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a2f1e9396f8a6a8c150bf7c53fe76073a}
+Retrieves the list of children of the visual scene node. \begin{DoxyReturn}{Returns}
+The list of child scene nodes. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a3d626d46b55be55ecebdb44036705c62}{
+\index{FCDSceneNode@{FCDSceneNode}!GetChildrenCount@{GetChildrenCount}}
+\index{GetChildrenCount@{GetChildrenCount}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetChildrenCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDSceneNode::GetChildrenCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a3d626d46b55be55ecebdb44036705c62}
+Retrieves the number of child nodes for this visual scene node. \begin{DoxyReturn}{Returns}
+The number of children. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_aeab0e88d0beeb832bd1b5fd457700c45}{
+\index{FCDSceneNode@{FCDSceneNode}!GetHierarchicalAssets@{GetHierarchicalAssets}}
+\index{GetHierarchicalAssets@{GetHierarchicalAssets}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetHierarchicalAssets}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSceneNode::GetHierarchicalAssets (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDAssetList} \&}]{ assets}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_aeab0e88d0beeb832bd1b5fd457700c45}
+Retrieves the asset information structures that affect this entity in its hierarchy. 
+\begin{DoxyParams}{Parameters}
+\item[{\em assets}]A list of asset information structures to fill in. \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classFCDEntity_aacb2bd0c7d9906e6935a4cc65a0d5535}{FCDEntity}.
+
+\hypertarget{classFCDSceneNode_ae3b739c9548ec44effd945a30590098f}{
+\index{FCDSceneNode@{FCDSceneNode}!GetHierarchicalAssets@{GetHierarchicalAssets}}
+\index{GetHierarchicalAssets@{GetHierarchicalAssets}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetHierarchicalAssets}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSceneNode::GetHierarchicalAssets (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDAssetConstList} \&}]{ assets}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDSceneNode_ae3b739c9548ec44effd945a30590098f}
+See above. 
+
+Reimplemented from \hyperlink{classFCDEntity_a8586473fa13fe14b34633342c864656a}{FCDEntity}.
+
+\hypertarget{classFCDSceneNode_a5289e4d1feedb3af83a0719d04da348e}{
+\index{FCDSceneNode@{FCDSceneNode}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance}$\ast$ FCDSceneNode::GetInstance (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a5289e4d1feedb3af83a0719d04da348e}
+Retrieves a specific entity instance. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the instance. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entity instance at the given index. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_adaee3075febbaa2443fba9bd6c1fe56b}{
+\index{FCDSceneNode@{FCDSceneNode}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetInstance}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEntityInstance}$\ast$ FCDSceneNode::GetInstance (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_adaee3075febbaa2443fba9bd6c1fe56b}
+See above. \hypertarget{classFCDSceneNode_a191a57fdbb1ae5ddab8b45b4d4984e63}{
+\index{FCDSceneNode@{FCDSceneNode}!GetInstanceCount@{GetInstanceCount}}
+\index{GetInstanceCount@{GetInstanceCount}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetInstanceCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDSceneNode::GetInstanceCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a191a57fdbb1ae5ddab8b45b4d4984e63}
+Retrieves the number of entity instances at this node of the scene graph. \begin{DoxyReturn}{Returns}
+The number of entity instances. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a5a027253c1b201a213404b3635be224a}{
+\index{FCDSceneNode@{FCDSceneNode}!GetInstances@{GetInstances}}
+\index{GetInstances@{GetInstances}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetInstances}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEntityInstance}$\ast$$\ast$ FCDSceneNode::GetInstances (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a5a027253c1b201a213404b3635be224a}
+Retrieves the list of entity instances at this node of the scene graph. \begin{DoxyReturn}{Returns}
+The list of entity instances. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_ae8d1c192e6c14a332d5e60b8956b00f5}{
+\index{FCDSceneNode@{FCDSceneNode}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSceneNode}$\ast$ FCDSceneNode::GetParent (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_ae8d1c192e6c14a332d5e60b8956b00f5}
+Retrieves a specific parent of the visual scene node. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the parent. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parent visual scene node. This pointer will be NULL if the scene node has no parents or if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a95e707d6ae9e15397c5c2128e0ddea86}{
+\index{FCDSceneNode@{FCDSceneNode}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSceneNode}$\ast$ FCDSceneNode::GetParent (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a95e707d6ae9e15397c5c2128e0ddea86}
+See above. \hypertarget{classFCDSceneNode_acce55d7e3bbcb7219e1f568ade78a33e}{
+\index{FCDSceneNode@{FCDSceneNode}!GetParentCount@{GetParentCount}}
+\index{GetParentCount@{GetParentCount}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetParentCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDSceneNode::GetParentCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_acce55d7e3bbcb7219e1f568ade78a33e}
+Retrieves the number of parent nodes for this visual scene node. \begin{DoxyReturn}{Returns}
+The number of parents. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a383c128774398aff23dd47990511f86a}{
+\index{FCDSceneNode@{FCDSceneNode}!GetParents@{GetParents}}
+\index{GetParents@{GetParents}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetParents}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSceneNode}$\ast$$\ast$ FCDSceneNode::GetParents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a383c128774398aff23dd47990511f86a}
+Retrieves the list of parents for the visual scene node. \begin{DoxyReturn}{Returns}
+The list of parents. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a13704a88612d130a6fb93c9795340508}{
+\index{FCDSceneNode@{FCDSceneNode}!GetSubId@{GetSubId}}
+\index{GetSubId@{GetSubId}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetSubId}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fm::string}\& FCDSceneNode::GetSubId (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a13704a88612d130a6fb93c9795340508}
+$<$ See above. Retrieves the optional sub-\/id of the node. This sub-\/id is neither unique nor guaranteed to exist. \begin{DoxyReturn}{Returns}
+The sub-\/id of the node. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a77f7cd7f791b74d161f5b0a88d21018c}{
+\index{FCDSceneNode@{FCDSceneNode}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetTransform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform}$\ast$ FCDSceneNode::GetTransform (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a77f7cd7f791b74d161f5b0a88d21018c}
+Retrieves a specific transform. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the transform. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transform at the given index. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_aa21348079b3e12aaa49ffa80c931bc97}{
+\index{FCDSceneNode@{FCDSceneNode}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetTransform}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDTransform}$\ast$ FCDSceneNode::GetTransform (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_aa21348079b3e12aaa49ffa80c931bc97}
+See above. \hypertarget{classFCDSceneNode_a3767ecd3e9c672a4e13e7185ccd7305c}{
+\index{FCDSceneNode@{FCDSceneNode}!GetTransformCount@{GetTransformCount}}
+\index{GetTransformCount@{GetTransformCount}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetTransformCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDSceneNode::GetTransformCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a3767ecd3e9c672a4e13e7185ccd7305c}
+Retrieves the number of transforms for this node of the scene graph. \begin{DoxyReturn}{Returns}
+The number of transforms. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a76eb38bae0f0388e8f7aea9d193b0f74}{
+\index{FCDSceneNode@{FCDSceneNode}!GetTransforms@{GetTransforms}}
+\index{GetTransforms@{GetTransforms}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetTransforms}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDTransform}$\ast$$\ast$ FCDSceneNode::GetTransforms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a76eb38bae0f0388e8f7aea9d193b0f74}
+Retrieves the list of transforms for this node of the scene graph. \begin{DoxyReturn}{Returns}
+The list of transforms. See above. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a5dad40efa762d2cb7b3df38288c7f5aa}{
+\index{FCDSceneNode@{FCDSceneNode}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDSceneNode::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDSceneNode_a5dad40efa762d2cb7b3df38288c7f5aa}
+Retrieves the type of the entity class. \begin{DoxyReturn}{Returns}
+The type of entity class: SCENE\_\-NODE. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+\hypertarget{classFCDSceneNode_aa433451cde90a143a376d1fa8d62b42b}{
+\index{FCDSceneNode@{FCDSceneNode}!GetVisibility@{GetVisibility}}
+\index{GetVisibility@{GetVisibility}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetVisibility}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableFloat}\& FCDSceneNode::GetVisibility (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_aa433451cde90a143a376d1fa8d62b42b}
+Retrieves whether the visual scene node is visible. A hidden visual scene node will not be rendered but will still affect the world. This parameter is a floating-\/point value because it is animated. It should be intepreted as a Boolean value. \begin{DoxyReturn}{Returns}
+Whether the scene node is visible. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_a4f7afd39c98b61b80dc3cbee97b3f132}{
+\index{FCDSceneNode@{FCDSceneNode}!GetVisibility@{GetVisibility}}
+\index{GetVisibility@{GetVisibility}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{GetVisibility}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDParameterAnimatableFloat}\& FCDSceneNode::GetVisibility (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a4f7afd39c98b61b80dc3cbee97b3f132}
+See above. \hypertarget{classFCDSceneNode_a8d2667408080453df148768c648695e9}{
+\index{FCDSceneNode@{FCDSceneNode}!IncrementTargetCount@{IncrementTargetCount}}
+\index{IncrementTargetCount@{IncrementTargetCount}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{IncrementTargetCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSceneNode::IncrementTargetCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a8d2667408080453df148768c648695e9}
+\mbox{[}INTERNAL\mbox{]} Increments the number of entities target this node. To set targets, use the FCDTargetedEntity::SetTarget function. \hypertarget{classFCDSceneNode_a0c06b667e6f1545745e0ce30f8f8a044}{
+\index{FCDSceneNode@{FCDSceneNode}!IsTarget@{IsTarget}}
+\index{IsTarget@{IsTarget}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{IsTarget}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDSceneNode::IsTarget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a0c06b667e6f1545745e0ce30f8f8a044}
+Retrieves whether this visual scene node is the target of an entity. \begin{DoxyReturn}{Returns}
+Whether this is an entity target. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNode_ac8302f5ea740d300e9525cef4afd40a3}{
+\index{FCDSceneNode@{FCDSceneNode}!IsVisible@{IsVisible}}
+\index{IsVisible@{IsVisible}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{IsVisible}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDSceneNode::IsVisible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_ac8302f5ea740d300e9525cef4afd40a3}
+See above. \hypertarget{classFCDSceneNode_a07a1b64efd68b7a88b42cff860347859}{
+\index{FCDSceneNode@{FCDSceneNode}!RemoveChildNode@{RemoveChildNode}}
+\index{RemoveChildNode@{RemoveChildNode}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{RemoveChildNode}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSceneNode::RemoveChildNode (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDSceneNode} $\ast$}]{ childNode}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_a07a1b64efd68b7a88b42cff860347859}
+Removes a scene node from this scene node direct child list. This function should be used to detach a scene node with multiple parents. To completely delete a scene node, you should use the \hyperlink{classFUObject_a33be6852b877d7f29520bbe4722b846b}{FCDSceneNode::Release} function on the scene node to delete. If the given child node is instanced multiple times within this scene node, only the first instance will be removed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em childNode}]The child node to remove from the direct hierarchy. \end{DoxyParams}
+\hypertarget{classFCDSceneNode_a1c122c00f8c75a74228043cdb584e6ba}{
+\index{FCDSceneNode@{FCDSceneNode}!SetSubId@{SetSubId}}
+\index{SetSubId@{SetSubId}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{SetSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSceneNode::SetSubId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ id}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNode_a1c122c00f8c75a74228043cdb584e6ba}
+Sets the sub-\/id for this node. The sub-\/id of an object is not required to be unique. 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]The new sub-\/id of the node. \end{DoxyParams}
+\hypertarget{classFCDSceneNode_a03230a78e14fc4be25c8e0b60b4e0222}{
+\index{FCDSceneNode@{FCDSceneNode}!SetVisibility@{SetVisibility}}
+\index{SetVisibility@{SetVisibility}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{SetVisibility}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSceneNode::SetVisibility (
+\begin{DoxyParamCaption}
+\item[{bool}]{ isVisible}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNode_a03230a78e14fc4be25c8e0b60b4e0222}
+Sets the visibility of the visual scene node. A hidden visual scene node will not be rendered but will still affect the world. 
+\begin{DoxyParams}{Parameters}
+\item[{\em isVisible}]Whether the visual scene node is visible. \end{DoxyParams}
+\hypertarget{classFCDSceneNode_ad14e7dc6ec8ff1755f40eade0e607f70}{
+\index{FCDSceneNode@{FCDSceneNode}!ToMatrix@{ToMatrix}}
+\index{ToMatrix@{ToMatrix}!FCDSceneNode@{FCDSceneNode}}
+\subsubsection[{ToMatrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCDSceneNode::ToMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDSceneNode_ad14e7dc6ec8ff1755f40eade0e607f70}
+Retrieves the local transform for this visual scene node. This function does not handle or apply animations. \begin{DoxyReturn}{Returns}
+The local transform. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDSceneNode_8h}{FCDSceneNode.h}\item 
+FCollada/FCDocument/FCDSceneNode.cpp\end{DoxyCompactItemize}

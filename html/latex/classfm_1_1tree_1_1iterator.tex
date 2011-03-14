@@ -1,0 +1,188 @@
+\hypertarget{classfm_1_1tree_1_1iterator}{
+\section{fm::tree$<$ KEY, DATA $>$::iterator Class Reference}
+\label{classfm_1_1tree_1_1iterator}\index{fm::tree::iterator@{fm::tree::iterator}}
+}
+
+
+{\ttfamily \#include $<$FMTree.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator_a5d645bbdb4afa62aa8ac671ad22fe6ab}{iterator} ()
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator_a730df48bcab7ac8e57778ec14147ceec}{iterator} (node $\ast$n)
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator}{iterator} \& \hyperlink{classfm_1_1tree_1_1iterator_a00ae030a556bb643fb02263b96588353}{operator=} (const \hyperlink{classfm_1_1tree_1_1iterator}{iterator} \&copy)
+\item 
+bool \hyperlink{classfm_1_1tree_1_1iterator_ad214b7f65df9300b05b4245c16baa13b}{operator==} (const \hyperlink{classfm_1_1tree_1_1iterator}{iterator} \&other) const 
+\item 
+bool \hyperlink{classfm_1_1tree_1_1iterator_a0fe9666c7aec5897dee88e2716cbdadc}{operator==} (const \hyperlink{classfm_1_1tree_1_1const__iterator}{const\_\-iterator} \&other) const 
+\item 
+bool \hyperlink{classfm_1_1tree_1_1iterator_a396da2004d0c25df7102a7e677d42d2c}{operator!=} (const \hyperlink{classfm_1_1tree_1_1iterator}{iterator} \&other) const 
+\item 
+bool \hyperlink{classfm_1_1tree_1_1iterator_ae9c895616a11d451dd9a7d1c83e3dc8a}{operator!=} (const \hyperlink{classfm_1_1tree_1_1const__iterator}{const\_\-iterator} \&other) const 
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator}{iterator} \& \hyperlink{classfm_1_1tree_1_1iterator_a30b9d6cfbee2d4431066663bbb222efa}{operator++} ()
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator}{iterator} \& \hyperlink{classfm_1_1tree_1_1iterator_a0a97ac39ce942de1f122378368388030}{operator-\/-\/} ()
+\item 
+\hyperlink{classfm_1_1pair}{pair} \& \hyperlink{classfm_1_1tree_1_1iterator_a9121ebbd91454a72cb6c561f2a0e09c0}{operator$\ast$} ()
+\item 
+\hyperlink{classfm_1_1pair}{pair} $\ast$ \hyperlink{classfm_1_1tree_1_1iterator_ab0a8e9b231cf55004c5d06d3292c6756}{operator-\/$>$} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classfm_1_1tree_1_1iterator_a274b977404a53ceb91af64dfd96c9641}{
+class {\bfseries tree}}
+\label{classfm_1_1tree_1_1iterator_a274b977404a53ceb91af64dfd96c9641}
+
+\item 
+\hypertarget{classfm_1_1tree_1_1iterator_ac220ce1c155db1ac44146c12d178056f}{
+class {\bfseries const\_\-iterator}}
+\label{classfm_1_1tree_1_1iterator_ac220ce1c155db1ac44146c12d178056f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class KEY, class DATA$>$ class fm::tree$<$ KEY, DATA $>$::iterator}
+
+A tree element iterator. Similar to the basic STL iterator. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfm_1_1tree_1_1iterator_a5d645bbdb4afa62aa8ac671ad22fe6ab}{
+\index{fm::tree::iterator@{fm::tree::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf fm::tree}$<$ KEY, DATA $>$::iterator::iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_a5d645bbdb4afa62aa8ac671ad22fe6ab}
+Empty constructor. \hypertarget{classfm_1_1tree_1_1iterator_a730df48bcab7ac8e57778ec14147ceec}{
+\index{fm::tree::iterator@{fm::tree::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf fm::tree}$<$ KEY, DATA $>$::iterator::iterator (
+\begin{DoxyParamCaption}
+\item[{node $\ast$}]{ n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_a730df48bcab7ac8e57778ec14147ceec}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em n}]The tree node at which to start the iteration. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfm_1_1tree_1_1iterator_a396da2004d0c25df7102a7e677d42d2c}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ bool {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{ other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_a396da2004d0c25df7102a7e677d42d2c}
+Retrieves whether this iterator points to a different node that a given iterator. 
+\begin{DoxyParams}{Parameters}
+\item[{\em other}]A second iterator. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two iterators are pointing at different nodes. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_1_1iterator_ae9c895616a11d451dd9a7d1c83e3dc8a}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY , class DATA $>$ bool {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf const\_\-iterator} \&}]{ other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_ae9c895616a11d451dd9a7d1c83e3dc8a}
+See above. \hypertarget{classfm_1_1tree_1_1iterator_a9121ebbd91454a72cb6c561f2a0e09c0}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf pair}\& {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_a9121ebbd91454a72cb6c561f2a0e09c0}
+Retrieves the current tree node. \begin{DoxyReturn}{Returns}
+The current tree node. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_1_1iterator_a30b9d6cfbee2d4431066663bbb222efa}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf iterator}\& {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_a30b9d6cfbee2d4431066663bbb222efa}
+Advances the iterator to the next ordered tree node. \begin{DoxyReturn}{Returns}
+This iterator. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_1_1iterator_a0a97ac39ce942de1f122378368388030}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator-\/-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf iterator}\& {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_a0a97ac39ce942de1f122378368388030}
+Backtrack the iterator to the next ordered tree node. \begin{DoxyReturn}{Returns}
+This iterator. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_1_1iterator_ab0a8e9b231cf55004c5d06d3292c6756}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf pair}$\ast$ {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_ab0a8e9b231cf55004c5d06d3292c6756}
+See above. \hypertarget{classfm_1_1tree_1_1iterator_a00ae030a556bb643fb02263b96588353}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf iterator}\& {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{ copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_a00ae030a556bb643fb02263b96588353}
+Copy operator. 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The tree iterator to copy. \end{DoxyParams}
+\hypertarget{classfm_1_1tree_1_1iterator_a0fe9666c7aec5897dee88e2716cbdadc}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY , class DATA $>$ bool {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf const\_\-iterator} \&}]{ other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_a0fe9666c7aec5897dee88e2716cbdadc}
+See above. \hypertarget{classfm_1_1tree_1_1iterator_ad214b7f65df9300b05b4245c16baa13b}{
+\index{fm::tree::iterator@{fm::tree::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!fm::tree::iterator@{fm::tree::iterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ bool {\bf fm::tree}$<$ KEY, DATA $>$::iterator::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{ other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_1_1iterator_ad214b7f65df9300b05b4245c16baa13b}
+Retrieves whether this iterator points to the same node as the given iterator. 
+\begin{DoxyParams}{Parameters}
+\item[{\em other}]A second iterator. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two iterators are pointing to the same node. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FMath/\hyperlink{FMTree_8h}{FMTree.h}\end{DoxyCompactItemize}

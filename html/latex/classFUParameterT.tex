@@ -1,0 +1,145 @@
+\hypertarget{classFUParameterT}{
+\section{FUParameterT$<$ TYPE $>$ Class Template Reference}
+\label{classFUParameterT}\index{FUParameterT@{FUParameterT}}
+}
+
+
+{\ttfamily \#include $<$FUParameter.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUParameterT_afd54a7f281e88c83b50b9dddae6d492d}{FUParameterT} ()
+\item 
+\hyperlink{classFUParameterT_af16c1654ac45224aad98f412576c9613}{FUParameterT} (const TYPE \&defaultValue)
+\item 
+virtual \hyperlink{classFUParameterT_a5a7855cdecf56e2b8876bcd55889e5eb}{$\sim$FUParameterT} ()
+\item 
+\hyperlink{classFUParameterT_af94699b820b59f8e99f8d47f52d0ab41}{operator TYPE \&} ()
+\item 
+\hyperlink{classFUParameterT_aa3f3ebf4d161d9f25c1cabe8930dbcb9}{operator const TYPE \&} () const 
+\item 
+TYPE \& \hyperlink{classFUParameterT_a7bf69b1165e49a914b0d4b613805431b}{operator$\ast$} ()
+\item 
+const TYPE \& \hyperlink{classFUParameterT_af2840ab65f1dabe425951340139cc068}{operator$\ast$} () const 
+\item 
+TYPE $\ast$ \hyperlink{classFUParameterT_a29da053f64be0875a9cb4618a98f45b1}{operator-\/$>$} ()
+\item 
+const TYPE $\ast$ \hyperlink{classFUParameterT_a0fb4e55c4cf0f072c3f1a0594d0e6dbb}{operator-\/$>$} () const 
+\item 
+\hyperlink{classFUParameterT}{FUParameterT}$<$ TYPE $>$ \& \hyperlink{classFUParameterT_a56ef63916af42d47fc4ecab3a7b93ec3}{operator=} (const TYPE \&copy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class TYPE$>$ class FUParameterT$<$ TYPE $>$}
+
+An interface to a generic \hyperlink{namespaceFCollada}{FCollada} parameter. Encapsulates one generic value.
+
+In PREMIUM \hyperlink{namespaceFCollada}{FCollada}: this value may be animatable, a list or a complex object, as described by higher-\/level classes. Useful for user interface, undo/redo and such advanced features. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUParameterT_afd54a7f281e88c83b50b9dddae6d492d}{
+\index{FUParameterT@{FUParameterT}!FUParameterT@{FUParameterT}}
+\index{FUParameterT@{FUParameterT}!FUParameterT@{FUParameterT}}
+\subsubsection[{FUParameterT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ {\bf FUParameterT}$<$ TYPE $>$::{\bf FUParameterT} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_afd54a7f281e88c83b50b9dddae6d492d}
+Default constructor. \hypertarget{classFUParameterT_af16c1654ac45224aad98f412576c9613}{
+\index{FUParameterT@{FUParameterT}!FUParameterT@{FUParameterT}}
+\index{FUParameterT@{FUParameterT}!FUParameterT@{FUParameterT}}
+\subsubsection[{FUParameterT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ {\bf FUParameterT}$<$ TYPE $>$::{\bf FUParameterT} (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ defaultValue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_af16c1654ac45224aad98f412576c9613}
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em defaultValue}]The value to copy into this parameter. \end{DoxyParams}
+\hypertarget{classFUParameterT_a5a7855cdecf56e2b8876bcd55889e5eb}{
+\index{FUParameterT@{FUParameterT}!$\sim$FUParameterT@{$\sim$FUParameterT}}
+\index{$\sim$FUParameterT@{$\sim$FUParameterT}!FUParameterT@{FUParameterT}}
+\subsubsection[{$\sim$FUParameterT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ virtual {\bf FUParameterT}$<$ TYPE $>$::$\sim${\bf FUParameterT} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUParameterT_a5a7855cdecf56e2b8876bcd55889e5eb}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUParameterT_aa3f3ebf4d161d9f25c1cabe8930dbcb9}{
+\index{FUParameterT@{FUParameterT}!operator const TYPE \&@{operator const TYPE \&}}
+\index{operator const TYPE \&@{operator const TYPE \&}!FUParameterT@{FUParameterT}}
+\subsubsection[{operator const TYPE \&}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ {\bf FUParameterT}$<$ TYPE $>$::operator const TYPE \& (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_aa3f3ebf4d161d9f25c1cabe8930dbcb9}
+See above. \hypertarget{classFUParameterT_af94699b820b59f8e99f8d47f52d0ab41}{
+\index{FUParameterT@{FUParameterT}!operator TYPE \&@{operator TYPE \&}}
+\index{operator TYPE \&@{operator TYPE \&}!FUParameterT@{FUParameterT}}
+\subsubsection[{operator TYPE \&}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ {\bf FUParameterT}$<$ TYPE $>$::operator TYPE \& (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_af94699b820b59f8e99f8d47f52d0ab41}
+Retrieves the value of this parameter. \hypertarget{classFUParameterT_af2840ab65f1dabe425951340139cc068}{
+\index{FUParameterT@{FUParameterT}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!FUParameterT@{FUParameterT}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ const TYPE\& {\bf FUParameterT}$<$ TYPE $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_af2840ab65f1dabe425951340139cc068}
+See above. \hypertarget{classFUParameterT_a7bf69b1165e49a914b0d4b613805431b}{
+\index{FUParameterT@{FUParameterT}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!FUParameterT@{FUParameterT}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ TYPE\& {\bf FUParameterT}$<$ TYPE $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_a7bf69b1165e49a914b0d4b613805431b}
+See above. \hypertarget{classFUParameterT_a0fb4e55c4cf0f072c3f1a0594d0e6dbb}{
+\index{FUParameterT@{FUParameterT}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!FUParameterT@{FUParameterT}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ const TYPE$\ast$ {\bf FUParameterT}$<$ TYPE $>$::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_a0fb4e55c4cf0f072c3f1a0594d0e6dbb}
+See above. \hypertarget{classFUParameterT_a29da053f64be0875a9cb4618a98f45b1}{
+\index{FUParameterT@{FUParameterT}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!FUParameterT@{FUParameterT}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ TYPE$\ast$ {\bf FUParameterT}$<$ TYPE $>$::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_a29da053f64be0875a9cb4618a98f45b1}
+See above. \hypertarget{classFUParameterT_a56ef63916af42d47fc4ecab3a7b93ec3}{
+\index{FUParameterT@{FUParameterT}!operator=@{operator=}}
+\index{operator=@{operator=}!FUParameterT@{FUParameterT}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE $>$ {\bf FUParameterT}$<$TYPE$>$\& {\bf FUParameterT}$<$ TYPE $>$::operator= (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUParameterT_a56ef63916af42d47fc4ecab3a7b93ec3}
+Replaces the value of this parameter with a given value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The value to copy into this parameter. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUParameter_8h}{FUParameter.h}\end{DoxyCompactItemize}

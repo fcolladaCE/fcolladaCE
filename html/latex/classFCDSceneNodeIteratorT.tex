@@ -1,0 +1,160 @@
+\hypertarget{classFCDSceneNodeIteratorT}{
+\section{FCDSceneNodeIteratorT$<$ \_\-NODE $>$ Class Template Reference}
+\label{classFCDSceneNodeIteratorT}\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+}
+
+
+{\ttfamily \#include $<$FCDSceneNodeIterator.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367}{SearchType} \{ \hyperlink{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367a4a40ecf50eeb28d5adf02fc8f55550be}{BREADTH\_\-FIRST}, 
+\hyperlink{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367a5ad049a76b27b906ce1389609106229c}{DEPTH\_\-FIRST\_\-PREORDER}, 
+\hyperlink{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367af674b6b62e2e3a67ca888a94b058aeff}{DEPTH\_\-FIRST\_\-POSTORDER}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDSceneNodeIteratorT_a1e0908d914e1b8c5b452a9816771b0ed}{FCDSceneNodeIteratorT} (\_\-NODE $\ast$root, \hyperlink{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367}{SearchType} searchType=BREADTH\_\-FIRST, bool pureChildOnly=false)
+\item 
+\hyperlink{classFCDSceneNodeIteratorT_aa6b60e205b694c0293a3a1dd6f3c746a}{$\sim$FCDSceneNodeIteratorT} ()
+\item 
+\_\-NODE $\ast$ \hyperlink{classFCDSceneNodeIteratorT_a276fdda452c3fd746f71e02ba998f895}{GetNode} ()
+\item 
+\_\-NODE $\ast$ \hyperlink{classFCDSceneNodeIteratorT_a0deb5e4e9954390865cde455984ec302}{Next} ()
+\item 
+bool \hyperlink{classFCDSceneNodeIteratorT_a0ab7b88852e0deabc35177c3aa15e9a8}{IsDone} ()
+\item 
+\hyperlink{classFCDSceneNodeIteratorT}{FCDSceneNodeIteratorT} \& \hyperlink{classFCDSceneNodeIteratorT_a83648440e727233e9fc9e9d8fee1d7af}{operator++} ()
+\item 
+\_\-NODE $\ast$ \hyperlink{classFCDSceneNodeIteratorT_aba0c9dbfb98e55ced477f06131c9dce8}{operator$\ast$} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \_\-NODE$>$ class FCDSceneNodeIteratorT$<$ \_\-NODE $>$}
+
+This template is used to process a given scene node and its full sub-\/tree. We use a template here in order to easily support both const and non-\/const scene node data, with the same code.
+
+Do not use this template directly, instead use the FCDSceneNodeIterator and FCDSceneNodeConstIterator definitions.
+
+This template does not care whether multiple instances of the same node is processed. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367}{
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!SearchType@{SearchType}}
+\index{SearchType@{SearchType}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\subsubsection[{SearchType}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-NODE $>$ enum {\bf FCDSceneNodeIteratorT::SearchType}}}
+\label{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367}
+The order in which the scene nodes should be iterated. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{BREADTH\_\-FIRST@{BREADTH\_\-FIRST}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!BREADTH\_\-FIRST@{BREADTH\_\-FIRST}}\item[{\em 
+\hypertarget{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367a4a40ecf50eeb28d5adf02fc8f55550be}{
+BREADTH\_\-FIRST}
+\label{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367a4a40ecf50eeb28d5adf02fc8f55550be}
+}]Iterate over the scene nodes one level at a time. Starts from the root and terminates with the leaves. Each node level is processed fully before processing the next one. \index{DEPTH\_\-FIRST\_\-PREORDER@{DEPTH\_\-FIRST\_\-PREORDER}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!DEPTH\_\-FIRST\_\-PREORDER@{DEPTH\_\-FIRST\_\-PREORDER}}\item[{\em 
+\hypertarget{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367a5ad049a76b27b906ce1389609106229c}{
+DEPTH\_\-FIRST\_\-PREORDER}
+\label{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367a5ad049a76b27b906ce1389609106229c}
+}]Standard tree traversal. Processes the root, the first child of the root, then the child's first child... until a leaf is reached. Then, the leaf's siblings are iterated over before iterating over the leaf's parent's siblings. \index{DEPTH\_\-FIRST\_\-POSTORDER@{DEPTH\_\-FIRST\_\-POSTORDER}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!DEPTH\_\-FIRST\_\-POSTORDER@{DEPTH\_\-FIRST\_\-POSTORDER}}\item[{\em 
+\hypertarget{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367af674b6b62e2e3a67ca888a94b058aeff}{
+DEPTH\_\-FIRST\_\-POSTORDER}
+\label{classFCDSceneNodeIteratorT_aa4caf69a5959db0fa82e3d25e8b56367af674b6b62e2e3a67ca888a94b058aeff}
+}]Iterate over the scene nodes one level at a time. Starts at the leaves and terminates with the root. Each node level is processed fully before processing the next one. \end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDSceneNodeIteratorT_a1e0908d914e1b8c5b452a9816771b0ed}{
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\subsubsection[{FCDSceneNodeIteratorT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-NODE $>$ {\bf FCDSceneNodeIteratorT}$<$ \_\-NODE $>$::{\bf FCDSceneNodeIteratorT} (
+\begin{DoxyParamCaption}
+\item[{\_\-NODE $\ast$}]{ root, }
+\item[{{\bf SearchType}}]{ searchType = {\ttfamily BREADTH\_\-FIRST}, }
+\item[{bool}]{ pureChildOnly = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNodeIteratorT_a1e0908d914e1b8c5b452a9816771b0ed}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em root}]The scene root of the sub-\/tree to iterate over. \item[{\em searchType}]The search type determines the ordering of the scene nodes returned by Next. \item[{\em pureChildOnly}]Only process nodes that are direct children of the root. All node instances will be discarded. \end{DoxyParams}
+\hypertarget{classFCDSceneNodeIteratorT_aa6b60e205b694c0293a3a1dd6f3c746a}{
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!$\sim$FCDSceneNodeIteratorT@{$\sim$FCDSceneNodeIteratorT}}
+\index{$\sim$FCDSceneNodeIteratorT@{$\sim$FCDSceneNodeIteratorT}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\subsubsection[{$\sim$FCDSceneNodeIteratorT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE\_\-T $>$ {\bf FCDSceneNodeIteratorT}$<$ NODE\_\-T $>$::$\sim${\bf FCDSceneNodeIteratorT} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNodeIteratorT_aa6b60e205b694c0293a3a1dd6f3c746a}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDSceneNodeIteratorT_a276fdda452c3fd746f71e02ba998f895}{
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!GetNode@{GetNode}}
+\index{GetNode@{GetNode}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\subsubsection[{GetNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE\_\-T $>$ NODE\_\-T $\ast$ {\bf FCDSceneNodeIteratorT}$<$ NODE\_\-T $>$::GetNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNodeIteratorT_a276fdda452c3fd746f71e02ba998f895}
+Retrieves the current node to process. \begin{DoxyReturn}{Returns}
+The current node. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNodeIteratorT_a0ab7b88852e0deabc35177c3aa15e9a8}{
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!IsDone@{IsDone}}
+\index{IsDone@{IsDone}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\subsubsection[{IsDone}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-NODE $>$ bool {\bf FCDSceneNodeIteratorT}$<$ \_\-NODE $>$::IsDone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNodeIteratorT_a0ab7b88852e0deabc35177c3aa15e9a8}
+Retrieves whether the full sub-\/tree has been processed. \hypertarget{classFCDSceneNodeIteratorT_a0deb5e4e9954390865cde455984ec302}{
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!Next@{Next}}
+\index{Next@{Next}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\subsubsection[{Next}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE\_\-T $>$ NODE\_\-T $\ast$ {\bf FCDSceneNodeIteratorT}$<$ NODE\_\-T $>$::Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSceneNodeIteratorT_a0deb5e4e9954390865cde455984ec302}
+Advances the iteration pointer and retrieves the next node to process. \begin{DoxyReturn}{Returns}
+The node to process. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNodeIteratorT_aba0c9dbfb98e55ced477f06131c9dce8}{
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-NODE $>$ \_\-NODE$\ast$ {\bf FCDSceneNodeIteratorT}$<$ \_\-NODE $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNodeIteratorT_aba0c9dbfb98e55ced477f06131c9dce8}
+Retrieves the current node to process. \begin{DoxyReturn}{Returns}
+The current node. 
+\end{DoxyReturn}
+\hypertarget{classFCDSceneNodeIteratorT_a83648440e727233e9fc9e9d8fee1d7af}{
+\index{FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}!operator++@{operator++}}
+\index{operator++@{operator++}!FCDSceneNodeIteratorT@{FCDSceneNodeIteratorT}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-NODE $>$ {\bf FCDSceneNodeIteratorT}\& {\bf FCDSceneNodeIteratorT}$<$ \_\-NODE $>$::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSceneNodeIteratorT_a83648440e727233e9fc9e9d8fee1d7af}
+Advances the iteration pointer. \begin{DoxyReturn}{Returns}
+The iterator. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDSceneNodeIterator_8h}{FCDSceneNodeIterator.h}\item 
+FCollada/FCDocument/FCDSceneNodeIterator.hpp\end{DoxyCompactItemize}

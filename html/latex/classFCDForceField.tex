@@ -1,0 +1,132 @@
+\hypertarget{classFCDForceField}{
+\section{FCDForceField Class Reference}
+\label{classFCDForceField}\index{FCDForceField@{FCDForceField}}
+}
+
+
+{\ttfamily \#include $<$FCDForceField.h$>$}
+
+Inheritance diagram for FCDForceField:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDForceField}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDForceField_a1aef5213739e1091a7c8c4e5aa798498}{FCDForceField} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDForceField_a735c4afd89852cd4bb8298a71085f2f9}{$\sim$FCDForceField} ()
+\item 
+\hyperlink{classFCDExtra}{FCDExtra} $\ast$ \hyperlink{classFCDForceField_acf7035d6b5f08f88182afabf68eb2001}{GetInformation} ()
+\item 
+\hypertarget{classFCDForceField_aa70873280d33536212c026f9a226ce8f}{
+const \hyperlink{classFCDExtra}{FCDExtra} $\ast$ {\bfseries GetInformation} () const }
+\label{classFCDForceField_aa70873280d33536212c026f9a226ce8f}
+
+\item 
+void \hyperlink{classFCDForceField_a2ff4416e840c96f2725b067c233198bc}{SetInformation} (\hyperlink{classFCDExtra}{FCDExtra} $\ast$info)
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDForceField_a494b4e24b7bd9a5f11f9f46736704113}{GetType} () const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDForceField_a1d5a404e537c12d32426b98dd6703290}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA physics force field.
+
+This class does not have any parameters in the COMMON profile. You can use the custom extra tree to enter/retrieve your specific customized information. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDForceField_a1aef5213739e1091a7c8c4e5aa798498}{
+\index{FCDForceField@{FCDForceField}!FCDForceField@{FCDForceField}}
+\index{FCDForceField@{FCDForceField}!FCDForceField@{FCDForceField}}
+\subsubsection[{FCDForceField}]{\setlength{\rightskip}{0pt plus 5cm}FCDForceField::FCDForceField (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDForceField_a1aef5213739e1091a7c8c4e5aa798498}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the force field. \end{DoxyParams}
+\hypertarget{classFCDForceField_a735c4afd89852cd4bb8298a71085f2f9}{
+\index{FCDForceField@{FCDForceField}!$\sim$FCDForceField@{$\sim$FCDForceField}}
+\index{$\sim$FCDForceField@{$\sim$FCDForceField}!FCDForceField@{FCDForceField}}
+\subsubsection[{$\sim$FCDForceField}]{\setlength{\rightskip}{0pt plus 5cm}FCDForceField::$\sim$FCDForceField (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDForceField_a735c4afd89852cd4bb8298a71085f2f9}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDForceField_a1d5a404e537c12d32426b98dd6703290}{
+\index{FCDForceField@{FCDForceField}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDForceField@{FCDForceField}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDForceField::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDForceField_a1d5a404e537c12d32426b98dd6703290}
+Clones the force field information. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The cloned force field. If this pointer is NULL, a new force field is created and you will need to release it manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDForceField_acf7035d6b5f08f88182afabf68eb2001}{
+\index{FCDForceField@{FCDForceField}!GetInformation@{GetInformation}}
+\index{GetInformation@{GetInformation}!FCDForceField@{FCDForceField}}
+\subsubsection[{GetInformation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDExtra}$\ast$ FCDForceField::GetInformation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDForceField_acf7035d6b5f08f88182afabf68eb2001}
+Retrieves the extra tree for all the force field information. \begin{DoxyReturn}{Returns}
+The extra tree. 
+\end{DoxyReturn}
+\hypertarget{classFCDForceField_a494b4e24b7bd9a5f11f9f46736704113}{
+\index{FCDForceField@{FCDForceField}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDForceField@{FCDForceField}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDForceField::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDForceField_a494b4e24b7bd9a5f11f9f46736704113}
+Retrieves the entity class type. \begin{DoxyReturn}{Returns}
+The entity class type: FORCE\_\-FIELD 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+\hypertarget{classFCDForceField_a2ff4416e840c96f2725b067c233198bc}{
+\index{FCDForceField@{FCDForceField}!SetInformation@{SetInformation}}
+\index{SetInformation@{SetInformation}!FCDForceField@{FCDForceField}}
+\subsubsection[{SetInformation}]{\setlength{\rightskip}{0pt plus 5cm}void FCDForceField::SetInformation (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDExtra} $\ast$}]{ info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDForceField_a2ff4416e840c96f2725b067c233198bc}
+\mbox{[}INTERNAL\mbox{]} Set the information. 
+\begin{DoxyParams}{Parameters}
+\item[{\em info}]The new information to set. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/FCDForceField.h\item 
+FCollada/FCDocument/FCDForceField.cpp\end{DoxyCompactItemize}

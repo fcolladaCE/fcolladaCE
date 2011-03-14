@@ -1,0 +1,1341 @@
+\hypertarget{classFCDEffectStandard}{
+\section{FCDEffectStandard Class Reference}
+\label{classFCDEffectStandard}\index{FCDEffectStandard@{FCDEffectStandard}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectStandard.h$>$}
+
+Inheritance diagram for FCDEffectStandard:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDEffectStandard}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41d}{LightingType} \{ \par
+\hyperlink{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da405f6b6e4e09f73969b9566ec39a37cd}{CONSTANT}, 
+\hyperlink{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da936fa2b549fcc7833ec86e32a6d26667}{LAMBERT}, 
+\hyperlink{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41dacdf2c5f91356a6c80fd8d764a433e008}{PHONG}, 
+\hyperlink{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da589842bebd4c87def8bf1a65fab074f4}{BLINN}, 
+\par
+\hyperlink{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41dac081dc5deede6d9e1a8293f556a5bcfc}{UNKNOWN}
+ \}
+\item 
+enum \hyperlink{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5}{TransparencyMode} \{ \hyperlink{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5a68c1c4c107542260f18ff3ef04c46762}{A\_\-ONE}, 
+\hyperlink{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5a0da1b910a6c9fb9553dd131a56295411}{RGB\_\-ZERO}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEffectStandard_a3afc0b015bd0c80e7eae0c9ba7adb5a1}{FCDEffectStandard} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDEffect}{FCDEffect} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDEffectStandard_a1579bf493f5dcfa5f8b45b46c4b346f5}{$\sim$FCDEffectStandard} ()
+\item 
+\hyperlink{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41d}{LightingType} \hyperlink{classFCDEffectStandard_a659241e4151186c1a2f59c3583b0035d}{GetLightingType} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a0f1e8305c58f97a4b191bfc62db0155e}{SetLightingType} (\hyperlink{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41d}{LightingType} \_\-type)
+\item 
+virtual \hyperlink{namespaceFUDaeProfileType_ac10ea253a7a141708de2324a929f8a79}{FUDaeProfileType::Type} \hyperlink{classFCDEffectStandard_a5870dbcf350bd3f15781cf9ccf1095f9}{GetType} () const 
+\item 
+\hyperlink{classFCDTexture}{FCDTexture} $\ast$$\ast$ \hyperlink{classFCDEffectStandard_a92773e450b4ac35adfb15516e90c147f}{GetTextureBucket} (uint32 bucket)
+\item 
+const \hyperlink{classFCDTexture}{FCDTexture} $\ast$$\ast$ \hyperlink{classFCDEffectStandard_a427f196e14042ccc111b9ffb35649c60}{GetTextureBucket} (uint32 bucket) const 
+\item 
+size\_\-t \hyperlink{classFCDEffectStandard_a81a864fa18e3c0ff42abf708c9fca9ff}{GetTextureCount} (uint32 bucket) const 
+\item 
+\hyperlink{classFCDTexture}{FCDTexture} $\ast$ \hyperlink{classFCDEffectStandard_a502f6539d10d624b0d9d22dbe5b6cd33}{GetTexture} (uint32 bucket, size\_\-t index)
+\item 
+const \hyperlink{classFCDTexture}{FCDTexture} $\ast$ \hyperlink{classFCDEffectStandard_adbcd3cc63dc1898ec1a370c104724468}{GetTexture} (uint32 bucket, size\_\-t index) const 
+\item 
+\hyperlink{classFCDTexture}{FCDTexture} $\ast$ \hyperlink{classFCDEffectStandard_a98e73c677f68753e9630f0c9a1c3947b}{AddTexture} (uint32 bucket)
+\item 
+\hyperlink{classFCDEffectStandard_a547dc3b97250d3143da3a42b21543400}{DEPRECATED} (3.05A, texture-\/$>$Release()) void ReleaseTexture(FCDTexture $\ast$texture)
+\item 
+\hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$ \hyperlink{classFCDEffectStandard_a8a74e967a857025c0ffa61d8acad7565}{GetParam} (const \hyperlink{classfm_1_1stringT}{fm::string} \&semantic, bool $\ast$isFloat)
+\item 
+\hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_a0ccf7493649cc1870ca48cdde33f787e}{GetTranslucencyColor} ()
+\item 
+const \hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_ac42d14b615f0c8a0c7e679204a5925c2}{GetTranslucencyColor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_ae2ef3a8540d5dd7fef08b549b6af0ae0}{GetTranslucencyColorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_aa31d56cb3ebb1096bc201daaa93c269c}{GetTranslucencyColorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_af3b24d8b85f4637f3bf7fa52ef578686}{SetTranslucencyColor} (const \hyperlink{classFMVector4}{FMVector4} \&color)
+\item 
+float \& \hyperlink{classFCDEffectStandard_affd222f5c17b3cd49e49eae5219ea1ec}{GetTranslucencyFactor} ()
+\item 
+const float \& \hyperlink{classFCDEffectStandard_ab89fda3928774321d1c95bebae1bb13d}{GetTranslucencyFactor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a30b06e8ef8177d59483926a70389e764}{GetTranslucencyFactorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_ad18eefe810f554e294a1c90044905d28}{GetTranslucencyFactorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a622c5a44ccfcecbb21bd7181d6653f82}{SetTranslucencyFactor} (float factor)
+\item 
+\hyperlink{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5}{TransparencyMode} \hyperlink{classFCDEffectStandard_a986494286968251cd067be0bad9bc85a}{GetTransparencyMode} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a486d7ddb1801ed110c40b7b8ece29794}{SetTransparencyMode} (\hyperlink{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5}{TransparencyMode} mode)
+\item 
+float \hyperlink{classFCDEffectStandard_ae10a18d9f1c10bfd334bb914b6c664e4}{GetOpacity} () const 
+\item 
+\hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_a5995a932d71c056adf95c3ac21568d52}{GetEmissionColor} ()
+\item 
+const \hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_aed08c475e5e46cfc37bfe25127b9b299}{GetEmissionColor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_ad302349aad357e6c6335e794bc583ae0}{GetEmissionColorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_ae104c6a2552283803cb7642fc9a9793d}{GetEmissionColorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a7c0cf1aef71af0350675d32a3b179b4b}{SetEmissionColor} (const \hyperlink{classFMVector4}{FMVector4} \&color)
+\item 
+float \& \hyperlink{classFCDEffectStandard_aa0c497d8985dfd39f9a0b31ce0e61d90}{GetEmissionFactor} ()
+\item 
+const float \& \hyperlink{classFCDEffectStandard_aa8b817f9737206608e87ef4ea1f9c3f8}{GetEmissionFactor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a0c99ef6f5a48cabe5ad756002b2b5292}{GetEmissionFactorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a39b92132f40f484cf872da1479914ae5}{GetEmissionFactorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a8bcef4fb2c27fc2e93d584b737666ad2}{SetEmissionFactor} (float factor)
+\item 
+bool \hyperlink{classFCDEffectStandard_a45c0775d6da7ed652eaf36bd40bdc4cf}{IsEmissionFactor} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a33444405bd0753a8fc45e1104c291b7d}{SetIsEmissionFactor} (bool useFactor)
+\item 
+\hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_a626e44192093159c2e352c8338279815}{GetDiffuseColor} ()
+\item 
+const \hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_acc8baa8b4dc83b02d1d532cbb67b9f72}{GetDiffuseColor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_ae93cc60fc1866767d4458fc40ae201d5}{GetDiffuseColorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_a0f33f3f13917f86900c05837ed208d3f}{GetDiffuseColorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a1382e93839dc984c16d33bfc93572ecd}{SetDiffuseColor} (const \hyperlink{classFMVector4}{FMVector4} \&color)
+\item 
+\hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_aa1d50e4a0b7155f4d0c23f15af65fa12}{GetAmbientColor} ()
+\item 
+const \hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_a64f7d494685ff88911848a2726f8203d}{GetAmbientColor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_a94ddd58f63bf7a1460cac5048a2cea17}{GetAmbientColorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_a5d3405fde172e64f16f53c119d82a49e}{GetAmbientColorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a8777730e606304365b9e9db07bb7f145}{SetAmbientColor} (const \hyperlink{classFMVector4}{FMVector4} \&color)
+\item 
+\hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_ae457fc42deb3a72cb9b7840364dcebe1}{GetSpecularColor} ()
+\item 
+const \hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_af82d5eaf48244a5369ef8ed11213221b}{GetSpecularColor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_a04c6cf85df02970023a6146be45f1e9f}{GetSpecularColorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_a96a3021ea4315499f01b1ab5cefab2a4}{GetSpecularColorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a01e8df7c03a4ee76e929d3e2f71aaff8}{SetSpecularColor} (const \hyperlink{classFMVector4}{FMVector4} \&color)
+\item 
+float \& \hyperlink{classFCDEffectStandard_ac83628e3ccf1c9215249fa4dbe1b9919}{GetSpecularFactor} ()
+\item 
+const float \& \hyperlink{classFCDEffectStandard_a06692330309f95f57281301feb05eedc}{GetSpecularFactor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a0d9fde6e676a6dafa1951043e0185ed3}{GetSpecularFactorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_ac876d1261703bcdab860ee03288c8ac4}{GetSpecularFactorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a4511986a5a68aeb47ce042c722bf8071}{SetSpecularFactor} (float factor)
+\item 
+float \& \hyperlink{classFCDEffectStandard_ab4654ab8fa86532fe336804f067b58a2}{GetShininess} ()
+\item 
+const float \& \hyperlink{classFCDEffectStandard_a07d5518f90b17601f0d729885956a56a}{GetShininess} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a845897c93a379357f9e46224dae9e2ad}{GetShininessParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a628bb62efa7a89d2d99212961103fe85}{GetShininessParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a992804e1672eefab311332f23679fb80}{SetShininess} (float \_\-shininess)
+\item 
+bool \hyperlink{classFCDEffectStandard_a68040795f35f89bf38331e86ba853449}{IsReflective} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a6fdc49307f092d5b20eb66daa48e1920}{SetReflective} (bool r)
+\item 
+\hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_aa8983e27afa9a215fbb33e8edb63444d}{GetReflectivityColor} ()
+\item 
+const \hyperlink{classFMVector4}{FMVector4} \& \hyperlink{classFCDEffectStandard_abdd5047a0a82b40b5f13b3f666bd1c8a}{GetReflectivityColor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_a2a69b869efe3a2d58126fff91814e157}{GetReflectivityColorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$ \hyperlink{classFCDEffectStandard_ab994ac2a861c5066cfedf435294286e3}{GetReflectivityColorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a7da791434dd5676d6ab09c860829fb47}{SetReflectivityColor} (const \hyperlink{classFMVector4}{FMVector4} \&color)
+\item 
+float \& \hyperlink{classFCDEffectStandard_a45478829ccbe6b25b9f3550fc4e04c4a}{GetReflectivityFactor} ()
+\item 
+const float \& \hyperlink{classFCDEffectStandard_a2c2f46d7834a17771b18a3f27dab73d4}{GetReflectivityFactor} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a1ace9e6e264bcf10bd2ac48ecb7fe11f}{GetReflectivityFactorParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a0de5e4f9582f94fc413d563a6abc2fc5}{GetReflectivityFactorParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_a5d44f575161556c7e32fd01db0cce3b5}{SetReflectivityFactor} (float factor)
+\item 
+float \hyperlink{classFCDEffectStandard_a0665515f47cf93f0df913f5d345f04c6}{GetReflectivity} () const 
+\item 
+bool \hyperlink{classFCDEffectStandard_a0dc0c78d14a0beb924cf7fe971ee7bda}{IsRefractive} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_ab658aa9ac8d10afc1cd3b83abc81d571}{SetRefractive} (bool r)
+\item 
+float \& \hyperlink{classFCDEffectStandard_aba2edd070372a49560528d901dbf66cd}{GetIndexOfRefraction} ()
+\item 
+const float \& \hyperlink{classFCDEffectStandard_a749723323b4de3691eabafef079a9342}{GetIndexOfRefraction} () const 
+\item 
+\hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a77001b0842bf3bbe4c904369a4801302}{GetIndexOfRefractionParam} ()
+\item 
+const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$ \hyperlink{classFCDEffectStandard_a45c8ea77e71387409eeba9dfd9b54ad7}{GetIndexOfRefractionParam} () const 
+\item 
+void \hyperlink{classFCDEffectStandard_af60264112cb42d1f00d8b6af09ffc43e}{SetIndexOfRefraction} (float index)
+\item 
+virtual \hyperlink{classFCDEffectProfile}{FCDEffectProfile} $\ast$ \hyperlink{classFCDEffectStandard_aeadbfb97cdfd733a09a564f457020b66}{Clone} (\hyperlink{classFCDEffectProfile}{FCDEffectProfile} $\ast$clone=NULL) const 
+\item 
+\hyperlink{classFCDEffectStandard_a40ab2cc34bd3cf5d3f622a8dcf9e9fcd}{DEPRECATED} (3.05A, not recommended) void Flatten()
+\item 
+void \hyperlink{classFCDEffectStandard_ab7d158f54a2b6d23ed71faa4a3f1598f}{AddExtraAttribute} (const char $\ast$profile, const char $\ast$key, const fchar $\ast$value)
+\item 
+const fchar $\ast$ \hyperlink{classFCDEffectStandard_a115b0bfdfa3fb1712a51b26607ae8d37}{GetExtraAttribute} (const char $\ast$profile, const char $\ast$key) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFCDEffectStandard_af1b5eea66dd078d98feb51ba084900b9}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries EmissionColorSemantic}}
+\label{classFCDEffectStandard_af1b5eea66dd078d98feb51ba084900b9}
+
+\item 
+\hypertarget{classFCDEffectStandard_aa1b823e9f78a3c319724d8436b5ef2c2}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries EmissionFactorSemantic}}
+\label{classFCDEffectStandard_aa1b823e9f78a3c319724d8436b5ef2c2}
+
+\item 
+\hypertarget{classFCDEffectStandard_a86fdcb920b4446d4f1d3cec60f7d1deb}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries ReflectivityColorSemantic}}
+\label{classFCDEffectStandard_a86fdcb920b4446d4f1d3cec60f7d1deb}
+
+\item 
+\hypertarget{classFCDEffectStandard_abff5c430934991b46c9b25d508b84b55}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries ReflectivityFactorSemantic}}
+\label{classFCDEffectStandard_abff5c430934991b46c9b25d508b84b55}
+
+\item 
+\hypertarget{classFCDEffectStandard_a06389abe5788d824d94b3563465b39ef}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries IndexOfRefractionSemantic}}
+\label{classFCDEffectStandard_a06389abe5788d824d94b3563465b39ef}
+
+\item 
+\hypertarget{classFCDEffectStandard_adc9fcb8d989d8f8881bc7aa850aaadb8}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries TranslucencyColorSemantic}}
+\label{classFCDEffectStandard_adc9fcb8d989d8f8881bc7aa850aaadb8}
+
+\item 
+\hypertarget{classFCDEffectStandard_a8ffdda8d54e66ff7f4b88cc4062dba7e}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries TranslucencyFactorSemantic}}
+\label{classFCDEffectStandard_a8ffdda8d54e66ff7f4b88cc4062dba7e}
+
+\item 
+\hypertarget{classFCDEffectStandard_ae4b1207a87546418dba682903c906135}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries DiffuseColorSemantic}}
+\label{classFCDEffectStandard_ae4b1207a87546418dba682903c906135}
+
+\item 
+\hypertarget{classFCDEffectStandard_a85cfe6b55efc19e678b11f0d74686a62}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries AmbientColorSemantic}}
+\label{classFCDEffectStandard_a85cfe6b55efc19e678b11f0d74686a62}
+
+\item 
+\hypertarget{classFCDEffectStandard_a0db5a8e39550be273a04a893c2aeb1f9}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries SpecularColorSemantic}}
+\label{classFCDEffectStandard_a0db5a8e39550be273a04a893c2aeb1f9}
+
+\item 
+\hypertarget{classFCDEffectStandard_ae7bb65e68aaf9a9277139fdc84af9b57}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries SpecularFactorSemantic}}
+\label{classFCDEffectStandard_ae7bb65e68aaf9a9277139fdc84af9b57}
+
+\item 
+\hypertarget{classFCDEffectStandard_ad0047e7193363514924cf4cb5836e2cb}{
+static const \hyperlink{classfm_1_1stringT}{fm::string} {\bfseries ShininessSemantic}}
+\label{classFCDEffectStandard_ad0047e7193363514924cf4cb5836e2cb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COMMON profile effect description.
+
+The COMMON effect profile holds the information necessary to render your polygon sets using the well-\/defined lighting models.
+
+COLLADA supports four lighting models: constant, Lambert, Phong and Blinn. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41d}{
+\index{FCDEffectStandard@{FCDEffectStandard}!LightingType@{LightingType}}
+\index{LightingType@{LightingType}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{LightingType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDEffectStandard::LightingType}}}
+\label{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41d}
+The list of the lighting models supported by the COMMON profile of COLLADA. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CONSTANT@{CONSTANT}!FCDEffectStandard@{FCDEffectStandard}}\index{FCDEffectStandard@{FCDEffectStandard}!CONSTANT@{CONSTANT}}\item[{\em 
+\hypertarget{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da405f6b6e4e09f73969b9566ec39a37cd}{
+CONSTANT}
+\label{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da405f6b6e4e09f73969b9566ec39a37cd}
+}]The constant lighting model. This lighting model uses the emissive color everywhere, without any complex lighting calculations. It also uses the translucency factor and the translucency color, by multiplying them together and applying them to your standard alpha channel according to the final lighting color. \index{LAMBERT@{LAMBERT}!FCDEffectStandard@{FCDEffectStandard}}\index{FCDEffectStandard@{FCDEffectStandard}!LAMBERT@{LAMBERT}}\item[{\em 
+\hypertarget{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da936fa2b549fcc7833ec86e32a6d26667}{
+LAMBERT}
+\label{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da936fa2b549fcc7833ec86e32a6d26667}
+}]The Lambert lighting model. This lighting model improves on the constant lighting model by using the dot-\/product between the normalized light vectors and the polygon normals to determine how much light should affect each polygon. This value is multiplied to the diffuse color and (1 + the ambient color). \index{PHONG@{PHONG}!FCDEffectStandard@{FCDEffectStandard}}\index{FCDEffectStandard@{FCDEffectStandard}!PHONG@{PHONG}}\item[{\em 
+\hypertarget{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41dacdf2c5f91356a6c80fd8d764a433e008}{
+PHONG}
+\label{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41dacdf2c5f91356a6c80fd8d764a433e008}
+}]The Phong lighting model. This lighting model improves on the Lambert lighting model by calculating how much light is reflected by the polygons into the viewer's eye. For this calculation, the shininess, the specular color and the reflectivity is used. \index{BLINN@{BLINN}!FCDEffectStandard@{FCDEffectStandard}}\index{FCDEffectStandard@{FCDEffectStandard}!BLINN@{BLINN}}\item[{\em 
+\hypertarget{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da589842bebd4c87def8bf1a65fab074f4}{
+BLINN}
+\label{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41da589842bebd4c87def8bf1a65fab074f4}
+}]The Blinn lighting model. This lighting model improves on the Lambert lighting model by calculating how much light is reflected by the polygons into the viewer's eye. For this calculation, the shininess, the specular color and the reflectivity is used. \index{UNKNOWN@{UNKNOWN}!FCDEffectStandard@{FCDEffectStandard}}\index{FCDEffectStandard@{FCDEffectStandard}!UNKNOWN@{UNKNOWN}}\item[{\em 
+\hypertarget{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41dac081dc5deede6d9e1a8293f556a5bcfc}{
+UNKNOWN}
+\label{classFCDEffectStandard_a0c8ec2fb06ea05212a4bb140f909b41dac081dc5deede6d9e1a8293f556a5bcfc}
+}]Not a valid lighting model. \end{description}
+\end{Desc}
+
+\hypertarget{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5}{
+\index{FCDEffectStandard@{FCDEffectStandard}!TransparencyMode@{TransparencyMode}}
+\index{TransparencyMode@{TransparencyMode}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{TransparencyMode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDEffectStandard::TransparencyMode}}}
+\label{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5}
+The list of transparency modes supported by the COMMON profile of COLLADA. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{A\_\-ONE@{A\_\-ONE}!FCDEffectStandard@{FCDEffectStandard}}\index{FCDEffectStandard@{FCDEffectStandard}!A\_\-ONE@{A\_\-ONE}}\item[{\em 
+\hypertarget{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5a68c1c4c107542260f18ff3ef04c46762}{
+A\_\-ONE}
+\label{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5a68c1c4c107542260f18ff3ef04c46762}
+}]Takes the transparency information from the color's alpha channel, where the value 1.0 is opaque. \index{RGB\_\-ZERO@{RGB\_\-ZERO}!FCDEffectStandard@{FCDEffectStandard}}\index{FCDEffectStandard@{FCDEffectStandard}!RGB\_\-ZERO@{RGB\_\-ZERO}}\item[{\em 
+\hypertarget{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5a0da1b910a6c9fb9553dd131a56295411}{
+RGB\_\-ZERO}
+\label{classFCDEffectStandard_a9e749ea44e9152c5671985b3e9a7c9a5a0da1b910a6c9fb9553dd131a56295411}
+}]Takes the transparency information from the color's red, green, and blue channels, where the value 0.0 is opaque, with each channel modulated independently. \end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEffectStandard_a3afc0b015bd0c80e7eae0c9ba7adb5a1}{
+\index{FCDEffectStandard@{FCDEffectStandard}!FCDEffectStandard@{FCDEffectStandard}}
+\index{FCDEffectStandard@{FCDEffectStandard}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{FCDEffectStandard}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectStandard::FCDEffectStandard (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDEffect} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectStandard_a3afc0b015bd0c80e7eae0c9ba7adb5a1}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDEffect_abe53b1e58ce5469b28f63b5155703a95}{FCDEffect::AddProfile} function with the \hyperlink{namespaceFUDaeProfileType_ac10ea253a7a141708de2324a929f8a79ad8aa33a3586c77ac1163a8840cf2ac38}{FUDaeProfileType::COMMON} parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The \hyperlink{namespaceFCollada}{FCollada} document that owns this effect standard. \item[{\em parent}]The effect that contains this profile. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a1579bf493f5dcfa5f8b45b46c4b346f5}{
+\index{FCDEffectStandard@{FCDEffectStandard}!$\sim$FCDEffectStandard@{$\sim$FCDEffectStandard}}
+\index{$\sim$FCDEffectStandard@{$\sim$FCDEffectStandard}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{$\sim$FCDEffectStandard}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectStandard::$\sim$FCDEffectStandard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectStandard_a1579bf493f5dcfa5f8b45b46c4b346f5}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEffectStandard_ab7d158f54a2b6d23ed71faa4a3f1598f}{
+\index{FCDEffectStandard@{FCDEffectStandard}!AddExtraAttribute@{AddExtraAttribute}}
+\index{AddExtraAttribute@{AddExtraAttribute}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{AddExtraAttribute}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::AddExtraAttribute (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ profile, }
+\item[{const char $\ast$}]{ key, }
+\item[{const fchar $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectStandard_ab7d158f54a2b6d23ed71faa4a3f1598f}
+Adds an extra attribute to the given profile 
+\begin{DoxyParams}{Parameters}
+\item[{\em profile}]The profile in which to insert the attribute. \item[{\em key}]The attribute's key \item[{\em value}]The attribute's value \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a98e73c677f68753e9630f0c9a1c3947b}{
+\index{FCDEffectStandard@{FCDEffectStandard}!AddTexture@{AddTexture}}
+\index{AddTexture@{AddTexture}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{AddTexture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTexture} $\ast$ FCDEffectStandard::AddTexture (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ bucket}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectStandard_a98e73c677f68753e9630f0c9a1c3947b}
+Adds a texture to a specific channel. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bucket}]A texture channel index. This index should match one of the values in the \hyperlink{namespaceFUDaeTextureChannel}{FUDaeTextureChannel} enum. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new texture. This pointer will be NULL if the bucket is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_aeadbfb97cdfd733a09a564f457020b66}{
+\index{FCDEffectStandard@{FCDEffectStandard}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectProfile} $\ast$ FCDEffectStandard::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectProfile} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectStandard_aeadbfb97cdfd733a09a564f457020b66}
+Clones the COMMON profile effect and its parameters. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The cloned profile. If this pointer is NULL, a new COMMON profile is created and you will need to release this pointer. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned COMMON profile. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEffectProfile_ab7641c9671098f6966146798e61bb098}{FCDEffectProfile}.
+
+\hypertarget{classFCDEffectStandard_a547dc3b97250d3143da3a42b21543400}{
+\index{FCDEffectStandard@{FCDEffectStandard}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectStandard::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{texture-\/$>$}]{ Release()}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a547dc3b97250d3143da3a42b21543400}
+Releases a texture contained within this effect profile. 
+\begin{DoxyParams}{Parameters}
+\item[{\em texture}]The texture to release. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a40ab2cc34bd3cf5d3f622a8dcf9e9fcd}{
+\index{FCDEffectStandard@{FCDEffectStandard}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectStandard::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{not}]{ recommended}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a40ab2cc34bd3cf5d3f622a8dcf9e9fcd}
+\mbox{[}INTERNAL\mbox{]} Flattens the profile. Does nothing on the common profile. 
+
+Reimplemented from \hyperlink{classFCDEffectProfile_aadc7e65fa145af53ec2bf47c6de550f2}{FCDEffectProfile}.
+
+\hypertarget{classFCDEffectStandard_aa1d50e4a0b7155f4d0c23f15af65fa12}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetAmbientColor@{GetAmbientColor}}
+\index{GetAmbientColor@{GetAmbientColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetAmbientColor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector4}\& FCDEffectStandard::GetAmbientColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_aa1d50e4a0b7155f4d0c23f15af65fa12}
+Retrieves the ambient color. This value is used in the Lambert lighting model. \begin{DoxyReturn}{Returns}
+The ambient color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a64f7d494685ff88911848a2726f8203d}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetAmbientColor@{GetAmbientColor}}
+\index{GetAmbientColor@{GetAmbientColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetAmbientColor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector4}\& FCDEffectStandard::GetAmbientColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a64f7d494685ff88911848a2726f8203d}
+See above. \hypertarget{classFCDEffectStandard_a94ddd58f63bf7a1460cac5048a2cea17}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetAmbientColorParam@{GetAmbientColorParam}}
+\index{GetAmbientColorParam@{GetAmbientColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetAmbientColorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetAmbientColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a94ddd58f63bf7a1460cac5048a2cea17}
+Retrieves the parameter pointer that contains the ambient color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. \begin{DoxyReturn}{Returns}
+The parameter that contains the ambient color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a5d3405fde172e64f16f53c119d82a49e}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetAmbientColorParam@{GetAmbientColorParam}}
+\index{GetAmbientColorParam@{GetAmbientColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetAmbientColorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetAmbientColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a5d3405fde172e64f16f53c119d82a49e}
+See above. \hypertarget{classFCDEffectStandard_a626e44192093159c2e352c8338279815}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetDiffuseColor@{GetDiffuseColor}}
+\index{GetDiffuseColor@{GetDiffuseColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetDiffuseColor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector4}\& FCDEffectStandard::GetDiffuseColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a626e44192093159c2e352c8338279815}
+Retrieves the diffuse color. This value is used in the Lambert lighting model. \begin{DoxyReturn}{Returns}
+The diffuse color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_acc8baa8b4dc83b02d1d532cbb67b9f72}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetDiffuseColor@{GetDiffuseColor}}
+\index{GetDiffuseColor@{GetDiffuseColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetDiffuseColor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector4}\& FCDEffectStandard::GetDiffuseColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_acc8baa8b4dc83b02d1d532cbb67b9f72}
+See above. \hypertarget{classFCDEffectStandard_ae93cc60fc1866767d4458fc40ae201d5}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetDiffuseColorParam@{GetDiffuseColorParam}}
+\index{GetDiffuseColorParam@{GetDiffuseColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetDiffuseColorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetDiffuseColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ae93cc60fc1866767d4458fc40ae201d5}
+Retrieves the parameter pointer that contains the diffuse color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. \begin{DoxyReturn}{Returns}
+The parameter that contains the diffuse color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a0f33f3f13917f86900c05837ed208d3f}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetDiffuseColorParam@{GetDiffuseColorParam}}
+\index{GetDiffuseColorParam@{GetDiffuseColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetDiffuseColorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetDiffuseColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a0f33f3f13917f86900c05837ed208d3f}
+See above. \hypertarget{classFCDEffectStandard_a5995a932d71c056adf95c3ac21568d52}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetEmissionColor@{GetEmissionColor}}
+\index{GetEmissionColor@{GetEmissionColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetEmissionColor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector4}\& FCDEffectStandard::GetEmissionColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a5995a932d71c056adf95c3ac21568d52}
+Retrieves the base emission/self-\/illumination color. This value must be multiplied with the emission factor to get the real emission color. This value is used in all lighting models. \begin{DoxyReturn}{Returns}
+The base emission color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_aed08c475e5e46cfc37bfe25127b9b299}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetEmissionColor@{GetEmissionColor}}
+\index{GetEmissionColor@{GetEmissionColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetEmissionColor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector4}\& FCDEffectStandard::GetEmissionColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_aed08c475e5e46cfc37bfe25127b9b299}
+See above. \hypertarget{classFCDEffectStandard_ad302349aad357e6c6335e794bc583ae0}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetEmissionColorParam@{GetEmissionColorParam}}
+\index{GetEmissionColorParam@{GetEmissionColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetEmissionColorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetEmissionColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ad302349aad357e6c6335e794bc583ae0}
+Retrieves the parameter pointer that contains the emission color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. \begin{DoxyReturn}{Returns}
+The parameter that contains the emission color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_ae104c6a2552283803cb7642fc9a9793d}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetEmissionColorParam@{GetEmissionColorParam}}
+\index{GetEmissionColorParam@{GetEmissionColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetEmissionColorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetEmissionColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ae104c6a2552283803cb7642fc9a9793d}
+See above. \hypertarget{classFCDEffectStandard_aa0c497d8985dfd39f9a0b31ce0e61d90}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetEmissionFactor@{GetEmissionFactor}}
+\index{GetEmissionFactor@{GetEmissionFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetEmissionFactor}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDEffectStandard::GetEmissionFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_aa0c497d8985dfd39f9a0b31ce0e61d90}
+Retrieves the emission/self-\/illumination factor. This value must be multiplied with the base emission color to get the real emission color. \begin{DoxyReturn}{Returns}
+The emission factor. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_aa8b817f9737206608e87ef4ea1f9c3f8}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetEmissionFactor@{GetEmissionFactor}}
+\index{GetEmissionFactor@{GetEmissionFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetEmissionFactor}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDEffectStandard::GetEmissionFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_aa8b817f9737206608e87ef4ea1f9c3f8}
+See above. \hypertarget{classFCDEffectStandard_a39b92132f40f484cf872da1479914ae5}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetEmissionFactorParam@{GetEmissionFactorParam}}
+\index{GetEmissionFactorParam@{GetEmissionFactorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetEmissionFactorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetEmissionFactorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a39b92132f40f484cf872da1479914ae5}
+See above. \hypertarget{classFCDEffectStandard_a0c99ef6f5a48cabe5ad756002b2b5292}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetEmissionFactorParam@{GetEmissionFactorParam}}
+\index{GetEmissionFactorParam@{GetEmissionFactorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetEmissionFactorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetEmissionFactorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a0c99ef6f5a48cabe5ad756002b2b5292}
+Retrieves the parameter pointer that contains the emission/self-\/illumination factor. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. \begin{DoxyReturn}{Returns}
+The parameter that contains the emission/self-\/illumination factor. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a115b0bfdfa3fb1712a51b26607ae8d37}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetExtraAttribute@{GetExtraAttribute}}
+\index{GetExtraAttribute@{GetExtraAttribute}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetExtraAttribute}]{\setlength{\rightskip}{0pt plus 5cm}const fchar $\ast$ FCDEffectStandard::GetExtraAttribute (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ profile, }
+\item[{const char $\ast$}]{ key}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectStandard_a115b0bfdfa3fb1712a51b26607ae8d37}
+Get the extra attribute value corresponding to the given profile and key values 
+\begin{DoxyParams}{Parameters}
+\item[{\em profile}]The profile to look for. \item[{\em key}]The attribute key to look for. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_aba2edd070372a49560528d901dbf66cd}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetIndexOfRefraction@{GetIndexOfRefraction}}
+\index{GetIndexOfRefraction@{GetIndexOfRefraction}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetIndexOfRefraction}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDEffectStandard::GetIndexOfRefraction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_aba2edd070372a49560528d901dbf66cd}
+Retrieves the index of refraction. The index of refraction defaults to 1.0f. \begin{DoxyReturn}{Returns}
+The index of refraction. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a749723323b4de3691eabafef079a9342}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetIndexOfRefraction@{GetIndexOfRefraction}}
+\index{GetIndexOfRefraction@{GetIndexOfRefraction}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetIndexOfRefraction}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDEffectStandard::GetIndexOfRefraction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a749723323b4de3691eabafef079a9342}
+See above. \hypertarget{classFCDEffectStandard_a45c8ea77e71387409eeba9dfd9b54ad7}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetIndexOfRefractionParam@{GetIndexOfRefractionParam}}
+\index{GetIndexOfRefractionParam@{GetIndexOfRefractionParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetIndexOfRefractionParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetIndexOfRefractionParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a45c8ea77e71387409eeba9dfd9b54ad7}
+See above. \hypertarget{classFCDEffectStandard_a77001b0842bf3bbe4c904369a4801302}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetIndexOfRefractionParam@{GetIndexOfRefractionParam}}
+\index{GetIndexOfRefractionParam@{GetIndexOfRefractionParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetIndexOfRefractionParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetIndexOfRefractionParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a77001b0842bf3bbe4c904369a4801302}
+Retrieves the parameter pointer that contains the index of refraction. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. \begin{DoxyReturn}{Returns}
+The parameter that contains the index of refraction. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a659241e4151186c1a2f59c3583b0035d}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetLightingType@{GetLightingType}}
+\index{GetLightingType@{GetLightingType}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetLightingType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LightingType} FCDEffectStandard::GetLightingType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a659241e4151186c1a2f59c3583b0035d}
+Retrieves the lighting model to be used for this profile. \begin{DoxyReturn}{Returns}
+The lighting model. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_ae10a18d9f1c10bfd334bb914b6c664e4}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetOpacity@{GetOpacity}}
+\index{GetOpacity@{GetOpacity}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetOpacity}]{\setlength{\rightskip}{0pt plus 5cm}float FCDEffectStandard::GetOpacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectStandard_ae10a18d9f1c10bfd334bb914b6c664e4}
+Retrieves the flat opacity. This is a calculated value and will not take into consideration any animations that affect either the base translucency color or the translucency factor. This value can be used in all lighting models. \begin{DoxyReturn}{Returns}
+The flat opacity. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a8a74e967a857025c0ffa61d8acad7565}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetParam@{GetParam}}
+\index{GetParam@{GetParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameter} $\ast$ FCDEffectStandard::GetParam (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ semantic, }
+\item[{bool $\ast$}]{ isFloat}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectStandard_a8a74e967a857025c0ffa61d8acad7565}
+Retrieves a parameter based on the semantic. 
+\begin{DoxyParams}{Parameters}
+\item[{\em semantic}]The semantic that names the param. \item[{\em isFloat}]Returned float indicating whether the parameter is a float or a vector. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+param The returned parameter. Use isFloat to cast to FCDEffectParameterFloat or FCDEffectParameterColor4. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a0665515f47cf93f0df913f5d345f04c6}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivity@{GetReflectivity}}
+\index{GetReflectivity@{GetReflectivity}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivity}]{\setlength{\rightskip}{0pt plus 5cm}float FCDEffectStandard::GetReflectivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectStandard_a0665515f47cf93f0df913f5d345f04c6}
+Retrieves the flat reflectivity. This is a calculated value and will not take into consideration any animations that affect either the base reflectivity color or the reflectivity factor. This value can be used in the Phong and Blinn lighting models. \begin{DoxyReturn}{Returns}
+The flat reflectivity. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_aa8983e27afa9a215fbb33e8edb63444d}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivityColor@{GetReflectivityColor}}
+\index{GetReflectivityColor@{GetReflectivityColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivityColor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector4}\& FCDEffectStandard::GetReflectivityColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_aa8983e27afa9a215fbb33e8edb63444d}
+Retrieves the base reflectivity color. This value must be multiplied to the reflectivity factor to get the real reflectivity color. This value is used in the Phong and Blinn lighting models. \begin{DoxyReturn}{Returns}
+The base reflectivity color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_abdd5047a0a82b40b5f13b3f666bd1c8a}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivityColor@{GetReflectivityColor}}
+\index{GetReflectivityColor@{GetReflectivityColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivityColor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector4}\& FCDEffectStandard::GetReflectivityColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_abdd5047a0a82b40b5f13b3f666bd1c8a}
+See above. \hypertarget{classFCDEffectStandard_a2a69b869efe3a2d58126fff91814e157}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivityColorParam@{GetReflectivityColorParam}}
+\index{GetReflectivityColorParam@{GetReflectivityColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivityColorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetReflectivityColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a2a69b869efe3a2d58126fff91814e157}
+Retrieves the parameter pointer that contains the reflectivity color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. \begin{DoxyReturn}{Returns}
+The parameter that contains the reflectivity color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_ab994ac2a861c5066cfedf435294286e3}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivityColorParam@{GetReflectivityColorParam}}
+\index{GetReflectivityColorParam@{GetReflectivityColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivityColorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetReflectivityColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ab994ac2a861c5066cfedf435294286e3}
+See above. \hypertarget{classFCDEffectStandard_a45478829ccbe6b25b9f3550fc4e04c4a}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivityFactor@{GetReflectivityFactor}}
+\index{GetReflectivityFactor@{GetReflectivityFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivityFactor}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDEffectStandard::GetReflectivityFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a45478829ccbe6b25b9f3550fc4e04c4a}
+Retrieves the reflectivity factor. This value must be multiplied to the base reflectivity color to get the real reflectivity color. This value is used in the Phong and Blinn lighting models. \begin{DoxyReturn}{Returns}
+The reflectivity factor. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a2c2f46d7834a17771b18a3f27dab73d4}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivityFactor@{GetReflectivityFactor}}
+\index{GetReflectivityFactor@{GetReflectivityFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivityFactor}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDEffectStandard::GetReflectivityFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a2c2f46d7834a17771b18a3f27dab73d4}
+See above. \hypertarget{classFCDEffectStandard_a0de5e4f9582f94fc413d563a6abc2fc5}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivityFactorParam@{GetReflectivityFactorParam}}
+\index{GetReflectivityFactorParam@{GetReflectivityFactorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivityFactorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetReflectivityFactorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a0de5e4f9582f94fc413d563a6abc2fc5}
+See above. \hypertarget{classFCDEffectStandard_a1ace9e6e264bcf10bd2ac48ecb7fe11f}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetReflectivityFactorParam@{GetReflectivityFactorParam}}
+\index{GetReflectivityFactorParam@{GetReflectivityFactorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetReflectivityFactorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetReflectivityFactorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a1ace9e6e264bcf10bd2ac48ecb7fe11f}
+Retrieves the parameter pointer that contains the reflectivity factor. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. \begin{DoxyReturn}{Returns}
+The parameter that contains the reflectivity factor. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_ab4654ab8fa86532fe336804f067b58a2}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetShininess@{GetShininess}}
+\index{GetShininess@{GetShininess}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetShininess}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDEffectStandard::GetShininess (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ab4654ab8fa86532fe336804f067b58a2}
+Retrieves the specular shininess. This value represents the exponent to which you must raise the dot-\/product between the view vector and reflected light vectors: as such, it is usually a number greater than 1. This value is used in the Phong and Blinn lighting models. \begin{DoxyReturn}{Returns}
+The specular shininess. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a07d5518f90b17601f0d729885956a56a}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetShininess@{GetShininess}}
+\index{GetShininess@{GetShininess}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetShininess}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDEffectStandard::GetShininess (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a07d5518f90b17601f0d729885956a56a}
+See above. \hypertarget{classFCDEffectStandard_a845897c93a379357f9e46224dae9e2ad}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetShininessParam@{GetShininessParam}}
+\index{GetShininessParam@{GetShininessParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetShininessParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetShininessParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a845897c93a379357f9e46224dae9e2ad}
+Retrieves the parameter pointer that contains the specular shininess. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. \begin{DoxyReturn}{Returns}
+The parameter that contains the specular shininess. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a628bb62efa7a89d2d99212961103fe85}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetShininessParam@{GetShininessParam}}
+\index{GetShininessParam@{GetShininessParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetShininessParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetShininessParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a628bb62efa7a89d2d99212961103fe85}
+See above. \hypertarget{classFCDEffectStandard_ae457fc42deb3a72cb9b7840364dcebe1}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetSpecularColor@{GetSpecularColor}}
+\index{GetSpecularColor@{GetSpecularColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetSpecularColor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector4}\& FCDEffectStandard::GetSpecularColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ae457fc42deb3a72cb9b7840364dcebe1}
+Retrieves the base specular color. This value must be multiplied with the specular factor to get the real specular color. This value is used in the Phong and Blinn lighting models. \begin{DoxyReturn}{Returns}
+The specular color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_af82d5eaf48244a5369ef8ed11213221b}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetSpecularColor@{GetSpecularColor}}
+\index{GetSpecularColor@{GetSpecularColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetSpecularColor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector4}\& FCDEffectStandard::GetSpecularColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_af82d5eaf48244a5369ef8ed11213221b}
+See above. \hypertarget{classFCDEffectStandard_a04c6cf85df02970023a6146be45f1e9f}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetSpecularColorParam@{GetSpecularColorParam}}
+\index{GetSpecularColorParam@{GetSpecularColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetSpecularColorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetSpecularColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a04c6cf85df02970023a6146be45f1e9f}
+Retrieves the parameter pointer that contains the specular color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. \begin{DoxyReturn}{Returns}
+The parameter that contains the specular color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a96a3021ea4315499f01b1ab5cefab2a4}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetSpecularColorParam@{GetSpecularColorParam}}
+\index{GetSpecularColorParam@{GetSpecularColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetSpecularColorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetSpecularColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a96a3021ea4315499f01b1ab5cefab2a4}
+See above. \hypertarget{classFCDEffectStandard_ac83628e3ccf1c9215249fa4dbe1b9919}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetSpecularFactor@{GetSpecularFactor}}
+\index{GetSpecularFactor@{GetSpecularFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetSpecularFactor}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDEffectStandard::GetSpecularFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ac83628e3ccf1c9215249fa4dbe1b9919}
+Retrieves the specular factor. This value must be multiplied with the base specular color to get the real specular color. This value is used in the Phong and Blinn lighting models. \begin{DoxyReturn}{Returns}
+The specular factor. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a06692330309f95f57281301feb05eedc}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetSpecularFactor@{GetSpecularFactor}}
+\index{GetSpecularFactor@{GetSpecularFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetSpecularFactor}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDEffectStandard::GetSpecularFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a06692330309f95f57281301feb05eedc}
+See above. \hypertarget{classFCDEffectStandard_ac876d1261703bcdab860ee03288c8ac4}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetSpecularFactorParam@{GetSpecularFactorParam}}
+\index{GetSpecularFactorParam@{GetSpecularFactorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetSpecularFactorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetSpecularFactorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ac876d1261703bcdab860ee03288c8ac4}
+See above. \hypertarget{classFCDEffectStandard_a0d9fde6e676a6dafa1951043e0185ed3}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetSpecularFactorParam@{GetSpecularFactorParam}}
+\index{GetSpecularFactorParam@{GetSpecularFactorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetSpecularFactorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetSpecularFactorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a0d9fde6e676a6dafa1951043e0185ed3}
+Retrieves the parameter pointer that contains the specular factor. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. \begin{DoxyReturn}{Returns}
+The parameter that contains the specular factor. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_adbcd3cc63dc1898ec1a370c104724468}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTexture}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDTexture}$\ast$ FCDEffectStandard::GetTexture (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ bucket, }
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_adbcd3cc63dc1898ec1a370c104724468}
+See above. \hypertarget{classFCDEffectStandard_a502f6539d10d624b0d9d22dbe5b6cd33}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTexture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTexture}$\ast$ FCDEffectStandard::GetTexture (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ bucket, }
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a502f6539d10d624b0d9d22dbe5b6cd33}
+Retrieves a texture 
+\begin{DoxyParams}{Parameters}
+\item[{\em bucket}]A texture channel index. This index should match one of the values in the \hyperlink{namespaceFUDaeTextureChannel}{FUDaeTextureChannel} enum. \item[{\em index}]The index of a texture within this channel. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture. This pointer will be NULL if either the bucket or the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a92773e450b4ac35adfb15516e90c147f}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTextureBucket@{GetTextureBucket}}
+\index{GetTextureBucket@{GetTextureBucket}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTextureBucket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTexture}$\ast$$\ast$ FCDEffectStandard::GetTextureBucket (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ bucket}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a92773e450b4ac35adfb15516e90c147f}
+Retrieves the list of textures belonging to a specific channel. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bucket}]A texture channel index. This index should match one of the values in the \hyperlink{namespaceFUDaeTextureChannel}{FUDaeTextureChannel} enum. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of textures for this channel. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a427f196e14042ccc111b9ffb35649c60}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTextureBucket@{GetTextureBucket}}
+\index{GetTextureBucket@{GetTextureBucket}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTextureBucket}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDTexture} $\ast$$\ast$ FCDEffectStandard::GetTextureBucket (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ bucket}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectStandard_a427f196e14042ccc111b9ffb35649c60}
+See above. \hypertarget{classFCDEffectStandard_a81a864fa18e3c0ff42abf708c9fca9ff}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTextureCount@{GetTextureCount}}
+\index{GetTextureCount@{GetTextureCount}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTextureCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectStandard::GetTextureCount (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ bucket}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectStandard_a81a864fa18e3c0ff42abf708c9fca9ff}
+Retrieves the number of textures belonging to a specific channel. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bucket}]A texture channel index. This index should match one of the values in the \hyperlink{namespaceFUDaeTextureChannel}{FUDaeTextureChannel} enum. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of textures in that channel. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_ac42d14b615f0c8a0c7e679204a5925c2}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTranslucencyColor@{GetTranslucencyColor}}
+\index{GetTranslucencyColor@{GetTranslucencyColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTranslucencyColor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector4}\& FCDEffectStandard::GetTranslucencyColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ac42d14b615f0c8a0c7e679204a5925c2}
+See above. \hypertarget{classFCDEffectStandard_a0ccf7493649cc1870ca48cdde33f787e}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTranslucencyColor@{GetTranslucencyColor}}
+\index{GetTranslucencyColor@{GetTranslucencyColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTranslucencyColor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector4}\& FCDEffectStandard::GetTranslucencyColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a0ccf7493649cc1870ca48cdde33f787e}
+Retrieves the base translucency color. This value must be multiplied with the translucency factor to get the real translucency color. Use the RGB channels in case of a RGB\_\-ZERO transparency mode, and the A channel in case of a A\_\-ONE transparency mode This value is used in all lighting models. \begin{DoxyReturn}{Returns}
+The base translucency color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_ae2ef3a8540d5dd7fef08b549b6af0ae0}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTranslucencyColorParam@{GetTranslucencyColorParam}}
+\index{GetTranslucencyColorParam@{GetTranslucencyColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTranslucencyColorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetTranslucencyColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ae2ef3a8540d5dd7fef08b549b6af0ae0}
+Retrieves the parameter pointer that contains the translucency color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. \begin{DoxyReturn}{Returns}
+The parameter that contains the translucency color. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_aa31d56cb3ebb1096bc201daaa93c269c}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTranslucencyColorParam@{GetTranslucencyColorParam}}
+\index{GetTranslucencyColorParam@{GetTranslucencyColorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTranslucencyColorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterColor4}$\ast$ FCDEffectStandard::GetTranslucencyColorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_aa31d56cb3ebb1096bc201daaa93c269c}
+See above. \hypertarget{classFCDEffectStandard_ab89fda3928774321d1c95bebae1bb13d}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTranslucencyFactor@{GetTranslucencyFactor}}
+\index{GetTranslucencyFactor@{GetTranslucencyFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTranslucencyFactor}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDEffectStandard::GetTranslucencyFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ab89fda3928774321d1c95bebae1bb13d}
+See above. \hypertarget{classFCDEffectStandard_affd222f5c17b3cd49e49eae5219ea1ec}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTranslucencyFactor@{GetTranslucencyFactor}}
+\index{GetTranslucencyFactor@{GetTranslucencyFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTranslucencyFactor}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDEffectStandard::GetTranslucencyFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_affd222f5c17b3cd49e49eae5219ea1ec}
+Retrieves the translucency factor. This value must be multiplied with the translucency color to get the real translucency color. This value is used in all lighting models. \begin{DoxyReturn}{Returns}
+The translucency factor. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a30b06e8ef8177d59483926a70389e764}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTranslucencyFactorParam@{GetTranslucencyFactorParam}}
+\index{GetTranslucencyFactorParam@{GetTranslucencyFactorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTranslucencyFactorParam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetTranslucencyFactorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a30b06e8ef8177d59483926a70389e764}
+Retrieves the parameter pointer that contains the translucency factor. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile\_\-COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. \begin{DoxyReturn}{Returns}
+The parameter that contains the translucency factor. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_ad18eefe810f554e294a1c90044905d28}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTranslucencyFactorParam@{GetTranslucencyFactorParam}}
+\index{GetTranslucencyFactorParam@{GetTranslucencyFactorParam}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTranslucencyFactorParam}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterFloat}$\ast$ FCDEffectStandard::GetTranslucencyFactorParam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ad18eefe810f554e294a1c90044905d28}
+See above. \hypertarget{classFCDEffectStandard_a986494286968251cd067be0bad9bc85a}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetTransparencyMode@{GetTransparencyMode}}
+\index{GetTransparencyMode@{GetTransparencyMode}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetTransparencyMode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TransparencyMode} FCDEffectStandard::GetTransparencyMode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a986494286968251cd067be0bad9bc85a}
+Retrieves the transparency mode. \begin{DoxyReturn}{Returns}
+The transparency mode. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a5870dbcf350bd3f15781cf9ccf1095f9}{
+\index{FCDEffectStandard@{FCDEffectStandard}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FUDaeProfileType::Type} FCDEffectStandard::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDEffectStandard_a5870dbcf350bd3f15781cf9ccf1095f9}
+Retrieves the profile type for this effect. This function is a part of the \hyperlink{classFCDEffectProfile}{FCDEffectProfile} interface and allows you to up-\/cast an effect profile pointer safely to this class. \begin{DoxyReturn}{Returns}
+The profile type: COMMON. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDEffectProfile_a48ae9db50d8cce2509d6a3d557a1b0a6}{FCDEffectProfile}.
+
+\hypertarget{classFCDEffectStandard_a45c0775d6da7ed652eaf36bd40bdc4cf}{
+\index{FCDEffectStandard@{FCDEffectStandard}!IsEmissionFactor@{IsEmissionFactor}}
+\index{IsEmissionFactor@{IsEmissionFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{IsEmissionFactor}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDEffectStandard::IsEmissionFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a45c0775d6da7ed652eaf36bd40bdc4cf}
+Retrieves whether the emission factor was used, rather than the emission color. This value is used in conjunction with 3dsMax, in which the self-\/illumination color and the self-\/illumination factor are mutually exclusive. \begin{DoxyReturn}{Returns}
+Whether the emission factor is to be used. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a68040795f35f89bf38331e86ba853449}{
+\index{FCDEffectStandard@{FCDEffectStandard}!IsReflective@{IsReflective}}
+\index{IsReflective@{IsReflective}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{IsReflective}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDEffectStandard::IsReflective (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a68040795f35f89bf38331e86ba853449}
+Retrieves the reflectivity state. \begin{DoxyReturn}{Returns}
+True if the effect has reflectivity information. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a0dc0c78d14a0beb924cf7fe971ee7bda}{
+\index{FCDEffectStandard@{FCDEffectStandard}!IsRefractive@{IsRefractive}}
+\index{IsRefractive@{IsRefractive}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{IsRefractive}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDEffectStandard::IsRefractive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a0dc0c78d14a0beb924cf7fe971ee7bda}
+Retrieves the refractive state. \begin{DoxyReturn}{Returns}
+True if the effect has refractive information. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectStandard_a8777730e606304365b9e9db07bb7f145}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetAmbientColor@{SetAmbientColor}}
+\index{SetAmbientColor@{SetAmbientColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetAmbientColor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetAmbientColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a8777730e606304365b9e9db07bb7f145}
+Sets the ambient color. 
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]The ambient color. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a1382e93839dc984c16d33bfc93572ecd}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetDiffuseColor@{SetDiffuseColor}}
+\index{SetDiffuseColor@{SetDiffuseColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetDiffuseColor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetDiffuseColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a1382e93839dc984c16d33bfc93572ecd}
+Sets the diffuse color. 
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]The diffuse color. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a7c0cf1aef71af0350675d32a3b179b4b}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetEmissionColor@{SetEmissionColor}}
+\index{SetEmissionColor@{SetEmissionColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetEmissionColor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetEmissionColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a7c0cf1aef71af0350675d32a3b179b4b}
+Sets the base emission/self-\/illumination color. 
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]The base emission color. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a8bcef4fb2c27fc2e93d584b737666ad2}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetEmissionFactor@{SetEmissionFactor}}
+\index{SetEmissionFactor@{SetEmissionFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetEmissionFactor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetEmissionFactor (
+\begin{DoxyParamCaption}
+\item[{float}]{ factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a8bcef4fb2c27fc2e93d584b737666ad2}
+Sets the emission/self-\/illumination factor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em factor}]The emission factor. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_af60264112cb42d1f00d8b6af09ffc43e}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetIndexOfRefraction@{SetIndexOfRefraction}}
+\index{SetIndexOfRefraction@{SetIndexOfRefraction}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetIndexOfRefraction}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetIndexOfRefraction (
+\begin{DoxyParamCaption}
+\item[{float}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_af60264112cb42d1f00d8b6af09ffc43e}
+Sets the index of refraction. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The new index of refraction. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a33444405bd0753a8fc45e1104c291b7d}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetIsEmissionFactor@{SetIsEmissionFactor}}
+\index{SetIsEmissionFactor@{SetIsEmissionFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetIsEmissionFactor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetIsEmissionFactor (
+\begin{DoxyParamCaption}
+\item[{bool}]{ useFactor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a33444405bd0753a8fc45e1104c291b7d}
+Sets whether the emission factor is to be used, rather than the emission color. This value is used in conjunction with 3dsMax, in which the self-\/illumination color and the self-\/illumination factor are mutually exclusive. 
+\begin{DoxyParams}{Parameters}
+\item[{\em useFactor}]Whether the emission factor should be used. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a0f1e8305c58f97a4b191bfc62db0155e}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetLightingType@{SetLightingType}}
+\index{SetLightingType@{SetLightingType}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetLightingType}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetLightingType (
+\begin{DoxyParamCaption}
+\item[{{\bf LightingType}}]{ \_\-type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a0f1e8305c58f97a4b191bfc62db0155e}
+Sets the lighting model to be used for this profile. Note that which parameters are exported depends on the lighting model. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-type}]The lighting model. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a6fdc49307f092d5b20eb66daa48e1920}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetReflective@{SetReflective}}
+\index{SetReflective@{SetReflective}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetReflective}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetReflective (
+\begin{DoxyParamCaption}
+\item[{bool}]{ r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a6fdc49307f092d5b20eb66daa48e1920}
+Sets the reflectivity state. 
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]The effect's new reflectivity state. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a7da791434dd5676d6ab09c860829fb47}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetReflectivityColor@{SetReflectivityColor}}
+\index{SetReflectivityColor@{SetReflectivityColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetReflectivityColor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetReflectivityColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a7da791434dd5676d6ab09c860829fb47}
+Sets the base reflectivity color. 
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]The base reflectivity color. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a5d44f575161556c7e32fd01db0cce3b5}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetReflectivityFactor@{SetReflectivityFactor}}
+\index{SetReflectivityFactor@{SetReflectivityFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetReflectivityFactor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetReflectivityFactor (
+\begin{DoxyParamCaption}
+\item[{float}]{ factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a5d44f575161556c7e32fd01db0cce3b5}
+Sets the reflectivity factor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em factor}]The reflectivity factor. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_ab658aa9ac8d10afc1cd3b83abc81d571}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetRefractive@{SetRefractive}}
+\index{SetRefractive@{SetRefractive}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetRefractive}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetRefractive (
+\begin{DoxyParamCaption}
+\item[{bool}]{ r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_ab658aa9ac8d10afc1cd3b83abc81d571}
+Sets the refractive state. 
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]The effect's new refractive state. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a992804e1672eefab311332f23679fb80}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetShininess@{SetShininess}}
+\index{SetShininess@{SetShininess}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetShininess}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetShininess (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-shininess}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a992804e1672eefab311332f23679fb80}
+Sets the specular shininess. This value represents the exponent to which you must raise the dot-\/product between the view vector and reflected light vectors: as such, it is usually a number greater than 1. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-shininess}]The specular shininess. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a01e8df7c03a4ee76e929d3e2f71aaff8}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetSpecularColor@{SetSpecularColor}}
+\index{SetSpecularColor@{SetSpecularColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetSpecularColor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetSpecularColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a01e8df7c03a4ee76e929d3e2f71aaff8}
+Sets the specular color. 
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]The specular color. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a4511986a5a68aeb47ce042c722bf8071}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetSpecularFactor@{SetSpecularFactor}}
+\index{SetSpecularFactor@{SetSpecularFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetSpecularFactor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetSpecularFactor (
+\begin{DoxyParamCaption}
+\item[{float}]{ factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a4511986a5a68aeb47ce042c722bf8071}
+Sets the specular factor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em factor}]The specular factor. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_af3b24d8b85f4637f3bf7fa52ef578686}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetTranslucencyColor@{SetTranslucencyColor}}
+\index{SetTranslucencyColor@{SetTranslucencyColor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetTranslucencyColor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetTranslucencyColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_af3b24d8b85f4637f3bf7fa52ef578686}
+Sets the base translucency color. 
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]The base translucency color including the alpha channel. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a622c5a44ccfcecbb21bd7181d6653f82}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetTranslucencyFactor@{SetTranslucencyFactor}}
+\index{SetTranslucencyFactor@{SetTranslucencyFactor}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetTranslucencyFactor}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetTranslucencyFactor (
+\begin{DoxyParamCaption}
+\item[{float}]{ factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a622c5a44ccfcecbb21bd7181d6653f82}
+Sets the translucency factor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em factor}]The translucency factor. \end{DoxyParams}
+\hypertarget{classFCDEffectStandard_a486d7ddb1801ed110c40b7b8ece29794}{
+\index{FCDEffectStandard@{FCDEffectStandard}!SetTransparencyMode@{SetTransparencyMode}}
+\index{SetTransparencyMode@{SetTransparencyMode}!FCDEffectStandard@{FCDEffectStandard}}
+\subsubsection[{SetTransparencyMode}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectStandard::SetTransparencyMode (
+\begin{DoxyParamCaption}
+\item[{{\bf TransparencyMode}}]{ mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectStandard_a486d7ddb1801ed110c40b7b8ece29794}
+Sets the transparency mode. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mode}]The transparency mode. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectStandard_8h}{FCDEffectStandard.h}\item 
+FCollada/FCDocument/FCDEffectStandard.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{classFUTracker}{
+\section{FUTracker Class Reference}
+\label{classFUTracker}\index{FUTracker@{FUTracker}}
+}
+
+
+{\ttfamily \#include $<$FUTracker.h$>$}
+
+Inheritance diagram for FUTracker:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.243243cm]{classFUTracker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classFUTracker_afca4004fab633dce9556ee62001939bf}{$\sim$FUTracker} ()
+\item 
+virtual void \hyperlink{classFUTracker_a7e79d02821b3ccd2fadc460125cb3ca4}{OnObjectReleased} (\hyperlink{classFUTrackable}{FUTrackable} $\ast$object)=0
+\item 
+virtual bool \hyperlink{classFUTracker_ab58cddea7242921a4b9e6c07dfd64b11}{TracksObject} (const \hyperlink{classFUTrackable}{FUTrackable} $\ast$object) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classFUTracker_ac94fdeeaca9960f6fd3ace18f08e50dc}{TrackObject} (\hyperlink{classFUTrackable}{FUTrackable} $\ast$object)
+\item 
+void \hyperlink{classFUTracker_a4fbf9fac469a817c60652d4e4e840e17}{UntrackObject} (\hyperlink{classFUTrackable}{FUTrackable} $\ast$object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An object set Each set has access to a list of unique objects. When the objects are created/released: they will inform the list. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUTracker_afca4004fab633dce9556ee62001939bf}{
+\index{FUTracker@{FUTracker}!$\sim$FUTracker@{$\sim$FUTracker}}
+\index{$\sim$FUTracker@{$\sim$FUTracker}!FUTracker@{FUTracker}}
+\subsubsection[{$\sim$FUTracker}]{\setlength{\rightskip}{0pt plus 5cm}virtual FUTracker::$\sim$FUTracker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUTracker_afca4004fab633dce9556ee62001939bf}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUTracker_a7e79d02821b3ccd2fadc460125cb3ca4}{
+\index{FUTracker@{FUTracker}!OnObjectReleased@{OnObjectReleased}}
+\index{OnObjectReleased@{OnObjectReleased}!FUTracker@{FUTracker}}
+\subsubsection[{OnObjectReleased}]{\setlength{\rightskip}{0pt plus 5cm}virtual void FUTracker::OnObjectReleased (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTrackable} $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFUTracker_a7e79d02821b3ccd2fadc460125cb3ca4}
+Callback when an object tracked by this tracker is being released. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]A tracked object. \end{DoxyParams}
+
+
+Implemented in \hyperlink{classFCDAnimated_af56690d3ce4fcec0caceff540129ba97}{FCDAnimated}, \hyperlink{classFCDEntityInstance_ae66647da209d1030a2e4a36ac3bd7d63}{FCDEntityInstance}, \hyperlink{classFCDPlaceHolder_af9c5b9d7ae1d24593ca7d75f338653a5}{FCDPlaceHolder}, \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{FUTrackedPtr$<$ ObjectClass $>$}, \hyperlink{classFUTrackedList_aa4133eacd415bfb7650543870eadcc17}{FUTrackedList$<$ ObjectClass $>$}, \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{FUTrackedPtr$<$ FCDPhysicsRigidBody $>$}, \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{FUTrackedPtr$<$ FCDSceneNode $>$}, \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{FUTrackedPtr$<$ FCDGeometryInstance $>$}, \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{FUTrackedPtr$<$ FCDPhysicsMaterial $>$}, \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{FUTrackedPtr$<$ FCDEntityInstance $>$}, \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{FUTrackedPtr$<$ FCDAnimated $>$}, \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{FUTrackedPtr$<$ FCDPhysicsRigidBodyInstance $>$}, \hyperlink{classFUTrackedList_aa4133eacd415bfb7650543870eadcc17}{FUTrackedList$<$ FCDAnimationCurve $>$}, and \hyperlink{classFUTrackedList_aa4133eacd415bfb7650543870eadcc17}{FUTrackedList$<$ FCDEntityReference $>$}.
+
+\hypertarget{classFUTracker_ac94fdeeaca9960f6fd3ace18f08e50dc}{
+\index{FUTracker@{FUTracker}!TrackObject@{TrackObject}}
+\index{TrackObject@{TrackObject}!FUTracker@{FUTracker}}
+\subsubsection[{TrackObject}]{\setlength{\rightskip}{0pt plus 5cm}void FUTracker::TrackObject (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTrackable} $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classFUTracker_ac94fdeeaca9960f6fd3ace18f08e50dc}
+Adds an object to be tracked. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]The object to track. \end{DoxyParams}
+\hypertarget{classFUTracker_ab58cddea7242921a4b9e6c07dfd64b11}{
+\index{FUTracker@{FUTracker}!TracksObject@{TracksObject}}
+\index{TracksObject@{TracksObject}!FUTracker@{FUTracker}}
+\subsubsection[{TracksObject}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FUTracker::TracksObject (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUTrackable} $\ast$}]{ object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUTracker_ab58cddea7242921a4b9e6c07dfd64b11}
+Retrieves whether an object is tracked by this tracker. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]An object. \end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{FUTrackedPtr$<$ ObjectClass $>$}, \hyperlink{classFUTrackedList_aa63f9fba707a10b006cda1f8baf125b0}{FUTrackedList$<$ ObjectClass $>$}, \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{FUTrackedPtr$<$ FCDPhysicsRigidBody $>$}, \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{FUTrackedPtr$<$ FCDSceneNode $>$}, \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{FUTrackedPtr$<$ FCDGeometryInstance $>$}, \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{FUTrackedPtr$<$ FCDPhysicsMaterial $>$}, \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{FUTrackedPtr$<$ FCDEntityInstance $>$}, \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{FUTrackedPtr$<$ FCDAnimated $>$}, \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{FUTrackedPtr$<$ FCDPhysicsRigidBodyInstance $>$}, \hyperlink{classFUTrackedList_aa63f9fba707a10b006cda1f8baf125b0}{FUTrackedList$<$ FCDAnimationCurve $>$}, and \hyperlink{classFUTrackedList_aa63f9fba707a10b006cda1f8baf125b0}{FUTrackedList$<$ FCDEntityReference $>$}.
+
+\hypertarget{classFUTracker_a4fbf9fac469a817c60652d4e4e840e17}{
+\index{FUTracker@{FUTracker}!UntrackObject@{UntrackObject}}
+\index{UntrackObject@{UntrackObject}!FUTracker@{FUTracker}}
+\subsubsection[{UntrackObject}]{\setlength{\rightskip}{0pt plus 5cm}void FUTracker::UntrackObject (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTrackable} $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classFUTracker_a4fbf9fac469a817c60652d4e4e840e17}
+Stops tracking an object 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]The object to stop tracking. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUTracker_8h}{FUTracker.h}\end{DoxyCompactItemize}

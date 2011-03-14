@@ -1,0 +1,240 @@
+\hypertarget{classFCDPhysicsModelInstance}{
+\section{FCDPhysicsModelInstance Class Reference}
+\label{classFCDPhysicsModelInstance}\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsModelInstance.h$>$}
+
+Inheritance diagram for FCDPhysicsModelInstance:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDPhysicsModelInstance}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPhysicsModelInstance_a8beb946a1fd493c742eb4847c7225b80}{FCDPhysicsModelInstance} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDPhysicsModelInstance_ae5c49ecb35c2f09d1c542f8df89ab0c4}{$\sim$FCDPhysicsModelInstance} ()
+\item 
+virtual \hyperlink{classFCDEntityInstance_a82e95eec7d9242bbedb336b0d35b59d3}{Type} \hyperlink{classFCDPhysicsModelInstance_a84476954bc4c90e663bf775db097b9fb}{GetType} () const 
+\item 
+\hyperlink{classFCDPhysicsModelInstance_a7b673f1eef1db2ae557052facff5a525}{DEPRECATED} (3.05A, GetInstanceCount and GetInstance(index)) void GetInstances() const 
+\item 
+size\_\-t \hyperlink{classFCDPhysicsModelInstance_a078fb9b47516651b4cf766cb26142f93}{GetInstanceCount} () const 
+\item 
+\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDPhysicsModelInstance_af26a56bbfe0e7bd5caa8261b41ba10e6}{GetInstance} (size\_\-t index)
+\item 
+const \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDPhysicsModelInstance_a6a999aab87642a3ea8753316d9789986}{GetInstance} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDPhysicsRigidBodyInstance}{FCDPhysicsRigidBodyInstance} $\ast$ \hyperlink{classFCDPhysicsModelInstance_a47ed41df54b61aee0ae2b5ed78717786}{AddRigidBodyInstance} (\hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$rigidBody=NULL)
+\item 
+\hyperlink{classFCDPhysicsRigidConstraintInstance}{FCDPhysicsRigidConstraintInstance} $\ast$ \hyperlink{classFCDPhysicsModelInstance_a6d720a4d9bc51e8ceb21fd0d2ea23a70}{AddRigidConstraintInstance} (\hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$rigidConstraint=NULL)
+\item 
+\hyperlink{classFCDPhysicsForceFieldInstance}{FCDPhysicsForceFieldInstance} $\ast$ \hyperlink{classFCDPhysicsModelInstance_a626669f91d2baa2919ade7bdd469c15b}{AddForceFieldInstance} (\hyperlink{classFCDForceField}{FCDForceField} $\ast$forceField=NULL)
+\item 
+\hyperlink{classFCDPhysicsModelInstance_ade18370226bfc59d2f62db463b508259}{DEPRECATED} (3.05A, instance-\/$>$Release() or SAFE\_\-RELEASE(instance)) bool RemoveInstance(FCDEntityInstance $\ast$instance)
+\item 
+virtual \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDPhysicsModelInstance_a701959f01ffd8e0b2be6d4318d665dc0}{Clone} (\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$clone=NULL) const 
+\item 
+virtual void \hyperlink{classFCDPhysicsModelInstance_a5d69b58ff479dc0006dc92e4689b557e}{CleanSubId} (\hyperlink{classFUUniqueStringMapT}{FUSUniqueStringMap} $\ast$parentStringMap)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA physics model instance. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPhysicsModelInstance_a8beb946a1fd493c742eb4847c7225b80}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{FCDPhysicsModelInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsModelInstance::FCDPhysicsModelInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModelInstance_a8beb946a1fd493c742eb4847c7225b80}
+Constructor: do not use directly. Create new physics models using the \hyperlink{classFCDPhysicsModel_ae222e53d9c0c9a2e7573d0350475b247}{FCDPhysicsModel::AddPhysicsModelInstance} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this physics model instance. \end{DoxyParams}
+\hypertarget{classFCDPhysicsModelInstance_ae5c49ecb35c2f09d1c542f8df89ab0c4}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!$\sim$FCDPhysicsModelInstance@{$\sim$FCDPhysicsModelInstance}}
+\index{$\sim$FCDPhysicsModelInstance@{$\sim$FCDPhysicsModelInstance}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{$\sim$FCDPhysicsModelInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsModelInstance::$\sim$FCDPhysicsModelInstance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsModelInstance_ae5c49ecb35c2f09d1c542f8df89ab0c4}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPhysicsModelInstance_a626669f91d2baa2919ade7bdd469c15b}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!AddForceFieldInstance@{AddForceFieldInstance}}
+\index{AddForceFieldInstance@{AddForceFieldInstance}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{AddForceFieldInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsForceFieldInstance} $\ast$ FCDPhysicsModelInstance::AddForceFieldInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDForceField} $\ast$}]{ forceField = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModelInstance_a626669f91d2baa2919ade7bdd469c15b}
+Adds an instantiated force field to this physics model instance. 
+\begin{DoxyParams}{Parameters}
+\item[{\em forceField}]The force field to be instanced in this physics model instance. If this value is NULL, then there is no associated force field for the instance yet. It should be filled in. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new force field instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModelInstance_a47ed41df54b61aee0ae2b5ed78717786}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!AddRigidBodyInstance@{AddRigidBodyInstance}}
+\index{AddRigidBodyInstance@{AddRigidBodyInstance}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{AddRigidBodyInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidBodyInstance} $\ast$ FCDPhysicsModelInstance::AddRigidBodyInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDPhysicsRigidBody} $\ast$}]{ rigidBody = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModelInstance_a47ed41df54b61aee0ae2b5ed78717786}
+Adds an instantiated rigid body to this physics model instance. 
+\begin{DoxyParams}{Parameters}
+\item[{\em rigidBody}]The rigid body to be instanced in this physics model instance. If this value is NULL, then there is no associated rigid body for the instance yet. It should be filled in. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new rigid body instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModelInstance_a6d720a4d9bc51e8ceb21fd0d2ea23a70}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!AddRigidConstraintInstance@{AddRigidConstraintInstance}}
+\index{AddRigidConstraintInstance@{AddRigidConstraintInstance}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{AddRigidConstraintInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidConstraintInstance} $\ast$ FCDPhysicsModelInstance::AddRigidConstraintInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDPhysicsRigidConstraint} $\ast$}]{ rigidConstraint = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModelInstance_a6d720a4d9bc51e8ceb21fd0d2ea23a70}
+Adds an instantiated rigid constraint to this physics model instance. 
+\begin{DoxyParams}{Parameters}
+\item[{\em rigidConstraint}]The rigid constraint to be instanced in this physics model instance. If this value is NULL, then there is no associated rigid constraint for the instance yet. It should be filled in. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new rigid constraint instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModelInstance_a5d69b58ff479dc0006dc92e4689b557e}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!CleanSubId@{CleanSubId}}
+\index{CleanSubId@{CleanSubId}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{CleanSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsModelInstance::CleanSubId (
+\begin{DoxyParamCaption}
+\item[{{\bf FUSUniqueStringMap} $\ast$}]{ parentStringMap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsModelInstance_a5d69b58ff479dc0006dc92e4689b557e}
+\mbox{[}INTERNAL\mbox{]} Cleans up the sub identifiers. The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. 
+\begin{DoxyParams}{Parameters}
+\item[{\em parentStringMap}]The string map from the parent of this instance in which the sub ids must be unique. \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a06ed77f5adc21e43eb2617db6af5df6c}{FCDEntityInstance}.
+
+\hypertarget{classFCDPhysicsModelInstance_a701959f01ffd8e0b2be6d4318d665dc0}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance} $\ast$ FCDPhysicsModelInstance::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntityInstance} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsModelInstance_a701959f01ffd8e0b2be6d4318d665dc0}
+Copies the physics model instance into a clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new physics model instance will be created and you will need to release the returned pointer manually. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a64b11d12fcf0151800084f66bbbeb2d6}{FCDEntityInstance}.
+
+\hypertarget{classFCDPhysicsModelInstance_ade18370226bfc59d2f62db463b508259}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsModelInstance::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{instance-\/$>$}]{ Release) or SAFE\_\-RELEASE(instance}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModelInstance_ade18370226bfc59d2f62db463b508259}
+Removes and deletes the instance from the model. 
+\begin{DoxyParams}{Parameters}
+\item[{\em instance}]The instance to remove. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instance was removed. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModelInstance_a7b673f1eef1db2ae557052facff5a525}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsModelInstance::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetInstanceCount and }]{ GetInstanceindex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModelInstance_a7b673f1eef1db2ae557052facff5a525}
+Retrieves all the instances from this physics model instance. \begin{DoxyReturn}{Returns}
+The instances. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModelInstance_af26a56bbfe0e7bd5caa8261b41ba10e6}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{GetInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance}$\ast$ FCDPhysicsModelInstance::GetInstance (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModelInstance_af26a56bbfe0e7bd5caa8261b41ba10e6}
+Retrieves a specified instance from this physics model instance by index. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModelInstance_a6a999aab87642a3ea8753316d9789986}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{GetInstance}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEntityInstance}$\ast$ FCDPhysicsModelInstance::GetInstance (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModelInstance_a6a999aab87642a3ea8753316d9789986}
+See above. \hypertarget{classFCDPhysicsModelInstance_a078fb9b47516651b4cf766cb26142f93}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!GetInstanceCount@{GetInstanceCount}}
+\index{GetInstanceCount@{GetInstanceCount}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{GetInstanceCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDPhysicsModelInstance::GetInstanceCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModelInstance_a078fb9b47516651b4cf766cb26142f93}
+Retrieves the number of instances from this physics model instance. \begin{DoxyReturn}{Returns}
+The number of instances. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModelInstance_a84476954bc4c90e663bf775db097b9fb}{
+\index{FCDPhysicsModelInstance@{FCDPhysicsModelInstance}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDPhysicsModelInstance@{FCDPhysicsModelInstance}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDPhysicsModelInstance::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPhysicsModelInstance_a84476954bc4c90e663bf775db097b9fb}
+Retrieves the entity type for this class. This function is part of the \hyperlink{classFCDEntity}{FCDEntity} interface. \begin{DoxyReturn}{Returns}
+The entity type: PHYSICS\_\-MODEL. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a773c2cfdbad937e93da7a3fa71a671a7}{FCDEntityInstance}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsModelInstance_8h}{FCDPhysicsModelInstance.h}\item 
+FCollada/FCDocument/FCDPhysicsModelInstance.cpp\end{DoxyCompactItemize}

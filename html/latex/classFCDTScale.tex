@@ -1,0 +1,221 @@
+\hypertarget{classFCDTScale}{
+\section{FCDTScale Class Reference}
+\label{classFCDTScale}\index{FCDTScale@{FCDTScale}}
+}
+
+
+{\ttfamily \#include $<$FCDTransform.h$>$}
+
+Inheritance diagram for FCDTScale:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDTScale}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDTScale_aef81961b008c48c0278c74be54b9a8da}{FCDTScale} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDTScale_a6fca0585872dcba041d3e952c01e7577}{$\sim$FCDTScale} ()
+\item 
+virtual \hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{Type} \hyperlink{classFCDTScale_a69a9e36fcc1a3ba516a3a0f47c37db61}{GetType} () const 
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableVector3} \& \hyperlink{classFCDTScale_a9810b2f9ba71699c09e9b9e8b494ea06}{GetScale} ()
+\item 
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableVector3} \& \hyperlink{classFCDTScale_a0eabcb0f6e8eb152529b41071650751c}{GetScale} () const 
+\item 
+void \hyperlink{classFCDTScale_a4fb83f56790d88afeaf43dea90b710e7}{SetScale} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-scale)
+\item 
+void \hyperlink{classFCDTScale_a4354c67b84bca84d5f73ed0e34d8ac29}{SetScale} (float x, float y, float z)
+\item 
+virtual \hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDTScale_a7f80ee90e5633814c7d5bcfb2acc211f}{ToMatrix} () const 
+\item 
+virtual bool \hyperlink{classFCDTScale_ac7ec837e495c1316d5f87b964318556c}{IsAnimated} () const 
+\item 
+\hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTScale_a5fd5d51e06c6a5bd56090bd24430d43d}{GetAnimated} ()
+\item 
+virtual const \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTScale_aeb7d457dbfc74d96173b4dba7a46a351}{GetAnimated} () const 
+\item 
+virtual \hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDTScale_a84c265a6be65aabb9cdfb26320da32fe}{Clone} (\hyperlink{classFCDTransform}{FCDTransform} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA non-\/uniform scale. A non-\/uniform scale contains three scale factors. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDTScale_aef81961b008c48c0278c74be54b9a8da}{
+\index{FCDTScale@{FCDTScale}!FCDTScale@{FCDTScale}}
+\index{FCDTScale@{FCDTScale}!FCDTScale@{FCDTScale}}
+\subsubsection[{FCDTScale}]{\setlength{\rightskip}{0pt plus 5cm}FCDTScale::FCDTScale (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTScale_aef81961b008c48c0278c74be54b9a8da}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{FCDSceneNode::AddTransform} function with the SCALE transformation type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the non-\/uniform scale. \item[{\em parent}]The visual scene node that contains the non-\/uniform scale. Set this pointer to NULL if the non-\/uniform scale is not owned by a visual scene node. \end{DoxyParams}
+\hypertarget{classFCDTScale_a6fca0585872dcba041d3e952c01e7577}{
+\index{FCDTScale@{FCDTScale}!$\sim$FCDTScale@{$\sim$FCDTScale}}
+\index{$\sim$FCDTScale@{$\sim$FCDTScale}!FCDTScale@{FCDTScale}}
+\subsubsection[{$\sim$FCDTScale}]{\setlength{\rightskip}{0pt plus 5cm}FCDTScale::$\sim$FCDTScale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTScale_a6fca0585872dcba041d3e952c01e7577}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDTScale_a84c265a6be65aabb9cdfb26320da32fe}{
+\index{FCDTScale@{FCDTScale}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDTScale@{FCDTScale}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDTScale::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTScale_a84c265a6be65aabb9cdfb26320da32fe}
+Creates a copy of a non-\/uniform scale. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The transform that will be the clone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned transformation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_a5ffc20180fb422a2756e1394576f2901}{FCDTransform}.
+
+\hypertarget{classFCDTScale_a5fd5d51e06c6a5bd56090bd24430d43d}{
+\index{FCDTScale@{FCDTScale}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTScale@{FCDTScale}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimated}$\ast$ FCDTScale::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTScale_a5fd5d51e06c6a5bd56090bd24430d43d}
+Retrieves the animated element for the non-\/uniform scale factors. \begin{DoxyReturn}{Returns}
+The animated element. This pointer will be NULL if the scale factors are not animated. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDTransform_afefc850b24274c7e3ced421b18bec24b}{FCDTransform}.
+
+\hypertarget{classFCDTScale_aeb7d457dbfc74d96173b4dba7a46a351}{
+\index{FCDTScale@{FCDTScale}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTScale@{FCDTScale}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDAnimated} $\ast$ FCDTScale::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTScale_aeb7d457dbfc74d96173b4dba7a46a351}
+See above. 
+
+Implements \hyperlink{classFCDTransform_aac1ff2df9e63702a90300ba9c38c48e1}{FCDTransform}.
+
+\hypertarget{classFCDTScale_a9810b2f9ba71699c09e9b9e8b494ea06}{
+\index{FCDTScale@{FCDTScale}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!FCDTScale@{FCDTScale}}
+\subsubsection[{GetScale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableVector3}\& FCDTScale::GetScale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTScale_a9810b2f9ba71699c09e9b9e8b494ea06}
+Retrieves the factors of the non-\/uniform scale. These factors may be animated. \begin{DoxyReturn}{Returns}
+The scale factors. 
+\end{DoxyReturn}
+\hypertarget{classFCDTScale_a0eabcb0f6e8eb152529b41071650751c}{
+\index{FCDTScale@{FCDTScale}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!FCDTScale@{FCDTScale}}
+\subsubsection[{GetScale}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDParameterAnimatableVector3}\& FCDTScale::GetScale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTScale_a0eabcb0f6e8eb152529b41071650751c}
+See above. \hypertarget{classFCDTScale_a69a9e36fcc1a3ba516a3a0f47c37db61}{
+\index{FCDTScale@{FCDTScale}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDTScale@{FCDTScale}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDTScale::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDTScale_a69a9e36fcc1a3ba516a3a0f47c37db61}
+Retrieves the transformation class type for the non-\/uniform scale. \begin{DoxyReturn}{Returns}
+The class type: SCALE. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_af406aebcba6215ebc1358a3cf87ab29d}{FCDTransform}.
+
+\hypertarget{classFCDTScale_ac7ec837e495c1316d5f87b964318556c}{
+\index{FCDTScale@{FCDTScale}!IsAnimated@{IsAnimated}}
+\index{IsAnimated@{IsAnimated}!FCDTScale@{FCDTScale}}
+\subsubsection[{IsAnimated}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDTScale::IsAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTScale_ac7ec837e495c1316d5f87b964318556c}
+Retrieves whether the factors of the non-\/uniform scale are animated. \begin{DoxyReturn}{Returns}
+Whether the scale factors are animated. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_ab12ac63fa2d46fbcf8c025971635cda4}{FCDTransform}.
+
+\hypertarget{classFCDTScale_a4fb83f56790d88afeaf43dea90b710e7}{
+\index{FCDTScale@{FCDTScale}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!FCDTScale@{FCDTScale}}
+\subsubsection[{SetScale}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTScale::SetScale (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTScale_a4fb83f56790d88afeaf43dea90b710e7}
+Sets the factors of the non-\/uniform scale. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-scale}]The scale factors. \end{DoxyParams}
+\hypertarget{classFCDTScale_a4354c67b84bca84d5f73ed0e34d8ac29}{
+\index{FCDTScale@{FCDTScale}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!FCDTScale@{FCDTScale}}
+\subsubsection[{SetScale}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTScale::SetScale (
+\begin{DoxyParamCaption}
+\item[{float}]{ x, }
+\item[{float}]{ y, }
+\item[{float}]{ z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTScale_a4354c67b84bca84d5f73ed0e34d8ac29}
+Sets the factors of the non-\/uniform scale. 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]The x-\/component scale factor. \item[{\em y}]The y-\/component scale factor. \item[{\em z}]The z-\/component scale factor. \end{DoxyParams}
+\hypertarget{classFCDTScale_a7f80ee90e5633814c7d5bcfb2acc211f}{
+\index{FCDTScale@{FCDTScale}!ToMatrix@{ToMatrix}}
+\index{ToMatrix@{ToMatrix}!FCDTScale@{FCDTScale}}
+\subsubsection[{ToMatrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCDTScale::ToMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTScale_a7f80ee90e5633814c7d5bcfb2acc211f}
+Converts the non-\/uniform scale into a matrix. \begin{DoxyReturn}{Returns}
+A matrix equivalent of the non-\/uniform scale. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_afd7fc3c7dc012782ebb2886c5bc13d01}{FCDTransform}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDTransform_8h}{FCDTransform.h}\item 
+FCollada/FCDocument/FCDTransform.cpp\end{DoxyCompactItemize}

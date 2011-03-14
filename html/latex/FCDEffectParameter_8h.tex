@@ -1,0 +1,97 @@
+\hypertarget{FCDEffectParameter_8h}{
+\section{FCollada/FCDocument/FCDEffectParameter.h File Reference}
+\label{FCDEffectParameter_8h}\index{FCollada/FCDocument/FCDEffectParameter.h@{FCollada/FCDocument/FCDEffectParameter.h}}
+}
+{\ttfamily \#include \char`\"{}FCDocument/FCDObject.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FCDocument/FCDParameterAnimatable.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFCDEffectParameter}{FCDEffectParameter}
+\item 
+class \hyperlink{classFCDEffectParameterT}{FCDEffectParameterT$<$ PrimitiveType $>$}
+\item 
+class \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterAnimatableT$<$ PrimitiveType, Qualifiers $>$}
+\item 
+class \hyperlink{classFCDEffectParameterAnnotation}{FCDEffectParameterAnnotation}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classFCDEffectParameterT}{FCDEffectParameterT}$<$ int32 $>$ \hyperlink{FCDEffectParameter_8h_a8d98b22b10bbb6bb4e86107638012833}{FCDEffectParameterInt}
+\item 
+typedef \hyperlink{classFCDEffectParameterT}{FCDEffectParameterT}$<$ bool $>$ \hyperlink{FCDEffectParameter_8h_a8991e6b433c8448e2d67cd6740789dd6}{FCDEffectParameterBool}
+\item 
+typedef \hyperlink{classFCDEffectParameterT}{FCDEffectParameterT}$<$ \hyperlink{classfm_1_1stringT}{fm::string} $>$ \hyperlink{FCDEffectParameter_8h_ae566f88e818b924774e6885b054511ad}{FCDEffectParameterString}
+\item 
+typedef \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterAnimatableT}$<$ float, FUParameterQualifiers::SIMPLE $>$ \hyperlink{FCDEffectParameter_8h_a6d4399bb3599f597d24525b14629ea24}{FCDEffectParameterFloat}
+\item 
+typedef \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterAnimatableT}$<$ \hyperlink{classFMVector2}{FMVector2}, FUParameterQualifiers::SIMPLE $>$ \hyperlink{FCDEffectParameter_8h_afbdcdcb0e97be128e03e9cfdae1df6b3}{FCDEffectParameterFloat2}
+\item 
+typedef \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterAnimatableT}$<$ \hyperlink{classFMVector3}{FMVector3}, FUParameterQualifiers::VECTOR $>$ \hyperlink{FCDEffectParameter_8h_a0fbc90630671e10b9a50af2eef3896ff}{FCDEffectParameterFloat3}
+\item 
+typedef \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterAnimatableT}$<$ \hyperlink{classFMVector3}{FMVector3}, FUParameterQualifiers::COLOR $>$ \hyperlink{FCDEffectParameter_8h_a39e09100e1064dc584d594f798def0fe}{FCDEffectParameterColor3}
+\item 
+typedef \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterAnimatableT}$<$ \hyperlink{classFMVector4}{FMVector4}, FUParameterQualifiers::VECTOR $>$ \hyperlink{FCDEffectParameter_8h_afbdc8350899d3008979adafafe7226e2}{FCDEffectParameterVector}
+\item 
+typedef \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterAnimatableT}$<$ \hyperlink{classFMVector4}{FMVector4}, FUParameterQualifiers::COLOR $>$ \hyperlink{FCDEffectParameter_8h_adae99536fd7506de7948fe105b2305b1}{FCDEffectParameterColor4}
+\item 
+typedef \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterAnimatableT}$<$ \hyperlink{classFMMatrix44}{FMMatrix44}, FUParameterQualifiers::SIMPLE $>$ \hyperlink{FCDEffectParameter_8h_a3653dddf7eab80ecfb3c9587475457ba}{FCDEffectParameterMatrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the \hyperlink{classFCDEffectParameter}{FCDEffectParameter} interface and the simpler of its derivate classes: FCDEffectParameterString, FCDEffectParameterFloat, FCDEffectParameterVector... 
+
+\subsection{Typedef Documentation}
+\hypertarget{FCDEffectParameter_8h_a8991e6b433c8448e2d67cd6740789dd6}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterBool@{FCDEffectParameterBool}}
+\index{FCDEffectParameterBool@{FCDEffectParameterBool}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterBool}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterT}$<$bool$>$ {\bf FCDEffectParameterBool}}}
+\label{FCDEffectParameter_8h_a8991e6b433c8448e2d67cd6740789dd6}
+A boolean effect parameter. \hypertarget{FCDEffectParameter_8h_a39e09100e1064dc584d594f798def0fe}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterColor3@{FCDEffectParameterColor3}}
+\index{FCDEffectParameterColor3@{FCDEffectParameterColor3}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterColor3}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterAnimatableT}$<${\bf FMVector3}, FUParameterQualifiers::COLOR$>$ {\bf FCDEffectParameterColor3}}}
+\label{FCDEffectParameter_8h_a39e09100e1064dc584d594f798def0fe}
+An effect parameter containing a 3D color value. \hypertarget{FCDEffectParameter_8h_adae99536fd7506de7948fe105b2305b1}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterColor4@{FCDEffectParameterColor4}}
+\index{FCDEffectParameterColor4@{FCDEffectParameterColor4}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterColor4}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterAnimatableT}$<${\bf FMVector4}, FUParameterQualifiers::COLOR$>$ {\bf FCDEffectParameterColor4}}}
+\label{FCDEffectParameter_8h_adae99536fd7506de7948fe105b2305b1}
+An effect parameter containing a 4D color value. \hypertarget{FCDEffectParameter_8h_a6d4399bb3599f597d24525b14629ea24}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterFloat@{FCDEffectParameterFloat}}
+\index{FCDEffectParameterFloat@{FCDEffectParameterFloat}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterFloat}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterAnimatableT}$<$float, FUParameterQualifiers::SIMPLE$>$ {\bf FCDEffectParameterFloat}}}
+\label{FCDEffectParameter_8h_a6d4399bb3599f597d24525b14629ea24}
+An effect parameter containing one floating point value. \hypertarget{FCDEffectParameter_8h_afbdcdcb0e97be128e03e9cfdae1df6b3}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterFloat2@{FCDEffectParameterFloat2}}
+\index{FCDEffectParameterFloat2@{FCDEffectParameterFloat2}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterFloat2}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterAnimatableT}$<${\bf FMVector2}, FUParameterQualifiers::SIMPLE$>$ {\bf FCDEffectParameterFloat2}}}
+\label{FCDEffectParameter_8h_afbdcdcb0e97be128e03e9cfdae1df6b3}
+An effect parameter containing a 2D floating point vector. \hypertarget{FCDEffectParameter_8h_a0fbc90630671e10b9a50af2eef3896ff}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterFloat3@{FCDEffectParameterFloat3}}
+\index{FCDEffectParameterFloat3@{FCDEffectParameterFloat3}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterFloat3}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterAnimatableT}$<${\bf FMVector3}, FUParameterQualifiers::VECTOR$>$ {\bf FCDEffectParameterFloat3}}}
+\label{FCDEffectParameter_8h_a0fbc90630671e10b9a50af2eef3896ff}
+An effect parameter containing a 3D floating point vector. \hypertarget{FCDEffectParameter_8h_a8d98b22b10bbb6bb4e86107638012833}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterInt@{FCDEffectParameterInt}}
+\index{FCDEffectParameterInt@{FCDEffectParameterInt}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterInt}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterT}$<$int32$>$ {\bf FCDEffectParameterInt}}}
+\label{FCDEffectParameter_8h_a8d98b22b10bbb6bb4e86107638012833}
+An integer effect parameter. \hypertarget{FCDEffectParameter_8h_a3653dddf7eab80ecfb3c9587475457ba}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterMatrix@{FCDEffectParameterMatrix}}
+\index{FCDEffectParameterMatrix@{FCDEffectParameterMatrix}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterMatrix}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterAnimatableT}$<${\bf FMMatrix44}, FUParameterQualifiers::SIMPLE$>$ {\bf FCDEffectParameterMatrix}}}
+\label{FCDEffectParameter_8h_a3653dddf7eab80ecfb3c9587475457ba}
+An effect parameter containing a 4x4 matrix. \hypertarget{FCDEffectParameter_8h_ae566f88e818b924774e6885b054511ad}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterString@{FCDEffectParameterString}}
+\index{FCDEffectParameterString@{FCDEffectParameterString}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterString}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterT}$<${\bf fm::string}$>$ {\bf FCDEffectParameterString}}}
+\label{FCDEffectParameter_8h_ae566f88e818b924774e6885b054511ad}
+A string effect parameter. \hypertarget{FCDEffectParameter_8h_afbdc8350899d3008979adafafe7226e2}{
+\index{FCDEffectParameter.h@{FCDEffectParameter.h}!FCDEffectParameterVector@{FCDEffectParameterVector}}
+\index{FCDEffectParameterVector@{FCDEffectParameterVector}!FCDEffectParameter.h@{FCDEffectParameter.h}}
+\subsubsection[{FCDEffectParameterVector}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDEffectParameterAnimatableT}$<${\bf FMVector4}, FUParameterQualifiers::VECTOR$>$ {\bf FCDEffectParameterVector}}}
+\label{FCDEffectParameter_8h_afbdc8350899d3008979adafafe7226e2}
+An effect parameter containing a 4D floating point vector. 

@@ -1,0 +1,69 @@
+\hypertarget{classFCDEmitterInstance}{
+\section{FCDEmitterInstance Class Reference}
+\label{classFCDEmitterInstance}\index{FCDEmitterInstance@{FCDEmitterInstance}}
+}
+
+
+{\ttfamily \#include $<$FCDEmitterInstance.h$>$}
+
+Inheritance diagram for FCDEmitterInstance:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDEmitterInstance}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classFCDEmitterInstance_a2a130dc123cdf1ed9c62fb87db99524f}{$\sim$FCDEmitterInstance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEmitterInstance_adb603a8e31948ff5f77412233ec1ce0d}{FCDEmitterInstance} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent, \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{FCDEntity::Type} entityType=FCDEntity::EMITTER)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFCDEmitterInstance_a069ebb98497ccbc5fdcb75ecfa8b15f7}{
+class \hyperlink{classFCDEmitterInstance_a069ebb98497ccbc5fdcb75ecfa8b15f7}{FCDEntityInstanceFactory}}
+\label{classFCDEmitterInstance_a069ebb98497ccbc5fdcb75ecfa8b15f7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA emitter instance.
+
+The types of particles emitted are instance dependent. Instances also contain the FCDForceInstances pointers to forces applied to the particles. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEmitterInstance_adb603a8e31948ff5f77412233ec1ce0d}{
+\index{FCDEmitterInstance@{FCDEmitterInstance}!FCDEmitterInstance@{FCDEmitterInstance}}
+\index{FCDEmitterInstance@{FCDEmitterInstance}!FCDEmitterInstance@{FCDEmitterInstance}}
+\subsubsection[{FCDEmitterInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDEmitterInstance::FCDEmitterInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent, }
+\item[{{\bf FCDEntity::Type}}]{ entityType = {\ttfamily FCDEntity::EMITTER}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classFCDEmitterInstance_adb603a8e31948ff5f77412233ec1ce0d}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDSceneNode_a38826dd9b894ad2371511f0228cb04c0}{FCDSceneNode::AddInstance} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the emitter instance. \item[{\em parent}]The parent visual scene node. \item[{\em entityType}]The type of the entity to instantiate. Unless this class is overwritten, \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7ab6f994b7aaba9add07d533f8945ddb70}{FCDEntity::EMITTER} should be given. \end{DoxyParams}
+\hypertarget{classFCDEmitterInstance_a2a130dc123cdf1ed9c62fb87db99524f}{
+\index{FCDEmitterInstance@{FCDEmitterInstance}!$\sim$FCDEmitterInstance@{$\sim$FCDEmitterInstance}}
+\index{$\sim$FCDEmitterInstance@{$\sim$FCDEmitterInstance}!FCDEmitterInstance@{FCDEmitterInstance}}
+\subsubsection[{$\sim$FCDEmitterInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDEmitterInstance::$\sim$FCDEmitterInstance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEmitterInstance_a2a130dc123cdf1ed9c62fb87db99524f}
+Destructor. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEmitterInstance_8h}{FCDEmitterInstance.h}\item 
+FCollada/FCDocument/FCDEmitterInstance.cpp\end{DoxyCompactItemize}

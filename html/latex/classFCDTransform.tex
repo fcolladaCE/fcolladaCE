@@ -1,0 +1,331 @@
+\hypertarget{classFCDTransform}{
+\section{FCDTransform Class Reference}
+\label{classFCDTransform}\index{FCDTransform@{FCDTransform}}
+}
+
+
+{\ttfamily \#include $<$FCDTransform.h$>$}
+
+Inheritance diagram for FCDTransform:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.409449cm]{classFCDTransform}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{Type} \{ \par
+\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a7e6c276586b7bbb02f2b4a93a9581873}{TRANSLATION}, 
+\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921af978abed37815c8a60a1c76745767eb6}{ROTATION}, 
+\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921aca207c4221523864b49deac186a4bd05}{SCALE}, 
+\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a79c19319d29f4eb2afa8ab313fe2792d}{MATRIX}, 
+\par
+\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a381eafef1b7eb3501ae84f5e19071a35}{LOOKAT}, 
+\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a64a79e08a191d674915594b9bdbeb6ad}{SKEW}, 
+{\bfseries TYPE\_\-COUNT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDTransform_a18daaaf8c64578eeebdaa5e5e09c6b66}{FCDTransform} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDTransform_a8d472d99e748b80c9829b44eb7b7934d}{$\sim$FCDTransform} ()
+\item 
+\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDTransform_a3da9bedb5a4ff62df3ffe10672a34e0a}{GetParent} ()
+\item 
+const \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDTransform_a75778e4996553320c274a21cc120014b}{GetParent} () const 
+\item 
+void \hyperlink{classFCDTransform_a5fe09604c4a2b46a4576879ffb1aa18e}{SetTransformsDirtyFlag} ()
+\item 
+virtual \hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDTransform_a5ffc20180fb422a2756e1394576f2901}{Clone} (\hyperlink{classFCDTransform}{FCDTransform} $\ast$clone=NULL) const =0
+\item 
+virtual \hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{Type} \hyperlink{classFCDTransform_af406aebcba6215ebc1358a3cf87ab29d}{GetType} () const =0
+\item 
+virtual \hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDTransform_afd7fc3c7dc012782ebb2886c5bc13d01}{ToMatrix} () const =0
+\item 
+\hyperlink{classFUParameterT}{FUParameterString} \& \hyperlink{classFCDTransform_abfcbc0c1b44eb541d56fd2919bbb7d7d}{GetSubId} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterString} \& \hyperlink{classFCDTransform_a945ce2cb0c895d720634ccedcfcc750c}{GetSubId} () const 
+\item 
+void \hyperlink{classFCDTransform_a063d8d592abd3d48d5d2e8baee56c2eb}{SetSubId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&subId)
+\item 
+virtual bool \hyperlink{classFCDTransform_ab12ac63fa2d46fbcf8c025971635cda4}{IsAnimated} () const =0
+\item 
+\hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTransform_afefc850b24274c7e3ced421b18bec24b}{GetAnimated} ()
+\item 
+virtual const \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTransform_aac1ff2df9e63702a90300ba9c38c48e1}{GetAnimated} () const =0
+\item 
+virtual bool \hyperlink{classFCDTransform_a9fa1a02a51f833f819248c2ff020507c}{IsInverse} (const \hyperlink{classFCDTransform}{FCDTransform} $\ast$transform) const 
+\item 
+virtual void \hyperlink{classFCDTransform_adb72479a86149a1f93a3dfdf84569b91}{SetValueChange} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA transform.
+
+COLLADA supports six transformation types: translations(FCDTTranslation), rotations(FCDTRotation), scales(FCDTScale), matrices(FCDTMatrix), skews(FCDTSkew) and the 'look-\/at' transform(FCDTLookAt). 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{
+\index{FCDTransform@{FCDTransform}!Type@{Type}}
+\index{Type@{Type}!FCDTransform@{FCDTransform}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDTransform::Type}}}
+\label{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}
+The COLLADA transform types. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TRANSLATION@{TRANSLATION}!FCDTransform@{FCDTransform}}\index{FCDTransform@{FCDTransform}!TRANSLATION@{TRANSLATION}}\item[{\em 
+\hypertarget{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a7e6c276586b7bbb02f2b4a93a9581873}{
+TRANSLATION}
+\label{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a7e6c276586b7bbb02f2b4a93a9581873}
+}]A translation(FCDTTranslation). \index{ROTATION@{ROTATION}!FCDTransform@{FCDTransform}}\index{FCDTransform@{FCDTransform}!ROTATION@{ROTATION}}\item[{\em 
+\hypertarget{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921af978abed37815c8a60a1c76745767eb6}{
+ROTATION}
+\label{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921af978abed37815c8a60a1c76745767eb6}
+}]A rotation(FCDTRotation). \index{SCALE@{SCALE}!FCDTransform@{FCDTransform}}\index{FCDTransform@{FCDTransform}!SCALE@{SCALE}}\item[{\em 
+\hypertarget{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921aca207c4221523864b49deac186a4bd05}{
+SCALE}
+\label{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921aca207c4221523864b49deac186a4bd05}
+}]A non-\/uniform scale(FCDTScale). \index{MATRIX@{MATRIX}!FCDTransform@{FCDTransform}}\index{FCDTransform@{FCDTransform}!MATRIX@{MATRIX}}\item[{\em 
+\hypertarget{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a79c19319d29f4eb2afa8ab313fe2792d}{
+MATRIX}
+\label{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a79c19319d29f4eb2afa8ab313fe2792d}
+}]A matrix multiplication(FCDTMatrix). \index{LOOKAT@{LOOKAT}!FCDTransform@{FCDTransform}}\index{FCDTransform@{FCDTransform}!LOOKAT@{LOOKAT}}\item[{\em 
+\hypertarget{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a381eafef1b7eb3501ae84f5e19071a35}{
+LOOKAT}
+\label{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a381eafef1b7eb3501ae84f5e19071a35}
+}]A targeted, 'look-\/at' transformation(FCDTLookAt). \index{SKEW@{SKEW}!FCDTransform@{FCDTransform}}\index{FCDTransform@{FCDTransform}!SKEW@{SKEW}}\item[{\em 
+\hypertarget{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a64a79e08a191d674915594b9bdbeb6ad}{
+SKEW}
+\label{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921a64a79e08a191d674915594b9bdbeb6ad}
+}]A skew(FCDTSkew). \end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDTransform_a18daaaf8c64578eeebdaa5e5e09c6b66}{
+\index{FCDTransform@{FCDTransform}!FCDTransform@{FCDTransform}}
+\index{FCDTransform@{FCDTransform}!FCDTransform@{FCDTransform}}
+\subsubsection[{FCDTransform}]{\setlength{\rightskip}{0pt plus 5cm}FCDTransform::FCDTransform (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTransform_a18daaaf8c64578eeebdaa5e5e09c6b66}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{FCDSceneNode::AddTransform} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the transform. \item[{\em parent}]The visual scene node that contains the transform. Set this pointer to NULL if this transform is not owned by a visual scene node. \end{DoxyParams}
+\hypertarget{classFCDTransform_a8d472d99e748b80c9829b44eb7b7934d}{
+\index{FCDTransform@{FCDTransform}!$\sim$FCDTransform@{$\sim$FCDTransform}}
+\index{$\sim$FCDTransform@{$\sim$FCDTransform}!FCDTransform@{FCDTransform}}
+\subsubsection[{$\sim$FCDTransform}]{\setlength{\rightskip}{0pt plus 5cm}FCDTransform::$\sim$FCDTransform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTransform_a8d472d99e748b80c9829b44eb7b7934d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDTransform_a5ffc20180fb422a2756e1394576f2901}{
+\index{FCDTransform@{FCDTransform}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDTransform@{FCDTransform}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FCDTransform}$\ast$ FCDTransform::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFCDTransform_a5ffc20180fb422a2756e1394576f2901}
+Creates a copy of a transformation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The transform that will be the clone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned transformation. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFCDTTranslation_a3eb53e49377c85e7bde0c003751a7679}{FCDTTranslation}, \hyperlink{classFCDTScale_a84c265a6be65aabb9cdfb26320da32fe}{FCDTScale}, \hyperlink{classFCDTRotation_a7b4de1344e7b0e1f930b3bad6f1ae169}{FCDTRotation}, \hyperlink{classFCDTMatrix_afcd47013f6ef72c4f7b25aafeafd1699}{FCDTMatrix}, \hyperlink{classFCDTLookAt_a94d3f8fcfd9440f451206233524620c3}{FCDTLookAt}, and \hyperlink{classFCDTSkew_a7c79f16b0a6fbaddad4d15d5911a2443}{FCDTSkew}.
+
+\hypertarget{classFCDTransform_afefc850b24274c7e3ced421b18bec24b}{
+\index{FCDTransform@{FCDTransform}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTransform@{FCDTransform}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimated}$\ast$ FCDTransform::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTransform_afefc850b24274c7e3ced421b18bec24b}
+Retrieves the animated element for the transformation. \begin{DoxyReturn}{Returns}
+The animated element. This pointer will be NULL if the transformation is not animated. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classFCDTTranslation_ad94a535671c213794b4246f3441879ed}{FCDTTranslation}, \hyperlink{classFCDTScale_a5fd5d51e06c6a5bd56090bd24430d43d}{FCDTScale}, \hyperlink{classFCDTRotation_a749761125dbd6f71268696d42ee39450}{FCDTRotation}, \hyperlink{classFCDTMatrix_aef3ca1c87d3db3762750154f7dd306e1}{FCDTMatrix}, \hyperlink{classFCDTLookAt_a94f32a8f1ce0e88cc736e03db0da7c3f}{FCDTLookAt}, and \hyperlink{classFCDTSkew_a6637a68d104e66b0e8fb8b517f8ad345}{FCDTSkew}.
+
+\hypertarget{classFCDTransform_aac1ff2df9e63702a90300ba9c38c48e1}{
+\index{FCDTransform@{FCDTransform}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTransform@{FCDTransform}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf FCDAnimated}$\ast$ FCDTransform::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFCDTransform_aac1ff2df9e63702a90300ba9c38c48e1}
+See above. 
+
+Implemented in \hyperlink{classFCDTTranslation_a11144dd99ef92c476e26be42ae71ab94}{FCDTTranslation}, \hyperlink{classFCDTScale_aeb7d457dbfc74d96173b4dba7a46a351}{FCDTScale}, \hyperlink{classFCDTRotation_aa15d71e8f12a80fba90bc788c3e26826}{FCDTRotation}, \hyperlink{classFCDTMatrix_ae2a25b50913ee58bceac42b4aee92029}{FCDTMatrix}, \hyperlink{classFCDTLookAt_a9bae8db093d0909253dc478edbc93b40}{FCDTLookAt}, and \hyperlink{classFCDTSkew_a38aa6c4cdf590300a71be183fbad50a1}{FCDTSkew}.
+
+\hypertarget{classFCDTransform_a75778e4996553320c274a21cc120014b}{
+\index{FCDTransform@{FCDTransform}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDTransform@{FCDTransform}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSceneNode}$\ast$ FCDTransform::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTransform_a75778e4996553320c274a21cc120014b}
+See above. \hypertarget{classFCDTransform_a3da9bedb5a4ff62df3ffe10672a34e0a}{
+\index{FCDTransform@{FCDTransform}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDTransform@{FCDTransform}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSceneNode}$\ast$ FCDTransform::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTransform_a3da9bedb5a4ff62df3ffe10672a34e0a}
+Retrieves the visual scene node that contains this transformation. \begin{DoxyReturn}{Returns}
+The parent visual scene node. This pointer will be NULL if the transformation is not contained by a visual scene node. 
+\end{DoxyReturn}
+\hypertarget{classFCDTransform_a945ce2cb0c895d720634ccedcfcc750c}{
+\index{FCDTransform@{FCDTransform}!GetSubId@{GetSubId}}
+\index{GetSubId@{GetSubId}!FCDTransform@{FCDTransform}}
+\subsubsection[{GetSubId}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterString}\& FCDTransform::GetSubId (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTransform_a945ce2cb0c895d720634ccedcfcc750c}
+See above. \hypertarget{classFCDTransform_abfcbc0c1b44eb541d56fd2919bbb7d7d}{
+\index{FCDTransform@{FCDTransform}!GetSubId@{GetSubId}}
+\index{GetSubId@{GetSubId}!FCDTransform@{FCDTransform}}
+\subsubsection[{GetSubId}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterString}\& FCDTransform::GetSubId (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTransform_abfcbc0c1b44eb541d56fd2919bbb7d7d}
+Retrieves the wanted sub-\/id for this transform. A wanted sub-\/id will always be exported, even if the transform is not animated. But the wanted sub-\/id may be modified if it isn't unique within the scope. \begin{DoxyReturn}{Returns}
+The sub-\/id. 
+\end{DoxyReturn}
+\hypertarget{classFCDTransform_af406aebcba6215ebc1358a3cf87ab29d}{
+\index{FCDTransform@{FCDTransform}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDTransform@{FCDTransform}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDTransform::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFCDTransform_af406aebcba6215ebc1358a3cf87ab29d}
+Retrieves the class type of the transformation. The class type should be used to up-\/case the transformation pointer. \begin{DoxyReturn}{Returns}
+The class type. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFCDTTranslation_ad72589137729bcf5ea8b88f0ad2b2208}{FCDTTranslation}, \hyperlink{classFCDTScale_a69a9e36fcc1a3ba516a3a0f47c37db61}{FCDTScale}, \hyperlink{classFCDTRotation_af5ddd1b7b673eaa1d57f36b4e685a3c8}{FCDTRotation}, \hyperlink{classFCDTMatrix_a73abaf07dc65e188ceb14d49e27355ee}{FCDTMatrix}, \hyperlink{classFCDTLookAt_a1f3fc1c2e95176026628276ddf6f30a0}{FCDTLookAt}, and \hyperlink{classFCDTSkew_a069afb12195014737cc891cf4edd0946}{FCDTSkew}.
+
+\hypertarget{classFCDTransform_ab12ac63fa2d46fbcf8c025971635cda4}{
+\index{FCDTransform@{FCDTransform}!IsAnimated@{IsAnimated}}
+\index{IsAnimated@{IsAnimated}!FCDTransform@{FCDTransform}}
+\subsubsection[{IsAnimated}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FCDTransform::IsAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFCDTransform_ab12ac63fa2d46fbcf8c025971635cda4}
+Retrieves whether this transformation has an animation tied to its values. \begin{DoxyReturn}{Returns}
+Whether the transformation is animated. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFCDTTranslation_a6d74cff5dc8981b22e453054daeb2dbd}{FCDTTranslation}, \hyperlink{classFCDTScale_ac7ec837e495c1316d5f87b964318556c}{FCDTScale}, \hyperlink{classFCDTRotation_aeb5dc80fb81f11f0fe024f925961c7d9}{FCDTRotation}, \hyperlink{classFCDTMatrix_aaed758f82370d47c82eb66263830d610}{FCDTMatrix}, \hyperlink{classFCDTLookAt_ae766dccb3bb7818195010a6007437161}{FCDTLookAt}, and \hyperlink{classFCDTSkew_a81f213b6eb3014df1129f806708e7d76}{FCDTSkew}.
+
+\hypertarget{classFCDTransform_a9fa1a02a51f833f819248c2ff020507c}{
+\index{FCDTransform@{FCDTransform}!IsInverse@{IsInverse}}
+\index{IsInverse@{IsInverse}!FCDTransform@{FCDTransform}}
+\subsubsection[{IsInverse}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FCDTransform::IsInverse (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDTransform} $\ast$}]{ transform}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTransform_a9fa1a02a51f833f819248c2ff020507c}
+Retrieves whether a given transformation is the exact opposite of this transformation. Executing two opposite transformations, one after the other will not give any resulting transformation. This function is useful to detect pivots within the transform stack. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transform}]A second transformation. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two transformations are opposites. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classFCDTTranslation_a860f284c757f5ceccf3f41a42c361aec}{FCDTTranslation}, and \hyperlink{classFCDTRotation_a2b5c4b3edef9384c4fa20be5591874a2}{FCDTRotation}.
+
+\hypertarget{classFCDTransform_a063d8d592abd3d48d5d2e8baee56c2eb}{
+\index{FCDTransform@{FCDTransform}!SetSubId@{SetSubId}}
+\index{SetSubId@{SetSubId}!FCDTransform@{FCDTransform}}
+\subsubsection[{SetSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTransform::SetSubId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ subId}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTransform_a063d8d592abd3d48d5d2e8baee56c2eb}
+Sets the wanted sub-\/id for this transform. A wanted sub-\/id will always be exported, even if the transform is not animated. But the wanted sub-\/id may be modified if it isn't unique within the scope. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subId}]The wanted sub-\/id. \end{DoxyParams}
+\hypertarget{classFCDTransform_a5fe09604c4a2b46a4576879ffb1aa18e}{
+\index{FCDTransform@{FCDTransform}!SetTransformsDirtyFlag@{SetTransformsDirtyFlag}}
+\index{SetTransformsDirtyFlag@{SetTransformsDirtyFlag}!FCDTransform@{FCDTransform}}
+\subsubsection[{SetTransformsDirtyFlag}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTransform::SetTransformsDirtyFlag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTransform_a5fe09604c4a2b46a4576879ffb1aa18e}
+\mbox{[}DEPRECATED\mbox{]} Sets on a scene node parent, the transform dirty flag. \hypertarget{classFCDTransform_adb72479a86149a1f93a3dfdf84569b91}{
+\index{FCDTransform@{FCDTransform}!SetValueChange@{SetValueChange}}
+\index{SetValueChange@{SetValueChange}!FCDTransform@{FCDTransform}}
+\subsubsection[{SetValueChange}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTransform::SetValueChange (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTransform_adb72479a86149a1f93a3dfdf84569b91}
+Set Value changed flag. When this happens, notify our parent 
+
+Reimplemented from \hyperlink{classFCDObject_a26513baaf8b9a2996f9c050e4a7c16d8}{FCDObject}.
+
+\hypertarget{classFCDTransform_afd7fc3c7dc012782ebb2886c5bc13d01}{
+\index{FCDTransform@{FCDTransform}!ToMatrix@{ToMatrix}}
+\index{ToMatrix@{ToMatrix}!FCDTransform@{FCDTransform}}
+\subsubsection[{ToMatrix}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FMMatrix44} FCDTransform::ToMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFCDTransform_afd7fc3c7dc012782ebb2886c5bc13d01}
+Converts the transformation into a matrix. Useful for visual scene nodes with a weird transformation stack. \begin{DoxyReturn}{Returns}
+A matrix equivalent of the transformation. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFCDTTranslation_a70ad49113750b8f733e4b5682269c616}{FCDTTranslation}, \hyperlink{classFCDTScale_a7f80ee90e5633814c7d5bcfb2acc211f}{FCDTScale}, \hyperlink{classFCDTRotation_a928ca46c14e83d7efcf840ce3f1452fe}{FCDTRotation}, \hyperlink{classFCDTMatrix_a26384eeccaa1205b0f88d0ad16134669}{FCDTMatrix}, \hyperlink{classFCDTLookAt_a93c1f4cf120fea015977562b14bfdd1c}{FCDTLookAt}, and \hyperlink{classFCDTSkew_ae7e90834c3ca578ebec91fcc0472e479}{FCDTSkew}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDTransform_8h}{FCDTransform.h}\item 
+FCollada/FCDocument/FCDTransform.cpp\end{DoxyCompactItemize}

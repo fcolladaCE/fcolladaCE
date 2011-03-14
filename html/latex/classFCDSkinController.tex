@@ -1,0 +1,368 @@
+\hypertarget{classFCDSkinController}{
+\section{FCDSkinController Class Reference}
+\label{classFCDSkinController}\index{FCDSkinController@{FCDSkinController}}
+}
+
+
+{\ttfamily \#include $<$FCDSkinController.h$>$}
+
+Inheritance diagram for FCDSkinController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDSkinController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDSkinController_a15bfb70a67633c1a87e4ea887e1bff85}{FCDSkinController} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDController}{FCDController} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDSkinController_ab8720fcc6fae0f933439f5f7d394395b}{$\sim$FCDSkinController} ()
+\item 
+\hyperlink{classFCDController}{FCDController} $\ast$ \hyperlink{classFCDSkinController_a17cb7af659591ec87e2839efb855446d}{GetParent} ()
+\item 
+const \hyperlink{classFCDController}{FCDController} $\ast$ \hyperlink{classFCDSkinController_ac81335d8b97084b4afad3f78c50c04fd}{GetParent} () const 
+\item 
+\hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDSkinController_afd496fa67e9cb8681b0e42ce77897a57}{GetTarget} ()
+\item 
+\hypertarget{classFCDSkinController_a1e4d760d8fa60f2cf41f87efcd46323f}{
+const \hyperlink{classFCDEntity}{FCDEntity} $\ast$ {\bfseries GetTarget} () const }
+\label{classFCDSkinController_a1e4d760d8fa60f2cf41f87efcd46323f}
+
+\item 
+\hyperlink{classFUUri}{FUUri} \hyperlink{classFCDSkinController_ab4fdf1c8972ebe67b9ccbdf5b32f5e04}{GetTargetUri} () const 
+\item 
+void \hyperlink{classFCDSkinController_aba227b645b30f43847dad3246ed34132}{SetTargetUri} (const \hyperlink{classFUUri}{FUUri} \&uri)
+\item 
+void \hyperlink{classFCDSkinController_a570337f366b9760bf1828620541c130b}{SetTarget} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$\_\-target)
+\item 
+const \hyperlink{classFMMatrix44}{FMMatrix44} \& \hyperlink{classFCDSkinController_afdd606f592acbdbb18e987dd7ac7f526}{GetBindShapeTransform} () const 
+\item 
+void \hyperlink{classFCDSkinController_a98e96fb0d648822f57ac2f94a2d13c63}{SetBindShapeTransform} (const \hyperlink{classFMMatrix44}{FMMatrix44} \&bindPose)
+\item 
+size\_\-t \hyperlink{classFCDSkinController_a4ec9325fef3ed3ed837eb99e82b79f35}{GetJointCount} () const 
+\item 
+void \hyperlink{classFCDSkinController_a6f6527350df3b392a9aed68834afde5a}{SetJointCount} (size\_\-t count)
+\item 
+\hyperlink{classFCDSkinControllerJoint}{FCDSkinControllerJoint} $\ast$ \hyperlink{classFCDSkinController_a9bdb04c9a9c464828c50e23883ac27ff}{GetJoints} ()
+\item 
+const \hyperlink{classFCDSkinControllerJoint}{FCDSkinControllerJoint} $\ast$ \hyperlink{classFCDSkinController_a3cefba7450f5ffd20eb50ce94930dace}{GetJoints} () const 
+\item 
+\hyperlink{classFCDSkinControllerJoint}{FCDSkinControllerJoint} $\ast$ \hyperlink{classFCDSkinController_a6122344e78bf79eac5d98146eea8ccf1}{GetJoint} (size\_\-t index)
+\item 
+const \hyperlink{classFCDSkinControllerJoint}{FCDSkinControllerJoint} $\ast$ \hyperlink{classFCDSkinController_a7ea6ffb632099285cc81b9dbe05a4b07}{GetJoint} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDSkinControllerJoint}{FCDSkinControllerJoint} $\ast$ \hyperlink{classFCDSkinController_a0f7a20bb077328f9f6b58daf95ac9a20}{AddJoint} (const \hyperlink{classfm_1_1stringT}{fm::string} jSubId=\char`\"{}\char`\"{}, const \hyperlink{classFMMatrix44}{FMMatrix44} \&inverseBindPose=\hyperlink{classFMMatrix44_a6ec620d68ab61a95e3b4b5f7e7300468}{FMMatrix44::Identity})
+\item 
+size\_\-t \hyperlink{classFCDSkinController_a672679bbfe60f04d6309fd99cebb15c3}{GetInfluenceCount} () const 
+\item 
+void \hyperlink{classFCDSkinController_a9314bc3b96f9e9c25efd57f370c4f790}{SetInfluenceCount} (size\_\-t count)
+\item 
+\hyperlink{classFCDSkinControllerVertex}{FCDSkinControllerVertex} $\ast$ \hyperlink{classFCDSkinController_a75ee2c90f2f8011f476e4f96b1397641}{GetVertexInfluences} ()
+\item 
+const \hyperlink{classFCDSkinControllerVertex}{FCDSkinControllerVertex} $\ast$ \hyperlink{classFCDSkinController_a1bf89c968b4e0ffff2ac2478ea31ff2c}{GetVertexInfluences} () const 
+\item 
+\hyperlink{classFCDSkinControllerVertex}{FCDSkinControllerVertex} $\ast$ \hyperlink{classFCDSkinController_a1b403e5065c0a7635a424379208a1206}{GetVertexInfluence} (size\_\-t index)
+\item 
+const \hyperlink{classFCDSkinControllerVertex}{FCDSkinControllerVertex} $\ast$ \hyperlink{classFCDSkinController_ad1620f13499b450a80402e88a44089b3}{GetVertexInfluence} (size\_\-t index) const 
+\item 
+void \hyperlink{classFCDSkinController_aa6257743677e7d538e4b9fcbca98254c}{ReduceInfluences} (uint32 maxInfluenceCount, float minimumWeight=0.0f)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA skin controller.
+
+The skin controller holds the information to skin a geometric object. That information includes a target/base entity and its bind-\/pose matrix, a list of joints and their bind pose and the influences for the joints.
+
+The influences are a list, for each vertex of the target entity, of which joints affect the vertex and by how much. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDSkinController_a15bfb70a67633c1a87e4ea887e1bff85}{
+\index{FCDSkinController@{FCDSkinController}!FCDSkinController@{FCDSkinController}}
+\index{FCDSkinController@{FCDSkinController}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{FCDSkinController}]{\setlength{\rightskip}{0pt plus 5cm}FCDSkinController::FCDSkinController (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDController} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinController_a15bfb70a67633c1a87e4ea887e1bff85}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDController_a808ec0e465cf611a6eb934f0abf51994}{FCDController::CreateSkinController} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the skin. \item[{\em parent}]The COLLADA controller that contains this skin. \end{DoxyParams}
+\hypertarget{classFCDSkinController_ab8720fcc6fae0f933439f5f7d394395b}{
+\index{FCDSkinController@{FCDSkinController}!$\sim$FCDSkinController@{$\sim$FCDSkinController}}
+\index{$\sim$FCDSkinController@{$\sim$FCDSkinController}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{$\sim$FCDSkinController}]{\setlength{\rightskip}{0pt plus 5cm}FCDSkinController::$\sim$FCDSkinController (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDSkinController_ab8720fcc6fae0f933439f5f7d394395b}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDSkinController_a0f7a20bb077328f9f6b58daf95ac9a20}{
+\index{FCDSkinController@{FCDSkinController}!AddJoint@{AddJoint}}
+\index{AddJoint@{AddJoint}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{AddJoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSkinControllerJoint} $\ast$ FCDSkinController::AddJoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string}}]{ jSubId = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const {\bf FMMatrix44} \&}]{ inverseBindPose = {\ttfamily {\bf FMMatrix44::Identity}}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinController_a0f7a20bb077328f9f6b58daf95ac9a20}
+Adds a joint to influence the skin. 
+\begin{DoxyParams}{Parameters}
+\item[{\em jSubId}]The sub-\/id of the scene node(s) that represent the joint. \item[{\em inverseBindPose}]The inverse bind-\/pose of the joint. \end{DoxyParams}
+\hypertarget{classFCDSkinController_afdd606f592acbdbb18e987dd7ac7f526}{
+\index{FCDSkinController@{FCDSkinController}!GetBindShapeTransform@{GetBindShapeTransform}}
+\index{GetBindShapeTransform@{GetBindShapeTransform}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetBindShapeTransform}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMMatrix44}\& FCDSkinController::GetBindShapeTransform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_afdd606f592acbdbb18e987dd7ac7f526}
+Retrieves the bind-\/pose transform of the target entity. \begin{DoxyReturn}{Returns}
+The bind-\/pose transform. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_a672679bbfe60f04d6309fd99cebb15c3}{
+\index{FCDSkinController@{FCDSkinController}!GetInfluenceCount@{GetInfluenceCount}}
+\index{GetInfluenceCount@{GetInfluenceCount}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetInfluenceCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDSkinController::GetInfluenceCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a672679bbfe60f04d6309fd99cebb15c3}
+Retrieves the number of vertices with influences defined in the skin controller. \begin{DoxyReturn}{Returns}
+The number of influenced vertices. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_a6122344e78bf79eac5d98146eea8ccf1}{
+\index{FCDSkinController@{FCDSkinController}!GetJoint@{GetJoint}}
+\index{GetJoint@{GetJoint}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetJoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSkinControllerJoint}$\ast$ FCDSkinController::GetJoint (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a6122344e78bf79eac5d98146eea8ccf1}
+Retrieves an indexed joint from the list of joints that influence this skin. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the joint. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The joint at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_a7ea6ffb632099285cc81b9dbe05a4b07}{
+\index{FCDSkinController@{FCDSkinController}!GetJoint@{GetJoint}}
+\index{GetJoint@{GetJoint}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetJoint}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSkinControllerJoint}$\ast$ FCDSkinController::GetJoint (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a7ea6ffb632099285cc81b9dbe05a4b07}
+See above. \hypertarget{classFCDSkinController_a4ec9325fef3ed3ed837eb99e82b79f35}{
+\index{FCDSkinController@{FCDSkinController}!GetJointCount@{GetJointCount}}
+\index{GetJointCount@{GetJointCount}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetJointCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDSkinController::GetJointCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a4ec9325fef3ed3ed837eb99e82b79f35}
+Retrieves the number of joints that influence the skin. \begin{DoxyReturn}{Returns}
+The number of joints. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_a3cefba7450f5ffd20eb50ce94930dace}{
+\index{FCDSkinController@{FCDSkinController}!GetJoints@{GetJoints}}
+\index{GetJoints@{GetJoints}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetJoints}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSkinControllerJoint}$\ast$ FCDSkinController::GetJoints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a3cefba7450f5ffd20eb50ce94930dace}
+See above. \hypertarget{classFCDSkinController_a9bdb04c9a9c464828c50e23883ac27ff}{
+\index{FCDSkinController@{FCDSkinController}!GetJoints@{GetJoints}}
+\index{GetJoints@{GetJoints}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetJoints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSkinControllerJoint}$\ast$ FCDSkinController::GetJoints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a9bdb04c9a9c464828c50e23883ac27ff}
+Retrieves the list of joints that influence the skin. \begin{DoxyReturn}{Returns}
+The list of joints that influence the skin. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_ac81335d8b97084b4afad3f78c50c04fd}{
+\index{FCDSkinController@{FCDSkinController}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDController}$\ast$ FCDSkinController::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_ac81335d8b97084b4afad3f78c50c04fd}
+See above. \hypertarget{classFCDSkinController_a17cb7af659591ec87e2839efb855446d}{
+\index{FCDSkinController@{FCDSkinController}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDController}$\ast$ FCDSkinController::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a17cb7af659591ec87e2839efb855446d}
+Retrieves the parent entity for the morpher. \begin{DoxyReturn}{Returns}
+The parent controller entity. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_afd496fa67e9cb8681b0e42ce77897a57}{
+\index{FCDSkinController@{FCDSkinController}!GetTarget@{GetTarget}}
+\index{GetTarget@{GetTarget}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetTarget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDSkinController::GetTarget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinController_afd496fa67e9cb8681b0e42ce77897a57}
+Retrieves the target entity. This entity may be a geometric entity or another controller. \begin{DoxyReturn}{Returns}
+The target entity. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_ab4fdf1c8972ebe67b9ccbdf5b32f5e04}{
+\index{FCDSkinController@{FCDSkinController}!GetTargetUri@{GetTargetUri}}
+\index{GetTargetUri@{GetTargetUri}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetTargetUri}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUUri} FCDSkinController::GetTargetUri (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDSkinController_ab4fdf1c8972ebe67b9ccbdf5b32f5e04}
+Retrieves the Uri to the skin target. This can be an internal or external link \begin{DoxyReturn}{Returns}
+The uri to the target 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_ad1620f13499b450a80402e88a44089b3}{
+\index{FCDSkinController@{FCDSkinController}!GetVertexInfluence@{GetVertexInfluence}}
+\index{GetVertexInfluence@{GetVertexInfluence}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetVertexInfluence}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSkinControllerVertex}$\ast$ FCDSkinController::GetVertexInfluence (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_ad1620f13499b450a80402e88a44089b3}
+See above. \hypertarget{classFCDSkinController_a1b403e5065c0a7635a424379208a1206}{
+\index{FCDSkinController@{FCDSkinController}!GetVertexInfluence@{GetVertexInfluence}}
+\index{GetVertexInfluence@{GetVertexInfluence}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetVertexInfluence}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSkinControllerVertex}$\ast$ FCDSkinController::GetVertexInfluence (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a1b403e5065c0a7635a424379208a1206}
+Retrieves the per-\/vertex influences for a given vertex. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The vertex index. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The per-\/vertex influences. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_a75ee2c90f2f8011f476e4f96b1397641}{
+\index{FCDSkinController@{FCDSkinController}!GetVertexInfluences@{GetVertexInfluences}}
+\index{GetVertexInfluences@{GetVertexInfluences}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetVertexInfluences}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSkinControllerVertex}$\ast$ FCDSkinController::GetVertexInfluences (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a75ee2c90f2f8011f476e4f96b1397641}
+Retrieves a list of the per-\/vertex influences for the skin. \begin{DoxyReturn}{Returns}
+The list of per-\/vertex influences. 
+\end{DoxyReturn}
+\hypertarget{classFCDSkinController_a1bf89c968b4e0ffff2ac2478ea31ff2c}{
+\index{FCDSkinController@{FCDSkinController}!GetVertexInfluences@{GetVertexInfluences}}
+\index{GetVertexInfluences@{GetVertexInfluences}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{GetVertexInfluences}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSkinControllerVertex}$\ast$ FCDSkinController::GetVertexInfluences (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a1bf89c968b4e0ffff2ac2478ea31ff2c}
+See above. \hypertarget{classFCDSkinController_aa6257743677e7d538e4b9fcbca98254c}{
+\index{FCDSkinController@{FCDSkinController}!ReduceInfluences@{ReduceInfluences}}
+\index{ReduceInfluences@{ReduceInfluences}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{ReduceInfluences}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSkinController::ReduceInfluences (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ maxInfluenceCount, }
+\item[{float}]{ minimumWeight = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinController_aa6257743677e7d538e4b9fcbca98254c}
+Reduces the number of joints influencing each vertex. 1) All the influences with a weight less than the minimum will be removed. 2) If a vertex has more influences than the given maximum, they will be sorted and the most important influences will be kept. If some of the influences for a vertex are removed, the weight will be normalized. 
+\begin{DoxyParams}{Parameters}
+\item[{\em maxInfluenceCount}]The maximum number of influence to keep for each vertex. \item[{\em minimumWeight}]The smallest weight to keep. \end{DoxyParams}
+\hypertarget{classFCDSkinController_a98e96fb0d648822f57ac2f94a2d13c63}{
+\index{FCDSkinController@{FCDSkinController}!SetBindShapeTransform@{SetBindShapeTransform}}
+\index{SetBindShapeTransform@{SetBindShapeTransform}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{SetBindShapeTransform}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSkinController::SetBindShapeTransform (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMMatrix44} \&}]{ bindPose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSkinController_a98e96fb0d648822f57ac2f94a2d13c63}
+Sets the bind-\/pose transform of the target entity. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bindPose}]The bind-\/pose transform. \end{DoxyParams}
+\hypertarget{classFCDSkinController_a9314bc3b96f9e9c25efd57f370c4f790}{
+\index{FCDSkinController@{FCDSkinController}!SetInfluenceCount@{SetInfluenceCount}}
+\index{SetInfluenceCount@{SetInfluenceCount}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{SetInfluenceCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSkinController::SetInfluenceCount (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinController_a9314bc3b96f9e9c25efd57f370c4f790}
+Sets the number of vertices with influences defined in the skin controller. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The number of influences vertices. \end{DoxyParams}
+\hypertarget{classFCDSkinController_a6f6527350df3b392a9aed68834afde5a}{
+\index{FCDSkinController@{FCDSkinController}!SetJointCount@{SetJointCount}}
+\index{SetJointCount@{SetJointCount}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{SetJointCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSkinController::SetJointCount (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinController_a6f6527350df3b392a9aed68834afde5a}
+Sets the number of joints that influence the skin. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The number of joints that influence the skin. \end{DoxyParams}
+\hypertarget{classFCDSkinController_a570337f366b9760bf1828620541c130b}{
+\index{FCDSkinController@{FCDSkinController}!SetTarget@{SetTarget}}
+\index{SetTarget@{SetTarget}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{SetTarget}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSkinController::SetTarget (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ \_\-target}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinController_a570337f366b9760bf1828620541c130b}
+Sets the target entity. This function has very important ramifications, as the number of vertices may change. The influences list will be modified to follow the number of vertices. This entity may be a geometric entity or another controller. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-target}]The target entity. \end{DoxyParams}
+\hypertarget{classFCDSkinController_aba227b645b30f43847dad3246ed34132}{
+\index{FCDSkinController@{FCDSkinController}!SetTargetUri@{SetTargetUri}}
+\index{SetTargetUri@{SetTargetUri}!FCDSkinController@{FCDSkinController}}
+\subsubsection[{SetTargetUri}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSkinController::SetTargetUri (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUUri} \&}]{ uri}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSkinController_aba227b645b30f43847dad3246ed34132}
+Sets the URI of the target mesh. 
+\begin{DoxyParams}{Parameters}
+\item[{\em uri}]The Uri to a local or external controller or geometry \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDSkinController_8h}{FCDSkinController.h}\item 
+FCollada/FCDocument/FCDSkinController.cpp\end{DoxyCompactItemize}

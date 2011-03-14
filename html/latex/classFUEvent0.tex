@@ -1,0 +1,159 @@
+\hypertarget{classFUEvent0}{
+\section{FUEvent0 Class Reference}
+\label{classFUEvent0}\index{FUEvent0@{FUEvent0}}
+}
+
+
+{\ttfamily \#include $<$FUEvent.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUEvent0_ac922d1c9843d5839e7fa53bb726fa970}{FUEvent0} ()
+\item 
+\hyperlink{classFUEvent0_ad727e4cef998908a0bc61b6519d19045}{$\sim$FUEvent0} ()
+\item 
+size\_\-t \hyperlink{classFUEvent0_a368d671f36ea0deec05b8f7103a1f922}{GetHandlerCount} ()
+\item 
+{\footnotesize template$<$class Class $>$ }\\void \hyperlink{classFUEvent0_a886f064cc7d90306e60ac22953d0eeff}{InsertHandler} (Class $\ast$handle, void(Class::$\ast$\_\-function)())
+\item 
+void \hyperlink{classFUEvent0_a6f9333d11913cd7f2e1a523f4f83dcd4}{InsertHandler} (\hyperlink{classIFunctor0}{Handler} $\ast$functor)
+\item 
+void \hyperlink{classFUEvent0_a16b5976121190399081738a636ba8c26}{InsertHandler} (void($\ast$\_\-function)())
+\item 
+void \hyperlink{classFUEvent0_a443329d8bcd603e0818a196608dca6d2}{ReleaseHandler} (void $\ast$handle, void $\ast$function)
+\item 
+{\footnotesize template$<$class Class $>$ }\\void \hyperlink{classFUEvent0_a07976577ab71e678872c8dd4b8df3e8f}{ReleaseHandler} (Class $\ast$handle, void(Class::$\ast$\_\-function)())
+\item 
+void \hyperlink{classFUEvent0_aec9f915e14a40ab50613341514e72d52}{ReleaseHandler} (void($\ast$\_\-function)())
+\item 
+void \hyperlink{classFUEvent0_acb4b5035be58291747200ca334139d95}{operator()} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An event with no argument. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUEvent0_ac922d1c9843d5839e7fa53bb726fa970}{
+\index{FUEvent0@{FUEvent0}!FUEvent0@{FUEvent0}}
+\index{FUEvent0@{FUEvent0}!FUEvent0@{FUEvent0}}
+\subsubsection[{FUEvent0}]{\setlength{\rightskip}{0pt plus 5cm}FUEvent0::FUEvent0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_ac922d1c9843d5839e7fa53bb726fa970}
+Constructor. \hypertarget{classFUEvent0_ad727e4cef998908a0bc61b6519d19045}{
+\index{FUEvent0@{FUEvent0}!$\sim$FUEvent0@{$\sim$FUEvent0}}
+\index{$\sim$FUEvent0@{$\sim$FUEvent0}!FUEvent0@{FUEvent0}}
+\subsubsection[{$\sim$FUEvent0}]{\setlength{\rightskip}{0pt plus 5cm}FUEvent0::$\sim$FUEvent0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_ad727e4cef998908a0bc61b6519d19045}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUEvent0_a368d671f36ea0deec05b8f7103a1f922}{
+\index{FUEvent0@{FUEvent0}!GetHandlerCount@{GetHandlerCount}}
+\index{GetHandlerCount@{GetHandlerCount}!FUEvent0@{FUEvent0}}
+\subsubsection[{GetHandlerCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FUEvent0::GetHandlerCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_a368d671f36ea0deec05b8f7103a1f922}
+Retrieves the number of callbacks registered for this event. \begin{DoxyReturn}{Returns}
+The number of callbacks registered. 
+\end{DoxyReturn}
+\hypertarget{classFUEvent0_a886f064cc7d90306e60ac22953d0eeff}{
+\index{FUEvent0@{FUEvent0}!InsertHandler@{InsertHandler}}
+\index{InsertHandler@{InsertHandler}!FUEvent0@{FUEvent0}}
+\subsubsection[{InsertHandler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class $>$ void FUEvent0::InsertHandler (
+\begin{DoxyParamCaption}
+\item[{Class $\ast$}]{ handle, }
+\item[{void(Class::$\ast$)()}]{ \_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_a886f064cc7d90306e60ac22953d0eeff}
+Adds a new callback that handles the event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em handle}]The object that contains the member function. \item[{\em \_\-function}]The member function to callback. \end{DoxyParams}
+\hypertarget{classFUEvent0_a16b5976121190399081738a636ba8c26}{
+\index{FUEvent0@{FUEvent0}!InsertHandler@{InsertHandler}}
+\index{InsertHandler@{InsertHandler}!FUEvent0@{FUEvent0}}
+\subsubsection[{InsertHandler}]{\setlength{\rightskip}{0pt plus 5cm}void FUEvent0::InsertHandler (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)()}]{ \_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_a16b5976121190399081738a636ba8c26}
+Adds a new callback that handles the event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-function}]The static function to callback. \end{DoxyParams}
+\hypertarget{classFUEvent0_a6f9333d11913cd7f2e1a523f4f83dcd4}{
+\index{FUEvent0@{FUEvent0}!InsertHandler@{InsertHandler}}
+\index{InsertHandler@{InsertHandler}!FUEvent0@{FUEvent0}}
+\subsubsection[{InsertHandler}]{\setlength{\rightskip}{0pt plus 5cm}void FUEvent0::InsertHandler (
+\begin{DoxyParamCaption}
+\item[{{\bf Handler} $\ast$}]{ functor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_a6f9333d11913cd7f2e1a523f4f83dcd4}
+Adds a functor that handles the event. Note that the event will own the memory for the functor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em functor}]The functor that handlers the event. \end{DoxyParams}
+\hypertarget{classFUEvent0_acb4b5035be58291747200ca334139d95}{
+\index{FUEvent0@{FUEvent0}!operator()@{operator()}}
+\index{operator()@{operator()}!FUEvent0@{FUEvent0}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void FUEvent0::operator() (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_acb4b5035be58291747200ca334139d95}
+Triggers the event. All the registered callbacks will be called, in reverse-\/order of their registration. \hypertarget{classFUEvent0_aec9f915e14a40ab50613341514e72d52}{
+\index{FUEvent0@{FUEvent0}!ReleaseHandler@{ReleaseHandler}}
+\index{ReleaseHandler@{ReleaseHandler}!FUEvent0@{FUEvent0}}
+\subsubsection[{ReleaseHandler}]{\setlength{\rightskip}{0pt plus 5cm}void FUEvent0::ReleaseHandler (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)()}]{ \_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_aec9f915e14a40ab50613341514e72d52}
+Releases and unregisters a callback that handles the event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-function}]The static function callback to unregister. \end{DoxyParams}
+\hypertarget{classFUEvent0_a07976577ab71e678872c8dd4b8df3e8f}{
+\index{FUEvent0@{FUEvent0}!ReleaseHandler@{ReleaseHandler}}
+\index{ReleaseHandler@{ReleaseHandler}!FUEvent0@{FUEvent0}}
+\subsubsection[{ReleaseHandler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class $>$ void FUEvent0::ReleaseHandler (
+\begin{DoxyParamCaption}
+\item[{Class $\ast$}]{ handle, }
+\item[{void(Class::$\ast$)()}]{ \_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_a07976577ab71e678872c8dd4b8df3e8f}
+Releases and unregisters a callback that handles the event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em handle}]The object that contains the member function. \item[{\em \_\-function}]The member function callback to unregister. \end{DoxyParams}
+\hypertarget{classFUEvent0_a443329d8bcd603e0818a196608dca6d2}{
+\index{FUEvent0@{FUEvent0}!ReleaseHandler@{ReleaseHandler}}
+\index{ReleaseHandler@{ReleaseHandler}!FUEvent0@{FUEvent0}}
+\subsubsection[{ReleaseHandler}]{\setlength{\rightskip}{0pt plus 5cm}void FUEvent0::ReleaseHandler (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ handle, }
+\item[{void $\ast$}]{ function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUEvent0_a443329d8bcd603e0818a196608dca6d2}
+Releases and unregisters a callback that handles the event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em handle}]The handle of the function container. This pointer will be NULL for static functions. \item[{\em function}]The address of the function callback to unregister. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUEvent_8h}{FUEvent.h}\end{DoxyCompactItemize}

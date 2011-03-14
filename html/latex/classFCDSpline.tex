@@ -1,0 +1,254 @@
+\hypertarget{classFCDSpline}{
+\section{FCDSpline Class Reference}
+\label{classFCDSpline}\index{FCDSpline@{FCDSpline}}
+}
+
+
+{\ttfamily \#include $<$FCDGeometrySpline.h$>$}
+
+Inheritance diagram for FCDSpline:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDSpline}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDSpline_ace689bd475c17da2c24f076e06f47388}{FCDSpline} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDSpline_abd34e5c4f2b58a8e5acdc8935c91eab1}{$\sim$FCDSpline} ()
+\item 
+virtual \hyperlink{namespaceFUDaeSplineType_a7db2b90bcd53814239cc29f64754d0ab}{FUDaeSplineType::Type} \hyperlink{classFCDSpline_ad8ad60a198cd8e041fde6587c3d5a9f9}{GetSplineType} () const =0
+\item 
+\hyperlink{classfm_1_1stringT}{fm::string} \& \hyperlink{classFCDSpline_ab35c5ca0b5d061f9f0290cd34e13003b}{GetName} ()
+\item 
+const \hyperlink{classfm_1_1stringT}{fm::string} \& \hyperlink{classFCDSpline_a515cfaf72ec0bf42dbc957f02f387c54}{GetName} () const 
+\item 
+void \hyperlink{classFCDSpline_aa2254be48c6fe64bdd88f58fb8542348}{SetName} (const \hyperlink{classfm_1_1stringT}{fm::string} \&\_\-name)
+\item 
+bool \hyperlink{classFCDSpline_a17b6ccfe0363f7a7c4bb871a23c10e94}{IsClosed} () const 
+\item 
+void \hyperlink{classFCDSpline_a3e7e8a8fbc8f2f515c68dec439da887f}{SetClosed} (bool closed)
+\item 
+size\_\-t \hyperlink{classFCDSpline_a6ca716ecc294857a4f43c46e76507684}{GetCVCount} () const 
+\item 
+\hyperlink{classFMVector3}{FMVector3} $\ast$ \hyperlink{classFCDSpline_a75c0deef9de2a6b45282fa4168aec72f}{GetCV} (size\_\-t index)
+\item 
+const \hyperlink{classFMVector3}{FMVector3} $\ast$ \hyperlink{classFCDSpline_a61ac245365a6d33f3403af8393f5a23a}{GetCV} (size\_\-t index) const 
+\item 
+\hyperlink{classfm_1_1vector}{FMVector3List} \& \hyperlink{classFCDSpline_ae1a48bbf64bce61520d5557ff92c0d4f}{GetCVs} ()
+\item 
+const \hyperlink{classfm_1_1vector}{FMVector3List} \& \hyperlink{classFCDSpline_a746674509f8ff3a5579c662b269e728f}{GetCVs} () const 
+\item 
+void \hyperlink{classFCDSpline_afb753c93f0dd00a7482473b44dd89422}{ClearCVs} ()
+\item 
+virtual \hyperlink{classFCDSpline}{FCDSpline} $\ast$ \hyperlink{classFCDSpline_abff4f438bb811a561891f14e8c0d9c59}{Clone} (\hyperlink{classFCDSpline}{FCDSpline} $\ast$clone) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfm_1_1vector}{FMVector3List} \hyperlink{classFCDSpline_a05d1e800f6a9036a4fcb48645f801e97}{cvs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a generic spline. A FCSpline contains a list of control vertices and a closed attribute which defaults to false. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDSpline_ace689bd475c17da2c24f076e06f47388}{
+\index{FCDSpline@{FCDSpline}!FCDSpline@{FCDSpline}}
+\index{FCDSpline@{FCDSpline}!FCDSpline@{FCDSpline}}
+\subsubsection[{FCDSpline}]{\setlength{\rightskip}{0pt plus 5cm}FCDSpline::FCDSpline (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDSpline_ace689bd475c17da2c24f076e06f47388}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The \hyperlink{namespaceFCollada}{FCollada} document that owns this spline. \end{DoxyParams}
+\hypertarget{classFCDSpline_abd34e5c4f2b58a8e5acdc8935c91eab1}{
+\index{FCDSpline@{FCDSpline}!$\sim$FCDSpline@{$\sim$FCDSpline}}
+\index{$\sim$FCDSpline@{$\sim$FCDSpline}!FCDSpline@{FCDSpline}}
+\subsubsection[{$\sim$FCDSpline}]{\setlength{\rightskip}{0pt plus 5cm}FCDSpline::$\sim$FCDSpline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDSpline_abd34e5c4f2b58a8e5acdc8935c91eab1}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDSpline_afb753c93f0dd00a7482473b44dd89422}{
+\index{FCDSpline@{FCDSpline}!ClearCVs@{ClearCVs}}
+\index{ClearCVs@{ClearCVs}!FCDSpline@{FCDSpline}}
+\subsubsection[{ClearCVs}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSpline::ClearCVs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_afb753c93f0dd00a7482473b44dd89422}
+Empty the spline's control vertex list. \hypertarget{classFCDSpline_abff4f438bb811a561891f14e8c0d9c59}{
+\index{FCDSpline@{FCDSpline}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDSpline@{FCDSpline}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSpline} $\ast$ FCDSpline::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDSpline} $\ast$}]{ clone}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDSpline_abff4f438bb811a561891f14e8c0d9c59}
+\mbox{[}INTERNAL\mbox{]} Copies the spline into a clone. The clone may reside in another document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. This pointer cannot be NULL. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classFCDNURBSSpline_a0390533ee410b9fde80866bc27b316e7}{FCDNURBSSpline}.
+
+\hypertarget{classFCDSpline_a61ac245365a6d33f3403af8393f5a23a}{
+\index{FCDSpline@{FCDSpline}!GetCV@{GetCV}}
+\index{GetCV@{GetCV}!FCDSpline@{FCDSpline}}
+\subsubsection[{GetCV}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3}$\ast$ FCDSpline::GetCV (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_a61ac245365a6d33f3403af8393f5a23a}
+See above. \hypertarget{classFCDSpline_a75c0deef9de2a6b45282fa4168aec72f}{
+\index{FCDSpline@{FCDSpline}!GetCV@{GetCV}}
+\index{GetCV@{GetCV}!FCDSpline@{FCDSpline}}
+\subsubsection[{GetCV}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3}$\ast$ FCDSpline::GetCV (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_a75c0deef9de2a6b45282fa4168aec72f}
+Retrieves a pointer to the control vertex specified by the given index. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index, must be higher or equal to 0 and lower than \hyperlink{classFCDSpline_a6ca716ecc294857a4f43c46e76507684}{GetCVCount()}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The control vertex. 
+\end{DoxyReturn}
+\hypertarget{classFCDSpline_a6ca716ecc294857a4f43c46e76507684}{
+\index{FCDSpline@{FCDSpline}!GetCVCount@{GetCVCount}}
+\index{GetCVCount@{GetCVCount}!FCDSpline@{FCDSpline}}
+\subsubsection[{GetCVCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDSpline::GetCVCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_a6ca716ecc294857a4f43c46e76507684}
+Retrieves the number of CVs in the spline. \begin{DoxyReturn}{Returns}
+The number of control vertices. 
+\end{DoxyReturn}
+\hypertarget{classFCDSpline_ae1a48bbf64bce61520d5557ff92c0d4f}{
+\index{FCDSpline@{FCDSpline}!GetCVs@{GetCVs}}
+\index{GetCVs@{GetCVs}!FCDSpline@{FCDSpline}}
+\subsubsection[{GetCVs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3List}\& FCDSpline::GetCVs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_ae1a48bbf64bce61520d5557ff92c0d4f}
+Retrieves a reference to the CVs list. \begin{DoxyReturn}{Returns}
+The reference to the control vertices. 
+\end{DoxyReturn}
+\hypertarget{classFCDSpline_a746674509f8ff3a5579c662b269e728f}{
+\index{FCDSpline@{FCDSpline}!GetCVs@{GetCVs}}
+\index{GetCVs@{GetCVs}!FCDSpline@{FCDSpline}}
+\subsubsection[{GetCVs}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3List}\& FCDSpline::GetCVs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_a746674509f8ff3a5579c662b269e728f}
+See above. \hypertarget{classFCDSpline_a515cfaf72ec0bf42dbc957f02f387c54}{
+\index{FCDSpline@{FCDSpline}!GetName@{GetName}}
+\index{GetName@{GetName}!FCDSpline@{FCDSpline}}
+\subsubsection[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fm::string}\& FCDSpline::GetName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_a515cfaf72ec0bf42dbc957f02f387c54}
+See above. \hypertarget{classFCDSpline_ab35c5ca0b5d061f9f0290cd34e13003b}{
+\index{FCDSpline@{FCDSpline}!GetName@{GetName}}
+\index{GetName@{GetName}!FCDSpline@{FCDSpline}}
+\subsubsection[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fm::string}\& FCDSpline::GetName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_ab35c5ca0b5d061f9f0290cd34e13003b}
+Gets the name of the spline. \begin{DoxyReturn}{Returns}
+The spline name. 
+\end{DoxyReturn}
+\hypertarget{classFCDSpline_ad8ad60a198cd8e041fde6587c3d5a9f9}{
+\index{FCDSpline@{FCDSpline}!GetSplineType@{GetSplineType}}
+\index{GetSplineType@{GetSplineType}!FCDSpline@{FCDSpline}}
+\subsubsection[{GetSplineType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FUDaeSplineType::Type} FCDSpline::GetSplineType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFCDSpline_ad8ad60a198cd8e041fde6587c3d5a9f9}
+Retrieves the type of the spline. This is the only method of the \hyperlink{classFCDSpline}{FCDSpline} interface. \begin{DoxyReturn}{Returns}
+\hyperlink{namespaceFUDaeSplineType}{FUDaeSplineType} of the spline. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFCDLinearSpline_a7ec1ac08cadd6504ad7dd2a5cbd91640}{FCDLinearSpline}, \hyperlink{classFCDBezierSpline_a83442735cc73d09922891e94a96fa373}{FCDBezierSpline}, and \hyperlink{classFCDNURBSSpline_a0d9cface270d668744063df438332592}{FCDNURBSSpline}.
+
+\hypertarget{classFCDSpline_a17b6ccfe0363f7a7c4bb871a23c10e94}{
+\index{FCDSpline@{FCDSpline}!IsClosed@{IsClosed}}
+\index{IsClosed@{IsClosed}!FCDSpline@{FCDSpline}}
+\subsubsection[{IsClosed}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDSpline::IsClosed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_a17b6ccfe0363f7a7c4bb871a23c10e94}
+Retrieves if the spline is closed or not. \begin{DoxyReturn}{Returns}
+The closed boolean value. 
+\end{DoxyReturn}
+\hypertarget{classFCDSpline_a3e7e8a8fbc8f2f515c68dec439da887f}{
+\index{FCDSpline@{FCDSpline}!SetClosed@{SetClosed}}
+\index{SetClosed@{SetClosed}!FCDSpline@{FCDSpline}}
+\subsubsection[{SetClosed}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSpline::SetClosed (
+\begin{DoxyParamCaption}
+\item[{bool}]{ closed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_a3e7e8a8fbc8f2f515c68dec439da887f}
+Sets if the spline is closed or not. 
+\begin{DoxyParams}{Parameters}
+\item[{\em closed}]The closed attribute value. \end{DoxyParams}
+\hypertarget{classFCDSpline_aa2254be48c6fe64bdd88f58fb8542348}{
+\index{FCDSpline@{FCDSpline}!SetName@{SetName}}
+\index{SetName@{SetName}!FCDSpline@{FCDSpline}}
+\subsubsection[{SetName}]{\setlength{\rightskip}{0pt plus 5cm}void FCDSpline::SetName (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ \_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDSpline_aa2254be48c6fe64bdd88f58fb8542348}
+Sets the name of the spline. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-name}]The new name. \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFCDSpline_a05d1e800f6a9036a4fcb48645f801e97}{
+\index{FCDSpline@{FCDSpline}!cvs@{cvs}}
+\index{cvs@{cvs}!FCDSpline@{FCDSpline}}
+\subsubsection[{cvs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3List} {\bf FCDSpline::cvs}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classFCDSpline_a05d1e800f6a9036a4fcb48645f801e97}
+The list of control vertices. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDGeometrySpline_8h}{FCDGeometrySpline.h}\item 
+FCollada/FCDocument/FCDGeometrySpline.cpp\end{DoxyCompactItemize}

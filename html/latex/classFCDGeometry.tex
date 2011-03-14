@@ -1,0 +1,244 @@
+\hypertarget{classFCDGeometry}{
+\section{FCDGeometry Class Reference}
+\label{classFCDGeometry}\index{FCDGeometry@{FCDGeometry}}
+}
+
+
+{\ttfamily \#include $<$FCDGeometry.h$>$}
+
+Inheritance diagram for FCDGeometry:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDGeometry}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDGeometry_a99a0bad2b82d7829e289878cb5850af9}{FCDGeometry} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDGeometry_a060ee967dd962390502b8e46789f9882}{$\sim$FCDGeometry} ()
+\item 
+void \hyperlink{classFCDGeometry_a5ee6d764e3446b9380d9386c7524991d}{SetMesh} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$data)
+\item 
+\hypertarget{classFCDGeometry_a184ceec81b8851a0b5fa06f9a4e11cdb}{
+void {\bfseries SetSpline} (\hyperlink{classFCDGeometrySpline}{FCDGeometrySpline} $\ast$data)}
+\label{classFCDGeometry_a184ceec81b8851a0b5fa06f9a4e11cdb}
+
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDGeometry_a220b50045d5a815dce0c1be69e06f926}{GetType} () const 
+\item 
+bool \hyperlink{classFCDGeometry_a2c8f918ca0734d57fc32f7b06ba2dcd1}{IsMesh} () const 
+\item 
+\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$ \hyperlink{classFCDGeometry_acf98b948f99bb3f83cb6c09db05877b5}{GetMesh} ()
+\item 
+const \hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$ \hyperlink{classFCDGeometry_acf3bf2789cfb07effcf66b8fe74d1478}{GetMesh} () const 
+\item 
+\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$ \hyperlink{classFCDGeometry_acce1627740e08dfd3b47fe0d42f9c3bb}{CreateMesh} ()
+\item 
+bool \hyperlink{classFCDGeometry_a939f0b6f72a6178fc38d8c09d2b4c5e2}{IsSpline} () const 
+\item 
+\hyperlink{classFCDGeometrySpline}{FCDGeometrySpline} $\ast$ \hyperlink{classFCDGeometry_ae0e0c4d96306a22cc89682058cbe95c0}{GetSpline} ()
+\item 
+const \hyperlink{classFCDGeometrySpline}{FCDGeometrySpline} $\ast$ \hyperlink{classFCDGeometry_a9054bad549b0e2e904210d8068b02792}{GetSpline} () const 
+\item 
+\hyperlink{classFCDGeometrySpline}{FCDGeometrySpline} $\ast$ \hyperlink{classFCDGeometry_a6f1df4bee113e6cce5cbb08b3c17e7ca}{CreateSpline} ()
+\item 
+bool \hyperlink{classFCDGeometry_a82d47e5b122836f234ff9f4e8a04bdc5}{IsPSurface} () const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDGeometry_a676d04fa311bf75b20b22aa4c6211905}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA geometry entity. There are three types of COLLADA geometry entities: meshes, NURBS surfaces and splines. NURBS Surfaces are part of the Premium Build only.$\ast$
+
+Meshes are collections of polygons where the vertices always have a position, usually have a normal to define smooth or hard edges and may be colored or textured.
+
+Parameterized surfaces (PSurface) are a list of parameterized patches defined as a sequence of weighted control points that may be associated with two knot vectors and possibly trimming curves to define a 3D surface.
+
+Note: \char`\"{}PSurfaces\char`\"{} are part of the Premium Build only.
+
+Splines are a sequence of control points used to generate a smooth curve. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDGeometry_a99a0bad2b82d7829e289878cb5850af9}{
+\index{FCDGeometry@{FCDGeometry}!FCDGeometry@{FCDGeometry}}
+\index{FCDGeometry@{FCDGeometry}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{FCDGeometry}]{\setlength{\rightskip}{0pt plus 5cm}FCDGeometry::FCDGeometry (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometry_a99a0bad2b82d7829e289878cb5850af9}
+Contructor: do not use directly. Create new geometries using the \hyperlink{classFCDLibrary_aa5cdcac5a447298d5e3816e4f8c864d0}{FCDLibrary::AddEntity} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document which owns the new geometry entity. \end{DoxyParams}
+\hypertarget{classFCDGeometry_a060ee967dd962390502b8e46789f9882}{
+\index{FCDGeometry@{FCDGeometry}!$\sim$FCDGeometry@{$\sim$FCDGeometry}}
+\index{$\sim$FCDGeometry@{$\sim$FCDGeometry}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{$\sim$FCDGeometry}]{\setlength{\rightskip}{0pt plus 5cm}FCDGeometry::$\sim$FCDGeometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDGeometry_a060ee967dd962390502b8e46789f9882}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDGeometry_a676d04fa311bf75b20b22aa4c6211905}{
+\index{FCDGeometry@{FCDGeometry}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDGeometry::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDGeometry_a676d04fa311bf75b20b22aa4c6211905}
+Copies the geometry entity into a clone. The clone may reside in another document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new geometry entity will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDGeometry_acce1627740e08dfd3b47fe0d42f9c3bb}{
+\index{FCDGeometry@{FCDGeometry}!CreateMesh@{CreateMesh}}
+\index{CreateMesh@{CreateMesh}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{CreateMesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometryMesh} $\ast$ FCDGeometry::CreateMesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometry_acce1627740e08dfd3b47fe0d42f9c3bb}
+Sets the type of this geometry to mesh and creates an empty mesh structure. This function will release any mesh or spline structure that the geometry may already contain \begin{DoxyReturn}{Returns}
+The mesh information structure. This pointer will always be valid. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometry_a6f1df4bee113e6cce5cbb08b3c17e7ca}{
+\index{FCDGeometry@{FCDGeometry}!CreateSpline@{CreateSpline}}
+\index{CreateSpline@{CreateSpline}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{CreateSpline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometrySpline} $\ast$ FCDGeometry::CreateSpline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometry_a6f1df4bee113e6cce5cbb08b3c17e7ca}
+Sets the type of this geometry to spline and creates an empty spline structure. This function will release any mesh or spline structure that the geometry may already contain. \begin{DoxyReturn}{Returns}
+The spline information structure. This pointer will always be valid. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometry_acf98b948f99bb3f83cb6c09db05877b5}{
+\index{FCDGeometry@{FCDGeometry}!GetMesh@{GetMesh}}
+\index{GetMesh@{GetMesh}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{GetMesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometryMesh}$\ast$ FCDGeometry::GetMesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometry_acf98b948f99bb3f83cb6c09db05877b5}
+Retrieves the mesh information structure for this geometry. Verify that this geometry is a mesh using the IsMesh function prior to calling this function. \begin{DoxyReturn}{Returns}
+The mesh information structure. This pointer will be NULL when the geometry is a spline or is undefined. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometry_acf3bf2789cfb07effcf66b8fe74d1478}{
+\index{FCDGeometry@{FCDGeometry}!GetMesh@{GetMesh}}
+\index{GetMesh@{GetMesh}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{GetMesh}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDGeometryMesh}$\ast$ FCDGeometry::GetMesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometry_acf3bf2789cfb07effcf66b8fe74d1478}
+See above. \hypertarget{classFCDGeometry_ae0e0c4d96306a22cc89682058cbe95c0}{
+\index{FCDGeometry@{FCDGeometry}!GetSpline@{GetSpline}}
+\index{GetSpline@{GetSpline}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{GetSpline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometrySpline}$\ast$ FCDGeometry::GetSpline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometry_ae0e0c4d96306a22cc89682058cbe95c0}
+Retrieves the spline information structure for this geometry. Verify that this geometry is a spline using the IsSpline function prior to calling this function. \begin{DoxyReturn}{Returns}
+The spline information structure. This pointer will be NULL when the geometry is a mesh or is undefined. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometry_a9054bad549b0e2e904210d8068b02792}{
+\index{FCDGeometry@{FCDGeometry}!GetSpline@{GetSpline}}
+\index{GetSpline@{GetSpline}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{GetSpline}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDGeometrySpline}$\ast$ FCDGeometry::GetSpline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometry_a9054bad549b0e2e904210d8068b02792}
+See above. \hypertarget{classFCDGeometry_a220b50045d5a815dce0c1be69e06f926}{
+\index{FCDGeometry@{FCDGeometry}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDGeometry::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDGeometry_a220b50045d5a815dce0c1be69e06f926}
+see above Retrieves the entity class type. This function is a part of the \hyperlink{classFCDEntity}{FCDEntity} interface. \begin{DoxyReturn}{Returns}
+The entity class type: GEOMETRY. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+\hypertarget{classFCDGeometry_a2c8f918ca0734d57fc32f7b06ba2dcd1}{
+\index{FCDGeometry@{FCDGeometry}!IsMesh@{IsMesh}}
+\index{IsMesh@{IsMesh}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{IsMesh}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDGeometry::IsMesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometry_a2c8f918ca0734d57fc32f7b06ba2dcd1}
+Retrieves whether the type of this geometry is a mesh. \begin{DoxyReturn}{Returns}
+Whether this geometry is a mesh. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometry_a82d47e5b122836f234ff9f4e8a04bdc5}{
+\index{FCDGeometry@{FCDGeometry}!IsPSurface@{IsPSurface}}
+\index{IsPSurface@{IsPSurface}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{IsPSurface}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDGeometry::IsPSurface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometry_a82d47e5b122836f234ff9f4e8a04bdc5}
+Retrieves whether the type of this geometry is a parameterized surface. \begin{DoxyReturn}{Returns}
+Whether this geometry is a parameterized surface. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometry_a939f0b6f72a6178fc38d8c09d2b4c5e2}{
+\index{FCDGeometry@{FCDGeometry}!IsSpline@{IsSpline}}
+\index{IsSpline@{IsSpline}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{IsSpline}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDGeometry::IsSpline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometry_a939f0b6f72a6178fc38d8c09d2b4c5e2}
+Retrieves whether the type of this geometry is a spline. \begin{DoxyReturn}{Returns}
+Whether this geometry is a spline. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometry_a5ee6d764e3446b9380d9386c7524991d}{
+\index{FCDGeometry@{FCDGeometry}!SetMesh@{SetMesh}}
+\index{SetMesh@{SetMesh}!FCDGeometry@{FCDGeometry}}
+\subsubsection[{SetMesh}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometry::SetMesh (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometryMesh} $\ast$}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometry_a5ee6d764e3446b9380d9386c7524991d}
+\mbox{[}INTERNAL\mbox{]} Set geometry information. 
+\begin{DoxyParams}{Parameters}
+\item[{\em data}]The specific geometry data structure. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDGeometry_8h}{FCDGeometry.h}\item 
+FCollada/FCDocument/FCDGeometry.cpp\end{DoxyCompactItemize}

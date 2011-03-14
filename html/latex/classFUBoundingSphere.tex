@@ -1,0 +1,270 @@
+\hypertarget{classFUBoundingSphere}{
+\section{FUBoundingSphere Class Reference}
+\label{classFUBoundingSphere}\index{FUBoundingSphere@{FUBoundingSphere}}
+}
+
+
+{\ttfamily \#include $<$FUBoundingSphere.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUBoundingSphere_aef103eeefb1810269792877638997fdf}{FUBoundingSphere} ()
+\item 
+\hyperlink{classFUBoundingSphere_a7a9d33bda02b4c6b20a533568b07e197}{FUBoundingSphere} (const \hyperlink{classFMVector3}{FMVector3} \&center, float radius)
+\item 
+\hyperlink{classFUBoundingSphere_a759fa8635bcb2b5fca33386a8a30ba08}{FUBoundingSphere} (const \hyperlink{classFUBoundingSphere}{FUBoundingSphere} \&copy)
+\item 
+\hyperlink{classFUBoundingSphere_a102e9b7c27f1139f4c5e75522df4aa55}{$\sim$FUBoundingSphere} ()
+\item 
+void \hyperlink{classFUBoundingSphere_a4298b67a087c577a70cbef81d1fa32fa}{Reset} ()
+\item 
+bool \hyperlink{classFUBoundingSphere_ab986bd085735a8466643e9d638e0a21b}{IsValid} () const 
+\item 
+const \hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFUBoundingSphere_af876a90e6e5dbc651a93f658cab8ced5}{GetCenter} () const 
+\item 
+float \hyperlink{classFUBoundingSphere_a617fa08a1821537b09d73d70955a6fcb}{GetRadius} () const 
+\item 
+void \hyperlink{classFUBoundingSphere_a9232c3e6042bd31940343c5313e9e337}{SetCenter} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-center)
+\item 
+void \hyperlink{classFUBoundingSphere_a376d82614f3888dae7312b109dea1ed8}{SetRadius} (float \_\-radius)
+\item 
+bool \hyperlink{classFUBoundingSphere_afa2a133249cec50f5d0f3175b23c9ff0}{Contains} (const \hyperlink{classFMVector3}{FMVector3} \&point) const 
+\item 
+bool \hyperlink{classFUBoundingSphere_af25dfeab95de4ac4bde2386b15c76c36}{Overlaps} (const \hyperlink{classFUBoundingSphere}{FUBoundingSphere} \&boundingSphere, \hyperlink{classFMVector3}{FMVector3} $\ast$overlapCenter=NULL) const 
+\item 
+bool \hyperlink{classFUBoundingSphere_abbfabd998defd4a3f8ec6a2570476b9b}{Overlaps} (const \hyperlink{classFUBoundingBox}{FUBoundingBox} \&boundingBox, \hyperlink{classFMVector3}{FMVector3} $\ast$overlapCenter=NULL) const 
+\item 
+void \hyperlink{classFUBoundingSphere_a9204f9a5b8784ad8e1c70fbcbe5b30bb}{Include} (const \hyperlink{classFMVector3}{FMVector3} \&point)
+\item 
+void \hyperlink{classFUBoundingSphere_aeedee8e04214d5389bc61fbf4167dd26}{Include} (const \hyperlink{classFUBoundingSphere}{FUBoundingSphere} \&boundingSphere)
+\item 
+void \hyperlink{classFUBoundingSphere_a1bf453ac6fbca95bcaff8fa6e700a9a3}{Include} (const \hyperlink{classFUBoundingBox}{FUBoundingBox} \&boundingBox)
+\item 
+\hyperlink{classFUBoundingSphere}{FUBoundingSphere} \hyperlink{classFUBoundingSphere_aafd37f8aaca9a64b02f5c8c6f8cc77f4}{Transform} (const \hyperlink{classFMMatrix44}{FMMatrix44} \&transform) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A bounding sphere. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUBoundingSphere_aef103eeefb1810269792877638997fdf}{
+\index{FUBoundingSphere@{FUBoundingSphere}!FUBoundingSphere@{FUBoundingSphere}}
+\index{FUBoundingSphere@{FUBoundingSphere}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{FUBoundingSphere}]{\setlength{\rightskip}{0pt plus 5cm}FUBoundingSphere::FUBoundingSphere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingSphere_aef103eeefb1810269792877638997fdf}
+Empty constructor. The center and radius parameters are set at the largest and most impossible values. \hypertarget{classFUBoundingSphere_a7a9d33bda02b4c6b20a533568b07e197}{
+\index{FUBoundingSphere@{FUBoundingSphere}!FUBoundingSphere@{FUBoundingSphere}}
+\index{FUBoundingSphere@{FUBoundingSphere}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{FUBoundingSphere}]{\setlength{\rightskip}{0pt plus 5cm}FUBoundingSphere::FUBoundingSphere (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ center, }
+\item[{float}]{ radius}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingSphere_a7a9d33bda02b4c6b20a533568b07e197}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em center}]The center of the bounding sphere. \item[{\em radius}]The radius of the bounding sphere. \end{DoxyParams}
+\hypertarget{classFUBoundingSphere_a759fa8635bcb2b5fca33386a8a30ba08}{
+\index{FUBoundingSphere@{FUBoundingSphere}!FUBoundingSphere@{FUBoundingSphere}}
+\index{FUBoundingSphere@{FUBoundingSphere}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{FUBoundingSphere}]{\setlength{\rightskip}{0pt plus 5cm}FUBoundingSphere::FUBoundingSphere (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingSphere} \&}]{ copy}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingSphere_a759fa8635bcb2b5fca33386a8a30ba08}
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The bounding sphere to duplicate. \end{DoxyParams}
+\hypertarget{classFUBoundingSphere_a102e9b7c27f1139f4c5e75522df4aa55}{
+\index{FUBoundingSphere@{FUBoundingSphere}!$\sim$FUBoundingSphere@{$\sim$FUBoundingSphere}}
+\index{$\sim$FUBoundingSphere@{$\sim$FUBoundingSphere}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{$\sim$FUBoundingSphere}]{\setlength{\rightskip}{0pt plus 5cm}FUBoundingSphere::$\sim$FUBoundingSphere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingSphere_a102e9b7c27f1139f4c5e75522df4aa55}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUBoundingSphere_afa2a133249cec50f5d0f3175b23c9ff0}{
+\index{FUBoundingSphere@{FUBoundingSphere}!Contains@{Contains}}
+\index{Contains@{Contains}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{Contains}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingSphere::Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ point}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingSphere_afa2a133249cec50f5d0f3175b23c9ff0}
+Retrieves whether a given point is contained within the bounding sphere. 
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]A 3D coordinate. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the given 3D coordinate is inside the bounding sphere. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingSphere_af876a90e6e5dbc651a93f658cab8ced5}{
+\index{FUBoundingSphere@{FUBoundingSphere}!GetCenter@{GetCenter}}
+\index{GetCenter@{GetCenter}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{GetCenter}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3}\& FUBoundingSphere::GetCenter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingSphere_af876a90e6e5dbc651a93f658cab8ced5}
+Retrieves the center of the bounding sphere. \begin{DoxyReturn}{Returns}
+The bounding sphere center. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingSphere_a617fa08a1821537b09d73d70955a6fcb}{
+\index{FUBoundingSphere@{FUBoundingSphere}!GetRadius@{GetRadius}}
+\index{GetRadius@{GetRadius}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{GetRadius}]{\setlength{\rightskip}{0pt plus 5cm}float FUBoundingSphere::GetRadius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingSphere_a617fa08a1821537b09d73d70955a6fcb}
+Retrieves the radius of the bounding sphere. \begin{DoxyReturn}{Returns}
+The bounding sphere radius. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingSphere_a9204f9a5b8784ad8e1c70fbcbe5b30bb}{
+\index{FUBoundingSphere@{FUBoundingSphere}!Include@{Include}}
+\index{Include@{Include}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{Include}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingSphere::Include (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ point}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingSphere_a9204f9a5b8784ad8e1c70fbcbe5b30bb}
+Extends the bounding sphere to include the given 3D coordinate. 
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]A 3D coordinate to include in the bounding sphere. \end{DoxyParams}
+\hypertarget{classFUBoundingSphere_aeedee8e04214d5389bc61fbf4167dd26}{
+\index{FUBoundingSphere@{FUBoundingSphere}!Include@{Include}}
+\index{Include@{Include}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{Include}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingSphere::Include (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingSphere} \&}]{ boundingSphere}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingSphere_aeedee8e04214d5389bc61fbf4167dd26}
+Extends the bounding sphere to include another bounding sphere. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boundingSphere}]A bounding sphere to include in this bounding sphere. \end{DoxyParams}
+\hypertarget{classFUBoundingSphere_a1bf453ac6fbca95bcaff8fa6e700a9a3}{
+\index{FUBoundingSphere@{FUBoundingSphere}!Include@{Include}}
+\index{Include@{Include}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{Include}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingSphere::Include (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingBox} \&}]{ boundingBox}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingSphere_a1bf453ac6fbca95bcaff8fa6e700a9a3}
+Extends the bounding sphere to include a bounding box. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boundingBox}]A bounding box to include in this bounding sphere. \end{DoxyParams}
+\hypertarget{classFUBoundingSphere_ab986bd085735a8466643e9d638e0a21b}{
+\index{FUBoundingSphere@{FUBoundingSphere}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{IsValid}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingSphere::IsValid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingSphere_ab986bd085735a8466643e9d638e0a21b}
+Retrieves whether the bounding sphere contains valid information. An invalid bounding sphere has a negative radius. Reseting the bounding sphere and the empty constructor generate invalid bounding spheres on purpose. \begin{DoxyReturn}{Returns}
+The validity state of the bounding sphere. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingSphere_af25dfeab95de4ac4bde2386b15c76c36}{
+\index{FUBoundingSphere@{FUBoundingSphere}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{Overlaps}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingSphere::Overlaps (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingSphere} \&}]{ boundingSphere, }
+\item[{{\bf FMVector3} $\ast$}]{ overlapCenter = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingSphere_af25dfeab95de4ac4bde2386b15c76c36}
+Retrieves whether a bounding sphere overlaps with this bounding sphere. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boundingSphere}]A bounding sphere. \item[{\em overlapCenter}]An optional pointer to retrieve the center of the overlap region. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the given bounding sphere overlaps with this bounding sphere. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingSphere_abbfabd998defd4a3f8ec6a2570476b9b}{
+\index{FUBoundingSphere@{FUBoundingSphere}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{Overlaps}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingSphere::Overlaps (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingBox} \&}]{ boundingBox, }
+\item[{{\bf FMVector3} $\ast$}]{ overlapCenter = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingSphere_abbfabd998defd4a3f8ec6a2570476b9b}
+Retrieves whether a bounding box overlaps with this bounding sphere. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boundingBox}]A bounding box. \item[{\em overlapCenter}]An optional pointer to retrieve the center of the overlap region. For this particular case, there is no guarantee that this is the exact center of the overlap region. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the given bounding box overlaps with this bounding sphere. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingSphere_a4298b67a087c577a70cbef81d1fa32fa}{
+\index{FUBoundingSphere@{FUBoundingSphere}!Reset@{Reset}}
+\index{Reset@{Reset}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingSphere::Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingSphere_a4298b67a087c577a70cbef81d1fa32fa}
+Resets the bounding sphere. The center and radius are set at the largest and most impossible values. Including a freshly reset bounding sphere to a valid bounding sphere will have no effect. \hypertarget{classFUBoundingSphere_a9232c3e6042bd31940343c5313e9e337}{
+\index{FUBoundingSphere@{FUBoundingSphere}!SetCenter@{SetCenter}}
+\index{SetCenter@{SetCenter}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{SetCenter}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingSphere::SetCenter (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-center}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingSphere_a9232c3e6042bd31940343c5313e9e337}
+Sets the center of the bounding sphere. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-center}]The new center of the bounding sphere. \end{DoxyParams}
+\hypertarget{classFUBoundingSphere_a376d82614f3888dae7312b109dea1ed8}{
+\index{FUBoundingSphere@{FUBoundingSphere}!SetRadius@{SetRadius}}
+\index{SetRadius@{SetRadius}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{SetRadius}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingSphere::SetRadius (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-radius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingSphere_a376d82614f3888dae7312b109dea1ed8}
+Sets the radius of the bounding sphere. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-radius}]The radius of the bounding sphere. \end{DoxyParams}
+\hypertarget{classFUBoundingSphere_aafd37f8aaca9a64b02f5c8c6f8cc77f4}{
+\index{FUBoundingSphere@{FUBoundingSphere}!Transform@{Transform}}
+\index{Transform@{Transform}!FUBoundingSphere@{FUBoundingSphere}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUBoundingSphere} FUBoundingSphere::Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMMatrix44} \&}]{ transform}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingSphere_aafd37f8aaca9a64b02f5c8c6f8cc77f4}
+Transform the bounding sphere into another space basis. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transform}]The transformation matrix to go into the other space basis. Skews and projections may strangely affect the resulting bounding sphere. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed bounding sphere. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUBoundingSphere_8h}{FUBoundingSphere.h}\item 
+FCollada/FUtils/FUBoundingSphere.cpp\end{DoxyCompactItemize}

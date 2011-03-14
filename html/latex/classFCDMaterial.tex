@@ -1,0 +1,250 @@
+\hypertarget{classFCDMaterial}{
+\section{FCDMaterial Class Reference}
+\label{classFCDMaterial}\index{FCDMaterial@{FCDMaterial}}
+}
+
+
+{\ttfamily \#include $<$FCDMaterial.h$>$}
+
+Inheritance diagram for FCDMaterial:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDMaterial}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDMaterial_aa4dd4881fb4a591e9362eed48718a8ad}{FCDMaterial} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDMaterial_a2243f5a10bb1d04138dd5d37ebcf397b}{$\sim$FCDMaterial} ()
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDMaterial_aeeaf2e7f96a1b3efc7daac490b1e5e8f}{GetType} () const 
+\item 
+\hyperlink{classFCDEffect}{FCDEffect} $\ast$ \hyperlink{classFCDMaterial_a1992dea70f24be2d15505e7713f144aa}{GetEffect} ()
+\item 
+const \hyperlink{classFCDEffect}{FCDEffect} $\ast$ \hyperlink{classFCDMaterial_ad9b523d46b0c8f180663ba408fe0c4c3}{GetEffect} () const 
+\item 
+\hyperlink{classFCDEntityReference}{FCDEntityReference} $\ast$ \hyperlink{classFCDMaterial_a91b8928679af106f839d3f9bc2cdf98c}{GetEffectReference} ()
+\item 
+\hypertarget{classFCDMaterial_a5e8270a47a37ee33d91aefa405f9b1ca}{
+const \hyperlink{classFCDEntityReference}{FCDEntityReference} $\ast$ {\bfseries GetEffectReference} () const }
+\label{classFCDMaterial_a5e8270a47a37ee33d91aefa405f9b1ca}
+
+\item 
+void \hyperlink{classFCDMaterial_af5a95739d8051b054f982f562887dbf4}{SetEffect} (\hyperlink{classFCDEffect}{FCDEffect} $\ast$\_\-effect)
+\item 
+\hyperlink{classfm_1_1vector}{FCDMaterialTechniqueHintList} \& \hyperlink{classFCDMaterial_a3447a9b64d3e2c9f3d11580481eed937}{GetTechniqueHints} ()
+\item 
+const \hyperlink{classfm_1_1vector}{FCDMaterialTechniqueHintList} \& \hyperlink{classFCDMaterial_ab8af6e4d2bf012eea502b6a1dfb09a95}{GetTechniqueHints} () const 
+\item 
+size\_\-t \hyperlink{classFCDMaterial_a141e00a179b153b6cccbf9b274276bb9}{GetEffectParameterCount} () const 
+\item 
+\hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$ \hyperlink{classFCDMaterial_ae3f2d3c5d8b9c9c9d96254d5fff85010}{GetEffectParameter} (size\_\-t index)
+\item 
+\hypertarget{classFCDMaterial_abd2b15ea80230dcd28a2507d6ce7604a}{
+const \hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$ {\bfseries GetEffectParameter} (size\_\-t index) const }
+\label{classFCDMaterial_abd2b15ea80230dcd28a2507d6ce7604a}
+
+\item 
+\hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$ \hyperlink{classFCDMaterial_a77dd7d65ff90827f7b4bc60ae2f05cfc}{AddEffectParameter} (uint32 type)
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDMaterial_aba6a2fcda56c0b503889a1334cb42e93}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\item 
+\hyperlink{classFCDMaterial_aecfef757d88de5bb6eec23011eaae05e}{DEPRECATED} (3.05A, not recommended) void Flatten()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA material.
+
+A COLLADA material is one of many abstraction level that defines how to render mesh polygon sets. It instantiates an effect and may overrides some of the effect parameters with its own values. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDMaterial_aa4dd4881fb4a591e9362eed48718a8ad}{
+\index{FCDMaterial@{FCDMaterial}!FCDMaterial@{FCDMaterial}}
+\index{FCDMaterial@{FCDMaterial}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{FCDMaterial}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterial::FCDMaterial (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterial_aa4dd4881fb4a591e9362eed48718a8ad}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDLibrary_aa5cdcac5a447298d5e3816e4f8c864d0}{FCDLibrary::AddEntity} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the material. \end{DoxyParams}
+\hypertarget{classFCDMaterial_a2243f5a10bb1d04138dd5d37ebcf397b}{
+\index{FCDMaterial@{FCDMaterial}!$\sim$FCDMaterial@{$\sim$FCDMaterial}}
+\index{$\sim$FCDMaterial@{$\sim$FCDMaterial}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{$\sim$FCDMaterial}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterial::$\sim$FCDMaterial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDMaterial_a2243f5a10bb1d04138dd5d37ebcf397b}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDMaterial_a77dd7d65ff90827f7b4bc60ae2f05cfc}{
+\index{FCDMaterial@{FCDMaterial}!AddEffectParameter@{AddEffectParameter}}
+\index{AddEffectParameter@{AddEffectParameter}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{AddEffectParameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameter} $\ast$ FCDMaterial::AddEffectParameter (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterial_a77dd7d65ff90827f7b4bc60ae2f05cfc}
+Adds a local effect parameter to the local list. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDEffectParameter_a1efe74553d2ed199435085c171743b08}{FCDEffectParameter::Type} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The value type of the effect parameter to create. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new local effect parameter. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterial_aba6a2fcda56c0b503889a1334cb42e93}{
+\index{FCDMaterial@{FCDMaterial}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDMaterial::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDMaterial_aba6a2fcda56c0b503889a1334cb42e93}
+Clones the material object. Everything is cloned, including the effect parameters. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The material clone. If this pointer is NULL, a new material object will be created and you will need to release the returned pointer. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDMaterial_aecfef757d88de5bb6eec23011eaae05e}{
+\index{FCDMaterial@{FCDMaterial}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterial::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{not}]{ recommended}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterial_aecfef757d88de5bb6eec23011eaae05e}
+\mbox{[}INTERNAL\mbox{]} Flattens the material, pushing all the effect parameter overrides into the effect parameter generators and moving all the parameters to the effect technique level of abstraction. To flatten the material, use the FCDMaterialInstance::FlattenMaterial function. \hypertarget{classFCDMaterial_ad9b523d46b0c8f180663ba408fe0c4c3}{
+\index{FCDMaterial@{FCDMaterial}!GetEffect@{GetEffect}}
+\index{GetEffect@{GetEffect}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{GetEffect}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffect} $\ast$ FCDMaterial::GetEffect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDMaterial_ad9b523d46b0c8f180663ba408fe0c4c3}
+See above. \hypertarget{classFCDMaterial_a1992dea70f24be2d15505e7713f144aa}{
+\index{FCDMaterial@{FCDMaterial}!GetEffect@{GetEffect}}
+\index{GetEffect@{GetEffect}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{GetEffect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffect}$\ast$ FCDMaterial::GetEffect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterial_a1992dea70f24be2d15505e7713f144aa}
+Retrieves the effect instantiated for this material. The parameters of the effect may be overwritten by this material. \begin{DoxyReturn}{Returns}
+The instantiated effect. This pointer will be NULL if the material has no rendering. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterial_ae3f2d3c5d8b9c9c9d96254d5fff85010}{
+\index{FCDMaterial@{FCDMaterial}!GetEffectParameter@{GetEffectParameter}}
+\index{GetEffectParameter@{GetEffectParameter}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{GetEffectParameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameter}$\ast$ FCDMaterial::GetEffectParameter (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterial_ae3f2d3c5d8b9c9c9d96254d5fff85010}
+Retrieves a given local effect parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]An index. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The local effect parameter at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterial_a141e00a179b153b6cccbf9b274276bb9}{
+\index{FCDMaterial@{FCDMaterial}!GetEffectParameterCount@{GetEffectParameterCount}}
+\index{GetEffectParameterCount@{GetEffectParameterCount}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{GetEffectParameterCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDMaterial::GetEffectParameterCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterial_a141e00a179b153b6cccbf9b274276bb9}
+Retrieves the number of local effect parameters \begin{DoxyReturn}{Returns}
+The number of local effect parameters. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterial_a91b8928679af106f839d3f9bc2cdf98c}{
+\index{FCDMaterial@{FCDMaterial}!GetEffectReference@{GetEffectReference}}
+\index{GetEffectReference@{GetEffectReference}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{GetEffectReference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityReference}$\ast$ FCDMaterial::GetEffectReference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterial_a91b8928679af106f839d3f9bc2cdf98c}
+Retrieves the effect reference for this material. Using the FCDEffectReference object for the effect is only useful when dealing manually with external references. \begin{DoxyReturn}{Returns}
+The entity reference for the effect. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterial_ab8af6e4d2bf012eea502b6a1dfb09a95}{
+\index{FCDMaterial@{FCDMaterial}!GetTechniqueHints@{GetTechniqueHints}}
+\index{GetTechniqueHints@{GetTechniqueHints}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{GetTechniqueHints}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDMaterialTechniqueHintList}\& FCDMaterial::GetTechniqueHints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterial_ab8af6e4d2bf012eea502b6a1dfb09a95}
+See above. \hypertarget{classFCDMaterial_a3447a9b64d3e2c9f3d11580481eed937}{
+\index{FCDMaterial@{FCDMaterial}!GetTechniqueHints@{GetTechniqueHints}}
+\index{GetTechniqueHints@{GetTechniqueHints}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{GetTechniqueHints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDMaterialTechniqueHintList}\& FCDMaterial::GetTechniqueHints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterial_a3447a9b64d3e2c9f3d11580481eed937}
+Retrieves the list of the material platform-\/technique hints. \begin{DoxyReturn}{Returns}
+The list of material platform-\/technique hints. 
+\end{DoxyReturn}
+\hypertarget{classFCDMaterial_aeeaf2e7f96a1b3efc7daac490b1e5e8f}{
+\index{FCDMaterial@{FCDMaterial}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDMaterial::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDMaterial_aeeaf2e7f96a1b3efc7daac490b1e5e8f}
+Retrieves the entity type for this class. This function is part of the \hyperlink{classFCDEntity}{FCDEntity} class interface. \begin{DoxyReturn}{Returns}
+The entity type: MATERIAL. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+\hypertarget{classFCDMaterial_af5a95739d8051b054f982f562887dbf4}{
+\index{FCDMaterial@{FCDMaterial}!SetEffect@{SetEffect}}
+\index{SetEffect@{SetEffect}!FCDMaterial@{FCDMaterial}}
+\subsubsection[{SetEffect}]{\setlength{\rightskip}{0pt plus 5cm}void FCDMaterial::SetEffect (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffect} $\ast$}]{ \_\-effect}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterial_af5a95739d8051b054f982f562887dbf4}
+Sets the effect instantiated for this material. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-effect}]The effect instantiated for this material. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDMaterial_8h}{FCDMaterial.h}\item 
+FCollada/FCDocument/FCDMaterial.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{classFCDEffectParameterSurfaceInit}{
+\section{FCDEffectParameterSurfaceInit Class Reference}
+\label{classFCDEffectParameterSurfaceInit}\index{FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectParameterSurface.h$>$}
+
+Inheritance diagram for FCDEffectParameterSurfaceInit:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.749665cm]{classFCDEffectParameterSurfaceInit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEffectParameterSurfaceInit_a6b22a5b52b38cbabb51a39c3ea42db74}{FCDEffectParameterSurfaceInit} ()
+\item 
+virtual \hyperlink{classFCDEffectParameterSurfaceInit_ac350e10e96cbb79e5f4e5b6487052280}{$\sim$FCDEffectParameterSurfaceInit} ()
+\item 
+virtual \hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892}{FCDEffectParameterSurfaceInitFactory::InitType} \hyperlink{classFCDEffectParameterSurfaceInit_ad0109233e63c892e5963a3ca67f7108f}{GetInitType} () const =0
+\item 
+virtual \hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} $\ast$ \hyperlink{classFCDEffectParameterSurfaceInit_ae3ac516773ea5ebb6838ed8a0d10d910}{Clone} (\hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} $\ast$clone) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A surface initialization method. In COLLADA 1.4.1, this information was added to support complex surface types. There are six types of initialization methods, described in the InitType enumerated type. Expect the FROM initialization type in the large majority of cases. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEffectParameterSurfaceInit_a6b22a5b52b38cbabb51a39c3ea42db74}{
+\index{FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}!FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}}
+\index{FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}!FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}}
+\subsubsection[{FCDEffectParameterSurfaceInit}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectParameterSurfaceInit::FCDEffectParameterSurfaceInit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurfaceInit_a6b22a5b52b38cbabb51a39c3ea42db74}
+Constructor: builds a new surface initialization method. \hypertarget{classFCDEffectParameterSurfaceInit_ac350e10e96cbb79e5f4e5b6487052280}{
+\index{FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}!$\sim$FCDEffectParameterSurfaceInit@{$\sim$FCDEffectParameterSurfaceInit}}
+\index{$\sim$FCDEffectParameterSurfaceInit@{$\sim$FCDEffectParameterSurfaceInit}!FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}}
+\subsubsection[{$\sim$FCDEffectParameterSurfaceInit}]{\setlength{\rightskip}{0pt plus 5cm}virtual FCDEffectParameterSurfaceInit::$\sim$FCDEffectParameterSurfaceInit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurfaceInit_ac350e10e96cbb79e5f4e5b6487052280}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEffectParameterSurfaceInit_ae3ac516773ea5ebb6838ed8a0d10d910}{
+\index{FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterSurfaceInit} $\ast$ FCDEffectParameterSurfaceInit::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectParameterSurfaceInit} $\ast$}]{ clone}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurfaceInit_ae3ac516773ea5ebb6838ed8a0d10d910}
+Copies all member variables into clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]a valid pointer to a \hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} object \end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classFCDEffectParameterSurfaceInitCube_a46ae1522ddb60038c59f9a1511157713}{FCDEffectParameterSurfaceInitCube}, \hyperlink{classFCDEffectParameterSurfaceInitVolume_a54cdfc576b05fe56d87c1dc1c2fe211a}{FCDEffectParameterSurfaceInitVolume}, \hyperlink{classFCDEffectParameterSurfaceInitFrom_a8a173445b78914cf1ed6f222ffb7ba0b}{FCDEffectParameterSurfaceInitFrom}, \hyperlink{classFCDEffectParameterSurfaceInitAsNull_a0c3b98b0d3d379c6cab95c45490ee579}{FCDEffectParameterSurfaceInitAsNull}, \hyperlink{classFCDEffectParameterSurfaceInitAsTarget_aa4c94c80a32fa40d6c7cc851d73b105e}{FCDEffectParameterSurfaceInitAsTarget}, and \hyperlink{classFCDEffectParameterSurfaceInitPlanar_a565047eceb428bb55f32c7522c39354e}{FCDEffectParameterSurfaceInitPlanar}.
+
+\hypertarget{classFCDEffectParameterSurfaceInit_ad0109233e63c892e5963a3ca67f7108f}{
+\index{FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}!GetInitType@{GetInitType}}
+\index{GetInitType@{GetInitType}!FCDEffectParameterSurfaceInit@{FCDEffectParameterSurfaceInit}}
+\subsubsection[{GetInitType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FCDEffectParameterSurfaceInitFactory::InitType} FCDEffectParameterSurfaceInit::GetInitType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurfaceInit_ad0109233e63c892e5963a3ca67f7108f}
+Retrieves the initialization type. You cannot modify this value. To change the initialization type of a surface parameter, create a new surface initialization structure of the correct type. \begin{DoxyReturn}{Returns}
+The initialization type. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFCDEffectParameterSurfaceInitCube_aa22db1c4680d97b447466bc54a492451}{FCDEffectParameterSurfaceInitCube}, \hyperlink{classFCDEffectParameterSurfaceInitVolume_ad0490f5d50b8babd77b3294277f4fde5}{FCDEffectParameterSurfaceInitVolume}, \hyperlink{classFCDEffectParameterSurfaceInitFrom_a33c2001f6d11fe519d7f5c492daec92a}{FCDEffectParameterSurfaceInitFrom}, \hyperlink{classFCDEffectParameterSurfaceInitAsNull_a91211f6657b5ca23ad0530fe803eea8b}{FCDEffectParameterSurfaceInitAsNull}, \hyperlink{classFCDEffectParameterSurfaceInitAsTarget_a45bcad832e5dd14719aa1dfbea529db2}{FCDEffectParameterSurfaceInitAsTarget}, and \hyperlink{classFCDEffectParameterSurfaceInitPlanar_a9e91a455acbcbed40b8e647aa0c56d80}{FCDEffectParameterSurfaceInitPlanar}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectParameterSurface_8h}{FCDEffectParameterSurface.h}\item 
+FCollada/FCDocument/FCDEffectParameterSurface.cpp\end{DoxyCompactItemize}

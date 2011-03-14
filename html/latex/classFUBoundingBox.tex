@@ -1,0 +1,300 @@
+\hypertarget{classFUBoundingBox}{
+\section{FUBoundingBox Class Reference}
+\label{classFUBoundingBox}\index{FUBoundingBox@{FUBoundingBox}}
+}
+
+
+{\ttfamily \#include $<$FUBoundingBox.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUBoundingBox_a157478de0b72cfbcd4427a144cfbc873}{FUBoundingBox} ()
+\item 
+\hyperlink{classFUBoundingBox_a3e100c46cd969849941192d0e8324322}{FUBoundingBox} (const \hyperlink{classFMVector3}{FMVector3} \&minimum, const \hyperlink{classFMVector3}{FMVector3} \&maximum)
+\item 
+\hyperlink{classFUBoundingBox_ac862b784a5a84556dc59ea1cbd0ffb22}{FUBoundingBox} (const \hyperlink{classFUBoundingBox}{FUBoundingBox} \&copy)
+\item 
+\hyperlink{classFUBoundingBox_a6e6e38f3765275619aa230ed70463b4f}{$\sim$FUBoundingBox} ()
+\item 
+void \hyperlink{classFUBoundingBox_ae50f545150575c8614357e742eb7472a}{Reset} ()
+\item 
+bool \hyperlink{classFUBoundingBox_a627e1be0327f83a299f6e87be82a0d5a}{IsValid} () const 
+\item 
+const \hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFUBoundingBox_a4092364ab7ec076ec5dbaa95f308baa3}{GetMin} () const 
+\item 
+const \hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFUBoundingBox_a03c5ede1bdda53d488a8c3478abe9594}{GetMax} () const 
+\item 
+void \hyperlink{classFUBoundingBox_a95e7936d3f2f5ee73107e47f3bc23af9}{SetMin} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-min)
+\item 
+void \hyperlink{classFUBoundingBox_a07b2a93e37b1aaa4ba6aa8d8f7c8c898}{SetMax} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-max)
+\item 
+\hyperlink{classFMVector3}{FMVector3} \hyperlink{classFUBoundingBox_a50ba12b293aac6ea938b230bb5820324}{GetCenter} () const 
+\item 
+bool \hyperlink{classFUBoundingBox_acf4c46b38be8d32c3a4b45e31f9a693c}{Contains} (const \hyperlink{classFMVector3}{FMVector3} \&point) const 
+\item 
+bool \hyperlink{classFUBoundingBox_a29b98f6e2b73d3e0629829bccfc528b6}{Overlaps} (const \hyperlink{classFUBoundingBox}{FUBoundingBox} \&boundingBox, \hyperlink{classFMVector3}{FMVector3} $\ast$overlapCenter=NULL) const 
+\item 
+bool \hyperlink{classFUBoundingBox_a8e2a8ccf2a084a2909e0db4a272c6652}{Overlaps} (const \hyperlink{classFUBoundingSphere}{FUBoundingSphere} \&boundingSphere, \hyperlink{classFMVector3}{FMVector3} $\ast$overlapCenter=NULL) const 
+\item 
+void \hyperlink{classFUBoundingBox_a7b98eb5721ec4998c902e76327aa9ffc}{Include} (const \hyperlink{classFMVector3}{FMVector3} \&point)
+\item 
+void \hyperlink{classFUBoundingBox_aab46c31bca962b822b9013aa50c46418}{Include} (const \hyperlink{classFUBoundingBox}{FUBoundingBox} \&boundingBox)
+\item 
+\hyperlink{classFUBoundingBox}{FUBoundingBox} \hyperlink{classFUBoundingBox_ad3ec61464fae8e3f896aa0086b259990}{Transform} (const \hyperlink{classFMMatrix44}{FMMatrix44} \&transform) const 
+\item 
+bool \hyperlink{classFUBoundingBox_a5b310e8605cfc6f88ebfea9e2b241e8f}{Equals} (const \hyperlink{classFUBoundingBox}{FUBoundingBox} \&right) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classFUBoundingBox}{FUBoundingBox} \hyperlink{classFUBoundingBox_a688baae52b9ddfab1fb0082da0bffe57}{Infinity}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An axis-\/aligned bounding box. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUBoundingBox_a157478de0b72cfbcd4427a144cfbc873}{
+\index{FUBoundingBox@{FUBoundingBox}!FUBoundingBox@{FUBoundingBox}}
+\index{FUBoundingBox@{FUBoundingBox}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{FUBoundingBox}]{\setlength{\rightskip}{0pt plus 5cm}FUBoundingBox::FUBoundingBox (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingBox_a157478de0b72cfbcd4427a144cfbc873}
+Empty constructor. The minimum and maximum bounds are set at the largest and most impossible values. \hypertarget{classFUBoundingBox_a3e100c46cd969849941192d0e8324322}{
+\index{FUBoundingBox@{FUBoundingBox}!FUBoundingBox@{FUBoundingBox}}
+\index{FUBoundingBox@{FUBoundingBox}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{FUBoundingBox}]{\setlength{\rightskip}{0pt plus 5cm}FUBoundingBox::FUBoundingBox (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ minimum, }
+\item[{const {\bf FMVector3} \&}]{ maximum}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingBox_a3e100c46cd969849941192d0e8324322}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em minimum}]The minimum bounds of the bounding box. \item[{\em maximum}]The maximum bounds of the bounding box. \end{DoxyParams}
+\hypertarget{classFUBoundingBox_ac862b784a5a84556dc59ea1cbd0ffb22}{
+\index{FUBoundingBox@{FUBoundingBox}!FUBoundingBox@{FUBoundingBox}}
+\index{FUBoundingBox@{FUBoundingBox}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{FUBoundingBox}]{\setlength{\rightskip}{0pt plus 5cm}FUBoundingBox::FUBoundingBox (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingBox} \&}]{ copy}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingBox_ac862b784a5a84556dc59ea1cbd0ffb22}
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The bounding box to duplicate. \end{DoxyParams}
+\hypertarget{classFUBoundingBox_a6e6e38f3765275619aa230ed70463b4f}{
+\index{FUBoundingBox@{FUBoundingBox}!$\sim$FUBoundingBox@{$\sim$FUBoundingBox}}
+\index{$\sim$FUBoundingBox@{$\sim$FUBoundingBox}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{$\sim$FUBoundingBox}]{\setlength{\rightskip}{0pt plus 5cm}FUBoundingBox::$\sim$FUBoundingBox (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingBox_a6e6e38f3765275619aa230ed70463b4f}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUBoundingBox_acf4c46b38be8d32c3a4b45e31f9a693c}{
+\index{FUBoundingBox@{FUBoundingBox}!Contains@{Contains}}
+\index{Contains@{Contains}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Contains}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingBox::Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ point}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingBox_acf4c46b38be8d32c3a4b45e31f9a693c}
+Retrieves whether the bounding box contains a given 3D coordinate. 
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]A 3D coordinate. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the coordinate is contained by the bounding box. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingBox_a5b310e8605cfc6f88ebfea9e2b241e8f}{
+\index{FUBoundingBox@{FUBoundingBox}!Equals@{Equals}}
+\index{Equals@{Equals}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingBox::Equals (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingBox} \&}]{ right}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingBox_a5b310e8605cfc6f88ebfea9e2b241e8f}
+Evaluates if this bounding box is equal to the one at the RHS. 
+\begin{DoxyParams}{Parameters}
+\item[{\em right}]The bounding box to test against. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the two boxes are equivalent. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingBox_a50ba12b293aac6ea938b230bb5820324}{
+\index{FUBoundingBox@{FUBoundingBox}!GetCenter@{GetCenter}}
+\index{GetCenter@{GetCenter}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{GetCenter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3} FUBoundingBox::GetCenter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingBox_a50ba12b293aac6ea938b230bb5820324}
+Retrieves the center of the bounding box. \begin{DoxyReturn}{Returns}
+The center of the bounding box. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingBox_a03c5ede1bdda53d488a8c3478abe9594}{
+\index{FUBoundingBox@{FUBoundingBox}!GetMax@{GetMax}}
+\index{GetMax@{GetMax}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{GetMax}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3}\& FUBoundingBox::GetMax (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingBox_a03c5ede1bdda53d488a8c3478abe9594}
+Retrieves the maximum bounds of the bounding box. \begin{DoxyReturn}{Returns}
+The maximum bounds. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingBox_a4092364ab7ec076ec5dbaa95f308baa3}{
+\index{FUBoundingBox@{FUBoundingBox}!GetMin@{GetMin}}
+\index{GetMin@{GetMin}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{GetMin}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3}\& FUBoundingBox::GetMin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingBox_a4092364ab7ec076ec5dbaa95f308baa3}
+Retrieves the minimum bounds of the bounding box. \begin{DoxyReturn}{Returns}
+The minimum bounds. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingBox_a7b98eb5721ec4998c902e76327aa9ffc}{
+\index{FUBoundingBox@{FUBoundingBox}!Include@{Include}}
+\index{Include@{Include}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Include}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingBox::Include (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ point}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingBox_a7b98eb5721ec4998c902e76327aa9ffc}
+Extends the bounding box to include the given 3D coordinate. 
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]A 3D coordinate to include in the bounding box. \end{DoxyParams}
+\hypertarget{classFUBoundingBox_aab46c31bca962b822b9013aa50c46418}{
+\index{FUBoundingBox@{FUBoundingBox}!Include@{Include}}
+\index{Include@{Include}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Include}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingBox::Include (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingBox} \&}]{ boundingBox}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingBox_aab46c31bca962b822b9013aa50c46418}
+Extends the bounding box to include another bounding box. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boundingBox}]A bounding box to include in this bounding box. \end{DoxyParams}
+\hypertarget{classFUBoundingBox_a627e1be0327f83a299f6e87be82a0d5a}{
+\index{FUBoundingBox@{FUBoundingBox}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{IsValid}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingBox::IsValid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingBox_a627e1be0327f83a299f6e87be82a0d5a}
+Retrieves whether the bounding box contains valid information. An invalid bounding box has a minimum value that is greater than the maximum value. Reseting the bounding box and the empty constructor generate invalid bounding boxes on purpose. \begin{DoxyReturn}{Returns}
+The validity state of the bounding box. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingBox_a29b98f6e2b73d3e0629829bccfc528b6}{
+\index{FUBoundingBox@{FUBoundingBox}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Overlaps}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingBox::Overlaps (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingBox} \&}]{ boundingBox, }
+\item[{{\bf FMVector3} $\ast$}]{ overlapCenter = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingBox_a29b98f6e2b73d3e0629829bccfc528b6}
+Retrieves whether this bounding box overlaps a given bounding box. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boundingBox}]A bounding box. \item[{\em overlapCenter}]An optional pointer to retrieve the center of the overlap region. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two bounding boxes overlap. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingBox_a8e2a8ccf2a084a2909e0db4a272c6652}{
+\index{FUBoundingBox@{FUBoundingBox}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Overlaps}]{\setlength{\rightskip}{0pt plus 5cm}bool FUBoundingBox::Overlaps (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUBoundingSphere} \&}]{ boundingSphere, }
+\item[{{\bf FMVector3} $\ast$}]{ overlapCenter = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingBox_a8e2a8ccf2a084a2909e0db4a272c6652}
+Retrieves whether this bounding box overlaps a given bounding sphere. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boundingSphere}]A bounding sphere. \item[{\em overlapCenter}]An optional pointer to retrieve the center of the overlap region. For this particular case, there is no guarantee that this is the exact center of the overlap region. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this bounding box overlaps the bounding sphere. 
+\end{DoxyReturn}
+\hypertarget{classFUBoundingBox_ae50f545150575c8614357e742eb7472a}{
+\index{FUBoundingBox@{FUBoundingBox}!Reset@{Reset}}
+\index{Reset@{Reset}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingBox::Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUBoundingBox_ae50f545150575c8614357e742eb7472a}
+Resets the bounding box. The minimum and maximum bounds are set at the largest and most impossible values. Including a freshly reset bounding box to a valid bounding box will have no effect. \hypertarget{classFUBoundingBox_a07b2a93e37b1aaa4ba6aa8d8f7c8c898}{
+\index{FUBoundingBox@{FUBoundingBox}!SetMax@{SetMax}}
+\index{SetMax@{SetMax}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{SetMax}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingBox::SetMax (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingBox_a07b2a93e37b1aaa4ba6aa8d8f7c8c898}
+Sets the maximum bounds of the bounding box. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-max}]The new maximum bounds of the bounding box. \end{DoxyParams}
+\hypertarget{classFUBoundingBox_a95e7936d3f2f5ee73107e47f3bc23af9}{
+\index{FUBoundingBox@{FUBoundingBox}!SetMin@{SetMin}}
+\index{SetMin@{SetMin}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{SetMin}]{\setlength{\rightskip}{0pt plus 5cm}void FUBoundingBox::SetMin (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-min}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUBoundingBox_a95e7936d3f2f5ee73107e47f3bc23af9}
+Sets the minimum bounds of the bounding box. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-min}]The new minimum bounds of the bounding box. \end{DoxyParams}
+\hypertarget{classFUBoundingBox_ad3ec61464fae8e3f896aa0086b259990}{
+\index{FUBoundingBox@{FUBoundingBox}!Transform@{Transform}}
+\index{Transform@{Transform}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUBoundingBox} FUBoundingBox::Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMMatrix44} \&}]{ transform}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUBoundingBox_ad3ec61464fae8e3f896aa0086b259990}
+Transform the bounding box into another space basis. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transform}]The transformation matrix to go into the other space basis. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed bounding box. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFUBoundingBox_a688baae52b9ddfab1fb0082da0bffe57}{
+\index{FUBoundingBox@{FUBoundingBox}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!FUBoundingBox@{FUBoundingBox}}
+\subsubsection[{Infinity}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUBoundingBox} {\bf FUBoundingBox::Infinity}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFUBoundingBox_a688baae52b9ddfab1fb0082da0bffe57}
+Represents an infinite bounding box, including all space. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUBoundingBox_8h}{FUBoundingBox.h}\item 
+FCollada/FUtils/FUBoundingBox.cpp\end{DoxyCompactItemize}

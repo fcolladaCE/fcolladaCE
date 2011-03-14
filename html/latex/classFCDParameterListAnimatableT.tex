@@ -1,0 +1,491 @@
+\hypertarget{classFCDParameterListAnimatableT}{
+\section{FCDParameterListAnimatableT$<$ TYPE, QUALIFIERS $>$ Class Template Reference}
+\label{classFCDParameterListAnimatableT}\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+}
+
+
+{\ttfamily \#include $<$FCDParameterAnimatable.h$>$}
+
+Inheritance diagram for FCDParameterListAnimatableT$<$ TYPE, QUALIFIERS $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFCDParameterListAnimatableT}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDParameterListAnimatableT_a0b81b992f2f835a8bfaa23b0ea9589dc}{FCDParameterListAnimatableT} (\hyperlink{classFUParameterizable}{FUParameterizable} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDParameterListAnimatableT_a9f4a5b8c5d2536ec3ec0cccfa2fb3687}{$\sim$FCDParameterListAnimatableT} ()
+\item 
+size\_\-t \hyperlink{classFCDParameterListAnimatableT_aceb730c119e53c20a664133fe961ab8b}{size} () const 
+\item 
+bool \hyperlink{classFCDParameterListAnimatableT_a71f7283cf83699a3f00873a1ab0927ad}{empty} () const 
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a50217beea0b043f5ef0869287323ce20}{resize} (size\_\-t count)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a46d7428f7b57de9529d67d25a7a83446}{resize} (size\_\-t count, const TYPE \&value)
+\item 
+const TYPE \& \hyperlink{classFCDParameterListAnimatableT_a5e20c8fe2386cdf03c1ba080d2ff6ce4}{at} (size\_\-t index) const 
+\item 
+const TYPE \& \hyperlink{classFCDParameterListAnimatableT_aca268c9026fc969b02489ebc0c61bd08}{operator\mbox{[}$\,$\mbox{]}} (size\_\-t index) const 
+\item 
+{\footnotesize template$<$class INTEGER $>$ }\\const TYPE \& \hyperlink{classFCDParameterListAnimatableT_a8cd9ee7a5a35e5f121623343101b178f}{operator\mbox{[}$\,$\mbox{]}} (INTEGER index) const 
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a3d828e2bda21011e7712083516a9e5fa}{set} (size\_\-t index, const TYPE \&value)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a79ff7af7dea1c7b3228f2a91c6673228}{insert} (size\_\-t index, const TYPE \&value)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_ac883eddf811c3e28e6c3d3000927f114}{insert} (size\_\-t index, size\_\-t count, const TYPE \&value)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a24b5749b54759b60073116c1dfac5a09}{insert} (size\_\-t index, const TYPE $\ast$values, size\_\-t count)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_aab32b0a366249c6730b68c6e463fc6f0}{erase} (size\_\-t index)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_ae5c50370512e97de76a8bfdb1e84ec0b}{erase} (const TYPE \&value)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a27389c75812a668ffa279a7048506c16}{erase} (size\_\-t start, size\_\-t end)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a2476ccf7c86a6addd52c1f354f8a03f1}{clear} ()
+\item 
+size\_\-t \hyperlink{classFCDParameterListAnimatableT_aa97ba0283cc76be31d9969204038ee41}{find} (const TYPE \&value) const 
+\item 
+bool \hyperlink{classFCDParameterListAnimatableT_af0e10af58090581ed816c0e8326af21f}{contains} (const TYPE \&value) const 
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_afed25c181c67da98e3b9db31b6f1edc7}{push\_\-back} (const TYPE \&value)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a9158941c8900e9428c363735235bdec2}{push\_\-front} (const TYPE \&value)
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_a5d3bc56ecdb5c60b7f0884a1f4d51e46}{pop\_\-back} ()
+\item 
+void \hyperlink{classFCDParameterListAnimatableT_af480fd99170eec5720efcbc1daecc544}{pop\_\-front} ()
+\item 
+TYPE \& \hyperlink{classFCDParameterListAnimatableT_a5e77a9881dbb6856a40959c0615fb44e}{front} ()
+\item 
+const TYPE \& \hyperlink{classFCDParameterListAnimatableT_a5c5eaeea684867c854529621bfa59f68}{front} () const 
+\item 
+TYPE \& \hyperlink{classFCDParameterListAnimatableT_afad7bd49a475b4d6f9e307fc817abd95}{back} ()
+\item 
+const TYPE \& \hyperlink{classFCDParameterListAnimatableT_a013b67ed4471cf351fb1a9bfd778ffa0}{back} () const 
+\item 
+TYPE $\ast$$\ast$ \hyperlink{classFCDParameterListAnimatableT_ae8033d46d76133b4c56e1d76c5fd9f0c}{GetDataPtr} ()
+\item 
+const TYPE $\ast$$\ast$ \hyperlink{classFCDParameterListAnimatableT_a461d7b626d8eb71b45d8f9d3530430b0}{GetDataPtr} () const 
+\item 
+\hyperlink{classfm_1_1vector}{fm::vector}$<$ TYPE, true $>$ \& \hyperlink{classFCDParameterListAnimatableT_a73e6181e1aa73fb84ad9107e5e943059}{GetDataList} ()
+\item 
+const \hyperlink{classfm_1_1vector}{fm::vector}$<$ TYPE, true $>$ \& \hyperlink{classFCDParameterListAnimatableT_a133c55a794a99b1f13652de9a637e3d9}{GetDataList} () const 
+\item 
+size\_\-t \hyperlink{classFCDParameterListAnimatableT_a5455ddc6c00d01a7261444a8eeee5ef6}{capacity} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDParameterListAnimatableT_a2f498f408d7fba3ea732d93ef336d487}{CreateAnimated} (size\_\-t index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class TYPE, int QUALIFIERS$>$ class FCDParameterListAnimatableT$<$ TYPE, QUALIFIERS $>$}
+
+A typed animatable \hyperlink{namespaceFCollada}{FCollada} value parameter. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDParameterListAnimatableT_a0b81b992f2f835a8bfaa23b0ea9589dc}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{FCDParameterListAnimatableT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::{\bf FCDParameterListAnimatableT} (
+\begin{DoxyParamCaption}
+\item[{{\bf FUParameterizable} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a0b81b992f2f835a8bfaa23b0ea9589dc}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em parent}]The \hyperlink{namespaceFCollada}{FCollada} object that owns this parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a9f4a5b8c5d2536ec3ec0cccfa2fb3687}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!$\sim$FCDParameterListAnimatableT@{$\sim$FCDParameterListAnimatableT}}
+\index{$\sim$FCDParameterListAnimatableT@{$\sim$FCDParameterListAnimatableT}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{$\sim$FCDParameterListAnimatableT}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::$\sim${\bf FCDParameterListAnimatableT} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a9f4a5b8c5d2536ec3ec0cccfa2fb3687}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDParameterListAnimatableT_a5e20c8fe2386cdf03c1ba080d2ff6ce4}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!at@{at}}
+\index{at@{at}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ const TYPE\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::at (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a5e20c8fe2386cdf03c1ba080d2ff6ce4}
+Retrieves one value held by this parameter. Important: it is intentional that you cannot modify a list value using these function. Instead, use the set function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the value held by this parameter. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of values in this parameter. 
+\end{DoxyReturn}
+\hypertarget{classFCDParameterListAnimatableT_afad7bd49a475b4d6f9e307fc817abd95}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!back@{back}}
+\index{back@{back}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ TYPE\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_afad7bd49a475b4d6f9e307fc817abd95}
+Retrieves the last element from this list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]last element in the list parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a013b67ed4471cf351fb1a9bfd778ffa0}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!back@{back}}
+\index{back@{back}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ const TYPE\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a013b67ed4471cf351fb1a9bfd778ffa0}
+See above. \hypertarget{classFCDParameterListAnimatableT_a5455ddc6c00d01a7261444a8eeee5ef6}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!capacity@{capacity}}
+\index{capacity@{capacity}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{capacity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ size\_\-t {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a5455ddc6c00d01a7261444a8eeee5ef6}
+Retrieves the number of pre-\/allocated values reserved by this value list. \begin{DoxyReturn}{Returns}
+The number of pre-\/allocated values reserved. 
+\end{DoxyReturn}
+\hypertarget{classFCDParameterListAnimatableT_a2476ccf7c86a6addd52c1f354f8a03f1}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!clear@{clear}}
+\index{clear@{clear}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a2476ccf7c86a6addd52c1f354f8a03f1}
+Removes all the element of the list parameter. \hypertarget{classFCDParameterListAnimatableT_af0e10af58090581ed816c0e8326af21f}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!contains@{contains}}
+\index{contains@{contains}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ bool {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::contains (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_af0e10af58090581ed816c0e8326af21f}
+Retrieves whether the list parameter contains a specific value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]A value. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the given value is contained within the list parameter. 
+\end{DoxyReturn}
+\hypertarget{classFCDParameterListAnimatableT_a2f498f408d7fba3ea732d93ef336d487}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!CreateAnimated@{CreateAnimated}}
+\index{CreateAnimated@{CreateAnimated}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{CreateAnimated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimated} $\ast$ FCDParameterListAnimatableColor4::CreateAnimated (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a2f498f408d7fba3ea732d93ef336d487}
+Created the correct \hyperlink{classFCDAnimated}{FCDAnimated} helper object, done by request from the parent class. \begin{DoxyReturn}{Returns}
+A newly-\/created \hyperlink{classFCDAnimated}{FCDAnimated} helper object. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDParameterListAnimatable_ae26241a1e4214a96f9c7735712d65ab0}{FCDParameterListAnimatable}.
+
+\hypertarget{classFCDParameterListAnimatableT_a71f7283cf83699a3f00873a1ab0927ad}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!empty@{empty}}
+\index{empty@{empty}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ bool {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a71f7283cf83699a3f00873a1ab0927ad}
+Retrieves whether this list parameter contains values. \begin{DoxyReturn}{Returns}
+Whether the list parameter is empty. 
+\end{DoxyReturn}
+\hypertarget{classFCDParameterListAnimatableT_aab32b0a366249c6730b68c6e463fc6f0}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!erase@{erase}}
+\index{erase@{erase}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::erase (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_aab32b0a366249c6730b68c6e463fc6f0}
+Removes one element from this list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the element to remove. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_ae5c50370512e97de76a8bfdb1e84ec0b}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!erase@{erase}}
+\index{erase@{erase}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::erase (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_ae5c50370512e97de76a8bfdb1e84ec0b}
+Removes one element from this list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The value to remove. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a27389c75812a668ffa279a7048506c16}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!erase@{erase}}
+\index{erase@{erase}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::erase (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ start, }
+\item[{size\_\-t}]{ end}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a27389c75812a668ffa279a7048506c16}
+Removes a contiguous series of elements from this list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em start}]The index of the first element to remove. \item[{\em end}]The index past the last element to remove. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_aa97ba0283cc76be31d9969204038ee41}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!find@{find}}
+\index{find@{find}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ size\_\-t {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::find (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_aa97ba0283cc76be31d9969204038ee41}
+Retrieves the index of an existing value in this parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The value to look for. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the given value within the parameter. The size of the list is returned if the value is not found. 
+\end{DoxyReturn}
+\hypertarget{classFCDParameterListAnimatableT_a5e77a9881dbb6856a40959c0615fb44e}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!front@{front}}
+\index{front@{front}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ TYPE\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a5e77a9881dbb6856a40959c0615fb44e}
+Retrieves the first element from this list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]first element in the list parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a5c5eaeea684867c854529621bfa59f68}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!front@{front}}
+\index{front@{front}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ const TYPE\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a5c5eaeea684867c854529621bfa59f68}
+See above. \hypertarget{classFCDParameterListAnimatableT_a133c55a794a99b1f13652de9a637e3d9}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!GetDataList@{GetDataList}}
+\index{GetDataList@{GetDataList}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{GetDataList}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ const {\bf fm::vector}$<$TYPE, true$>$\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::GetDataList (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a133c55a794a99b1f13652de9a637e3d9}
+See above. \hypertarget{classFCDParameterListAnimatableT_a73e6181e1aa73fb84ad9107e5e943059}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!GetDataList@{GetDataList}}
+\index{GetDataList@{GetDataList}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{GetDataList}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ {\bf fm::vector}$<$TYPE, true$>$\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::GetDataList (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a73e6181e1aa73fb84ad9107e5e943059}
+\mbox{[}INTERNAL\mbox{]} Retrieves a reference to the inner value list. Not recommended. \begin{DoxyReturn}{Returns}
+A reference to the value list. 
+\end{DoxyReturn}
+\hypertarget{classFCDParameterListAnimatableT_a461d7b626d8eb71b45d8f9d3530430b0}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!GetDataPtr@{GetDataPtr}}
+\index{GetDataPtr@{GetDataPtr}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{GetDataPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ const TYPE$\ast$$\ast$ {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::GetDataPtr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a461d7b626d8eb71b45d8f9d3530430b0}
+See above. \hypertarget{classFCDParameterListAnimatableT_ae8033d46d76133b4c56e1d76c5fd9f0c}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!GetDataPtr@{GetDataPtr}}
+\index{GetDataPtr@{GetDataPtr}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{GetDataPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ TYPE$\ast$$\ast$ {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::GetDataPtr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_ae8033d46d76133b4c56e1d76c5fd9f0c}
+\mbox{[}INTERNAL\mbox{]} Retrieves a pointer to the source data. Not recommended. \begin{DoxyReturn}{Returns}
+A pointer to the source data. 
+\end{DoxyReturn}
+\hypertarget{classFCDParameterListAnimatableT_a79ff7af7dea1c7b3228f2a91c6673228}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!insert@{insert}}
+\index{insert@{insert}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::insert (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index, }
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a79ff7af7dea1c7b3228f2a91c6673228}
+Inserts a value to this parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]Where to insert the value. \item[{\em value}]The values to insert to this parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a24b5749b54759b60073116c1dfac5a09}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!insert@{insert}}
+\index{insert@{insert}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::insert (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index, }
+\item[{const TYPE $\ast$}]{ values, }
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a24b5749b54759b60073116c1dfac5a09}
+Inserts multiple values to this list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]Where to insert the values. \item[{\em values}]A static list of values. \item[{\em count}]The number of values to insert. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_ac883eddf811c3e28e6c3d3000927f114}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!insert@{insert}}
+\index{insert@{insert}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::insert (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index, }
+\item[{size\_\-t}]{ count, }
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_ac883eddf811c3e28e6c3d3000927f114}
+Inserts one value, multiple times, to this list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]Where to insert the value. \item[{\em count}]The number of times to insert this value. \item[{\em value}]The value to insert to this parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_aca268c9026fc969b02489ebc0c61bd08}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ const TYPE\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_aca268c9026fc969b02489ebc0c61bd08}
+See above. \hypertarget{classFCDParameterListAnimatableT_a8cd9ee7a5a35e5f121623343101b178f}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ template$<$class INTEGER $>$ const TYPE\& {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{INTEGER}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_a8cd9ee7a5a35e5f121623343101b178f}
+See above. \hypertarget{classFCDParameterListAnimatableT_a5d3bc56ecdb5c60b7f0884a1f4d51e46}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!pop\_\-back@{pop\_\-back}}
+\index{pop\_\-back@{pop\_\-back}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{pop\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::pop\_\-back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a5d3bc56ecdb5c60b7f0884a1f4d51e46}
+Removes the value at the end of the list parameter. \hypertarget{classFCDParameterListAnimatableT_af480fd99170eec5720efcbc1daecc544}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!pop\_\-front@{pop\_\-front}}
+\index{pop\_\-front@{pop\_\-front}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{pop\_\-front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::pop\_\-front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_af480fd99170eec5720efcbc1daecc544}
+Removes the value at the end of the list parameter. \hypertarget{classFCDParameterListAnimatableT_afed25c181c67da98e3b9db31b6f1edc7}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!push\_\-back@{push\_\-back}}
+\index{push\_\-back@{push\_\-back}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{push\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::push\_\-back (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_afed25c181c67da98e3b9db31b6f1edc7}
+Appends one value to this parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The value to add to this parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a9158941c8900e9428c363735235bdec2}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!push\_\-front@{push\_\-front}}
+\index{push\_\-front@{push\_\-front}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{push\_\-front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::push\_\-front (
+\begin{DoxyParamCaption}
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a9158941c8900e9428c363735235bdec2}
+Adds one value at the beginning of this list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The value to add to this parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a46d7428f7b57de9529d67d25a7a83446}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!resize@{resize}}
+\index{resize@{resize}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::resize (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count, }
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a46d7428f7b57de9529d67d25a7a83446}
+Sets the number of values contained in the list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The new number of values contained in the parameter. \item[{\em value}]The default value to insert in the new slots of the list parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a50217beea0b043f5ef0869287323ce20}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!resize@{resize}}
+\index{resize@{resize}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::resize (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a50217beea0b043f5ef0869287323ce20}
+Sets the number of values contained in the list parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The new number of values contained in the parameter. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_a3d828e2bda21011e7712083516a9e5fa}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!set@{set}}
+\index{set@{set}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ void {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::set (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index, }
+\item[{const TYPE \&}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDParameterListAnimatableT_a3d828e2bda21011e7712083516a9e5fa}
+Modifies one existing value held by this parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the value to change. \item[{\em value}]The new value. \end{DoxyParams}
+\hypertarget{classFCDParameterListAnimatableT_aceb730c119e53c20a664133fe961ab8b}{
+\index{FCDParameterListAnimatableT@{FCDParameterListAnimatableT}!size@{size}}
+\index{size@{size}!FCDParameterListAnimatableT@{FCDParameterListAnimatableT}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TYPE , int QUALIFIERS$>$ size\_\-t {\bf FCDParameterListAnimatableT}$<$ TYPE, QUALIFIERS $>$::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDParameterListAnimatableT_aceb730c119e53c20a664133fe961ab8b}
+Retrieves the number of values in this parameter list. \begin{DoxyReturn}{Returns}
+The number of values. See above. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDParameterAnimatable_8h}{FCDParameterAnimatable.h}\item 
+FCollada/FCDocument/FCDParameterAnimatable.cpp\item 
+FCollada/FCDocument/FCDParameterAnimatable.hpp\end{DoxyCompactItemize}

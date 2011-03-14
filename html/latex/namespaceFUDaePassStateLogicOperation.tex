@@ -1,0 +1,161 @@
+\hypertarget{namespaceFUDaePassStateLogicOperation}{
+\section{FUDaePassStateLogicOperation Namespace Reference}
+\label{namespaceFUDaePassStateLogicOperation}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4}{Operation} \{ \par
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a57fe51ba8e46d1af947e49125c86d6ba}{CLEAR} =  0x1500, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4ae6a18101026e543b0f0c1e9c61f1a8dc}{AND} =  0x1501, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4af0e926d1bd54a09b3babd232b4e3ac6a}{AND\_\-REVERSE} =  0x1502, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a3a74b05e051f5c3da778a827a9b50d09}{COPY} =  0x1503, 
+\par
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4af5ce2a336afa8ae50d89bb99cea0c786}{AND\_\-INVERTED} =  0x1504, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4acc120163cde252866be81482a8c5d1ac}{NOOP} =  0x1505, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a144296c6ba8144d626a322557d2a339d}{XOR} =  0x1506, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a182f873c530c3731d1a9c781a0c5b5c5}{OR} =  0x1507, 
+\par
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a11c91d79a1ad252f9017399f7dc3fc95}{NOR} =  0x1508, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4aa5d735418457d2b56b7eb3c443fbaf76}{EQUIV} =  0x1509, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a3de8f09338b7ce45586049881542febf}{INVERT} =  0x150A, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a975382aa53d085281e8d993332696e27}{OR\_\-REVERSE} =  0x150B, 
+\par
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a89827664ab4b018f0014339ae0b250e1}{COPY\_\-INVERTED} =  0x150C, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4ad08291c1608309750aea3b424d8a203d}{NAND} =  0x150E, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a44d463b189efb43ee17ccf3cc8557f9d}{SET} =  0x150F, 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a7b5dcfd2d11bff19a034cbf299a37f34}{INVALID}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4}{Operation} \hyperlink{namespaceFUDaePassStateLogicOperation_ac8f2106e1ee7e6e799cae5f18985a2a0}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaePassStateLogicOperation_a4e918bedc26709acf27daf0925696411}{ToString} (\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4}{Operation} op)
+\item 
+\hyperlink{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4}{Operation} \hyperlink{namespaceFUDaePassStateLogicOperation_a717ce8f18786a35406920d05c6815fca}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The render state logic operations. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4}{
+\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!Operation@{Operation}}
+\index{Operation@{Operation}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}
+\subsubsection[{Operation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUDaePassStateLogicOperation::Operation}}}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4}
+A render state logical operation. The usage of the operation depends on the render state. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CLEAR@{CLEAR}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!CLEAR@{CLEAR}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a57fe51ba8e46d1af947e49125c86d6ba}{
+CLEAR}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a57fe51ba8e46d1af947e49125c86d6ba}
+}]dest\_\-value = 0. \index{AND@{AND}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!AND@{AND}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4ae6a18101026e543b0f0c1e9c61f1a8dc}{
+AND}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4ae6a18101026e543b0f0c1e9c61f1a8dc}
+}]dest\_\-value = dest\_\-value \& source\_\-value. \index{AND\_\-REVERSE@{AND\_\-REVERSE}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!AND\_\-REVERSE@{AND\_\-REVERSE}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4af0e926d1bd54a09b3babd232b4e3ac6a}{
+AND\_\-REVERSE}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4af0e926d1bd54a09b3babd232b4e3ac6a}
+}]? \index{COPY@{COPY}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!COPY@{COPY}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a3a74b05e051f5c3da778a827a9b50d09}{
+COPY}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a3a74b05e051f5c3da778a827a9b50d09}
+}]dest\_\-value = source\_\-value. \index{AND\_\-INVERTED@{AND\_\-INVERTED}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!AND\_\-INVERTED@{AND\_\-INVERTED}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4af5ce2a336afa8ae50d89bb99cea0c786}{
+AND\_\-INVERTED}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4af5ce2a336afa8ae50d89bb99cea0c786}
+}]? \index{NOOP@{NOOP}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!NOOP@{NOOP}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4acc120163cde252866be81482a8c5d1ac}{
+NOOP}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4acc120163cde252866be81482a8c5d1ac}
+}]No operation. \index{XOR@{XOR}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!XOR@{XOR}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a144296c6ba8144d626a322557d2a339d}{
+XOR}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a144296c6ba8144d626a322557d2a339d}
+}]dest\_\-value = dest\_\-value $^\wedge$ source\_\-value. \index{OR@{OR}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!OR@{OR}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a182f873c530c3731d1a9c781a0c5b5c5}{
+OR}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a182f873c530c3731d1a9c781a0c5b5c5}
+}]dest\_\-value = dest\_\-value $|$ source\_\-value. \index{NOR@{NOR}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!NOR@{NOR}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a11c91d79a1ad252f9017399f7dc3fc95}{
+NOR}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a11c91d79a1ad252f9017399f7dc3fc95}
+}]dest\_\-value = dest\_\-value $|$ $\sim$(source\_\-value). \index{EQUIV@{EQUIV}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!EQUIV@{EQUIV}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4aa5d735418457d2b56b7eb3c443fbaf76}{
+EQUIV}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4aa5d735418457d2b56b7eb3c443fbaf76}
+}]dest\_\-value = dest\_\-value $|$ source\_\-value. \index{INVERT@{INVERT}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!INVERT@{INVERT}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a3de8f09338b7ce45586049881542febf}{
+INVERT}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a3de8f09338b7ce45586049881542febf}
+}]dest\_\-value = $\sim$(dest\_\-value). \index{OR\_\-REVERSE@{OR\_\-REVERSE}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!OR\_\-REVERSE@{OR\_\-REVERSE}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a975382aa53d085281e8d993332696e27}{
+OR\_\-REVERSE}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a975382aa53d085281e8d993332696e27}
+}]? \index{COPY\_\-INVERTED@{COPY\_\-INVERTED}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!COPY\_\-INVERTED@{COPY\_\-INVERTED}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a89827664ab4b018f0014339ae0b250e1}{
+COPY\_\-INVERTED}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a89827664ab4b018f0014339ae0b250e1}
+}]? \index{NAND@{NAND}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!NAND@{NAND}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4ad08291c1608309750aea3b424d8a203d}{
+NAND}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4ad08291c1608309750aea3b424d8a203d}
+}]dest\_\-value = dest\_\-value \& $\sim$(source\_\-value). \index{SET@{SET}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!SET@{SET}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a44d463b189efb43ee17ccf3cc8557f9d}{
+SET}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a44d463b189efb43ee17ccf3cc8557f9d}
+}]? \index{INVALID@{INVALID}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a7b5dcfd2d11bff19a034cbf299a37f34}{
+INVALID}
+\label{namespaceFUDaePassStateLogicOperation_aabe5119ffa94a96a4936012f067b7ff4a7b5dcfd2d11bff19a034cbf299a37f34}
+}]An invalid logical operation. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaePassStateLogicOperation_ac8f2106e1ee7e6e799cae5f18985a2a0}{
+\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf Operation} FUDaePassStateLogicOperation::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateLogicOperation_ac8f2106e1ee7e6e799cae5f18985a2a0}
+Converts the COLLADA render state logic operation type string to the logic operation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The render state logic operation type string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The logic operation. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaePassStateLogicOperation_a717ce8f18786a35406920d05c6815fca}{
+\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operation} FUDaePassStateLogicOperation::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaePassStateLogicOperation_a717ce8f18786a35406920d05c6815fca}
+See above. \hypertarget{namespaceFUDaePassStateLogicOperation_a4e918bedc26709acf27daf0925696411}{
+\index{FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaePassStateLogicOperation@{FUDaePassStateLogicOperation}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaePassStateLogicOperation::ToString (
+\begin{DoxyParamCaption}
+\item[{Operation}]{ op}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateLogicOperation_a4e918bedc26709acf27daf0925696411}
+Converts the logic operation to its COLLADA render state logic operation type string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em op}]The logic operation. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state logic operation type string. 
+\end{DoxyReturn}

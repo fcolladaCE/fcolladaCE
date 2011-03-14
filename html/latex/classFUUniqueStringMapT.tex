@@ -1,0 +1,78 @@
+\hypertarget{classFUUniqueStringMapT}{
+\section{FUUniqueStringMapT$<$ CH $>$ Class Template Reference}
+\label{classFUUniqueStringMapT}\index{FUUniqueStringMapT@{FUUniqueStringMapT}}
+}
+
+
+{\ttfamily \#include $<$FUUniqueStringMap.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classFUUniqueStringMapT_abdfdcbeda8a3788be1ec437a83c1dde5}{insert} (\hyperlink{classfm_1_1stringT}{fm::stringT}$<$ CH $>$ \&wantedStr)
+\item 
+void \hyperlink{classFUUniqueStringMapT_ab68661fbfa6c780112fb8c621bf57187}{insert} (const \hyperlink{classfm_1_1stringT}{fm::stringT}$<$ CH $>$ \&wantedStr)
+\item 
+bool \hyperlink{classFUUniqueStringMapT_ac433739a6f7850cdcf306f71374ffe75}{contains} (const \hyperlink{classfm_1_1stringT}{fm::stringT}$<$ CH $>$ \&str) const 
+\item 
+void \hyperlink{classFUUniqueStringMapT_a86514dd7886d28016eedcd6189f45ca4}{erase} (const \hyperlink{classfm_1_1stringT}{fm::stringT}$<$ CH $>$ \&str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class CH$>$ class FUUniqueStringMapT$<$ CH $>$}
+
+A set of unique strings. This class adds three functions to the STL map in order to keep the strings inside unique: AddUniqueString, Exists and Erase. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUUniqueStringMapT_ac433739a6f7850cdcf306f71374ffe75}{
+\index{FUUniqueStringMapT@{FUUniqueStringMapT}!contains@{contains}}
+\index{contains@{contains}!FUUniqueStringMapT@{FUUniqueStringMapT}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class CH $>$ bool {\bf FUUniqueStringMapT}$<$ CH $>$::contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::stringT}$<$ CH $>$ \&}]{ str}
+\end{DoxyParamCaption}
+) const}}
+\label{classFUUniqueStringMapT_ac433739a6f7850cdcf306f71374ffe75}
+Retrieves whether a given string is contained within the map. 
+\begin{DoxyParams}{Parameters}
+\item[{\em str}]The string. \end{DoxyParams}
+\hypertarget{classFUUniqueStringMapT_a86514dd7886d28016eedcd6189f45ca4}{
+\index{FUUniqueStringMapT@{FUUniqueStringMapT}!erase@{erase}}
+\index{erase@{erase}!FUUniqueStringMapT@{FUUniqueStringMapT}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class CH $>$ void {\bf FUUniqueStringMapT}$<$ CH $>$::erase (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::stringT}$<$ CH $>$ \&}]{ str}
+\end{DoxyParamCaption}
+)}}
+\label{classFUUniqueStringMapT_a86514dd7886d28016eedcd6189f45ca4}
+Erases a string from the map. 
+\begin{DoxyParams}{Parameters}
+\item[{\em str}]A string contained within the map. \end{DoxyParams}
+\hypertarget{classFUUniqueStringMapT_abdfdcbeda8a3788be1ec437a83c1dde5}{
+\index{FUUniqueStringMapT@{FUUniqueStringMapT}!insert@{insert}}
+\index{insert@{insert}!FUUniqueStringMapT@{FUUniqueStringMapT}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class CH $>$ void {\bf FUUniqueStringMapT}$<$ CH $>$::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf fm::stringT}$<$ CH $>$ \&}]{ wantedStr}
+\end{DoxyParamCaption}
+)}}
+\label{classFUUniqueStringMapT_abdfdcbeda8a3788be1ec437a83c1dde5}
+Adds a string to the map. If the string isn't unique, it will be modified in order to make it unique. 
+\begin{DoxyParams}{Parameters}
+\item[{\em wantedStr}]The string to add. This reference will be directly modified to hold the actual unique string added to the map. \end{DoxyParams}
+\hypertarget{classFUUniqueStringMapT_ab68661fbfa6c780112fb8c621bf57187}{
+\index{FUUniqueStringMapT@{FUUniqueStringMapT}!insert@{insert}}
+\index{insert@{insert}!FUUniqueStringMapT@{FUUniqueStringMapT}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class CH $>$ void {\bf FUUniqueStringMapT}$<$ CH $>$::insert (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::stringT}$<$ CH $>$ \&}]{ wantedStr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUUniqueStringMapT_ab68661fbfa6c780112fb8c621bf57187}
+See above. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUUniqueStringMap_8h}{FUUniqueStringMap.h}\item 
+FCollada/FUtils/FUUniqueStringMap.cpp\end{DoxyCompactItemize}

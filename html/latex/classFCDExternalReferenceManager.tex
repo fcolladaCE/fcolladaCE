@@ -1,0 +1,204 @@
+\hypertarget{classFCDExternalReferenceManager}{
+\section{FCDExternalReferenceManager Class Reference}
+\label{classFCDExternalReferenceManager}\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+}
+
+
+{\ttfamily \#include $<$FCDExternalReferenceManager.h$>$}
+
+Inheritance diagram for FCDExternalReferenceManager:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDExternalReferenceManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDExternalReferenceManager_a1a2d6c38874ca05e641e7435d2c99d15}{FCDExternalReferenceManager} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDExternalReferenceManager_a54c82f52411a67e27ed085257648a3de}{$\sim$FCDExternalReferenceManager} ()
+\item 
+\hyperlink{classFCDPlaceHolder}{FCDPlaceHolder} $\ast$ \hyperlink{classFCDExternalReferenceManager_a71f3dc8d19a92f32aceb77886563b98d}{AddPlaceHolder} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+\hyperlink{classFCDPlaceHolder}{FCDPlaceHolder} $\ast$ \hyperlink{classFCDExternalReferenceManager_af4a273a9e4a40647e5e874f7e9fa4ede}{AddPlaceHolder} (const \hyperlink{classfm_1_1stringT}{fstring} \&fileUrl)
+\item 
+size\_\-t \hyperlink{classFCDExternalReferenceManager_ac79e8b1f68b26f8f3f40afd82e7c923b}{GetPlaceHolderCount} () const 
+\item 
+\hyperlink{classFCDPlaceHolder}{FCDPlaceHolder} $\ast$ \hyperlink{classFCDExternalReferenceManager_a6a59d88cc384c0f515ce138b3a8f3f07}{GetPlaceHolder} (size\_\-t index)
+\item 
+const \hyperlink{classFCDPlaceHolder}{FCDPlaceHolder} $\ast$ \hyperlink{classFCDExternalReferenceManager_a33e290a56348fce8f2d0cfcbff132f76}{GetPlaceHolder} (size\_\-t index) const 
+\item 
+const \hyperlink{classFCDPlaceHolder}{FCDPlaceHolder} $\ast$ \hyperlink{classFCDExternalReferenceManager_adbdae14f6202150d11c0dd8bda42ad35}{FindPlaceHolder} (const \hyperlink{classfm_1_1stringT}{fstring} \&fileUrl) const 
+\item 
+\hyperlink{classFCDPlaceHolder}{FCDPlaceHolder} $\ast$ \hyperlink{classFCDExternalReferenceManager_a988da44bbddbb3b99c0e567590d3ba6d}{FindPlaceHolder} (const \hyperlink{classfm_1_1stringT}{fstring} \&fileUrl)
+\item 
+const \hyperlink{classFCDPlaceHolder}{FCDPlaceHolder} $\ast$ \hyperlink{classFCDExternalReferenceManager_a578f4a2cdc248fb0a596f0c0210f268e}{FindPlaceHolder} (const \hyperlink{classFCDocument}{FCDocument} $\ast$document) const 
+\item 
+\hyperlink{classFCDPlaceHolder}{FCDPlaceHolder} $\ast$ \hyperlink{classFCDExternalReferenceManager_acd9ce00d9efa5e4964f5baae12c6b4aa}{FindPlaceHolder} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classFCDExternalReferenceManager_a486322014ffd3a7acf3bd5aef039e05e}{RegisterLoadedDocument} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{namespaceFCollada}{FCollada} document external reference manager.
+
+Each \hyperlink{namespaceFCollada}{FCollada} document has one and only one external reference manager. It keeps track of all the external document's, whether they are loaded or not.
+
+By default, all external references are handled automatically. You will have to access this structure only for informational purposes or if you have disabled the automatic de-\/referencing feature using the \hyperlink{namespaceFCollada_a05ea72389195718910a74f5cd967fb47}{FCollada::SetDereferenceFlag} function. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDExternalReferenceManager_a1a2d6c38874ca05e641e7435d2c99d15}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{FCDExternalReferenceManager}]{\setlength{\rightskip}{0pt plus 5cm}FCDExternalReferenceManager::FCDExternalReferenceManager (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDExternalReferenceManager_a1a2d6c38874ca05e641e7435d2c99d15}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the external reference manager. \end{DoxyParams}
+\hypertarget{classFCDExternalReferenceManager_a54c82f52411a67e27ed085257648a3de}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!$\sim$FCDExternalReferenceManager@{$\sim$FCDExternalReferenceManager}}
+\index{$\sim$FCDExternalReferenceManager@{$\sim$FCDExternalReferenceManager}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{$\sim$FCDExternalReferenceManager}]{\setlength{\rightskip}{0pt plus 5cm}FCDExternalReferenceManager::$\sim$FCDExternalReferenceManager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDExternalReferenceManager_a54c82f52411a67e27ed085257648a3de}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDExternalReferenceManager_a71f3dc8d19a92f32aceb77886563b98d}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!AddPlaceHolder@{AddPlaceHolder}}
+\index{AddPlaceHolder@{AddPlaceHolder}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{AddPlaceHolder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPlaceHolder} $\ast$ FCDExternalReferenceManager::AddPlaceHolder (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDExternalReferenceManager_a71f3dc8d19a92f32aceb77886563b98d}
+Adds a new \hyperlink{namespaceFCollada}{FCollada} document placeholder to this document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The external \hyperlink{namespaceFCollada}{FCollada} document to track. \end{DoxyParams}
+\hypertarget{classFCDExternalReferenceManager_af4a273a9e4a40647e5e874f7e9fa4ede}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!AddPlaceHolder@{AddPlaceHolder}}
+\index{AddPlaceHolder@{AddPlaceHolder}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{AddPlaceHolder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPlaceHolder} $\ast$ FCDExternalReferenceManager::AddPlaceHolder (
+\begin{DoxyParamCaption}
+\item[{const {\bf fstring} \&}]{ fileUrl}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDExternalReferenceManager_af4a273a9e4a40647e5e874f7e9fa4ede}
+Adds a new \hyperlink{namespaceFCollada}{FCollada} document placeholder to this document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fileUrl}]The URI of the external \hyperlink{namespaceFCollada}{FCollada} document to track. \end{DoxyParams}
+\hypertarget{classFCDExternalReferenceManager_a578f4a2cdc248fb0a596f0c0210f268e}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!FindPlaceHolder@{FindPlaceHolder}}
+\index{FindPlaceHolder@{FindPlaceHolder}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{FindPlaceHolder}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPlaceHolder} $\ast$ FCDExternalReferenceManager::FindPlaceHolder (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDExternalReferenceManager_a578f4a2cdc248fb0a596f0c0210f268e}
+Retrieves the placeholder that references the given \hyperlink{namespaceFCollada}{FCollada} document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]A \hyperlink{namespaceFCollada}{FCollada} document. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The placeholder for the given \hyperlink{namespaceFCollada}{FCollada} document. This pointer will be NULL if no local entity instances reference entities within the given document. 
+\end{DoxyReturn}
+\hypertarget{classFCDExternalReferenceManager_acd9ce00d9efa5e4964f5baae12c6b4aa}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!FindPlaceHolder@{FindPlaceHolder}}
+\index{FindPlaceHolder@{FindPlaceHolder}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{FindPlaceHolder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPlaceHolder}$\ast$ FCDExternalReferenceManager::FindPlaceHolder (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDExternalReferenceManager_acd9ce00d9efa5e4964f5baae12c6b4aa}
+See above. \hypertarget{classFCDExternalReferenceManager_a988da44bbddbb3b99c0e567590d3ba6d}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!FindPlaceHolder@{FindPlaceHolder}}
+\index{FindPlaceHolder@{FindPlaceHolder}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{FindPlaceHolder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPlaceHolder}$\ast$ FCDExternalReferenceManager::FindPlaceHolder (
+\begin{DoxyParamCaption}
+\item[{const {\bf fstring} \&}]{ fileUrl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDExternalReferenceManager_a988da44bbddbb3b99c0e567590d3ba6d}
+See above. \hypertarget{classFCDExternalReferenceManager_adbdae14f6202150d11c0dd8bda42ad35}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!FindPlaceHolder@{FindPlaceHolder}}
+\index{FindPlaceHolder@{FindPlaceHolder}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{FindPlaceHolder}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPlaceHolder} $\ast$ FCDExternalReferenceManager::FindPlaceHolder (
+\begin{DoxyParamCaption}
+\item[{const {\bf fstring} \&}]{ fileUrl}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDExternalReferenceManager_adbdae14f6202150d11c0dd8bda42ad35}
+Retrieves the placeholder that references the \hyperlink{namespaceFCollada}{FCollada} document at the given URI. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fileUrl}]The URI of the \hyperlink{namespaceFCollada}{FCollada} document. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The placeholder for the \hyperlink{namespaceFCollada}{FCollada} document. This pointer will be NULL if no local entity instances reference entities within the document at the given URI. 
+\end{DoxyReturn}
+\hypertarget{classFCDExternalReferenceManager_a33e290a56348fce8f2d0cfcbff132f76}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!GetPlaceHolder@{GetPlaceHolder}}
+\index{GetPlaceHolder@{GetPlaceHolder}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{GetPlaceHolder}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPlaceHolder}$\ast$ FCDExternalReferenceManager::GetPlaceHolder (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDExternalReferenceManager_a33e290a56348fce8f2d0cfcbff132f76}
+See above. \hypertarget{classFCDExternalReferenceManager_a6a59d88cc384c0f515ce138b3a8f3f07}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!GetPlaceHolder@{GetPlaceHolder}}
+\index{GetPlaceHolder@{GetPlaceHolder}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{GetPlaceHolder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPlaceHolder}$\ast$ FCDExternalReferenceManager::GetPlaceHolder (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDExternalReferenceManager_a6a59d88cc384c0f515ce138b3a8f3f07}
+Retrieves a \hyperlink{namespaceFCollada}{FCollada} document placeholder. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the placeholder. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The placeholder at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFCDExternalReferenceManager_ac79e8b1f68b26f8f3f40afd82e7c923b}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!GetPlaceHolderCount@{GetPlaceHolderCount}}
+\index{GetPlaceHolderCount@{GetPlaceHolderCount}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{GetPlaceHolderCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDExternalReferenceManager::GetPlaceHolderCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDExternalReferenceManager_ac79e8b1f68b26f8f3f40afd82e7c923b}
+Retrieves the number of \hyperlink{namespaceFCollada}{FCollada} document that are automatically tracked by this document. \begin{DoxyReturn}{Returns}
+The number of tracked document. 
+\end{DoxyReturn}
+\hypertarget{classFCDExternalReferenceManager_a486322014ffd3a7acf3bd5aef039e05e}{
+\index{FCDExternalReferenceManager@{FCDExternalReferenceManager}!RegisterLoadedDocument@{RegisterLoadedDocument}}
+\index{RegisterLoadedDocument@{RegisterLoadedDocument}!FCDExternalReferenceManager@{FCDExternalReferenceManager}}
+\subsubsection[{RegisterLoadedDocument}]{\setlength{\rightskip}{0pt plus 5cm}void FCDExternalReferenceManager::RegisterLoadedDocument (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFCDExternalReferenceManager_a486322014ffd3a7acf3bd5aef039e05e}
+\mbox{[}INTERNAL\mbox{]} Registers a newly-\/loaded \hyperlink{namespaceFCollada}{FCollada} document with the other existing \hyperlink{namespaceFCollada}{FCollada} document. This callback is used to update all the entity instances that reference external entities. Any entity instance that references an entity within the newly-\/loaded \hyperlink{namespaceFCollada}{FCollada} document will be updated. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The newly-\/loaded \hyperlink{namespaceFCollada}{FCollada} document. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDExternalReferenceManager_8h}{FCDExternalReferenceManager.h}\item 
+FCollada/FCDocument/FCDExternalReferenceManager.cpp\end{DoxyCompactItemize}

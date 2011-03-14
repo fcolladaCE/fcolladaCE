@@ -1,0 +1,342 @@
+\hypertarget{namespaceFCollada}{
+\section{FCollada Namespace Reference}
+\label{namespaceFCollada}\index{FCollada@{FCollada}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+FCOLLADA\_\-EXPORT \hyperlink{classFColladaPluginManager}{FColladaPluginManager} $\ast$ \hyperlink{namespaceFCollada_ae61741b7093942e65cb5149adadcadda}{GetPluginManager} ()
+\item 
+FCOLLADA\_\-EXPORT unsigned long \hyperlink{namespaceFCollada_a3cf1eb216d7981193dd45f69b7a93262}{GetVersion} ()
+\item 
+FCOLLADA\_\-EXPORT void \hyperlink{namespaceFCollada_a230b81bed3846303aab8c81637efa2e8}{Initialize} ()
+\item 
+FCOLLADA\_\-EXPORT size\_\-t \hyperlink{namespaceFCollada_ade9fdc7411f1e4534df399adb38c727b}{Release} ()
+\item 
+FCOLLADA\_\-EXPORT \hyperlink{classFCDocument}{FCDocument} $\ast$ \hyperlink{namespaceFCollada_a08fbadd88f588f40ed56d5edb9c7ecd0}{NewTopDocument} ()
+\item 
+FCOLLADA\_\-EXPORT \hyperlink{classFCDocument}{FCDocument} $\ast$ \hyperlink{namespaceFCollada_a0257b0ed467902dc5feda97e78c7cbe8}{NewDocument} ()
+\item 
+FCOLLADA\_\-EXPORT size\_\-t \hyperlink{namespaceFCollada_a5ef863c3011dd264403b519e32033947}{GetTopDocumentCount} ()
+\item 
+FCOLLADA\_\-EXPORT \hyperlink{classFCDocument}{FCDocument} $\ast$ \hyperlink{namespaceFCollada_ab9a8572da8317a620e6871912045a996}{GetTopDocument} (size\_\-t index)
+\item 
+FCOLLADA\_\-EXPORT bool \hyperlink{namespaceFCollada_ae2c3f1b2b333c2237abe5af27a85a8ce}{IsTopDocument} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+FCOLLADA\_\-EXPORT void \hyperlink{namespaceFCollada_ad1120d8ccf2ec3316f6c8d1c275a5d76}{GetAllDocuments} (\hyperlink{classfm_1_1pvector}{FCDocumentList} \&documents)
+\item 
+\hypertarget{namespaceFCollada_a6469ffded04fc77762eaa898ececb2a6}{
+FCOLLADA\_\-EXPORT \hyperlink{classFCDocument}{FCDocument} $\ast$ {\bfseries LoadDocumentFromFile} (const fchar $\ast$filename)}
+\label{namespaceFCollada_a6469ffded04fc77762eaa898ececb2a6}
+
+\item 
+FCOLLADA\_\-EXPORT bool \hyperlink{namespaceFCollada_a4dd920a75d275f9390696c22b947baf8}{LoadDocumentFromFile} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, const fchar $\ast$filename)
+\item 
+\hypertarget{namespaceFCollada_a4d65778421a6aec996930eb4e026383b}{
+FCOLLADA\_\-EXPORT \hyperlink{classFCDocument}{FCDocument} $\ast$ {\bfseries LoadDocument} (const fchar $\ast$filename)}
+\label{namespaceFCollada_a4d65778421a6aec996930eb4e026383b}
+
+\item 
+FCOLLADA\_\-EXPORT bool \hyperlink{namespaceFCollada_affe76985d354d51bb861e2c9d4c2049c}{LoadDocumentFromMemory} (const fchar $\ast$filename, \hyperlink{classFCDocument}{FCDocument} $\ast$document, void $\ast$data, size\_\-t length)
+\item 
+FCOLLADA\_\-EXPORT bool \hyperlink{namespaceFCollada_af3a3d9fa7ae09b304daa26e2a8a69e99}{SaveDocument} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, const fchar $\ast$filename)
+\item 
+FCOLLADA\_\-EXPORT bool \hyperlink{namespaceFCollada_a081d3740d838e9eb2fc7dd4611a513bf}{GetDereferenceFlag} ()
+\item 
+FCOLLADA\_\-EXPORT void \hyperlink{namespaceFCollada_a05ea72389195718910a74f5cd967fb47}{SetDereferenceFlag} (bool flag)
+\item 
+\hypertarget{namespaceFCollada_ae49a89b2b2b3a508271d80681faf09ea}{
+FCOLLADA\_\-EXPORT bool {\bfseries RegisterPlugin} (\hyperlink{classFUPlugin}{FUPlugin} $\ast$plugin)}
+\label{namespaceFCollada_ae49a89b2b2b3a508271d80681faf09ea}
+
+\item 
+FCOLLADA\_\-EXPORT void \hyperlink{namespaceFCollada_a0da1e31835b9301d1f2d3145a52f18a3}{SetCancelLoadingCallback} (\hyperlink{classIFunctor0}{CancelLoadingCallback} callback)
+\item 
+FCOLLADA\_\-EXPORT bool \hyperlink{namespaceFCollada_abc222aab9f5a4c0817746f91936cb2c1}{CancelLoading} ()
+\item 
+FCOLLADA\_\-EXPORT void \hyperlink{namespaceFCollada_a433dcd0d2b8b0bb17dc26ca5da1072cf}{RunTests} (\hyperlink{classFUTestBed}{FUTestBed} \&testBed)
+\item 
+\hypertarget{namespaceFCollada_a38eb5fd8b13e2ea0ec08bc290bac3bf7}{
+{\bfseries DEPRECATED} (3.05A, LoadDocumentFromFile) inline bool LoadDocument(FCDocument $\ast$document}
+\label{namespaceFCollada_a38eb5fd8b13e2ea0ec08bc290bac3bf7}
+
+\item 
+\hypertarget{namespaceFCollada_afc41f0c09caca13f7131ac93dfbf21aa}{
+const fchar $\ast$filename return {\bfseries LoadDocumentFromFile} (document, filename)}
+\label{namespaceFCollada_afc41f0c09caca13f7131ac93dfbf21aa}
+
+\item 
+\hypertarget{namespaceFCollada_ab3a564d246ffa3bc28e00d3b4406c81b}{
+{\bfseries DEPRECATED} (3.05A, NewTopDocument and LoadDocumentFromFile) FCOLLADA\_\-EXPORT FCDocument $\ast$LoadDocument(const fchar $\ast$filename)}
+\label{namespaceFCollada_ab3a564d246ffa3bc28e00d3b4406c81b}
+
+\item 
+\hyperlink{namespaceFCollada_a6d047a68a1957e70ff47a695bffa1ebd}{DEPRECATED} (3.05A, GetPluginManager()-\/$>$RegisterPlugin) FCOLLADA\_\-EXPORT bool RegisterPlugin(FUPlugin $\ast$plugin)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceFCollada_a2154b72a57c15b012b0430dd9b9d9445}{
+\hyperlink{classFColladaPluginManager}{FColladaPluginManager} $\ast$ {\bfseries pluginManager}}
+\label{namespaceFCollada_a2154b72a57c15b012b0430dd9b9d9445}
+
+\item 
+\hypertarget{namespaceFCollada_a3da1ee595f827bba2e7fc651a8dfb241}{
+\hyperlink{classIFunctor0}{CancelLoadingCallback} {\bfseries cancelLoadingCallback} = NULL}
+\label{namespaceFCollada_a3da1ee595f827bba2e7fc651a8dfb241}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This namespace contains \hyperlink{namespaceFCollada}{FCollada} global functions and member variables 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFCollada_abc222aab9f5a4c0817746f91936cb2c1}{
+\index{FCollada@{FCollada}!CancelLoading@{CancelLoading}}
+\index{CancelLoading@{CancelLoading}!FCollada@{FCollada}}
+\subsubsection[{CancelLoading}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT bool FCollada::CancelLoading (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_abc222aab9f5a4c0817746f91936cb2c1}
+Check if we should cancel the loading of the \hyperlink{namespaceFCollada}{FCollada} document. \begin{DoxyReturn}{Returns}
+whether we should cancel the loading. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a6d047a68a1957e70ff47a695bffa1ebd}{
+\index{FCollada@{FCollada}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCollada@{FCollada}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCollada::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetPluginManager()-\/$>$}]{ RegisterPlugin}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a6d047a68a1957e70ff47a695bffa1ebd}
+Registers a new \hyperlink{classFUPlugin}{FUPlugin} plug-\/in to the \hyperlink{classFColladaPluginManager}{FColladaPluginManager}. \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000013}{Deprecated}]Use \hyperlink{namespaceFCollada_ae61741b7093942e65cb5149adadcadda}{GetPluginManager()}-\/$>$AddPlugin() instead. \end{Desc}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em plugin}]The new plugin to register. \end{DoxyParams}
+\hypertarget{namespaceFCollada_ad1120d8ccf2ec3316f6c8d1c275a5d76}{
+\index{FCollada@{FCollada}!GetAllDocuments@{GetAllDocuments}}
+\index{GetAllDocuments@{GetAllDocuments}!FCollada@{FCollada}}
+\subsubsection[{GetAllDocuments}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCollada::GetAllDocuments (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocumentList} \&}]{ documents}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_ad1120d8ccf2ec3316f6c8d1c275a5d76}
+Retrieves the list of all the document currently loaded by \hyperlink{namespaceFCollada}{FCollada}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em documents}]The list of documents to fill in. Thist list is cleared of all its content at the beginning of the function. \end{DoxyParams}
+\hypertarget{namespaceFCollada_a081d3740d838e9eb2fc7dd4611a513bf}{
+\index{FCollada@{FCollada}!GetDereferenceFlag@{GetDereferenceFlag}}
+\index{GetDereferenceFlag@{GetDereferenceFlag}!FCollada@{FCollada}}
+\subsubsection[{GetDereferenceFlag}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT bool FCollada::GetDereferenceFlag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a081d3740d838e9eb2fc7dd4611a513bf}
+Retrieves the global dereferencing flag. Setting this flag will force all the entity instance to automatically attempt to open the externally-\/referenced documents when needed. The default behavior is to always dereference when needed. \begin{DoxyReturn}{Returns}
+Whether to automatically dereference the entity instances. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_ae61741b7093942e65cb5149adadcadda}{
+\index{FCollada@{FCollada}!GetPluginManager@{GetPluginManager}}
+\index{GetPluginManager@{GetPluginManager}!FCollada@{FCollada}}
+\subsubsection[{GetPluginManager}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf FColladaPluginManager} $\ast$ FCollada::GetPluginManager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_ae61741b7093942e65cb5149adadcadda}
+Retrieves the \hyperlink{namespaceFCollada}{FCollada} plug-\/ins manager. \begin{DoxyReturn}{Returns}
+The plug-\/in manager. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_ab9a8572da8317a620e6871912045a996}{
+\index{FCollada@{FCollada}!GetTopDocument@{GetTopDocument}}
+\index{GetTopDocument@{GetTopDocument}!FCollada@{FCollada}}
+\subsubsection[{GetTopDocument}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf FCDocument} $\ast$ FCollada::GetTopDocument (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_ab9a8572da8317a620e6871912045a996}
+Retrieves a top document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the top document. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The top document at the given index. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a5ef863c3011dd264403b519e32033947}{
+\index{FCollada@{FCollada}!GetTopDocumentCount@{GetTopDocumentCount}}
+\index{GetTopDocumentCount@{GetTopDocumentCount}!FCollada@{FCollada}}
+\subsubsection[{GetTopDocumentCount}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT size\_\-t FCollada::GetTopDocumentCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a5ef863c3011dd264403b519e32033947}
+Retrieves the number of top documents. \begin{DoxyReturn}{Returns}
+The number of top documents. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a3cf1eb216d7981193dd45f69b7a93262}{
+\index{FCollada@{FCollada}!GetVersion@{GetVersion}}
+\index{GetVersion@{GetVersion}!FCollada@{FCollada}}
+\subsubsection[{GetVersion}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT unsigned long FCollada::GetVersion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a3cf1eb216d7981193dd45f69b7a93262}
+Retrieves the \hyperlink{namespaceFCollada}{FCollada} version number. Used for DLL-\/versions of the \hyperlink{namespaceFCollada}{FCollada} library: verify that you have a compatible version of the \hyperlink{namespaceFCollada}{FCollada} library using this function. \begin{DoxyReturn}{Returns}
+The \hyperlink{namespaceFCollada}{FCollada} version number. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a230b81bed3846303aab8c81637efa2e8}{
+\index{FCollada@{FCollada}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!FCollada@{FCollada}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCollada::Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a230b81bed3846303aab8c81637efa2e8}
+Initializes the \hyperlink{namespaceFCollada}{FCollada} library. This call is necessary for static library versions of \hyperlink{namespaceFCollada}{FCollada}, as it initializes the plug-\/in structure. The initialization count is referenced counters, so you can safely call this function multiple times. You will need to call the \hyperlink{namespaceFCollada_ade9fdc7411f1e4534df399adb38c727b}{FCollada::Release} function as many times as it is initialized to correctly detach the plug-\/ins. In the DLL versions of \hyperlink{namespaceFCollada}{FCollada}, the DllMain function initializes the library. \hypertarget{namespaceFCollada_ae2c3f1b2b333c2237abe5af27a85a8ce}{
+\index{FCollada@{FCollada}!IsTopDocument@{IsTopDocument}}
+\index{IsTopDocument@{IsTopDocument}!FCollada@{FCollada}}
+\subsubsection[{IsTopDocument}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT bool FCollada::IsTopDocument (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_ae2c3f1b2b333c2237abe5af27a85a8ce}
+Retrieves whether a document is a top document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The document to verify. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the document is a top document. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a4dd920a75d275f9390696c22b947baf8}{
+\index{FCollada@{FCollada}!LoadDocumentFromFile@{LoadDocumentFromFile}}
+\index{LoadDocumentFromFile@{LoadDocumentFromFile}!FCollada@{FCollada}}
+\subsubsection[{LoadDocumentFromFile}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT bool FCollada::LoadDocumentFromFile (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{const fchar $\ast$}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a4dd920a75d275f9390696c22b947baf8}
+Load document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]the string of the file to load from \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the loaded \hyperlink{classFCDocument}{FCDocument}. NULL is returned if any error occurs. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_affe76985d354d51bb861e2c9d4c2049c}{
+\index{FCollada@{FCollada}!LoadDocumentFromMemory@{LoadDocumentFromMemory}}
+\index{LoadDocumentFromMemory@{LoadDocumentFromMemory}!FCollada@{FCollada}}
+\subsubsection[{LoadDocumentFromMemory}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT bool FCollada::LoadDocumentFromMemory (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ filename, }
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{void $\ast$}]{ data, }
+\item[{size\_\-t}]{ length}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_affe76985d354d51bb861e2c9d4c2049c}
+Load Document from memory address. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]An empty document to load imported content into. \item[{\em contents}]The content to load into the document, in a format suitable to be read by this plugin. \item[{\em length}]The length of the content buffer. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the file is imported successfully. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a0257b0ed467902dc5feda97e78c7cbe8}{
+\index{FCollada@{FCollada}!NewDocument@{NewDocument}}
+\index{NewDocument@{NewDocument}!FCollada@{FCollada}}
+\subsubsection[{NewDocument}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf FCDocument} $\ast$ FCollada::NewDocument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a0257b0ed467902dc5feda97e78c7cbe8}
+Creates a new \hyperlink{classFCDocument}{FCDocument} object. Use this function to create an unmanaged \hyperlink{classFCDocument}{FCDocument}. Any documents created using this method must either be xreffed onto the scene or deleted manually using \hyperlink{classFUObject_a33be6852b877d7f29520bbe4722b846b}{FUObject::Release} \begin{DoxyReturn}{Returns}
+A new document object. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a08fbadd88f588f40ed56d5edb9c7ecd0}{
+\index{FCollada@{FCollada}!NewTopDocument@{NewTopDocument}}
+\index{NewTopDocument@{NewTopDocument}!FCollada@{FCollada}}
+\subsubsection[{NewTopDocument}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf FCDocument} $\ast$ FCollada::NewTopDocument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a08fbadd88f588f40ed56d5edb9c7ecd0}
+Creates a new top \hyperlink{classFCDocument}{FCDocument} object. You must used this function to create your top-\/level \hyperlink{classFCDocument}{FCDocument} object if you use external references. Note: in order to safely delete a \hyperlink{namespaceFCollada}{FCollada} top document, you must call the document's \hyperlink{namespaceFCollada_ade9fdc7411f1e4534df399adb38c727b}{Release()} method. Otherwise, the top document object container won't be notified, and you could assert in \hyperlink{namespaceFCollada_ade9fdc7411f1e4534df399adb38c727b}{FCollada::Release()}. \begin{DoxyReturn}{Returns}
+A new top document object. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_ade9fdc7411f1e4534df399adb38c727b}{
+\index{FCollada@{FCollada}!Release@{Release}}
+\index{Release@{Release}!FCollada@{FCollada}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT size\_\-t FCollada::Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_ade9fdc7411f1e4534df399adb38c727b}
+Releases the \hyperlink{namespaceFCollada}{FCollada} library. This call will detach the \hyperlink{namespaceFCollada}{FCollada} plug-\/ins and release all the top-\/level \hyperlink{namespaceFCollada}{FCollada} documents. This call is referenced counted and the number of initializations must match the number of releases. Only the last release will detach the plug-\/ins and release the top-\/level documents. In the DLL versions of \hyperlink{namespaceFCollada}{FCollada}, the DllMain function should do the last release of the library. \begin{DoxyReturn}{Returns}
+The number of initialization calls left to release. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a433dcd0d2b8b0bb17dc26ca5da1072cf}{
+\index{FCollada@{FCollada}!RunTests@{RunTests}}
+\index{RunTests@{RunTests}!FCollada@{FCollada}}
+\subsubsection[{RunTests}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCollada::RunTests (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTestBed} \&}]{ testBed}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a433dcd0d2b8b0bb17dc26ca5da1072cf}
+Runs the FCollada-\/specific automated tests and sets the results within the given test bed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em testBed}]A test-\/bed against which the tests will be run. \end{DoxyParams}
+\hypertarget{namespaceFCollada_af3a3d9fa7ae09b304daa26e2a8a69e99}{
+\index{FCollada@{FCollada}!SaveDocument@{SaveDocument}}
+\index{SaveDocument@{SaveDocument}!FCollada@{FCollada}}
+\subsubsection[{SaveDocument}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT bool FCollada::SaveDocument (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{const fchar $\ast$}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_af3a3d9fa7ae09b304daa26e2a8a69e99}
+Save document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The \hyperlink{namespaceFCollada}{FCollada} document to be written on to the disk. \item[{\em filename}]the string of the file name to which the content is saved. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the file is saved correctly. 
+\end{DoxyReturn}
+\hypertarget{namespaceFCollada_a0da1e31835b9301d1f2d3145a52f18a3}{
+\index{FCollada@{FCollada}!SetCancelLoadingCallback@{SetCancelLoadingCallback}}
+\index{SetCancelLoadingCallback@{SetCancelLoadingCallback}!FCollada@{FCollada}}
+\subsubsection[{SetCancelLoadingCallback}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCollada::SetCancelLoadingCallback (
+\begin{DoxyParamCaption}
+\item[{{\bf CancelLoadingCallback}}]{ callback}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a0da1e31835b9301d1f2d3145a52f18a3}
+Registers a callback function that will be called to check if we want to cancel the loading of the \hyperlink{namespaceFCollada}{FCollada} document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em callback}]The callback functor that will tell us if we cancel or not \end{DoxyParams}
+\hypertarget{namespaceFCollada_a05ea72389195718910a74f5cd967fb47}{
+\index{FCollada@{FCollada}!SetDereferenceFlag@{SetDereferenceFlag}}
+\index{SetDereferenceFlag@{SetDereferenceFlag}!FCollada@{FCollada}}
+\subsubsection[{SetDereferenceFlag}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT void FCollada::SetDereferenceFlag (
+\begin{DoxyParamCaption}
+\item[{bool}]{ flag}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCollada_a05ea72389195718910a74f5cd967fb47}
+Sets the global dereferencing flag. Setting this flag will force all the entity instance to automatically attempt to open the externally-\/referenced documents when needed. The default behavior is to always dereference when needed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em flag}]Whether to automatically dereference the entity instances. \end{DoxyParams}

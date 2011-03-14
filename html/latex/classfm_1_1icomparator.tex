@@ -1,0 +1,66 @@
+\hypertarget{classfm_1_1icomparator}{
+\section{fm::icomparator$<$ T $>$ Class Template Reference}
+\label{classfm_1_1icomparator}\index{fm::icomparator@{fm::icomparator}}
+}
+
+
+{\ttfamily \#include $<$FMSort.h$>$}
+
+Inheritance diagram for fm::icomparator$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfm_1_1icomparator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classfm_1_1icomparator_a585d0008c9ccde7160a3002b3b917cea}{$\sim$icomparator} ()
+\item 
+virtual bool \hyperlink{classfm_1_1icomparator_a8f1b1d5d8657fa5f852bf7b9437cefc9}{compare} (const T \&a, const T \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$ class fm::icomparator$<$ T $>$}
+
+A utility to sort an array in descending order, using operator$<$. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfm_1_1icomparator_a585d0008c9ccde7160a3002b3b917cea}{
+\index{fm::icomparator@{fm::icomparator}!$\sim$icomparator@{$\sim$icomparator}}
+\index{$\sim$icomparator@{$\sim$icomparator}!fm::icomparator@{fm::icomparator}}
+\subsubsection[{$\sim$icomparator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf fm::icomparator}$<$ T $>$::$\sim${\bf icomparator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classfm_1_1icomparator_a585d0008c9ccde7160a3002b3b917cea}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classfm_1_1icomparator_a8f1b1d5d8657fa5f852bf7b9437cefc9}{
+\index{fm::icomparator@{fm::icomparator}!compare@{compare}}
+\index{compare@{compare}!fm::icomparator@{fm::icomparator}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual bool {\bf fm::icomparator}$<$ T $>$::compare (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{ a, }
+\item[{const T \&}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classfm_1_1icomparator_a8f1b1d5d8657fa5f852bf7b9437cefc9}
+Compares two elements in descending order, using operator$<$. Override this function to define your custom comparator. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The first element. \item[{\em b}]The second element. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a is greater than b, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classfm_1_1comparator_a4cc38737a2c598b76977625a75bc5c24}{fm::comparator$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FMath/\hyperlink{FMSort_8h}{FMSort.h}\end{DoxyCompactItemize}

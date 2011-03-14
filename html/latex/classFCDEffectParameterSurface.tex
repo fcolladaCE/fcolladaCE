@@ -1,0 +1,478 @@
+\hypertarget{classFCDEffectParameterSurface}{
+\section{FCDEffectParameterSurface Class Reference}
+\label{classFCDEffectParameterSurface}\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectParameterSurface.h$>$}
+
+Inheritance diagram for FCDEffectParameterSurface:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDEffectParameterSurface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEffectParameterSurface_a365475eff0f265c84c0b749b9d6e6e0d}{FCDEffectParameterSurface} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDEffectParameterSurface_aef09401c63f2c3fbfcacca78064d5c4d}{$\sim$FCDEffectParameterSurface} ()
+\item 
+virtual \hyperlink{classFCDEffectParameter_a1efe74553d2ed199435085c171743b08}{Type} \hyperlink{classFCDEffectParameterSurface_a48e1ec0933996bc9ebb5ef1ec9b8e334}{GetType} () const 
+\item 
+\hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} $\ast$ \hyperlink{classFCDEffectParameterSurface_a1b399c2a8fbf1444d3978017f8abee01}{GetInitMethod} ()
+\item 
+const \hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} $\ast$ \hyperlink{classFCDEffectParameterSurface_a6450a67e0c01706ff96363d2e86ee6f0}{GetInitMethod} () const 
+\item 
+void \hyperlink{classFCDEffectParameterSurface_aeabfcc4c49e58c2838442a7812d8089e}{SetInitMethod} (\hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} $\ast$method)
+\item 
+const \hyperlink{classFCDImage}{FCDImage} $\ast$$\ast$ \hyperlink{classFCDEffectParameterSurface_ab16a2edc1ecb7a54f622f890c6cda395}{GetImages} () const 
+\item 
+size\_\-t \hyperlink{classFCDEffectParameterSurface_a443aec0a023b31f27ffd8e1d182774fe}{GetImageCount} () const 
+\item 
+\hyperlink{classFCDImage}{FCDImage} $\ast$ \hyperlink{classFCDEffectParameterSurface_af4276ec08cfb3d4221ce194e853e035a}{GetImage} (size\_\-t index=0)
+\item 
+const \hyperlink{classFCDImage}{FCDImage} $\ast$ \hyperlink{classFCDEffectParameterSurface_a5d1101a0718e31566ee4aba117a09df7}{GetImage} (size\_\-t index=0) const 
+\item 
+size\_\-t \hyperlink{classFCDEffectParameterSurface_a18ad28d3f7f968be42d64a3dcbdca6e4}{FindImage} (const \hyperlink{classFCDImage}{FCDImage} $\ast$image) const 
+\item 
+size\_\-t \hyperlink{classFCDEffectParameterSurface_a49b5474ba6ef9fe0682046e7a3309440}{AddImage} (\hyperlink{classFCDImage}{FCDImage} $\ast$image, size\_\-t index=(size\_\-t)-\/1)
+\item 
+void \hyperlink{classFCDEffectParameterSurface_a04c6197912f5111a3e8a880b448445f2}{RemoveImage} (\hyperlink{classFCDImage}{FCDImage} $\ast$image)
+\item 
+const \hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFCDEffectParameterSurface_aefdd7adb3a0405f786a0c2a4f3974067}{GetSize} () const 
+\item 
+void \hyperlink{classFCDEffectParameterSurface_aba3e88b59a7126a5ce96cc8f9cb9e124}{SetSize} (const \hyperlink{classFMVector3}{FMVector3} \&dimensions)
+\item 
+float \hyperlink{classFCDEffectParameterSurface_a6fe1ab43fe3939de50d6da9fe4968bd8}{GetViewportRatio} () const 
+\item 
+void \hyperlink{classFCDEffectParameterSurface_a88a5a9addf40ad180fcca095864f1bf1}{SetViewportRatio} (float ratio)
+\item 
+uint16 \hyperlink{classFCDEffectParameterSurface_ace5c0d37199d08306cd98c37b492f5ae}{GetMipLevelCount} () const 
+\item 
+void \hyperlink{classFCDEffectParameterSurface_af6e4d39fce4cebf06f5a04025952c56f}{SetMipLevelCount} (uint16 levelCount)
+\item 
+bool \hyperlink{classFCDEffectParameterSurface_a0e48c062f07a3590da200d38b1001b6e}{IsGenerateMipMaps} () const 
+\item 
+void \hyperlink{classFCDEffectParameterSurface_a034a5471a03ed630a821343f927f1ae6}{SetGenerateMipMaps} (bool \_\-generateMipmaps)
+\item 
+void \hyperlink{classFCDEffectParameterSurface_a38e0137e5c7a37c23438a0bc884fa379}{SetFormat} (const \hyperlink{classfm_1_1stringT}{fm::string} \&\_\-format)
+\item 
+\hypertarget{classFCDEffectParameterSurface_a970c79d7dea95b9340bae40739a572a8}{
+const \hyperlink{classfm_1_1stringT}{fm::string} \& {\bfseries GetFormat} ()}
+\label{classFCDEffectParameterSurface_a970c79d7dea95b9340bae40739a572a8}
+
+\item 
+void \hyperlink{classFCDEffectParameterSurface_ab4be08c0a8e19ee4fdf54cedca4b5403}{SetSurfaceType} (const \hyperlink{classfm_1_1stringT}{fm::string} \&\_\-type)
+\item 
+const \hyperlink{classfm_1_1stringT}{fm::string} \& \hyperlink{classFCDEffectParameterSurface_a30e2fd6698aa20b749a300c7c9cc60f0}{GetSurfaceType} ()
+\item 
+virtual bool \hyperlink{classFCDEffectParameterSurface_a39896f512054cc2bb9fa8938fa67ab80}{IsValueEqual} (\hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$parameter)
+\item 
+virtual \hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$ \hyperlink{classFCDEffectParameterSurface_a0b95f01b907cb82af8cb84106d227cf3}{Clone} (\hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$clone=NULL) const 
+\item 
+virtual void \hyperlink{classFCDEffectParameterSurface_a3079626698cf949faf90030b3d6230e2}{Overwrite} (\hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$target)
+\item 
+\hyperlink{classfm_1_1vector}{StringList} \& \hyperlink{classFCDEffectParameterSurface_a84c69ff8e75ff4d76e033cf33b3bd768}{GetNames} ()
+\item 
+\hyperlink{structFCDFormatHint}{FCDFormatHint} $\ast$ \hyperlink{classFCDEffectParameterSurface_a19a153fcabe4cf75b34201d436e1ae54}{AddFormatHint} ()
+\item 
+\hyperlink{structFCDFormatHint}{FCDFormatHint} $\ast$ \hyperlink{classFCDEffectParameterSurface_a59783a6fd9d677e81a824e6d4cf33ccb}{GetFormatHint} ()
+\item 
+\hypertarget{classFCDEffectParameterSurface_af30b3c8202dd63dd751a0d54993dad2e}{
+const \hyperlink{structFCDFormatHint}{FCDFormatHint} $\ast$ {\bfseries GetFormatHint} () const }
+\label{classFCDEffectParameterSurface_af30b3c8202dd63dd751a0d54993dad2e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA surface parameter. This parameters hold the texture loading information. The texture placement information should be held by the sampler parameter.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDEffectParameterSampler}{FCDEffectParameterSampler} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEffectParameterSurface_a365475eff0f265c84c0b749b9d6e6e0d}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{FCDEffectParameterSurface}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectParameterSurface::FCDEffectParameterSurface (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectParameterSurface_a365475eff0f265c84c0b749b9d6e6e0d}
+Constructor: do not use directly. Instead, use the appropriate AddEffectParameter function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the effect parameter. \end{DoxyParams}
+\hypertarget{classFCDEffectParameterSurface_aef09401c63f2c3fbfcacca78064d5c4d}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!$\sim$FCDEffectParameterSurface@{$\sim$FCDEffectParameterSurface}}
+\index{$\sim$FCDEffectParameterSurface@{$\sim$FCDEffectParameterSurface}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{$\sim$FCDEffectParameterSurface}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectParameterSurface::$\sim$FCDEffectParameterSurface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurface_aef09401c63f2c3fbfcacca78064d5c4d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEffectParameterSurface_a19a153fcabe4cf75b34201d436e1ae54}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!AddFormatHint@{AddFormatHint}}
+\index{AddFormatHint@{AddFormatHint}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{AddFormatHint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDFormatHint} $\ast$ FCDEffectParameterSurface::AddFormatHint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectParameterSurface_a19a153fcabe4cf75b34201d436e1ae54}
+Adds a format hint to the surface parameter. Will fail silently if one already exists. \hypertarget{classFCDEffectParameterSurface_a49b5474ba6ef9fe0682046e7a3309440}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!AddImage@{AddImage}}
+\index{AddImage@{AddImage}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{AddImage}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectParameterSurface::AddImage (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDImage} $\ast$}]{ image, }
+\item[{size\_\-t}]{ index = {\ttfamily (size\_\-t)~-\/1}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectParameterSurface_a49b5474ba6ef9fe0682046e7a3309440}
+Adds an image to the list. The initialization method indexes the images from this list. This function will verify that this image does not already exist within the list, so use the returned index. 
+\begin{DoxyParams}{Parameters}
+\item[{\em image}]The new image. \item[{\em index}]The index at which to insert the image. Set the index to -\/1 in order to append the image to the list. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the image within the list. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a0b95f01b907cb82af8cb84106d227cf3}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameter} $\ast$ FCDEffectParameterSurface::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectParameter} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a0b95f01b907cb82af8cb84106d227cf3}
+Creates a full copy of the effect parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The cloned effect parameter. If this pointer is NULL, a new effect parameter will be created and you will need to delete this pointer. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned effect parameter. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEffectParameter_a75abe4b8964493db40604fa3d0e373eb}{FCDEffectParameter}.
+
+\hypertarget{classFCDEffectParameterSurface_a18ad28d3f7f968be42d64a3dcbdca6e4}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!FindImage@{FindImage}}
+\index{FindImage@{FindImage}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{FindImage}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectParameterSurface::FindImage (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDImage} $\ast$}]{ image}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectParameterSurface_a18ad28d3f7f968be42d64a3dcbdca6e4}
+Retrieves the index that matches the given image. 
+\begin{DoxyParams}{Parameters}
+\item[{\em image}]The image to match. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index within the list for this image. This index may be -\/1 if no match was found. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a59783a6fd9d677e81a824e6d4cf33ccb}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetFormatHint@{GetFormatHint}}
+\index{GetFormatHint@{GetFormatHint}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetFormatHint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDFormatHint}$\ast$ FCDEffectParameterSurface::GetFormatHint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a59783a6fd9d677e81a824e6d4cf33ccb}
+Retrieves the format hint of the surface parameter. \begin{DoxyReturn}{Returns}
+The format hint of the parameter. If this pointer is NULL, no format hint is provided. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a5d1101a0718e31566ee4aba117a09df7}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetImage@{GetImage}}
+\index{GetImage@{GetImage}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetImage}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDImage}$\ast$ FCDEffectParameterSurface::GetImage (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a5d1101a0718e31566ee4aba117a09df7}
+See above. \hypertarget{classFCDEffectParameterSurface_af4276ec08cfb3d4221ce194e853e035a}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetImage@{GetImage}}
+\index{GetImage@{GetImage}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetImage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDImage}$\ast$ FCDEffectParameterSurface::GetImage (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_af4276ec08cfb3d4221ce194e853e035a}
+Retrieves a specific image. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the image. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a443aec0a023b31f27ffd8e1d182774fe}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetImageCount@{GetImageCount}}
+\index{GetImageCount@{GetImageCount}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetImageCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectParameterSurface::GetImageCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a443aec0a023b31f27ffd8e1d182774fe}
+Retrieves the number of COLLADA images that make up this surface. There should never be more than six images to build a surface. In the large majority of cases, expect one image. \begin{DoxyReturn}{Returns}
+The number of images. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_ab16a2edc1ecb7a54f622f890c6cda395}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetImages@{GetImages}}
+\index{GetImages@{GetImages}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetImages}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDImage}$\ast$$\ast$ FCDEffectParameterSurface::GetImages (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_ab16a2edc1ecb7a54f622f890c6cda395}
+Retrieves the list of images that make up this surface. There should never be more than six images to build a surface. In the large majority of cases, expect one image. \begin{DoxyReturn}{Returns}
+The list of images. See above. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a1b399c2a8fbf1444d3978017f8abee01}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetInitMethod@{GetInitMethod}}
+\index{GetInitMethod@{GetInitMethod}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetInitMethod}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterSurfaceInit}$\ast$ FCDEffectParameterSurface::GetInitMethod (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a1b399c2a8fbf1444d3978017f8abee01}
+Retrieves the initialization method for the surface parameter. The initialization method is a powerful method of describing how to build complex textures, such as cube maps, from one or multiple image files. \begin{DoxyReturn}{Returns}
+The surface initialization method. This pointer will be NULL, if no initialization method is provided. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a6450a67e0c01706ff96363d2e86ee6f0}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetInitMethod@{GetInitMethod}}
+\index{GetInitMethod@{GetInitMethod}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetInitMethod}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectParameterSurfaceInit}$\ast$ FCDEffectParameterSurface::GetInitMethod (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a6450a67e0c01706ff96363d2e86ee6f0}
+See above. \hypertarget{classFCDEffectParameterSurface_ace5c0d37199d08306cd98c37b492f5ae}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetMipLevelCount@{GetMipLevelCount}}
+\index{GetMipLevelCount@{GetMipLevelCount}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetMipLevelCount}]{\setlength{\rightskip}{0pt plus 5cm}uint16 FCDEffectParameterSurface::GetMipLevelCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_ace5c0d37199d08306cd98c37b492f5ae}
+Retrieves the wanted number of mip-\/levels. This parameter is optional and may be zero to indicate that you should retrieve the mip-\/levels from the image file(s) or generate a full mip-\/chain, depending on the mip-\/map generate flag. \begin{DoxySeeAlso}{See also}
+GetMipMapGenerate 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The wanted number of mip-\/levels. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a84c69ff8e75ff4d76e033cf33b3bd768}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetNames@{GetNames}}
+\index{GetNames@{GetNames}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetNames}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StringList}\& FCDEffectParameterSurface::GetNames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a84c69ff8e75ff4d76e033cf33b3bd768}
+\mbox{[}INTERNAL\mbox{]} Retrieve the list of image names \hypertarget{classFCDEffectParameterSurface_aefdd7adb3a0405f786a0c2a4f3974067}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetSize}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3}\& FCDEffectParameterSurface::GetSize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_aefdd7adb3a0405f786a0c2a4f3974067}
+Retrieves the wanted dimensions of the surface. This parameter is optional and may contain all zeroes to indicate that you should read the surface dimensions from the image file(s). \begin{DoxyReturn}{Returns}
+The wanted dimensions. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a30e2fd6698aa20b749a300c7c9cc60f0}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetSurfaceType@{GetSurfaceType}}
+\index{GetSurfaceType@{GetSurfaceType}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetSurfaceType}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fm::string}\& FCDEffectParameterSurface::GetSurfaceType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a30e2fd6698aa20b749a300c7c9cc60f0}
+Retrieves type. \hypertarget{classFCDEffectParameterSurface_a48e1ec0933996bc9ebb5ef1ec9b8e334}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDEffectParameterSurface::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a48e1ec0933996bc9ebb5ef1ec9b8e334}
+Retrieves the type of effect parameter class. \begin{DoxyReturn}{Returns}
+The parameter class type: SURFACE. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDEffectParameter_a5858946f333ea4486ca30c4c1b104871}{FCDEffectParameter}.
+
+\hypertarget{classFCDEffectParameterSurface_a6fe1ab43fe3939de50d6da9fe4968bd8}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!GetViewportRatio@{GetViewportRatio}}
+\index{GetViewportRatio@{GetViewportRatio}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{GetViewportRatio}]{\setlength{\rightskip}{0pt plus 5cm}float FCDEffectParameterSurface::GetViewportRatio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a6fe1ab43fe3939de50d6da9fe4968bd8}
+Retrieves the viewport ratio to use when the surface is a render target. \begin{DoxyReturn}{Returns}
+The viewport ratio. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a0e48c062f07a3590da200d38b1001b6e}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!IsGenerateMipMaps@{IsGenerateMipMaps}}
+\index{IsGenerateMipMaps@{IsGenerateMipMaps}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{IsGenerateMipMaps}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDEffectParameterSurface::IsGenerateMipMaps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a0e48c062f07a3590da200d38b1001b6e}
+Retrieves whether to generate the mip-\/map levels on load. The alternative is to load the mip-\/map levels from the image files. \begin{DoxyReturn}{Returns}
+Whether to generate the mip-\/map levels on load. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectParameterSurface_a39896f512054cc2bb9fa8938fa67ab80}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!IsValueEqual@{IsValueEqual}}
+\index{IsValueEqual@{IsValueEqual}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{IsValueEqual}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDEffectParameterSurface::IsValueEqual (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectParameter} $\ast$}]{ parameter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a39896f512054cc2bb9fa8938fa67ab80}
+Compares this parameter's value with another 
+\begin{DoxyParams}{Parameters}
+\item[{\em parameter}]The given parameter to compare with. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the values are equal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDEffectParameter_a005a5a316bdb99dbd97ac542c129cc5e}{FCDEffectParameter}.
+
+\hypertarget{classFCDEffectParameterSurface_a3079626698cf949faf90030b3d6230e2}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!Overwrite@{Overwrite}}
+\index{Overwrite@{Overwrite}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{Overwrite}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::Overwrite (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectParameter} $\ast$}]{ target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a3079626698cf949faf90030b3d6230e2}
+\mbox{[}INTERNAL\mbox{]} Overwrites the target parameter with this parameter. This function is used during the flattening of materials. 
+\begin{DoxyParams}{Parameters}
+\item[{\em target}]The target parameter to overwrite. \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classFCDEffectParameter_a016be91dbd27ff3c8c30f759f00b8c53}{FCDEffectParameter}.
+
+\hypertarget{classFCDEffectParameterSurface_a04c6197912f5111a3e8a880b448445f2}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!RemoveImage@{RemoveImage}}
+\index{RemoveImage@{RemoveImage}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{RemoveImage}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::RemoveImage (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDImage} $\ast$}]{ image}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectParameterSurface_a04c6197912f5111a3e8a880b448445f2}
+Removes an image from the list. The initialization method indexes the images from this list. This function will shift all the indexes in the initialization method so that they continue matching the correct image. 
+\begin{DoxyParams}{Parameters}
+\item[{\em image}]The image to remove. Its memory is not released. \end{DoxyParams}
+\hypertarget{classFCDEffectParameterSurface_a38e0137e5c7a37c23438a0bc884fa379}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!SetFormat@{SetFormat}}
+\index{SetFormat@{SetFormat}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{SetFormat}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::SetFormat (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ \_\-format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a38e0137e5c7a37c23438a0bc884fa379}
+Sets/Gets format \hypertarget{classFCDEffectParameterSurface_a034a5471a03ed630a821343f927f1ae6}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!SetGenerateMipMaps@{SetGenerateMipMaps}}
+\index{SetGenerateMipMaps@{SetGenerateMipMaps}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{SetGenerateMipMaps}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::SetGenerateMipMaps (
+\begin{DoxyParamCaption}
+\item[{bool}]{ \_\-generateMipmaps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a034a5471a03ed630a821343f927f1ae6}
+Sets whether to generate the mip-\/map levels of load. The alternative is to load the mip-\/map levels from the image files. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-generateMipmaps}]Whether to generate the mip-\/map levels on load. \end{DoxyParams}
+\hypertarget{classFCDEffectParameterSurface_aeabfcc4c49e58c2838442a7812d8089e}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!SetInitMethod@{SetInitMethod}}
+\index{SetInitMethod@{SetInitMethod}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{SetInitMethod}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::SetInitMethod (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectParameterSurfaceInit} $\ast$}]{ method}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectParameterSurface_aeabfcc4c49e58c2838442a7812d8089e}
+Sets the initialization method for the surface parameter. The initialization method is a powerful method of describing how to build complex textures, such as cube maps, from one or multiple image files. 
+\begin{DoxyParams}{Parameters}
+\item[{\em method}]The new initialization method. The old initialization method will be released. You should create a new initialization method for each surface parameter. \end{DoxyParams}
+\hypertarget{classFCDEffectParameterSurface_af6e4d39fce4cebf06f5a04025952c56f}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!SetMipLevelCount@{SetMipLevelCount}}
+\index{SetMipLevelCount@{SetMipLevelCount}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{SetMipLevelCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::SetMipLevelCount (
+\begin{DoxyParamCaption}
+\item[{uint16}]{ levelCount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_af6e4d39fce4cebf06f5a04025952c56f}
+Sets the wanted number of mip-\/levels. This parameter is optional and can be zero to indicate that you should retrieve the mip-\/levels from the image file(s) or generate a full mip-\/chain, depending on the mip-\/map generate flag. 
+\begin{DoxyParams}{Parameters}
+\item[{\em levelCount}]The wanted number of mip-\/levels. \end{DoxyParams}
+\hypertarget{classFCDEffectParameterSurface_aba3e88b59a7126a5ce96cc8f9cb9e124}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{SetSize}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::SetSize (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ dimensions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_aba3e88b59a7126a5ce96cc8f9cb9e124}
+Sets the wanted dimensions of the surface. This parameter is optional and can contain all zeroes to indicate that you should read the surface dimensions from the image file(s). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dimensions}]The wanted dimensions. \end{DoxyParams}
+\hypertarget{classFCDEffectParameterSurface_ab4be08c0a8e19ee4fdf54cedca4b5403}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!SetSurfaceType@{SetSurfaceType}}
+\index{SetSurfaceType@{SetSurfaceType}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{SetSurfaceType}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::SetSurfaceType (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ \_\-type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_ab4be08c0a8e19ee4fdf54cedca4b5403}
+Sets type \hypertarget{classFCDEffectParameterSurface_a88a5a9addf40ad180fcca095864f1bf1}{
+\index{FCDEffectParameterSurface@{FCDEffectParameterSurface}!SetViewportRatio@{SetViewportRatio}}
+\index{SetViewportRatio@{SetViewportRatio}!FCDEffectParameterSurface@{FCDEffectParameterSurface}}
+\subsubsection[{SetViewportRatio}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectParameterSurface::SetViewportRatio (
+\begin{DoxyParamCaption}
+\item[{float}]{ ratio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectParameterSurface_a88a5a9addf40ad180fcca095864f1bf1}
+Sets the viewport ratio to use when the surface is a render target. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ratio}]The viewport ratio. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectParameterSurface_8h}{FCDEffectParameterSurface.h}\item 
+FCollada/FCDocument/FCDEffectParameterSurface.cpp\end{DoxyCompactItemize}

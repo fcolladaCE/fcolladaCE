@@ -1,0 +1,30 @@
+\hypertarget{namespaceFCDLightTools}{
+\section{FCDLightTools Namespace Reference}
+\label{namespaceFCDLightTools}\index{FCDLightTools@{FCDLightTools}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceFCDLightTools_ac7e4420bb00c7765b91debb75fbf673f}{LoadPenumbra} (\hyperlink{classFCDLight}{FCDLight} $\ast$light, float penumbraValue, \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$penumbraAnimated, bool createAnimationChannel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds commonly-\/used transformation functions for lights. 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFCDLightTools_ac7e4420bb00c7765b91debb75fbf673f}{
+\index{FCDLightTools@{FCDLightTools}!LoadPenumbra@{LoadPenumbra}}
+\index{LoadPenumbra@{LoadPenumbra}!FCDLightTools@{FCDLightTools}}
+\subsubsection[{LoadPenumbra}]{\setlength{\rightskip}{0pt plus 5cm}void FCOLLADA\_\-EXPORT FCDLightTools::LoadPenumbra (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDLight} $\ast$}]{ light, }
+\item[{float}]{ penumbraValue, }
+\item[{{\bf FCDAnimated} $\ast$}]{ penumbraAnimated, }
+\item[{bool}]{ createAnimationChannel = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDLightTools_ac7e4420bb00c7765b91debb75fbf673f}
+Loads the penumbra into the light. The \hyperlink{classFCDLight}{FCDLight} does not contain penumbra information directly, but it can be represented with appropriate values for the outerAngle and the fallOffAngle. If the penumbra is positive, then the outerAngle is the sum of the penumbra value and the fallOffAngle. If the penumbra is negative, then the outerAngle is the fallOffAngle and the fallOffAngle is the outerAngle minus the penumbra. This method sets the fallOffAngle and outerAngle to correspond to the penumbra given. It takes care of the animations as well. 
+\begin{DoxyParams}{Parameters}
+\item[{\em light}]The light to process. \item[{\em penumbraValue}]The value of the penumbra. \item[{\em penumbraAnimated}]The animated helper for the loaded penumbra. \item[{\em createAnimationChannel}]True to create animation channel for the falloff angle if needed. False will attach the animation to the outer angle's channel if needed. \end{DoxyParams}

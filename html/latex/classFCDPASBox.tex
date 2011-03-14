@@ -1,0 +1,128 @@
+\hypertarget{classFCDPASBox}{
+\section{FCDPASBox Class Reference}
+\label{classFCDPASBox}\index{FCDPASBox@{FCDPASBox}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsAnalyticalGeometry.h$>$}
+
+Inheritance diagram for FCDPASBox:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{classFCDPASBox}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPASBox_a7bfc08418717115ab302677f5f87821f}{FCDPASBox} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDPASBox_aae464f9822d5e7fe44df2874a11f2143}{$\sim$FCDPASBox} ()
+\item 
+virtual \hyperlink{classFCDPhysicsAnalyticalGeometry_a511583406e5c6a1bb5bd84c0453a452c}{GeomType} \hyperlink{classFCDPASBox_a4b2cdf28c8dffcc0b4a839f75900baeb}{GetGeomType} () const 
+\item 
+virtual float \hyperlink{classFCDPASBox_a2b4be02d7f8b4dd8d9dd591d4657b5a4}{CalculateVolume} () const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDPASBox_a75222259173d8dd1e54e49f08f9ea262}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFMVector3}{FMVector3} \hyperlink{classFCDPASBox_a1550f8088304f350f1dd3c92b123e82b}{halfExtents}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA physics box. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPASBox_a7bfc08418717115ab302677f5f87821f}{
+\index{FCDPASBox@{FCDPASBox}!FCDPASBox@{FCDPASBox}}
+\index{FCDPASBox@{FCDPASBox}!FCDPASBox@{FCDPASBox}}
+\subsubsection[{FCDPASBox}]{\setlength{\rightskip}{0pt plus 5cm}FCDPASBox::FCDPASBox (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPASBox_a7bfc08418717115ab302677f5f87821f}
+Constructor: do not use directly. Create new analytical geometries by using \hyperlink{classFCDPhysicsShape_a0674443390f7c6426171fd4bc21187fb}{FCDPhysicsShape::CreateAnalyticalGeometry} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this physics box. \end{DoxyParams}
+\hypertarget{classFCDPASBox_aae464f9822d5e7fe44df2874a11f2143}{
+\index{FCDPASBox@{FCDPASBox}!$\sim$FCDPASBox@{$\sim$FCDPASBox}}
+\index{$\sim$FCDPASBox@{$\sim$FCDPASBox}!FCDPASBox@{FCDPASBox}}
+\subsubsection[{$\sim$FCDPASBox}]{\setlength{\rightskip}{0pt plus 5cm}virtual FCDPASBox::$\sim$FCDPASBox (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPASBox_aae464f9822d5e7fe44df2874a11f2143}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPASBox_a2b4be02d7f8b4dd8d9dd591d4657b5a4}{
+\index{FCDPASBox@{FCDPASBox}!CalculateVolume@{CalculateVolume}}
+\index{CalculateVolume@{CalculateVolume}!FCDPASBox@{FCDPASBox}}
+\subsubsection[{CalculateVolume}]{\setlength{\rightskip}{0pt plus 5cm}float FCDPASBox::CalculateVolume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPASBox_a2b4be02d7f8b4dd8d9dd591d4657b5a4}
+Calculates the volume of this analytical geometry. \begin{DoxyReturn}{Returns}
+The volume. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDPhysicsAnalyticalGeometry_aaf2af0d36280492051e8033ab8dc3ef9}{FCDPhysicsAnalyticalGeometry}.
+
+\hypertarget{classFCDPASBox_a75222259173d8dd1e54e49f08f9ea262}{
+\index{FCDPASBox@{FCDPASBox}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPASBox@{FCDPASBox}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDPASBox::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPASBox_a75222259173d8dd1e54e49f08f9ea262}
+Copies the physics box into a clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a analytical geometry will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDPhysicsAnalyticalGeometry_a804b67f4fccd71a46dd182b3ece13e39}{FCDPhysicsAnalyticalGeometry}.
+
+\hypertarget{classFCDPASBox_a4b2cdf28c8dffcc0b4a839f75900baeb}{
+\index{FCDPASBox@{FCDPASBox}!GetGeomType@{GetGeomType}}
+\index{GetGeomType@{GetGeomType}!FCDPASBox@{FCDPASBox}}
+\subsubsection[{GetGeomType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf GeomType} FCDPASBox::GetGeomType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPASBox_a4b2cdf28c8dffcc0b4a839f75900baeb}
+Retrieves the analytical geometry type for this class. \begin{DoxyReturn}{Returns}
+The analytical geometry type: BOX. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDPhysicsAnalyticalGeometry_a1902e92f195b227e7bee8799060e3084}{FCDPhysicsAnalyticalGeometry}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFCDPASBox_a1550f8088304f350f1dd3c92b123e82b}{
+\index{FCDPASBox@{FCDPASBox}!halfExtents@{halfExtents}}
+\index{halfExtents@{halfExtents}!FCDPASBox@{FCDPASBox}}
+\subsubsection[{halfExtents}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3} {\bf FCDPASBox::halfExtents}}}
+\label{classFCDPASBox_a1550f8088304f350f1dd3c92b123e82b}
+Half extents of the box in 3 dimensions. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsAnalyticalGeometry_8h}{FCDPhysicsAnalyticalGeometry.h}\item 
+FCollada/FCDocument/FCDPhysicsAnalyticalGeometry.cpp\end{DoxyCompactItemize}

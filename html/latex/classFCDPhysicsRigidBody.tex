@@ -1,0 +1,177 @@
+\hypertarget{classFCDPhysicsRigidBody}{
+\section{FCDPhysicsRigidBody Class Reference}
+\label{classFCDPhysicsRigidBody}\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsRigidBody.h$>$}
+
+Inheritance diagram for FCDPhysicsRigidBody:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDPhysicsRigidBody}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPhysicsRigidBody_a0019e47e19790d3c31b3fb474103b267}{FCDPhysicsRigidBody} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDPhysicsRigidBody_a62c05825ef87903b9e24ef0f5bdabe3c}{$\sim$FCDPhysicsRigidBody} ()
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDPhysicsRigidBody_a5cfe206a60862fd34274e257d94628eb}{GetType} () const 
+\item 
+const \hyperlink{classfm_1_1stringT}{fm::string} \& \hyperlink{classFCDPhysicsRigidBody_acd1890efbc95b0834156913024302017}{GetSubId} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidBody_ac846aa8af914f061738945d57de8d5c1}{SetSubId} (const char $\ast$sid)
+\item 
+void \hyperlink{classFCDPhysicsRigidBody_a3d08dc5f77ddfe8ec5f0da816c18bfd8}{SetSubId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&sid)
+\item 
+\hyperlink{classFCDPhysicsRigidBodyParameters}{FCDPhysicsRigidBodyParameters} $\ast$ \hyperlink{classFCDPhysicsRigidBody_a6286b1a609dad2e7381d77c41195b2aa}{GetParameters} ()
+\item 
+const \hyperlink{classFCDPhysicsRigidBodyParameters}{FCDPhysicsRigidBodyParameters} $\ast$ \hyperlink{classFCDPhysicsRigidBody_a00f353e11572fe0a371780c84ef8659e}{GetParameters} () const 
+\item 
+float \hyperlink{classFCDPhysicsRigidBody_af30dd37bccbaf8d9d35528b8e2f109f0}{GetShapeMassFactor} () const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDPhysicsRigidBody_abbb8a9d5b02b252b2ae887edb2afe937}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA rigid body.
+
+A rigid body contains all the information needed for collision detection. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPhysicsRigidBody_a0019e47e19790d3c31b3fb474103b267}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{FCDPhysicsRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidBody::FCDPhysicsRigidBody (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsRigidBody_a0019e47e19790d3c31b3fb474103b267}
+Constructor: do not use directly. Create new rigid bodies using the \hyperlink{classFCDPhysicsModel_a4f24faaa9cee06ad6a148eb45572c496}{FCDPhysicsModel::AddRigidBody} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this rigid body. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidBody_a62c05825ef87903b9e24ef0f5bdabe3c}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!$\sim$FCDPhysicsRigidBody@{$\sim$FCDPhysicsRigidBody}}
+\index{$\sim$FCDPhysicsRigidBody@{$\sim$FCDPhysicsRigidBody}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{$\sim$FCDPhysicsRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidBody::$\sim$FCDPhysicsRigidBody (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidBody_a62c05825ef87903b9e24ef0f5bdabe3c}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPhysicsRigidBody_abbb8a9d5b02b252b2ae887edb2afe937}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDPhysicsRigidBody::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidBody_abbb8a9d5b02b252b2ae887edb2afe937}
+Copies the rigid body into a clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new rigid body will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDPhysicsRigidBody_a6286b1a609dad2e7381d77c41195b2aa}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!GetParameters@{GetParameters}}
+\index{GetParameters@{GetParameters}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{GetParameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidBodyParameters}$\ast$ FCDPhysicsRigidBody::GetParameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidBody_a6286b1a609dad2e7381d77c41195b2aa}
+Retrieves the parameters of tihs rigid body. \begin{DoxyReturn}{Returns}
+The parameters. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidBody_a00f353e11572fe0a371780c84ef8659e}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!GetParameters@{GetParameters}}
+\index{GetParameters@{GetParameters}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{GetParameters}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidBodyParameters}$\ast$ FCDPhysicsRigidBody::GetParameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidBody_a00f353e11572fe0a371780c84ef8659e}
+See above. \hypertarget{classFCDPhysicsRigidBody_af30dd37bccbaf8d9d35528b8e2f109f0}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!GetShapeMassFactor@{GetShapeMassFactor}}
+\index{GetShapeMassFactor@{GetShapeMassFactor}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{GetShapeMassFactor}]{\setlength{\rightskip}{0pt plus 5cm}float FCDPhysicsRigidBody::GetShapeMassFactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDPhysicsRigidBody_af30dd37bccbaf8d9d35528b8e2f109f0}
+Retrieves the factor to multiple by to ensure shape masses are correct. According to the COLLADA spec in 1.4.1, if the total mass of the rigid body is 6 and there are 2 shapes with mass of 1 and 2, then it will be interpreted as 2 shapes with mass of 2 and 4 respectively. This method gives the factor to convert from the shape's mass to the one that should be interpreted as. \begin{DoxyReturn}{Returns}
+The factor for shape mass. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidBody_acd1890efbc95b0834156913024302017}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!GetSubId@{GetSubId}}
+\index{GetSubId@{GetSubId}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{GetSubId}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fm::string}\& FCDPhysicsRigidBody::GetSubId (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidBody_acd1890efbc95b0834156913024302017}
+Retrieves the sub id (sid) of this rigid body. \begin{DoxyReturn}{Returns}
+The sub id. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidBody_a5cfe206a60862fd34274e257d94628eb}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDPhysicsRigidBody::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidBody_a5cfe206a60862fd34274e257d94628eb}
+Retrieves the entity type for this class. This function is part of the \hyperlink{classFCDEntity}{FCDEntity} interface. \begin{DoxyReturn}{Returns}
+The entity type: PHYSICS\_\-RIGID\_\-BODY. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+\hypertarget{classFCDPhysicsRigidBody_ac846aa8af914f061738945d57de8d5c1}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!SetSubId@{SetSubId}}
+\index{SetSubId@{SetSubId}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{SetSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidBody::SetSubId (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ sid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidBody_ac846aa8af914f061738945d57de8d5c1}
+Sets the sub id (sid) of this rigid body. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sid}]The new sub id. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidBody_a3d08dc5f77ddfe8ec5f0da816c18bfd8}{
+\index{FCDPhysicsRigidBody@{FCDPhysicsRigidBody}!SetSubId@{SetSubId}}
+\index{SetSubId@{SetSubId}!FCDPhysicsRigidBody@{FCDPhysicsRigidBody}}
+\subsubsection[{SetSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidBody::SetSubId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ sid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidBody_a3d08dc5f77ddfe8ec5f0da816c18bfd8}
+See above. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsRigidBody_8h}{FCDPhysicsRigidBody.h}\item 
+FCollada/FCDocument/FCDPhysicsRigidBody.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,134 @@
+\hypertarget{FMMatrix44_8h}{
+\section{FCollada/FMath/FMMatrix44.h File Reference}
+\label{FMMatrix44_8h}\index{FCollada/FMath/FMMatrix44.h@{FCollada/FMath/FMMatrix44.h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFMMatrix44}{FMMatrix44}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classfm_1_1vector}{fm::vector}$<$ \hyperlink{classFMMatrix44}{FMMatrix44} $>$ \hyperlink{FMMatrix44_8h_ae5f16894ae363227f8c24163eaa0f117}{FMMatrix44List}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFMMatrix44}{FMMatrix44} FCOLLADA\_\-EXPORT \hyperlink{FMMatrix44_8h_a4cd2446e773bc73986f5a2897cf9535c}{operator$\ast$} (const \hyperlink{classFMMatrix44}{FMMatrix44} \&m1, const \hyperlink{classFMMatrix44}{FMMatrix44} \&m2)
+\item 
+\hyperlink{classFMVector4}{FMVector4} FCOLLADA\_\-EXPORT \hyperlink{FMMatrix44_8h_a2f0a2929e504ae7e585cd69f99984179}{operator$\ast$} (const \hyperlink{classFMMatrix44}{FMMatrix44} \&m, const \hyperlink{classFMVector4}{FMVector4} \&v)
+\item 
+\hyperlink{classFMMatrix44}{FMMatrix44} FCOLLADA\_\-EXPORT \hyperlink{FMMatrix44_8h_a15c428d6e3bee92427d3b81ca7a61f1f}{operator$\ast$} (float a, const \hyperlink{classFMMatrix44}{FMMatrix44} \&m)
+\item 
+bool FCOLLADA\_\-EXPORT \hyperlink{FMMatrix44_8h_a9900423a93b02eb584b30d5bbde8c817}{IsEquivalent} (const \hyperlink{classFMMatrix44}{FMMatrix44} \&m1, const \hyperlink{classFMMatrix44}{FMMatrix44} \&m2)
+\item 
+bool \hyperlink{FMMatrix44_8h_a50948795a56eefc94456157d12214892}{operator==} (const \hyperlink{classFMMatrix44}{FMMatrix44} \&m1, const \hyperlink{classFMMatrix44}{FMMatrix44} \&m2)
+\item 
+\hyperlink{classFMMatrix44}{FMMatrix44} \& \hyperlink{FMMatrix44_8h_a5e9cffcd347d81d165d93f28b92543ce}{operator$\ast$=} (\hyperlink{classFMMatrix44}{FMMatrix44} \&m1, const \hyperlink{classFMMatrix44}{FMMatrix44} \&m2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The file containing the class and global functions for 4x4 matrices. 
+
+\subsection{Typedef Documentation}
+\hypertarget{FMMatrix44_8h_ae5f16894ae363227f8c24163eaa0f117}{
+\index{FMMatrix44.h@{FMMatrix44.h}!FMMatrix44List@{FMMatrix44List}}
+\index{FMMatrix44List@{FMMatrix44List}!FMMatrix44.h@{FMMatrix44.h}}
+\subsubsection[{FMMatrix44List}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::vector}$<${\bf FMMatrix44}$>$ {\bf FMMatrix44List}}}
+\label{FMMatrix44_8h_ae5f16894ae363227f8c24163eaa0f117}
+A dynamically-\/sized array of 4x4 matrices. 
+
+\subsection{Function Documentation}
+\hypertarget{FMMatrix44_8h_a9900423a93b02eb584b30d5bbde8c817}{
+\index{FMMatrix44.h@{FMMatrix44.h}!IsEquivalent@{IsEquivalent}}
+\index{IsEquivalent@{IsEquivalent}!FMMatrix44.h@{FMMatrix44.h}}
+\subsubsection[{IsEquivalent}]{\setlength{\rightskip}{0pt plus 5cm}bool FCOLLADA\_\-EXPORT IsEquivalent (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMMatrix44} \&}]{ m1, }
+\item[{const {\bf FMMatrix44} \&}]{ m2}
+\end{DoxyParamCaption}
+)}}
+\label{FMMatrix44_8h_a9900423a93b02eb584b30d5bbde8c817}
+Matrix equality comparison function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em m1}]A first matrix. \item[{\em m2}]A second matrix. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the given matrices are equal. 
+\end{DoxyReturn}
+\hypertarget{FMMatrix44_8h_a4cd2446e773bc73986f5a2897cf9535c}{
+\index{FMMatrix44.h@{FMMatrix44.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!FMMatrix44.h@{FMMatrix44.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCOLLADA\_\-EXPORT operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMMatrix44} \&}]{ m1, }
+\item[{const {\bf FMMatrix44} \&}]{ m2}
+\end{DoxyParamCaption}
+)}}
+\label{FMMatrix44_8h_a4cd2446e773bc73986f5a2897cf9535c}
+Matrix multiplications. Effectively concatenates matrix transformations. \hyperlink{namespaceFCollada}{FCollada} does left-\/multiplication of matrices. 
+\begin{DoxyParams}{Parameters}
+\item[{\em m1}]A first matrix. \item[{\em m2}]A second matrix. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The concatenation of the two matrix transformations. 
+\end{DoxyReturn}
+\hypertarget{FMMatrix44_8h_a2f0a2929e504ae7e585cd69f99984179}{
+\index{FMMatrix44.h@{FMMatrix44.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!FMMatrix44.h@{FMMatrix44.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector4} FCOLLADA\_\-EXPORT operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMMatrix44} \&}]{ m, }
+\item[{const {\bf FMVector4} \&}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{FMMatrix44_8h_a2f0a2929e504ae7e585cd69f99984179}
+Transforms a four-\/dimensional vector by a given matrix. If the 'w' value of the vector is 1.0, this is a coordinate transformation. If the 'w' value of the vector is 0.0, this is a vector transformation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]A matrix. \item[{\em v}]A vector. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classFMVector4}{FMVector4} representation of the resulting vector. 
+\end{DoxyReturn}
+\hypertarget{FMMatrix44_8h_a15c428d6e3bee92427d3b81ca7a61f1f}{
+\index{FMMatrix44.h@{FMMatrix44.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!FMMatrix44.h@{FMMatrix44.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCOLLADA\_\-EXPORT operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{ a, }
+\item[{const {\bf FMMatrix44} \&}]{ m}
+\end{DoxyParamCaption}
+)}}
+\label{FMMatrix44_8h_a15c428d6e3bee92427d3b81ca7a61f1f}
+Scalar multiplication with float and \hyperlink{classFMMatrix44}{FMMatrix44}. All the components of the matrix get uniformly multiplied by the scalar. EDITOR NOTE: Is this functionality even useful? I cannot think of a reason this function would be used. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]A scalar. \item[{\em m}]A matrix. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting matrix. 
+\end{DoxyReturn}
+\hypertarget{FMMatrix44_8h_a5e9cffcd347d81d165d93f28b92543ce}{
+\index{FMMatrix44.h@{FMMatrix44.h}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!FMMatrix44.h@{FMMatrix44.h}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44}\& operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{{\bf FMMatrix44} \&}]{ m1, }
+\item[{const {\bf FMMatrix44} \&}]{ m2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{FMMatrix44_8h_a5e9cffcd347d81d165d93f28b92543ce}
+Left-\/multiplies a given matrix, in-\/place. This function effectively concatenates a transformation into a transform matrix. 
+\begin{DoxyParams}{Parameters}
+\item[{\em m1}]The in-\/place multiplied matrix. \item[{\em m2}]A matrix transformation. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The in-\/place multiplied matrix. 
+\end{DoxyReturn}
+\hypertarget{FMMatrix44_8h_a50948795a56eefc94456157d12214892}{
+\index{FMMatrix44.h@{FMMatrix44.h}!operator==@{operator==}}
+\index{operator==@{operator==}!FMMatrix44.h@{FMMatrix44.h}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMMatrix44} \&}]{ m1, }
+\item[{const {\bf FMMatrix44} \&}]{ m2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{FMMatrix44_8h_a50948795a56eefc94456157d12214892}
+See above. 

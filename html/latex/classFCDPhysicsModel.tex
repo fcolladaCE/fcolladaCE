@@ -1,0 +1,423 @@
+\hypertarget{classFCDPhysicsModel}{
+\section{FCDPhysicsModel Class Reference}
+\label{classFCDPhysicsModel}\index{FCDPhysicsModel@{FCDPhysicsModel}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsModel.h$>$}
+
+Inheritance diagram for FCDPhysicsModel:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDPhysicsModel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPhysicsModel_a4cdcfff220f1071c13f8141ba715d193}{FCDPhysicsModel} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDPhysicsModel_ae1527f7869220fe0d1a6340af40a6c57}{$\sim$FCDPhysicsModel} ()
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDPhysicsModel_a3da8c015b13e7225d2416c102333fe4b}{GetType} () const 
+\item 
+\hyperlink{classFUObjectContainer}{FCDPhysicsModelInstanceContainer} \& \hyperlink{classFCDPhysicsModel_a9d4c1eea1be92761c5b7c8a546bc8579}{GetInstances} ()
+\item 
+const \hyperlink{classFUObjectContainer}{FCDPhysicsModelInstanceContainer} \& \hyperlink{classFCDPhysicsModel_a2d02738090b8d06a014b4b30b128e8a2}{GetInstances} () const 
+\item 
+size\_\-t \hyperlink{classFCDPhysicsModel_ac2144145ba0118b5a937b3a1d681269f}{GetInstanceCount} () const 
+\item 
+\hyperlink{classFCDPhysicsModelInstance}{FCDPhysicsModelInstance} $\ast$ \hyperlink{classFCDPhysicsModel_a1e94dffa1c9c1e88d30f407d0e3aae71}{GetInstance} (size\_\-t index)
+\item 
+const \hyperlink{classFCDPhysicsModelInstance}{FCDPhysicsModelInstance} $\ast$ \hyperlink{classFCDPhysicsModel_a7966d893455aaa403472fce13bbb5a0d}{GetInstance} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDPhysicsModelInstance}{FCDPhysicsModelInstance} $\ast$ \hyperlink{classFCDPhysicsModel_ae222e53d9c0c9a2e7573d0350475b247}{AddPhysicsModelInstance} (\hyperlink{classFCDPhysicsModel}{FCDPhysicsModel} $\ast$model=NULL)
+\item 
+\hyperlink{classFUObjectContainer}{FCDPhysicsRigidBodyContainer} \& \hyperlink{classFCDPhysicsModel_ae20872b9a7123fe0249229744c61e372}{GetRigidBodies} ()
+\item 
+const \hyperlink{classFUObjectContainer}{FCDPhysicsRigidBodyContainer} \& \hyperlink{classFCDPhysicsModel_a66b28ef11ddd98c22cf9d3a0cbcb2208}{GetRigidBodies} () const 
+\item 
+size\_\-t \hyperlink{classFCDPhysicsModel_ab78fe671de0d7fc3aa95696f7b0d733f}{GetRigidBodyCount} () const 
+\item 
+\hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsModel_a81a58aa2f1df8cf24197cc722ac8cac7}{GetRigidBody} (size\_\-t index)
+\item 
+const \hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsModel_a6f48bfc2932d7dac65f11a82e5743627}{GetRigidBody} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsModel_a956793477886604c0a19742047b0583a}{FindRigidBodyFromSid} (const \hyperlink{classfm_1_1stringT}{fm::string} \&sid)
+\item 
+const \hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsModel_a5d78f6bd24271ae8620e2ef12f50117d}{FindRigidBodyFromSid} (const \hyperlink{classfm_1_1stringT}{fm::string} \&sid) const 
+\item 
+\hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsModel_a4f24faaa9cee06ad6a148eb45572c496}{AddRigidBody} ()
+\item 
+\hyperlink{classFUObjectContainer}{FCDPhysicsRigidConstraintContainer} \& \hyperlink{classFCDPhysicsModel_af2cee3570b90eafa0d84a00c827273d1}{GetRigidConstraints} ()
+\item 
+const \hyperlink{classFUObjectContainer}{FCDPhysicsRigidConstraintContainer} \& \hyperlink{classFCDPhysicsModel_a0651e65e0820fcc89d6691cf0f1f36fd}{GetRigidConstraints} () const 
+\item 
+size\_\-t \hyperlink{classFCDPhysicsModel_a8b0483d5e5507540ceabb40951ae147e}{GetRigidConstraintCount} () const 
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$ \hyperlink{classFCDPhysicsModel_aaa881246071f32aeca94c78ccf12b7be}{GetRigidConstraint} (size\_\-t index)
+\item 
+const \hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$ \hyperlink{classFCDPhysicsModel_a16ee7e602747d4e6d603dde97fb63fe4}{GetRigidConstraint} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$ \hyperlink{classFCDPhysicsModel_a6ebc6f8ce35c796c9509da44ca113eaf}{FindRigidConstraintFromSid} (const \hyperlink{classfm_1_1stringT}{fm::string} \&sid)
+\item 
+const \hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$ \hyperlink{classFCDPhysicsModel_a6e9b3f4400aec64c3645a115c5dfe013}{FindRigidConstraintFromSid} (const \hyperlink{classfm_1_1stringT}{fm::string} \&sid) const 
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$ \hyperlink{classFCDPhysicsModel_af9356bcbe4a27ef102a8e49d3cbab53e}{AddRigidConstraint} ()
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDPhysicsModel_a8f50bef0284300f395efb6637ddce559}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\item 
+bool \hyperlink{classFCDPhysicsModel_a7505505b8a1e5f1c4e0d74fe155a4c53}{AttachModelInstances} ()
+\item 
+virtual void \hyperlink{classFCDPhysicsModel_a2caafe253a23d7336c38fac68dea9579}{CleanSubId} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA physics model.
+
+A physics model can contain rigid bodies, rigid constraints, or instances of previously defined physics models. For example, a house physics model could contain a number of instantiated physics models such as walls. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPhysicsModel_a4cdcfff220f1071c13f8141ba715d193}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!FCDPhysicsModel@{FCDPhysicsModel}}
+\index{FCDPhysicsModel@{FCDPhysicsModel}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{FCDPhysicsModel}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsModel::FCDPhysicsModel (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModel_a4cdcfff220f1071c13f8141ba715d193}
+Constructor: do not use directly. Create new physics models using the \hyperlink{classFCDLibrary_aa5cdcac5a447298d5e3816e4f8c864d0}{FCDLibrary::AddEntity} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this physics model. \end{DoxyParams}
+\hypertarget{classFCDPhysicsModel_ae1527f7869220fe0d1a6340af40a6c57}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!$\sim$FCDPhysicsModel@{$\sim$FCDPhysicsModel}}
+\index{$\sim$FCDPhysicsModel@{$\sim$FCDPhysicsModel}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{$\sim$FCDPhysicsModel}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsModel::$\sim$FCDPhysicsModel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsModel_ae1527f7869220fe0d1a6340af40a6c57}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPhysicsModel_ae222e53d9c0c9a2e7573d0350475b247}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!AddPhysicsModelInstance@{AddPhysicsModelInstance}}
+\index{AddPhysicsModelInstance@{AddPhysicsModelInstance}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{AddPhysicsModelInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsModelInstance} $\ast$ FCDPhysicsModel::AddPhysicsModelInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDPhysicsModel} $\ast$}]{ model = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModel_ae222e53d9c0c9a2e7573d0350475b247}
+Adds a instantiated physics model to this physics model. 
+\begin{DoxyParams}{Parameters}
+\item[{\em model}]The physics model to be instanced in this physics model. If this value is NULL, then there is no associated physics model for the instance yet. It should be filled in. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new physics model instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a4f24faaa9cee06ad6a148eb45572c496}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!AddRigidBody@{AddRigidBody}}
+\index{AddRigidBody@{AddRigidBody}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{AddRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidBody} $\ast$ FCDPhysicsModel::AddRigidBody (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModel_a4f24faaa9cee06ad6a148eb45572c496}
+Adds a rigid body to this physics model. \begin{DoxyReturn}{Returns}
+The new rigid body. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_af9356bcbe4a27ef102a8e49d3cbab53e}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!AddRigidConstraint@{AddRigidConstraint}}
+\index{AddRigidConstraint@{AddRigidConstraint}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{AddRigidConstraint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidConstraint} $\ast$ FCDPhysicsModel::AddRigidConstraint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModel_af9356bcbe4a27ef102a8e49d3cbab53e}
+Adds a rigid constraint to this physics model. \begin{DoxyReturn}{Returns}
+The new rigid constraint. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a7505505b8a1e5f1c4e0d74fe155a4c53}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!AttachModelInstances@{AttachModelInstances}}
+\index{AttachModelInstances@{AttachModelInstances}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{AttachModelInstances}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDPhysicsModel::AttachModelInstances (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsModel_a7505505b8a1e5f1c4e0d74fe155a4c53}
+\mbox{[}INTERNAL\mbox{]} Attaches the model instances. Because model instances can instance other models, the ordering is unknown so this cannot be done in the LoadFromXML call. This method should be called after LoadFromXML is applied to all physics models. \hypertarget{classFCDPhysicsModel_a2caafe253a23d7336c38fac68dea9579}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!CleanSubId@{CleanSubId}}
+\index{CleanSubId@{CleanSubId}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{CleanSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsModel::CleanSubId (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsModel_a2caafe253a23d7336c38fac68dea9579}
+\mbox{[}INTERNAL\mbox{]} Cleans up the sub identifiers. The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. \hypertarget{classFCDPhysicsModel_a8f50bef0284300f395efb6637ddce559}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDPhysicsModel::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsModel_a8f50bef0284300f395efb6637ddce559}
+Copies the physics model into a clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new physics model will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDPhysicsModel_a956793477886604c0a19742047b0583a}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!FindRigidBodyFromSid@{FindRigidBodyFromSid}}
+\index{FindRigidBodyFromSid@{FindRigidBodyFromSid}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{FindRigidBodyFromSid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidBody}$\ast$ FCDPhysicsModel::FindRigidBodyFromSid (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ sid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a956793477886604c0a19742047b0583a}
+Retrieves a specific rigid body that is a part of this physics model by its sid. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sid}]The sid of the rigid body. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rigid body. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a5d78f6bd24271ae8620e2ef12f50117d}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!FindRigidBodyFromSid@{FindRigidBodyFromSid}}
+\index{FindRigidBodyFromSid@{FindRigidBodyFromSid}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{FindRigidBodyFromSid}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidBody} $\ast$ FCDPhysicsModel::FindRigidBodyFromSid (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ sid}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDPhysicsModel_a5d78f6bd24271ae8620e2ef12f50117d}
+See above. \hypertarget{classFCDPhysicsModel_a6ebc6f8ce35c796c9509da44ca113eaf}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!FindRigidConstraintFromSid@{FindRigidConstraintFromSid}}
+\index{FindRigidConstraintFromSid@{FindRigidConstraintFromSid}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{FindRigidConstraintFromSid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidConstraint}$\ast$ FCDPhysicsModel::FindRigidConstraintFromSid (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ sid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a6ebc6f8ce35c796c9509da44ca113eaf}
+Retrieves a specific rigid constraint that is a part of tihs physics model by its sid. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sid}]The sid of the rigid constraint. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rigid constraint. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a6e9b3f4400aec64c3645a115c5dfe013}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!FindRigidConstraintFromSid@{FindRigidConstraintFromSid}}
+\index{FindRigidConstraintFromSid@{FindRigidConstraintFromSid}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{FindRigidConstraintFromSid}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidConstraint} $\ast$ FCDPhysicsModel::FindRigidConstraintFromSid (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ sid}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDPhysicsModel_a6e9b3f4400aec64c3645a115c5dfe013}
+See above. \hypertarget{classFCDPhysicsModel_a1e94dffa1c9c1e88d30f407d0e3aae71}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsModelInstance}$\ast$ FCDPhysicsModel::GetInstance (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a1e94dffa1c9c1e88d30f407d0e3aae71}
+Retrieves a specific instantiated physics model that is a part of this physics model. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the instance. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The physics model instance. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a7966d893455aaa403472fce13bbb5a0d}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetInstance}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsModelInstance}$\ast$ FCDPhysicsModel::GetInstance (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a7966d893455aaa403472fce13bbb5a0d}
+See above. \hypertarget{classFCDPhysicsModel_ac2144145ba0118b5a937b3a1d681269f}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetInstanceCount@{GetInstanceCount}}
+\index{GetInstanceCount@{GetInstanceCount}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetInstanceCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDPhysicsModel::GetInstanceCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_ac2144145ba0118b5a937b3a1d681269f}
+Retrieves the number of instantiated physics models that are part of this physics model. \begin{DoxyReturn}{Returns}
+The number of instantiated physics models. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a9d4c1eea1be92761c5b7c8a546bc8579}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetInstances@{GetInstances}}
+\index{GetInstances@{GetInstances}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetInstances}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsModelInstanceContainer}\& FCDPhysicsModel::GetInstances (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a9d4c1eea1be92761c5b7c8a546bc8579}
+Retrieves the instantiated physics models that are part of this physics model. \begin{DoxyReturn}{Returns}
+The physics model instances. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a2d02738090b8d06a014b4b30b128e8a2}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetInstances@{GetInstances}}
+\index{GetInstances@{GetInstances}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetInstances}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsModelInstanceContainer}\& FCDPhysicsModel::GetInstances (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a2d02738090b8d06a014b4b30b128e8a2}
+See above. \hypertarget{classFCDPhysicsModel_ae20872b9a7123fe0249229744c61e372}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidBodies@{GetRigidBodies}}
+\index{GetRigidBodies@{GetRigidBodies}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidBodies}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidBodyContainer}\& FCDPhysicsModel::GetRigidBodies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_ae20872b9a7123fe0249229744c61e372}
+Retrieves the rigid bodies that are a part of this physics model. \begin{DoxyReturn}{Returns}
+The rigid bodies. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a66b28ef11ddd98c22cf9d3a0cbcb2208}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidBodies@{GetRigidBodies}}
+\index{GetRigidBodies@{GetRigidBodies}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidBodies}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidBodyContainer}\& FCDPhysicsModel::GetRigidBodies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a66b28ef11ddd98c22cf9d3a0cbcb2208}
+See above. \hypertarget{classFCDPhysicsModel_a6f48bfc2932d7dac65f11a82e5743627}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidBody@{GetRigidBody}}
+\index{GetRigidBody@{GetRigidBody}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidBody}$\ast$ FCDPhysicsModel::GetRigidBody (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a6f48bfc2932d7dac65f11a82e5743627}
+See above. \hypertarget{classFCDPhysicsModel_a81a58aa2f1df8cf24197cc722ac8cac7}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidBody@{GetRigidBody}}
+\index{GetRigidBody@{GetRigidBody}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidBody}$\ast$ FCDPhysicsModel::GetRigidBody (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a81a58aa2f1df8cf24197cc722ac8cac7}
+Retrieves a specific rigid body that is a part of this physics model by its index. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the rigid body. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rigid body. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_ab78fe671de0d7fc3aa95696f7b0d733f}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidBodyCount@{GetRigidBodyCount}}
+\index{GetRigidBodyCount@{GetRigidBodyCount}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidBodyCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDPhysicsModel::GetRigidBodyCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_ab78fe671de0d7fc3aa95696f7b0d733f}
+Retrieves the number of rigid bodies that are a part of this physics model. \begin{DoxyReturn}{Returns}
+The number of rigid bodies. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_aaa881246071f32aeca94c78ccf12b7be}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidConstraint@{GetRigidConstraint}}
+\index{GetRigidConstraint@{GetRigidConstraint}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidConstraint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidConstraint}$\ast$ FCDPhysicsModel::GetRigidConstraint (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_aaa881246071f32aeca94c78ccf12b7be}
+Retrieves a specific rigid constraint that is a part of tihs physics model by its index. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the rigid constraint. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rigid constraint. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a16ee7e602747d4e6d603dde97fb63fe4}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidConstraint@{GetRigidConstraint}}
+\index{GetRigidConstraint@{GetRigidConstraint}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidConstraint}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidConstraint}$\ast$ FCDPhysicsModel::GetRigidConstraint (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a16ee7e602747d4e6d603dde97fb63fe4}
+See above. \hypertarget{classFCDPhysicsModel_a8b0483d5e5507540ceabb40951ae147e}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidConstraintCount@{GetRigidConstraintCount}}
+\index{GetRigidConstraintCount@{GetRigidConstraintCount}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidConstraintCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDPhysicsModel::GetRigidConstraintCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a8b0483d5e5507540ceabb40951ae147e}
+Retrieves the number of rigid constraints that are a part of this physics model. \begin{DoxyReturn}{Returns}
+The number of rigid constraints. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a0651e65e0820fcc89d6691cf0f1f36fd}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidConstraints@{GetRigidConstraints}}
+\index{GetRigidConstraints@{GetRigidConstraints}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidConstraints}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidConstraintContainer}\& FCDPhysicsModel::GetRigidConstraints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_a0651e65e0820fcc89d6691cf0f1f36fd}
+See above. \hypertarget{classFCDPhysicsModel_af2cee3570b90eafa0d84a00c827273d1}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetRigidConstraints@{GetRigidConstraints}}
+\index{GetRigidConstraints@{GetRigidConstraints}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetRigidConstraints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidConstraintContainer}\& FCDPhysicsModel::GetRigidConstraints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsModel_af2cee3570b90eafa0d84a00c827273d1}
+Retrieves the rigid constraints that are a part of this physics model. \begin{DoxyReturn}{Returns}
+The rigid constraints. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsModel_a3da8c015b13e7225d2416c102333fe4b}{
+\index{FCDPhysicsModel@{FCDPhysicsModel}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDPhysicsModel@{FCDPhysicsModel}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDPhysicsModel::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPhysicsModel_a3da8c015b13e7225d2416c102333fe4b}
+Retrieves the entity type for this class. This function is part of the \hyperlink{classFCDEntity}{FCDEntity} interface. \begin{DoxyReturn}{Returns}
+The entity type: PHYSICS\_\-MODEL. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsModel_8h}{FCDPhysicsModel.h}\item 
+FCollada/FCDocument/FCDPhysicsModel.cpp\end{DoxyCompactItemize}

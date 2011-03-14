@@ -1,0 +1,293 @@
+\hypertarget{classFCDGeometryPolygonsInput}{
+\section{FCDGeometryPolygonsInput Class Reference}
+\label{classFCDGeometryPolygonsInput}\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+}
+
+
+{\ttfamily \#include $<$FCDGeometryPolygonsInput.h$>$}
+
+Inheritance diagram for FCDGeometryPolygonsInput:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDGeometryPolygonsInput}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDGeometryPolygonsInput_af28777c31ffe03f0ec9e5928a98f9f96}{FCDGeometryPolygonsInput} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDGeometryPolygons}{FCDGeometryPolygons} $\ast$parent)
+\item 
+\hyperlink{classFCDGeometryPolygonsInput_a81ec274561e90c9c103e4de83a8d2a1d}{$\sim$FCDGeometryPolygonsInput} ()
+\item 
+\hyperlink{namespaceFUDaeGeometryInput_a0f887d29f54b10338ebcf73789a7a061}{FUDaeGeometryInput::Semantic} \hyperlink{classFCDGeometryPolygonsInput_a00b2b196c94ff22d4ae2cec3759abdc7}{GetSemantic} () const 
+\item 
+\hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$ \hyperlink{classFCDGeometryPolygonsInput_a713b84b7aeb8f5c0d22ca380c7d5848b}{GetSource} ()
+\item 
+const \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$ \hyperlink{classFCDGeometryPolygonsInput_aa2a070f88c0aba41707dfb91e0522a2a}{GetSource} () const 
+\item 
+void \hyperlink{classFCDGeometryPolygonsInput_a274087545c26f22c7e815375b100aeff}{SetSource} (\hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$source)
+\item 
+void \hyperlink{classFCDGeometryPolygonsInput_aac3017db3ac95e98b7bed95c032eb519}{SetOffset} (uint32 \_\-offset)
+\item 
+uint32 \hyperlink{classFCDGeometryPolygonsInput_ae397c60491172cacd7378d0b58b937d3}{GetOffset} () const 
+\item 
+int32 \hyperlink{classFCDGeometryPolygonsInput_a1b0484d39f26b21e5c100bf9c9995ca4}{GetSet} () const 
+\item 
+void \hyperlink{classFCDGeometryPolygonsInput_a50c9f9a8af36be7635b0cd4d08419851}{SetSet} (int32 \_\-set)
+\item 
+bool \hyperlink{classFCDGeometryPolygonsInput_ae371191aa9f4672d8a9b2c02c25426ce}{OwnsIndices} () const 
+\item 
+void \hyperlink{classFCDGeometryPolygonsInput_a27b48af070d7f0df605acbc77000d79a}{SetIndices} (const uint32 $\ast$indices, size\_\-t count)
+\item 
+void \hyperlink{classFCDGeometryPolygonsInput_adcf7935cdd571608bd926e43a798835c}{SetIndexCount} (size\_\-t count)
+\item 
+void \hyperlink{classFCDGeometryPolygonsInput_adc1244ae383d74286b2cffda2cdf5273}{ReserveIndexCount} (size\_\-t count)
+\item 
+void \hyperlink{classFCDGeometryPolygonsInput_a7a0f9b2bd9a029dacb85dedf117be369}{AddIndex} (uint32 index)
+\item 
+void \hyperlink{classFCDGeometryPolygonsInput_aaeaf5df01bcea6367c4f871d83021db6}{AddIndices} (const \hyperlink{classfm_1_1vector}{UInt32List} \&indices)
+\item 
+uint32 $\ast$ \hyperlink{classFCDGeometryPolygonsInput_a5d7b1ca8bcb8b13f82068a081d58ee04}{GetIndices} ()
+\item 
+const uint32 $\ast$ \hyperlink{classFCDGeometryPolygonsInput_a1c3cb050c3fa5bc0b1a57b80fcbdc463}{GetIndices} () const 
+\item 
+size\_\-t \hyperlink{classFCDGeometryPolygonsInput_a9cee5af01dde8af915cc2e2b7ffba6e2}{GetIndexCount} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An input data source for one mesh polygons set. This structure knows the type of input data in the data source as well as the set and offset for the data. It also contains a pointer to the mesh data source.
+
+Many polygon set inputs may have the same offset (or 'idx' in older versions) when multiple data sources are compressed together within the COLLADA document. In this case, one and only one of the polygon set input should contain indices. To find the indices of any polygon set input, it is recommended that you use the FCDGeometryPolygons::FindIndicesForIdx function. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDGeometryPolygonsInput_af28777c31ffe03f0ec9e5928a98f9f96}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{FCDGeometryPolygonsInput}]{\setlength{\rightskip}{0pt plus 5cm}FCDGeometryPolygonsInput::FCDGeometryPolygonsInput (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDGeometryPolygons} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometryPolygonsInput_af28777c31ffe03f0ec9e5928a98f9f96}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em parent}]The polygons sets that contains the input. \item[{\em offset}]The offset for the indices of this input within the interlaced tesselation information. \end{DoxyParams}
+\hypertarget{classFCDGeometryPolygonsInput_a81ec274561e90c9c103e4de83a8d2a1d}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!$\sim$FCDGeometryPolygonsInput@{$\sim$FCDGeometryPolygonsInput}}
+\index{$\sim$FCDGeometryPolygonsInput@{$\sim$FCDGeometryPolygonsInput}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{$\sim$FCDGeometryPolygonsInput}]{\setlength{\rightskip}{0pt plus 5cm}FCDGeometryPolygonsInput::$\sim$FCDGeometryPolygonsInput (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometryPolygonsInput_a81ec274561e90c9c103e4de83a8d2a1d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDGeometryPolygonsInput_a7a0f9b2bd9a029dacb85dedf117be369}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!AddIndex@{AddIndex}}
+\index{AddIndex@{AddIndex}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{AddIndex}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometryPolygonsInput::AddIndex (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometryPolygonsInput_a7a0f9b2bd9a029dacb85dedf117be369}
+Adds an index to the indices of this input. Be careful when adding indices directly to multiple inputs: if multiple inputs share an index list, you may be adding unwanted indices. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index to add. \end{DoxyParams}
+\hypertarget{classFCDGeometryPolygonsInput_aaeaf5df01bcea6367c4f871d83021db6}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!AddIndices@{AddIndices}}
+\index{AddIndices@{AddIndices}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{AddIndices}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometryPolygonsInput::AddIndices (
+\begin{DoxyParamCaption}
+\item[{const {\bf UInt32List} \&}]{ indices}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometryPolygonsInput_aaeaf5df01bcea6367c4f871d83021db6}
+Adds a batch of indices to the end of the index list of this input. Be careful when adding indices directly to multiple inputs: if multiple inputs share an index list, you may be adding unwanted indices. 
+\begin{DoxyParams}{Parameters}
+\item[{\em indices}]The indices to add. \end{DoxyParams}
+\hypertarget{classFCDGeometryPolygonsInput_a9cee5af01dde8af915cc2e2b7ffba6e2}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!GetIndexCount@{GetIndexCount}}
+\index{GetIndexCount@{GetIndexCount}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{GetIndexCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDGeometryPolygonsInput::GetIndexCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDGeometryPolygonsInput_a9cee5af01dde8af915cc2e2b7ffba6e2}
+Retrieves the number of indices for this input. \begin{DoxyReturn}{Returns}
+The number of indices for this input. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometryPolygonsInput_a1c3cb050c3fa5bc0b1a57b80fcbdc463}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!GetIndices@{GetIndices}}
+\index{GetIndices@{GetIndices}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{GetIndices}]{\setlength{\rightskip}{0pt plus 5cm}const uint32 $\ast$ FCDGeometryPolygonsInput::GetIndices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDGeometryPolygonsInput_a1c3cb050c3fa5bc0b1a57b80fcbdc463}
+See above. \hypertarget{classFCDGeometryPolygonsInput_a5d7b1ca8bcb8b13f82068a081d58ee04}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!GetIndices@{GetIndices}}
+\index{GetIndices@{GetIndices}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{GetIndices}]{\setlength{\rightskip}{0pt plus 5cm}uint32$\ast$ FCDGeometryPolygonsInput::GetIndices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometryPolygonsInput_a5d7b1ca8bcb8b13f82068a081d58ee04}
+Retrieves the list of indices for this input. \begin{DoxyReturn}{Returns}
+The list of indices for this input. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometryPolygonsInput_ae397c60491172cacd7378d0b58b937d3}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!GetOffset@{GetOffset}}
+\index{GetOffset@{GetOffset}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{GetOffset}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FCDGeometryPolygonsInput::GetOffset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometryPolygonsInput_ae397c60491172cacd7378d0b58b937d3}
+Retrieves the offset within the interlaced COLLADA indices for this input's indices. \begin{DoxyReturn}{Returns}
+The interlaced indices offset. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometryPolygonsInput_a00b2b196c94ff22d4ae2cec3759abdc7}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!GetSemantic@{GetSemantic}}
+\index{GetSemantic@{GetSemantic}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{GetSemantic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUDaeGeometryInput::Semantic} FCDGeometryPolygonsInput::GetSemantic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDGeometryPolygonsInput_a00b2b196c94ff22d4ae2cec3759abdc7}
+Retrieves the type of data to input. \hyperlink{namespaceFCollada}{FCollada} doesn't support data sources which are interpreted differently depending on the input. Therefore, this information is retrieved from the source. \begin{DoxyReturn}{Returns}
+The source data type. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometryPolygonsInput_a1b0484d39f26b21e5c100bf9c9995ca4}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!GetSet@{GetSet}}
+\index{GetSet@{GetSet}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{GetSet}]{\setlength{\rightskip}{0pt plus 5cm}int32 FCDGeometryPolygonsInput::GetSet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometryPolygonsInput_a1b0484d39f26b21e5c100bf9c9995ca4}
+Retrieves the input set. The input set is used to group together the texture coordinates with the texture tangents and binormals. In ColladaMax, this value should also represent the map channel index for texture coordinates and vertex color channels. \begin{DoxyReturn}{Returns}
+The input set. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometryPolygonsInput_a713b84b7aeb8f5c0d22ca380c7d5848b}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!GetSource@{GetSource}}
+\index{GetSource@{GetSource}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{GetSource}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometrySource}$\ast$ FCDGeometryPolygonsInput::GetSource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometryPolygonsInput_a713b84b7aeb8f5c0d22ca380c7d5848b}
+Retrieves the data source references by this polygon set input. This is the data source into which the indices are indexing. You need to take the data source stride into consideration when un-\/indexing the data. \begin{DoxyReturn}{Returns}
+The data source. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometryPolygonsInput_aa2a070f88c0aba41707dfb91e0522a2a}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!GetSource@{GetSource}}
+\index{GetSource@{GetSource}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{GetSource}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDGeometrySource}$\ast$ FCDGeometryPolygonsInput::GetSource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometryPolygonsInput_aa2a070f88c0aba41707dfb91e0522a2a}
+See above. \hypertarget{classFCDGeometryPolygonsInput_ae371191aa9f4672d8a9b2c02c25426ce}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!OwnsIndices@{OwnsIndices}}
+\index{OwnsIndices@{OwnsIndices}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{OwnsIndices}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDGeometryPolygonsInput::OwnsIndices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometryPolygonsInput_ae371191aa9f4672d8a9b2c02c25426ce}
+Checks whether this polygon set input owns the local indices for its offset. Since an offset may be shared, only one polygon set input will own the local indices. \begin{DoxyReturn}{Returns}
+Whether this polygon set owns the local indices. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometryPolygonsInput_adc1244ae383d74286b2cffda2cdf5273}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!ReserveIndexCount@{ReserveIndexCount}}
+\index{ReserveIndexCount@{ReserveIndexCount}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{ReserveIndexCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometryPolygonsInput::ReserveIndexCount (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometryPolygonsInput_adc1244ae383d74286b2cffda2cdf5273}
+Reserves memory for a given number of indices. This is useful for performance reasons, since AddIndex can be extremely costly otherwise. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The total number of indices to prepare memory for. \end{DoxyParams}
+\hypertarget{classFCDGeometryPolygonsInput_adcf7935cdd571608bd926e43a798835c}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!SetIndexCount@{SetIndexCount}}
+\index{SetIndexCount@{SetIndexCount}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{SetIndexCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometryPolygonsInput::SetIndexCount (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometryPolygonsInput_adcf7935cdd571608bd926e43a798835c}
+Sets the number of indices in this input's index list. Any additional indices allocated will not be initialized. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The number of indices in this input's index list. \end{DoxyParams}
+\hypertarget{classFCDGeometryPolygonsInput_a27b48af070d7f0df605acbc77000d79a}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!SetIndices@{SetIndices}}
+\index{SetIndices@{SetIndices}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{SetIndices}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometryPolygonsInput::SetIndices (
+\begin{DoxyParamCaption}
+\item[{const uint32 $\ast$}]{ indices, }
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometryPolygonsInput_a27b48af070d7f0df605acbc77000d79a}
+Sets the local indices for the input's offset. This function may fail if another input already owns the indices for this offset. 
+\begin{DoxyParams}{Parameters}
+\item[{\em indices}]A static list of indices. \item[{\em count}]The number of indices in the given list. \end{DoxyParams}
+\hypertarget{classFCDGeometryPolygonsInput_aac3017db3ac95e98b7bed95c032eb519}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!SetOffset@{SetOffset}}
+\index{SetOffset@{SetOffset}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{SetOffset}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometryPolygonsInput::SetOffset (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometryPolygonsInput_aac3017db3ac95e98b7bed95c032eb519}
+Retrieves the offset within the interlaced COLLADA indices for this input's indices. Changing this value after the input's construction is not recommended. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-offset}]The offset within the interlaced COLLADA indices for this input's indices. \end{DoxyParams}
+\hypertarget{classFCDGeometryPolygonsInput_a50c9f9a8af36be7635b0cd4d08419851}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!SetSet@{SetSet}}
+\index{SetSet@{SetSet}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{SetSet}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometryPolygonsInput::SetSet (
+\begin{DoxyParamCaption}
+\item[{int32}]{ \_\-set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometryPolygonsInput_a50c9f9a8af36be7635b0cd4d08419851}
+Sets the input set. The input set is used to group together the texture coordinates with the texture tangents and binormals. In ColladaMax, this value should also represent the map channel index for texture coordinates and vertex color channels. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-set}]The new input set. If the given value is -\/1, this input does not belong to any set. \end{DoxyParams}
+\hypertarget{classFCDGeometryPolygonsInput_a274087545c26f22c7e815375b100aeff}{
+\index{FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}!SetSource@{SetSource}}
+\index{SetSource@{SetSource}!FCDGeometryPolygonsInput@{FCDGeometryPolygonsInput}}
+\subsubsection[{SetSource}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometryPolygonsInput::SetSource (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometrySource} $\ast$}]{ source}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometryPolygonsInput_a274087545c26f22c7e815375b100aeff}
+Sets the data source referenced by this polygon set input. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The data source referenced by the input indices. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDGeometryPolygonsInput_8h}{FCDGeometryPolygonsInput.h}\item 
+FCollada/FCDocument/FCDGeometryPolygonsInput.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{FCDGeometryPolygonsTools_8h}{
+\section{FCollada/FCDocument/FCDGeometryPolygonsTools.h File Reference}
+\label{FCDGeometryPolygonsTools_8h}\index{FCollada/FCDocument/FCDGeometryPolygonsTools.h@{FCollada/FCDocument/FCDGeometryPolygonsTools.h}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceFCDGeometryPolygonsTools}{FCDGeometryPolygonsTools}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{FCDGeometryPolygonsTools_8h_a433048abeb218e08e3f423032b6c537c}{MAX\_\-BUFFER\_\-COUNT}~((uint16)$\sim$0)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classfm_1_1map}{fm::map}$<$ uint32, \hyperlink{classfm_1_1vector}{UInt32List} $>$ \hyperlink{FCDGeometryPolygonsTools_8h_a90e226f2e78c40d2f990e484111c2351}{FCDGeometryIndexTranslationMap}
+\item 
+typedef \hyperlink{classfm_1_1pvector}{fm::pvector}$<$ \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} $>$ \hyperlink{FCDGeometryPolygonsTools_8h_a8ab3900248e2bdd4994afb254a0ad751}{FCDGeometryIndexTranslationMapList}
+\item 
+typedef \hyperlink{classfm_1_1vector}{fm::vector}$<$ \hyperlink{classfm_1_1vector}{UInt32List} $>$ \hyperlink{FCDGeometryPolygonsTools_8h_ab768b574e5282101fb75f78edc2865b6}{FCDNewIndicesList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_acc34609095c4d934983f65f5bf068d3d}{FCDGeometryPolygonsTools::Triangulate} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_acf2b155dd5781c2a781841097c745396}{FCDGeometryPolygonsTools::Triangulate} (\hyperlink{classFCDGeometryPolygons}{FCDGeometryPolygons} $\ast$polygons, bool recalculate)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_ac750730d04e82ff25157d06bb77996ce}{FCDGeometryPolygonsTools::GenerateTextureTangentBasis} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh, \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$texcoordSource, bool generateBinormals)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_af02df362078a3e7467a978862fbf99d5}{FCDGeometryPolygonsTools::GenerateUniqueIndices} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh, \hyperlink{classFCDGeometryPolygons}{FCDGeometryPolygons} $\ast$polygonsToProcess, \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} $\ast$translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a7541340d15de908be8cc7f95d568d32c}{FCDGeometryPolygonsTools::GenerateUniqueIndices} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh, \hyperlink{classFCDGeometryPolygons}{FCDGeometryPolygons} $\ast$polygonsToProcess, \hyperlink{classfm_1_1vector}{FCDNewIndicesList} \&outIndices, \hyperlink{classfm_1_1pvector}{FCDGeometryIndexTranslationMapList} \&outTranslationMaps)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_ad2bfb87fea582dbdd9dcc2021d9e5628}{FCDGeometryPolygonsTools::ApplyUniqueIndices} (float $\ast$targData, float $\ast$srcData, uint32 stride, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} $\ast$translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a2b715708a01eab1beb8e3b29de70dd0d}{FCDGeometryPolygonsTools::ApplyUniqueIndices} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$targMesh, \hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$baseMesh, const \hyperlink{classfm_1_1vector}{UInt32List} \&newIndices, const \hyperlink{classfm_1_1pvector}{FCDGeometryIndexTranslationMapList} \&translationMaps)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_ab46f2b9cf9e9e830f32e37c4af4ca6a7}{FCDGeometryPolygonsTools::RevertUniqueIndices} (const \hyperlink{classFCDGeometryPolygonsInput}{FCDGeometryPolygonsInput} \&inPInput, \hyperlink{classFCDGeometryPolygonsInput}{FCDGeometryPolygonsInput} \&outPInput, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a4f9f9b1a23da8801703894929ed78c77}{FCDGeometryPolygonsTools::PackVertexBufferV3} (uint8 $\ast$destBuffer, uint32 destBuffStride, const \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$source, uint32 vCount, uint16 $\ast$vtxPackingMap, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_ac59d7b587eccb025da8318018b966de6}{FCDGeometryPolygonsTools::PackVertexBufferColor} (uint8 $\ast$destBuffer, uint32 destBuffStride, const \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$source, uint32 vCount, uint16 $\ast$vtxPackingMap, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a75da2add1b594593c04bcf253d015567}{FCDGeometryPolygonsTools::PackVertexBufferV2} (uint8 $\ast$destBuffer, uint32 destBuffStride, const \hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$source, uint32 vCount, uint16 $\ast$vtxPackingMap, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap)
+\item 
+uint16 \hyperlink{namespaceFCDGeometryPolygonsTools_a18a4eb68e6b187f573ca808d78b7cf37}{FCDGeometryPolygonsTools::GenerateVertexPackingMap} (size\_\-t maxIndex, size\_\-t maxIndices, size\_\-t maxVertices, const uint32 $\ast$inIndices, uint16 $\ast$outIndices, \hyperlink{classfm_1_1vector}{UInt16List} $\ast$outPackingMap, uint16 $\ast$outNVertices)
+\item 
+uint32 \hyperlink{namespaceFCDGeometryPolygonsTools_a10e774316ed58ca98bbf78a24e833ee4}{FCDGeometryPolygonsTools::FindLargestUniqueIndex} (const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&aMap)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_aa53f5d46accb9d94e71029dcabe10510}{FCDGeometryPolygonsTools::FitIndexBuffers} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh, size\_\-t maximumIndexCount)
+\item 
+void \hyperlink{namespaceFCDGeometryPolygonsTools_a25f9608e5084b711403e38aafd52e990}{FCDGeometryPolygonsTools::ReverseNormals} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$mesh)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines the \hyperlink{namespaceFCDGeometryPolygonsTools}{FCDGeometryPolygonsTools} namespace. 
+
+\subsection{Define Documentation}
+\hypertarget{FCDGeometryPolygonsTools_8h_a433048abeb218e08e3f423032b6c537c}{
+\index{FCDGeometryPolygonsTools.h@{FCDGeometryPolygonsTools.h}!MAX\_\-BUFFER\_\-COUNT@{MAX\_\-BUFFER\_\-COUNT}}
+\index{MAX\_\-BUFFER\_\-COUNT@{MAX\_\-BUFFER\_\-COUNT}!FCDGeometryPolygonsTools.h@{FCDGeometryPolygonsTools.h}}
+\subsubsection[{MAX\_\-BUFFER\_\-COUNT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-BUFFER\_\-COUNT~((uint16)$\sim$0)}}
+\label{FCDGeometryPolygonsTools_8h_a433048abeb218e08e3f423032b6c537c}
+MAX\_\-BUFFER\_\-COUNT is the default value to split by when packing vertices and indices. It represents the usual upper limit of video cards on buffer submission size 
+
+\subsection{Typedef Documentation}
+\hypertarget{FCDGeometryPolygonsTools_8h_a90e226f2e78c40d2f990e484111c2351}{
+\index{FCDGeometryPolygonsTools.h@{FCDGeometryPolygonsTools.h}!FCDGeometryIndexTranslationMap@{FCDGeometryIndexTranslationMap}}
+\index{FCDGeometryIndexTranslationMap@{FCDGeometryIndexTranslationMap}!FCDGeometryPolygonsTools.h@{FCDGeometryPolygonsTools.h}}
+\subsubsection[{FCDGeometryIndexTranslationMap}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::map}$<$uint32, {\bf UInt32List}$>$ {\bf FCDGeometryIndexTranslationMap}}}
+\label{FCDGeometryPolygonsTools_8h_a90e226f2e78c40d2f990e484111c2351}
+A translation map between old vertex position indices and the new indices. It is generated in the \hyperlink{namespaceFCDGeometryPolygonsTools_a7541340d15de908be8cc7f95d568d32c}{FCDGeometryPolygonsTools::GenerateUniqueIndices} function. \hypertarget{FCDGeometryPolygonsTools_8h_a8ab3900248e2bdd4994afb254a0ad751}{
+\index{FCDGeometryPolygonsTools.h@{FCDGeometryPolygonsTools.h}!FCDGeometryIndexTranslationMapList@{FCDGeometryIndexTranslationMapList}}
+\index{FCDGeometryIndexTranslationMapList@{FCDGeometryIndexTranslationMapList}!FCDGeometryPolygonsTools.h@{FCDGeometryPolygonsTools.h}}
+\subsubsection[{FCDGeometryIndexTranslationMapList}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::pvector}$<${\bf FCDGeometryIndexTranslationMap}$>$ {\bf FCDGeometryIndexTranslationMapList}}}
+\label{FCDGeometryPolygonsTools_8h_a8ab3900248e2bdd4994afb254a0ad751}
+A dynamically-\/sized array of translation maps. \hypertarget{FCDGeometryPolygonsTools_8h_ab768b574e5282101fb75f78edc2865b6}{
+\index{FCDGeometryPolygonsTools.h@{FCDGeometryPolygonsTools.h}!FCDNewIndicesList@{FCDNewIndicesList}}
+\index{FCDNewIndicesList@{FCDNewIndicesList}!FCDGeometryPolygonsTools.h@{FCDGeometryPolygonsTools.h}}
+\subsubsection[{FCDNewIndicesList}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::vector}$<${\bf UInt32List}$>$ {\bf FCDNewIndicesList}}}
+\label{FCDGeometryPolygonsTools_8h_ab768b574e5282101fb75f78edc2865b6}
+A dynamically-\/sized array of index lists. 

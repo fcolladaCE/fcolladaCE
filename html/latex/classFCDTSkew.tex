@@ -1,0 +1,316 @@
+\hypertarget{classFCDTSkew}{
+\section{FCDTSkew Class Reference}
+\label{classFCDTSkew}\index{FCDTSkew@{FCDTSkew}}
+}
+
+
+{\ttfamily \#include $<$FCDTransform.h$>$}
+
+Inheritance diagram for FCDTSkew:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDTSkew}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDTSkew_a2aba1a042d54f8a10b304e9b566dcc70}{FCDTSkew} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDTSkew_a92bfc908793e289b13586e792210f841}{$\sim$FCDTSkew} ()
+\item 
+virtual \hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{Type} \hyperlink{classFCDTSkew_a069afb12195014737cc891cf4edd0946}{GetType} () const 
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableSkew} \& \hyperlink{classFCDTSkew_a9431366cb29146c6947c63dbeb9fe2b6}{GetSkew} ()
+\item 
+\hypertarget{classFCDTSkew_a12c760e6bd411edcae0987118a53cd76}{
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableSkew} \& {\bfseries GetSkew} () const }
+\label{classFCDTSkew_a12c760e6bd411edcae0987118a53cd76}
+
+\item 
+void \hyperlink{classFCDTSkew_af1a6227aa617dd5ed74a711fe951551f}{SetSkew} (const \hyperlink{classFMSkew}{FMSkew} \&\_\-skew)
+\item 
+const \hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFCDTSkew_a3fc21e33c8a5af04410e09a1ed0d7275}{GetRotateAxis} () const 
+\item 
+\hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFCDTSkew_a56ecf1919695b36c9dfc1aa8bc3cb7dd}{GetRotateAxis} ()
+\item 
+void \hyperlink{classFCDTSkew_acf018bf27460abd2e354ae3461b294a6}{SetRotateAxis} (const \hyperlink{classFMVector3}{FMVector3} \&axis)
+\item 
+const \hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFCDTSkew_a1cf6d65244d940a70913f396c4a21394}{GetAroundAxis} () const 
+\item 
+\hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFCDTSkew_ab555994aa6923ca3be4ed628b0d0b78a}{GetAroundAxis} ()
+\item 
+void \hyperlink{classFCDTSkew_a3fc0739c9c4e57510e849217fa023890}{SetAroundAxis} (const \hyperlink{classFMVector3}{FMVector3} \&axis)
+\item 
+const float \& \hyperlink{classFCDTSkew_a6e2b73155535a7206383484a78b36f36}{GetAngle} () const 
+\item 
+float \& \hyperlink{classFCDTSkew_a7f573a6324acdc92b5e7a71d05e0a8d7}{GetAngle} ()
+\item 
+void \hyperlink{classFCDTSkew_a4c85901fe75248b2824053190d6f26bd}{SetAngle} (float angle)
+\item 
+virtual \hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDTSkew_ae7e90834c3ca578ebec91fcc0472e479}{ToMatrix} () const 
+\item 
+virtual bool \hyperlink{classFCDTSkew_a81f213b6eb3014df1129f806708e7d76}{IsAnimated} () const 
+\item 
+\hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTSkew_a6637a68d104e66b0e8fb8b517f8ad345}{GetAnimated} ()
+\item 
+virtual const \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTSkew_a38aa6c4cdf590300a71be183fbad50a1}{GetAnimated} () const 
+\item 
+virtual \hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDTSkew_a7c79f16b0a6fbaddad4d15d5911a2443}{Clone} (\hyperlink{classFCDTransform}{FCDTransform} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA skew. In COLLADA, the skew transformation follows the Renderman convention. A skew is defined by two axis and one angle: the axis which is rotated, the axis around which the rotation is done and the angle of the rotation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDTSkew_a2aba1a042d54f8a10b304e9b566dcc70}{
+\index{FCDTSkew@{FCDTSkew}!FCDTSkew@{FCDTSkew}}
+\index{FCDTSkew@{FCDTSkew}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{FCDTSkew}]{\setlength{\rightskip}{0pt plus 5cm}FCDTSkew::FCDTSkew (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTSkew_a2aba1a042d54f8a10b304e9b566dcc70}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{FCDSceneNode::AddTransform} function with the transformation type: SKEW. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the skew. \item[{\em parent}]The visual scene node that contains the skew. \end{DoxyParams}
+\hypertarget{classFCDTSkew_a92bfc908793e289b13586e792210f841}{
+\index{FCDTSkew@{FCDTSkew}!$\sim$FCDTSkew@{$\sim$FCDTSkew}}
+\index{$\sim$FCDTSkew@{$\sim$FCDTSkew}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{$\sim$FCDTSkew}]{\setlength{\rightskip}{0pt plus 5cm}FCDTSkew::$\sim$FCDTSkew (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTSkew_a92bfc908793e289b13586e792210f841}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDTSkew_a7c79f16b0a6fbaddad4d15d5911a2443}{
+\index{FCDTSkew@{FCDTSkew}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDTSkew::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTSkew_a7c79f16b0a6fbaddad4d15d5911a2443}
+Creates a copy of a skew transformation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The transform that will be the clone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned transformation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_a5ffc20180fb422a2756e1394576f2901}{FCDTransform}.
+
+\hypertarget{classFCDTSkew_a6e2b73155535a7206383484a78b36f36}{
+\index{FCDTSkew@{FCDTSkew}!GetAngle@{GetAngle}}
+\index{GetAngle@{GetAngle}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetAngle}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDTSkew::GetAngle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a6e2b73155535a7206383484a78b36f36}
+Retrieves the rotation angle. \begin{DoxyReturn}{Returns}
+The rotation angle. 
+\end{DoxyReturn}
+\hypertarget{classFCDTSkew_a7f573a6324acdc92b5e7a71d05e0a8d7}{
+\index{FCDTSkew@{FCDTSkew}!GetAngle@{GetAngle}}
+\index{GetAngle@{GetAngle}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetAngle}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDTSkew::GetAngle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a7f573a6324acdc92b5e7a71d05e0a8d7}
+See above. \hypertarget{classFCDTSkew_a6637a68d104e66b0e8fb8b517f8ad345}{
+\index{FCDTSkew@{FCDTSkew}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimated}$\ast$ FCDTSkew::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a6637a68d104e66b0e8fb8b517f8ad345}
+Retrieves the animated element for the skew. \begin{DoxyReturn}{Returns}
+\hyperlink{namespaceFCollada}{FCollada} doesn't support animated skews: NULL. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDTransform_afefc850b24274c7e3ced421b18bec24b}{FCDTransform}.
+
+\hypertarget{classFCDTSkew_a38aa6c4cdf590300a71be183fbad50a1}{
+\index{FCDTSkew@{FCDTSkew}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDAnimated} $\ast$ FCDTSkew::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTSkew_a38aa6c4cdf590300a71be183fbad50a1}
+See above. 
+
+Implements \hyperlink{classFCDTransform_aac1ff2df9e63702a90300ba9c38c48e1}{FCDTransform}.
+
+\hypertarget{classFCDTSkew_a1cf6d65244d940a70913f396c4a21394}{
+\index{FCDTSkew@{FCDTSkew}!GetAroundAxis@{GetAroundAxis}}
+\index{GetAroundAxis@{GetAroundAxis}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetAroundAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3}\& FCDTSkew::GetAroundAxis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a1cf6d65244d940a70913f396c4a21394}
+Retrieves the axis around which the rotation is done. \begin{DoxyReturn}{Returns}
+The rotation axis. 
+\end{DoxyReturn}
+\hypertarget{classFCDTSkew_ab555994aa6923ca3be4ed628b0d0b78a}{
+\index{FCDTSkew@{FCDTSkew}!GetAroundAxis@{GetAroundAxis}}
+\index{GetAroundAxis@{GetAroundAxis}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetAroundAxis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3}\& FCDTSkew::GetAroundAxis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_ab555994aa6923ca3be4ed628b0d0b78a}
+See above. \hypertarget{classFCDTSkew_a3fc21e33c8a5af04410e09a1ed0d7275}{
+\index{FCDTSkew@{FCDTSkew}!GetRotateAxis@{GetRotateAxis}}
+\index{GetRotateAxis@{GetRotateAxis}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetRotateAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3}\& FCDTSkew::GetRotateAxis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a3fc21e33c8a5af04410e09a1ed0d7275}
+Retrieves the axis which is rotated. \begin{DoxyReturn}{Returns}
+The rotated axis. 
+\end{DoxyReturn}
+\hypertarget{classFCDTSkew_a56ecf1919695b36c9dfc1aa8bc3cb7dd}{
+\index{FCDTSkew@{FCDTSkew}!GetRotateAxis@{GetRotateAxis}}
+\index{GetRotateAxis@{GetRotateAxis}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetRotateAxis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3}\& FCDTSkew::GetRotateAxis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a56ecf1919695b36c9dfc1aa8bc3cb7dd}
+See above. \hypertarget{classFCDTSkew_a9431366cb29146c6947c63dbeb9fe2b6}{
+\index{FCDTSkew@{FCDTSkew}!GetSkew@{GetSkew}}
+\index{GetSkew@{GetSkew}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetSkew}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableSkew}\& FCDTSkew::GetSkew (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a9431366cb29146c6947c63dbeb9fe2b6}
+Retrieves the skew value for this transformation. \begin{DoxyReturn}{Returns}
+The skew value. 
+\end{DoxyReturn}
+\hypertarget{classFCDTSkew_a069afb12195014737cc891cf4edd0946}{
+\index{FCDTSkew@{FCDTSkew}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDTSkew::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDTSkew_a069afb12195014737cc891cf4edd0946}
+Retrieves the transformation class type for the transformation. \begin{DoxyReturn}{Returns}
+The class type: SKEW. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_af406aebcba6215ebc1358a3cf87ab29d}{FCDTransform}.
+
+\hypertarget{classFCDTSkew_a81f213b6eb3014df1129f806708e7d76}{
+\index{FCDTSkew@{FCDTSkew}!IsAnimated@{IsAnimated}}
+\index{IsAnimated@{IsAnimated}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{IsAnimated}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDTSkew::IsAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTSkew_a81f213b6eb3014df1129f806708e7d76}
+Retrieves whether the transformation is animated. \begin{DoxyReturn}{Returns}
+\hyperlink{namespaceFCollada}{FCollada} doesn't support animated skews: false. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_ab12ac63fa2d46fbcf8c025971635cda4}{FCDTransform}.
+
+\hypertarget{classFCDTSkew_a4c85901fe75248b2824053190d6f26bd}{
+\index{FCDTSkew@{FCDTSkew}!SetAngle@{SetAngle}}
+\index{SetAngle@{SetAngle}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{SetAngle}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTSkew::SetAngle (
+\begin{DoxyParamCaption}
+\item[{float}]{ angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a4c85901fe75248b2824053190d6f26bd}
+Sets the rotation angle. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-angle}]The rotation angle. \end{DoxyParams}
+\hypertarget{classFCDTSkew_a3fc0739c9c4e57510e849217fa023890}{
+\index{FCDTSkew@{FCDTSkew}!SetAroundAxis@{SetAroundAxis}}
+\index{SetAroundAxis@{SetAroundAxis}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{SetAroundAxis}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTSkew::SetAroundAxis (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ axis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_a3fc0739c9c4e57510e849217fa023890}
+Sets the axis around which the rotation is done. 
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]The rotation axis. \end{DoxyParams}
+\hypertarget{classFCDTSkew_acf018bf27460abd2e354ae3461b294a6}{
+\index{FCDTSkew@{FCDTSkew}!SetRotateAxis@{SetRotateAxis}}
+\index{SetRotateAxis@{SetRotateAxis}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{SetRotateAxis}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTSkew::SetRotateAxis (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ axis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_acf018bf27460abd2e354ae3461b294a6}
+Sets the axis which is rotated. 
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]The rotated axis. \end{DoxyParams}
+\hypertarget{classFCDTSkew_af1a6227aa617dd5ed74a711fe951551f}{
+\index{FCDTSkew@{FCDTSkew}!SetSkew@{SetSkew}}
+\index{SetSkew@{SetSkew}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{SetSkew}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTSkew::SetSkew (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMSkew} \&}]{ \_\-skew}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTSkew_af1a6227aa617dd5ed74a711fe951551f}
+Sets the skew value for this transformation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-skew}]A skew value. \end{DoxyParams}
+\hypertarget{classFCDTSkew_ae7e90834c3ca578ebec91fcc0472e479}{
+\index{FCDTSkew@{FCDTSkew}!ToMatrix@{ToMatrix}}
+\index{ToMatrix@{ToMatrix}!FCDTSkew@{FCDTSkew}}
+\subsubsection[{ToMatrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCDTSkew::ToMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTSkew_ae7e90834c3ca578ebec91fcc0472e479}
+Converts the skew into a matrix. \begin{DoxyReturn}{Returns}
+The transformation matrix. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_afd7fc3c7dc012782ebb2886c5bc13d01}{FCDTransform}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDTransform_8h}{FCDTransform.h}\item 
+FCollada/FCDocument/FCDTransform.cpp\end{DoxyCompactItemize}

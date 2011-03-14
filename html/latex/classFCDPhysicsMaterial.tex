@@ -1,0 +1,183 @@
+\hypertarget{classFCDPhysicsMaterial}{
+\section{FCDPhysicsMaterial Class Reference}
+\label{classFCDPhysicsMaterial}\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsMaterial.h$>$}
+
+Inheritance diagram for FCDPhysicsMaterial:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDPhysicsMaterial}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPhysicsMaterial_af117b2799b8342635e0b0778e496e577}{FCDPhysicsMaterial} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDPhysicsMaterial_a8c125b5616a838df37f2130501dce9d2}{$\sim$FCDPhysicsMaterial} ()
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDPhysicsMaterial_af7b84458b75d65c2e88028cafb865526}{GetType} () const 
+\item 
+float \hyperlink{classFCDPhysicsMaterial_adf3cae3fa4dc196807c446530701f482}{GetStaticFriction} () const 
+\item 
+void \hyperlink{classFCDPhysicsMaterial_ad89f828ca130c56e54f00f97384d492a}{SetStaticFriction} (float \_\-staticFriction)
+\item 
+float \hyperlink{classFCDPhysicsMaterial_aefdc9cbe348ec8dec6cc2a427740cf6a}{GetDynamicFriction} () const 
+\item 
+void \hyperlink{classFCDPhysicsMaterial_a6270ec2550be3c522488263908ce8ed3}{SetDynamicFriction} (float \_\-dynamicFriction)
+\item 
+float \hyperlink{classFCDPhysicsMaterial_a9cede0114b06eb9fab75f98de2e821c1}{GetRestitution} () const 
+\item 
+void \hyperlink{classFCDPhysicsMaterial_a39d172917abbce73b84f194ee7721eaf}{SetRestitution} (float \_\-restitution)
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDPhysicsMaterial_a37db393d57f224a97e24ee6f5d4c4499}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA physics material.
+
+A physics material contains physical properties for an object. Because there isn't anything interesting in the physics material instance, this class is used to represent that as well. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPhysicsMaterial_af117b2799b8342635e0b0778e496e577}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{FCDPhysicsMaterial}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsMaterial::FCDPhysicsMaterial (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsMaterial_af117b2799b8342635e0b0778e496e577}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this rigid body. \end{DoxyParams}
+\hypertarget{classFCDPhysicsMaterial_a8c125b5616a838df37f2130501dce9d2}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!$\sim$FCDPhysicsMaterial@{$\sim$FCDPhysicsMaterial}}
+\index{$\sim$FCDPhysicsMaterial@{$\sim$FCDPhysicsMaterial}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{$\sim$FCDPhysicsMaterial}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsMaterial::$\sim$FCDPhysicsMaterial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsMaterial_a8c125b5616a838df37f2130501dce9d2}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPhysicsMaterial_a37db393d57f224a97e24ee6f5d4c4499}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDPhysicsMaterial::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsMaterial_a37db393d57f224a97e24ee6f5d4c4499}
+Copies the physics material into a clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new physics material will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDPhysicsMaterial_aefdc9cbe348ec8dec6cc2a427740cf6a}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!GetDynamicFriction@{GetDynamicFriction}}
+\index{GetDynamicFriction@{GetDynamicFriction}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{GetDynamicFriction}]{\setlength{\rightskip}{0pt plus 5cm}float FCDPhysicsMaterial::GetDynamicFriction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsMaterial_aefdc9cbe348ec8dec6cc2a427740cf6a}
+Retrieves the dynamic friction for this physics material. \begin{DoxyReturn}{Returns}
+The dynamic friction. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsMaterial_a9cede0114b06eb9fab75f98de2e821c1}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!GetRestitution@{GetRestitution}}
+\index{GetRestitution@{GetRestitution}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{GetRestitution}]{\setlength{\rightskip}{0pt plus 5cm}float FCDPhysicsMaterial::GetRestitution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsMaterial_a9cede0114b06eb9fab75f98de2e821c1}
+Retrieves the restitution for this physics material. \begin{DoxyReturn}{Returns}
+The restitution. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsMaterial_adf3cae3fa4dc196807c446530701f482}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!GetStaticFriction@{GetStaticFriction}}
+\index{GetStaticFriction@{GetStaticFriction}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{GetStaticFriction}]{\setlength{\rightskip}{0pt plus 5cm}float FCDPhysicsMaterial::GetStaticFriction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsMaterial_adf3cae3fa4dc196807c446530701f482}
+Retrieves the static friction for this physics material. \begin{DoxyReturn}{Returns}
+The static friction. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsMaterial_af7b84458b75d65c2e88028cafb865526}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDPhysicsMaterial::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPhysicsMaterial_af7b84458b75d65c2e88028cafb865526}
+Retrieves the entity type for this class. This function is part of the \hyperlink{classFCDEntity}{FCDEntity} interface. \begin{DoxyReturn}{Returns}
+The entity type: PHYSICS\_\-MATERIAL. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+\hypertarget{classFCDPhysicsMaterial_a6270ec2550be3c522488263908ce8ed3}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!SetDynamicFriction@{SetDynamicFriction}}
+\index{SetDynamicFriction@{SetDynamicFriction}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{SetDynamicFriction}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsMaterial::SetDynamicFriction (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-dynamicFriction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsMaterial_a6270ec2550be3c522488263908ce8ed3}
+Sets the dynamic friction for this physics material. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-dynamicFriction}]The dynamic friction. \end{DoxyParams}
+\hypertarget{classFCDPhysicsMaterial_a39d172917abbce73b84f194ee7721eaf}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!SetRestitution@{SetRestitution}}
+\index{SetRestitution@{SetRestitution}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{SetRestitution}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsMaterial::SetRestitution (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-restitution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsMaterial_a39d172917abbce73b84f194ee7721eaf}
+Sets the restitution for this physics material. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-restitution}]The restitution. \end{DoxyParams}
+\hypertarget{classFCDPhysicsMaterial_ad89f828ca130c56e54f00f97384d492a}{
+\index{FCDPhysicsMaterial@{FCDPhysicsMaterial}!SetStaticFriction@{SetStaticFriction}}
+\index{SetStaticFriction@{SetStaticFriction}!FCDPhysicsMaterial@{FCDPhysicsMaterial}}
+\subsubsection[{SetStaticFriction}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsMaterial::SetStaticFriction (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-staticFriction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsMaterial_ad89f828ca130c56e54f00f97384d492a}
+Sets the static friction for this physics material. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-staticFriction}]The static friction. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsMaterial_8h}{FCDPhysicsMaterial.h}\item 
+FCollada/FCDocument/FCDPhysicsMaterial.cpp\end{DoxyCompactItemize}

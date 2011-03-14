@@ -1,0 +1,242 @@
+\hypertarget{classFCDTTranslation}{
+\section{FCDTTranslation Class Reference}
+\label{classFCDTTranslation}\index{FCDTTranslation@{FCDTTranslation}}
+}
+
+
+{\ttfamily \#include $<$FCDTransform.h$>$}
+
+Inheritance diagram for FCDTTranslation:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDTTranslation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDTTranslation_a418dee555e3fbcc0866b141888ed4fb3}{FCDTTranslation} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDTTranslation_aa7b2c790d0c2351d51be43d0d534e076}{$\sim$FCDTTranslation} ()
+\item 
+virtual \hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{Type} \hyperlink{classFCDTTranslation_ad72589137729bcf5ea8b88f0ad2b2208}{GetType} () const 
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableVector3} \& \hyperlink{classFCDTTranslation_a5c1a55a6f71cac08b24efc9796f3da0a}{GetTranslation} ()
+\item 
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableVector3} \& \hyperlink{classFCDTTranslation_ad2e5be4d26efd28a4b2b885d8a81d534}{GetTranslation} () const 
+\item 
+void \hyperlink{classFCDTTranslation_a5939f2f2de53b653e6d319999c707c89}{SetTranslation} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-translation)
+\item 
+void \hyperlink{classFCDTTranslation_afbb217d569f2b3203f8af60333579b66}{SetTranslation} (float x, float y, float z)
+\item 
+virtual \hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDTTranslation_a70ad49113750b8f733e4b5682269c616}{ToMatrix} () const 
+\item 
+virtual bool \hyperlink{classFCDTTranslation_a6d74cff5dc8981b22e453054daeb2dbd}{IsAnimated} () const 
+\item 
+\hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTTranslation_ad94a535671c213794b4246f3441879ed}{GetAnimated} ()
+\item 
+virtual const \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTTranslation_a11144dd99ef92c476e26be42ae71ab94}{GetAnimated} () const 
+\item 
+virtual bool \hyperlink{classFCDTTranslation_a860f284c757f5ceccf3f41a42c361aec}{IsInverse} (const \hyperlink{classFCDTransform}{FCDTransform} $\ast$transform) const 
+\item 
+virtual \hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDTTranslation_a3eb53e49377c85e7bde0c003751a7679}{Clone} (\hyperlink{classFCDTransform}{FCDTransform} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA translation. A translation is a simple 3D displacement. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDTTranslation_a418dee555e3fbcc0866b141888ed4fb3}{
+\index{FCDTTranslation@{FCDTTranslation}!FCDTTranslation@{FCDTTranslation}}
+\index{FCDTTranslation@{FCDTTranslation}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{FCDTTranslation}]{\setlength{\rightskip}{0pt plus 5cm}FCDTTranslation::FCDTTranslation (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTTranslation_a418dee555e3fbcc0866b141888ed4fb3}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{FCDSceneNode::AddTransform} function with the TRANSLATION transformation type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the translation. \item[{\em parent}]The visual scene node that contains the translation. Set this pointer to NULL if the translation is not owned by a visual scene node. \end{DoxyParams}
+\hypertarget{classFCDTTranslation_aa7b2c790d0c2351d51be43d0d534e076}{
+\index{FCDTTranslation@{FCDTTranslation}!$\sim$FCDTTranslation@{$\sim$FCDTTranslation}}
+\index{$\sim$FCDTTranslation@{$\sim$FCDTTranslation}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{$\sim$FCDTTranslation}]{\setlength{\rightskip}{0pt plus 5cm}FCDTTranslation::$\sim$FCDTTranslation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTTranslation_aa7b2c790d0c2351d51be43d0d534e076}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDTTranslation_a3eb53e49377c85e7bde0c003751a7679}{
+\index{FCDTTranslation@{FCDTTranslation}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDTTranslation::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTTranslation_a3eb53e49377c85e7bde0c003751a7679}
+Creates a copy of a translation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The transform that will be the clone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned transformation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_a5ffc20180fb422a2756e1394576f2901}{FCDTransform}.
+
+\hypertarget{classFCDTTranslation_ad94a535671c213794b4246f3441879ed}{
+\index{FCDTTranslation@{FCDTTranslation}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimated}$\ast$ FCDTTranslation::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTTranslation_ad94a535671c213794b4246f3441879ed}
+Retrieves the animated element for the translation. \begin{DoxyReturn}{Returns}
+The animated element. This pointer will be NULL if the translation is not animated. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDTransform_afefc850b24274c7e3ced421b18bec24b}{FCDTransform}.
+
+\hypertarget{classFCDTTranslation_a11144dd99ef92c476e26be42ae71ab94}{
+\index{FCDTTranslation@{FCDTTranslation}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDAnimated} $\ast$ FCDTTranslation::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTTranslation_a11144dd99ef92c476e26be42ae71ab94}
+See above. 
+
+Implements \hyperlink{classFCDTransform_aac1ff2df9e63702a90300ba9c38c48e1}{FCDTransform}.
+
+\hypertarget{classFCDTTranslation_a5c1a55a6f71cac08b24efc9796f3da0a}{
+\index{FCDTTranslation@{FCDTTranslation}!GetTranslation@{GetTranslation}}
+\index{GetTranslation@{GetTranslation}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{GetTranslation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableVector3}\& FCDTTranslation::GetTranslation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTTranslation_a5c1a55a6f71cac08b24efc9796f3da0a}
+Retrieves the translation 3D displacement vector. This displacement vector may be animated. \begin{DoxyReturn}{Returns}
+The displacement vector. 
+\end{DoxyReturn}
+\hypertarget{classFCDTTranslation_ad2e5be4d26efd28a4b2b885d8a81d534}{
+\index{FCDTTranslation@{FCDTTranslation}!GetTranslation@{GetTranslation}}
+\index{GetTranslation@{GetTranslation}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{GetTranslation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDParameterAnimatableVector3}\& FCDTTranslation::GetTranslation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTTranslation_ad2e5be4d26efd28a4b2b885d8a81d534}
+See above. \hypertarget{classFCDTTranslation_ad72589137729bcf5ea8b88f0ad2b2208}{
+\index{FCDTTranslation@{FCDTTranslation}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDTTranslation::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDTTranslation_ad72589137729bcf5ea8b88f0ad2b2208}
+Retrieves the transformation class type for the translation. \begin{DoxyReturn}{Returns}
+The transformation class type: TRANSLATION. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_af406aebcba6215ebc1358a3cf87ab29d}{FCDTransform}.
+
+\hypertarget{classFCDTTranslation_a6d74cff5dc8981b22e453054daeb2dbd}{
+\index{FCDTTranslation@{FCDTTranslation}!IsAnimated@{IsAnimated}}
+\index{IsAnimated@{IsAnimated}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{IsAnimated}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDTTranslation::IsAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTTranslation_a6d74cff5dc8981b22e453054daeb2dbd}
+Retrieves whether this translation is affected by an animation. \begin{DoxyReturn}{Returns}
+Whether the translation is animated. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_ab12ac63fa2d46fbcf8c025971635cda4}{FCDTransform}.
+
+\hypertarget{classFCDTTranslation_a860f284c757f5ceccf3f41a42c361aec}{
+\index{FCDTTranslation@{FCDTTranslation}!IsInverse@{IsInverse}}
+\index{IsInverse@{IsInverse}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{IsInverse}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDTTranslation::IsInverse (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDTransform} $\ast$}]{ transform}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTTranslation_a860f284c757f5ceccf3f41a42c361aec}
+Retrieves whether a given transform is the exact opposite of this translation. The opposite of a translation has a displacement vector with all the components multiplied by -\/1. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transform}]A second transformation. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two transformations are opposites. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDTransform_a9fa1a02a51f833f819248c2ff020507c}{FCDTransform}.
+
+\hypertarget{classFCDTTranslation_afbb217d569f2b3203f8af60333579b66}{
+\index{FCDTTranslation@{FCDTTranslation}!SetTranslation@{SetTranslation}}
+\index{SetTranslation@{SetTranslation}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{SetTranslation}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTTranslation::SetTranslation (
+\begin{DoxyParamCaption}
+\item[{float}]{ x, }
+\item[{float}]{ y, }
+\item[{float}]{ z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTTranslation_afbb217d569f2b3203f8af60333579b66}
+Sets the translation 3D displacement vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]The x-\/component displacement. \item[{\em y}]The y-\/component displacement. \item[{\em z}]The z-\/component displacement. \end{DoxyParams}
+\hypertarget{classFCDTTranslation_a5939f2f2de53b653e6d319999c707c89}{
+\index{FCDTTranslation@{FCDTTranslation}!SetTranslation@{SetTranslation}}
+\index{SetTranslation@{SetTranslation}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{SetTranslation}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTTranslation::SetTranslation (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-translation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTTranslation_a5939f2f2de53b653e6d319999c707c89}
+Sets the translation 3D displacement vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-translation}]The displacement vector. \end{DoxyParams}
+\hypertarget{classFCDTTranslation_a70ad49113750b8f733e4b5682269c616}{
+\index{FCDTTranslation@{FCDTTranslation}!ToMatrix@{ToMatrix}}
+\index{ToMatrix@{ToMatrix}!FCDTTranslation@{FCDTTranslation}}
+\subsubsection[{ToMatrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCDTTranslation::ToMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTTranslation_a70ad49113750b8f733e4b5682269c616}
+Converts the translation into a matrix. \begin{DoxyReturn}{Returns}
+A matrix equivalent of the translation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_afd7fc3c7dc012782ebb2886c5bc13d01}{FCDTransform}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDTransform_8h}{FCDTransform.h}\item 
+FCollada/FCDocument/FCDTransform.cpp\end{DoxyCompactItemize}

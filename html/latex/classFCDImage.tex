@@ -1,0 +1,230 @@
+\hypertarget{classFCDImage}{
+\section{FCDImage Class Reference}
+\label{classFCDImage}\index{FCDImage@{FCDImage}}
+}
+
+
+{\ttfamily \#include $<$FCDImage.h$>$}
+
+Inheritance diagram for FCDImage:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDImage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDImage_a7bf618522edeefdcca908654299f2926}{DeclareFlag} (Video, 0)
+\item 
+\hypertarget{classFCDImage_a2d1207ec1294ed5f1fc5b6811e34a005}{
+{\bfseries DeclareFlagCount} (1)}
+\label{classFCDImage_a2d1207ec1294ed5f1fc5b6811e34a005}
+
+\item 
+\hyperlink{classFCDImage_ad5beb271aca9f1d566f0370dd06df0e0}{FCDImage} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDImage_a1883486f37fb68501cff879df759372e}{$\sim$FCDImage} ()
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDImage_a137caaacfc6ee0f82a4f654e142f23ea}{GetType} () const 
+\item 
+const \hyperlink{classfm_1_1stringT}{fstring} \& \hyperlink{classFCDImage_a6858c945bf5d58a4ce59162bdab1875a}{GetFilename} () const 
+\item 
+void \hyperlink{classFCDImage_a9489bc2214865330b82029f949ceedf7}{SetFilename} (const \hyperlink{classfm_1_1stringT}{fstring} \&\_\-filename)
+\item 
+const uint32 \& \hyperlink{classFCDImage_a9ff868bc5bcf26c3c861844522dd93d9}{GetWidth} () const 
+\item 
+void \hyperlink{classFCDImage_a1b095ed4b987f695fc4b742d4c4cfb5e}{SetWidth} (uint32 \_\-width)
+\item 
+const uint32 \& \hyperlink{classFCDImage_ad39e605dd085356561da4b407434a6ba}{GetHeight} () const 
+\item 
+void \hyperlink{classFCDImage_aff423a44ea5f473505efc3e35773e980}{SetHeight} (uint32 \_\-height)
+\item 
+const uint32 \& \hyperlink{classFCDImage_a120503567eb788e5000a4d19bfd46f16}{GetDepth} () const 
+\item 
+void \hyperlink{classFCDImage_abb4f63a3f2e886ad6bacb9be0ebab2d5}{SetDepth} (uint32 \_\-depth)
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDImage_a9d01548f390bc703560b1ccaee569464}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA image.
+
+A COLLADA image encapsulates an image file and are contained within the image library. \hyperlink{namespaceFCollada}{FCollada} doesn't support inlined image bits.
+
+An image is solely defined by its filename. For some image types and optionally, the width, height and depth of the image may be required and valid. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDImage_ad5beb271aca9f1d566f0370dd06df0e0}{
+\index{FCDImage@{FCDImage}!FCDImage@{FCDImage}}
+\index{FCDImage@{FCDImage}!FCDImage@{FCDImage}}
+\subsubsection[{FCDImage}]{\setlength{\rightskip}{0pt plus 5cm}FCDImage::FCDImage (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDImage_ad5beb271aca9f1d566f0370dd06df0e0}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDLibrary_aa5cdcac5a447298d5e3816e4f8c864d0}{FCDLibrary::AddEntity} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the image. \end{DoxyParams}
+\hypertarget{classFCDImage_a1883486f37fb68501cff879df759372e}{
+\index{FCDImage@{FCDImage}!$\sim$FCDImage@{$\sim$FCDImage}}
+\index{$\sim$FCDImage@{$\sim$FCDImage}!FCDImage@{FCDImage}}
+\subsubsection[{$\sim$FCDImage}]{\setlength{\rightskip}{0pt plus 5cm}FCDImage::$\sim$FCDImage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDImage_a1883486f37fb68501cff879df759372e}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDImage_a9d01548f390bc703560b1ccaee569464}{
+\index{FCDImage@{FCDImage}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDImage@{FCDImage}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDImage::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDImage_a9d01548f390bc703560b1ccaee569464}
+Copies the image entity into a clone. The clone may reside in another document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new image will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDImage_a7bf618522edeefdcca908654299f2926}{
+\index{FCDImage@{FCDImage}!DeclareFlag@{DeclareFlag}}
+\index{DeclareFlag@{DeclareFlag}!FCDImage@{FCDImage}}
+\subsubsection[{DeclareFlag}]{\setlength{\rightskip}{0pt plus 5cm}FCDImage::DeclareFlag (
+\begin{DoxyParamCaption}
+\item[{Video}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDImage_a7bf618522edeefdcca908654299f2926}
+Flags this image as a video stream. \hypertarget{classFCDImage_a120503567eb788e5000a4d19bfd46f16}{
+\index{FCDImage@{FCDImage}!GetDepth@{GetDepth}}
+\index{GetDepth@{GetDepth}!FCDImage@{FCDImage}}
+\subsubsection[{GetDepth}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\& FCDImage::GetDepth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDImage_a120503567eb788e5000a4d19bfd46f16}
+Retrieves the depth of the 3D image. This parameter is optional for texture image files. \begin{DoxyReturn}{Returns}
+The depth of the image. This value will be zero to indicate that you should retrieve the depth of the image from the image file. 
+\end{DoxyReturn}
+\hypertarget{classFCDImage_a6858c945bf5d58a4ce59162bdab1875a}{
+\index{FCDImage@{FCDImage}!GetFilename@{GetFilename}}
+\index{GetFilename@{GetFilename}!FCDImage@{FCDImage}}
+\subsubsection[{GetFilename}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fstring}\& FCDImage::GetFilename (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDImage_a6858c945bf5d58a4ce59162bdab1875a}
+Retrieves the filename of the image file. This is the image file that you should load when attempting to use the image bits. \hyperlink{namespaceFCollada}{FCollada} will deal with the filename internally and provide an absolute filename. \begin{DoxyReturn}{Returns}
+The filename of the image file. 
+\end{DoxyReturn}
+\hypertarget{classFCDImage_ad39e605dd085356561da4b407434a6ba}{
+\index{FCDImage@{FCDImage}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!FCDImage@{FCDImage}}
+\subsubsection[{GetHeight}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\& FCDImage::GetHeight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDImage_ad39e605dd085356561da4b407434a6ba}
+Retrieves the height of the image. This parameter is useful for off-\/screen render targets and is optional for texture image files. \begin{DoxyReturn}{Returns}
+The height of the image. This value will be zero to indicate that you should retrieve the height of the image from the image file. 
+\end{DoxyReturn}
+\hypertarget{classFCDImage_a137caaacfc6ee0f82a4f654e142f23ea}{
+\index{FCDImage@{FCDImage}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDImage@{FCDImage}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDImage::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDImage_a137caaacfc6ee0f82a4f654e142f23ea}
+Retrieves the entity type for this class. This function is part of the \hyperlink{classFCDEntity}{FCDEntity} class interface. \begin{DoxyReturn}{Returns}
+The entity type: IMAGE. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+\hypertarget{classFCDImage_a9ff868bc5bcf26c3c861844522dd93d9}{
+\index{FCDImage@{FCDImage}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!FCDImage@{FCDImage}}
+\subsubsection[{GetWidth}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\& FCDImage::GetWidth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDImage_a9ff868bc5bcf26c3c861844522dd93d9}
+Retrieves the width of the image. This parameter is useful for off-\/screen render targets and is optional for texture image files. \begin{DoxyReturn}{Returns}
+The width of the image. This value will be zero to indicate that you should retrieve the width of the image from the image file. 
+\end{DoxyReturn}
+\hypertarget{classFCDImage_abb4f63a3f2e886ad6bacb9be0ebab2d5}{
+\index{FCDImage@{FCDImage}!SetDepth@{SetDepth}}
+\index{SetDepth@{SetDepth}!FCDImage@{FCDImage}}
+\subsubsection[{SetDepth}]{\setlength{\rightskip}{0pt plus 5cm}void FCDImage::SetDepth (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-depth}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDImage_abb4f63a3f2e886ad6bacb9be0ebab2d5}
+Sets the depth of the 3D image. This parameter is optional for texture image files. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-depth}]The depth of the image. This value can be zero to indicate that you should retrieve the depth of the image from the image file. \end{DoxyParams}
+\hypertarget{classFCDImage_a9489bc2214865330b82029f949ceedf7}{
+\index{FCDImage@{FCDImage}!SetFilename@{SetFilename}}
+\index{SetFilename@{SetFilename}!FCDImage@{FCDImage}}
+\subsubsection[{SetFilename}]{\setlength{\rightskip}{0pt plus 5cm}void FCDImage::SetFilename (
+\begin{DoxyParamCaption}
+\item[{const {\bf fstring} \&}]{ \_\-filename}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDImage_a9489bc2214865330b82029f949ceedf7}
+Sets the filename of the image file. This is the image file that you should load when attempting to use the image bits. \hyperlink{namespaceFCollada}{FCollada} will deal with the filename internally and export a relative filename. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-filename}]The filename of the image file. \end{DoxyParams}
+\hypertarget{classFCDImage_aff423a44ea5f473505efc3e35773e980}{
+\index{FCDImage@{FCDImage}!SetHeight@{SetHeight}}
+\index{SetHeight@{SetHeight}!FCDImage@{FCDImage}}
+\subsubsection[{SetHeight}]{\setlength{\rightskip}{0pt plus 5cm}void FCDImage::SetHeight (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDImage_aff423a44ea5f473505efc3e35773e980}
+Sets the height of the image. This parameter is useful for off-\/screen render targets and is optional for texture image files. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-height}]The height of the image. This value can be zero to indicate that you should retrieve the width of the image from the image file. \end{DoxyParams}
+\hypertarget{classFCDImage_a1b095ed4b987f695fc4b742d4c4cfb5e}{
+\index{FCDImage@{FCDImage}!SetWidth@{SetWidth}}
+\index{SetWidth@{SetWidth}!FCDImage@{FCDImage}}
+\subsubsection[{SetWidth}]{\setlength{\rightskip}{0pt plus 5cm}void FCDImage::SetWidth (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDImage_a1b095ed4b987f695fc4b742d4c4cfb5e}
+Sets the width of the image. This parameter is useful for off-\/screen render targets and is optional for texture image files. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-width}]The width of the image. This value can be zero to indicate that you should retrieve the width of the image from the image file. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDImage_8h}{FCDImage.h}\item 
+FCollada/FCDocument/FCDImage.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,210 @@
+\hypertarget{classFColladaPluginManager}{
+\section{FColladaPluginManager Class Reference}
+\label{classFColladaPluginManager}\index{FColladaPluginManager@{FColladaPluginManager}}
+}
+
+
+{\ttfamily \#include $<$FColladaPlugin.h$>$}
+
+Inheritance diagram for FColladaPluginManager:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFColladaPluginManager}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFColladaPluginManager_ac43b0b6a12e090062517054564c609d4}{
+typedef \hyperlink{classfm_1_1pvector}{fm::pvector}$<$ \hyperlink{classFCDETechnique}{FCDETechnique} $>$ {\bfseries FCDETechniqueList}}
+\label{classFColladaPluginManager_ac43b0b6a12e090062517054564c609d4}
+
+\item 
+typedef \hyperlink{classfm_1_1map}{fm::map}$<$ uint32, \hyperlink{classFCPExtraTechnique}{FCPExtraTechnique} $\ast$ $>$ \hyperlink{classFColladaPluginManager_a31b0354a9ddff1b9f6eb4543662bbed8}{FCPExtraMap}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFColladaPluginManager_affbab236883a435d8bb08bc52edca2ca}{FColladaPluginManager} ()
+\item 
+size\_\-t \hyperlink{classFColladaPluginManager_a2a0ebfa39ce05b91de49c348a6c5c568}{GetArchivePluginsCount} ()
+\item 
+\hyperlink{classFCPArchive}{FCPArchive} $\ast$ \hyperlink{classFColladaPluginManager_a7137a9d679ac626669fac19e73beb691}{GetArchivePlugin} (size\_\-t index)
+\item 
+bool \hyperlink{classFColladaPluginManager_a52fc25de16489fadec449415a0f2c633}{RegisterPlugin} (\hyperlink{classFUPlugin}{FUPlugin} $\ast$plugin)
+\item 
+\hyperlink{classFColladaPluginManager_a1160a19c60e7ec7f72759553929454d4}{DEPRECATED} (3.05A, RegisterPlugin) inline bool AddPlugin(FCPExtraTechnique $\ast$plugin)
+\item 
+\hyperlink{classFColladaPluginManager_abfd48890f1e1255f68dd6a7d07b5d980}{DEPRECATED} (3.05A, RegisterPlugin) inline bool AddArchivePlugin(FCPArchive $\ast$plugin)
+\item 
+bool \hyperlink{classFColladaPluginManager_a15089895620feae23927be8bc8c60c1d}{LoadDocumentFromFile} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, const fchar $\ast$filename)
+\item 
+\hypertarget{classFColladaPluginManager_af245b43727fddb1dd3ae4b331afb17d2}{
+{\bfseries DEPRECATED} (3.05A, LoadDocumentFromFile) inline bool LoadDocument(FCDocument $\ast$document}
+\label{classFColladaPluginManager_af245b43727fddb1dd3ae4b331afb17d2}
+
+\item 
+bool \hyperlink{classFColladaPluginManager_ab9deb7df7ff61ec0cb82efb37c5bcc0b}{SaveDocumentToFile} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, const fchar $\ast$filename)
+\item 
+\hypertarget{classFColladaPluginManager_a03d0fd439d210cd76c6663f4e89d9825}{
+{\bfseries DEPRECATED} (3.05A, SaveDocumentToFile) inline bool SaveDocument(FCDocument $\ast$document}
+\label{classFColladaPluginManager_a03d0fd439d210cd76c6663f4e89d9825}
+
+\item 
+\hyperlink{classFCPArchive}{FCPArchive} $\ast$ \hyperlink{classFColladaPluginManager_ac366a235e5a2704313bc1d7eccb73df0}{FindArchivePlugin} (const fchar $\ast$filename)
+\item 
+\hypertarget{classFColladaPluginManager_a4e72b0a129057dd3f5708d47dbb4f189}{
+void {\bfseries PostImportDocument} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)}
+\label{classFColladaPluginManager_a4e72b0a129057dd3f5708d47dbb4f189}
+
+\item 
+\hypertarget{classFColladaPluginManager_aba08d84d5152c8b33c15381a64f5a9bb}{
+void {\bfseries PreExportDocument} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classfm_1_1pvector}{FCDETechniqueList} \&techniques)}
+\label{classFColladaPluginManager_aba08d84d5152c8b33c15381a64f5a9bb}
+
+\item 
+\hypertarget{classFColladaPluginManager_ab8bb786e9ef6f148169c0c23cd32087e}{
+void {\bfseries PostExportDocument} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classfm_1_1pvector}{FCDETechniqueList} \&techniques)}
+\label{classFColladaPluginManager_ab8bb786e9ef6f148169c0c23cd32087e}
+
+\item 
+\hypertarget{classFColladaPluginManager_a50d43e3f951e3be7a071b212641ea3e1}{
+void {\bfseries CreateExtraTechniquePluginMap} (\hyperlink{classfm_1_1map}{FCPExtraMap} \&map)}
+\label{classFColladaPluginManager_a50d43e3f951e3be7a071b212641ea3e1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{namespaceFCollada}{FCollada} plug-\/ins manager. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classFColladaPluginManager_a31b0354a9ddff1b9f6eb4543662bbed8}{
+\index{FColladaPluginManager@{FColladaPluginManager}!FCPExtraMap@{FCPExtraMap}}
+\index{FCPExtraMap@{FCPExtraMap}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{FCPExtraMap}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::map}$<$uint32, {\bf FCPExtraTechnique}$\ast$$>$ {\bf FColladaPluginManager::FCPExtraMap}}}
+\label{classFColladaPluginManager_a31b0354a9ddff1b9f6eb4543662bbed8}
+Make a processed map of CRC32 profile names vs plug-\/ins to handle them. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFColladaPluginManager_affbab236883a435d8bb08bc52edca2ca}{
+\index{FColladaPluginManager@{FColladaPluginManager}!FColladaPluginManager@{FColladaPluginManager}}
+\index{FColladaPluginManager@{FColladaPluginManager}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{FColladaPluginManager}]{\setlength{\rightskip}{0pt plus 5cm}FColladaPluginManager::FColladaPluginManager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFColladaPluginManager_affbab236883a435d8bb08bc52edca2ca}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFColladaPluginManager_abfd48890f1e1255f68dd6a7d07b5d980}{
+\index{FColladaPluginManager@{FColladaPluginManager}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FColladaPluginManager::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{RegisterPlugin}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFColladaPluginManager_abfd48890f1e1255f68dd6a7d07b5d980}
+See above. \hypertarget{classFColladaPluginManager_a1160a19c60e7ec7f72759553929454d4}{
+\index{FColladaPluginManager@{FColladaPluginManager}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FColladaPluginManager::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{RegisterPlugin}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFColladaPluginManager_a1160a19c60e7ec7f72759553929454d4}
+See above. \hypertarget{classFColladaPluginManager_ac366a235e5a2704313bc1d7eccb73df0}{
+\index{FColladaPluginManager@{FColladaPluginManager}!FindArchivePlugin@{FindArchivePlugin}}
+\index{FindArchivePlugin@{FindArchivePlugin}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{FindArchivePlugin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCPArchive} $\ast$ FColladaPluginManager::FindArchivePlugin (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{classFColladaPluginManager_ac366a235e5a2704313bc1d7eccb73df0}
+\mbox{[}INTERNAL\mbox{]} Find the correct plug-\/in to the document according to the file extension. \hypertarget{classFColladaPluginManager_a7137a9d679ac626669fac19e73beb691}{
+\index{FColladaPluginManager@{FColladaPluginManager}!GetArchivePlugin@{GetArchivePlugin}}
+\index{GetArchivePlugin@{GetArchivePlugin}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{GetArchivePlugin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCPArchive}$\ast$ FColladaPluginManager::GetArchivePlugin (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFColladaPluginManager_a7137a9d679ac626669fac19e73beb691}
+Retrieves the archive plugin specified by the given index. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The archive plugin index. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The plugin pointer on success, NULL otherwise. 
+\end{DoxyReturn}
+\hypertarget{classFColladaPluginManager_a2a0ebfa39ce05b91de49c348a6c5c568}{
+\index{FColladaPluginManager@{FColladaPluginManager}!GetArchivePluginsCount@{GetArchivePluginsCount}}
+\index{GetArchivePluginsCount@{GetArchivePluginsCount}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{GetArchivePluginsCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FColladaPluginManager::GetArchivePluginsCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFColladaPluginManager_a2a0ebfa39ce05b91de49c348a6c5c568}
+Retrieve the number of archive plugins that are loaded. \begin{DoxyReturn}{Returns}
+The number of archive plugins loaded. 
+\end{DoxyReturn}
+\hypertarget{classFColladaPluginManager_a15089895620feae23927be8bc8c60c1d}{
+\index{FColladaPluginManager@{FColladaPluginManager}!LoadDocumentFromFile@{LoadDocumentFromFile}}
+\index{LoadDocumentFromFile@{LoadDocumentFromFile}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{LoadDocumentFromFile}]{\setlength{\rightskip}{0pt plus 5cm}bool FColladaPluginManager::LoadDocumentFromFile (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{const fchar $\ast$}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{classFColladaPluginManager_a15089895620feae23927be8bc8c60c1d}
+Load document to the given file. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]the \hyperlink{classFCDocument}{FCDocument} which will be filled with loaded contents. \item[{\em filename}]The file name of the file to load. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+'true' if the operation is successful. 
+\end{DoxyReturn}
+\hypertarget{classFColladaPluginManager_a52fc25de16489fadec449415a0f2c633}{
+\index{FColladaPluginManager@{FColladaPluginManager}!RegisterPlugin@{RegisterPlugin}}
+\index{RegisterPlugin@{RegisterPlugin}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{RegisterPlugin}]{\setlength{\rightskip}{0pt plus 5cm}bool FColladaPluginManager::RegisterPlugin (
+\begin{DoxyParamCaption}
+\item[{{\bf FUPlugin} $\ast$}]{ plugin}
+\end{DoxyParamCaption}
+)}}
+\label{classFColladaPluginManager_a52fc25de16489fadec449415a0f2c633}
+Manually registers a plugin. To manually un-\/register a plugin, use the plugin-\/$>$\hyperlink{classFUObject_a33be6852b877d7f29520bbe4722b846b}{Release()} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em plugin}]The plugin to manually add to the plugin map. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?. 
+\end{DoxyReturn}
+\hypertarget{classFColladaPluginManager_ab9deb7df7ff61ec0cb82efb37c5bcc0b}{
+\index{FColladaPluginManager@{FColladaPluginManager}!SaveDocumentToFile@{SaveDocumentToFile}}
+\index{SaveDocumentToFile@{SaveDocumentToFile}!FColladaPluginManager@{FColladaPluginManager}}
+\subsubsection[{SaveDocumentToFile}]{\setlength{\rightskip}{0pt plus 5cm}bool FColladaPluginManager::SaveDocumentToFile (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{const fchar $\ast$}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{classFColladaPluginManager_ab9deb7df7ff61ec0cb82efb37c5bcc0b}
+Save document to the given file. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]the \hyperlink{classFCDocument}{FCDocument} whose contents are to be writtern in the file. \item[{\em filename}]the full path of the file to write. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+'true' if the operation is successful. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/\hyperlink{FColladaPlugin_8h}{FColladaPlugin.h}\item 
+FCollada/FColladaPlugin.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,146 @@
+\hypertarget{classFCDETechnique}{
+\section{FCDETechnique Class Reference}
+\label{classFCDETechnique}\index{FCDETechnique@{FCDETechnique}}
+}
+
+
+{\ttfamily \#include $<$FCDExtra.h$>$}
+
+Inheritance diagram for FCDETechnique:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDETechnique}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDETechnique_abfb0d834d5ea03d2972429bcaf963016}{FCDETechnique} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDEType}{FCDEType} $\ast$parent, const char $\ast$profile)
+\item 
+virtual \hyperlink{classFCDETechnique_a043feb038171272869fb70f733c7a69c}{$\sim$FCDETechnique} ()
+\item 
+const char $\ast$ \hyperlink{classFCDETechnique_af70bf2e36a2e43d218d9ef40d84d00c0}{GetProfile} () const 
+\item 
+void \hyperlink{classFCDETechnique_a39e0252c1e20d496fb4836a5755a1c13}{SetProfile} (const \hyperlink{classfm_1_1stringT}{fm::string} \&\_\-profile)
+\item 
+\hyperlink{classFUTrackable}{FUTrackable} $\ast$ \hyperlink{classFCDETechnique_afd05d449c901f03a9b687389a10dd510}{GetPluginObject} ()
+\item 
+const \hyperlink{classFUTrackable}{FUTrackable} $\ast$ \hyperlink{classFCDETechnique_ad5a686c5ebe50025f6bf3c162333818d}{GetPluginObject} () const 
+\item 
+void \hyperlink{classFCDETechnique_a50db00ed5ed48580f6f613bcb247d6a6}{SetPluginObject} (\hyperlink{classFUTrackable}{FUTrackable} $\ast$plugin)
+\item 
+virtual \hyperlink{classFCDENode}{FCDENode} $\ast$ \hyperlink{classFCDETechnique_a2bbe271c808cf52f0675cbcbdf520bb8}{Clone} (\hyperlink{classFCDENode}{FCDENode} $\ast$clone) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA extra tree technique.
+
+For convenience, this extra tree technique is based on top of the \hyperlink{classFCDENode}{FCDENode} class. An extra tree technique is the root of the extra tree specific to the profile of an application. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDETechnique_abfb0d834d5ea03d2972429bcaf963016}{
+\index{FCDETechnique@{FCDETechnique}!FCDETechnique@{FCDETechnique}}
+\index{FCDETechnique@{FCDETechnique}!FCDETechnique@{FCDETechnique}}
+\subsubsection[{FCDETechnique}]{\setlength{\rightskip}{0pt plus 5cm}FCDETechnique::FCDETechnique (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDEType} $\ast$}]{ parent, }
+\item[{const char $\ast$}]{ profile}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDETechnique_abfb0d834d5ea03d2972429bcaf963016}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDEType_ae50b62701aabf46505d13b686794ceae}{FCDEType::AddTechnique} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the technique. \item[{\em parent}]The extra type that contains this technique. \item[{\em profile}]The application-\/specific profile name. \end{DoxyParams}
+\hypertarget{classFCDETechnique_a043feb038171272869fb70f733c7a69c}{
+\index{FCDETechnique@{FCDETechnique}!$\sim$FCDETechnique@{$\sim$FCDETechnique}}
+\index{$\sim$FCDETechnique@{$\sim$FCDETechnique}!FCDETechnique@{FCDETechnique}}
+\subsubsection[{$\sim$FCDETechnique}]{\setlength{\rightskip}{0pt plus 5cm}FCDETechnique::$\sim$FCDETechnique (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDETechnique_a043feb038171272869fb70f733c7a69c}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDETechnique_a2bbe271c808cf52f0675cbcbdf520bb8}{
+\index{FCDETechnique@{FCDETechnique}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDETechnique@{FCDETechnique}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDENode} $\ast$ FCDETechnique::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDENode} $\ast$}]{ clone}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDETechnique_a2bbe271c808cf52f0675cbcbdf520bb8}
+Clones the extra tree node. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The extra tree node that will receive the clone information. If this pointer is NULL, a new extra tree technique will be created and you will need to release the returned pointer manually. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDENode_ab098c534fe514f1a24567a9d785ca66d}{FCDENode}.
+
+\hypertarget{classFCDETechnique_ad5a686c5ebe50025f6bf3c162333818d}{
+\index{FCDETechnique@{FCDETechnique}!GetPluginObject@{GetPluginObject}}
+\index{GetPluginObject@{GetPluginObject}!FCDETechnique@{FCDETechnique}}
+\subsubsection[{GetPluginObject}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUTrackable}$\ast$ FCDETechnique::GetPluginObject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDETechnique_ad5a686c5ebe50025f6bf3c162333818d}
+See above. \hypertarget{classFCDETechnique_afd05d449c901f03a9b687389a10dd510}{
+\index{FCDETechnique@{FCDETechnique}!GetPluginObject@{GetPluginObject}}
+\index{GetPluginObject@{GetPluginObject}!FCDETechnique@{FCDETechnique}}
+\subsubsection[{GetPluginObject}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUTrackable}$\ast$ FCDETechnique::GetPluginObject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDETechnique_afd05d449c901f03a9b687389a10dd510}
+Retrieves the plug-\/in object that overrides the extra tree for this profile. The plug-\/in object should contain all the necessary information and this extra tree is expected to be empty. \begin{DoxyReturn}{Returns}
+The profile-\/specific plug-\/in object. 
+\end{DoxyReturn}
+\hypertarget{classFCDETechnique_af70bf2e36a2e43d218d9ef40d84d00c0}{
+\index{FCDETechnique@{FCDETechnique}!GetProfile@{GetProfile}}
+\index{GetProfile@{GetProfile}!FCDETechnique@{FCDETechnique}}
+\subsubsection[{GetProfile}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ FCDETechnique::GetProfile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDETechnique_af70bf2e36a2e43d218d9ef40d84d00c0}
+Retrieves the name of the application-\/specific profile of the technique. \begin{DoxyReturn}{Returns}
+The name of the application-\/specific profile. 
+\end{DoxyReturn}
+\hypertarget{classFCDETechnique_a50db00ed5ed48580f6f613bcb247d6a6}{
+\index{FCDETechnique@{FCDETechnique}!SetPluginObject@{SetPluginObject}}
+\index{SetPluginObject@{SetPluginObject}!FCDETechnique@{FCDETechnique}}
+\subsubsection[{SetPluginObject}]{\setlength{\rightskip}{0pt plus 5cm}void FCDETechnique::SetPluginObject (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTrackable} $\ast$}]{ plugin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDETechnique_a50db00ed5ed48580f6f613bcb247d6a6}
+Sets the plug-\/in object that overrides the extra tree for this profile. \hypertarget{classFCDETechnique_a39e0252c1e20d496fb4836a5755a1c13}{
+\index{FCDETechnique@{FCDETechnique}!SetProfile@{SetProfile}}
+\index{SetProfile@{SetProfile}!FCDETechnique@{FCDETechnique}}
+\subsubsection[{SetProfile}]{\setlength{\rightskip}{0pt plus 5cm}void FCDETechnique::SetProfile (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ \_\-profile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDETechnique_a39e0252c1e20d496fb4836a5755a1c13}
+Sets the name of the application-\/specific profile of the technique. Be careful when modifying the application-\/specific profile name. There is an assumption that within a typed-\/extra, all application-\/specific profile names are unique. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-profile}]The new name of the application-\/specific profile. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDExtra_8h}{FCDExtra.h}\item 
+FCollada/FCDocument/FCDExtra.cpp\end{DoxyCompactItemize}

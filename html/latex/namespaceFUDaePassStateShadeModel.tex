@@ -1,0 +1,88 @@
+\hypertarget{namespaceFUDaePassStateShadeModel}{
+\section{FUDaePassStateShadeModel Namespace Reference}
+\label{namespaceFUDaePassStateShadeModel}\index{FUDaePassStateShadeModel@{FUDaePassStateShadeModel}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1}{Model} \{ {\bfseries FLAT} =  0x1D00, 
+\hyperlink{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1ad75a25cbf38d18482f85798a496c4b50}{SMOOTH} =  0x1D01, 
+\hyperlink{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1af368b5304b55a1f1104d75ccea094337}{INVALID}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1}{Model} \hyperlink{namespaceFUDaePassStateShadeModel_a2cf15df756b082b66649c373ab8df85a}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaePassStateShadeModel_a726a28704b8c2b6a332d851f8e7887b0}{ToString} (\hyperlink{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1}{Model} model)
+\item 
+\hyperlink{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1}{Model} \hyperlink{namespaceFUDaePassStateShadeModel_a5bee3f41c4858c1872b2f0e265a198f9}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The render state shading model. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1}{
+\index{FUDaePassStateShadeModel@{FUDaePassStateShadeModel}!Model@{Model}}
+\index{Model@{Model}!FUDaePassStateShadeModel@{FUDaePassStateShadeModel}}
+\subsubsection[{Model}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUDaePassStateShadeModel::Model}}}
+\label{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1}
+The shading model using when rasterizing. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{SMOOTH@{SMOOTH}!FUDaePassStateShadeModel@{FUDaePassStateShadeModel}}\index{FUDaePassStateShadeModel@{FUDaePassStateShadeModel}!SMOOTH@{SMOOTH}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1ad75a25cbf38d18482f85798a496c4b50}{
+SMOOTH}
+\label{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1ad75a25cbf38d18482f85798a496c4b50}
+}]Flat shading. \index{INVALID@{INVALID}!FUDaePassStateShadeModel@{FUDaePassStateShadeModel}}\index{FUDaePassStateShadeModel@{FUDaePassStateShadeModel}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1af368b5304b55a1f1104d75ccea094337}{
+INVALID}
+\label{namespaceFUDaePassStateShadeModel_a064ef370ffcebcea8ed5a4b2f9bcf7a1af368b5304b55a1f1104d75ccea094337}
+}]Gouraud shading. An invalid shading model. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaePassStateShadeModel_a2cf15df756b082b66649c373ab8df85a}{
+\index{FUDaePassStateShadeModel@{FUDaePassStateShadeModel}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateShadeModel@{FUDaePassStateShadeModel}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf Model} FUDaePassStateShadeModel::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateShadeModel_a2cf15df756b082b66649c373ab8df85a}
+Converts the COLLADA render state shading model type string to the shading model. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The render state shading model type string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The polygon mode. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaePassStateShadeModel_a5bee3f41c4858c1872b2f0e265a198f9}{
+\index{FUDaePassStateShadeModel@{FUDaePassStateShadeModel}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateShadeModel@{FUDaePassStateShadeModel}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model} FUDaePassStateShadeModel::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaePassStateShadeModel_a5bee3f41c4858c1872b2f0e265a198f9}
+See above. \hypertarget{namespaceFUDaePassStateShadeModel_a726a28704b8c2b6a332d851f8e7887b0}{
+\index{FUDaePassStateShadeModel@{FUDaePassStateShadeModel}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaePassStateShadeModel@{FUDaePassStateShadeModel}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaePassStateShadeModel::ToString (
+\begin{DoxyParamCaption}
+\item[{Model}]{ model}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateShadeModel_a726a28704b8c2b6a332d851f8e7887b0}
+Converts the shading model to its COLLADA render state shading model type string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em model}]The shading model. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state shading model type string. 
+\end{DoxyReturn}

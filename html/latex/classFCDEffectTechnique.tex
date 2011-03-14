@@ -1,0 +1,387 @@
+\hypertarget{classFCDEffectTechnique}{
+\section{FCDEffectTechnique Class Reference}
+\label{classFCDEffectTechnique}\index{FCDEffectTechnique@{FCDEffectTechnique}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectTechnique.h$>$}
+
+Inheritance diagram for FCDEffectTechnique:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDEffectTechnique}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEffectTechnique_a1e47ee8356ddfaf650da3601733d2394}{FCDEffectTechnique} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDEffectProfileFX}{FCDEffectProfileFX} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDEffectTechnique_a63421c500dc1aea4d475f5cf77300d71}{$\sim$FCDEffectTechnique} ()
+\item 
+\hyperlink{classFCDEffectProfileFX}{FCDEffectProfileFX} $\ast$ \hyperlink{classFCDEffectTechnique_ac4649a643cf6949375115dd31a775b28}{GetParent} ()
+\item 
+const \hyperlink{classFCDEffectProfileFX}{FCDEffectProfileFX} $\ast$ \hyperlink{classFCDEffectTechnique_af1d184dd73bc107f25d6b12debaf5625}{GetParent} () const 
+\item 
+\hyperlink{classFCDEffectTechnique_a67b10f9e49ba3cb4ae2bb498d8197f36}{DEPRECATED} (3.05A, GetParent()-\/$>$GetParent()-\/$>$GetDaeId) const fm
+\item 
+const \hyperlink{classfm_1_1stringT}{fstring} \& \hyperlink{classFCDEffectTechnique_a2d3245870ddab9ce3b442e5afd708a52}{GetName} () const 
+\item 
+void \hyperlink{classFCDEffectTechnique_a07bca55857e485109ce1b499ceef6a40}{SetName} (const \hyperlink{classfm_1_1stringT}{fstring} \&\_\-name)
+\item 
+\hyperlink{classFCDEffectTechnique_ac454b0b966bd0ee9dfd181cae1e3cb7b}{DEPRECATED} (3.05A, GetPassCount and GetPass(index)) void GetPassList()
+\item 
+size\_\-t \hyperlink{classFCDEffectTechnique_a71dae8aafce949a83b7bf0361bc68910}{GetPassCount} () const 
+\item 
+\hyperlink{classFCDEffectPass}{FCDEffectPass} $\ast$ \hyperlink{classFCDEffectTechnique_a2b957bde5e7142e14724bea627226eff}{GetPass} (size\_\-t index)
+\item 
+const \hyperlink{classFCDEffectPass}{FCDEffectPass} $\ast$ \hyperlink{classFCDEffectTechnique_a02721f15869f261d94438d8a1837ed75}{GetPass} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDEffectPass}{FCDEffectPass} $\ast$ \hyperlink{classFCDEffectTechnique_a485529a79e25dfb6c9d9f3b6ebc4d5c4}{AddPass} ()
+\item 
+\hyperlink{classFCDEffectTechnique_a0f2d38037a7fbfb2f80913148d2ea68e}{DEPRECATED} (3.05A, GetCodeCount and GetCode(index) or FindCode) void GetCodeList()
+\item 
+size\_\-t \hyperlink{classFCDEffectTechnique_ab9f545e1ae37dd7bd8ef17bd2d533b85}{GetCodeCount} () const 
+\item 
+\hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectTechnique_a055752fffaa859ba4b300fc5e1668307}{GetCode} (size\_\-t index)
+\item 
+const \hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectTechnique_ac1bfa956e08f14bd17dcc9dd5c397833}{GetCode} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectTechnique_aa1d2ca97bd7e689527c2d7a579f0f9ca}{FindCode} (const char $\ast$sid)
+\item 
+const \hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectTechnique_ac4a6ee7e3bac9f19eaa9ed77fc36eca4}{FindCode} (const char $\ast$sid) const 
+\item 
+\hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectTechnique_aa532d3dff7c9c8f159a16811c7cdcf20}{AddCode} ()
+\item 
+size\_\-t \hyperlink{classFCDEffectTechnique_a58c423415223bbe1ada049c770562f74}{GetEffectParameterCount} () const 
+\item 
+\hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$ \hyperlink{classFCDEffectTechnique_a0cf4e90aeff863f03f183e0c3e791df0}{GetEffectParameter} (size\_\-t index)
+\item 
+\hypertarget{classFCDEffectTechnique_a5539b314ef3f3b0460513f4025cfdb97}{
+const \hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$ {\bfseries GetEffectParameter} (size\_\-t index) const }
+\label{classFCDEffectTechnique_a5539b314ef3f3b0460513f4025cfdb97}
+
+\item 
+\hyperlink{classFCDEffectParameter}{FCDEffectParameter} $\ast$ \hyperlink{classFCDEffectTechnique_af52fac53bb63d670d5c580b500d15719}{AddEffectParameter} (uint32 type)
+\item 
+\hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$ \hyperlink{classFCDEffectTechnique_ae810ec6ecd9b3baec142868f62dfe154}{Clone} (\hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$clone=NULL) const 
+\item 
+\hyperlink{classFCDEffectTechnique_a6f0456eaec5bf45c469a7d9be98cc4ce}{DEPRECATED} (3.05A, not recommended) void Flatten()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA effect technique.
+
+The COLLADA effect technique contains the passes to be used in the rendering of polygon sets.
+
+It also contains a list of effect parameters: both generators and overrides and it is the lowest level of abstraction in which you can access effect parameters. For flattened materials, this means that all the effect parameters will be accessible at this level.
+
+It also contains a list of effect code inclusions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEffectTechnique_a1e47ee8356ddfaf650da3601733d2394}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!FCDEffectTechnique@{FCDEffectTechnique}}
+\index{FCDEffectTechnique@{FCDEffectTechnique}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{FCDEffectTechnique}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectTechnique::FCDEffectTechnique (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDEffectProfileFX} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectTechnique_a1e47ee8356ddfaf650da3601733d2394}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDEffectProfileFX_ae6498c1d1bba41fdc63b98cbceb797d0}{FCDEffectProfileFX::AddTechnique} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The \hyperlink{namespaceFCollada}{FCollada} document that owns this technique. \item[{\em parent}]The effect profile which contains the technique. \end{DoxyParams}
+\hypertarget{classFCDEffectTechnique_a63421c500dc1aea4d475f5cf77300d71}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!$\sim$FCDEffectTechnique@{$\sim$FCDEffectTechnique}}
+\index{$\sim$FCDEffectTechnique@{$\sim$FCDEffectTechnique}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{$\sim$FCDEffectTechnique}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectTechnique::$\sim$FCDEffectTechnique (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectTechnique_a63421c500dc1aea4d475f5cf77300d71}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEffectTechnique_aa532d3dff7c9c8f159a16811c7cdcf20}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!AddCode@{AddCode}}
+\index{AddCode@{AddCode}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{AddCode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectCode} $\ast$ FCDEffectTechnique::AddCode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectTechnique_aa532d3dff7c9c8f159a16811c7cdcf20}
+Adds a new code inclusion to this effect profile. \begin{DoxyReturn}{Returns}
+The new code inclusion. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_af52fac53bb63d670d5c580b500d15719}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!AddEffectParameter@{AddEffectParameter}}
+\index{AddEffectParameter@{AddEffectParameter}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{AddEffectParameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameter} $\ast$ FCDEffectTechnique::AddEffectParameter (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectTechnique_af52fac53bb63d670d5c580b500d15719}
+Adds a local effect parameter to the local list. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDEffectParameter_a1efe74553d2ed199435085c171743b08}{FCDEffectParameter::Type} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The value type of the effect parameter to create. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new local effect parameter. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a485529a79e25dfb6c9d9f3b6ebc4d5c4}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!AddPass@{AddPass}}
+\index{AddPass@{AddPass}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{AddPass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPass} $\ast$ FCDEffectTechnique::AddPass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectTechnique_a485529a79e25dfb6c9d9f3b6ebc4d5c4}
+Adds a new pass to this effect technique. \begin{DoxyReturn}{Returns}
+The new pass. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_ae810ec6ecd9b3baec142868f62dfe154}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectTechnique} $\ast$ FCDEffectTechnique::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectTechnique} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectTechnique_ae810ec6ecd9b3baec142868f62dfe154}
+\mbox{[}INTERNAL\mbox{]} Clones the full effect technique. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The cloned technique. If this pointer is NULL, a new technique is created and you will need to release this new techniquetechnique. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned technique. This pointer will never be NULL. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a67b10f9e49ba3cb4ae2bb498d8197f36}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectTechnique::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetParent()-\/$>$GetParent()-\/$>$}]{ GetDaeId}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a67b10f9e49ba3cb4ae2bb498d8197f36}
+Retrieves the COLLADA id of the parent effect. This function is mostly useful as a shortcut for debugging and reporting. \begin{DoxyReturn}{Returns}
+The COLLADA id of the parent effect. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a0f2d38037a7fbfb2f80913148d2ea68e}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectTechnique::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetCodeCount and GetCode(index) or}]{ FindCode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a0f2d38037a7fbfb2f80913148d2ea68e}
+Retrieves the list of code inclusions. \begin{DoxyReturn}{Returns}
+The list of code inclusions. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a6f0456eaec5bf45c469a7d9be98cc4ce}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectTechnique::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{not}]{ recommended}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a6f0456eaec5bf45c469a7d9be98cc4ce}
+\mbox{[}INTERNAL\mbox{]} Flattens this effect technique. Merges the parameter overrides into the parameter generators. \hypertarget{classFCDEffectTechnique_ac454b0b966bd0ee9dfd181cae1e3cb7b}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectTechnique::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetPassCount and }]{ GetPassindex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_ac454b0b966bd0ee9dfd181cae1e3cb7b}
+Retrieves the list of passes. \begin{DoxyReturn}{Returns}
+The list of passes. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_ac4a6ee7e3bac9f19eaa9ed77fc36eca4}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!FindCode@{FindCode}}
+\index{FindCode@{FindCode}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{FindCode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectCode} $\ast$ FCDEffectTechnique::FindCode (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ sid}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectTechnique_ac4a6ee7e3bac9f19eaa9ed77fc36eca4}
+See above. \hypertarget{classFCDEffectTechnique_aa1d2ca97bd7e689527c2d7a579f0f9ca}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!FindCode@{FindCode}}
+\index{FindCode@{FindCode}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{FindCode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectCode}$\ast$ FCDEffectTechnique::FindCode (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ sid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_aa1d2ca97bd7e689527c2d7a579f0f9ca}
+Retrieves the code inclusion with the given sub-\/id. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sid}]A COLLADA sub-\/id. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The code inclusion with the given sub-\/id. This pointer will be NULL, if there are no code inclusions that match the given sub-\/id. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a055752fffaa859ba4b300fc5e1668307}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetCode@{GetCode}}
+\index{GetCode@{GetCode}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetCode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectCode}$\ast$ FCDEffectTechnique::GetCode (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a055752fffaa859ba4b300fc5e1668307}
+Retrieves a code inclusion contained within the effect profile. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the code inclusion. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The code inclusion. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_ac1bfa956e08f14bd17dcc9dd5c397833}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetCode@{GetCode}}
+\index{GetCode@{GetCode}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetCode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectCode}$\ast$ FCDEffectTechnique::GetCode (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_ac1bfa956e08f14bd17dcc9dd5c397833}
+See above. \hypertarget{classFCDEffectTechnique_ab9f545e1ae37dd7bd8ef17bd2d533b85}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetCodeCount@{GetCodeCount}}
+\index{GetCodeCount@{GetCodeCount}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetCodeCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectTechnique::GetCodeCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_ab9f545e1ae37dd7bd8ef17bd2d533b85}
+Retrieves the number of code inclusions contained within the effect profile. \begin{DoxyReturn}{Returns}
+The number of code inclusions. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a0cf4e90aeff863f03f183e0c3e791df0}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetEffectParameter@{GetEffectParameter}}
+\index{GetEffectParameter@{GetEffectParameter}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetEffectParameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameter}$\ast$ FCDEffectTechnique::GetEffectParameter (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a0cf4e90aeff863f03f183e0c3e791df0}
+Retrieves a given local effect parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]An index. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The local effect parameter at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a58c423415223bbe1ada049c770562f74}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetEffectParameterCount@{GetEffectParameterCount}}
+\index{GetEffectParameterCount@{GetEffectParameterCount}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetEffectParameterCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectTechnique::GetEffectParameterCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a58c423415223bbe1ada049c770562f74}
+Retrieves the number of local effect parameters \begin{DoxyReturn}{Returns}
+The number of local effect parameters. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a2d3245870ddab9ce3b442e5afd708a52}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetName@{GetName}}
+\index{GetName@{GetName}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fstring}\& FCDEffectTechnique::GetName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a2d3245870ddab9ce3b442e5afd708a52}
+Retrieves the sub-\/id of the technique. \begin{DoxyReturn}{Returns}
+The sub-\/id of the technique. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_ac4649a643cf6949375115dd31a775b28}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectProfileFX}$\ast$ FCDEffectTechnique::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_ac4649a643cf6949375115dd31a775b28}
+Retrieves the effect profile that contains this technique. \begin{DoxyReturn}{Returns}
+The parent effect profile. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_af1d184dd73bc107f25d6b12debaf5625}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectProfileFX}$\ast$ FCDEffectTechnique::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_af1d184dd73bc107f25d6b12debaf5625}
+See above. \hypertarget{classFCDEffectTechnique_a2b957bde5e7142e14724bea627226eff}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetPass@{GetPass}}
+\index{GetPass@{GetPass}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetPass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPass}$\ast$ FCDEffectTechnique::GetPass (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a2b957bde5e7142e14724bea627226eff}
+Retrieves a specific pass contained within this effect technique. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the pass. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pass. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a02721f15869f261d94438d8a1837ed75}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetPass@{GetPass}}
+\index{GetPass@{GetPass}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetPass}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectPass}$\ast$ FCDEffectTechnique::GetPass (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a02721f15869f261d94438d8a1837ed75}
+See above. \hypertarget{classFCDEffectTechnique_a71dae8aafce949a83b7bf0361bc68910}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!GetPassCount@{GetPassCount}}
+\index{GetPassCount@{GetPassCount}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{GetPassCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectTechnique::GetPassCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a71dae8aafce949a83b7bf0361bc68910}
+Retrieves the number of passes contained within this effect technique. \begin{DoxyReturn}{Returns}
+The number of passes. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectTechnique_a07bca55857e485109ce1b499ceef6a40}{
+\index{FCDEffectTechnique@{FCDEffectTechnique}!SetName@{SetName}}
+\index{SetName@{SetName}!FCDEffectTechnique@{FCDEffectTechnique}}
+\subsubsection[{SetName}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectTechnique::SetName (
+\begin{DoxyParamCaption}
+\item[{const {\bf fstring} \&}]{ \_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectTechnique_a07bca55857e485109ce1b499ceef6a40}
+Sets the sub-\/id of the technique. The effect technique must have a valid sub-\/id that is unique within its scope. Otherwise, one will be provided on XML export. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-name}]A valid sub-\/id. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectTechnique_8h}{FCDEffectTechnique.h}\item 
+FCollada/FCDocument/FCDEffectTechnique.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,208 @@
+\hypertarget{classFCDTMatrix}{
+\section{FCDTMatrix Class Reference}
+\label{classFCDTMatrix}\index{FCDTMatrix@{FCDTMatrix}}
+}
+
+
+{\ttfamily \#include $<$FCDTransform.h$>$}
+
+Inheritance diagram for FCDTMatrix:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDTMatrix}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDTMatrix_abfe3f4dfeab74692152c34d2af3e0999}{FCDTMatrix} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDTMatrix_abe118d75966fab2155ac04bf73a4681c}{$\sim$FCDTMatrix} ()
+\item 
+virtual \hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{Type} \hyperlink{classFCDTMatrix_a73abaf07dc65e188ceb14d49e27355ee}{GetType} () const 
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableMatrix44} \& \hyperlink{classFCDTMatrix_a44021172638ab8ae2c1c0c56d2c88ebc}{GetTransform} ()
+\item 
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableMatrix44} \& \hyperlink{classFCDTMatrix_a09a0316070f5f57d4f59cf25adf4bd64}{GetTransform} () const 
+\item 
+void \hyperlink{classFCDTMatrix_a9ad2ef293251bedafb477ea7fa624021}{SetTransform} (const \hyperlink{classFMMatrix44}{FMMatrix44} \&mx)
+\item 
+virtual \hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDTMatrix_a26384eeccaa1205b0f88d0ad16134669}{ToMatrix} () const 
+\item 
+virtual bool \hyperlink{classFCDTMatrix_aaed758f82370d47c82eb66263830d610}{IsAnimated} () const 
+\item 
+\hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTMatrix_aef3ca1c87d3db3762750154f7dd306e1}{GetAnimated} ()
+\item 
+virtual const \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTMatrix_ae2a25b50913ee58bceac42b4aee92029}{GetAnimated} () const 
+\item 
+virtual \hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDTMatrix_afcd47013f6ef72c4f7b25aafeafd1699}{Clone} (\hyperlink{classFCDTransform}{FCDTransform} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA matrix transformation. This transformation contains a matrix that should be multiplied to the local transformation matrix. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDTMatrix_abfe3f4dfeab74692152c34d2af3e0999}{
+\index{FCDTMatrix@{FCDTMatrix}!FCDTMatrix@{FCDTMatrix}}
+\index{FCDTMatrix@{FCDTMatrix}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{FCDTMatrix}]{\setlength{\rightskip}{0pt plus 5cm}FCDTMatrix::FCDTMatrix (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTMatrix_abfe3f4dfeab74692152c34d2af3e0999}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{FCDSceneNode::AddTransform} function with the transformation type: MATRIX. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the transformation. \item[{\em parent}]The visual scene node that contains the transformation. \end{DoxyParams}
+\hypertarget{classFCDTMatrix_abe118d75966fab2155ac04bf73a4681c}{
+\index{FCDTMatrix@{FCDTMatrix}!$\sim$FCDTMatrix@{$\sim$FCDTMatrix}}
+\index{$\sim$FCDTMatrix@{$\sim$FCDTMatrix}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{$\sim$FCDTMatrix}]{\setlength{\rightskip}{0pt plus 5cm}FCDTMatrix::$\sim$FCDTMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTMatrix_abe118d75966fab2155ac04bf73a4681c}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDTMatrix_afcd47013f6ef72c4f7b25aafeafd1699}{
+\index{FCDTMatrix@{FCDTMatrix}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDTMatrix::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTMatrix_afcd47013f6ef72c4f7b25aafeafd1699}
+Creates a copy of a matrix transformation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The transform that will be the clone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned transformation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_a5ffc20180fb422a2756e1394576f2901}{FCDTransform}.
+
+\hypertarget{classFCDTMatrix_aef3ca1c87d3db3762750154f7dd306e1}{
+\index{FCDTMatrix@{FCDTMatrix}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimated}$\ast$ FCDTMatrix::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTMatrix_aef3ca1c87d3db3762750154f7dd306e1}
+Retrieves the animated element for the transformation matrix. \begin{DoxySeeAlso}{See also}
+FCDAnimatedMatrix 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The animated element. This pointer will be NULL if the transformation matrix is not animated. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDTransform_afefc850b24274c7e3ced421b18bec24b}{FCDTransform}.
+
+\hypertarget{classFCDTMatrix_ae2a25b50913ee58bceac42b4aee92029}{
+\index{FCDTMatrix@{FCDTMatrix}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDAnimated} $\ast$ FCDTMatrix::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTMatrix_ae2a25b50913ee58bceac42b4aee92029}
+See above. 
+
+Implements \hyperlink{classFCDTransform_aac1ff2df9e63702a90300ba9c38c48e1}{FCDTransform}.
+
+\hypertarget{classFCDTMatrix_a09a0316070f5f57d4f59cf25adf4bd64}{
+\index{FCDTMatrix@{FCDTMatrix}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{GetTransform}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDParameterAnimatableMatrix44}\& FCDTMatrix::GetTransform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTMatrix_a09a0316070f5f57d4f59cf25adf4bd64}
+See above. \hypertarget{classFCDTMatrix_a44021172638ab8ae2c1c0c56d2c88ebc}{
+\index{FCDTMatrix@{FCDTMatrix}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{GetTransform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableMatrix44}\& FCDTMatrix::GetTransform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTMatrix_a44021172638ab8ae2c1c0c56d2c88ebc}
+Retrieves the matrix for the transformation. All 16 values of the matrix may be animated. \begin{DoxyReturn}{Returns}
+The transformation matrix. 
+\end{DoxyReturn}
+\hypertarget{classFCDTMatrix_a73abaf07dc65e188ceb14d49e27355ee}{
+\index{FCDTMatrix@{FCDTMatrix}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDTMatrix::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDTMatrix_a73abaf07dc65e188ceb14d49e27355ee}
+Retrieves the transformation class type for the transformation. \begin{DoxyReturn}{Returns}
+The class type: MATRIX. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_af406aebcba6215ebc1358a3cf87ab29d}{FCDTransform}.
+
+\hypertarget{classFCDTMatrix_aaed758f82370d47c82eb66263830d610}{
+\index{FCDTMatrix@{FCDTMatrix}!IsAnimated@{IsAnimated}}
+\index{IsAnimated@{IsAnimated}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{IsAnimated}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDTMatrix::IsAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTMatrix_aaed758f82370d47c82eb66263830d610}
+Retrieves whether the transformation matrix is animated. \begin{DoxyReturn}{Returns}
+Whether the transformation matrix is animated. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_ab12ac63fa2d46fbcf8c025971635cda4}{FCDTransform}.
+
+\hypertarget{classFCDTMatrix_a9ad2ef293251bedafb477ea7fa624021}{
+\index{FCDTMatrix@{FCDTMatrix}!SetTransform@{SetTransform}}
+\index{SetTransform@{SetTransform}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{SetTransform}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTMatrix::SetTransform (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMMatrix44} \&}]{ mx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTMatrix_a9ad2ef293251bedafb477ea7fa624021}
+Sets the matrix for the transformation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mx}]The transformation matrix. \end{DoxyParams}
+\hypertarget{classFCDTMatrix_a26384eeccaa1205b0f88d0ad16134669}{
+\index{FCDTMatrix@{FCDTMatrix}!ToMatrix@{ToMatrix}}
+\index{ToMatrix@{ToMatrix}!FCDTMatrix@{FCDTMatrix}}
+\subsubsection[{ToMatrix}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FMMatrix44} FCDTMatrix::ToMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDTMatrix_a26384eeccaa1205b0f88d0ad16134669}
+Converts the transformation into a matrix. For matrix transformations, that's simply the transformation matrix. \begin{DoxyReturn}{Returns}
+The transformation matrix. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_afd7fc3c7dc012782ebb2886c5bc13d01}{FCDTransform}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDTransform_8h}{FCDTransform.h}\item 
+FCollada/FCDocument/FCDTransform.cpp\end{DoxyCompactItemize}

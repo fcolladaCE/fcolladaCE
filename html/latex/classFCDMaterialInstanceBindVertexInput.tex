@@ -1,0 +1,115 @@
+\hypertarget{classFCDMaterialInstanceBindVertexInput}{
+\section{FCDMaterialInstanceBindVertexInput Class Reference}
+\label{classFCDMaterialInstanceBindVertexInput}\index{FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}}
+}
+
+
+{\ttfamily \#include $<$FCDMaterialInstance.h$>$}
+
+Inheritance diagram for FCDMaterialInstanceBindVertexInput:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classFCDMaterialInstanceBindVertexInput}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDMaterialInstanceBindVertexInput_a658712d13d4d4f26c4e9d14ad3b9f5bf}{DeclareParameter} (\hyperlink{classfm_1_1stringT}{fm::string}, FUParameterQualifiers::SIMPLE, semantic, FC(\char`\"{}Bind Semantic\char`\"{}))
+\item 
+\hyperlink{classFCDMaterialInstanceBindVertexInput_a60828e98d2582ecfa609e7c04cc48a83}{DeclareParameter} (uint32, FUParameterQualifiers::SIMPLE, inputSemantic, FC(\char`\"{}Input Semantic\char`\"{}))
+\item 
+\hyperlink{classFCDMaterialInstanceBindVertexInput_ac1870b73cdfe64b0571c1fee93cb2468}{DeclareParameter} (int32, FUParameterQualifiers::SIMPLE, inputSet, FC(\char`\"{}Input Set\char`\"{}))
+\item 
+\hyperlink{classFCDMaterialInstanceBindVertexInput_ae752c5c495217ca9fc3671c1f8d657b2}{FCDMaterialInstanceBindVertexInput} ()
+\item 
+virtual \hyperlink{classFCDMaterialInstanceBindVertexInput_a10098c9fde10dc83683132374772e822}{$\sim$FCDMaterialInstanceBindVertexInput} ()
+\item 
+\hyperlink{namespaceFUDaeGeometryInput_a0f887d29f54b10338ebcf73789a7a061}{FUDaeGeometryInput::Semantic} \hyperlink{classFCDMaterialInstanceBindVertexInput_a3f79f5c625f3eb5087d136a2e38bcb03}{GetInputSemantic} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A ColladaFX per-\/instance vertex input binding.
+
+This structure is used by the shader to bind its varying inputs to actual data streams from the polygons sets. A common example of this is to identify which texture coordinate set to use for a particular TEXCOORDx stream. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDMaterialInstanceBindVertexInput_ae752c5c495217ca9fc3671c1f8d657b2}{
+\index{FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}!FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}}
+\index{FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}!FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}}
+\subsubsection[{FCDMaterialInstanceBindVertexInput}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstanceBindVertexInput::FCDMaterialInstanceBindVertexInput (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstanceBindVertexInput_ae752c5c495217ca9fc3671c1f8d657b2}
+Constructor. \hypertarget{classFCDMaterialInstanceBindVertexInput_a10098c9fde10dc83683132374772e822}{
+\index{FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}!$\sim$FCDMaterialInstanceBindVertexInput@{$\sim$FCDMaterialInstanceBindVertexInput}}
+\index{$\sim$FCDMaterialInstanceBindVertexInput@{$\sim$FCDMaterialInstanceBindVertexInput}!FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}}
+\subsubsection[{$\sim$FCDMaterialInstanceBindVertexInput}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstanceBindVertexInput::$\sim$FCDMaterialInstanceBindVertexInput (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDMaterialInstanceBindVertexInput_a10098c9fde10dc83683132374772e822}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDMaterialInstanceBindVertexInput_a658712d13d4d4f26c4e9d14ad3b9f5bf}{
+\index{FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}!DeclareParameter@{DeclareParameter}}
+\index{DeclareParameter@{DeclareParameter}!FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}}
+\subsubsection[{DeclareParameter}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstanceBindVertexInput::DeclareParameter (
+\begin{DoxyParamCaption}
+\item[{{\bf fm::string}}]{, }
+\item[{FUParameterQualifiers::SIMPLE}]{, }
+\item[{semantic}]{, }
+\item[{FC(\char`\"{}Bind Semantic\char`\"{})}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstanceBindVertexInput_a658712d13d4d4f26c4e9d14ad3b9f5bf}
+The token used to identify the effect parameter or varying shader input. \hypertarget{classFCDMaterialInstanceBindVertexInput_a60828e98d2582ecfa609e7c04cc48a83}{
+\index{FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}!DeclareParameter@{DeclareParameter}}
+\index{DeclareParameter@{DeclareParameter}!FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}}
+\subsubsection[{DeclareParameter}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstanceBindVertexInput::DeclareParameter (
+\begin{DoxyParamCaption}
+\item[{uint32}]{, }
+\item[{FUParameterQualifiers::SIMPLE}]{, }
+\item[{inputSemantic}]{, }
+\item[{FC(\char`\"{}Input Semantic\char`\"{})}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstanceBindVertexInput_a60828e98d2582ecfa609e7c04cc48a83}
+The geometry source type of the data source to bind to the effect parameter. \begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUDaeGeometryInput_a0f887d29f54b10338ebcf73789a7a061}{FUDaeGeometryInput::Semantic}. 
+\end{DoxySeeAlso}
+\hypertarget{classFCDMaterialInstanceBindVertexInput_ac1870b73cdfe64b0571c1fee93cb2468}{
+\index{FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}!DeclareParameter@{DeclareParameter}}
+\index{DeclareParameter@{DeclareParameter}!FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}}
+\subsubsection[{DeclareParameter}]{\setlength{\rightskip}{0pt plus 5cm}FCDMaterialInstanceBindVertexInput::DeclareParameter (
+\begin{DoxyParamCaption}
+\item[{int32}]{, }
+\item[{FUParameterQualifiers::SIMPLE}]{, }
+\item[{inputSet}]{, }
+\item[{FC(\char`\"{}Input Set\char`\"{})}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDMaterialInstanceBindVertexInput_ac1870b73cdfe64b0571c1fee93cb2468}
+The set value of the data source to bind to the effect parameter. A semantic/set pair should always be unique within a polygons set. \hypertarget{classFCDMaterialInstanceBindVertexInput_a3f79f5c625f3eb5087d136a2e38bcb03}{
+\index{FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}!GetInputSemantic@{GetInputSemantic}}
+\index{GetInputSemantic@{GetInputSemantic}!FCDMaterialInstanceBindVertexInput@{FCDMaterialInstanceBindVertexInput}}
+\subsubsection[{GetInputSemantic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUDaeGeometryInput::Semantic} FCDMaterialInstanceBindVertexInput::GetInputSemantic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDMaterialInstanceBindVertexInput_a3f79f5c625f3eb5087d136a2e38bcb03}
+Retrieves the input semantic for this vertex-\/input binding. \begin{DoxyReturn}{Returns}
+The input semantic. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDMaterialInstance_8h}{FCDMaterialInstance.h}\item 
+FCollada/FCDocument/FCDMaterialInstance.cpp\end{DoxyCompactItemize}

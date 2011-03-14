@@ -1,0 +1,99 @@
+\hypertarget{classIFunctor0}{
+\section{IFunctor0$<$ ReturnType $>$ Class Template Reference}
+\label{classIFunctor0}\index{IFunctor0@{IFunctor0}}
+}
+
+
+{\ttfamily \#include $<$FUFunctor.h$>$}
+
+Inheritance diagram for IFunctor0$<$ ReturnType $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIFunctor0}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classIFunctor0_a02699e00c82067c5808fadf03d1d83e6}{$\sim$IFunctor0} ()
+\item 
+virtual ReturnType \hyperlink{classIFunctor0_adfceb968d959d54c212350ec3c6620cf}{operator()} () const =0
+\item 
+virtual bool \hyperlink{classIFunctor0_a879e46499999d08d3a8eadf2220178c6}{Compare} (void $\ast$object, void $\ast$function) const =0
+\item 
+virtual \hyperlink{classIFunctor0}{IFunctor0}$<$ ReturnType $>$ $\ast$ \hyperlink{classIFunctor0_a005f7b1b2ad7249e32be6944e035f3f7}{Copy} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class ReturnType$>$ class IFunctor0$<$ ReturnType $>$}
+
+A functor with no arguments. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIFunctor0_a02699e00c82067c5808fadf03d1d83e6}{
+\index{IFunctor0@{IFunctor0}!$\sim$IFunctor0@{$\sim$IFunctor0}}
+\index{$\sim$IFunctor0@{$\sim$IFunctor0}!IFunctor0@{IFunctor0}}
+\subsubsection[{$\sim$IFunctor0}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ReturnType $>$ virtual {\bf IFunctor0}$<$ ReturnType $>$::$\sim${\bf IFunctor0} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classIFunctor0_a02699e00c82067c5808fadf03d1d83e6}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classIFunctor0_a879e46499999d08d3a8eadf2220178c6}{
+\index{IFunctor0@{IFunctor0}!Compare@{Compare}}
+\index{Compare@{Compare}!IFunctor0@{IFunctor0}}
+\subsubsection[{Compare}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ReturnType $>$ virtual bool {\bf IFunctor0}$<$ ReturnType $>$::Compare (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ object, }
+\item[{void $\ast$}]{ function}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classIFunctor0_a879e46499999d08d3a8eadf2220178c6}
+Checks whether this functor points towards the given member function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]The object which holds the member function. \item[{\em function}]The member function. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this functor points towards the given member function. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFUFunctor0_aa099128bf31a2349c5f59510a5718d50}{FUFunctor0$<$ Class, ReturnType $>$}.
+
+\hypertarget{classIFunctor0_a005f7b1b2ad7249e32be6944e035f3f7}{
+\index{IFunctor0@{IFunctor0}!Copy@{Copy}}
+\index{Copy@{Copy}!IFunctor0@{IFunctor0}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ReturnType $>$ virtual {\bf IFunctor0}$<$ReturnType$>$$\ast$ {\bf IFunctor0}$<$ ReturnType $>$::Copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classIFunctor0_a005f7b1b2ad7249e32be6944e035f3f7}
+Returns a copy of this functor 
+
+Implemented in \hyperlink{classFUFunctor0_a6bab1ab360e9ea77435d514a173e3e10}{FUFunctor0$<$ Class, ReturnType $>$}, and \hyperlink{classFUStaticFunctor0_a55652de3f0cc26840f45763fe9b168f0}{FUStaticFunctor0$<$ ReturnType $>$}.
+
+\hypertarget{classIFunctor0_adfceb968d959d54c212350ec3c6620cf}{
+\index{IFunctor0@{IFunctor0}!operator()@{operator()}}
+\index{operator()@{operator()}!IFunctor0@{IFunctor0}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ReturnType $>$ virtual ReturnType {\bf IFunctor0}$<$ ReturnType $>$::operator() (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classIFunctor0_adfceb968d959d54c212350ec3c6620cf}
+Calls the functor. \begin{DoxyReturn}{Returns}
+Implementation-\/dependant. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFUFunctor0_a5f9574b22edd5dd82f27f94d0f3d5123}{FUFunctor0$<$ Class, ReturnType $>$}, and \hyperlink{classFUStaticFunctor0_ada99df056b9ad315e2929abf80587079}{FUStaticFunctor0$<$ ReturnType $>$}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/FUFunctor.h\end{DoxyCompactItemize}

@@ -1,0 +1,175 @@
+\hypertarget{classFCDPhysicsRigidConstraintInstance}{
+\section{FCDPhysicsRigidConstraintInstance Class Reference}
+\label{classFCDPhysicsRigidConstraintInstance}\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsRigidConstraintInstance.h$>$}
+
+Inheritance diagram for FCDPhysicsRigidConstraintInstance:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDPhysicsRigidConstraintInstance}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPhysicsRigidConstraintInstance_a40ddfb3bb3bdcf04e596d495d8c3bb8a}{FCDPhysicsRigidConstraintInstance} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDPhysicsModelInstance}{FCDPhysicsModelInstance} $\ast$parent, \hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$constraint)
+\item 
+virtual \hyperlink{classFCDPhysicsRigidConstraintInstance_a5559af27968bac8addd9e117e2b98d3b}{$\sim$FCDPhysicsRigidConstraintInstance} ()
+\item 
+virtual \hyperlink{classFCDEntityInstance_a82e95eec7d9242bbedb336b0d35b59d3}{Type} \hyperlink{classFCDPhysicsRigidConstraintInstance_ae97992fcec6d82605322582fb6c89a4a}{GetType} () const 
+\item 
+\hyperlink{classFCDPhysicsModelInstance}{FCDPhysicsModelInstance} $\ast$ \hyperlink{classFCDPhysicsRigidConstraintInstance_acc8e39647944f00cd5e7807b348ef1d2}{GetParent} ()
+\item 
+const \hyperlink{classFCDPhysicsModelInstance}{FCDPhysicsModelInstance} $\ast$ \hyperlink{classFCDPhysicsRigidConstraintInstance_a1e03bfe2fc403659f16cc8c1f2d0e794}{GetParent} () const 
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$ \hyperlink{classFCDPhysicsRigidConstraintInstance_a43abd53271eff58bd7b7b58644d69193}{GetRigidConstraint} ()
+\item 
+virtual \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDPhysicsRigidConstraintInstance_aade5baf4826fb9421eecb7734df02b79}{Clone} (\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$clone=NULL) const 
+\item 
+\hyperlink{classFCDPhysicsModelInstance}{FCDPhysicsModelInstance} $\ast$ \hyperlink{classFCDPhysicsRigidConstraintInstance_af426dee2fe40d1413b310526a0dfc569}{GetModelParentInstance} ()
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraintInstance_abac99aa840c2fb2b1663ed98681b38b1}{SetRigidConstraint} (\hyperlink{classFCDPhysicsRigidConstraint}{FCDPhysicsRigidConstraint} $\ast$constraint)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA rigid constraint instance.
+
+They are instantiated in the instance\_\-physics\_\-model node. The only documentation on them is that it allows overriding of properties. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPhysicsRigidConstraintInstance_a40ddfb3bb3bdcf04e596d495d8c3bb8a}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{FCDPhysicsRigidConstraintInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidConstraintInstance::FCDPhysicsRigidConstraintInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDPhysicsModelInstance} $\ast$}]{ parent, }
+\item[{{\bf FCDPhysicsRigidConstraint} $\ast$}]{ constraint}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsRigidConstraintInstance_a40ddfb3bb3bdcf04e596d495d8c3bb8a}
+Constructor: do not use directly. Create new rigid constraints instances using the FCDPhysicsModel::AddRigidConstraintInstance function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this rigid constraint instance. \item[{\em parent}]The physics model instance that contains this rigid constraint instance. \item[{\em constraint}]The rigid constraint to instance. This should not be NULL unless it is expected to be filled in by LoadFromXML. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraintInstance_a5559af27968bac8addd9e117e2b98d3b}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!$\sim$FCDPhysicsRigidConstraintInstance@{$\sim$FCDPhysicsRigidConstraintInstance}}
+\index{$\sim$FCDPhysicsRigidConstraintInstance@{$\sim$FCDPhysicsRigidConstraintInstance}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{$\sim$FCDPhysicsRigidConstraintInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidConstraintInstance::$\sim$FCDPhysicsRigidConstraintInstance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraintInstance_a5559af27968bac8addd9e117e2b98d3b}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPhysicsRigidConstraintInstance_aade5baf4826fb9421eecb7734df02b79}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance} $\ast$ FCDPhysicsRigidConstraintInstance::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntityInstance} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraintInstance_aade5baf4826fb9421eecb7734df02b79}
+Clones the rigid constraint instance. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The rigid constraint instance to become the clone. If this pointer is NULL, a new rigid constraint instance will be created and you will need to release it. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a64b11d12fcf0151800084f66bbbeb2d6}{FCDEntityInstance}.
+
+\hypertarget{classFCDPhysicsRigidConstraintInstance_af426dee2fe40d1413b310526a0dfc569}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!GetModelParentInstance@{GetModelParentInstance}}
+\index{GetModelParentInstance@{GetModelParentInstance}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{GetModelParentInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsModelInstance}$\ast$ FCDPhysicsRigidConstraintInstance::GetModelParentInstance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraintInstance_af426dee2fe40d1413b310526a0dfc569}
+\mbox{[}INTERNAL\mbox{]} Retrieve it's parent model instance. \begin{DoxyReturn}{Returns}
+The parent of the intance. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraintInstance_acc8e39647944f00cd5e7807b348ef1d2}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsModelInstance}$\ast$ FCDPhysicsRigidConstraintInstance::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraintInstance_acc8e39647944f00cd5e7807b348ef1d2}
+Retrieves the physics model instance that contraints this rigid constraint. \begin{DoxyReturn}{Returns}
+The physics model instance. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a3b384a12ff92c1ac984a1772e562d87a}{FCDEntityInstance}.
+
+\hypertarget{classFCDPhysicsRigidConstraintInstance_a1e03bfe2fc403659f16cc8c1f2d0e794}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsModelInstance}$\ast$ FCDPhysicsRigidConstraintInstance::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraintInstance_a1e03bfe2fc403659f16cc8c1f2d0e794}
+See above. 
+
+Reimplemented from \hyperlink{classFCDEntityInstance_acb1d825d422ab6484db2b5e862b18bfa}{FCDEntityInstance}.
+
+\hypertarget{classFCDPhysicsRigidConstraintInstance_a43abd53271eff58bd7b7b58644d69193}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!GetRigidConstraint@{GetRigidConstraint}}
+\index{GetRigidConstraint@{GetRigidConstraint}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{GetRigidConstraint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidConstraint}$\ast$ FCDPhysicsRigidConstraintInstance::GetRigidConstraint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraintInstance_a43abd53271eff58bd7b7b58644d69193}
+Retrieves the rigid constraint for this rigid constraint instance. \begin{DoxyReturn}{Returns}
+The rigid constraint. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraintInstance_ae97992fcec6d82605322582fb6c89a4a}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDPhysicsRigidConstraintInstance::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraintInstance_ae97992fcec6d82605322582fb6c89a4a}
+Retrieves the entity type for this class. This function is part of the \hyperlink{classFCDEntity}{FCDEntity} interface. \begin{DoxyReturn}{Returns}
+The entity type: PHYSICS\_\-RIGID\_\-CONSTRAINT. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a773c2cfdbad937e93da7a3fa71a671a7}{FCDEntityInstance}.
+
+\hypertarget{classFCDPhysicsRigidConstraintInstance_abac99aa840c2fb2b1663ed98681b38b1}{
+\index{FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}!SetRigidConstraint@{SetRigidConstraint}}
+\index{SetRigidConstraint@{SetRigidConstraint}!FCDPhysicsRigidConstraintInstance@{FCDPhysicsRigidConstraintInstance}}
+\subsubsection[{SetRigidConstraint}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraintInstance::SetRigidConstraint (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDPhysicsRigidConstraint} $\ast$}]{ constraint}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsRigidConstraintInstance_abac99aa840c2fb2b1663ed98681b38b1}
+\mbox{[}INTERNAL\mbox{]} Sets the rigid body for this rigid body instance. Default values are taken from the rigid body. 
+\begin{DoxyParams}{Parameters}
+\item[{\em body}]The rigid body. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsRigidConstraintInstance_8h}{FCDPhysicsRigidConstraintInstance.h}\item 
+FCollada/FCDocument/FCDPhysicsRigidConstraintInstance.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+\hypertarget{classFUStaticFunctor2}{
+\section{FUStaticFunctor2$<$ Arg1, Arg2, ReturnType $>$ Class Template Reference}
+\label{classFUStaticFunctor2}\index{FUStaticFunctor2@{FUStaticFunctor2}}
+}
+
+
+{\ttfamily \#include $<$FUFunctor.h$>$}
+
+Inheritance diagram for FUStaticFunctor2$<$ Arg1, Arg2, ReturnType $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFUStaticFunctor2}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUStaticFunctor2_adb36ce639cd96031681087b8fbb75857}{FUStaticFunctor2} (ReturnType($\ast$function)(Arg1, Arg2))
+\item 
+virtual \hyperlink{classFUStaticFunctor2_a5cfbb75fe610473fe3574f784d5793f0}{$\sim$FUStaticFunctor2} ()
+\item 
+virtual ReturnType \hyperlink{classFUStaticFunctor2_a8e81b2ae65b8b5afbdc8a88aa4d090ed}{operator()} (Arg1 argument1, Arg2 argument2) const 
+\item 
+virtual bool \hyperlink{classFUStaticFunctor2_a96c9d883005e43448a9557b55b56bb47}{Compare} (void $\ast$UNUSED(object), void $\ast$function) const 
+\item 
+virtual \hyperlink{classIFunctor2}{IFunctor2}$<$ Arg1, Arg2, ReturnType $>$ $\ast$ \hyperlink{classFUStaticFunctor2_a1e5af6761d3049fcf2b4e7b451c657d5}{Copy} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Arg1, class Arg2, class ReturnType$>$ class FUStaticFunctor2$<$ Arg1, Arg2, ReturnType $>$}
+
+A pseudo-\/functor with two arguments, specialized for static functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUStaticFunctor2_adb36ce639cd96031681087b8fbb75857}{
+\index{FUStaticFunctor2@{FUStaticFunctor2}!FUStaticFunctor2@{FUStaticFunctor2}}
+\index{FUStaticFunctor2@{FUStaticFunctor2}!FUStaticFunctor2@{FUStaticFunctor2}}
+\subsubsection[{FUStaticFunctor2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Arg1 , class Arg2 , class ReturnType $>$ {\bf FUStaticFunctor2}$<$ Arg1, Arg2, ReturnType $>$::{\bf FUStaticFunctor2} (
+\begin{DoxyParamCaption}
+\item[{ReturnType($\ast$)(Arg1, Arg2)}]{ function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUStaticFunctor2_adb36ce639cd96031681087b8fbb75857}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em function}]A static function. \end{DoxyParams}
+\hypertarget{classFUStaticFunctor2_a5cfbb75fe610473fe3574f784d5793f0}{
+\index{FUStaticFunctor2@{FUStaticFunctor2}!$\sim$FUStaticFunctor2@{$\sim$FUStaticFunctor2}}
+\index{$\sim$FUStaticFunctor2@{$\sim$FUStaticFunctor2}!FUStaticFunctor2@{FUStaticFunctor2}}
+\subsubsection[{$\sim$FUStaticFunctor2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Arg1 , class Arg2 , class ReturnType $>$ virtual {\bf FUStaticFunctor2}$<$ Arg1, Arg2, ReturnType $>$::$\sim${\bf FUStaticFunctor2} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUStaticFunctor2_a5cfbb75fe610473fe3574f784d5793f0}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUStaticFunctor2_a96c9d883005e43448a9557b55b56bb47}{
+\index{FUStaticFunctor2@{FUStaticFunctor2}!Compare@{Compare}}
+\index{Compare@{Compare}!FUStaticFunctor2@{FUStaticFunctor2}}
+\subsubsection[{Compare}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Arg1 , class Arg2 , class ReturnType $>$ virtual bool {\bf FUStaticFunctor2}$<$ Arg1, Arg2, ReturnType $>$::Compare (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ UNUSEDobject, }
+\item[{void $\ast$}]{ function}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUStaticFunctor2_a96c9d883005e43448a9557b55b56bb47}
+Checks whether this pseudo-\/functor points towards the given function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em UNUSED}]Unused. \item[{\em function}]The static function. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this pseudo-\/functor points towards the given function. 
+\end{DoxyReturn}
+\hypertarget{classFUStaticFunctor2_a1e5af6761d3049fcf2b4e7b451c657d5}{
+\index{FUStaticFunctor2@{FUStaticFunctor2}!Copy@{Copy}}
+\index{Copy@{Copy}!FUStaticFunctor2@{FUStaticFunctor2}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Arg1 , class Arg2 , class ReturnType $>$ virtual {\bf IFunctor2}$<$Arg1, Arg2, ReturnType$>$$\ast$ {\bf FUStaticFunctor2}$<$ Arg1, Arg2, ReturnType $>$::Copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUStaticFunctor2_a1e5af6761d3049fcf2b4e7b451c657d5}
+Returns a copy of this functor 
+
+Implements \hyperlink{classIFunctor2_a36868826ad8fc518546d04a0a01ffcfc}{IFunctor2$<$ Arg1, Arg2, ReturnType $>$}.
+
+\hypertarget{classFUStaticFunctor2_a8e81b2ae65b8b5afbdc8a88aa4d090ed}{
+\index{FUStaticFunctor2@{FUStaticFunctor2}!operator()@{operator()}}
+\index{operator()@{operator()}!FUStaticFunctor2@{FUStaticFunctor2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Arg1 , class Arg2 , class ReturnType $>$ virtual ReturnType {\bf FUStaticFunctor2}$<$ Arg1, Arg2, ReturnType $>$::operator() (
+\begin{DoxyParamCaption}
+\item[{Arg1}]{ argument1, }
+\item[{Arg2}]{ argument2}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUStaticFunctor2_a8e81b2ae65b8b5afbdc8a88aa4d090ed}
+Calls the functor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em argument1}]A first argument. \item[{\em argument2}]A second argument. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Implementation-\/dependant. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIFunctor2_a554589a266d33f262c610b7f40e34f2e}{IFunctor2$<$ Arg1, Arg2, ReturnType $>$}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/FUFunctor.h\end{DoxyCompactItemize}

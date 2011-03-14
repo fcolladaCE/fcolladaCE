@@ -1,0 +1,62 @@
+\hypertarget{FUAssert_8h}{
+\section{FCollada/FUtils/FUAssert.h File Reference}
+\label{FUAssert_8h}\index{FCollada/FUtils/FUAssert.h@{FCollada/FUtils/FUAssert.h}}
+}
+{\ttfamily \#include \char`\"{}FUtils/FUFunctor.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{FUAssert_8h_a8956ee71fb08a1ba54f0ccfecfa74730}{FUBreak}~\{ FUAssertion::OnAssertionFailed(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-); \}
+\item 
+\#define \hyperlink{FUAssert_8h_a2aaf258bf29e8c9d10c172100670807d}{FUFail}(command)~\{ FUBreak; command; \}
+\item 
+\#define \hyperlink{FUAssert_8h_a72b8444eb608787f1db6bf1d53e0310f}{FUAssert}(condition, fall\_\-back)~\{ if (!(condition)) \{ FUBreak; fall\_\-back; \} \}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classFUStaticFunctor1}{FUStaticFunctor1}$<$ const char $\ast$, bool $>$ \hyperlink{namespaceFUAssertion_abbdfcb17c0087c4a35a7dfe197fd9e42}{FUAssertion::FUAssertCallback}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+FCOLLADA\_\-EXPORT void \hyperlink{namespaceFUAssertion_a8850a8543f5e412750a346a6442a4972}{FUAssertion::SetAssertionFailedCallback} (FUAssertCallback $\ast$assertionCallback)
+\item 
+FCOLLADA\_\-EXPORT bool \hyperlink{namespaceFUAssertion_aeeaf7c1e2f4c844dad0db1fb11db36e5}{FUAssertion::OnAssertionFailed} (const char $\ast$filename, uint32 line)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains a simple debugging assertion mechanism. 
+
+\subsection{Define Documentation}
+\hypertarget{FUAssert_8h_a72b8444eb608787f1db6bf1d53e0310f}{
+\index{FUAssert.h@{FUAssert.h}!FUAssert@{FUAssert}}
+\index{FUAssert@{FUAssert}!FUAssert.h@{FUAssert.h}}
+\subsubsection[{FUAssert}]{\setlength{\rightskip}{0pt plus 5cm}\#define FUAssert(
+\begin{DoxyParamCaption}
+\item[{}]{condition, }
+\item[{}]{fall\_\-back}
+\end{DoxyParamCaption}
+)~\{ if (!(condition)) \{ FUBreak; fall\_\-back; \} \}}}
+\label{FUAssert_8h_a72b8444eb608787f1db6bf1d53e0310f}
+Asserts that a condition is met. Use this macro, instead of 'if' statements when you are asserting for a programmer's error. 
+\begin{DoxyParams}{Parameters}
+\item[{\em condition}]The condition to assert. \item[{\em fall\_\-back}]The command to execute if the condition is not met. \end{DoxyParams}
+\hypertarget{FUAssert_8h_a8956ee71fb08a1ba54f0ccfecfa74730}{
+\index{FUAssert.h@{FUAssert.h}!FUBreak@{FUBreak}}
+\index{FUBreak@{FUBreak}!FUAssert.h@{FUAssert.h}}
+\subsubsection[{FUBreak}]{\setlength{\rightskip}{0pt plus 5cm}\#define FUBreak~\{ FUAssertion::OnAssertionFailed(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-); \}}}
+\label{FUAssert_8h_a8956ee71fb08a1ba54f0ccfecfa74730}
+Breaks into the debugger. In release builds, this is an empty function. \hypertarget{FUAssert_8h_a2aaf258bf29e8c9d10c172100670807d}{
+\index{FUAssert.h@{FUAssert.h}!FUFail@{FUFail}}
+\index{FUFail@{FUFail}!FUAssert.h@{FUAssert.h}}
+\subsubsection[{FUFail}]{\setlength{\rightskip}{0pt plus 5cm}\#define FUFail(
+\begin{DoxyParamCaption}
+\item[{}]{command}
+\end{DoxyParamCaption}
+)~\{ FUBreak; command; \}}}
+\label{FUAssert_8h_a2aaf258bf29e8c9d10c172100670807d}
+Forces the debugger to break, or take the fall-\/back. 
+\begin{DoxyParams}{Parameters}
+\item[{\em command}]The fall\_\-back command to execute. \end{DoxyParams}

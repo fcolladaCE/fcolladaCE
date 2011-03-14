@@ -1,0 +1,147 @@
+\hypertarget{classFCDPASCylinder}{
+\section{FCDPASCylinder Class Reference}
+\label{classFCDPASCylinder}\index{FCDPASCylinder@{FCDPASCylinder}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsAnalyticalGeometry.h$>$}
+
+Inheritance diagram for FCDPASCylinder:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classFCDPASCylinder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPASCylinder_a678b7cc16e1e2a476aebb2899ab2d178}{FCDPASCylinder} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDPASCylinder_a8aafdffc070de8170008b24224f0f11c}{$\sim$FCDPASCylinder} ()
+\item 
+virtual \hyperlink{classFCDPhysicsAnalyticalGeometry_a511583406e5c6a1bb5bd84c0453a452c}{GeomType} \hyperlink{classFCDPASCylinder_a2c13420ee5b1dbb527dbd15043a9cc09}{GetGeomType} () const 
+\item 
+virtual float \hyperlink{classFCDPASCylinder_a20e4055372f2a805dff71d560246f212}{CalculateVolume} () const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDPASCylinder_a9f398013a3fd84fa83c4da99ca4b7c25}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classFCDPASCylinder_a90fa5cdf47b99ca8f80e7f012aefe9bf}{height}
+\item 
+\hyperlink{classFMVector2}{FMVector2} \hyperlink{classFCDPASCylinder_a88a429bb5938ab2bd95b13baa27b3db8}{radius}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA physics cylinder. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPASCylinder_a678b7cc16e1e2a476aebb2899ab2d178}{
+\index{FCDPASCylinder@{FCDPASCylinder}!FCDPASCylinder@{FCDPASCylinder}}
+\index{FCDPASCylinder@{FCDPASCylinder}!FCDPASCylinder@{FCDPASCylinder}}
+\subsubsection[{FCDPASCylinder}]{\setlength{\rightskip}{0pt plus 5cm}FCDPASCylinder::FCDPASCylinder (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPASCylinder_a678b7cc16e1e2a476aebb2899ab2d178}
+Constructor: do not use directly. Create new analytical geometries by using \hyperlink{classFCDPhysicsShape_a0674443390f7c6426171fd4bc21187fb}{FCDPhysicsShape::CreateAnalyticalGeometry} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this physics cylinder. \end{DoxyParams}
+\hypertarget{classFCDPASCylinder_a8aafdffc070de8170008b24224f0f11c}{
+\index{FCDPASCylinder@{FCDPASCylinder}!$\sim$FCDPASCylinder@{$\sim$FCDPASCylinder}}
+\index{$\sim$FCDPASCylinder@{$\sim$FCDPASCylinder}!FCDPASCylinder@{FCDPASCylinder}}
+\subsubsection[{$\sim$FCDPASCylinder}]{\setlength{\rightskip}{0pt plus 5cm}virtual FCDPASCylinder::$\sim$FCDPASCylinder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPASCylinder_a8aafdffc070de8170008b24224f0f11c}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPASCylinder_a20e4055372f2a805dff71d560246f212}{
+\index{FCDPASCylinder@{FCDPASCylinder}!CalculateVolume@{CalculateVolume}}
+\index{CalculateVolume@{CalculateVolume}!FCDPASCylinder@{FCDPASCylinder}}
+\subsubsection[{CalculateVolume}]{\setlength{\rightskip}{0pt plus 5cm}float FCDPASCylinder::CalculateVolume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPASCylinder_a20e4055372f2a805dff71d560246f212}
+Calculates the volume of this analytical geometry. \begin{DoxyReturn}{Returns}
+The volume. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDPhysicsAnalyticalGeometry_aaf2af0d36280492051e8033ab8dc3ef9}{FCDPhysicsAnalyticalGeometry}.
+
+
+
+Reimplemented in \hyperlink{classFCDPASTaperedCylinder_a50a96833458500497aa343d1bf3f92e5}{FCDPASTaperedCylinder}.
+
+\hypertarget{classFCDPASCylinder_a9f398013a3fd84fa83c4da99ca4b7c25}{
+\index{FCDPASCylinder@{FCDPASCylinder}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPASCylinder@{FCDPASCylinder}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDPASCylinder::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPASCylinder_a9f398013a3fd84fa83c4da99ca4b7c25}
+Copies the physics cylinder into a clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a analytical geometry will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDPhysicsAnalyticalGeometry_a804b67f4fccd71a46dd182b3ece13e39}{FCDPhysicsAnalyticalGeometry}.
+
+
+
+Reimplemented in \hyperlink{classFCDPASTaperedCylinder_a34397b0765bebf5dcf08a61585ece3f0}{FCDPASTaperedCylinder}.
+
+\hypertarget{classFCDPASCylinder_a2c13420ee5b1dbb527dbd15043a9cc09}{
+\index{FCDPASCylinder@{FCDPASCylinder}!GetGeomType@{GetGeomType}}
+\index{GetGeomType@{GetGeomType}!FCDPASCylinder@{FCDPASCylinder}}
+\subsubsection[{GetGeomType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf GeomType} FCDPASCylinder::GetGeomType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPASCylinder_a2c13420ee5b1dbb527dbd15043a9cc09}
+Retrieves the analytical geometry type for this class. \begin{DoxyReturn}{Returns}
+The analytical geometry type: CYLINDER. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDPhysicsAnalyticalGeometry_a1902e92f195b227e7bee8799060e3084}{FCDPhysicsAnalyticalGeometry}.
+
+
+
+Reimplemented in \hyperlink{classFCDPASTaperedCylinder_a0f25b9a117356a6e18e8e29c1c705b4e}{FCDPASTaperedCylinder}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFCDPASCylinder_a90fa5cdf47b99ca8f80e7f012aefe9bf}{
+\index{FCDPASCylinder@{FCDPASCylinder}!height@{height}}
+\index{height@{height}!FCDPASCylinder@{FCDPASCylinder}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FCDPASCylinder::height}}}
+\label{classFCDPASCylinder_a90fa5cdf47b99ca8f80e7f012aefe9bf}
+The height of the cylinder. \hypertarget{classFCDPASCylinder_a88a429bb5938ab2bd95b13baa27b3db8}{
+\index{FCDPASCylinder@{FCDPASCylinder}!radius@{radius}}
+\index{radius@{radius}!FCDPASCylinder@{FCDPASCylinder}}
+\subsubsection[{radius}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector2} {\bf FCDPASCylinder::radius}}}
+\label{classFCDPASCylinder_a88a429bb5938ab2bd95b13baa27b3db8}
+The radius in the X direction and Z direction of the cylinder. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsAnalyticalGeometry_8h}{FCDPhysicsAnalyticalGeometry.h}\item 
+FCollada/FCDocument/FCDPhysicsAnalyticalGeometry.cpp\end{DoxyCompactItemize}

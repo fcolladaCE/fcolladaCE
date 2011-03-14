@@ -1,0 +1,88 @@
+\hypertarget{classfm_1_1pcomparator}{
+\section{fm::pcomparator$<$ T $>$ Class Template Reference}
+\label{classfm_1_1pcomparator}\index{fm::pcomparator@{fm::pcomparator}}
+}
+
+
+{\ttfamily \#include $<$FMSort.h$>$}
+
+Inheritance diagram for fm::pcomparator$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfm_1_1pcomparator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classfm_1_1pcomparator_ab87df99f35a6dd781ab828ade85d5b06}{
+typedef const void $\ast$ {\bfseries valueType}}
+\label{classfm_1_1pcomparator_ab87df99f35a6dd781ab828ade85d5b06}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classfm_1_1pcomparator_a51d3e370d60cdf97ec446215bab8f96d}{$\sim$pcomparator} ()
+\item 
+virtual bool \hyperlink{classfm_1_1pcomparator_a52f376a1379f7f119f54c8d6722169ee}{compare} (const T $\ast$a, const T $\ast$b)
+\item 
+virtual bool \hyperlink{classfm_1_1pcomparator_a66c4ec2eecb10b1606f8271d69474eef}{compare} (const valueType \&a, const valueType \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$ class fm::pcomparator$<$ T $>$}
+
+A utility to sort arrays of pointer elements. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfm_1_1pcomparator_a51d3e370d60cdf97ec446215bab8f96d}{
+\index{fm::pcomparator@{fm::pcomparator}!$\sim$pcomparator@{$\sim$pcomparator}}
+\index{$\sim$pcomparator@{$\sim$pcomparator}!fm::pcomparator@{fm::pcomparator}}
+\subsubsection[{$\sim$pcomparator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf fm::pcomparator}$<$ T $>$::$\sim${\bf pcomparator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classfm_1_1pcomparator_a51d3e370d60cdf97ec446215bab8f96d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classfm_1_1pcomparator_a52f376a1379f7f119f54c8d6722169ee}{
+\index{fm::pcomparator@{fm::pcomparator}!compare@{compare}}
+\index{compare@{compare}!fm::pcomparator@{fm::pcomparator}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual bool {\bf fm::pcomparator}$<$ T $>$::compare (
+\begin{DoxyParamCaption}
+\item[{const T $\ast$}]{ a, }
+\item[{const T $\ast$}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classfm_1_1pcomparator_a52f376a1379f7f119f54c8d6722169ee}
+Compares two pointers. Override this function to define your own pcomparator. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]Element a. \item[{\em b}]Element b. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a is smaller than b, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1pcomparator_a66c4ec2eecb10b1606f8271d69474eef}{
+\index{fm::pcomparator@{fm::pcomparator}!compare@{compare}}
+\index{compare@{compare}!fm::pcomparator@{fm::pcomparator}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual bool {\bf fm::pcomparator}$<$ T $>$::compare (
+\begin{DoxyParamCaption}
+\item[{const valueType \&}]{ a, }
+\item[{const valueType \&}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classfm_1_1pcomparator_a66c4ec2eecb10b1606f8271d69474eef}
+\mbox{[}INTERNAL\mbox{]} Override from \hyperlink{classfm_1_1comparator_a4cc38737a2c598b76977625a75bc5c24}{comparator$<$T$>$::compare()}. Do not override this function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}](void$\ast$) representation of an element. \item[{\em b}](void$\ast$) representation of another element. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The comparison casting a and b to (T$\ast$). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FMath/\hyperlink{FMSort_8h}{FMSort.h}\end{DoxyCompactItemize}

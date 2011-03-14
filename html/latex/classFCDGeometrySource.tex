@@ -1,0 +1,434 @@
+\hypertarget{classFCDGeometrySource}{
+\section{FCDGeometrySource Class Reference}
+\label{classFCDGeometrySource}\index{FCDGeometrySource@{FCDGeometrySource}}
+}
+
+
+{\ttfamily \#include $<$FCDGeometrySource.h$>$}
+
+Inheritance diagram for FCDGeometrySource:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDGeometrySource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDGeometrySource_a02597e76122f43117f30b0c89739e819}{FCDGeometrySource} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDGeometrySource_a752a3a52c5cf4df2173616a332eff9a9}{$\sim$FCDGeometrySource} ()
+\item 
+\hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$ \hyperlink{classFCDGeometrySource_a663219a15914187c3b6c31a3a6ba1dc4}{Clone} (\hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$clone=NULL) const 
+\item 
+const \hyperlink{classfm_1_1stringT}{fstring} \& \hyperlink{classFCDGeometrySource_a50fbd22bd142ca689a7b5fb42d9e47eb}{GetName} () const 
+\item 
+float $\ast$ \hyperlink{classFCDGeometrySource_a450adee10f06fc187f62cd9ecb6567bb}{GetData} ()
+\item 
+const float $\ast$ \hyperlink{classFCDGeometrySource_a1dcd473a747b643cdd7cdf03499e5a04}{GetData} () const 
+\item 
+\hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableFloat} \& \hyperlink{classFCDGeometrySource_a9fcede2e0dcb96722ffec269d6748a97}{GetSourceData} ()
+\item 
+\hypertarget{classFCDGeometrySource_a2301514d5678d6e123fcb867a7219c7c}{
+const \hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableFloat} \& {\bfseries GetSourceData} () const }
+\label{classFCDGeometrySource_a2301514d5678d6e123fcb867a7219c7c}
+
+\item 
+float $\ast$$\ast$ \hyperlink{classFCDGeometrySource_a902252a6cba269b85c933ee8cc3c9755}{GetDataPtr} ()
+\item 
+const float $\ast$$\ast$ \hyperlink{classFCDGeometrySource_a91b9f12b26795439637bc59498c4334e}{GetDataPtr} () const 
+\item 
+size\_\-t \hyperlink{classFCDGeometrySource_ad758049fb9d2a7dc8950ecadc2dd8cbc}{GetDataCount} () const 
+\item 
+void \hyperlink{classFCDGeometrySource_a6e363fb7c4ab24adc86a6c84e32c79c1}{SetDataCount} (size\_\-t count)
+\item 
+uint32 \hyperlink{classFCDGeometrySource_a7dcebe0cf5ce917044a08b76df5e20a0}{GetStride} () const 
+\item 
+size\_\-t \hyperlink{classFCDGeometrySource_a32044849fd334877d739eb2c5177a182}{GetValueCount} () const 
+\item 
+size\_\-t \hyperlink{classFCDGeometrySource_a81d3ea07195965e947e8bb132b2719ce}{GetValueReserved} () const 
+\item 
+void \hyperlink{classFCDGeometrySource_ae60c3542035bc651c4cd76de926e97da}{SetValueCount} (size\_\-t count)
+\item 
+const float $\ast$ \hyperlink{classFCDGeometrySource_a48d19574bd5fc73ab935a357d42334e2}{GetValue} (size\_\-t index) const 
+\item 
+void \hyperlink{classFCDGeometrySource_a5221f77080c27478b7ad92aa50aee88a}{SetValue} (size\_\-t index, const float $\ast$value)
+\item 
+\hyperlink{namespaceFUDaeGeometryInput_a0f887d29f54b10338ebcf73789a7a061}{FUDaeGeometryInput::Semantic} \hyperlink{classFCDGeometrySource_ade05c553563ec84625cd8351da4d952b}{GetType} () const 
+\item 
+void \hyperlink{classFCDGeometrySource_ae98809e1d73eab01671c853020e18604}{SetType} (\hyperlink{namespaceFUDaeGeometryInput_a0f887d29f54b10338ebcf73789a7a061}{FUDaeGeometryInput::Semantic} type)
+\item 
+\hyperlink{classFUObjectContainer}{FUObjectContainer}$<$ \hyperlink{classFCDAnimated}{FCDAnimated} $>$ \& \hyperlink{classFCDGeometrySource_aa09bb6623337764f8371a66fdddf322d}{GetAnimatedValues} ()
+\item 
+const \hyperlink{classFUObjectContainer}{FUObjectContainer}$<$ \hyperlink{classFCDAnimated}{FCDAnimated} $>$ \& \hyperlink{classFCDGeometrySource_a2e8125a8f7974d40c7153a34ad743ea2}{GetAnimatedValues} () const 
+\item 
+void \hyperlink{classFCDGeometrySource_a8e9469c35a0e45c15407b63387fc1aa6}{SetName} (const \hyperlink{classfm_1_1stringT}{fstring} \&\_\-name)
+\item 
+void \hyperlink{classFCDGeometrySource_af42830becb886962cdcb345c05def0d3}{SetData} (const \hyperlink{classfm_1_1vector}{FloatList} \&\_\-sourceData, uint32 \_\-sourceStride, size\_\-t count=0, size\_\-t offset=0)
+\item 
+void \hyperlink{classFCDGeometrySource_a24b59fdf6b4a8732e57124c197d34c2d}{SetStride} (uint32 \_\-stride)
+\item 
+void \hyperlink{classFCDGeometrySource_ada666b2bf53d7c96c8116da04d06ae6f}{SetSourceType} (\hyperlink{namespaceFUDaeGeometryInput_a0f887d29f54b10338ebcf73789a7a061}{FUDaeGeometryInput::Semantic} type)
+\item 
+\hyperlink{classFCDExtra}{FCDExtra} $\ast$ \hyperlink{classFCDGeometrySource_a3bb420a157eab5853e162757d528add2}{GetExtra} ()
+\item 
+const \hyperlink{classFCDExtra}{FCDExtra} $\ast$ \hyperlink{classFCDGeometrySource_ae2eb04c56a3041d79fda59e9df13e5a5}{GetExtra} () const 
+\item 
+\hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$ \hyperlink{classFCDGeometrySource_ac06f878ba71c0d70e36b0f8dee2370b1}{Clone} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA data source for geometric meshes.
+
+A COLLADA data source for geometric meshes contains a list of floating-\/point values and the information to parse these floating-\/point values into meaningful content: the stride of the list and the type of data that the floating-\/point values represent. When the floating-\/point values are split according to the stride, you get the individual source values of the given type. A data source may also have a user-\/generated name to identify the data within. The name is optional and is used to keep around the user-\/friendly name for texture coordinate sets or color sets.
+
+Each source values of the COLLADA data source may be animated individually, or together: as an element. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDGeometrySource_a02597e76122f43117f30b0c89739e819}{
+\index{FCDGeometrySource@{FCDGeometrySource}!FCDGeometrySource@{FCDGeometrySource}}
+\index{FCDGeometrySource@{FCDGeometrySource}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{FCDGeometrySource}]{\setlength{\rightskip}{0pt plus 5cm}FCDGeometrySource::FCDGeometrySource (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySource_a02597e76122f43117f30b0c89739e819}
+Constructor: do not use directly. Use \hyperlink{classFCDGeometryMesh_a394981429e2d56f865d4b5866da5fc8c}{FCDGeometryMesh::AddSource} or FCDGeometryMesh::AddValueSource instead. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document which owns the data source. \end{DoxyParams}
+\hypertarget{classFCDGeometrySource_a752a3a52c5cf4df2173616a332eff9a9}{
+\index{FCDGeometrySource@{FCDGeometrySource}!$\sim$FCDGeometrySource@{$\sim$FCDGeometrySource}}
+\index{$\sim$FCDGeometrySource@{$\sim$FCDGeometrySource}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{$\sim$FCDGeometrySource}]{\setlength{\rightskip}{0pt plus 5cm}FCDGeometrySource::$\sim$FCDGeometrySource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDGeometrySource_a752a3a52c5cf4df2173616a332eff9a9}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDGeometrySource_a663219a15914187c3b6c31a3a6ba1dc4}{
+\index{FCDGeometrySource@{FCDGeometrySource}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometrySource} $\ast$ FCDGeometrySource::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometrySource} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDGeometrySource_a663219a15914187c3b6c31a3a6ba1dc4}
+Copies the data source into a clone. The clone may reside in another document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new data source will be created and you will need to release the returned pointer manually. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_ac06f878ba71c0d70e36b0f8dee2370b1}{
+\index{FCDGeometrySource@{FCDGeometrySource}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometrySource}$\ast$ FCDGeometrySource::Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDGeometrySource_ac06f878ba71c0d70e36b0f8dee2370b1}
+\mbox{[}INTERNAL\mbox{]} Clones this data source. You will need to release the returned pointer manually. \begin{DoxyReturn}{Returns}
+An identical copy of the data source. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_aa09bb6623337764f8371a66fdddf322d}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetAnimatedValues@{GetAnimatedValues}}
+\index{GetAnimatedValues@{GetAnimatedValues}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetAnimatedValues}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUObjectContainer}$<${\bf FCDAnimated}$>$\& FCDGeometrySource::GetAnimatedValues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_aa09bb6623337764f8371a66fdddf322d}
+Retrieves the list of animated values for the data of the source. \begin{DoxyReturn}{Returns}
+The list of animated values. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_a2e8125a8f7974d40c7153a34ad743ea2}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetAnimatedValues@{GetAnimatedValues}}
+\index{GetAnimatedValues@{GetAnimatedValues}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetAnimatedValues}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUObjectContainer}$<${\bf FCDAnimated}$>$\& FCDGeometrySource::GetAnimatedValues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a2e8125a8f7974d40c7153a34ad743ea2}
+See above. \hypertarget{classFCDGeometrySource_a1dcd473a747b643cdd7cdf03499e5a04}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetData@{GetData}}
+\index{GetData@{GetData}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetData}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$ FCDGeometrySource::GetData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a1dcd473a747b643cdd7cdf03499e5a04}
+See above. \hypertarget{classFCDGeometrySource_a450adee10f06fc187f62cd9ecb6567bb}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetData@{GetData}}
+\index{GetData@{GetData}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetData}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ FCDGeometrySource::GetData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a450adee10f06fc187f62cd9ecb6567bb}
+Retrieves the pure data of the data source. This is a dynamically-\/sized array of floating-\/point values that contains all the data of the source. \begin{DoxyReturn}{Returns}
+The pure data of the data source. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_ad758049fb9d2a7dc8950ecadc2dd8cbc}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetDataCount@{GetDataCount}}
+\index{GetDataCount@{GetDataCount}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetDataCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDGeometrySource::GetDataCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_ad758049fb9d2a7dc8950ecadc2dd8cbc}
+Retrieves the amount of data inside the source. \begin{DoxyReturn}{Returns}
+The number of data entries in the source. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_a91b9f12b26795439637bc59498c4334e}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetDataPtr@{GetDataPtr}}
+\index{GetDataPtr@{GetDataPtr}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetDataPtr}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$$\ast$ FCDGeometrySource::GetDataPtr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a91b9f12b26795439637bc59498c4334e}
+See above. \hypertarget{classFCDGeometrySource_a902252a6cba269b85c933ee8cc3c9755}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetDataPtr@{GetDataPtr}}
+\index{GetDataPtr@{GetDataPtr}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetDataPtr}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$$\ast$ FCDGeometrySource::GetDataPtr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a902252a6cba269b85c933ee8cc3c9755}
+Retrieves a ptr to the data of the data source. This allows external objects to store pointers to our data even when the data memory is reallocated \begin{DoxyReturn}{Returns}
+The ptr to the pure data of the data source. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_ae2eb04c56a3041d79fda59e9df13e5a5}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetExtra@{GetExtra}}
+\index{GetExtra@{GetExtra}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetExtra}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDExtra}$\ast$ FCDGeometrySource::GetExtra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_ae2eb04c56a3041d79fda59e9df13e5a5}
+See above. \hypertarget{classFCDGeometrySource_a3bb420a157eab5853e162757d528add2}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetExtra@{GetExtra}}
+\index{GetExtra@{GetExtra}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetExtra}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDExtra} $\ast$ FCDGeometrySource::GetExtra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySource_a3bb420a157eab5853e162757d528add2}
+Retrieves the extra information contained by this data source. \begin{DoxyReturn}{Returns}
+The extra tree. This pointer will be NULL, in the const-\/version of this function, if there is no extra information. In the modifiable-\/version of this function: you will always get a valid extra tree that you can fill in. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_a50fbd22bd142ca689a7b5fb42d9e47eb}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetName@{GetName}}
+\index{GetName@{GetName}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fstring}\& FCDGeometrySource::GetName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a50fbd22bd142ca689a7b5fb42d9e47eb}
+Retrieves the name of the data source. The name is optional and is used to keep around a user-\/friendly name for texture coordinate sets or color sets. \begin{DoxyReturn}{Returns}
+The name of the data source. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_a9fcede2e0dcb96722ffec269d6748a97}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetSourceData@{GetSourceData}}
+\index{GetSourceData@{GetSourceData}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetSourceData}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterListAnimatableFloat}\& FCDGeometrySource::GetSourceData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a9fcede2e0dcb96722ffec269d6748a97}
+\mbox{[}INTERNAL\mbox{]} Retrieve the reference to the source data. \begin{DoxyReturn}{Returns}
+The reference to the source data. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_a7dcebe0cf5ce917044a08b76df5e20a0}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetStride@{GetStride}}
+\index{GetStride@{GetStride}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetStride}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FCDGeometrySource::GetStride (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a7dcebe0cf5ce917044a08b76df5e20a0}
+Retrieves the stride of the data within the source. There is no guarantee that the number of data values within the source is a multiple of the stride, yet you should always verify that the stride is at least the wanted dimension. For example, there is no guarantee that your vertex position data source has a stride of 3. 3dsMax is known to always export 3D texture coordinate positions. \begin{DoxyReturn}{Returns}
+The stride of the data. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_ade05c553563ec84625cd8351da4d952b}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUDaeGeometryInput::Semantic} FCDGeometrySource::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_ade05c553563ec84625cd8351da4d952b}
+Retrieves the type of data contained within the source. Common values for the type of data are POSITION, NORMAL, COLOR and TEXCOORD. Please see \hyperlink{namespaceFUDaeGeometryInput}{FUDaeGeometryInput} for more information. \begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUDaeGeometryInput}{FUDaeGeometryInput}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The type of data contained within the source. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_a48d19574bd5fc73ab935a357d42334e2}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetValue}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$ FCDGeometrySource::GetValue (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a48d19574bd5fc73ab935a357d42334e2}
+Retrieves one source value out of this source. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the source value. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The source value. See above. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_a32044849fd334877d739eb2c5177a182}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetValueCount@{GetValueCount}}
+\index{GetValueCount@{GetValueCount}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetValueCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDGeometrySource::GetValueCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a32044849fd334877d739eb2c5177a182}
+Retrieves the number of individual source values contained in the source. \begin{DoxyReturn}{Returns}
+The number of source values. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_a81d3ea07195965e947e8bb132b2719ce}{
+\index{FCDGeometrySource@{FCDGeometrySource}!GetValueReserved@{GetValueReserved}}
+\index{GetValueReserved@{GetValueReserved}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{GetValueReserved}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDGeometrySource::GetValueReserved (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a81d3ea07195965e947e8bb132b2719ce}
+Retrieves the max number of values this input can handle before memory is reallocated. \begin{DoxyReturn}{Returns}
+The number of source values. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySource_af42830becb886962cdcb345c05def0d3}{
+\index{FCDGeometrySource@{FCDGeometrySource}!SetData@{SetData}}
+\index{SetData@{SetData}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{SetData}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySource::SetData (
+\begin{DoxyParamCaption}
+\item[{const {\bf FloatList} \&}]{ \_\-sourceData, }
+\item[{uint32}]{ \_\-sourceStride, }
+\item[{size\_\-t}]{ count = {\ttfamily 0}, }
+\item[{size\_\-t}]{ offset = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySource_af42830becb886962cdcb345c05def0d3}
+Overwrites the data contained within the data source. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-sourceData}]The new data for this source. \item[{\em \_\-sourceStride}]The stride for the new data. \item[{\em offset}]The offset at which to start retrieving the new data. This argument defaults at 0 to indicate that the data copy should start from the beginning. \item[{\em count}]The number of data entries to copy into the data source. This argument defaults at 0 to indicate that the data copy should include everything. \end{DoxyParams}
+\hypertarget{classFCDGeometrySource_a6e363fb7c4ab24adc86a6c84e32c79c1}{
+\index{FCDGeometrySource@{FCDGeometrySource}!SetDataCount@{SetDataCount}}
+\index{SetDataCount@{SetDataCount}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{SetDataCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySource::SetDataCount (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySource_a6e363fb7c4ab24adc86a6c84e32c79c1}
+Sets the amount of data contained inside the source. It is preferable to set the stride and to use SetValueCount. No initialization of new values is done. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The amount of data for the source to contain. \end{DoxyParams}
+\hypertarget{classFCDGeometrySource_a8e9469c35a0e45c15407b63387fc1aa6}{
+\index{FCDGeometrySource@{FCDGeometrySource}!SetName@{SetName}}
+\index{SetName@{SetName}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{SetName}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySource::SetName (
+\begin{DoxyParamCaption}
+\item[{const {\bf fstring} \&}]{ \_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a8e9469c35a0e45c15407b63387fc1aa6}
+Sets the user-\/friendly name of the data source. The name is optional and is used to keep around a user-\/friendly name for texture coordinate sets or color sets. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-name}]The user-\/friendly name of the data source. \end{DoxyParams}
+\hypertarget{classFCDGeometrySource_ada666b2bf53d7c96c8116da04d06ae6f}{
+\index{FCDGeometrySource@{FCDGeometrySource}!SetSourceType@{SetSourceType}}
+\index{SetSourceType@{SetSourceType}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{SetSourceType}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySource::SetSourceType (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeGeometryInput::Semantic}}]{ type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_ada666b2bf53d7c96c8116da04d06ae6f}
+\mbox{[}INTERNAL\mbox{]} Set the source type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The source type. \end{DoxyParams}
+\hypertarget{classFCDGeometrySource_a24b59fdf6b4a8732e57124c197d34c2d}{
+\index{FCDGeometrySource@{FCDGeometrySource}!SetStride@{SetStride}}
+\index{SetStride@{SetStride}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{SetStride}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySource::SetStride (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-stride}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a24b59fdf6b4a8732e57124c197d34c2d}
+Sets the stride for the source data. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-stride}]The stride for the source data. \end{DoxyParams}
+\hypertarget{classFCDGeometrySource_ae98809e1d73eab01671c853020e18604}{
+\index{FCDGeometrySource@{FCDGeometrySource}!SetType@{SetType}}
+\index{SetType@{SetType}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{SetType}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySource::SetType (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeGeometryInput::Semantic}}]{ type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_ae98809e1d73eab01671c853020e18604}
+Sets the type of data contained within the source. Modifying the source type of an existing source is not recommended. Common values for the type of data are POSITION, NORMAL, COLOR and TEXCOORD. Please see \hyperlink{namespaceFUDaeGeometryInput}{FUDaeGeometryInput} for more information. \begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUDaeGeometryInput}{FUDaeGeometryInput}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of data to be contained within the source. \end{DoxyParams}
+\hypertarget{classFCDGeometrySource_a5221f77080c27478b7ad92aa50aee88a}{
+\index{FCDGeometrySource@{FCDGeometrySource}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{SetValue}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySource::SetValue (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index, }
+\item[{const float $\ast$}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_a5221f77080c27478b7ad92aa50aee88a}
+Sets one source value out of this source. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the source value. \item[{\em value}]The new value. \end{DoxyParams}
+\hypertarget{classFCDGeometrySource_ae60c3542035bc651c4cd76de926e97da}{
+\index{FCDGeometrySource@{FCDGeometrySource}!SetValueCount@{SetValueCount}}
+\index{SetValueCount@{SetValueCount}!FCDGeometrySource@{FCDGeometrySource}}
+\subsubsection[{SetValueCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySource::SetValueCount (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySource_ae60c3542035bc651c4cd76de926e97da}
+Sets the number of individual source values contained in the source. No initialization of new values is done. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The number of individual source values to contain in this source. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDGeometrySource_8h}{FCDGeometrySource.h}\item 
+FCollada/FCDocument/FCDGeometrySource.cpp\end{DoxyCompactItemize}

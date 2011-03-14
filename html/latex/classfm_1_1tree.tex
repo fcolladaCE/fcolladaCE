@@ -1,0 +1,291 @@
+\hypertarget{classfm_1_1tree}{
+\section{fm::tree$<$ KEY, DATA $>$ Class Template Reference}
+\label{classfm_1_1tree}\index{fm::tree@{fm::tree}}
+}
+
+
+{\ttfamily \#include $<$FMTree.h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classfm_1_1tree_1_1const__iterator}{const\_\-iterator}
+\item 
+class \hyperlink{classfm_1_1tree_1_1iterator}{iterator}
+\item 
+class {\bfseries node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfm_1_1tree_a40b5a0222169e4680bdf9ac301e068e6}{tree} ()
+\item 
+\hyperlink{classfm_1_1tree_ab1567e75f916ca111923c69a72c4579a}{$\sim$tree} ()
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator}{iterator} \hyperlink{classfm_1_1tree_aa7c4c9e11d1c788d0c9c8c88bcf5575f}{begin} ()
+\item 
+\hyperlink{classfm_1_1tree_1_1const__iterator}{const\_\-iterator} \hyperlink{classfm_1_1tree_a9fe55c22449705c0ac187d2f703a570f}{begin} () const 
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator}{iterator} \hyperlink{classfm_1_1tree_aec72096841b5c1b16ec8f584990fc8cb}{end} ()
+\item 
+\hyperlink{classfm_1_1tree_1_1const__iterator}{const\_\-iterator} \hyperlink{classfm_1_1tree_aebd32d6c1fb6b8a17846389f17f7f740}{end} () const 
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator}{iterator} \hyperlink{classfm_1_1tree_a5a6bf6ac74b225026c87e10cfe01aeee}{last} ()
+\item 
+\hyperlink{classfm_1_1tree_1_1const__iterator}{const\_\-iterator} \hyperlink{classfm_1_1tree_a4718a67fbef31d9140a2a2c0d3dbebbd}{last} () const 
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator}{iterator} \hyperlink{classfm_1_1tree_a81948231a919b25a85331a8f3d4e805b}{find} (const KEY \&key)
+\item 
+\hyperlink{classfm_1_1tree_1_1const__iterator}{const\_\-iterator} \hyperlink{classfm_1_1tree_a9a78516786b1418717e6de2307fe5fb8}{find} (const KEY \&key) const 
+\item 
+\hyperlink{classfm_1_1tree_1_1iterator}{iterator} \hyperlink{classfm_1_1tree_addd6b9b977d1fc92381b08b1d03dff7a}{insert} (const KEY \&key, const DATA \&data)
+\item 
+DATA \& \hyperlink{classfm_1_1tree_ae05c24532b73dd82733d739c47608365}{operator\mbox{[}$\,$\mbox{]}} (const KEY \&k)
+\item 
+const DATA \& \hyperlink{classfm_1_1tree_af7ef9c5d48222e86155e88be0d85be00}{operator\mbox{[}$\,$\mbox{]}} (const KEY \&k) const 
+\item 
+void \hyperlink{classfm_1_1tree_a89ab3fd9fee9e91e3f4a83a72b44e4b6}{erase} (const KEY \&key)
+\item 
+void \hyperlink{classfm_1_1tree_a5daee3b0f8f12f958342605fc923c869}{erase} (const \hyperlink{classfm_1_1tree_1_1iterator}{iterator} \&it)
+\item 
+bool \hyperlink{classfm_1_1tree_a050855ad5146efa309f3ca3f2b49fae6}{empty} () const 
+\item 
+size\_\-t \hyperlink{classfm_1_1tree_a2e7014d69be8d282d60e6f4e72cb4b4a}{size} () const 
+\item 
+void \hyperlink{classfm_1_1tree_a7652a6a1f0e33ab1567984540384a247}{clear} ()
+\item 
+\hyperlink{classfm_1_1tree}{tree}$<$ KEY, DATA $>$ \& \hyperlink{classfm_1_1tree_a2f4561dc6e4e24676a5614c0843545ba}{operator=} (const \hyperlink{classfm_1_1tree}{tree}$<$ KEY, DATA $>$ \&copy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class KEY, class DATA$>$ class fm::tree$<$ KEY, DATA $>$}
+
+An auto-\/balancing tree. Intentionally has an interface similar to the standard C++ tree class. It's implement should be very similar yet more lightweight. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfm_1_1tree_a40b5a0222169e4680bdf9ac301e068e6}{
+\index{fm::tree@{fm::tree}!tree@{tree}}
+\index{tree@{tree}!fm::tree@{fm::tree}}
+\subsubsection[{tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf fm::tree}$<$ KEY, DATA $>$::{\bf tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a40b5a0222169e4680bdf9ac301e068e6}
+Constructor. \hypertarget{classfm_1_1tree_ab1567e75f916ca111923c69a72c4579a}{
+\index{fm::tree@{fm::tree}!$\sim$tree@{$\sim$tree}}
+\index{$\sim$tree@{$\sim$tree}!fm::tree@{fm::tree}}
+\subsubsection[{$\sim$tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf fm::tree}$<$ KEY, DATA $>$::$\sim${\bf tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_ab1567e75f916ca111923c69a72c4579a}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classfm_1_1tree_aa7c4c9e11d1c788d0c9c8c88bcf5575f}{
+\index{fm::tree@{fm::tree}!begin@{begin}}
+\index{begin@{begin}!fm::tree@{fm::tree}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf iterator} {\bf fm::tree}$<$ KEY, DATA $>$::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_aa7c4c9e11d1c788d0c9c8c88bcf5575f}
+Retrieves the first ordered element within the tree. \begin{DoxyReturn}{Returns}
+An iterator that points to the first tree element. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_a9fe55c22449705c0ac187d2f703a570f}{
+\index{fm::tree@{fm::tree}!begin@{begin}}
+\index{begin@{begin}!fm::tree@{fm::tree}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf const\_\-iterator} {\bf fm::tree}$<$ KEY, DATA $>$::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a9fe55c22449705c0ac187d2f703a570f}
+See above. \hypertarget{classfm_1_1tree_a7652a6a1f0e33ab1567984540384a247}{
+\index{fm::tree@{fm::tree}!clear@{clear}}
+\index{clear@{clear}!fm::tree@{fm::tree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ void {\bf fm::tree}$<$ KEY, DATA $>$::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a7652a6a1f0e33ab1567984540384a247}
+Removes all the data nodes from the tree. This effectively prunes at the tree root. \hypertarget{classfm_1_1tree_a050855ad5146efa309f3ca3f2b49fae6}{
+\index{fm::tree@{fm::tree}!empty@{empty}}
+\index{empty@{empty}!fm::tree@{fm::tree}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ bool {\bf fm::tree}$<$ KEY, DATA $>$::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a050855ad5146efa309f3ca3f2b49fae6}
+Retrieves whether the tree contains any data nodes. \begin{DoxyReturn}{Returns}
+Whether the tree contains any data nodes. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_aebd32d6c1fb6b8a17846389f17f7f740}{
+\index{fm::tree@{fm::tree}!end@{end}}
+\index{end@{end}!fm::tree@{fm::tree}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf const\_\-iterator} {\bf fm::tree}$<$ KEY, DATA $>$::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_aebd32d6c1fb6b8a17846389f17f7f740}
+See above. \hypertarget{classfm_1_1tree_aec72096841b5c1b16ec8f584990fc8cb}{
+\index{fm::tree@{fm::tree}!end@{end}}
+\index{end@{end}!fm::tree@{fm::tree}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf iterator} {\bf fm::tree}$<$ KEY, DATA $>$::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_aec72096841b5c1b16ec8f584990fc8cb}
+Retrieves an iterator that points just passed the last ordered element within the tree. \begin{DoxyReturn}{Returns}
+An iterator just passed the last element in the tree. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_a5daee3b0f8f12f958342605fc923c869}{
+\index{fm::tree@{fm::tree}!erase@{erase}}
+\index{erase@{erase}!fm::tree@{fm::tree}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ void {\bf fm::tree}$<$ KEY, DATA $>$::erase (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{ it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a5daee3b0f8f12f958342605fc923c869}
+Removes a data element from the tree. 
+\begin{DoxyParams}{Parameters}
+\item[{\em it}]An iterator that points to the tree element to erase. \end{DoxyParams}
+\hypertarget{classfm_1_1tree_a89ab3fd9fee9e91e3f4a83a72b44e4b6}{
+\index{fm::tree@{fm::tree}!erase@{erase}}
+\index{erase@{erase}!fm::tree@{fm::tree}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ void {\bf fm::tree}$<$ KEY, DATA $>$::erase (
+\begin{DoxyParamCaption}
+\item[{const KEY \&}]{ key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a89ab3fd9fee9e91e3f4a83a72b44e4b6}
+Removes a data element from the tree. 
+\begin{DoxyParams}{Parameters}
+\item[{\em key}]The key of the data element to erase. \end{DoxyParams}
+\hypertarget{classfm_1_1tree_a9a78516786b1418717e6de2307fe5fb8}{
+\index{fm::tree@{fm::tree}!find@{find}}
+\index{find@{find}!fm::tree@{fm::tree}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf const\_\-iterator} {\bf fm::tree}$<$ KEY, DATA $>$::find (
+\begin{DoxyParamCaption}
+\item[{const KEY \&}]{ key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a9a78516786b1418717e6de2307fe5fb8}
+See above. \hypertarget{classfm_1_1tree_a81948231a919b25a85331a8f3d4e805b}{
+\index{fm::tree@{fm::tree}!find@{find}}
+\index{find@{find}!fm::tree@{fm::tree}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf iterator} {\bf fm::tree}$<$ KEY, DATA $>$::find (
+\begin{DoxyParamCaption}
+\item[{const KEY \&}]{ key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a81948231a919b25a85331a8f3d4e805b}
+Retrieves an existing data element using its key. 
+\begin{DoxyParams}{Parameters}
+\item[{\em key}]The key. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator that points to the existing data element. This iterator may be past the end of the tree, in the case where the key does not exists within the tree: do check the iterator against \hyperlink{classfm_1_1tree_aec72096841b5c1b16ec8f584990fc8cb}{end()}. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_addd6b9b977d1fc92381b08b1d03dff7a}{
+\index{fm::tree@{fm::tree}!insert@{insert}}
+\index{insert@{insert}!fm::tree@{fm::tree}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf iterator} {\bf fm::tree}$<$ KEY, DATA $>$::insert (
+\begin{DoxyParamCaption}
+\item[{const KEY \&}]{ key, }
+\item[{const DATA \&}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_addd6b9b977d1fc92381b08b1d03dff7a}
+Inserts a new data element with its key. If the key already exists within the tree, the old data element will be overwritten using the new data element. 
+\begin{DoxyParams}{Parameters}
+\item[{\em key}]The new key. \item[{\em data}]The new data element. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator that points to the tree element. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_a5a6bf6ac74b225026c87e10cfe01aeee}{
+\index{fm::tree@{fm::tree}!last@{last}}
+\index{last@{last}!fm::tree@{fm::tree}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf iterator} {\bf fm::tree}$<$ KEY, DATA $>$::last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a5a6bf6ac74b225026c87e10cfe01aeee}
+Retrieves the last ordered element within the tree. \begin{DoxyReturn}{Returns}
+An iterator that points to the last tree element. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_a4718a67fbef31d9140a2a2c0d3dbebbd}{
+\index{fm::tree@{fm::tree}!last@{last}}
+\index{last@{last}!fm::tree@{fm::tree}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf const\_\-iterator} {\bf fm::tree}$<$ KEY, DATA $>$::last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a4718a67fbef31d9140a2a2c0d3dbebbd}
+See above. \hypertarget{classfm_1_1tree_a2f4561dc6e4e24676a5614c0843545ba}{
+\index{fm::tree@{fm::tree}!operator=@{operator=}}
+\index{operator=@{operator=}!fm::tree@{fm::tree}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ {\bf tree}$<$KEY,DATA$>$\& {\bf fm::tree}$<$ KEY, DATA $>$::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf tree}$<$ KEY, DATA $>$ \&}]{ copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a2f4561dc6e4e24676a5614c0843545ba}
+Copy constructor. Clones another tree into this one. This is a bad function: it costs too much performance, avoid at all costs! 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The tree to clone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This tree, cloned. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_af7ef9c5d48222e86155e88be0d85be00}{
+\index{fm::tree@{fm::tree}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!fm::tree@{fm::tree}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ const DATA\& {\bf fm::tree}$<$ KEY, DATA $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const KEY \&}]{ k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_af7ef9c5d48222e86155e88be0d85be00}
+See above. \hypertarget{classfm_1_1tree_ae05c24532b73dd82733d739c47608365}{
+\index{fm::tree@{fm::tree}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!fm::tree@{fm::tree}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ DATA\& {\bf fm::tree}$<$ KEY, DATA $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const KEY \&}]{ k}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_ae05c24532b73dd82733d739c47608365}
+Retrieves a data element using its key. 
+\begin{DoxyParams}{Parameters}
+\item[{\em k}]The key. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data element for this key. In the non-\/constant version of this function, a new element is created for the key if it does not already belong to the tree. 
+\end{DoxyReturn}
+\hypertarget{classfm_1_1tree_a2e7014d69be8d282d60e6f4e72cb4b4a}{
+\index{fm::tree@{fm::tree}!size@{size}}
+\index{size@{size}!fm::tree@{fm::tree}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class KEY, class DATA$>$ size\_\-t {\bf fm::tree}$<$ KEY, DATA $>$::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1tree_a2e7014d69be8d282d60e6f4e72cb4b4a}
+Retrieves the number of data nodes contained in the tree. \begin{DoxyReturn}{Returns}
+The number of data nodes contained in the tree. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FMath/\hyperlink{FMTree_8h}{FMTree.h}\end{DoxyCompactItemize}

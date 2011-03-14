@@ -1,0 +1,221 @@
+\hypertarget{classFCDGeometrySpline}{
+\section{FCDGeometrySpline Class Reference}
+\label{classFCDGeometrySpline}\index{FCDGeometrySpline@{FCDGeometrySpline}}
+}
+
+
+{\ttfamily \#include $<$FCDGeometrySpline.h$>$}
+
+Inheritance diagram for FCDGeometrySpline:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDGeometrySpline}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDGeometrySpline_a38ba060aef184caf6bc732a087715bee}{FCDGeometrySpline} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDGeometry}{FCDGeometry} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDGeometrySpline_ad4f6348fd3f54b04b28d6283239f1573}{$\sim$FCDGeometrySpline} ()
+\item 
+\hyperlink{classFCDGeometry}{FCDGeometry} $\ast$ \hyperlink{classFCDGeometrySpline_adab00f51a9fd1721b0cb3fde8f21559b}{GetParent} ()
+\item 
+const \hyperlink{classFCDGeometry}{FCDGeometry} $\ast$ \hyperlink{classFCDGeometrySpline_a995a455064951b00735d4357add0dd95}{GetParent} () const 
+\item 
+\hyperlink{namespaceFUDaeSplineType_a7db2b90bcd53814239cc29f64754d0ab}{FUDaeSplineType::Type} \hyperlink{classFCDGeometrySpline_a1c66216b24056c9ea49ad0ef71e84d71}{GetType} () const 
+\item 
+bool \hyperlink{classFCDGeometrySpline_aaa79dd3c303dad513e09428ecb96de64}{SetType} (\hyperlink{namespaceFUDaeSplineType_a7db2b90bcd53814239cc29f64754d0ab}{FUDaeSplineType::Type} \_\-type)
+\item 
+size\_\-t \hyperlink{classFCDGeometrySpline_ad19110e9e49091f99ff7bde388c072be}{GetSplineCount} () const 
+\item 
+size\_\-t \hyperlink{classFCDGeometrySpline_aac7369c335120e96cb7565e6a43b75d0}{GetTotalCVCount} ()
+\item 
+\hyperlink{classFCDSpline}{FCDSpline} $\ast$ \hyperlink{classFCDGeometrySpline_accbb809978a613e00bf5aaeedd68e77f}{GetSpline} (size\_\-t index)
+\item 
+const \hyperlink{classFCDSpline}{FCDSpline} $\ast$ \hyperlink{classFCDGeometrySpline_a320c80590c623b3c1c385dd10fd375e9}{GetSpline} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDSpline}{FCDSpline} $\ast$ \hyperlink{classFCDGeometrySpline_af4c756cca2e3801c1955cad21e6bcf67}{AddSpline} (\hyperlink{namespaceFUDaeSplineType_a7db2b90bcd53814239cc29f64754d0ab}{FUDaeSplineType::Type} type=FUDaeSplineType::UNKNOWN)
+\item 
+void \hyperlink{classFCDGeometrySpline_af86d7ea190d9a1f28727be439a34a17d}{ConvertBezierToNURBS} (\hyperlink{classfm_1_1pvector}{FCDNURBSSplineList} \&toFill)
+\item 
+\hyperlink{classFCDGeometrySpline}{FCDGeometrySpline} $\ast$ \hyperlink{classFCDGeometrySpline_ad0d92ed47056e7be1a4d99ce291e21ff}{Clone} (\hyperlink{classFCDGeometrySpline}{FCDGeometrySpline} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA geometric spline.
+
+A COLLADA spline contains an array of \hyperlink{classFCDSpline}{FCDSpline} of the same type.
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000005}{Todo}]: Insert the mathematical formula to calculate the spline position.\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDGeometrySpline_a38ba060aef184caf6bc732a087715bee}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!FCDGeometrySpline@{FCDGeometrySpline}}
+\index{FCDGeometrySpline@{FCDGeometrySpline}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{FCDGeometrySpline}]{\setlength{\rightskip}{0pt plus 5cm}FCDGeometrySpline::FCDGeometrySpline (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDGeometry} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySpline_a38ba060aef184caf6bc732a087715bee}
+Constructor: do not use directly. Use the \hyperlink{classFCDGeometry_acce1627740e08dfd3b47fe0d42f9c3bb}{FCDGeometry::CreateMesh} function instead. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the new spline. \item[{\em parent}]The geometry entity that contains the new spline. \end{DoxyParams}
+\hypertarget{classFCDGeometrySpline_ad4f6348fd3f54b04b28d6283239f1573}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!$\sim$FCDGeometrySpline@{$\sim$FCDGeometrySpline}}
+\index{$\sim$FCDGeometrySpline@{$\sim$FCDGeometrySpline}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{$\sim$FCDGeometrySpline}]{\setlength{\rightskip}{0pt plus 5cm}FCDGeometrySpline::$\sim$FCDGeometrySpline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDGeometrySpline_ad4f6348fd3f54b04b28d6283239f1573}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDGeometrySpline_af4c756cca2e3801c1955cad21e6bcf67}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!AddSpline@{AddSpline}}
+\index{AddSpline@{AddSpline}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{AddSpline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSpline} $\ast$ FCDGeometrySpline::AddSpline (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeSplineType::Type}}]{ type = {\ttfamily FUDaeSplineType::UNKNOWN}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySpline_af4c756cca2e3801c1955cad21e6bcf67}
+Adds a spline to this geometry spline. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of spline to create. Set the type to \hyperlink{namespaceFUDaeSplineType_a7db2b90bcd53814239cc29f64754d0abaf05e5adf7918dddb5ef472a545b82d61}{FUDaeSplineType::UNKNOWN} to create a spline that has the same type as this geometry spline. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new spline. This pointer will be NULL if the requested spline type is different from existing splines. This pointer will be NULL if the requested type is \hyperlink{namespaceFUDaeSplineType_a7db2b90bcd53814239cc29f64754d0abaf05e5adf7918dddb5ef472a545b82d61}{FUDaeSplineType::UNKNOWN} and this geometry spline doesn't yet have a type assigned. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySpline_ad0d92ed47056e7be1a4d99ce291e21ff}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometrySpline} $\ast$ FCDGeometrySpline::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDGeometrySpline} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDGeometrySpline_ad0d92ed47056e7be1a4d99ce291e21ff}
+Copies the spline into a clone. The clone may reside in another document. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new spline will be created and you will need to release the returned pointer manually. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySpline_af86d7ea190d9a1f28727be439a34a17d}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!ConvertBezierToNURBS@{ConvertBezierToNURBS}}
+\index{ConvertBezierToNURBS@{ConvertBezierToNURBS}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{ConvertBezierToNURBS}]{\setlength{\rightskip}{0pt plus 5cm}void FCDGeometrySpline::ConvertBezierToNURBS (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDNURBSSplineList} \&}]{ toFill}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySpline_af86d7ea190d9a1f28727be439a34a17d}
+Converts the Bezier splines in this geometry to a list of NURBS splines. 
+\begin{DoxyParams}{Parameters}
+\item[{\em toFill}]The list of NURBS to fill. An empty list if the type of this geometry is not BEZIER. \end{DoxyParams}
+\hypertarget{classFCDGeometrySpline_a995a455064951b00735d4357add0dd95}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDGeometry}$\ast$ FCDGeometrySpline::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySpline_a995a455064951b00735d4357add0dd95}
+See above. \hypertarget{classFCDGeometrySpline_adab00f51a9fd1721b0cb3fde8f21559b}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDGeometry}$\ast$ FCDGeometrySpline::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySpline_adab00f51a9fd1721b0cb3fde8f21559b}
+Retrieves the parent of this geometric spline: the geometry entity. \begin{DoxyReturn}{Returns}
+The geometry entity that this spline belongs to. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySpline_a320c80590c623b3c1c385dd10fd375e9}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!GetSpline@{GetSpline}}
+\index{GetSpline@{GetSpline}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{GetSpline}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSpline}$\ast$ FCDGeometrySpline::GetSpline (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySpline_a320c80590c623b3c1c385dd10fd375e9}
+see above \hypertarget{classFCDGeometrySpline_accbb809978a613e00bf5aaeedd68e77f}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!GetSpline@{GetSpline}}
+\index{GetSpline@{GetSpline}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{GetSpline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSpline}$\ast$ FCDGeometrySpline::GetSpline (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySpline_accbb809978a613e00bf5aaeedd68e77f}
+Retrieves a pointer to the spline specified by the given index. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index, higher or equal to 0 and lower than \hyperlink{classFCDGeometrySpline_ad19110e9e49091f99ff7bde388c072be}{GetSplineCount()}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classFCDSpline}{FCDSpline} pointer, or NULL if index is invalid. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySpline_ad19110e9e49091f99ff7bde388c072be}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!GetSplineCount@{GetSplineCount}}
+\index{GetSplineCount@{GetSplineCount}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{GetSplineCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDGeometrySpline::GetSplineCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySpline_ad19110e9e49091f99ff7bde388c072be}
+Retrieves the number of splines in this geometry spline. \begin{DoxyReturn}{Returns}
+The spline count. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySpline_aac7369c335120e96cb7565e6a43b75d0}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!GetTotalCVCount@{GetTotalCVCount}}
+\index{GetTotalCVCount@{GetTotalCVCount}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{GetTotalCVCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDGeometrySpline::GetTotalCVCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySpline_aac7369c335120e96cb7565e6a43b75d0}
+Retrieves the total amount of control vertices in the spline array. \begin{DoxyReturn}{Returns}
+The total CV count. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySpline_a1c66216b24056c9ea49ad0ef71e84d71}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUDaeSplineType::Type} FCDGeometrySpline::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDGeometrySpline_a1c66216b24056c9ea49ad0ef71e84d71}
+Retrieves the type of this geometry spline. \begin{DoxyReturn}{Returns}
+The type. 
+\end{DoxyReturn}
+\hypertarget{classFCDGeometrySpline_aaa79dd3c303dad513e09428ecb96de64}{
+\index{FCDGeometrySpline@{FCDGeometrySpline}!SetType@{SetType}}
+\index{SetType@{SetType}!FCDGeometrySpline@{FCDGeometrySpline}}
+\subsubsection[{SetType}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDGeometrySpline::SetType (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeSplineType::Type}}]{ \_\-type}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDGeometrySpline_aaa79dd3c303dad513e09428ecb96de64}
+Sets the spline type for this geometry spline. Changing the type of a geometry spline that contains sub-\/splines will clear all its sub-\/splines. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-type}]The type. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDGeometrySpline_8h}{FCDGeometrySpline.h}\item 
+FCollada/FCDocument/FCDGeometrySpline.cpp\end{DoxyCompactItemize}

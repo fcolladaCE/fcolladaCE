@@ -1,0 +1,117 @@
+\hypertarget{classFUFunctor1}{
+\section{FUFunctor1$<$ Class, Arg1, ReturnType $>$ Class Template Reference}
+\label{classFUFunctor1}\index{FUFunctor1@{FUFunctor1}}
+}
+
+
+{\ttfamily \#include $<$FUFunctor.h$>$}
+
+Inheritance diagram for FUFunctor1$<$ Class, Arg1, ReturnType $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFUFunctor1}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUFunctor1_a19c16dfecf1b7c0a53e073d5045aca17}{FUFunctor1} (Class $\ast$object, ReturnType(Class::$\ast$function)(Arg1))
+\item 
+virtual \hyperlink{classFUFunctor1_a6f45f5da9033a7f729501e83fcbcea36}{$\sim$FUFunctor1} ()
+\item 
+virtual ReturnType \hyperlink{classFUFunctor1_a4d13afbd6a7efb778dbbfa808e966a8d}{operator()} (Arg1 argument1) const 
+\item 
+virtual bool \hyperlink{classFUFunctor1_a37c91c41c965d33a15a26aab7f365330}{Compare} (void $\ast$object, void $\ast$function) const 
+\item 
+virtual \hyperlink{classIFunctor1}{IFunctor1}$<$ Arg1, ReturnType $>$ $\ast$ \hyperlink{classFUFunctor1_a7c94fa2ef449d7d1791b9f18db53c72e}{Copy} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Class, class Arg1, class ReturnType$>$ class FUFunctor1$<$ Class, Arg1, ReturnType $>$}
+
+A functor with one arguments. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUFunctor1_a19c16dfecf1b7c0a53e073d5045aca17}{
+\index{FUFunctor1@{FUFunctor1}!FUFunctor1@{FUFunctor1}}
+\index{FUFunctor1@{FUFunctor1}!FUFunctor1@{FUFunctor1}}
+\subsubsection[{FUFunctor1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class, class Arg1, class ReturnType$>$ {\bf FUFunctor1}$<$ Class, Arg1, ReturnType $>$::{\bf FUFunctor1} (
+\begin{DoxyParamCaption}
+\item[{Class $\ast$}]{ object, }
+\item[{ReturnType(Class::$\ast$)(Arg1)}]{ function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUFunctor1_a19c16dfecf1b7c0a53e073d5045aca17}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]An object. \item[{\em function}]A member function of this object. \end{DoxyParams}
+\hypertarget{classFUFunctor1_a6f45f5da9033a7f729501e83fcbcea36}{
+\index{FUFunctor1@{FUFunctor1}!$\sim$FUFunctor1@{$\sim$FUFunctor1}}
+\index{$\sim$FUFunctor1@{$\sim$FUFunctor1}!FUFunctor1@{FUFunctor1}}
+\subsubsection[{$\sim$FUFunctor1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class, class Arg1, class ReturnType$>$ virtual {\bf FUFunctor1}$<$ Class, Arg1, ReturnType $>$::$\sim${\bf FUFunctor1} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUFunctor1_a6f45f5da9033a7f729501e83fcbcea36}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUFunctor1_a37c91c41c965d33a15a26aab7f365330}{
+\index{FUFunctor1@{FUFunctor1}!Compare@{Compare}}
+\index{Compare@{Compare}!FUFunctor1@{FUFunctor1}}
+\subsubsection[{Compare}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class, class Arg1, class ReturnType$>$ virtual bool {\bf FUFunctor1}$<$ Class, Arg1, ReturnType $>$::Compare (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ object, }
+\item[{void $\ast$}]{ function}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUFunctor1_a37c91c41c965d33a15a26aab7f365330}
+Checks whether this functor points towards the given member function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]The object which holds the member function. \item[{\em function}]The member function. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this functor points towards the given member function. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIFunctor1_af40dabb69bb64dcd2b4da5a76d0a0c95}{IFunctor1$<$ Arg1, ReturnType $>$}.
+
+\hypertarget{classFUFunctor1_a7c94fa2ef449d7d1791b9f18db53c72e}{
+\index{FUFunctor1@{FUFunctor1}!Copy@{Copy}}
+\index{Copy@{Copy}!FUFunctor1@{FUFunctor1}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class, class Arg1, class ReturnType$>$ virtual {\bf IFunctor1}$<$Arg1, ReturnType$>$$\ast$ {\bf FUFunctor1}$<$ Class, Arg1, ReturnType $>$::Copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUFunctor1_a7c94fa2ef449d7d1791b9f18db53c72e}
+Returns a copy of this functor 
+
+Implements \hyperlink{classIFunctor1_a9a7f152e50293268e2921ee19b25ed56}{IFunctor1$<$ Arg1, ReturnType $>$}.
+
+\hypertarget{classFUFunctor1_a4d13afbd6a7efb778dbbfa808e966a8d}{
+\index{FUFunctor1@{FUFunctor1}!operator()@{operator()}}
+\index{operator()@{operator()}!FUFunctor1@{FUFunctor1}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class, class Arg1, class ReturnType$>$ virtual ReturnType {\bf FUFunctor1}$<$ Class, Arg1, ReturnType $>$::operator() (
+\begin{DoxyParamCaption}
+\item[{Arg1}]{ argument1}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUFunctor1_a4d13afbd6a7efb778dbbfa808e966a8d}
+Calls the functor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em argument1}]A first argument. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Implementation-\/dependant. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIFunctor1_a01a0d99708e1bc5477f4d8058c0b0a8d}{IFunctor1$<$ Arg1, ReturnType $>$}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/FUFunctor.h\end{DoxyCompactItemize}

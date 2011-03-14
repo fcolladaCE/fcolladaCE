@@ -1,0 +1,56 @@
+\hypertarget{classFUTestSuite}{
+\section{FUTestSuite Class Reference}
+\label{classFUTestSuite}\index{FUTestSuite@{FUTestSuite}}
+}
+
+
+{\ttfamily \#include $<$FUTestBed.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classFUTestSuite_ac6936481ab6567d419d9676843930cf1}{$\sim$FUTestSuite} ()
+\item 
+virtual bool \hyperlink{classFUTestSuite_ac5ac8890614b143f02b4c87a5c59b851}{RunTest} (\hyperlink{classFUTestBed}{FUTestBed} \&testBed, \hyperlink{classFULogFile}{FULogFile} \&fileOut, bool \&\_\-\_\-testSuiteDone, size\_\-t testIndex)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A test suite. This class is derived by all the test suites and provides the interface for running test suites and setting up results. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUTestSuite_ac6936481ab6567d419d9676843930cf1}{
+\index{FUTestSuite@{FUTestSuite}!$\sim$FUTestSuite@{$\sim$FUTestSuite}}
+\index{$\sim$FUTestSuite@{$\sim$FUTestSuite}!FUTestSuite@{FUTestSuite}}
+\subsubsection[{$\sim$FUTestSuite}]{\setlength{\rightskip}{0pt plus 5cm}virtual FUTestSuite::$\sim$FUTestSuite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUTestSuite_ac6936481ab6567d419d9676843930cf1}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUTestSuite_ac5ac8890614b143f02b4c87a5c59b851}{
+\index{FUTestSuite@{FUTestSuite}!RunTest@{RunTest}}
+\index{RunTest@{RunTest}!FUTestSuite@{FUTestSuite}}
+\subsubsection[{RunTest}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FUTestSuite::RunTest (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTestBed} \&}]{ testBed, }
+\item[{{\bf FULogFile} \&}]{ fileOut, }
+\item[{bool \&}]{ \_\-\_\-testSuiteDone, }
+\item[{size\_\-t}]{ testIndex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFUTestSuite_ac5ac8890614b143f02b4c87a5c59b851}
+\mbox{[}INTERNAL\mbox{]} Runs one test. Called by the \hyperlink{classFUTestBed}{FUTestBed}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em testBed}]The test bed compiling the results. \item[{\em fileOut}]The log file of the test bed. \item[{\em \_\-\_\-testSuiteDone}]Out parameter: whether the test suite has no more tests after this one. \item[{\em testIndex}]An increasing index used to run all the tests. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the current test has passed. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/FUTestBed.h\end{DoxyCompactItemize}

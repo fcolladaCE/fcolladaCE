@@ -1,0 +1,118 @@
+\hypertarget{FMath_8h}{
+\section{FCollada/FMath/FMath.h File Reference}
+\label{FMath_8h}\index{FCollada/FMath/FMath.h@{FCollada/FMath/FMath.h}}
+}
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include \char`\"{}FMath/FMFloat.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMArray.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMArrayPointer.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMTree.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMInteger.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMVector2.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMVector3.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMVector4.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMColor.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMMatrix33.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FMath/FMMatrix44.h\char`\"{}}\par
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceFMath}{FMath}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classfm_1_1vector}{fm::vector}$<$ double, true $>$ \hyperlink{FMath_8h_a60e7e5a98121b7d3a454e85d8f52debf}{DoubleList}
+\item 
+typedef \hyperlink{classfm_1_1vector}{fm::vector}$<$ float, true $>$ \hyperlink{FMath_8h_a583376e97f253ed6f1d9a8ae4f41e850}{FloatList}
+\item 
+typedef \hyperlink{classfm_1_1vector}{fm::vector}$<$ int, true $>$ \hyperlink{FMath_8h_a1ff18605cdfcfdb4aef86bd3c2063837}{IntList}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFMath_a6cebb48ac4d487860bfb3000dc83464f}{FMath::AXIS} \{ \par
+\hyperlink{namespaceFMath_a6cebb48ac4d487860bfb3000dc83464fa97075b67af17b9e1e790e1ae7b8ddfea}{FMath::X} =  0, 
+\hyperlink{namespaceFMath_a6cebb48ac4d487860bfb3000dc83464fa5f8f70917a76852b2c746131d636b37f}{FMath::Y}, 
+\hyperlink{namespaceFMath_a6cebb48ac4d487860bfb3000dc83464fa2efeab595c04bfae88c455ac09a525fe}{FMath::Z}, 
+\hyperlink{namespaceFMath_a6cebb48ac4d487860bfb3000dc83464fa0f98577a60c766eb7fcbea869ed2bd60}{FMath::W}, 
+\par
+\hyperlink{namespaceFMath_a6cebb48ac4d487860bfb3000dc83464fa1d8d9e680e2a56fd65804c8177f248f3}{FMath::TRANS} =  W
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \hyperlink{FMath_8h_aa73b3f4c579c2e62ba4f4b5517a088b2}{IsEquivalent} (const T \&v1, const T \&v2)
+\item 
+double \hyperlink{namespaceFMath_a3f3ff4d162ca9b81672ab8d5ce1a04ed}{FMath::RadToDeg} (double val)
+\item 
+float \hyperlink{namespaceFMath_a126a39f30047703acd42ac277e688959}{FMath::RadToDeg} (float val)
+\item 
+double \hyperlink{namespaceFMath_a85780db77107aa93459019cd8cb8e89b}{FMath::DegToRad} (double val)
+\item 
+float \hyperlink{namespaceFMath_a0d5dc4a5370d82235d4e62cdd510c31c}{FMath::DegToRad} (float val)
+\item 
+int \hyperlink{namespaceFMath_af07527201a796f5c30c8bc10db7a8178}{FMath::IsNotANumber} (float f)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{namespaceFMath_a91e13509444b0d8729b8ed769b9de092}{FMath::Sign} (const T \&val)
+\item 
+{\footnotesize template$<$class T , class T2 , class T3 $>$ }\\T \hyperlink{namespaceFMath_a11c7de43d322da60b90898a62123eaf1}{FMath::Clamp} (T val, T2 mn, T3 mx)
+\item 
+{\footnotesize template$<$class T , class T2 , class T3 $>$ }\\T \hyperlink{namespaceFMath_a2f5eca80aa5529d47c4d4a152440b7aa}{FMath::Wrap} (T val, T2 mn, T3 mx)
+\item 
+{\footnotesize template$<$$>$ }\\float \hyperlink{namespaceFMath_a8166cc70ac2a4ff3e424b16ef7afcbfc}{FMath::Wrap} (float val, float mn, float mx)
+\item 
+{\footnotesize template$<$$>$ }\\double \hyperlink{namespaceFMath_ad4db85c2816cc6a8a77dd502f922c05d}{FMath::Wrap} (double val, double mn, double mx)
+\item 
+{\footnotesize template$<$$>$ }\\int \hyperlink{namespaceFMath_a338a56e70ba9aaae081c58aa175183e2}{FMath::Wrap} (int val, int mn, int mx)
+\item 
+{\footnotesize template$<$$>$ }\\uint32 \hyperlink{namespaceFMath_a3c79bbb04b20622258f981122eaa2a52}{FMath::Wrap} (uint32 val, uint32 mn, uint32 mx)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{namespaceFMath_a4c8e25df39e90e06ce866c1b509b9bec}{FMath::Pi} = 3.14159265358979323846264338327950288419716939937510
+\item 
+const float \hyperlink{namespaceFMath_aafd87a7033f63650d2fa9a7ce9f256ea}{FMath::Pif} = 3.14159265358979323846264338327950288419716939937510f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The file containing functions and constants for math. 
+
+\subsection{Typedef Documentation}
+\hypertarget{FMath_8h_a60e7e5a98121b7d3a454e85d8f52debf}{
+\index{FMath.h@{FMath.h}!DoubleList@{DoubleList}}
+\index{DoubleList@{DoubleList}!FMath.h@{FMath.h}}
+\subsubsection[{DoubleList}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::vector}$<$double, true$>$ {\bf DoubleList}}}
+\label{FMath_8h_a60e7e5a98121b7d3a454e85d8f52debf}
+A dynamically-\/sized array of double-\/sized floating-\/point values. \hypertarget{FMath_8h_a583376e97f253ed6f1d9a8ae4f41e850}{
+\index{FMath.h@{FMath.h}!FloatList@{FloatList}}
+\index{FloatList@{FloatList}!FMath.h@{FMath.h}}
+\subsubsection[{FloatList}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::vector}$<$float, true$>$ {\bf FloatList}}}
+\label{FMath_8h_a583376e97f253ed6f1d9a8ae4f41e850}
+A dynamically-\/sized array of floating-\/point values. \hypertarget{FMath_8h_a1ff18605cdfcfdb4aef86bd3c2063837}{
+\index{FMath.h@{FMath.h}!IntList@{IntList}}
+\index{IntList@{IntList}!FMath.h@{FMath.h}}
+\subsubsection[{IntList}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::vector}$<$int, true$>$ {\bf IntList}}}
+\label{FMath_8h_a1ff18605cdfcfdb4aef86bd3c2063837}
+A dynamically-\/sized array of integer values. 
+
+\subsection{Function Documentation}
+\hypertarget{FMath_8h_aa73b3f4c579c2e62ba4f4b5517a088b2}{
+\index{FMath.h@{FMath.h}!IsEquivalent@{IsEquivalent}}
+\index{IsEquivalent@{IsEquivalent}!FMath.h@{FMath.h}}
+\subsubsection[{IsEquivalent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool IsEquivalent (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{ v1, }
+\item[{const T \&}]{ v2}
+\end{DoxyParamCaption}
+)}}
+\label{FMath_8h_aa73b3f4c579c2e62ba4f4b5517a088b2}
+Retrieves whether two values are equivalent. This template simply calls the operator== on the two values. 
+\begin{DoxyParams}{Parameters}
+\item[{\em v1}]A first value. \item[{\em v2}]A second value. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two values are equivalent. 
+\end{DoxyReturn}

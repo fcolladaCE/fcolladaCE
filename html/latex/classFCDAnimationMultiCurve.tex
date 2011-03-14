@@ -1,0 +1,319 @@
+\hypertarget{classFCDAnimationMultiCurve}{
+\section{FCDAnimationMultiCurve Class Reference}
+\label{classFCDAnimationMultiCurve}\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+}
+
+
+{\ttfamily \#include $<$FCDAnimationMultiCurve.h$>$}
+
+Inheritance diagram for FCDAnimationMultiCurve:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDAnimationMultiCurve}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDAnimationMultiCurve_a2d24f269824f986407c0fa247b80e96c}{FCDAnimationMultiCurve} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, uint32 dimension)
+\item 
+virtual \hyperlink{classFCDAnimationMultiCurve_a1de4b1de48116068c3897b82860a8060}{$\sim$FCDAnimationMultiCurve} ()
+\item 
+uint32 \hyperlink{classFCDAnimationMultiCurve_a0b6badef0fb401db1e99820d043a69f4}{GetDimension} () const 
+\item 
+\hyperlink{classFCDAnimationMKey}{FCDAnimationMKey} $\ast$$\ast$ \hyperlink{classFCDAnimationMultiCurve_acd3398ca66622d9f62edccd64fb97049}{GetKeys} ()
+\item 
+const \hyperlink{classFCDAnimationMKey}{FCDAnimationMKey} $\ast$$\ast$ \hyperlink{classFCDAnimationMultiCurve_a08a4162ad5ca67540472f1c1113ddce6}{GetKeys} () const 
+\item 
+size\_\-t \hyperlink{classFCDAnimationMultiCurve_a2c54b98723c4909c93c9a6ec151ef234}{GetKeyCount} () const 
+\item 
+void \hyperlink{classFCDAnimationMultiCurve_adf25740adf8ddfabcf64bd1cbc83e5f7}{SetKeyCount} (size\_\-t count, \hyperlink{namespaceFUDaeInterpolation_a209a941c2fb6ece1325352968aa0374f}{FUDaeInterpolation::Interpolation} interpolation)
+\item 
+\hyperlink{classFCDAnimationMKey}{FCDAnimationMKey} $\ast$ \hyperlink{classFCDAnimationMultiCurve_a5f8632aed8843243c3f8a8c94146a93e}{GetKey} (size\_\-t index)
+\item 
+const \hyperlink{classFCDAnimationMKey}{FCDAnimationMKey} $\ast$ \hyperlink{classFCDAnimationMultiCurve_aee9dedbdf473e27cb9d448cc9da4826b}{GetKey} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDAnimationMKey}{FCDAnimationMKey} $\ast$ \hyperlink{classFCDAnimationMultiCurve_af8b1447f1ab5fd021b6e8e61d45bc08c}{AddKey} (\hyperlink{namespaceFUDaeInterpolation_a209a941c2fb6ece1325352968aa0374f}{FUDaeInterpolation::Interpolation} interpolation)
+\item 
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{FUDaeInfinity::Infinity} \hyperlink{classFCDAnimationMultiCurve_a3ce35c4236b8e07a5c48dc6c6203898c}{GetPreInfinity} () const 
+\item 
+void \hyperlink{classFCDAnimationMultiCurve_a22a66864b972abde1cacb06ba6d7653a}{SetPreInfinity} (\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{FUDaeInfinity::Infinity} infinity)
+\item 
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{FUDaeInfinity::Infinity} \hyperlink{classFCDAnimationMultiCurve_a2700e160254c7bccb321cf19234e1228}{GetPostInfinity} () const 
+\item 
+void \hyperlink{classFCDAnimationMultiCurve_a498e31528b918826b0ad7069622607b2}{SetPostInfinity} (\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{FUDaeInfinity::Infinity} infinity)
+\item 
+void \hyperlink{classFCDAnimationMultiCurve_a50979bee5862ccb12a5c829e9410a4eb}{Evaluate} (float input, float $\ast$output) const 
+\item 
+int32 \hyperlink{classFCDAnimationMultiCurve_ae1cd6afb67f21bc40e706ec73bc911e5}{GetTargetElement} () const 
+\item 
+void \hyperlink{classFCDAnimationMultiCurve_ae9a30b28b6ab7f201717fd6a3d4db770}{SetTargetElement} (int32 e)
+\item 
+\hypertarget{classFCDAnimationMultiCurve_ad5383e34ae38c53c4122871ae717cb8a}{
+int32 {\bfseries GetTargetElement} ()}
+\label{classFCDAnimationMultiCurve_ad5383e34ae38c53c4122871ae717cb8a}
+
+\item 
+void \hyperlink{classFCDAnimationMultiCurve_aad5e1829346170165119d01d92de62bb}{Set2DCurveEvaluation} (bool flag)
+\item 
+bool \hyperlink{classFCDAnimationMultiCurve_ace2392f79497988d3f9742504e9032ee}{Is2DCurveEvaluation} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA multi-\/dimensional animation curve.
+
+This is a utility class that is used to convert multiple animation curves into one animation curve that has multiple dimensions, but only one list of key inputs.
+
+\hyperlink{namespaceFCollada}{FCollada} will never create a multi-\/dimensional animation curve during the import of a COLLADA document. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDAnimationMultiCurve_a2d24f269824f986407c0fa247b80e96c}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{FCDAnimationMultiCurve}]{\setlength{\rightskip}{0pt plus 5cm}FCDAnimationMultiCurve::FCDAnimationMultiCurve (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{uint32}]{ dimension}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDAnimationMultiCurve_a2d24f269824f986407c0fa247b80e96c}
+Constructor. The number of dimensions will not change in the lifetime of a multi-\/dimensional curve. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the animation curve. \item[{\em dimension}]The number of dimensions for the animation curve. \end{DoxyParams}
+\hypertarget{classFCDAnimationMultiCurve_a1de4b1de48116068c3897b82860a8060}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!$\sim$FCDAnimationMultiCurve@{$\sim$FCDAnimationMultiCurve}}
+\index{$\sim$FCDAnimationMultiCurve@{$\sim$FCDAnimationMultiCurve}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{$\sim$FCDAnimationMultiCurve}]{\setlength{\rightskip}{0pt plus 5cm}FCDAnimationMultiCurve::$\sim$FCDAnimationMultiCurve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a1de4b1de48116068c3897b82860a8060}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDAnimationMultiCurve_af8b1447f1ab5fd021b6e8e61d45bc08c}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!AddKey@{AddKey}}
+\index{AddKey@{AddKey}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{AddKey}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimationMKey} $\ast$ FCDAnimationMultiCurve::AddKey (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeInterpolation::Interpolation}}]{ interpolation}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDAnimationMultiCurve_af8b1447f1ab5fd021b6e8e61d45bc08c}
+Appends a key to the animation curve. 
+\begin{DoxyParams}{Parameters}
+\item[{\em interpolation}]The interpolation type for the new key. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new key. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_a50979bee5862ccb12a5c829e9410a4eb}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimationMultiCurve::Evaluate (
+\begin{DoxyParamCaption}
+\item[{float}]{ input, }
+\item[{float $\ast$}]{ output}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDAnimationMultiCurve_a50979bee5862ccb12a5c829e9410a4eb}
+Evaluates the animation curve. 
+\begin{DoxyParams}{Parameters}
+\item[{\em input}]An input value. \item[{\em output}]An array of floating-\/point values to fill in with the sampled values. \end{DoxyParams}
+\hypertarget{classFCDAnimationMultiCurve_a0b6badef0fb401db1e99820d043a69f4}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetDimension@{GetDimension}}
+\index{GetDimension@{GetDimension}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetDimension}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FCDAnimationMultiCurve::GetDimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a0b6badef0fb401db1e99820d043a69f4}
+Retrieves the number of dimensions for the curve. \begin{DoxyReturn}{Returns}
+The number of dimensions for the curve. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_a5f8632aed8843243c3f8a8c94146a93e}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetKey}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimationMKey}$\ast$ FCDAnimationMultiCurve::GetKey (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a5f8632aed8843243c3f8a8c94146a93e}
+Retrieve one key of the animation curve. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the key to retrieve. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The indexed key. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_aee9dedbdf473e27cb9d448cc9da4826b}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetKey}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDAnimationMKey}$\ast$ FCDAnimationMultiCurve::GetKey (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_aee9dedbdf473e27cb9d448cc9da4826b}
+See above. \hypertarget{classFCDAnimationMultiCurve_a2c54b98723c4909c93c9a6ec151ef234}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetKeyCount@{GetKeyCount}}
+\index{GetKeyCount@{GetKeyCount}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetKeyCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDAnimationMultiCurve::GetKeyCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a2c54b98723c4909c93c9a6ec151ef234}
+Retrieves the number of keys within the animation curve. \begin{DoxyReturn}{Returns}
+The number of keys. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_acd3398ca66622d9f62edccd64fb97049}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetKeys@{GetKeys}}
+\index{GetKeys@{GetKeys}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetKeys}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimationMKey}$\ast$$\ast$ FCDAnimationMultiCurve::GetKeys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_acd3398ca66622d9f62edccd64fb97049}
+Retrieves the list of key inputs for the animation curve. \begin{DoxyReturn}{Returns}
+The list of key inputs. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_a08a4162ad5ca67540472f1c1113ddce6}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetKeys@{GetKeys}}
+\index{GetKeys@{GetKeys}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetKeys}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDAnimationMKey}$\ast$$\ast$ FCDAnimationMultiCurve::GetKeys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a08a4162ad5ca67540472f1c1113ddce6}
+See above. \hypertarget{classFCDAnimationMultiCurve_a2700e160254c7bccb321cf19234e1228}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetPostInfinity@{GetPostInfinity}}
+\index{GetPostInfinity@{GetPostInfinity}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetPostInfinity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUDaeInfinity::Infinity} FCDAnimationMultiCurve::GetPostInfinity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a2700e160254c7bccb321cf19234e1228}
+Retrieves the type of behavior for the curve if the input value is outside the input interval defined by the curve keys and greater than any key input value. \begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUDaeInfinity}{FUDaeInfinity} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The post-\/infinity behavior of the curve. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_a3ce35c4236b8e07a5c48dc6c6203898c}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetPreInfinity@{GetPreInfinity}}
+\index{GetPreInfinity@{GetPreInfinity}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetPreInfinity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUDaeInfinity::Infinity} FCDAnimationMultiCurve::GetPreInfinity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a3ce35c4236b8e07a5c48dc6c6203898c}
+Retrieves the type of behavior for the curve if the input value is outside the input interval defined by the curve keys and less than any key input value. \begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUDaeInfinity}{FUDaeInfinity} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The pre-\/infinity behavior of the curve. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_ae1cd6afb67f21bc40e706ec73bc911e5}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!GetTargetElement@{GetTargetElement}}
+\index{GetTargetElement@{GetTargetElement}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{GetTargetElement}]{\setlength{\rightskip}{0pt plus 5cm}int32 FCDAnimationMultiCurve::GetTargetElement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_ae1cd6afb67f21bc40e706ec73bc911e5}
+\mbox{[}INTERNAL\mbox{]} Retrieves the target element suffix for the curve. This will be -\/1 if the animated element does not belong to an animated element list. \begin{DoxyReturn}{Returns}
+The target element suffix. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_ace2392f79497988d3f9742504e9032ee}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!Is2DCurveEvaluation@{Is2DCurveEvaluation}}
+\index{Is2DCurveEvaluation@{Is2DCurveEvaluation}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{Is2DCurveEvaluation}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDAnimationMultiCurve::Is2DCurveEvaluation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_ace2392f79497988d3f9742504e9032ee}
+Returns whether 2D Curve Evaluation is on or off. \begin{DoxyReturn}{Returns}
+A boolean that indicates if the 2D Curve Evaluation is on or off. 
+\end{DoxyReturn}
+\hypertarget{classFCDAnimationMultiCurve_aad5e1829346170165119d01d92de62bb}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!Set2DCurveEvaluation@{Set2DCurveEvaluation}}
+\index{Set2DCurveEvaluation@{Set2DCurveEvaluation}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{Set2DCurveEvaluation}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimationMultiCurve::Set2DCurveEvaluation (
+\begin{DoxyParamCaption}
+\item[{bool}]{ flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_aad5e1829346170165119d01d92de62bb}
+\mbox{[}INTERNAL\mbox{]} Sets the target qualifier for the merged curve. Target qualifiers are transient information useful when exporting animation curves. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The dimension index of the target qualifier to modify. \item[{\em qualifier}]The new target qualifier. Turns on or off the 2D Curve Evaluation. \item[{\em flag}]An on or off boolean flag. \end{DoxyParams}
+\hypertarget{classFCDAnimationMultiCurve_adf25740adf8ddfabcf64bd1cbc83e5f7}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!SetKeyCount@{SetKeyCount}}
+\index{SetKeyCount@{SetKeyCount}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{SetKeyCount}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimationMultiCurve::SetKeyCount (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count, }
+\item[{{\bf FUDaeInterpolation::Interpolation}}]{ interpolation}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDAnimationMultiCurve_adf25740adf8ddfabcf64bd1cbc83e5f7}
+Sets the number of keys within the animation curve. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The new number of keys in the curve. \item[{\em interpolation}]If creating new keys, the interpolation type for the new keys. \end{DoxyParams}
+\hypertarget{classFCDAnimationMultiCurve_a498e31528b918826b0ad7069622607b2}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!SetPostInfinity@{SetPostInfinity}}
+\index{SetPostInfinity@{SetPostInfinity}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{SetPostInfinity}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimationMultiCurve::SetPostInfinity (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeInfinity::Infinity}}]{ infinity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a498e31528b918826b0ad7069622607b2}
+Sets the behavior of the curve if the input value is outside the input interval defined by the curve keys and greater than any key input value. \begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUDaeInfinity}{FUDaeInfinity} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em infinity}]The post-\/infinity behavior of the curve. \end{DoxyParams}
+\hypertarget{classFCDAnimationMultiCurve_a22a66864b972abde1cacb06ba6d7653a}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!SetPreInfinity@{SetPreInfinity}}
+\index{SetPreInfinity@{SetPreInfinity}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{SetPreInfinity}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimationMultiCurve::SetPreInfinity (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeInfinity::Infinity}}]{ infinity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_a22a66864b972abde1cacb06ba6d7653a}
+Sets the behavior of the curve if the input value is outside the input interval defined by the curve keys and less than any key input value. \begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUDaeInfinity}{FUDaeInfinity} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em infinity}]The pre-\/infinity behavior of the curve. \end{DoxyParams}
+\hypertarget{classFCDAnimationMultiCurve_ae9a30b28b6ab7f201717fd6a3d4db770}{
+\index{FCDAnimationMultiCurve@{FCDAnimationMultiCurve}!SetTargetElement@{SetTargetElement}}
+\index{SetTargetElement@{SetTargetElement}!FCDAnimationMultiCurve@{FCDAnimationMultiCurve}}
+\subsubsection[{SetTargetElement}]{\setlength{\rightskip}{0pt plus 5cm}void FCDAnimationMultiCurve::SetTargetElement (
+\begin{DoxyParamCaption}
+\item[{int32}]{ e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDAnimationMultiCurve_ae9a30b28b6ab7f201717fd6a3d4db770}
+\mbox{[}INTERNAL\mbox{]} Sets the target element suffix for the curve. 
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]The target element suffix. Set to value to -\/1 if the animated element does not belong to an animated element list. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDAnimationMultiCurve_8h}{FCDAnimationMultiCurve.h}\item 
+FCollada/FCDocument/FCDAnimationMultiCurve.cpp\end{DoxyCompactItemize}

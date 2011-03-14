@@ -1,0 +1,88 @@
+\hypertarget{structSchemeCallbacks}{
+\section{SchemeCallbacks Struct Reference}
+\label{structSchemeCallbacks}\index{SchemeCallbacks@{SchemeCallbacks}}
+}
+
+
+{\ttfamily \#include $<$FUFileManager.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSchemeCallbacks_a8e9f849699d95b56dbde1f4d6b271c99}{SchemeCallbacks} ()
+\item 
+\hyperlink{structSchemeCallbacks_a46208c6716725d91bed6290494dc46bb}{SchemeCallbacks} (const \hyperlink{structSchemeCallbacks}{SchemeCallbacks} \&copy)
+\item 
+\hyperlink{structSchemeCallbacks_a47c17b3bc1014f2e70ef1e968658c9b5}{$\sim$SchemeCallbacks} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIFunctor1}{SchemeLoadCallback} $\ast$ \hyperlink{structSchemeCallbacks_abb6b2030a834466fc6f3673916ad8f59}{load}
+\item 
+\hyperlink{classIFunctor1}{SchemeExistsCallback} $\ast$ \hyperlink{structSchemeCallbacks_a911c7c4e197a9fbe00364e1f0bf20200}{exists}
+\item 
+\hyperlink{classfm_1_1vector}{fm::vector}$<$ \hyperlink{classIFunctor2}{SchemePreProcessCallback} $\ast$ $>$ \hyperlink{structSchemeCallbacks_a8cb30bfc775cd2611484f995fdcff798}{openers}
+\item 
+\hypertarget{structSchemeCallbacks_a4bc471c34c3da29f43453d88106e6797}{
+\hyperlink{classIFunctor3}{SchemeRequestFileCallback} $\ast$ {\bfseries request}}
+\label{structSchemeCallbacks_a4bc471c34c3da29f43453d88106e6797}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An helper structure to organize file scheme callbacks within the \hyperlink{classFUFileManager}{FUFileManager} class. Use the NewSchemeCallbacks method to get a new \hyperlink{structSchemeCallbacks}{SchemeCallbacks} object. Use the NewFUFunctor$\ast$ methods to assign callbacks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structSchemeCallbacks_a8e9f849699d95b56dbde1f4d6b271c99}{
+\index{SchemeCallbacks@{SchemeCallbacks}!SchemeCallbacks@{SchemeCallbacks}}
+\index{SchemeCallbacks@{SchemeCallbacks}!SchemeCallbacks@{SchemeCallbacks}}
+\subsubsection[{SchemeCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}SchemeCallbacks::SchemeCallbacks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{structSchemeCallbacks_a8e9f849699d95b56dbde1f4d6b271c99}
+\mbox{[}INTERNAL\mbox{]} Default constructor. \hypertarget{structSchemeCallbacks_a46208c6716725d91bed6290494dc46bb}{
+\index{SchemeCallbacks@{SchemeCallbacks}!SchemeCallbacks@{SchemeCallbacks}}
+\index{SchemeCallbacks@{SchemeCallbacks}!SchemeCallbacks@{SchemeCallbacks}}
+\subsubsection[{SchemeCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}SchemeCallbacks::SchemeCallbacks (
+\begin{DoxyParamCaption}
+\item[{const {\bf SchemeCallbacks} \&}]{ copy}
+\end{DoxyParamCaption}
+)}}
+\label{structSchemeCallbacks_a46208c6716725d91bed6290494dc46bb}
+\mbox{[}INTERNAL\mbox{]} Copy constructor. \hypertarget{structSchemeCallbacks_a47c17b3bc1014f2e70ef1e968658c9b5}{
+\index{SchemeCallbacks@{SchemeCallbacks}!$\sim$SchemeCallbacks@{$\sim$SchemeCallbacks}}
+\index{$\sim$SchemeCallbacks@{$\sim$SchemeCallbacks}!SchemeCallbacks@{SchemeCallbacks}}
+\subsubsection[{$\sim$SchemeCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}SchemeCallbacks::$\sim$SchemeCallbacks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{structSchemeCallbacks_a47c17b3bc1014f2e70ef1e968658c9b5}
+\mbox{[}INTERNAL\mbox{]} Destructor. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structSchemeCallbacks_a911c7c4e197a9fbe00364e1f0bf20200}{
+\index{SchemeCallbacks@{SchemeCallbacks}!exists@{exists}}
+\index{exists@{exists}!SchemeCallbacks@{SchemeCallbacks}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SchemeExistsCallback}$\ast$ {\bf SchemeCallbacks::exists}}}
+\label{structSchemeCallbacks_a911c7c4e197a9fbe00364e1f0bf20200}
+The file existence test callback. \hypertarget{structSchemeCallbacks_abb6b2030a834466fc6f3673916ad8f59}{
+\index{SchemeCallbacks@{SchemeCallbacks}!load@{load}}
+\index{load@{load}!SchemeCallbacks@{SchemeCallbacks}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SchemeLoadCallback}$\ast$ {\bf SchemeCallbacks::load}}}
+\label{structSchemeCallbacks_abb6b2030a834466fc6f3673916ad8f59}
+The file open callback. \hypertarget{structSchemeCallbacks_a8cb30bfc775cd2611484f995fdcff798}{
+\index{SchemeCallbacks@{SchemeCallbacks}!openers@{openers}}
+\index{openers@{openers}!SchemeCallbacks@{SchemeCallbacks}}
+\subsubsection[{openers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fm::vector}$<${\bf SchemePreProcessCallback}$\ast$$>$ {\bf SchemeCallbacks::openers}}}
+\label{structSchemeCallbacks_a8cb30bfc775cd2611484f995fdcff798}
+Callbacks to process files before opening 
+
+The documentation for this struct was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/FUFileManager.h\item 
+FCollada/FUtils/FUFileManager.cpp\end{DoxyCompactItemize}

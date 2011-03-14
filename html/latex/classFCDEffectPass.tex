@@ -1,0 +1,398 @@
+\hypertarget{classFCDEffectPass}{
+\section{FCDEffectPass Class Reference}
+\label{classFCDEffectPass}\index{FCDEffectPass@{FCDEffectPass}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectPass.h$>$}
+
+Inheritance diagram for FCDEffectPass:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFCDEffectPass}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEffectPass_a113ecf82cb3f9a875243fa9c392460d6}{FCDEffectPass} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDEffectPass_a06f52bed17aedeb976700a42db076288}{$\sim$FCDEffectPass} ()
+\item 
+\hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$ \hyperlink{classFCDEffectPass_ad8c83b72090cee6340c41482c743b19d}{GetParent} ()
+\item 
+const \hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$ \hyperlink{classFCDEffectPass_ae3c3a6a9fc9aa96385908b866e730f69}{GetParent} () const 
+\item 
+\hyperlink{classFCDEffectPass_a2f2be39f5cb737d23be00822c429499f}{DEPRECATED} (3.05A, GetParent()-\/$>$GetParent()-\/$>$GetParent()-\/$>$GetDaeId()) const fm
+\item 
+const \hyperlink{classfm_1_1stringT}{fstring} \& \hyperlink{classFCDEffectPass_a965264f2ebd9bfab1eda85402b4e62b0}{GetPassName} () const 
+\item 
+void \hyperlink{classFCDEffectPass_a440924efb479a6417fb4c9de15cce12d}{SetPassName} (const fchar $\ast$\_\-name)
+\item 
+size\_\-t \hyperlink{classFCDEffectPass_a91266b26fcb7e861dd32d065f1d3e03a}{GetShaderCount} () const 
+\item 
+\hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_a4812f4512392d1c3599adc9411292742}{GetShader} (size\_\-t index)
+\item 
+const \hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_a594254479c6b9459963347609f013c0d}{GetShader} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_a3f517cc9def825f5ed1eff92fd63767f}{AddShader} ()
+\item 
+\hyperlink{classFCDEffectPass_ad750f820967f201bf16e11810bdd4e61}{DEPRECATED} (3.05A, shader-\/$>$Release()) void ReleaseShader(FCDEffectPassShader $\ast$shader)
+\item 
+\hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_ad5be823d1fcf2b809d88edc3d4bd128e}{GetVertexShader} ()
+\item 
+const \hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_a33ba661e6fd6321720446a0a8c194182}{GetVertexShader} () const 
+\item 
+\hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_a5c2d7a6cb07d072474a712d7989b0c47}{GetFragmentShader} ()
+\item 
+const \hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_af897aa752fb8efce514b5fa78a0c1f9c}{GetFragmentShader} () const 
+\item 
+\hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_a38b4b91ed84a52f4b3b4f564bc145adc}{AddVertexShader} ()
+\item 
+\hyperlink{classFCDEffectPassShader}{FCDEffectPassShader} $\ast$ \hyperlink{classFCDEffectPass_a994019f83ec1f8664ebe944ac1853972}{AddFragmentShader} ()
+\item 
+\hyperlink{classFCDEffectPass_a751132054a8fe95f6113ee1dce669315}{DEPRECATED} (3.05A, GetRenderStateCount and GetRenderState(index)) void GetRenderStates() const 
+\item 
+size\_\-t \hyperlink{classFCDEffectPass_ac7b761be64722700e0896574d039a927}{GetRenderStateCount} () const 
+\item 
+\hyperlink{classFCDEffectPassState}{FCDEffectPassState} $\ast$ \hyperlink{classFCDEffectPass_a2d9d4bc7ef4a68f0eef84fa133bf2bf4}{GetRenderState} (size\_\-t index)
+\item 
+const \hyperlink{classFCDEffectPassState}{FCDEffectPassState} $\ast$ \hyperlink{classFCDEffectPass_a53757eb176c01b3d5014ec405d70949b}{GetRenderState} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDEffectPassState}{FCDEffectPassState} $\ast$ \hyperlink{classFCDEffectPass_a0693c21a2306025fc8853295c07b6927}{AddRenderState} (\hyperlink{namespaceFUDaePassState_a99a648050f80bc29359e932cffa8c973}{FUDaePassState::State} type)
+\item 
+\hyperlink{classFCDEffectPassState}{FCDEffectPassState} $\ast$ \hyperlink{classFCDEffectPass_ac145319a544b80a7cb1f013609e5ccfa}{FindRenderState} (\hyperlink{namespaceFUDaePassState_a99a648050f80bc29359e932cffa8c973}{FUDaePassState::State} type)
+\item 
+const \hyperlink{classFCDEffectPassState}{FCDEffectPassState} $\ast$ \hyperlink{classFCDEffectPass_a613603555b9bae099c4eba84290db2c1}{FindRenderState} (\hyperlink{namespaceFUDaePassState_a99a648050f80bc29359e932cffa8c973}{FUDaePassState::State} type) const 
+\item 
+\hyperlink{classFCDEffectPass}{FCDEffectPass} $\ast$ \hyperlink{classFCDEffectPass_a42e60c76a99dff70809a727a87d757ea}{Clone} (\hyperlink{classFCDEffectPass}{FCDEffectPass} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA effect pass.
+
+The effect pass contains a list of effect shaders. While they may be missing, it does not make sense for the effect pass to contain more than two shaders: a vertex shader and a fragment/pixel shader.
+
+For this reason, we provide the GetVertexShader and the GetFragmentShader which we expect will be used for most applications, rather than looking through the list of shader objects. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEffectPass_a113ecf82cb3f9a875243fa9c392460d6}{
+\index{FCDEffectPass@{FCDEffectPass}!FCDEffectPass@{FCDEffectPass}}
+\index{FCDEffectPass@{FCDEffectPass}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{FCDEffectPass}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectPass::FCDEffectPass (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDEffectTechnique} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectPass_a113ecf82cb3f9a875243fa9c392460d6}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDEffectTechnique_a485529a79e25dfb6c9d9f3b6ebc4d5c4}{FCDEffectTechnique::AddPass} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The \hyperlink{namespaceFCollada}{FCollada} document that owns this pass. \item[{\em parent}]The effect technique that contains this effect pass. \end{DoxyParams}
+\hypertarget{classFCDEffectPass_a06f52bed17aedeb976700a42db076288}{
+\index{FCDEffectPass@{FCDEffectPass}!$\sim$FCDEffectPass@{$\sim$FCDEffectPass}}
+\index{$\sim$FCDEffectPass@{$\sim$FCDEffectPass}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{$\sim$FCDEffectPass}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectPass::$\sim$FCDEffectPass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectPass_a06f52bed17aedeb976700a42db076288}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEffectPass_a994019f83ec1f8664ebe944ac1853972}{
+\index{FCDEffectPass@{FCDEffectPass}!AddFragmentShader@{AddFragmentShader}}
+\index{AddFragmentShader@{AddFragmentShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{AddFragmentShader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassShader} $\ast$ FCDEffectPass::AddFragmentShader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectPass_a994019f83ec1f8664ebe944ac1853972}
+Adds a new fragment shader to the pass. If a fragment shader already exists within the pass, it will be released. \begin{DoxyReturn}{Returns}
+The new fragment shader. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a0693c21a2306025fc8853295c07b6927}{
+\index{FCDEffectPass@{FCDEffectPass}!AddRenderState@{AddRenderState}}
+\index{AddRenderState@{AddRenderState}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{AddRenderState}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassState} $\ast$ FCDEffectPass::AddRenderState (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaePassState::State}}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectPass_a0693c21a2306025fc8853295c07b6927}
+Adds a new render state to the effect pass. Render states automatically get sorted by type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of the render state to add. If a render state of this type already exists within the effect pass, it will be returned. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A render state of the given type. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a3f517cc9def825f5ed1eff92fd63767f}{
+\index{FCDEffectPass@{FCDEffectPass}!AddShader@{AddShader}}
+\index{AddShader@{AddShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{AddShader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassShader} $\ast$ FCDEffectPass::AddShader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectPass_a3f517cc9def825f5ed1eff92fd63767f}
+Adds a new shader to the pass. \begin{DoxyReturn}{Returns}
+The new shader. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a38b4b91ed84a52f4b3b4f564bc145adc}{
+\index{FCDEffectPass@{FCDEffectPass}!AddVertexShader@{AddVertexShader}}
+\index{AddVertexShader@{AddVertexShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{AddVertexShader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassShader} $\ast$ FCDEffectPass::AddVertexShader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectPass_a38b4b91ed84a52f4b3b4f564bc145adc}
+Adds a new vertex shader to the pass. If a vertex shader already exists within the pass, it will be released. \begin{DoxyReturn}{Returns}
+The new vertex shader. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a42e60c76a99dff70809a727a87d757ea}{
+\index{FCDEffectPass@{FCDEffectPass}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPass} $\ast$ FCDEffectPass::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectPass} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectPass_a42e60c76a99dff70809a727a87d757ea}
+Clones the effect pass and shaders. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The cloned pass. If this pointer is NULL, a new pass is created and you will need to release this new pass. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned pass. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a2f2be39f5cb737d23be00822c429499f}{
+\index{FCDEffectPass@{FCDEffectPass}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectPass::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetParent()-\/$>$GetParent()-\/$>$GetParent()-\/$>$GetDaeId()}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a2f2be39f5cb737d23be00822c429499f}
+Retrieves the COLLADA id of the parent effect. This function is mostly useful as a shortcut for debugging and reporting. \begin{DoxyReturn}{Returns}
+The COLLADA id of the parent effect. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a751132054a8fe95f6113ee1dce669315}{
+\index{FCDEffectPass@{FCDEffectPass}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectPass::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetRenderStateCount and }]{ GetRenderStateindex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a751132054a8fe95f6113ee1dce669315}
+Retrieves the container of the render states for the pass. \begin{DoxyReturn}{Returns}
+The render state list. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_ad750f820967f201bf16e11810bdd4e61}{
+\index{FCDEffectPass@{FCDEffectPass}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectPass::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{shader-\/$>$}]{ Release()}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_ad750f820967f201bf16e11810bdd4e61}
+Releases a shader contained within the pass. 
+\begin{DoxyParams}{Parameters}
+\item[{\em shader}]The shader to release. \end{DoxyParams}
+\hypertarget{classFCDEffectPass_a613603555b9bae099c4eba84290db2c1}{
+\index{FCDEffectPass@{FCDEffectPass}!FindRenderState@{FindRenderState}}
+\index{FindRenderState@{FindRenderState}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{FindRenderState}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectPassState} $\ast$ FCDEffectPass::FindRenderState (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaePassState::State}}]{ type}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectPass_a613603555b9bae099c4eba84290db2c1}
+See above. \hypertarget{classFCDEffectPass_ac145319a544b80a7cb1f013609e5ccfa}{
+\index{FCDEffectPass@{FCDEffectPass}!FindRenderState@{FindRenderState}}
+\index{FindRenderState@{FindRenderState}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{FindRenderState}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassState}$\ast$ FCDEffectPass::FindRenderState (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaePassState::State}}]{ type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_ac145319a544b80a7cb1f013609e5ccfa}
+Retrieves a specific render state defined for the pass. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of the render state to retrieve. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state with the given type. This pointer will be NULL if no render state has been defined for the given type. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a5c2d7a6cb07d072474a712d7989b0c47}{
+\index{FCDEffectPass@{FCDEffectPass}!GetFragmentShader@{GetFragmentShader}}
+\index{GetFragmentShader@{GetFragmentShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetFragmentShader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassShader}$\ast$ FCDEffectPass::GetFragmentShader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a5c2d7a6cb07d072474a712d7989b0c47}
+Retrieves the fragment shader for this effect pass. \begin{DoxyReturn}{Returns}
+The fragment shader. This pointer will be NULL if no shader within the pass affects pixels/fragments. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_af897aa752fb8efce514b5fa78a0c1f9c}{
+\index{FCDEffectPass@{FCDEffectPass}!GetFragmentShader@{GetFragmentShader}}
+\index{GetFragmentShader@{GetFragmentShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetFragmentShader}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectPassShader} $\ast$ FCDEffectPass::GetFragmentShader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectPass_af897aa752fb8efce514b5fa78a0c1f9c}
+See above. \hypertarget{classFCDEffectPass_ae3c3a6a9fc9aa96385908b866e730f69}{
+\index{FCDEffectPass@{FCDEffectPass}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectTechnique}$\ast$ FCDEffectPass::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_ae3c3a6a9fc9aa96385908b866e730f69}
+See above. \hypertarget{classFCDEffectPass_ad8c83b72090cee6340c41482c743b19d}{
+\index{FCDEffectPass@{FCDEffectPass}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectTechnique}$\ast$ FCDEffectPass::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_ad8c83b72090cee6340c41482c743b19d}
+Retrieves the effect techniques which contains this effect pass. \begin{DoxyReturn}{Returns}
+The parent technique. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a965264f2ebd9bfab1eda85402b4e62b0}{
+\index{FCDEffectPass@{FCDEffectPass}!GetPassName@{GetPassName}}
+\index{GetPassName@{GetPassName}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetPassName}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fstring}\& FCDEffectPass::GetPassName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a965264f2ebd9bfab1eda85402b4e62b0}
+Retrieves the sub-\/id of the effect pass. This sub-\/id is optional. \begin{DoxyReturn}{Returns}
+The sub-\/id. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a2d9d4bc7ef4a68f0eef84fa133bf2bf4}{
+\index{FCDEffectPass@{FCDEffectPass}!GetRenderState@{GetRenderState}}
+\index{GetRenderState@{GetRenderState}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetRenderState}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassState}$\ast$ FCDEffectPass::GetRenderState (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a2d9d4bc7ef4a68f0eef84fa133bf2bf4}
+Retrieves a specific render state defined for the pass. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the render state. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a53757eb176c01b3d5014ec405d70949b}{
+\index{FCDEffectPass@{FCDEffectPass}!GetRenderState@{GetRenderState}}
+\index{GetRenderState@{GetRenderState}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetRenderState}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectPassState}$\ast$ FCDEffectPass::GetRenderState (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a53757eb176c01b3d5014ec405d70949b}
+See above. \hypertarget{classFCDEffectPass_ac7b761be64722700e0896574d039a927}{
+\index{FCDEffectPass@{FCDEffectPass}!GetRenderStateCount@{GetRenderStateCount}}
+\index{GetRenderStateCount@{GetRenderStateCount}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetRenderStateCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectPass::GetRenderStateCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_ac7b761be64722700e0896574d039a927}
+Retrieves the number of render states defined for the pass. \begin{DoxyReturn}{Returns}
+The render state count. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a594254479c6b9459963347609f013c0d}{
+\index{FCDEffectPass@{FCDEffectPass}!GetShader@{GetShader}}
+\index{GetShader@{GetShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetShader}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectPassShader}$\ast$ FCDEffectPass::GetShader (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a594254479c6b9459963347609f013c0d}
+See above. \hypertarget{classFCDEffectPass_a4812f4512392d1c3599adc9411292742}{
+\index{FCDEffectPass@{FCDEffectPass}!GetShader@{GetShader}}
+\index{GetShader@{GetShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetShader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassShader}$\ast$ FCDEffectPass::GetShader (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a4812f4512392d1c3599adc9411292742}
+Retrieves a specific shader. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the shader. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The shader. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a91266b26fcb7e861dd32d065f1d3e03a}{
+\index{FCDEffectPass@{FCDEffectPass}!GetShaderCount@{GetShaderCount}}
+\index{GetShaderCount@{GetShaderCount}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetShaderCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectPass::GetShaderCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a91266b26fcb7e861dd32d065f1d3e03a}
+Retrieves the number of shaders contained within the effect pass. \begin{DoxyReturn}{Returns}
+The number of shaders. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a33ba661e6fd6321720446a0a8c194182}{
+\index{FCDEffectPass@{FCDEffectPass}!GetVertexShader@{GetVertexShader}}
+\index{GetVertexShader@{GetVertexShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetVertexShader}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectPassShader} $\ast$ FCDEffectPass::GetVertexShader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectPass_a33ba661e6fd6321720446a0a8c194182}
+See above. \hypertarget{classFCDEffectPass_ad5be823d1fcf2b809d88edc3d4bd128e}{
+\index{FCDEffectPass@{FCDEffectPass}!GetVertexShader@{GetVertexShader}}
+\index{GetVertexShader@{GetVertexShader}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{GetVertexShader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectPassShader}$\ast$ FCDEffectPass::GetVertexShader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_ad5be823d1fcf2b809d88edc3d4bd128e}
+Retrieves the vertex shader for this effect pass. \begin{DoxyReturn}{Returns}
+The vertex shader. This pointer will be NULL if no shader within the pass affects vertices. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectPass_a440924efb479a6417fb4c9de15cce12d}{
+\index{FCDEffectPass@{FCDEffectPass}!SetPassName@{SetPassName}}
+\index{SetPassName@{SetPassName}!FCDEffectPass@{FCDEffectPass}}
+\subsubsection[{SetPassName}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectPass::SetPassName (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ \_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectPass_a440924efb479a6417fb4c9de15cce12d}
+Sets the optional sub-\/id for the effect pass. This sub-\/id is optional. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-name}]The sub-\/id. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectPass_8h}{FCDEffectPass.h}\item 
+FCollada/FCDocument/FCDEffectPass.cpp\end{DoxyCompactItemize}

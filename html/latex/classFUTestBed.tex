@@ -1,0 +1,100 @@
+\hypertarget{classFUTestBed}{
+\section{FUTestBed Class Reference}
+\label{classFUTestBed}\index{FUTestBed@{FUTestBed}}
+}
+
+
+{\ttfamily \#include $<$FUTestBed.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUTestBed_a621844da7de1de2fbe5afcb84edbfe07}{FUTestBed} (const fchar $\ast$filename, bool isVerbose)
+\item 
+bool \hyperlink{classFUTestBed_ada9bf4ed781843713acc9a19c0a38118}{IsVerbose} () const 
+\item 
+\hyperlink{classFULogFile}{FULogFile} \& \hyperlink{classFUTestBed_acfb3f38c3e28252beec92d8fa98873bd}{GetLogFile} ()
+\item 
+bool \hyperlink{classFUTestBed_adf1772ed7565a9d7a2fbbcf8c8f1487e}{RunTestbed} (\hyperlink{classFUTestSuite}{FUTestSuite} $\ast$headTestSuite)
+\item 
+void \hyperlink{classFUTestBed_a4aedc0487f0503cb7b1141fcaa008e10}{RunTestSuite} (\hyperlink{classFUTestSuite}{FUTestSuite} $\ast$testSuite)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A test suite runner. This class is used to run test suites and compile the results. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUTestBed_a621844da7de1de2fbe5afcb84edbfe07}{
+\index{FUTestBed@{FUTestBed}!FUTestBed@{FUTestBed}}
+\index{FUTestBed@{FUTestBed}!FUTestBed@{FUTestBed}}
+\subsubsection[{FUTestBed}]{\setlength{\rightskip}{0pt plus 5cm}FUTestBed::FUTestBed (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ filename, }
+\item[{bool}]{ isVerbose}
+\end{DoxyParamCaption}
+)}}
+\label{classFUTestBed_a621844da7de1de2fbe5afcb84edbfe07}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]The filename of the logfile to open. \item[{\em isVerbose}]Whether to enable more logging. Currently, this means writing one line to the log when starting any test suite starts. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUTestBed_acfb3f38c3e28252beec92d8fa98873bd}{
+\index{FUTestBed@{FUTestBed}!GetLogFile@{GetLogFile}}
+\index{GetLogFile@{GetLogFile}!FUTestBed@{FUTestBed}}
+\subsubsection[{GetLogFile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FULogFile}\& FUTestBed::GetLogFile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTestBed_acfb3f38c3e28252beec92d8fa98873bd}
+\mbox{[}INTERNAL\mbox{]} Retrieves the log file. Used by test suites to write out custom output. \begin{DoxyReturn}{Returns}
+The log file structure. 
+\end{DoxyReturn}
+\hypertarget{classFUTestBed_ada9bf4ed781843713acc9a19c0a38118}{
+\index{FUTestBed@{FUTestBed}!IsVerbose@{IsVerbose}}
+\index{IsVerbose@{IsVerbose}!FUTestBed@{FUTestBed}}
+\subsubsection[{IsVerbose}]{\setlength{\rightskip}{0pt plus 5cm}bool FUTestBed::IsVerbose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTestBed_ada9bf4ed781843713acc9a19c0a38118}
+Retrieves whether verbose logging is enabled. \begin{DoxyReturn}{Returns}
+Whether verbose logging is enabled. 
+\end{DoxyReturn}
+\hypertarget{classFUTestBed_adf1772ed7565a9d7a2fbbcf8c8f1487e}{
+\index{FUTestBed@{FUTestBed}!RunTestbed@{RunTestbed}}
+\index{RunTestbed@{RunTestbed}!FUTestBed@{FUTestBed}}
+\subsubsection[{RunTestbed}]{\setlength{\rightskip}{0pt plus 5cm}bool FUTestBed::RunTestbed (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTestSuite} $\ast$}]{ headTestSuite}
+\end{DoxyParamCaption}
+)}}
+\label{classFUTestBed_adf1772ed7565a9d7a2fbbcf8c8f1487e}
+Runs a test suite and returns the results. 
+\begin{DoxyParams}{Parameters}
+\item[{\em headTestSuite}]The top-\/level test suite to start. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether all the tests have passed. 
+\end{DoxyReturn}
+\hypertarget{classFUTestBed_a4aedc0487f0503cb7b1141fcaa008e10}{
+\index{FUTestBed@{FUTestBed}!RunTestSuite@{RunTestSuite}}
+\index{RunTestSuite@{RunTestSuite}!FUTestBed@{FUTestBed}}
+\subsubsection[{RunTestSuite}]{\setlength{\rightskip}{0pt plus 5cm}void FUTestBed::RunTestSuite (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTestSuite} $\ast$}]{ testSuite}
+\end{DoxyParamCaption}
+)}}
+\label{classFUTestBed_a4aedc0487f0503cb7b1141fcaa008e10}
+\mbox{[}INTERNAL\mbox{]} Runs a test suite and compiles the results. This is used recursively to run a full hierarchy of test suites. 
+\begin{DoxyParams}{Parameters}
+\item[{\em testSuite}]A test suite to run. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/FUTestBed.h\item 
+FCollada/FUtils/FUTestBed.cpp\end{DoxyCompactItemize}

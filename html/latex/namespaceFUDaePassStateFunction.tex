@@ -1,0 +1,121 @@
+\hypertarget{namespaceFUDaePassStateFunction}{
+\section{FUDaePassStateFunction Namespace Reference}
+\label{namespaceFUDaePassStateFunction}\index{FUDaePassStateFunction@{FUDaePassStateFunction}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313}{Function} \{ \par
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a25add4ac74e3d5be8370ee5298f4f36a}{NEVER} =  0x0200, 
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a89d0b0ffd1191e29a417a21a70e19bac}{LESS} =  0x0201, 
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a5d6ea748eaf31f9a5f34eb67dd9ae804}{EQUAL} =  0x0202, 
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a358867e7516e0ce77740d58126ac5129}{LESS\_\-EQUAL} =  0x0203, 
+\par
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a431c00a8fd2da9ed7af950b7e017dc67}{GREATER} =  0x0204, 
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313ae5f080a885afaeb1c502d940a413ba4f}{NOT\_\-EQUAL} =  0x0205, 
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313af6addbfd959ff6654f18bdcfb54c4fb8}{GREATER\_\-EQUAL} =  0x0206, 
+{\bfseries ALWAYS} =  0x0207, 
+\par
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a83282fb0c2b2de5fe9814c8bba01aed8}{INVALID}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313}{Function} \hyperlink{namespaceFUDaePassStateFunction_a1ecd500a9e8d0be82e0415c2f0e8047d}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaePassStateFunction_a779cb89b2e35a4f2ab53a669212f41a9}{ToString} (\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313}{Function} fn)
+\item 
+\hyperlink{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313}{Function} \hyperlink{namespaceFUDaePassStateFunction_a6d06e1464f66d48fbe15da048e1594c9}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The function types for the effect pass render states. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313}{
+\index{FUDaePassStateFunction@{FUDaePassStateFunction}!Function@{Function}}
+\index{Function@{Function}!FUDaePassStateFunction@{FUDaePassStateFunction}}
+\subsubsection[{Function}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUDaePassStateFunction::Function}}}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313}
+Enumerates the COLLADA render state function types. The usage of this enumeration type depends on the render state. For the alpha-\/test and the depth-\/test, this function determines when a given pixel will be kept when compared against the color/depth buffer's current alpha/depth value. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NEVER@{NEVER}!FUDaePassStateFunction@{FUDaePassStateFunction}}\index{FUDaePassStateFunction@{FUDaePassStateFunction}!NEVER@{NEVER}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a25add4ac74e3d5be8370ee5298f4f36a}{
+NEVER}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a25add4ac74e3d5be8370ee5298f4f36a}
+}]Never kept. \index{LESS@{LESS}!FUDaePassStateFunction@{FUDaePassStateFunction}}\index{FUDaePassStateFunction@{FUDaePassStateFunction}!LESS@{LESS}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a89d0b0ffd1191e29a417a21a70e19bac}{
+LESS}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a89d0b0ffd1191e29a417a21a70e19bac}
+}]The pixel is kept when its value is lesser to the current value. \index{EQUAL@{EQUAL}!FUDaePassStateFunction@{FUDaePassStateFunction}}\index{FUDaePassStateFunction@{FUDaePassStateFunction}!EQUAL@{EQUAL}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a5d6ea748eaf31f9a5f34eb67dd9ae804}{
+EQUAL}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a5d6ea748eaf31f9a5f34eb67dd9ae804}
+}]The pixel is kept when its value is equal to the current value. \index{LESS\_\-EQUAL@{LESS\_\-EQUAL}!FUDaePassStateFunction@{FUDaePassStateFunction}}\index{FUDaePassStateFunction@{FUDaePassStateFunction}!LESS\_\-EQUAL@{LESS\_\-EQUAL}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a358867e7516e0ce77740d58126ac5129}{
+LESS\_\-EQUAL}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a358867e7516e0ce77740d58126ac5129}
+}]The pixel is kept when its value is lesser or equal to the current value. \index{GREATER@{GREATER}!FUDaePassStateFunction@{FUDaePassStateFunction}}\index{FUDaePassStateFunction@{FUDaePassStateFunction}!GREATER@{GREATER}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a431c00a8fd2da9ed7af950b7e017dc67}{
+GREATER}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a431c00a8fd2da9ed7af950b7e017dc67}
+}]The pixel is kept when its value is greater to the current value. \index{NOT\_\-EQUAL@{NOT\_\-EQUAL}!FUDaePassStateFunction@{FUDaePassStateFunction}}\index{FUDaePassStateFunction@{FUDaePassStateFunction}!NOT\_\-EQUAL@{NOT\_\-EQUAL}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313ae5f080a885afaeb1c502d940a413ba4f}{
+NOT\_\-EQUAL}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313ae5f080a885afaeb1c502d940a413ba4f}
+}]The pixel is kept when its value is not equal to the current value. \index{GREATER\_\-EQUAL@{GREATER\_\-EQUAL}!FUDaePassStateFunction@{FUDaePassStateFunction}}\index{FUDaePassStateFunction@{FUDaePassStateFunction}!GREATER\_\-EQUAL@{GREATER\_\-EQUAL}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313af6addbfd959ff6654f18bdcfb54c4fb8}{
+GREATER\_\-EQUAL}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313af6addbfd959ff6654f18bdcfb54c4fb8}
+}]The pixel is kept when its value is greater or equal to the current value. \index{INVALID@{INVALID}!FUDaePassStateFunction@{FUDaePassStateFunction}}\index{FUDaePassStateFunction@{FUDaePassStateFunction}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a83282fb0c2b2de5fe9814c8bba01aed8}{
+INVALID}
+\label{namespaceFUDaePassStateFunction_af0f6fbb32c14e5a19559a6630f783313a83282fb0c2b2de5fe9814c8bba01aed8}
+}]Always kept. An invalid function. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaePassStateFunction_a1ecd500a9e8d0be82e0415c2f0e8047d}{
+\index{FUDaePassStateFunction@{FUDaePassStateFunction}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateFunction@{FUDaePassStateFunction}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf Function} FUDaePassStateFunction::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateFunction_a1ecd500a9e8d0be82e0415c2f0e8047d}
+Converts the COLLADA render state function string to the render state function type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The render state function string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state function type. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaePassStateFunction_a6d06e1464f66d48fbe15da048e1594c9}{
+\index{FUDaePassStateFunction@{FUDaePassStateFunction}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateFunction@{FUDaePassStateFunction}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function} FUDaePassStateFunction::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaePassStateFunction_a6d06e1464f66d48fbe15da048e1594c9}
+See above. \hypertarget{namespaceFUDaePassStateFunction_a779cb89b2e35a4f2ab53a669212f41a9}{
+\index{FUDaePassStateFunction@{FUDaePassStateFunction}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaePassStateFunction@{FUDaePassStateFunction}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaePassStateFunction::ToString (
+\begin{DoxyParamCaption}
+\item[{Function}]{ fn}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateFunction_a779cb89b2e35a4f2ab53a669212f41a9}
+Converts the render state function type to its COLLADA render state function string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fn}]The render state function type. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state function string. 
+\end{DoxyReturn}

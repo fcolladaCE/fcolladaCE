@@ -1,0 +1,30 @@
+\hypertarget{namespaceFCDControllerTools}{
+\section{FCDControllerTools Namespace Reference}
+\label{namespaceFCDControllerTools}\index{FCDControllerTools@{FCDControllerTools}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceFCDControllerTools_a83e6026ea91b4495fc0faf58a7b5b6fa}{ApplyTranslationMap} (const \hyperlink{classFCDSkinController}{FCDSkinController} $\ast$controller, const \hyperlink{classfm_1_1map}{FCDGeometryIndexTranslationMap} \&translationMap, const \hyperlink{classfm_1_1vector}{UInt16List} \&packingMap, \hyperlink{classfm_1_1pvector}{fm::pvector}$<$ const \hyperlink{classFCDSkinControllerVertex}{FCDSkinControllerVertex} $>$ \&skinInfluences)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds commonly-\/used transformation functions for skin controllers. 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFCDControllerTools_a83e6026ea91b4495fc0faf58a7b5b6fa}{
+\index{FCDControllerTools@{FCDControllerTools}!ApplyTranslationMap@{ApplyTranslationMap}}
+\index{ApplyTranslationMap@{ApplyTranslationMap}!FCDControllerTools@{FCDControllerTools}}
+\subsubsection[{ApplyTranslationMap}]{\setlength{\rightskip}{0pt plus 5cm}void FCOLLADA\_\-EXPORT FCDControllerTools::ApplyTranslationMap (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDSkinController} $\ast$}]{ controller, }
+\item[{const {\bf FCDGeometryIndexTranslationMap} \&}]{ translationMap, }
+\item[{const {\bf UInt16List} \&}]{ packingMap, }
+\item[{{\bf fm::pvector}$<$ const {\bf FCDSkinControllerVertex} $>$ \&}]{ skinInfluences}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFCDControllerTools_a83e6026ea91b4495fc0faf58a7b5b6fa}
+Applies a translation map obtained from \hyperlink{namespaceFCDGeometryPolygonsTools_a7541340d15de908be8cc7f95d568d32c}{FCDGeometryPolygonsTools::GenerateUniqueIndices} to a given \hyperlink{classFCDSkinController}{FCDSkinController} to synchronize with the updated indices. This is useful for older engines and the applications that only support one index per face-\/vertex pair. 
+\begin{DoxyParams}{Parameters}
+\item[{\em controller}]The skin controller to process. \item[{\em translationMap}]The map that translates old vertex position indices into new indices. This map is recieved from \hyperlink{namespaceFCDGeometryPolygonsTools_a7541340d15de908be8cc7f95d568d32c}{FCDGeometryPolygonsTools::GenerateUniqueIndices}. \end{DoxyParams}

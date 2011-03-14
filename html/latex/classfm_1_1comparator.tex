@@ -1,0 +1,81 @@
+\hypertarget{classfm_1_1comparator}{
+\section{fm::comparator$<$ T $>$ Class Template Reference}
+\label{classfm_1_1comparator}\index{fm::comparator@{fm::comparator}}
+}
+
+
+{\ttfamily \#include $<$FMSort.h$>$}
+
+Inheritance diagram for fm::comparator$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfm_1_1comparator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classfm_1_1comparator_a08c191871b8d6e4a868571018d08cc6b}{$\sim$comparator} ()
+\item 
+virtual bool \hyperlink{classfm_1_1comparator_a4cc38737a2c598b76977625a75bc5c24}{compare} (const T \&a, const T \&b)
+\item 
+void \hyperlink{classfm_1_1comparator_abc9d0fddf1f79bd7028c519adf9f7908}{sort} (T $\ast$data, size\_\-t count)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$ class fm::comparator$<$ T $>$}
+
+A utility to sort arrays. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfm_1_1comparator_a08c191871b8d6e4a868571018d08cc6b}{
+\index{fm::comparator@{fm::comparator}!$\sim$comparator@{$\sim$comparator}}
+\index{$\sim$comparator@{$\sim$comparator}!fm::comparator@{fm::comparator}}
+\subsubsection[{$\sim$comparator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf fm::comparator}$<$ T $>$::$\sim${\bf comparator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classfm_1_1comparator_a08c191871b8d6e4a868571018d08cc6b}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classfm_1_1comparator_a4cc38737a2c598b76977625a75bc5c24}{
+\index{fm::comparator@{fm::comparator}!compare@{compare}}
+\index{compare@{compare}!fm::comparator@{fm::comparator}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual bool {\bf fm::comparator}$<$ T $>$::compare (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{ a, }
+\item[{const T \&}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classfm_1_1comparator_a4cc38737a2c598b76977625a75bc5c24}
+Compares two elements in ascending order, using operator$<$. Override this function to define your custom comparator. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The first element. \item[{\em b}]The second element. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a is smaller than b, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classfm_1_1icomparator_a8f1b1d5d8657fa5f852bf7b9437cefc9}{fm::icomparator$<$ T $>$}.
+
+\hypertarget{classfm_1_1comparator_abc9d0fddf1f79bd7028c519adf9f7908}{
+\index{fm::comparator@{fm::comparator}!sort@{sort}}
+\index{sort@{sort}!fm::comparator@{fm::comparator}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fm::comparator}$<$ T $>$::sort (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{ data, }
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classfm_1_1comparator_abc9d0fddf1f79bd7028c519adf9f7908}
+Sorts the given array using the quick sort algorithm. 
+\begin{DoxyParams}{Parameters}
+\item[{\em data}]The data array to sort. \item[{\em count}]The number of elements in the array. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FMath/\hyperlink{FMSort_8h}{FMSort.h}\end{DoxyCompactItemize}

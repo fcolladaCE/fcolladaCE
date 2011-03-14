@@ -1,0 +1,635 @@
+\hypertarget{classFUObjectContainer}{
+\section{FUObjectContainer$<$ ObjectClass $>$ Class Template Reference}
+\label{classFUObjectContainer}\index{FUObjectContainer@{FUObjectContainer}}
+}
+
+
+{\ttfamily \#include $<$FUObject.h$>$}
+
+Inheritance diagram for FUObjectContainer$<$ ObjectClass $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFUObjectContainer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFUObjectContainer_a97a68d6351d9cbb03cdf02138cffe822}{
+typedef ObjectClass $\ast$$\ast$ {\bfseries iterator}}
+\label{classFUObjectContainer_a97a68d6351d9cbb03cdf02138cffe822}
+
+\item 
+\hypertarget{classFUObjectContainer_accaa22e8a7435d4f62a2bd4b04beaf43}{
+typedef const ObjectClass $\ast$$\ast$ {\bfseries const\_\-iterator}}
+\label{classFUObjectContainer_accaa22e8a7435d4f62a2bd4b04beaf43}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classFUObjectContainer_a2536f916c73734766a0d5384c8b4e4fa}{$\sim$FUObjectContainer} ()
+\item 
+void \hyperlink{classFUObjectContainer_a6a5de13497a54059c8e64eeb0c7d4649}{clear} ()
+\item 
+size\_\-t \hyperlink{classFUObjectContainer_af113112622cecb6303ad80c9638581cd}{size} () const 
+\item 
+bool \hyperlink{classFUObjectContainer_ade02770e2fb1c1584756f7397e6217c1}{empty} () const 
+\item 
+ObjectClass $\ast$\& \hyperlink{classFUObjectContainer_a31bb811b878d95c6be48813e54b576eb}{front} ()
+\item 
+const ObjectClass $\ast$\& \hyperlink{classFUObjectContainer_a0492e4bbed66840780ed99fb39aca04c}{front} () const 
+\item 
+ObjectClass $\ast$\& \hyperlink{classFUObjectContainer_a706056bc564047b69ee3921402f17d5c}{back} ()
+\item 
+const ObjectClass $\ast$\& \hyperlink{classFUObjectContainer_a5b996cbc75ccca1f3251323eb528a634}{back} () const 
+\item 
+ObjectClass $\ast$ \hyperlink{classFUObjectContainer_ac03e95b5bb925d980a08fe87ea580d17}{at} (size\_\-t index)
+\item 
+const ObjectClass $\ast$ \hyperlink{classFUObjectContainer_ae7ab424e108015d69d2cace86e9f47b0}{at} (size\_\-t index) const 
+\item 
+{\footnotesize template$<$class INTEGER $>$ }\\ObjectClass $\ast$ \hyperlink{classFUObjectContainer_a930075fdd29acb874cacaf3f4a31cde1}{operator\mbox{[}$\,$\mbox{]}} (INTEGER index)
+\item 
+{\footnotesize template$<$class INTEGER $>$ }\\const ObjectClass $\ast$ \hyperlink{classFUObjectContainer_a9ccb9a78dc99bfed9a003d289b20cbc6}{operator\mbox{[}$\,$\mbox{]}} (INTEGER index) const 
+\item 
+iterator \hyperlink{classFUObjectContainer_afec7bfee54ac21da128ef9726b45895f}{begin} ()
+\item 
+const\_\-iterator \hyperlink{classFUObjectContainer_ac94e733aeaa214ebfc83a2266893a217}{begin} () const 
+\item 
+iterator \hyperlink{classFUObjectContainer_afa538b19b625b12df198dd5604d49ffa}{end} ()
+\item 
+const\_\-iterator \hyperlink{classFUObjectContainer_af0a3be7ae01b6803ac6dd4911ec9b740}{end} () const 
+\item 
+iterator \hyperlink{classFUObjectContainer_a789a4b7a1032d25f725ad43a124afc79}{find} (const ObjectClass $\ast$\hyperlink{classfm_1_1pvector_af6ced3802a18342adc0b26355d1b75bf}{item})
+\item 
+const\_\-iterator \hyperlink{classFUObjectContainer_a7bf320e12a4a134521a5eb0d1550d1fe}{find} (const ObjectClass $\ast$\hyperlink{classfm_1_1pvector_af6ced3802a18342adc0b26355d1b75bf}{item}) const 
+\item 
+void \hyperlink{classFUObjectContainer_a9a1a09f62802a2e9741a64e1c360562b}{push\_\-back} (ObjectClass $\ast$object)
+\item 
+iterator \hyperlink{classFUObjectContainer_a98521997753d6c926a8a95f7cae44889}{insert} (iterator \_\-iterator, ObjectClass $\ast$object)
+\item 
+void \hyperlink{classFUObjectContainer_ac2a100c856c985e4f8873a3e5ae78bc8}{insert} (size\_\-t index, ObjectClass $\ast$object)
+\item 
+{\footnotesize template$<$class \_\-It $>$ }\\void \hyperlink{classFUObjectContainer_a7a80b268403f74d794a09e6b057850da}{insert} (iterator \_\-where, \_\-It \_\-startIterator, \_\-It \_\-endIterator)
+\item 
+void \hyperlink{classFUObjectContainer_a5ca44ff29a0b7d9a0fe570c20128e4c7}{pop\_\-back} ()
+\item 
+void \hyperlink{classFUObjectContainer_acbc75007166b9ff643e19c3155521798}{pop\_\-front} ()
+\item 
+iterator \hyperlink{classFUObjectContainer_a33e43cf985c1d89f3b6cdf686c45a89a}{erase} (iterator \_\-it)
+\item 
+void \hyperlink{classFUObjectContainer_a074fe8d95fdcf84aa566ef1f3b8f5a62}{erase} (iterator first, iterator last)
+\item 
+void \hyperlink{classFUObjectContainer_a9120fc640d75119b516988e46c14e7b1}{erase} (size\_\-t first, size\_\-t last)
+\item 
+bool \hyperlink{classFUObjectContainer_abd0271c9bac9e03afb4fe0ee46f46fbf}{erase} (const ObjectClass $\ast$value)
+\item 
+iterator \hyperlink{classFUObjectContainer_a5eb14ee7d9342da1320df89c53e0bd26}{Detach} (iterator \_\-it)
+\item 
+void \hyperlink{classFUObjectContainer_acdd17688a17e2d2719cae789a5baf52f}{Detach} (iterator first, iterator last)
+\item 
+void \hyperlink{classFUObjectContainer_a9a337a5fd58808ae6133e2bba7e3fccf}{Detach} (size\_\-t first, size\_\-t last)
+\item 
+bool \hyperlink{classFUObjectContainer_a0ec6311406a55d9c5764fd433797fe8a}{Detach} (const ObjectClass $\ast$value)
+\item 
+void \hyperlink{classFUObjectContainer_a40f942b5f10e64778f5fd2e7b3ad69e6}{erase} (size\_\-t index)
+\item 
+void \hyperlink{classFUObjectContainer_a5b23781486e11fb4a42f3d58f4090c11}{reserve} (size\_\-t count)
+\item 
+bool \hyperlink{classFUObjectContainer_abbdf9da16c7fb4e65ea1e3c0d63dc4e8}{contains} (const ObjectClass $\ast$value) const 
+\item 
+\hyperlink{classFUObjectContainer_aa84fe4da7ea1e0440632e76f3c81ad19}{DEPRECATED} (3.05A,\char`\"{}FUObject::Release()\char`\"{}) bool release(const ObjectClass $\ast$value)
+\item 
+ObjectClass $\ast$ \hyperlink{classFUObjectContainer_a6f55ac27fc3ee7ce312405392a061a2c}{Add} ()
+\item 
+{\footnotesize template$<$class A1 $>$ }\\ObjectClass $\ast$ \hyperlink{classFUObjectContainer_a3e8cb0c8385944bffc86edb9211bc6c5}{Add} (const A1 \&arg1)
+\item 
+{\footnotesize template$<$class A1 , class A2 $>$ }\\ObjectClass $\ast$ \hyperlink{classFUObjectContainer_ae28150f3cdd2fb436abb24d7f53d3ef8}{Add} (const A1 \&arg1, const A2 \&arg2)
+\item 
+{\footnotesize template$<$class A1 , class A2 , class A3 $>$ }\\ObjectClass $\ast$ \hyperlink{classFUObjectContainer_afc882af5ef9f135c20d6cef1d3e9dc22}{Add} (const A1 \&arg1, const A2 \&arg2, const A3 \&arg3)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classFUObjectContainer_ac2ab4f1342e3c49e41362a4024fe411b}{OnOwnedObjectReleased} (\hyperlink{classFUObject}{FUObject} $\ast$object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename ObjectClass = FUObject$>$ class FUObjectContainer$<$ ObjectClass $>$}
+
+A contained object list. When this list is released, the contained objects are also released. Each object should have only one owner. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUObjectContainer_a2536f916c73734766a0d5384c8b4e4fa}{
+\index{FUObjectContainer@{FUObjectContainer}!$\sim$FUObjectContainer@{$\sim$FUObjectContainer}}
+\index{$\sim$FUObjectContainer@{$\sim$FUObjectContainer}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{$\sim$FUObjectContainer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ virtual {\bf FUObjectContainer}$<$ ObjectClass $>$::$\sim${\bf FUObjectContainer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUObjectContainer_a2536f916c73734766a0d5384c8b4e4fa}
+Destructor. Releases all the objects contained within this container. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUObjectContainer_a6f55ac27fc3ee7ce312405392a061a2c}{
+\index{FUObjectContainer@{FUObjectContainer}!Add@{Add}}
+\index{Add@{Add}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ ObjectClass$\ast$ {\bf FUObjectContainer}$<$ ObjectClass $>$::Add (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a6f55ac27fc3ee7ce312405392a061a2c}
+Adds a new empty object to the container. \begin{DoxyReturn}{Returns}
+The new empty object. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_a3e8cb0c8385944bffc86edb9211bc6c5}{
+\index{FUObjectContainer@{FUObjectContainer}!Add@{Add}}
+\index{Add@{Add}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ template$<$class A1 $>$ ObjectClass$\ast$ {\bf FUObjectContainer}$<$ ObjectClass $>$::Add (
+\begin{DoxyParamCaption}
+\item[{const A1 \&}]{ arg1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a3e8cb0c8385944bffc86edb9211bc6c5}
+Adds a new object to the container. 
+\begin{DoxyParams}{Parameters}
+\item[{\em arg1}]An constructor argument. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new object. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_ae28150f3cdd2fb436abb24d7f53d3ef8}{
+\index{FUObjectContainer@{FUObjectContainer}!Add@{Add}}
+\index{Add@{Add}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ template$<$class A1 , class A2 $>$ ObjectClass$\ast$ {\bf FUObjectContainer}$<$ ObjectClass $>$::Add (
+\begin{DoxyParamCaption}
+\item[{const A1 \&}]{ arg1, }
+\item[{const A2 \&}]{ arg2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_ae28150f3cdd2fb436abb24d7f53d3ef8}
+Adds a new object to the container. 
+\begin{DoxyParams}{Parameters}
+\item[{\em arg1}]A first constructor argument. \item[{\em arg2}]A second constructor argument. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new object. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_afc882af5ef9f135c20d6cef1d3e9dc22}{
+\index{FUObjectContainer@{FUObjectContainer}!Add@{Add}}
+\index{Add@{Add}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ template$<$class A1 , class A2 , class A3 $>$ ObjectClass$\ast$ {\bf FUObjectContainer}$<$ ObjectClass $>$::Add (
+\begin{DoxyParamCaption}
+\item[{const A1 \&}]{ arg1, }
+\item[{const A2 \&}]{ arg2, }
+\item[{const A3 \&}]{ arg3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_afc882af5ef9f135c20d6cef1d3e9dc22}
+Adds a new object to the container. 
+\begin{DoxyParams}{Parameters}
+\item[{\em arg1}]A first constructor argument. \item[{\em arg2}]A second constructor argument. \item[{\em arg3}]A third constructor argument. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new object. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_ac03e95b5bb925d980a08fe87ea580d17}{
+\index{FUObjectContainer@{FUObjectContainer}!at@{at}}
+\index{at@{at}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ ObjectClass$\ast$ {\bf FUObjectContainer}$<$ ObjectClass $>$::at (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_ac03e95b5bb925d980a08fe87ea580d17}
+Retrieves an indexed object in the list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]An index. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The given object. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_ae7ab424e108015d69d2cace86e9f47b0}{
+\index{FUObjectContainer@{FUObjectContainer}!at@{at}}
+\index{at@{at}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ const ObjectClass$\ast$ {\bf FUObjectContainer}$<$ ObjectClass $>$::at (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_ae7ab424e108015d69d2cace86e9f47b0}
+See above. \hypertarget{classFUObjectContainer_a706056bc564047b69ee3921402f17d5c}{
+\index{FUObjectContainer@{FUObjectContainer}!back@{back}}
+\index{back@{back}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ ObjectClass$\ast$\& {\bf FUObjectContainer}$<$ ObjectClass $>$::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a706056bc564047b69ee3921402f17d5c}
+Retrieves the last element of the container. \begin{DoxyReturn}{Returns}
+The last element in the container. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_a5b996cbc75ccca1f3251323eb528a634}{
+\index{FUObjectContainer@{FUObjectContainer}!back@{back}}
+\index{back@{back}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ const ObjectClass$\ast$\& {\bf FUObjectContainer}$<$ ObjectClass $>$::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a5b996cbc75ccca1f3251323eb528a634}
+See above. \hypertarget{classFUObjectContainer_afec7bfee54ac21da128ef9726b45895f}{
+\index{FUObjectContainer@{FUObjectContainer}!begin@{begin}}
+\index{begin@{begin}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_afec7bfee54ac21da128ef9726b45895f}
+Retrieves an iterator for the first element in the list. \begin{DoxyReturn}{Returns}
+an iterator for the first element in the list. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_ac94e733aeaa214ebfc83a2266893a217}{
+\index{FUObjectContainer@{FUObjectContainer}!begin@{begin}}
+\index{begin@{begin}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ const\_\-iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_ac94e733aeaa214ebfc83a2266893a217}
+See above. \hypertarget{classFUObjectContainer_a6a5de13497a54059c8e64eeb0c7d4649}{
+\index{FUObjectContainer@{FUObjectContainer}!clear@{clear}}
+\index{clear@{clear}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a6a5de13497a54059c8e64eeb0c7d4649}
+Clears and releases the object tracked by this object list. \hypertarget{classFUObjectContainer_abbdf9da16c7fb4e65ea1e3c0d63dc4e8}{
+\index{FUObjectContainer@{FUObjectContainer}!contains@{contains}}
+\index{contains@{contains}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ bool {\bf FUObjectContainer}$<$ ObjectClass $>$::contains (
+\begin{DoxyParamCaption}
+\item[{const ObjectClass $\ast$}]{ value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_abbdf9da16c7fb4e65ea1e3c0d63dc4e8}
+Retrieves whether this container owns a given object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]An object. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the object is owned by this container. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_aa84fe4da7ea1e0440632e76f3c81ad19}{
+\index{FUObjectContainer@{FUObjectContainer}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ {\bf FUObjectContainer}$<$ ObjectClass $>$::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{\char`\"{}FUObject::Release()\char`\"{}}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_aa84fe4da7ea1e0440632e76f3c81ad19}
+Releases a value contained within a list. Use this function only if there is no duplicate pointers within the list. \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000015}{Deprecated}]Use \hyperlink{classFUObject_a33be6852b877d7f29520bbe4722b846b}{FUObject::Release} instead. \end{Desc}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The value, contained within the list, to release. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the value was found and released. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_a0ec6311406a55d9c5764fd433797fe8a}{
+\index{FUObjectContainer@{FUObjectContainer}!Detach@{Detach}}
+\index{Detach@{Detach}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{Detach}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ bool {\bf FUObjectContainer}$<$ ObjectClass $>$::Detach (
+\begin{DoxyParamCaption}
+\item[{const ObjectClass $\ast$}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a0ec6311406a55d9c5764fd433797fe8a}
+Detaches a given value from the list. The object is not released, so after this call: it has no owner and must be released manually. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The value, contained within the list, to detach from it. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the value was found and detached from the list. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_a5eb14ee7d9342da1320df89c53e0bd26}{
+\index{FUObjectContainer@{FUObjectContainer}!Detach@{Detach}}
+\index{Detach@{Detach}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{Detach}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::Detach (
+\begin{DoxyParamCaption}
+\item[{iterator}]{ \_\-it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a5eb14ee7d9342da1320df89c53e0bd26}
+Detaches the value at the given position from the list. The object is not released, so after this call: it has no owner and must be released manually. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-it}]The list position for the value to remove. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_acdd17688a17e2d2719cae789a5baf52f}{
+\index{FUObjectContainer@{FUObjectContainer}!Detach@{Detach}}
+\index{Detach@{Detach}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{Detach}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::Detach (
+\begin{DoxyParamCaption}
+\item[{iterator}]{ first, }
+\item[{iterator}]{ last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_acdd17688a17e2d2719cae789a5baf52f}
+Detaches a range of values from the list. The objects are not released, so after this call: they have no owner and must be released manually. 
+\begin{DoxyParams}{Parameters}
+\item[{\em first}]The list position of the first value to remove. \item[{\em last}]The list position just passed the last value to remove. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_a9a337a5fd58808ae6133e2bba7e3fccf}{
+\index{FUObjectContainer@{FUObjectContainer}!Detach@{Detach}}
+\index{Detach@{Detach}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{Detach}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::Detach (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ first, }
+\item[{size\_\-t}]{ last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a9a337a5fd58808ae6133e2bba7e3fccf}
+Detaches a range of values from the list. The objects are not released, so after this call: they have no owner and must be released manually. 
+\begin{DoxyParams}{Parameters}
+\item[{\em first}]The index of the first value to remove. \item[{\em last}]The index just passed the last value to remove. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_ade02770e2fb1c1584756f7397e6217c1}{
+\index{FUObjectContainer@{FUObjectContainer}!empty@{empty}}
+\index{empty@{empty}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ bool {\bf FUObjectContainer}$<$ ObjectClass $>$::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_ade02770e2fb1c1584756f7397e6217c1}
+Retrieves whether there are values in this container. \begin{DoxyReturn}{Returns}
+Whether there are values in the container. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_af0a3be7ae01b6803ac6dd4911ec9b740}{
+\index{FUObjectContainer@{FUObjectContainer}!end@{end}}
+\index{end@{end}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ const\_\-iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_af0a3be7ae01b6803ac6dd4911ec9b740}
+See above. \hypertarget{classFUObjectContainer_afa538b19b625b12df198dd5604d49ffa}{
+\index{FUObjectContainer@{FUObjectContainer}!end@{end}}
+\index{end@{end}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_afa538b19b625b12df198dd5604d49ffa}
+Retrieves an iterator for the element after the last element in the list. \begin{DoxyReturn}{Returns}
+an iterator for the element after the last element in the list. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_a40f942b5f10e64778f5fd2e7b3ad69e6}{
+\index{FUObjectContainer@{FUObjectContainer}!erase@{erase}}
+\index{erase@{erase}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::erase (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a40f942b5f10e64778f5fd2e7b3ad69e6}
+Removes an indexed value contained within the list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the value to erase. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_a074fe8d95fdcf84aa566ef1f3b8f5a62}{
+\index{FUObjectContainer@{FUObjectContainer}!erase@{erase}}
+\index{erase@{erase}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::erase (
+\begin{DoxyParamCaption}
+\item[{iterator}]{ first, }
+\item[{iterator}]{ last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a074fe8d95fdcf84aa566ef1f3b8f5a62}
+Removes a range of values from the list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em first}]The list position of the first value to remove. \item[{\em last}]The list position just passed the last value to remove. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_a33e43cf985c1d89f3b6cdf686c45a89a}{
+\index{FUObjectContainer@{FUObjectContainer}!erase@{erase}}
+\index{erase@{erase}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::erase (
+\begin{DoxyParamCaption}
+\item[{iterator}]{ \_\-it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a33e43cf985c1d89f3b6cdf686c45a89a}
+Removes the value at the given position within the list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-it}]The list position for the value to remove. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_a9120fc640d75119b516988e46c14e7b1}{
+\index{FUObjectContainer@{FUObjectContainer}!erase@{erase}}
+\index{erase@{erase}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::erase (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ first, }
+\item[{size\_\-t}]{ last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a9120fc640d75119b516988e46c14e7b1}
+Removes a range of values from the list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em first}]The index of the first value to remove. \item[{\em last}]The index just passed the last value to remove. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_abd0271c9bac9e03afb4fe0ee46f46fbf}{
+\index{FUObjectContainer@{FUObjectContainer}!erase@{erase}}
+\index{erase@{erase}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ bool {\bf FUObjectContainer}$<$ ObjectClass $>$::erase (
+\begin{DoxyParamCaption}
+\item[{const ObjectClass $\ast$}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_abd0271c9bac9e03afb4fe0ee46f46fbf}
+Removes a value contained within the list, once. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The value, contained within the list, to erase from it. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the value was found and erased from the list. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_a789a4b7a1032d25f725ad43a124afc79}{
+\index{FUObjectContainer@{FUObjectContainer}!find@{find}}
+\index{find@{find}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::find (
+\begin{DoxyParamCaption}
+\item[{const ObjectClass $\ast$}]{ item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a789a4b7a1032d25f725ad43a124afc79}
+Retrieves an iterator for a given element in the list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em item}]An item of the list. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator for the given item. If the item is not found in the list, the \hyperlink{classFUObjectContainer_afa538b19b625b12df198dd5604d49ffa}{end()} iterator is returned. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_a7bf320e12a4a134521a5eb0d1550d1fe}{
+\index{FUObjectContainer@{FUObjectContainer}!find@{find}}
+\index{find@{find}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ const\_\-iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::find (
+\begin{DoxyParamCaption}
+\item[{const ObjectClass $\ast$}]{ item}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a7bf320e12a4a134521a5eb0d1550d1fe}
+See above. \hypertarget{classFUObjectContainer_a31bb811b878d95c6be48813e54b576eb}{
+\index{FUObjectContainer@{FUObjectContainer}!front@{front}}
+\index{front@{front}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ ObjectClass$\ast$\& {\bf FUObjectContainer}$<$ ObjectClass $>$::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a31bb811b878d95c6be48813e54b576eb}
+Retrieves the first element of the container. \begin{DoxyReturn}{Returns}
+The first element in the container. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_a0492e4bbed66840780ed99fb39aca04c}{
+\index{FUObjectContainer@{FUObjectContainer}!front@{front}}
+\index{front@{front}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ const ObjectClass$\ast$\& {\bf FUObjectContainer}$<$ ObjectClass $>$::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a0492e4bbed66840780ed99fb39aca04c}
+See above. \hypertarget{classFUObjectContainer_a7a80b268403f74d794a09e6b057850da}{
+\index{FUObjectContainer@{FUObjectContainer}!insert@{insert}}
+\index{insert@{insert}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ template$<$class \_\-It $>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::insert (
+\begin{DoxyParamCaption}
+\item[{iterator}]{ \_\-where, }
+\item[{\_\-It}]{ \_\-startIterator, }
+\item[{\_\-It}]{ \_\-endIterator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a7a80b268403f74d794a09e6b057850da}
+Inserts a list of object in the container's containment list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-where}]The iterator after which to insert the object. \item[{\em \_\-startIterator}]The iterator for the first object to insert. \item[{\em \_\-endIterator}]The iterator just passed the last object. This object will not be inserted. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_ac2a100c856c985e4f8873a3e5ae78bc8}{
+\index{FUObjectContainer@{FUObjectContainer}!insert@{insert}}
+\index{insert@{insert}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::insert (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index, }
+\item[{ObjectClass $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_ac2a100c856c985e4f8873a3e5ae78bc8}
+Inserts an object in the container's containment list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]Where to insert the object. \item[{\em object}]An object to insert. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_a98521997753d6c926a8a95f7cae44889}{
+\index{FUObjectContainer@{FUObjectContainer}!insert@{insert}}
+\index{insert@{insert}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ iterator {\bf FUObjectContainer}$<$ ObjectClass $>$::insert (
+\begin{DoxyParamCaption}
+\item[{iterator}]{ \_\-iterator, }
+\item[{ObjectClass $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a98521997753d6c926a8a95f7cae44889}
+Inserts an object in the container's containment list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-iterator}]The iterator after which to insert the object. \item[{\em object}]An object to insert. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The iterator to the inserted object. 
+\end{DoxyReturn}
+\hypertarget{classFUObjectContainer_ac2ab4f1342e3c49e41362a4024fe411b}{
+\index{FUObjectContainer@{FUObjectContainer}!OnOwnedObjectReleased@{OnOwnedObjectReleased}}
+\index{OnOwnedObjectReleased@{OnOwnedObjectReleased}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{OnOwnedObjectReleased}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ virtual void {\bf FUObjectContainer}$<$ ObjectClass $>$::OnOwnedObjectReleased (
+\begin{DoxyParamCaption}
+\item[{{\bf FUObject} $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classFUObjectContainer_ac2ab4f1342e3c49e41362a4024fe411b}
+Removes an object from the container's owned list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]A contained object. \end{DoxyParams}
+
+
+Implements \hyperlink{classFUObjectOwner_a4220f8365226a68c4786b63430966e2d}{FUObjectOwner}.
+
+\hypertarget{classFUObjectContainer_a9ccb9a78dc99bfed9a003d289b20cbc6}{
+\index{FUObjectContainer@{FUObjectContainer}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ template$<$class INTEGER $>$ const ObjectClass$\ast$ {\bf FUObjectContainer}$<$ ObjectClass $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{INTEGER}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a9ccb9a78dc99bfed9a003d289b20cbc6}
+See above. \hypertarget{classFUObjectContainer_a930075fdd29acb874cacaf3f4a31cde1}{
+\index{FUObjectContainer@{FUObjectContainer}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ template$<$class INTEGER $>$ ObjectClass$\ast$ {\bf FUObjectContainer}$<$ ObjectClass $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{INTEGER}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a930075fdd29acb874cacaf3f4a31cde1}
+See above. \hypertarget{classFUObjectContainer_a5ca44ff29a0b7d9a0fe570c20128e4c7}{
+\index{FUObjectContainer@{FUObjectContainer}!pop\_\-back@{pop\_\-back}}
+\index{pop\_\-back@{pop\_\-back}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{pop\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::pop\_\-back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a5ca44ff29a0b7d9a0fe570c20128e4c7}
+Removes the last value of the tracked object list. \hypertarget{classFUObjectContainer_acbc75007166b9ff643e19c3155521798}{
+\index{FUObjectContainer@{FUObjectContainer}!pop\_\-front@{pop\_\-front}}
+\index{pop\_\-front@{pop\_\-front}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{pop\_\-front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::pop\_\-front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_acbc75007166b9ff643e19c3155521798}
+Removes the first value of the object container. Warning: this function may result in large memory copies, since we use an array to contain objects. \hypertarget{classFUObjectContainer_a9a1a09f62802a2e9741a64e1c360562b}{
+\index{FUObjectContainer@{FUObjectContainer}!push\_\-back@{push\_\-back}}
+\index{push\_\-back@{push\_\-back}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{push\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::push\_\-back (
+\begin{DoxyParamCaption}
+\item[{ObjectClass $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a9a1a09f62802a2e9741a64e1c360562b}
+Adds an object to the container's containment list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]An object to contain. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_a5b23781486e11fb4a42f3d58f4090c11}{
+\index{FUObjectContainer@{FUObjectContainer}!reserve@{reserve}}
+\index{reserve@{reserve}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{reserve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ void {\bf FUObjectContainer}$<$ ObjectClass $>$::reserve (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_a5b23781486e11fb4a42f3d58f4090c11}
+Pre-\/caches the wanted number of pointers. Use this function to avoid many memory re-\/allocations. 
+\begin{DoxyParams}{Parameters}
+\item[{\em count}]The wanted number of pre-\/cached pointers. \end{DoxyParams}
+\hypertarget{classFUObjectContainer_af113112622cecb6303ad80c9638581cd}{
+\index{FUObjectContainer@{FUObjectContainer}!size@{size}}
+\index{size@{size}!FUObjectContainer@{FUObjectContainer}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename ObjectClass = FUObject$>$ size\_\-t {\bf FUObjectContainer}$<$ ObjectClass $>$::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUObjectContainer_af113112622cecb6303ad80c9638581cd}
+Retrieves the number of elements in the container. \begin{DoxyReturn}{Returns}
+The number of elements in the container. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUObject_8h}{FUObject.h}\end{DoxyCompactItemize}

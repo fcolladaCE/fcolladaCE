@@ -1,0 +1,109 @@
+\hypertarget{namespaceFUDaePassStateBlendEquation}{
+\section{FUDaePassStateBlendEquation Namespace Reference}
+\label{namespaceFUDaePassStateBlendEquation}\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4d}{Equation} \{ \par
+\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dab092c3ec69f13860f579508d0e47a330}{ADD} =  0x8006, 
+\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dabb495144c7ef77cb6ebc9807bc5361c2}{SUBTRACT} =  0x800A, 
+\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da49293419ee4f463e1356980b8b0562f6}{REVERSE\_\-SUBTRACT} =  0x800B, 
+\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da7e26fa0cea9f9dd487eadedf04db35f4}{MIN} =  0x8007, 
+\par
+\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da365a78bf457ea908c012e87d39186f92}{MAX} =  0x8008, 
+\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dabb32ec52faa6b9bbcc9582069e877d3f}{INVALID}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4d}{Equation} \hyperlink{namespaceFUDaePassStateBlendEquation_a97fa7b5710db8fb055a1af79f1e3a550}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaePassStateBlendEquation_a60dc55abbd20eda809e86265a727b151}{ToString} (\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4d}{Equation} equation)
+\item 
+\hyperlink{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4d}{Equation} \hyperlink{namespaceFUDaePassStateBlendEquation_ac1ff634a4c97213c7b57e6aef730cb2a}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The render state blend equation types. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4d}{
+\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!Equation@{Equation}}
+\index{Equation@{Equation}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}
+\subsubsection[{Equation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUDaePassStateBlendEquation::Equation}}}
+\label{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4d}
+A render state blend equation formula. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ADD@{ADD}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!ADD@{ADD}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dab092c3ec69f13860f579508d0e47a330}{
+ADD}
+\label{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dab092c3ec69f13860f579508d0e47a330}
+}]Will add the destination color with the source color. \index{SUBTRACT@{SUBTRACT}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!SUBTRACT@{SUBTRACT}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dabb495144c7ef77cb6ebc9807bc5361c2}{
+SUBTRACT}
+\label{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dabb495144c7ef77cb6ebc9807bc5361c2}
+}]Will substract the source color to the destination color. \index{REVERSE\_\-SUBTRACT@{REVERSE\_\-SUBTRACT}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!REVERSE\_\-SUBTRACT@{REVERSE\_\-SUBTRACT}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da49293419ee4f463e1356980b8b0562f6}{
+REVERSE\_\-SUBTRACT}
+\label{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da49293419ee4f463e1356980b8b0562f6}
+}]Will substract the destination color to the source color. \index{MIN@{MIN}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!MIN@{MIN}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da7e26fa0cea9f9dd487eadedf04db35f4}{
+MIN}
+\label{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da7e26fa0cea9f9dd487eadedf04db35f4}
+}]Will take the smaller of the destination color and the source color components. \index{MAX@{MAX}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!MAX@{MAX}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da365a78bf457ea908c012e87d39186f92}{
+MAX}
+\label{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4da365a78bf457ea908c012e87d39186f92}
+}]Will take the larger of the destination color and the source color components. \index{INVALID@{INVALID}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dabb32ec52faa6b9bbcc9582069e877d3f}{
+INVALID}
+\label{namespaceFUDaePassStateBlendEquation_ae93e86bb1bebea11494ca0085a6a6f4dabb32ec52faa6b9bbcc9582069e877d3f}
+}]An unknown blend equation. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaePassStateBlendEquation_a97fa7b5710db8fb055a1af79f1e3a550}{
+\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf Equation} FUDaePassStateBlendEquation::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateBlendEquation_a97fa7b5710db8fb055a1af79f1e3a550}
+Converts the COLLADA render state face type string to the blend equation type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The render state blend equation type string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The face type. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaePassStateBlendEquation_ac1ff634a4c97213c7b57e6aef730cb2a}{
+\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equation} FUDaePassStateBlendEquation::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaePassStateBlendEquation_ac1ff634a4c97213c7b57e6aef730cb2a}
+See above. \hypertarget{namespaceFUDaePassStateBlendEquation_a60dc55abbd20eda809e86265a727b151}{
+\index{FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaePassStateBlendEquation@{FUDaePassStateBlendEquation}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaePassStateBlendEquation::ToString (
+\begin{DoxyParamCaption}
+\item[{Equation}]{ equation}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateBlendEquation_a60dc55abbd20eda809e86265a727b151}
+Converts the blend equation type to its COLLADA render state blend equation type string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em equation}]The blend equation type. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state blend equation type string. 
+\end{DoxyReturn}

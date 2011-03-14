@@ -1,0 +1,111 @@
+\hypertarget{classFCDPhysicsForceFieldInstance}{
+\section{FCDPhysicsForceFieldInstance Class Reference}
+\label{classFCDPhysicsForceFieldInstance}\index{FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsForceFieldInstance.h$>$}
+
+Inheritance diagram for FCDPhysicsForceFieldInstance:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDPhysicsForceFieldInstance}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classFCDPhysicsForceFieldInstance_a538a834fe14a1aee5541f1d7b8a33d32}{$\sim$FCDPhysicsForceFieldInstance} ()
+\item 
+virtual \hyperlink{classFCDEntityInstance_a82e95eec7d9242bbedb336b0d35b59d3}{Type} \hyperlink{classFCDPhysicsForceFieldInstance_a6c7921f3ba25d5236877ddf966a67886}{GetType} () const 
+\item 
+virtual \hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$ \hyperlink{classFCDPhysicsForceFieldInstance_a94639f782500a04f469aaf7ed3154d3f}{Clone} (\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPhysicsForceFieldInstance_a3526e93c73189268805f024bf1cf8331}{FCDPhysicsForceFieldInstance} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent, \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{FCDEntity::Type} entityType=FCDEntity::FORCE\_\-FIELD)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFCDPhysicsForceFieldInstance_a069ebb98497ccbc5fdcb75ecfa8b15f7}{
+class \hyperlink{classFCDPhysicsForceFieldInstance_a069ebb98497ccbc5fdcb75ecfa8b15f7}{FCDEntityInstanceFactory}}
+\label{classFCDPhysicsForceFieldInstance_a069ebb98497ccbc5fdcb75ecfa8b15f7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA force field instance. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPhysicsForceFieldInstance_a3526e93c73189268805f024bf1cf8331}{
+\index{FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}!FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}}
+\index{FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}!FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}}
+\subsubsection[{FCDPhysicsForceFieldInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsForceFieldInstance::FCDPhysicsForceFieldInstance (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent, }
+\item[{{\bf FCDEntity::Type}}]{ entityType = {\ttfamily FCDEntity::FORCE\_\-FIELD}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classFCDPhysicsForceFieldInstance_a3526e93c73189268805f024bf1cf8331}
+Constructor: do not use directly. Create new physics force fields using the \hyperlink{classFCDEntityInstanceFactory_a1086af84220cd2d77a2c63c8f59a7b1a}{FCDEntityInstanceFactory::CreateInstance} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this physics model instance. \item[{\em parent}]The parent node for this force field. At the time of writing, this should be NULL since only parents are physics model instances and physics scene. \item[{\em entityType}]The entity type: FORCE\_\-FIELD. \end{DoxyParams}
+\hypertarget{classFCDPhysicsForceFieldInstance_a538a834fe14a1aee5541f1d7b8a33d32}{
+\index{FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}!$\sim$FCDPhysicsForceFieldInstance@{$\sim$FCDPhysicsForceFieldInstance}}
+\index{$\sim$FCDPhysicsForceFieldInstance@{$\sim$FCDPhysicsForceFieldInstance}!FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}}
+\subsubsection[{$\sim$FCDPhysicsForceFieldInstance}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsForceFieldInstance::$\sim$FCDPhysicsForceFieldInstance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsForceFieldInstance_a538a834fe14a1aee5541f1d7b8a33d32}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPhysicsForceFieldInstance_a94639f782500a04f469aaf7ed3154d3f}{
+\index{FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntityInstance} $\ast$ FCDPhysicsForceFieldInstance::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntityInstance} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsForceFieldInstance_a94639f782500a04f469aaf7ed3154d3f}
+Clones the physics force field instance. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The physics force field instance to become the clone. If this pointer is NULL, a new physics force field instance will be created and you will need to release it. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a64b11d12fcf0151800084f66bbbeb2d6}{FCDEntityInstance}.
+
+\hypertarget{classFCDPhysicsForceFieldInstance_a6c7921f3ba25d5236877ddf966a67886}{
+\index{FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDPhysicsForceFieldInstance@{FCDPhysicsForceFieldInstance}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDPhysicsForceFieldInstance::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPhysicsForceFieldInstance_a6c7921f3ba25d5236877ddf966a67886}
+Retrieves the entity instance class type. This is used to determine the up-\/class for the entity instance object. \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000012}{Deprecated}]Instead use: \hyperlink{classFUObject_ab838ad4132b756dcd3614440b8e32f2a}{FCDEntityInstance::HasType}( \hyperlink{classFUObject_a907d4f6d284b3ac4f8203d557af41668}{FCDGeometryInstance::GetClassType()}) \end{Desc}
+\begin{DoxyReturn}{Returns}
+The class type: PHYSICS\_\-FORCE\_\-FIELD. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntityInstance_a773c2cfdbad937e93da7a3fa71a671a7}{FCDEntityInstance}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsForceFieldInstance_8h}{FCDPhysicsForceFieldInstance.h}\item 
+FCollada/FCDocument/FCDPhysicsForceFieldInstance.cpp\end{DoxyCompactItemize}

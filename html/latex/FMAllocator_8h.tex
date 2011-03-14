@@ -1,0 +1,34 @@
+\hypertarget{FMAllocator_8h}{
+\section{FCollada/FMath/FMAllocator.h File Reference}
+\label{FMAllocator_8h}\index{FCollada/FMath/FMAllocator.h@{FCollada/FMath/FMAllocator.h}}
+}
+{\ttfamily \#include $<$new$>$}\par
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacefm}{fm}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$($\ast$ \hyperlink{namespacefm_a97324e93febfca76d5ed574a89c0197d}{fm::AllocateFunc} )(size\_\-t size)
+\item 
+typedef void($\ast$ \hyperlink{namespacefm_a9b240a6540d27367231e6fd6d93ec35c}{fm::FreeFunc} )(void $\ast$buffer)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacefm_a08282cf09faa7bc67137a62ba56b329c}{fm::SetAllocationFunctions} (AllocateFunc a, FreeFunc f)
+\item 
+void $\ast$ \hyperlink{namespacefm_a554b71c8980290cf12761186ad36c08a}{fm::Allocate} (size\_\-t byteCount)
+\item 
+void \hyperlink{namespacefm_ac85d46ada49418f6c4b758bc96f24cbf}{fm::Release} (void $\ast$buffer)
+\item 
+{\footnotesize template$<$class Type1 $>$ }\\void \hyperlink{namespacefm_abb21e5b6aed1f1af6dd80d0b319c2a93}{fm::Construct} (Type1 $\ast$o)
+\item 
+{\footnotesize template$<$class Type1 , class Type2 $>$ }\\void \hyperlink{namespacefm_a2f7f76266bc5e32b58c3258289492367}{fm::Construct} (Type1 $\ast$o, const Type2 \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The file contains the simple\_\-allocator class and some export memory management functions. 

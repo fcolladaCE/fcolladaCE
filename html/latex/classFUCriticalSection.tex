@@ -1,0 +1,72 @@
+\hypertarget{classFUCriticalSection}{
+\section{FUCriticalSection Class Reference}
+\label{classFUCriticalSection}\index{FUCriticalSection@{FUCriticalSection}}
+}
+
+
+{\ttfamily \#include $<$FUCriticalSection.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUCriticalSection_acdb9b7289811342a3c3567fa4457e789}{FUCriticalSection} ()
+\item 
+\hyperlink{classFUCriticalSection_a6f2d184126a8d4259ebb36d9cf59ece5}{$\sim$FUCriticalSection} ()
+\item 
+void \hyperlink{classFUCriticalSection_a8c501b5f6d4ef387bceb89f1d0be8dcb}{Enter} ()
+\item 
+void \hyperlink{classFUCriticalSection_addb2b27c543b8598e636966438093c6e}{Leave} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An OS dependent critical section.
+
+Currently only supported for WIN32. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUCriticalSection_acdb9b7289811342a3c3567fa4457e789}{
+\index{FUCriticalSection@{FUCriticalSection}!FUCriticalSection@{FUCriticalSection}}
+\index{FUCriticalSection@{FUCriticalSection}!FUCriticalSection@{FUCriticalSection}}
+\subsubsection[{FUCriticalSection}]{\setlength{\rightskip}{0pt plus 5cm}FUCriticalSection::FUCriticalSection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUCriticalSection_acdb9b7289811342a3c3567fa4457e789}
+Constructor. \hypertarget{classFUCriticalSection_a6f2d184126a8d4259ebb36d9cf59ece5}{
+\index{FUCriticalSection@{FUCriticalSection}!$\sim$FUCriticalSection@{$\sim$FUCriticalSection}}
+\index{$\sim$FUCriticalSection@{$\sim$FUCriticalSection}!FUCriticalSection@{FUCriticalSection}}
+\subsubsection[{$\sim$FUCriticalSection}]{\setlength{\rightskip}{0pt plus 5cm}FUCriticalSection::$\sim$FUCriticalSection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUCriticalSection_a6f2d184126a8d4259ebb36d9cf59ece5}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUCriticalSection_a8c501b5f6d4ef387bceb89f1d0be8dcb}{
+\index{FUCriticalSection@{FUCriticalSection}!Enter@{Enter}}
+\index{Enter@{Enter}!FUCriticalSection@{FUCriticalSection}}
+\subsubsection[{Enter}]{\setlength{\rightskip}{0pt plus 5cm}void FUCriticalSection::Enter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUCriticalSection_a8c501b5f6d4ef387bceb89f1d0be8dcb}
+Enters the critical section, blocking if another thread is already in. Note: a thread may call Enter multiple times and it will still enter to prevent it from deadlocking itself. It must then call Leave the same number of times. \hypertarget{classFUCriticalSection_addb2b27c543b8598e636966438093c6e}{
+\index{FUCriticalSection@{FUCriticalSection}!Leave@{Leave}}
+\index{Leave@{Leave}!FUCriticalSection@{FUCriticalSection}}
+\subsubsection[{Leave}]{\setlength{\rightskip}{0pt plus 5cm}void FUCriticalSection::Leave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUCriticalSection_addb2b27c543b8598e636966438093c6e}
+Leaves the critical section, allowing other threads to enter. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUCriticalSection_8h}{FUCriticalSection.h}\item 
+FCollada/FUtils/FUCriticalSection.cpp\end{DoxyCompactItemize}

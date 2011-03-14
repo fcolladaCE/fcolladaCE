@@ -1,0 +1,74 @@
+\hypertarget{classFCDConversionFunctor}{
+\section{FCDConversionFunctor Class Reference}
+\label{classFCDConversionFunctor}\index{FCDConversionFunctor@{FCDConversionFunctor}}
+}
+
+
+{\ttfamily \#include $<$FCDAnimationCurve.h$>$}
+
+Inheritance diagram for FCDConversionFunctor:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFCDConversionFunctor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDConversionFunctor_aab15aedc7c2a7d0432d4fbd67c8b903c}{FCDConversionFunctor} ()
+\item 
+virtual \hyperlink{classFCDConversionFunctor_a7c986aa2bba9d01376c1f8eeae40e14f}{$\sim$FCDConversionFunctor} ()
+\item 
+virtual float \hyperlink{classFCDConversionFunctor_af94a77c95015ec514d041b9c71a549e2}{operator()} (float v)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple conversion functor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDConversionFunctor_aab15aedc7c2a7d0432d4fbd67c8b903c}{
+\index{FCDConversionFunctor@{FCDConversionFunctor}!FCDConversionFunctor@{FCDConversionFunctor}}
+\index{FCDConversionFunctor@{FCDConversionFunctor}!FCDConversionFunctor@{FCDConversionFunctor}}
+\subsubsection[{FCDConversionFunctor}]{\setlength{\rightskip}{0pt plus 5cm}FCDConversionFunctor::FCDConversionFunctor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDConversionFunctor_aab15aedc7c2a7d0432d4fbd67c8b903c}
+Constructor. \hypertarget{classFCDConversionFunctor_a7c986aa2bba9d01376c1f8eeae40e14f}{
+\index{FCDConversionFunctor@{FCDConversionFunctor}!$\sim$FCDConversionFunctor@{$\sim$FCDConversionFunctor}}
+\index{$\sim$FCDConversionFunctor@{$\sim$FCDConversionFunctor}!FCDConversionFunctor@{FCDConversionFunctor}}
+\subsubsection[{$\sim$FCDConversionFunctor}]{\setlength{\rightskip}{0pt plus 5cm}virtual FCDConversionFunctor::$\sim$FCDConversionFunctor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDConversionFunctor_a7c986aa2bba9d01376c1f8eeae40e14f}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDConversionFunctor_af94a77c95015ec514d041b9c71a549e2}{
+\index{FCDConversionFunctor@{FCDConversionFunctor}!operator()@{operator()}}
+\index{operator()@{operator()}!FCDConversionFunctor@{FCDConversionFunctor}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual float FCDConversionFunctor::operator() (
+\begin{DoxyParamCaption}
+\item[{float}]{ v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classFCDConversionFunctor_af94a77c95015ec514d041b9c71a549e2}
+Main functor to override. 
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]The value to convert. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The converted value. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFCDConversionScaleFunctor_a7e4410b974d4d79b5c7211cc42032d87}{FCDConversionScaleFunctor}, and \hyperlink{classFCDConversionOffsetFunctor_ad9fa76a47de5e11521394e7eff97e2f7}{FCDConversionOffsetFunctor}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDAnimationCurve_8h}{FCDAnimationCurve.h}\end{DoxyCompactItemize}

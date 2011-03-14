@@ -1,0 +1,239 @@
+\hypertarget{FCDParameterAnimatable_8h}{
+\section{FCollada/FCDocument/FCDParameterAnimatable.h File Reference}
+\label{FCDParameterAnimatable_8h}\index{FCollada/FCDocument/FCDParameterAnimatable.h@{FCollada/FCDocument/FCDParameterAnimatable.h}}
+}
+{\ttfamily \#include $<$FUtils/FUParameter.h$>$}\par
+{\ttfamily \#include $<$FMath/FMAngleAxis.h$>$}\par
+{\ttfamily \#include $<$FMath/FMLookAt.h$>$}\par
+{\ttfamily \#include $<$FMath/FMSkew.h$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFCDParameterAnimatable}{FCDParameterAnimatable}
+\item 
+class \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT$<$ TYPE, QUALIFIERS $>$}
+\item 
+class \hyperlink{classFCDParameterListAnimatable}{FCDParameterListAnimatable}
+\item 
+class \hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableT$<$ TYPE, QUALIFIERS $>$}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{FCDParameterAnimatable_8h_adbbb53d0b4c6015338af222222ea75e5}{DeclareParameterAnimatable}(type, qual, parameterName, niceName)
+\item 
+\#define \hyperlink{FCDParameterAnimatable_8h_af4c6cf0d0b9d38310ca69ede10350532}{DeclareParameterListAnimatable}(type, qual, parameterName, niceName)
+\item 
+\#define \hyperlink{FCDParameterAnimatable_8h_ab8fc97067463511aea252d1594c6a4a7}{InitializeParameterAnimatableNoArg}(parameterName)~parameterName(this)
+\item 
+\#define \hyperlink{FCDParameterAnimatable_8h_a89dfadf3d9fe067ad46bc85a43b1fa93}{InitializeParameterAnimatable}(parameterName,...)~parameterName(this, \_\-\_\-VA\_\-ARGS\_\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ float, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_a7699d704107ee36419800e2c791bd9ef}{FCDParameterAnimatableFloat}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMVector2}{FMVector2}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_a7c7ad7dfaaea9beb21962da624ea1360}{FCDParameterAnimatableVector2}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMVector3}{FMVector3}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_a85dc293791fe2fe2d322dc838bf90d04}{FCDParameterAnimatableVector3}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMVector3}{FMVector3}, 1 $>$ \hyperlink{FCDParameterAnimatable_8h_acb02ef096cf82173a0079e77b1908345}{FCDParameterAnimatableColor3}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMVector4}{FMVector4}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_a995c0529ba76bcb52c2b4fc55570aa0b}{FCDParameterAnimatableVector4}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMVector4}{FMVector4}, 1 $>$ \hyperlink{FCDParameterAnimatable_8h_a43eb2f631d8d18ec4ae436a8990bc359}{FCDParameterAnimatableColor4}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMMatrix44}{FMMatrix44}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_a2368a50dd46f38c2f0eff12c7b960386}{FCDParameterAnimatableMatrix44}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMAngleAxis}{FMAngleAxis}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_ab18438f48c6f8b8888d2dcaab0181922}{FCDParameterAnimatableAngleAxis}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMLookAt}{FMLookAt}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_ae33681977d1c811194b0ea1d7992ef9a}{FCDParameterAnimatableLookAt}
+\item 
+typedef \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ \hyperlink{classFMSkew}{FMSkew}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_abb0a8ce3e20e369248c37639d653b2b1}{FCDParameterAnimatableSkew}
+\item 
+typedef \hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableT}$<$ float, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_a81c285157d5494d46c56f6abb15c2c0c}{FCDParameterListAnimatableFloat}
+\item 
+typedef \hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableT}$<$ \hyperlink{classFMVector2}{FMVector2}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_a8ec34442a93f2589b2dfc46461a46d2a}{FCDParameterListAnimatableVector2}
+\item 
+typedef \hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableT}$<$ \hyperlink{classFMVector3}{FMVector3}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_a77bcf55236e4352a6e33b212b5a6390d}{FCDParameterListAnimatableVector3}
+\item 
+typedef \hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableT}$<$ \hyperlink{classFMVector3}{FMVector3}, 1 $>$ \hyperlink{FCDParameterAnimatable_8h_ad69218de9589c23ecb22fdf96a75808c}{FCDParameterListAnimatableColor3}
+\item 
+typedef \hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableT}$<$ \hyperlink{classFMVector4}{FMVector4}, 0 $>$ \hyperlink{FCDParameterAnimatable_8h_aeaaba5e7e9410f45a8da4ff46ccf9a3c}{FCDParameterListAnimatableVector4}
+\item 
+typedef \hyperlink{classFCDParameterListAnimatableT}{FCDParameterListAnimatableT}$<$ \hyperlink{classFMVector4}{FMVector4}, 1 $>$ \hyperlink{FCDParameterAnimatable_8h_aae22e5cf37d539f8be19273eec7640d3}{FCDParameterListAnimatableColor4}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the \hyperlink{classFCDParameterAnimatable}{FCDParameterAnimatable} template and related functions. 
+
+\subsection{Define Documentation}
+\hypertarget{FCDParameterAnimatable_8h_adbbb53d0b4c6015338af222222ea75e5}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!DeclareParameterAnimatable@{DeclareParameterAnimatable}}
+\index{DeclareParameterAnimatable@{DeclareParameterAnimatable}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{DeclareParameterAnimatable}]{\setlength{\rightskip}{0pt plus 5cm}\#define DeclareParameterAnimatable(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{qual, }
+\item[{}]{parameterName, }
+\item[{}]{niceName}
+\end{DoxyParamCaption}
+)}}
+\label{FCDParameterAnimatable_8h_adbbb53d0b4c6015338af222222ea75e5}
+{\bfseries Value:}
+\begin{DoxyCode}
+class Parameter_##parameterName : public FCDParameterAnimatableT<type, qual> { \
+        public: Parameter_##parameterName(FUParameterizable* parent) : 
+      FCDParameterAnimatableT<type, qual>(parent) {} \
+        Parameter_##parameterName(FUParameterizable* parent, const type& defaultV
+      alue) : FCDParameterAnimatableT<type, qual>(parent, defaultValue) {} \
+        virtual ~Parameter_##parameterName() {} \
+        Parameter_##parameterName& operator= (const type& copy) { 
+      FCDParameterAnimatableT<type, qual>::operator=(copy); return *this; } \
+        } parameterName;
+\end{DoxyCode}
+Declares an animatable parameter for the objects of the current class. Use this macro within a class declaration to add an animatable parameter to it. The different versions of this macro are used for different parameter types:
+
+For floats, Booleans, vectors and strings, use DeclareParameterAnimatable. For arrays of floats, Booleans, vectors and strings, use DeclareParameterListAnimatable. For tracked pointers, use DeclareParameterPtr. For contained pointers, use DeclareParameterRef. For tracked lists of objects, use DeclareParameterTrackList. For containers of objects, use DeclareParameterContainer.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The value type of the animatable parameter. Ex: float, bool, \hyperlink{classFMVector4}{FMVector4} or string. \item[{\em qual}]The qualifier for the animatable parameter type. \end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespaceFUParameterQualifiers_a3eda99ee3b301da228d3df63a75d3612}{FUParameterQualifiers::Qualifiers}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameterName}]The member variable name for the animatable parameter. \item[{\em niceName}]The Unicode string to identify this animatable parameter to users. \end{DoxyParams}
+\hypertarget{FCDParameterAnimatable_8h_af4c6cf0d0b9d38310ca69ede10350532}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!DeclareParameterListAnimatable@{DeclareParameterListAnimatable}}
+\index{DeclareParameterListAnimatable@{DeclareParameterListAnimatable}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{DeclareParameterListAnimatable}]{\setlength{\rightskip}{0pt plus 5cm}\#define DeclareParameterListAnimatable(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{qual, }
+\item[{}]{parameterName, }
+\item[{}]{niceName}
+\end{DoxyParamCaption}
+)}}
+\label{FCDParameterAnimatable_8h_af4c6cf0d0b9d38310ca69ede10350532}
+{\bfseries Value:}
+\begin{DoxyCode}
+class Parameter_##parameterName : public FCDParameterListAnimatableT<type, qual> 
+      { \
+        public: Parameter_##parameterName(FUParameterizable* parent) : 
+      FCDParameterListAnimatableT<type, qual>(parent) {} \
+        virtual ~Parameter_##parameterName() {} \
+        } parameterName;
+\end{DoxyCode}
+See above. \hypertarget{FCDParameterAnimatable_8h_a89dfadf3d9fe067ad46bc85a43b1fa93}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!InitializeParameterAnimatable@{InitializeParameterAnimatable}}
+\index{InitializeParameterAnimatable@{InitializeParameterAnimatable}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{InitializeParameterAnimatable}]{\setlength{\rightskip}{0pt plus 5cm}\#define InitializeParameterAnimatable(
+\begin{DoxyParamCaption}
+\item[{}]{parameterName, }
+\item[{}]{ ...}
+\end{DoxyParamCaption}
+)~parameterName(this, \_\-\_\-VA\_\-ARGS\_\-\_\-)}}
+\label{FCDParameterAnimatable_8h_a89dfadf3d9fe067ad46bc85a43b1fa93}
+See above. \hypertarget{FCDParameterAnimatable_8h_ab8fc97067463511aea252d1594c6a4a7}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!InitializeParameterAnimatableNoArg@{InitializeParameterAnimatableNoArg}}
+\index{InitializeParameterAnimatableNoArg@{InitializeParameterAnimatableNoArg}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{InitializeParameterAnimatableNoArg}]{\setlength{\rightskip}{0pt plus 5cm}\#define InitializeParameterAnimatableNoArg(
+\begin{DoxyParamCaption}
+\item[{}]{parameterName}
+\end{DoxyParamCaption}
+)~parameterName(this)}}
+\label{FCDParameterAnimatable_8h_ab8fc97067463511aea252d1594c6a4a7}
+Initializes the member variable for an animatable parameter. Either one of these macros must be included for each member animatable parameter of a class, within that class' constructors. The different versions of this macro are used for different contexts:
+
+For a parameter where the default constructor is to be used, use InitializeParameterAnimatableNoArg. For a parameter where one or more values should be used in the constructor, use InitializeParameterAnimatable.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameterName}]The member variable name of the parameter within the class. \end{DoxyParams}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{FCDParameterAnimatable_8h_ab18438f48c6f8b8888d2dcaab0181922}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableAngleAxis@{FCDParameterAnimatableAngleAxis}}
+\index{FCDParameterAnimatableAngleAxis@{FCDParameterAnimatableAngleAxis}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableAngleAxis}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMAngleAxis}, 0$>$ {\bf FCDParameterAnimatableAngleAxis}}}
+\label{FCDParameterAnimatable_8h_ab18438f48c6f8b8888d2dcaab0181922}
+An angle-\/axis rotation animatable parameter. \hypertarget{FCDParameterAnimatable_8h_acb02ef096cf82173a0079e77b1908345}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableColor3@{FCDParameterAnimatableColor3}}
+\index{FCDParameterAnimatableColor3@{FCDParameterAnimatableColor3}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableColor3}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMVector3}, 1$>$ {\bf FCDParameterAnimatableColor3}}}
+\label{FCDParameterAnimatable_8h_acb02ef096cf82173a0079e77b1908345}
+A 3D vector animatable parameter. \hypertarget{FCDParameterAnimatable_8h_a43eb2f631d8d18ec4ae436a8990bc359}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableColor4@{FCDParameterAnimatableColor4}}
+\index{FCDParameterAnimatableColor4@{FCDParameterAnimatableColor4}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableColor4}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMVector4}, 1$>$ {\bf FCDParameterAnimatableColor4}}}
+\label{FCDParameterAnimatable_8h_a43eb2f631d8d18ec4ae436a8990bc359}
+A 4D color animatable parameter. \hypertarget{FCDParameterAnimatable_8h_a7699d704107ee36419800e2c791bd9ef}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableFloat@{FCDParameterAnimatableFloat}}
+\index{FCDParameterAnimatableFloat@{FCDParameterAnimatableFloat}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableFloat}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<$float, 0$>$ {\bf FCDParameterAnimatableFloat}}}
+\label{FCDParameterAnimatable_8h_a7699d704107ee36419800e2c791bd9ef}
+A floating-\/point value animatable parameter. \hypertarget{FCDParameterAnimatable_8h_ae33681977d1c811194b0ea1d7992ef9a}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableLookAt@{FCDParameterAnimatableLookAt}}
+\index{FCDParameterAnimatableLookAt@{FCDParameterAnimatableLookAt}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableLookAt}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMLookAt}, 0$>$ {\bf FCDParameterAnimatableLookAt}}}
+\label{FCDParameterAnimatable_8h_ae33681977d1c811194b0ea1d7992ef9a}
+A look-\/at animatable parameter. \hypertarget{FCDParameterAnimatable_8h_a2368a50dd46f38c2f0eff12c7b960386}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableMatrix44@{FCDParameterAnimatableMatrix44}}
+\index{FCDParameterAnimatableMatrix44@{FCDParameterAnimatableMatrix44}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableMatrix44}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMMatrix44}, 0$>$ {\bf FCDParameterAnimatableMatrix44}}}
+\label{FCDParameterAnimatable_8h_a2368a50dd46f38c2f0eff12c7b960386}
+A matrix animatable parameter. \hypertarget{FCDParameterAnimatable_8h_abb0a8ce3e20e369248c37639d653b2b1}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableSkew@{FCDParameterAnimatableSkew}}
+\index{FCDParameterAnimatableSkew@{FCDParameterAnimatableSkew}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableSkew}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMSkew}, 0$>$ {\bf FCDParameterAnimatableSkew}}}
+\label{FCDParameterAnimatable_8h_abb0a8ce3e20e369248c37639d653b2b1}
+A skew animatable parameter. \hypertarget{FCDParameterAnimatable_8h_a7c7ad7dfaaea9beb21962da624ea1360}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableVector2@{FCDParameterAnimatableVector2}}
+\index{FCDParameterAnimatableVector2@{FCDParameterAnimatableVector2}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableVector2}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMVector2}, 0$>$ {\bf FCDParameterAnimatableVector2}}}
+\label{FCDParameterAnimatable_8h_a7c7ad7dfaaea9beb21962da624ea1360}
+A 2D vector animatable parameter. \hypertarget{FCDParameterAnimatable_8h_a85dc293791fe2fe2d322dc838bf90d04}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableVector3@{FCDParameterAnimatableVector3}}
+\index{FCDParameterAnimatableVector3@{FCDParameterAnimatableVector3}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableVector3}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMVector3}, 0$>$ {\bf FCDParameterAnimatableVector3}}}
+\label{FCDParameterAnimatable_8h_a85dc293791fe2fe2d322dc838bf90d04}
+A 3D vector animatable parameter. \hypertarget{FCDParameterAnimatable_8h_a995c0529ba76bcb52c2b4fc55570aa0b}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterAnimatableVector4@{FCDParameterAnimatableVector4}}
+\index{FCDParameterAnimatableVector4@{FCDParameterAnimatableVector4}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterAnimatableVector4}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterAnimatableT}$<${\bf FMVector4}, 0$>$ {\bf FCDParameterAnimatableVector4}}}
+\label{FCDParameterAnimatable_8h_a995c0529ba76bcb52c2b4fc55570aa0b}
+A 4D vector animatable parameter. \hypertarget{FCDParameterAnimatable_8h_ad69218de9589c23ecb22fdf96a75808c}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterListAnimatableColor3@{FCDParameterListAnimatableColor3}}
+\index{FCDParameterListAnimatableColor3@{FCDParameterListAnimatableColor3}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterListAnimatableColor3}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterListAnimatableT}$<${\bf FMVector3}, 1$>$ {\bf FCDParameterListAnimatableColor3}}}
+\label{FCDParameterAnimatable_8h_ad69218de9589c23ecb22fdf96a75808c}
+A 3D color animatable list parameter. \hypertarget{FCDParameterAnimatable_8h_aae22e5cf37d539f8be19273eec7640d3}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterListAnimatableColor4@{FCDParameterListAnimatableColor4}}
+\index{FCDParameterListAnimatableColor4@{FCDParameterListAnimatableColor4}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterListAnimatableColor4}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterListAnimatableT}$<${\bf FMVector4}, 1$>$ {\bf FCDParameterListAnimatableColor4}}}
+\label{FCDParameterAnimatable_8h_aae22e5cf37d539f8be19273eec7640d3}
+A 4D color animatable list parameter. \hypertarget{FCDParameterAnimatable_8h_a81c285157d5494d46c56f6abb15c2c0c}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterListAnimatableFloat@{FCDParameterListAnimatableFloat}}
+\index{FCDParameterListAnimatableFloat@{FCDParameterListAnimatableFloat}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterListAnimatableFloat}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterListAnimatableT}$<$float, 0$>$ {\bf FCDParameterListAnimatableFloat}}}
+\label{FCDParameterAnimatable_8h_a81c285157d5494d46c56f6abb15c2c0c}
+A floating-\/point value animatable list parameter. \hypertarget{FCDParameterAnimatable_8h_a8ec34442a93f2589b2dfc46461a46d2a}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterListAnimatableVector2@{FCDParameterListAnimatableVector2}}
+\index{FCDParameterListAnimatableVector2@{FCDParameterListAnimatableVector2}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterListAnimatableVector2}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterListAnimatableT}$<${\bf FMVector2}, 0$>$ {\bf FCDParameterListAnimatableVector2}}}
+\label{FCDParameterAnimatable_8h_a8ec34442a93f2589b2dfc46461a46d2a}
+A 2D vector animatable list parameter. \hypertarget{FCDParameterAnimatable_8h_a77bcf55236e4352a6e33b212b5a6390d}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterListAnimatableVector3@{FCDParameterListAnimatableVector3}}
+\index{FCDParameterListAnimatableVector3@{FCDParameterListAnimatableVector3}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterListAnimatableVector3}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterListAnimatableT}$<${\bf FMVector3}, 0$>$ {\bf FCDParameterListAnimatableVector3}}}
+\label{FCDParameterAnimatable_8h_a77bcf55236e4352a6e33b212b5a6390d}
+A 3D vector animatable list parameter. \hypertarget{FCDParameterAnimatable_8h_aeaaba5e7e9410f45a8da4ff46ccf9a3c}{
+\index{FCDParameterAnimatable.h@{FCDParameterAnimatable.h}!FCDParameterListAnimatableVector4@{FCDParameterListAnimatableVector4}}
+\index{FCDParameterListAnimatableVector4@{FCDParameterListAnimatableVector4}!FCDParameterAnimatable.h@{FCDParameterAnimatable.h}}
+\subsubsection[{FCDParameterListAnimatableVector4}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FCDParameterListAnimatableT}$<${\bf FMVector4}, 0$>$ {\bf FCDParameterListAnimatableVector4}}}
+\label{FCDParameterAnimatable_8h_aeaaba5e7e9410f45a8da4ff46ccf9a3c}
+A 4D vector animatable list parameter. 

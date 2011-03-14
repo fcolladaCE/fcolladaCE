@@ -1,0 +1,426 @@
+\hypertarget{classFMVector3}{
+\section{FMVector3 Class Reference}
+\label{classFMVector3}\index{FMVector3@{FMVector3}}
+}
+
+
+{\ttfamily \#include $<$FMVector3.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFMVector3_a7cee33ae8a870a7b7e14669fe599461b}{FMVector3} ()
+\item 
+\hyperlink{classFMVector3_ac4ebdd15669aea066ea5858b8a7deec5}{FMVector3} (float \_\-x, float \_\-y, float \_\-z)
+\item 
+\hyperlink{classFMVector3_ab99057d6a4d1e5f595cb2ffdb8367d76}{FMVector3} (const \hyperlink{classFMVector3}{FMVector3} \&rhs)
+\item 
+\hyperlink{classFMVector3_a7d031ab14f2635b737511cb2ac377a2c}{FMVector3} (const \hyperlink{classFMVector4}{FMVector4} \&vect4)
+\item 
+\hyperlink{classFMVector3_aeda87a2ab88edfd0275cfa9dd196cdc3}{FMVector3} (const float $\ast$source, uint32 startIndex=0)
+\item 
+\hyperlink{classFMVector3_a6361844cc95f7b488c99bb7b33e70e32}{FMVector3} (const double $\ast$source, uint32 startIndex=0)
+\item 
+float \hyperlink{classFMVector3_abf0253baa904834ecfc026869f84f634}{LengthSquared} () const 
+\item 
+float \hyperlink{classFMVector3_a4afad998497b127652eb14048932dd36}{Length} () const 
+\item 
+void \hyperlink{classFMVector3_a1cf1c273e7462d8b7d07d5795e3abaab}{NormalizeIt} ()
+\item 
+\hyperlink{classFMVector3}{FMVector3} \hyperlink{classFMVector3_a3d32f0806d047b4a4d34bac48842451b}{Normalize} () const 
+\item 
+void \hyperlink{classFMVector3_a1fe5b378f95449817837dc0ecadf1ccf}{Project} (const \hyperlink{classFMVector3}{FMVector3} \&unto)
+\item 
+\hyperlink{classFMVector3}{FMVector3} \hyperlink{classFMVector3_a02d02648049d4acb0868f42bf99ae1c3}{Projected} (const \hyperlink{classFMVector3}{FMVector3} \&unto) const 
+\item 
+\hyperlink{classFMVector3_a767d55b848c49e297cd683ca961fe138}{operator float $\ast$} ()
+\item 
+\hyperlink{classFMVector3_aa293da50dcc86b53884296e2ac8ca578}{operator const float $\ast$} () const 
+\item 
+void \hyperlink{classFMVector3_a9e59e251faad4951e50db8f04b7b8481}{Set} (float \hyperlink{classFMVector3_ab31613614892bba88807d31b2c9ee87e}{x}, float \hyperlink{classFMVector3_a6e8a45596a095d86205557d7231ef973}{y}, float \hyperlink{classFMVector3_ad912906661058ab718fb887ad67f5ad4}{z})
+\item 
+\hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFMVector3_a8b02f3c679758d31f1c5208c954cdbb9}{operator=} (const float $\ast$v)
+\item 
+\hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFMVector3_a4732a6439ff955252445b45b054ee0bb}{operator=} (const \hyperlink{classFMVector3}{FMVector3} \&rhs)
+\item 
+void \hyperlink{classFMVector3_a7ec4ab34895012f156add04613322c82}{ComponentMinimum} (const \hyperlink{classFMVector3}{FMVector3} \&min)
+\item 
+float \hyperlink{classFMVector3_a90460eb75019e378d47d7fbdbb754398}{ComponentMinimum} () const 
+\item 
+void \hyperlink{classFMVector3_a8682b0a239be2b72b85c3ff43b30d9e2}{ComponentMaximum} (const \hyperlink{classFMVector3}{FMVector3} \&max)
+\item 
+float \hyperlink{classFMVector3_a5f3b1065cb7615be6016be00ec6d5d49}{ComponentMaximum} () const 
+\item 
+void \hyperlink{classFMVector3_a0bbd056f588ca19bcaec3b4b92ff8351}{ComponentClamp} (const \hyperlink{classFMVector3}{FMVector3} \&min, const \hyperlink{classFMVector3}{FMVector3} \&max)
+\item 
+float \hyperlink{classFMVector3_a370f45ad1365232180b34d6eec7d3f0e}{ComponentAverage} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classFMVector3_ab31613614892bba88807d31b2c9ee87e}{x}
+\item 
+float \hyperlink{classFMVector3_a6e8a45596a095d86205557d7231ef973}{y}
+\item 
+float \hyperlink{classFMVector3_ad912906661058ab718fb887ad67f5ad4}{z}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classFMVector3}{FMVector3} \hyperlink{classFMVector3_a363010f82c60ec1d53a495de6284daf7}{XAxis}
+\item 
+static const \hyperlink{classFMVector3}{FMVector3} \hyperlink{classFMVector3_a4e67235dec2d974161ecb965b6590555}{YAxis}
+\item 
+static const \hyperlink{classFMVector3}{FMVector3} \hyperlink{classFMVector3_a3f1666b8e732a6480e3e3ac3416d0a22}{ZAxis}
+\item 
+static const \hyperlink{classFMVector3}{FMVector3} \hyperlink{classFMVector3_a886c355491c083e2664286caa7aa9ed8}{Origin} = \hyperlink{classFMVector3_a18fc0513121c660cc2dc3f172d698adb}{FMVector3::Zero}
+\item 
+static const \hyperlink{classFMVector3}{FMVector3} \hyperlink{classFMVector3_a18fc0513121c660cc2dc3f172d698adb}{Zero}
+\item 
+static const \hyperlink{classFMVector3}{FMVector3} \hyperlink{classFMVector3_a7f981857b8d0f3f6839c0a9ff0c3e430}{One}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 3 dimensional vector.
+
+Simple, non-\/optimized vector class: $\ast$ is the dot-\/product, $^\wedge$ is the cross-\/product. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFMVector3_a7cee33ae8a870a7b7e14669fe599461b}{
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\subsubsection[{FMVector3}]{\setlength{\rightskip}{0pt plus 5cm}FMVector3::FMVector3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a7cee33ae8a870a7b7e14669fe599461b}
+Creates an empty \hyperlink{classFMVector3}{FMVector3}. \hypertarget{classFMVector3_ac4ebdd15669aea066ea5858b8a7deec5}{
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\subsubsection[{FMVector3}]{\setlength{\rightskip}{0pt plus 5cm}FMVector3::FMVector3 (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-x, }
+\item[{float}]{ \_\-y, }
+\item[{float}]{ \_\-z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_ac4ebdd15669aea066ea5858b8a7deec5}
+Creates the \hyperlink{classFMVector3}{FMVector3} with the coordinates given. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-x}]The first coordinate. \item[{\em \_\-y}]The second coordinate. \item[{\em \_\-z}]The third coordinate. \end{DoxyParams}
+\hypertarget{classFMVector3_ab99057d6a4d1e5f595cb2ffdb8367d76}{
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\subsubsection[{FMVector3}]{\setlength{\rightskip}{0pt plus 5cm}FMVector3::FMVector3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_ab99057d6a4d1e5f595cb2ffdb8367d76}
+Copy constuctor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em rhs}]A second 3D vector. \end{DoxyParams}
+\hypertarget{classFMVector3_a7d031ab14f2635b737511cb2ac377a2c}{
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\subsubsection[{FMVector3}]{\setlength{\rightskip}{0pt plus 5cm}FMVector3::FMVector3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ vect4}
+\end{DoxyParamCaption}
+)}}
+\label{classFMVector3_a7d031ab14f2635b737511cb2ac377a2c}
+Constructor. Reduces the 4D vector into 3D by removing the 4th dimension. 
+\begin{DoxyParams}{Parameters}
+\item[{\em vect4}]A 4D vector. \end{DoxyParams}
+\hypertarget{classFMVector3_aeda87a2ab88edfd0275cfa9dd196cdc3}{
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\subsubsection[{FMVector3}]{\setlength{\rightskip}{0pt plus 5cm}FMVector3::FMVector3 (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{ source, }
+\item[{uint32}]{ startIndex = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classFMVector3_aeda87a2ab88edfd0275cfa9dd196cdc3}
+Creates the \hyperlink{classFMVector3}{FMVector3} from a list of floating-\/point values. It takes the first three floating-\/point starting from and including {\itshape startIndex\/} (0 indexing) in the array as the 3 coordinates. The first as the first coordinate, the second as the second, and the third as the third. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The floating-\/point value array. \item[{\em startIndex}]The index of the first element. \end{DoxyParams}
+\hypertarget{classFMVector3_a6361844cc95f7b488c99bb7b33e70e32}{
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\index{FMVector3@{FMVector3}!FMVector3@{FMVector3}}
+\subsubsection[{FMVector3}]{\setlength{\rightskip}{0pt plus 5cm}FMVector3::FMVector3 (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{ source, }
+\item[{uint32}]{ startIndex = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classFMVector3_a6361844cc95f7b488c99bb7b33e70e32}
+See above. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFMVector3_a370f45ad1365232180b34d6eec7d3f0e}{
+\index{FMVector3@{FMVector3}!ComponentAverage@{ComponentAverage}}
+\index{ComponentAverage@{ComponentAverage}!FMVector3@{FMVector3}}
+\subsubsection[{ComponentAverage}]{\setlength{\rightskip}{0pt plus 5cm}float FMVector3::ComponentAverage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a370f45ad1365232180b34d6eec7d3f0e}
+Retrieves the average of the three vector components. \begin{DoxyReturn}{Returns}
+The component average. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a0bbd056f588ca19bcaec3b4b92ff8351}{
+\index{FMVector3@{FMVector3}!ComponentClamp@{ComponentClamp}}
+\index{ComponentClamp@{ComponentClamp}!FMVector3@{FMVector3}}
+\subsubsection[{ComponentClamp}]{\setlength{\rightskip}{0pt plus 5cm}void FMVector3::ComponentClamp (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ min, }
+\item[{const {\bf FMVector3} \&}]{ max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a0bbd056f588ca19bcaec3b4b92ff8351}
+Clamp each component of this FMVector by the corresponding components in the specified min and max \hyperlink{classFMVector3}{FMVector3}. Clamp refers to setting a value within a given range. If the value is lower than the minimum of the range, it is set to the minimum; same for the maximum. 
+\begin{DoxyParams}{Parameters}
+\item[{\em min}]The FMVector to take the minimum values from. \item[{\em max}]The FMVector to take the maximum values from. \end{DoxyParams}
+\hypertarget{classFMVector3_a8682b0a239be2b72b85c3ff43b30d9e2}{
+\index{FMVector3@{FMVector3}!ComponentMaximum@{ComponentMaximum}}
+\index{ComponentMaximum@{ComponentMaximum}!FMVector3@{FMVector3}}
+\subsubsection[{ComponentMaximum}]{\setlength{\rightskip}{0pt plus 5cm}void FMVector3::ComponentMaximum (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a8682b0a239be2b72b85c3ff43b30d9e2}
+Update each component of this FMVector to the maximum of two FMVector3s. Updates each of the three components to be the maximum of the current value and that of the corresponding value of the given \hyperlink{classFMVector3}{FMVector3}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em max}]The FMVector to take values from. \end{DoxyParams}
+\hypertarget{classFMVector3_a5f3b1065cb7615be6016be00ec6d5d49}{
+\index{FMVector3@{FMVector3}!ComponentMaximum@{ComponentMaximum}}
+\index{ComponentMaximum@{ComponentMaximum}!FMVector3@{FMVector3}}
+\subsubsection[{ComponentMaximum}]{\setlength{\rightskip}{0pt plus 5cm}float FMVector3::ComponentMaximum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFMVector3_a5f3b1065cb7615be6016be00ec6d5d49}
+Retrieves the largest component of the vector. \begin{DoxyReturn}{Returns}
+The largest component of the vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a90460eb75019e378d47d7fbdbb754398}{
+\index{FMVector3@{FMVector3}!ComponentMinimum@{ComponentMinimum}}
+\index{ComponentMinimum@{ComponentMinimum}!FMVector3@{FMVector3}}
+\subsubsection[{ComponentMinimum}]{\setlength{\rightskip}{0pt plus 5cm}float FMVector3::ComponentMinimum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classFMVector3_a90460eb75019e378d47d7fbdbb754398}
+Retrieves the smallest component of the vector. \begin{DoxyReturn}{Returns}
+The smallest component of the vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a7ec4ab34895012f156add04613322c82}{
+\index{FMVector3@{FMVector3}!ComponentMinimum@{ComponentMinimum}}
+\index{ComponentMinimum@{ComponentMinimum}!FMVector3@{FMVector3}}
+\subsubsection[{ComponentMinimum}]{\setlength{\rightskip}{0pt plus 5cm}void FMVector3::ComponentMinimum (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ min}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a7ec4ab34895012f156add04613322c82}
+Update each component of this FMVector to the minimum of two FMVector3s. Updates each of the three components to be the minimum of the current value and that of the corresponding value of the given \hyperlink{classFMVector3}{FMVector3}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em min}]The FMVector to take values from. \end{DoxyParams}
+\hypertarget{classFMVector3_a4afad998497b127652eb14048932dd36}{
+\index{FMVector3@{FMVector3}!Length@{Length}}
+\index{Length@{Length}!FMVector3@{FMVector3}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float FMVector3::Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a4afad998497b127652eb14048932dd36}
+Retrieves the length of the vector. \begin{DoxyReturn}{Returns}
+The length of this vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_abf0253baa904834ecfc026869f84f634}{
+\index{FMVector3@{FMVector3}!LengthSquared@{LengthSquared}}
+\index{LengthSquared@{LengthSquared}!FMVector3@{FMVector3}}
+\subsubsection[{LengthSquared}]{\setlength{\rightskip}{0pt plus 5cm}float FMVector3::LengthSquared (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_abf0253baa904834ecfc026869f84f634}
+Retrieves the squared length of the vector. \begin{DoxyReturn}{Returns}
+The squared length of this vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a3d32f0806d047b4a4d34bac48842451b}{
+\index{FMVector3@{FMVector3}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!FMVector3@{FMVector3}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3} FMVector3::Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a3d32f0806d047b4a4d34bac48842451b}
+Get a normalized \hyperlink{classFMVector3}{FMVector3} with the same direction as this vector. \begin{DoxyReturn}{Returns}
+A \hyperlink{classFMVector3}{FMVector3} with length 1 and same direction as this vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a1cf1c273e7462d8b7d07d5795e3abaab}{
+\index{FMVector3@{FMVector3}!NormalizeIt@{NormalizeIt}}
+\index{NormalizeIt@{NormalizeIt}!FMVector3@{FMVector3}}
+\subsubsection[{NormalizeIt}]{\setlength{\rightskip}{0pt plus 5cm}void FMVector3::NormalizeIt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a1cf1c273e7462d8b7d07d5795e3abaab}
+Normalizes this vector. \hypertarget{classFMVector3_aa293da50dcc86b53884296e2ac8ca578}{
+\index{FMVector3@{FMVector3}!operator const float $\ast$@{operator const float $\ast$}}
+\index{operator const float $\ast$@{operator const float $\ast$}!FMVector3@{FMVector3}}
+\subsubsection[{operator const float $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}FMVector3::operator const float $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_aa293da50dcc86b53884296e2ac8ca578}
+Get this \hyperlink{classFMVector3}{FMVector3} as an array of {\ttfamily floats}. \begin{DoxyReturn}{Returns}
+The {\ttfamily float} array. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a767d55b848c49e297cd683ca961fe138}{
+\index{FMVector3@{FMVector3}!operator float $\ast$@{operator float $\ast$}}
+\index{operator float $\ast$@{operator float $\ast$}!FMVector3@{FMVector3}}
+\subsubsection[{operator float $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}FMVector3::operator float $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a767d55b848c49e297cd683ca961fe138}
+Get this \hyperlink{classFMVector3}{FMVector3} as an array of {\ttfamily floats}. \begin{DoxyReturn}{Returns}
+The {\ttfamily float} array. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a4732a6439ff955252445b45b054ee0bb}{
+\index{FMVector3@{FMVector3}!operator=@{operator=}}
+\index{operator=@{operator=}!FMVector3@{FMVector3}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3}\& FMVector3::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a4732a6439ff955252445b45b054ee0bb}
+Assigns the \hyperlink{classFMVector3}{FMVector3} passed to outselves. Copies XYZ from the passed vector 
+\begin{DoxyParams}{Parameters}
+\item[{\em rhs}]The vector copy off \end{DoxyParams}
+\hypertarget{classFMVector3_a8b02f3c679758d31f1c5208c954cdbb9}{
+\index{FMVector3@{FMVector3}!operator=@{operator=}}
+\index{operator=@{operator=}!FMVector3@{FMVector3}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3}\& FMVector3::operator= (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{ v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a8b02f3c679758d31f1c5208c954cdbb9}
+Assign this \hyperlink{classFMVector3}{FMVector3} to the given float array. Assigns each coordinate of this \hyperlink{classFMVector3}{FMVector3} to the elements in the {\ttfamily float} array. The first element to the first coordinate, the second to the second, and the third to the third. It returns this \hyperlink{classFMVector3}{FMVector3}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]The {\ttfamily float} array to assign with. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a1fe5b378f95449817837dc0ecadf1ccf}{
+\index{FMVector3@{FMVector3}!Project@{Project}}
+\index{Project@{Project}!FMVector3@{FMVector3}}
+\subsubsection[{Project}]{\setlength{\rightskip}{0pt plus 5cm}void FMVector3::Project (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ unto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a1fe5b378f95449817837dc0ecadf1ccf}
+Project this \hyperlink{classFMVector3}{FMVector3} onto another \hyperlink{classFMVector3}{FMVector3}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em unto}]The \hyperlink{classFMVector3}{FMVector3} to project onto. \end{DoxyParams}
+\hypertarget{classFMVector3_a02d02648049d4acb0868f42bf99ae1c3}{
+\index{FMVector3@{FMVector3}!Projected@{Projected}}
+\index{Projected@{Projected}!FMVector3@{FMVector3}}
+\subsubsection[{Projected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3} FMVector3::Projected (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ unto}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a02d02648049d4acb0868f42bf99ae1c3}
+Get the projection of this \hyperlink{classFMVector3}{FMVector3} onto another \hyperlink{classFMVector3}{FMVector3}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em unto}]The \hyperlink{classFMVector3}{FMVector3} to project onto. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The projected \hyperlink{classFMVector3}{FMVector3}. 
+\end{DoxyReturn}
+\hypertarget{classFMVector3_a9e59e251faad4951e50db8f04b7b8481}{
+\index{FMVector3@{FMVector3}!Set@{Set}}
+\index{Set@{Set}!FMVector3@{FMVector3}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void FMVector3::Set (
+\begin{DoxyParamCaption}
+\item[{float}]{ x, }
+\item[{float}]{ y, }
+\item[{float}]{ z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector3_a9e59e251faad4951e50db8f04b7b8481}
+Set the values of this vector 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]The new X value \item[{\em y}]The new Y value \item[{\em z}]The new Z value \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFMVector3_a7f981857b8d0f3f6839c0a9ff0c3e430}{
+\index{FMVector3@{FMVector3}!One@{One}}
+\index{One@{One}!FMVector3@{FMVector3}}
+\subsubsection[{One}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3} {\bf FMVector3::One}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector3_a7f981857b8d0f3f6839c0a9ff0c3e430}
+The \hyperlink{classFMVector3}{FMVector3} containing all ones: (1,1,1). \hypertarget{classFMVector3_a886c355491c083e2664286caa7aa9ed8}{
+\index{FMVector3@{FMVector3}!Origin@{Origin}}
+\index{Origin@{Origin}!FMVector3@{FMVector3}}
+\subsubsection[{Origin}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3} {\bf FMVector3::Origin} = {\bf FMVector3::Zero}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector3_a886c355491c083e2664286caa7aa9ed8}
+The \hyperlink{classFMVector3}{FMVector3} representing the origin \hypertarget{classFMVector3_ab31613614892bba88807d31b2c9ee87e}{
+\index{FMVector3@{FMVector3}!x@{x}}
+\index{x@{x}!FMVector3@{FMVector3}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FMVector3::x}}}
+\label{classFMVector3_ab31613614892bba88807d31b2c9ee87e}
+The first coordinate. \hypertarget{classFMVector3_a363010f82c60ec1d53a495de6284daf7}{
+\index{FMVector3@{FMVector3}!XAxis@{XAxis}}
+\index{XAxis@{XAxis}!FMVector3@{FMVector3}}
+\subsubsection[{XAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3} {\bf FMVector3::XAxis}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector3_a363010f82c60ec1d53a495de6284daf7}
+The \hyperlink{classFMVector3}{FMVector3} representing the x axis \hypertarget{classFMVector3_a6e8a45596a095d86205557d7231ef973}{
+\index{FMVector3@{FMVector3}!y@{y}}
+\index{y@{y}!FMVector3@{FMVector3}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FMVector3::y}}}
+\label{classFMVector3_a6e8a45596a095d86205557d7231ef973}
+The second coordinate. \hypertarget{classFMVector3_a4e67235dec2d974161ecb965b6590555}{
+\index{FMVector3@{FMVector3}!YAxis@{YAxis}}
+\index{YAxis@{YAxis}!FMVector3@{FMVector3}}
+\subsubsection[{YAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3} {\bf FMVector3::YAxis}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector3_a4e67235dec2d974161ecb965b6590555}
+The \hyperlink{classFMVector3}{FMVector3} representing the y axis \hypertarget{classFMVector3_ad912906661058ab718fb887ad67f5ad4}{
+\index{FMVector3@{FMVector3}!z@{z}}
+\index{z@{z}!FMVector3@{FMVector3}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FMVector3::z}}}
+\label{classFMVector3_ad912906661058ab718fb887ad67f5ad4}
+The third coordinate. \hypertarget{classFMVector3_a3f1666b8e732a6480e3e3ac3416d0a22}{
+\index{FMVector3@{FMVector3}!ZAxis@{ZAxis}}
+\index{ZAxis@{ZAxis}!FMVector3@{FMVector3}}
+\subsubsection[{ZAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3} {\bf FMVector3::ZAxis}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector3_a3f1666b8e732a6480e3e3ac3416d0a22}
+The \hyperlink{classFMVector3}{FMVector3} representing the z axis \hypertarget{classFMVector3_a18fc0513121c660cc2dc3f172d698adb}{
+\index{FMVector3@{FMVector3}!Zero@{Zero}}
+\index{Zero@{Zero}!FMVector3@{FMVector3}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3} {\bf FMVector3::Zero}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector3_a18fc0513121c660cc2dc3f172d698adb}
+The \hyperlink{classFMVector3}{FMVector3} containing all zeroes: (0,0,0). 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FMath/\hyperlink{FMVector3_8h}{FMVector3.h}\item 
+FCollada/FMath/FMVector3.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,211 @@
+\hypertarget{classFCDVersion}{
+\section{FCDVersion Class Reference}
+\label{classFCDVersion}\index{FCDVersion@{FCDVersion}}
+}
+
+
+{\ttfamily \#include $<$FCDVersion.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDVersion_aabd470c6d19ddb7ff287ab601d344a21}{FCDVersion} ()
+\item 
+\hyperlink{classFCDVersion_a59ac2d2b345da3aa81fd5353a321792a}{FCDVersion} (const \hyperlink{classfm_1_1stringT}{fm::string} \&v)
+\item 
+\hyperlink{classFCDVersion_af12b625017f133c10a0dba3c780340e5}{FCDVersion} (uint32 \hyperlink{classFCDVersion_ad2508c7e5740ba8f03a0afe18bb9c7b5}{major}, uint32 \hyperlink{classFCDVersion_a7fa0db1f60be770ccff8ff93c3e11deb}{minor}, uint32 \hyperlink{classFCDVersion_a24a8596d2fa8ebfbb5866abb7be4801c}{revision})
+\item 
+\hyperlink{classFCDVersion_acb581433e7ac673c5b53d2a52afa4471}{$\sim$FCDVersion} ()
+\item 
+void \hyperlink{classFCDVersion_ad5677d5ab3fc13182e1385b209856cf9}{ParseVersionNumbers} (const \hyperlink{classfm_1_1stringT}{fm::string} \&v)
+\item 
+bool \hyperlink{classFCDVersion_a2ecd2a362323743defbf4134010c0df6}{operator$<$} (const \hyperlink{classFCDVersion}{FCDVersion} \&b) const 
+\item 
+bool \hyperlink{classFCDVersion_aa38153b38b9512d1101a6b3557d56f7d}{operator$<$=} (const \hyperlink{classFCDVersion}{FCDVersion} \&b) const 
+\item 
+bool \hyperlink{classFCDVersion_a9f1a163cee576efb2cf2e18659368fdf}{operator$>$} (const \hyperlink{classFCDVersion}{FCDVersion} \&b) const 
+\item 
+bool \hyperlink{classFCDVersion_a9ff11e9ff8690123f22b87d3de2591d4}{operator$>$=} (const \hyperlink{classFCDVersion}{FCDVersion} \&b) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32 \hyperlink{classFCDVersion_ad2508c7e5740ba8f03a0afe18bb9c7b5}{major}
+\item 
+uint32 \hyperlink{classFCDVersion_a7fa0db1f60be770ccff8ff93c3e11deb}{minor}
+\item 
+uint32 \hyperlink{classFCDVersion_a24a8596d2fa8ebfbb5866abb7be4801c}{revision}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+FCOLLADA\_\-EXPORT bool \hyperlink{classFCDVersion_af421d044408891236aa6defd618eff5f}{IsEquivalent} (const \hyperlink{classFCDVersion}{FCDVersion} \&a, const \hyperlink{classFCDVersion}{FCDVersion} \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA document verison. Format is major.minor.revision. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDVersion_aabd470c6d19ddb7ff287ab601d344a21}{
+\index{FCDVersion@{FCDVersion}!FCDVersion@{FCDVersion}}
+\index{FCDVersion@{FCDVersion}!FCDVersion@{FCDVersion}}
+\subsubsection[{FCDVersion}]{\setlength{\rightskip}{0pt plus 5cm}FCDVersion::FCDVersion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDVersion_aabd470c6d19ddb7ff287ab601d344a21}
+Default Constructor. Leaves all the numbers at zero. \hypertarget{classFCDVersion_a59ac2d2b345da3aa81fd5353a321792a}{
+\index{FCDVersion@{FCDVersion}!FCDVersion@{FCDVersion}}
+\index{FCDVersion@{FCDVersion}!FCDVersion@{FCDVersion}}
+\subsubsection[{FCDVersion}]{\setlength{\rightskip}{0pt plus 5cm}FCDVersion::FCDVersion (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDVersion_a59ac2d2b345da3aa81fd5353a321792a}
+Constructs a version number structure from a string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]A string containing the version numbers. \end{DoxyParams}
+\hypertarget{classFCDVersion_af12b625017f133c10a0dba3c780340e5}{
+\index{FCDVersion@{FCDVersion}!FCDVersion@{FCDVersion}}
+\index{FCDVersion@{FCDVersion}!FCDVersion@{FCDVersion}}
+\subsubsection[{FCDVersion}]{\setlength{\rightskip}{0pt plus 5cm}FCDVersion::FCDVersion (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ major, }
+\item[{uint32}]{ minor, }
+\item[{uint32}]{ revision}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDVersion_af12b625017f133c10a0dba3c780340e5}
+Constructs a version number structure from a series of numbers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em major}]The major version number. \item[{\em minor}]The minor version number. \item[{\em revision}]The revision version number. \end{DoxyParams}
+\hypertarget{classFCDVersion_acb581433e7ac673c5b53d2a52afa4471}{
+\index{FCDVersion@{FCDVersion}!$\sim$FCDVersion@{$\sim$FCDVersion}}
+\index{$\sim$FCDVersion@{$\sim$FCDVersion}!FCDVersion@{FCDVersion}}
+\subsubsection[{$\sim$FCDVersion}]{\setlength{\rightskip}{0pt plus 5cm}FCDVersion::$\sim$FCDVersion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDVersion_acb581433e7ac673c5b53d2a52afa4471}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDVersion_a2ecd2a362323743defbf4134010c0df6}{
+\index{FCDVersion@{FCDVersion}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!FCDVersion@{FCDVersion}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDVersion::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDVersion} \&}]{ b}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDVersion_a2ecd2a362323743defbf4134010c0df6}
+Returns whether this version is older than a second version. 
+\begin{DoxyParams}{Parameters}
+\item[{\em b}]A second version. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this version is older than the second version. 
+\end{DoxyReturn}
+\hypertarget{classFCDVersion_aa38153b38b9512d1101a6b3557d56f7d}{
+\index{FCDVersion@{FCDVersion}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!FCDVersion@{FCDVersion}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDVersion::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDVersion} \&}]{ b}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDVersion_aa38153b38b9512d1101a6b3557d56f7d}
+Returns whether this version is older than or equal to a second version. 
+\begin{DoxyParams}{Parameters}
+\item[{\em b}]A second version. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this version is older than or equal to a second version. 
+\end{DoxyReturn}
+\hypertarget{classFCDVersion_a9f1a163cee576efb2cf2e18659368fdf}{
+\index{FCDVersion@{FCDVersion}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!FCDVersion@{FCDVersion}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDVersion::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDVersion} \&}]{ b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDVersion_a9f1a163cee576efb2cf2e18659368fdf}
+Returns whether this version is newer than a second version. 
+\begin{DoxyParams}{Parameters}
+\item[{\em b}]A second version. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this version is newer than the second version. 
+\end{DoxyReturn}
+\hypertarget{classFCDVersion_a9ff11e9ff8690123f22b87d3de2591d4}{
+\index{FCDVersion@{FCDVersion}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!FCDVersion@{FCDVersion}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDVersion::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDVersion} \&}]{ b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDVersion_a9ff11e9ff8690123f22b87d3de2591d4}
+Returns whether this version is newer or equal to a second version. 
+\begin{DoxyParams}{Parameters}
+\item[{\em b}]A second version. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this version is newer or equal to a second version. 
+\end{DoxyReturn}
+\hypertarget{classFCDVersion_ad5677d5ab3fc13182e1385b209856cf9}{
+\index{FCDVersion@{FCDVersion}!ParseVersionNumbers@{ParseVersionNumbers}}
+\index{ParseVersionNumbers@{ParseVersionNumbers}!FCDVersion@{FCDVersion}}
+\subsubsection[{ParseVersionNumbers}]{\setlength{\rightskip}{0pt plus 5cm}void FCDVersion::ParseVersionNumbers (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDVersion_ad5677d5ab3fc13182e1385b209856cf9}
+Extracts the version number from a string in the form of major.minor.revision (ex: 1.4.1) 
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]A string containing the version numbers \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classFCDVersion_af421d044408891236aa6defd618eff5f}{
+\index{FCDVersion@{FCDVersion}!IsEquivalent@{IsEquivalent}}
+\index{IsEquivalent@{IsEquivalent}!FCDVersion@{FCDVersion}}
+\subsubsection[{IsEquivalent}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT bool IsEquivalent (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDVersion} \&}]{ a, }
+\item[{const {\bf FCDVersion} \&}]{ b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classFCDVersion_af421d044408891236aa6defd618eff5f}
+Returns whether two versions are equivalent. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]A first version. \item[{\em b}]A second version. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two versions are equivalent. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFCDVersion_ad2508c7e5740ba8f03a0afe18bb9c7b5}{
+\index{FCDVersion@{FCDVersion}!major@{major}}
+\index{major@{major}!FCDVersion@{FCDVersion}}
+\subsubsection[{major}]{\setlength{\rightskip}{0pt plus 5cm}uint32 {\bf FCDVersion::major}}}
+\label{classFCDVersion_ad2508c7e5740ba8f03a0afe18bb9c7b5}
+The major release number of the version. \hypertarget{classFCDVersion_a7fa0db1f60be770ccff8ff93c3e11deb}{
+\index{FCDVersion@{FCDVersion}!minor@{minor}}
+\index{minor@{minor}!FCDVersion@{FCDVersion}}
+\subsubsection[{minor}]{\setlength{\rightskip}{0pt plus 5cm}uint32 {\bf FCDVersion::minor}}}
+\label{classFCDVersion_a7fa0db1f60be770ccff8ff93c3e11deb}
+The minor release number of the version. \hypertarget{classFCDVersion_a24a8596d2fa8ebfbb5866abb7be4801c}{
+\index{FCDVersion@{FCDVersion}!revision@{revision}}
+\index{revision@{revision}!FCDVersion@{FCDVersion}}
+\subsubsection[{revision}]{\setlength{\rightskip}{0pt plus 5cm}uint32 {\bf FCDVersion::revision}}}
+\label{classFCDVersion_a24a8596d2fa8ebfbb5866abb7be4801c}
+The revision number of the release. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDVersion_8h}{FCDVersion.h}\item 
+FCollada/FCDocument/FCDVersion.cpp\end{DoxyCompactItemize}

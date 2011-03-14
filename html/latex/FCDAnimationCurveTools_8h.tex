@@ -1,0 +1,51 @@
+\hypertarget{FCDAnimationCurveTools_8h}{
+\section{FCollada/FCDocument/FCDAnimationCurveTools.h File Reference}
+\label{FCDAnimationCurveTools_8h}\index{FCollada/FCDocument/FCDAnimationCurveTools.h@{FCollada/FCDocument/FCDAnimationCurveTools.h}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceFCDAnimationCurveTools}{FCDAnimationCurveTools}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classfm_1_1pvector}{fm::pvector}$<$ \hyperlink{classFCDAnimationCurve}{FCDAnimationCurve} $>$ \hyperlink{FCDAnimationCurveTools_8h_ab12c9984d3fb51bedec646bd9ce6aa52}{FCDAnimationCurveList}
+\item 
+typedef \hyperlink{classfm_1_1pvector}{fm::pvector}$<$ const \hyperlink{classFCDAnimationCurve}{FCDAnimationCurve} $>$ \hyperlink{FCDAnimationCurveTools_8h_a4bf8c1929ceac0d30c440c82571a7ce2}{FCDAnimationCurveConstList}
+\item 
+typedef float($\ast$ \hyperlink{FCDAnimationCurveTools_8h_a108f3f31a5097fdde5a065a1c7ad0acc}{FCDCollapsingFunction} )(float $\ast$values, uint32 count)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDAnimationMultiCurve}{FCDAnimationMultiCurve} $\ast$ \hyperlink{namespaceFCDAnimationCurveTools_a890739f174e6aaf00597ea67d6710ab8}{FCDAnimationCurveTools::MergeCurves} (const \hyperlink{classfm_1_1pvector}{FCDAnimationCurveConstList} \&toMerge, const \hyperlink{classfm_1_1vector}{FloatList} \&defaultValues)
+\item 
+\hyperlink{classFCDAnimationCurve}{FCDAnimationCurve} $\ast$ \hyperlink{namespaceFCDAnimationCurveTools_aca4a52281fdbfd6c60337c8aa07aa5ae}{FCDAnimationCurveTools::Collapse} (const \hyperlink{classFCDAnimationMultiCurve}{FCDAnimationMultiCurve} $\ast$curve, \hyperlink{FCDAnimationCurveTools_8h_a108f3f31a5097fdde5a065a1c7ad0acc}{FCDCollapsingFunction} collapse)
+\item 
+float \hyperlink{namespaceFCDAnimationCurveTools_a52f0bc674ece31d37bef0b8cf7999a27}{FCDAnimationCurveTools::TakeFirst} (float $\ast$values, uint32 count)
+\item 
+float \hyperlink{namespaceFCDAnimationCurveTools_ac39b972f3c91e9da8c6e6fd0b6f457dc}{FCDAnimationCurveTools::Average} (float $\ast$values, uint32 count)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the \hyperlink{namespaceFCDAnimationCurveTools}{FCDAnimationCurveTools} namespace. 
+
+\subsection{Typedef Documentation}
+\hypertarget{FCDAnimationCurveTools_8h_a4bf8c1929ceac0d30c440c82571a7ce2}{
+\index{FCDAnimationCurveTools.h@{FCDAnimationCurveTools.h}!FCDAnimationCurveConstList@{FCDAnimationCurveConstList}}
+\index{FCDAnimationCurveConstList@{FCDAnimationCurveConstList}!FCDAnimationCurveTools.h@{FCDAnimationCurveTools.h}}
+\subsubsection[{FCDAnimationCurveConstList}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::pvector}$<$const {\bf FCDAnimationCurve}$>$ {\bf FCDAnimationCurveConstList}}}
+\label{FCDAnimationCurveTools_8h_a4bf8c1929ceac0d30c440c82571a7ce2}
+A dynamically-\/sized array of constant animation curve pointers. \hypertarget{FCDAnimationCurveTools_8h_ab12c9984d3fb51bedec646bd9ce6aa52}{
+\index{FCDAnimationCurveTools.h@{FCDAnimationCurveTools.h}!FCDAnimationCurveList@{FCDAnimationCurveList}}
+\index{FCDAnimationCurveList@{FCDAnimationCurveList}!FCDAnimationCurveTools.h@{FCDAnimationCurveTools.h}}
+\subsubsection[{FCDAnimationCurveList}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fm::pvector}$<${\bf FCDAnimationCurve}$>$ {\bf FCDAnimationCurveList}}}
+\label{FCDAnimationCurveTools_8h_ab12c9984d3fb51bedec646bd9ce6aa52}
+A dynamically-\/sized array of animation curves. \hypertarget{FCDAnimationCurveTools_8h_a108f3f31a5097fdde5a065a1c7ad0acc}{
+\index{FCDAnimationCurveTools.h@{FCDAnimationCurveTools.h}!FCDCollapsingFunction@{FCDCollapsingFunction}}
+\index{FCDCollapsingFunction@{FCDCollapsingFunction}!FCDAnimationCurveTools.h@{FCDAnimationCurveTools.h}}
+\subsubsection[{FCDCollapsingFunction}]{\setlength{\rightskip}{0pt plus 5cm}typedef float($\ast$ {\bf FCDCollapsingFunction})(float $\ast$values, uint32 count)}}
+\label{FCDAnimationCurveTools_8h_a108f3f31a5097fdde5a065a1c7ad0acc}
+A collapsing function. It converts multiple floating-\/point values into one floating-\/point value. 

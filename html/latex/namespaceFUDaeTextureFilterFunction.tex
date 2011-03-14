@@ -1,0 +1,75 @@
+\hypertarget{namespaceFUDaeTextureFilterFunction}{
+\section{FUDaeTextureFilterFunction Namespace Reference}
+\label{namespaceFUDaeTextureFilterFunction}\index{FUDaeTextureFilterFunction@{FUDaeTextureFilterFunction}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries FilterFunction} \{ \par
+{\bfseries NONE} =  0, 
+{\bfseries NEAREST}, 
+{\bfseries LINEAR}, 
+{\bfseries NEAREST\_\-MIPMAP\_\-NEAREST}, 
+\par
+{\bfseries LINEAR\_\-MIPMAP\_\-NEAREST}, 
+{\bfseries NEAREST\_\-MIPMAP\_\-LINEAR}, 
+{\bfseries LINEAR\_\-MIPMAP\_\-LINEAR}, 
+{\bfseries UNKNOWN}, 
+\par
+{\bfseries DEFAULT} =  NONE
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+FilterFunction \hyperlink{namespaceFUDaeTextureFilterFunction_af46557827f9dbe21ac8b468cfa84e5d7}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaeTextureFilterFunction_aff1f69db827a3b3dabb2aa04abbc2c0f}{ToString} (FilterFunction function)
+\item 
+FilterFunction \hyperlink{namespaceFUDaeTextureFilterFunction_ad8476b0bfb413c0a71404a9db2cb3f64}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the texture filter functions. 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaeTextureFilterFunction_af46557827f9dbe21ac8b468cfa84e5d7}{
+\index{FUDaeTextureFilterFunction@{FUDaeTextureFilterFunction}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaeTextureFilterFunction@{FUDaeTextureFilterFunction}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT FilterFunction FUDaeTextureFilterFunction::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaeTextureFilterFunction_af46557827f9dbe21ac8b468cfa84e5d7}
+Converts the COLLADA filter function string into a filter function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The COLLADA filter function string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The filter function. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaeTextureFilterFunction_ad8476b0bfb413c0a71404a9db2cb3f64}{
+\index{FUDaeTextureFilterFunction@{FUDaeTextureFilterFunction}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaeTextureFilterFunction@{FUDaeTextureFilterFunction}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FilterFunction FUDaeTextureFilterFunction::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaeTextureFilterFunction_ad8476b0bfb413c0a71404a9db2cb3f64}
+See above. \hypertarget{namespaceFUDaeTextureFilterFunction_aff1f69db827a3b3dabb2aa04abbc2c0f}{
+\index{FUDaeTextureFilterFunction@{FUDaeTextureFilterFunction}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaeTextureFilterFunction@{FUDaeTextureFilterFunction}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaeTextureFilterFunction::ToString (
+\begin{DoxyParamCaption}
+\item[{FilterFunction}]{ function}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaeTextureFilterFunction_aff1f69db827a3b3dabb2aa04abbc2c0f}
+Converts the filter function into its COLLADA filter function string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em function}]The filter function. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The COLLADA filter function string. 
+\end{DoxyReturn}

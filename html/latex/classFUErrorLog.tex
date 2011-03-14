@@ -1,0 +1,88 @@
+\hypertarget{classFUErrorLog}{
+\section{FUErrorLog Class Reference}
+\label{classFUErrorLog}\index{FUErrorLog@{FUErrorLog}}
+}
+
+
+{\ttfamily \#include $<$FUErrorLog.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUErrorLog_a5793d5e3697fb459b63f60fb8d5373d8}{FUErrorLog} (const fchar $\ast$logFilename, \hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} errorLevel)
+\item 
+\hyperlink{classFUErrorLog_a1668f44defdf43926226f33e85511091}{$\sim$FUErrorLog} ()
+\item 
+\hyperlink{classFULogFile}{FULogFile} $\ast$ \hyperlink{classFUErrorLog_a5d942e975831c08be9981582b20f311f}{GetLogFile} ()
+\item 
+void \hyperlink{classFUErrorLog_aae7d5abcdb93506323d9307468124fee}{QueryNewMessages} (uint32 \&debug, uint32 \&warnings, uint32 \&errors)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An error log. This class monitors the \hyperlink{classFUError}{FUError} sinks and outputs the wanted messages into a text file. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFUError}{FUError} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUErrorLog_a5793d5e3697fb459b63f60fb8d5373d8}{
+\index{FUErrorLog@{FUErrorLog}!FUErrorLog@{FUErrorLog}}
+\index{FUErrorLog@{FUErrorLog}!FUErrorLog@{FUErrorLog}}
+\subsubsection[{FUErrorLog}]{\setlength{\rightskip}{0pt plus 5cm}FUErrorLog::FUErrorLog (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ logFilename, }
+\item[{{\bf FUError::Level}}]{ errorLevel}
+\end{DoxyParamCaption}
+)}}
+\label{classFUErrorLog_a5793d5e3697fb459b63f60fb8d5373d8}
+Constructor. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFUError_ac4b066f99c221e180ecfe9183fabbf3c}{FUError::Level} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em logFilename}]The filename in which to output the error messages that cover at least the given errorLevel. \item[{\em errorLevel}]The minimum required error level. Any error messages lower that this level will be discarded. \end{DoxyParams}
+\hypertarget{classFUErrorLog_a1668f44defdf43926226f33e85511091}{
+\index{FUErrorLog@{FUErrorLog}!$\sim$FUErrorLog@{$\sim$FUErrorLog}}
+\index{$\sim$FUErrorLog@{$\sim$FUErrorLog}!FUErrorLog@{FUErrorLog}}
+\subsubsection[{$\sim$FUErrorLog}]{\setlength{\rightskip}{0pt plus 5cm}FUErrorLog::$\sim$FUErrorLog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUErrorLog_a1668f44defdf43926226f33e85511091}
+Destructor. Closes the log file. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUErrorLog_a5d942e975831c08be9981582b20f311f}{
+\index{FUErrorLog@{FUErrorLog}!GetLogFile@{GetLogFile}}
+\index{GetLogFile@{GetLogFile}!FUErrorLog@{FUErrorLog}}
+\subsubsection[{GetLogFile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FULogFile}$\ast$ FUErrorLog::GetLogFile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUErrorLog_a5d942e975831c08be9981582b20f311f}
+Retrieves the log file handler. This can be useful when writing out long, custom messages. \begin{DoxyReturn}{Returns}
+The log file handler. 
+\end{DoxyReturn}
+\hypertarget{classFUErrorLog_aae7d5abcdb93506323d9307468124fee}{
+\index{FUErrorLog@{FUErrorLog}!QueryNewMessages@{QueryNewMessages}}
+\index{QueryNewMessages@{QueryNewMessages}!FUErrorLog@{FUErrorLog}}
+\subsubsection[{QueryNewMessages}]{\setlength{\rightskip}{0pt plus 5cm}void FUErrorLog::QueryNewMessages (
+\begin{DoxyParamCaption}
+\item[{uint32 \&}]{ debug, }
+\item[{uint32 \&}]{ warnings, }
+\item[{uint32 \&}]{ errors}
+\end{DoxyParamCaption}
+)}}
+\label{classFUErrorLog_aae7d5abcdb93506323d9307468124fee}
+Allows to determine if new messages have been generated since the last query. 
+\begin{DoxyParams}{Parameters}
+\item[{\em debug}]The number of new debug-\/level messages. \item[{\em warnings}]The number of new warning-\/level messages. \item[{\em errors}]The number of new error-\/level messages. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUErrorLog_8h}{FUErrorLog.h}\item 
+FCollada/FUtils/FUErrorLog.cpp\end{DoxyCompactItemize}

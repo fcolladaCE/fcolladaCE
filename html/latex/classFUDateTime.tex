@@ -1,0 +1,247 @@
+\hypertarget{classFUDateTime}{
+\section{FUDateTime Class Reference}
+\label{classFUDateTime}\index{FUDateTime@{FUDateTime}}
+}
+
+
+{\ttfamily \#include $<$FUDateTime.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUDateTime_a3e841a2509d2ff3faaabc8e081beea8f}{FUDateTime} ()
+\item 
+\hyperlink{classFUDateTime_ac38382150f5c63c6168b8eff80f7359c}{FUDateTime} (const \hyperlink{classFUDateTime}{FUDateTime} \&time)
+\item 
+\hyperlink{classFUDateTime_af1cee743d781c179dcdb85f1537407df}{$\sim$FUDateTime} ()
+\item 
+uint32 \hyperlink{classFUDateTime_ac6a02c221215238a779bff61093626b2}{GetSeconds} () const 
+\item 
+uint32 \hyperlink{classFUDateTime_a3ec9ad7624c058a0790c4de0a984702b}{GetMinutes} () const 
+\item 
+uint32 \hyperlink{classFUDateTime_abe0949d5c8c1d00a2c164ded6e11b30d}{GetHour} () const 
+\item 
+uint32 \hyperlink{classFUDateTime_a98db1109451fbc3e6a1544185a44fb73}{GetDay} () const 
+\item 
+uint32 \hyperlink{classFUDateTime_aa5a4762ef4023a8746684fc9306508e4}{GetMonth} () const 
+\item 
+uint32 \hyperlink{classFUDateTime_affed2783369ecf09a877ed640dd47923}{GetYear} () const 
+\item 
+void \hyperlink{classFUDateTime_ac29ee580eb76914ede1b5b1a55720dce}{SetSeconds} (uint32 \_\-seconds)
+\item 
+void \hyperlink{classFUDateTime_adefd51182822f0bea94e02087dd6433d}{SetMinutes} (uint32 \_\-minutes)
+\item 
+void \hyperlink{classFUDateTime_ae0418848399c02b37a046bd6afe6eb0d}{SetHour} (uint32 \_\-hour)
+\item 
+void \hyperlink{classFUDateTime_a824fc5c8edd8727961c2fe29df8333ed}{SetDay} (uint32 \_\-day)
+\item 
+void \hyperlink{classFUDateTime_af409696781158db5961a43c32050f1fd}{SetMonth} (uint32 \_\-month)
+\item 
+void \hyperlink{classFUDateTime_a1f8eab94e0f884ef3f10b481672d665f}{SetYear} (uint32 \_\-year)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classFUDateTime}{FUDateTime} \hyperlink{classFUDateTime_afa034e1418fd2a7e8ca124cdb0559e51}{GetNow} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A common date-\/time. Encapsulates the OS-\/dependant timing functions. Use the static member function: \hyperlink{classFUDateTime_afa034e1418fd2a7e8ca124cdb0559e51}{GetNow()} to sample the current time. The day and month values are 1-\/indexed, to be user-\/friendly. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUDateTime_a3e841a2509d2ff3faaabc8e081beea8f}{
+\index{FUDateTime@{FUDateTime}!FUDateTime@{FUDateTime}}
+\index{FUDateTime@{FUDateTime}!FUDateTime@{FUDateTime}}
+\subsubsection[{FUDateTime}]{\setlength{\rightskip}{0pt plus 5cm}FUDateTime::FUDateTime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUDateTime_a3e841a2509d2ff3faaabc8e081beea8f}
+Default constructor. The default date-\/time is set to 01/01/1900 at 00:00:00. \hypertarget{classFUDateTime_ac38382150f5c63c6168b8eff80f7359c}{
+\index{FUDateTime@{FUDateTime}!FUDateTime@{FUDateTime}}
+\index{FUDateTime@{FUDateTime}!FUDateTime@{FUDateTime}}
+\subsubsection[{FUDateTime}]{\setlength{\rightskip}{0pt plus 5cm}FUDateTime::FUDateTime (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUDateTime} \&}]{ time}
+\end{DoxyParamCaption}
+)}}
+\label{classFUDateTime_ac38382150f5c63c6168b8eff80f7359c}
+Copy constructor. Creates an identical clone of the given date-\/time structure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em time}]The date-\/time structure to copy. \end{DoxyParams}
+\hypertarget{classFUDateTime_af1cee743d781c179dcdb85f1537407df}{
+\index{FUDateTime@{FUDateTime}!$\sim$FUDateTime@{$\sim$FUDateTime}}
+\index{$\sim$FUDateTime@{$\sim$FUDateTime}!FUDateTime@{FUDateTime}}
+\subsubsection[{$\sim$FUDateTime}]{\setlength{\rightskip}{0pt plus 5cm}FUDateTime::$\sim$FUDateTime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUDateTime_af1cee743d781c179dcdb85f1537407df}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUDateTime_a98db1109451fbc3e6a1544185a44fb73}{
+\index{FUDateTime@{FUDateTime}!GetDay@{GetDay}}
+\index{GetDay@{GetDay}!FUDateTime@{FUDateTime}}
+\subsubsection[{GetDay}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FUDateTime::GetDay (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_a98db1109451fbc3e6a1544185a44fb73}
+Retrieves the day component of the date-\/time structure. \begin{DoxyReturn}{Returns}
+The day component. The day component is 1-\/indexed and has an upper range that depends on the month component. The valid range for the day component is \mbox{[}1, 31\mbox{]}. 
+\end{DoxyReturn}
+\hypertarget{classFUDateTime_abe0949d5c8c1d00a2c164ded6e11b30d}{
+\index{FUDateTime@{FUDateTime}!GetHour@{GetHour}}
+\index{GetHour@{GetHour}!FUDateTime@{FUDateTime}}
+\subsubsection[{GetHour}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FUDateTime::GetHour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_abe0949d5c8c1d00a2c164ded6e11b30d}
+Retrieves the hour component of the date-\/time structure. \begin{DoxyReturn}{Returns}
+The hour component. The hour component is always in the range \mbox{[}0, 24\mbox{[}. 
+\end{DoxyReturn}
+\hypertarget{classFUDateTime_a3ec9ad7624c058a0790c4de0a984702b}{
+\index{FUDateTime@{FUDateTime}!GetMinutes@{GetMinutes}}
+\index{GetMinutes@{GetMinutes}!FUDateTime@{FUDateTime}}
+\subsubsection[{GetMinutes}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FUDateTime::GetMinutes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_a3ec9ad7624c058a0790c4de0a984702b}
+Retrieves the minutes component of the date-\/time structure. \begin{DoxyReturn}{Returns}
+The minutes component. The minutes component is always in the range \mbox{[}0, 60\mbox{[}. 
+\end{DoxyReturn}
+\hypertarget{classFUDateTime_aa5a4762ef4023a8746684fc9306508e4}{
+\index{FUDateTime@{FUDateTime}!GetMonth@{GetMonth}}
+\index{GetMonth@{GetMonth}!FUDateTime@{FUDateTime}}
+\subsubsection[{GetMonth}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FUDateTime::GetMonth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_aa5a4762ef4023a8746684fc9306508e4}
+Retrieves the month component of the date-\/time structure. \begin{DoxyReturn}{Returns}
+The month component. The month component is 1-\/indexed and is always in the range \mbox{[}1, 12\mbox{]}. 
+\end{DoxyReturn}
+\hypertarget{classFUDateTime_afa034e1418fd2a7e8ca124cdb0559e51}{
+\index{FUDateTime@{FUDateTime}!GetNow@{GetNow}}
+\index{GetNow@{GetNow}!FUDateTime@{FUDateTime}}
+\subsubsection[{GetNow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUDateTime} FUDateTime::GetNow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFUDateTime_afa034e1418fd2a7e8ca124cdb0559e51}
+Creates a date-\/time structure to represent the current time. Encapsulates the OS-\/dependant time() function. \begin{DoxyReturn}{Returns}
+The current date-\/time. 
+\end{DoxyReturn}
+\hypertarget{classFUDateTime_ac6a02c221215238a779bff61093626b2}{
+\index{FUDateTime@{FUDateTime}!GetSeconds@{GetSeconds}}
+\index{GetSeconds@{GetSeconds}!FUDateTime@{FUDateTime}}
+\subsubsection[{GetSeconds}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FUDateTime::GetSeconds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_ac6a02c221215238a779bff61093626b2}
+Retrieves the seconds component of the date-\/time structure. \begin{DoxyReturn}{Returns}
+The seconds component. The seconds component is always in the range \mbox{[}0, 60\mbox{[}. 
+\end{DoxyReturn}
+\hypertarget{classFUDateTime_affed2783369ecf09a877ed640dd47923}{
+\index{FUDateTime@{FUDateTime}!GetYear@{GetYear}}
+\index{GetYear@{GetYear}!FUDateTime@{FUDateTime}}
+\subsubsection[{GetYear}]{\setlength{\rightskip}{0pt plus 5cm}uint32 FUDateTime::GetYear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_affed2783369ecf09a877ed640dd47923}
+Retrieves the year component of the date-\/time structure. \begin{DoxyReturn}{Returns}
+The year component. The year component represents the full year value, where a value of 2000 is returned for the year 2000. 
+\end{DoxyReturn}
+\hypertarget{classFUDateTime_a824fc5c8edd8727961c2fe29df8333ed}{
+\index{FUDateTime@{FUDateTime}!SetDay@{SetDay}}
+\index{SetDay@{SetDay}!FUDateTime@{FUDateTime}}
+\subsubsection[{SetDay}]{\setlength{\rightskip}{0pt plus 5cm}void FUDateTime::SetDay (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-day}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_a824fc5c8edd8727961c2fe29df8333ed}
+Sets the day component of the date-\/time structure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-day}]The new seconds value. No verification is made to verify that the new value is within the valid range. \end{DoxyParams}
+\hypertarget{classFUDateTime_ae0418848399c02b37a046bd6afe6eb0d}{
+\index{FUDateTime@{FUDateTime}!SetHour@{SetHour}}
+\index{SetHour@{SetHour}!FUDateTime@{FUDateTime}}
+\subsubsection[{SetHour}]{\setlength{\rightskip}{0pt plus 5cm}void FUDateTime::SetHour (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-hour}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_ae0418848399c02b37a046bd6afe6eb0d}
+Sets the hour component of the date-\/time structure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-hour}]The new seconds value. No verification is made to verify that the new value is within the valid range. \end{DoxyParams}
+\hypertarget{classFUDateTime_adefd51182822f0bea94e02087dd6433d}{
+\index{FUDateTime@{FUDateTime}!SetMinutes@{SetMinutes}}
+\index{SetMinutes@{SetMinutes}!FUDateTime@{FUDateTime}}
+\subsubsection[{SetMinutes}]{\setlength{\rightskip}{0pt plus 5cm}void FUDateTime::SetMinutes (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-minutes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_adefd51182822f0bea94e02087dd6433d}
+Sets the minutes component of the date-\/time structure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-minutes}]The new seconds value. No verification is made to verify that the new value is within the valid range. \end{DoxyParams}
+\hypertarget{classFUDateTime_af409696781158db5961a43c32050f1fd}{
+\index{FUDateTime@{FUDateTime}!SetMonth@{SetMonth}}
+\index{SetMonth@{SetMonth}!FUDateTime@{FUDateTime}}
+\subsubsection[{SetMonth}]{\setlength{\rightskip}{0pt plus 5cm}void FUDateTime::SetMonth (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-month}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_af409696781158db5961a43c32050f1fd}
+Sets the month component of the date-\/time structure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-month}]The new seconds value. No verification is made to verify that the new value is within the valid range. \end{DoxyParams}
+\hypertarget{classFUDateTime_ac29ee580eb76914ede1b5b1a55720dce}{
+\index{FUDateTime@{FUDateTime}!SetSeconds@{SetSeconds}}
+\index{SetSeconds@{SetSeconds}!FUDateTime@{FUDateTime}}
+\subsubsection[{SetSeconds}]{\setlength{\rightskip}{0pt plus 5cm}void FUDateTime::SetSeconds (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_ac29ee580eb76914ede1b5b1a55720dce}
+Sets the seconds component of the date-\/time structure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-seconds}]The new seconds value. No verification is made to verify that the new value is within the valid range. \end{DoxyParams}
+\hypertarget{classFUDateTime_a1f8eab94e0f884ef3f10b481672d665f}{
+\index{FUDateTime@{FUDateTime}!SetYear@{SetYear}}
+\index{SetYear@{SetYear}!FUDateTime@{FUDateTime}}
+\subsubsection[{SetYear}]{\setlength{\rightskip}{0pt plus 5cm}void FUDateTime::SetYear (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ \_\-year}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUDateTime_a1f8eab94e0f884ef3f10b481672d665f}
+Sets the year component of the date-\/time structure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-year}]The new seconds value. No verification is made to verify that the new value is within the valid range. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUDateTime_8h}{FUDateTime.h}\item 
+FCollada/FUtils/FUDateTime.cpp\end{DoxyCompactItemize}

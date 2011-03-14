@@ -1,0 +1,74 @@
+\hypertarget{classFCDAnimationMKeyBezier}{
+\section{FCDAnimationMKeyBezier Class Reference}
+\label{classFCDAnimationMKeyBezier}\index{FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}}
+}
+
+
+{\ttfamily \#include $<$FCDAnimationKey.h$>$}
+
+Inheritance diagram for FCDAnimationMKeyBezier:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFCDAnimationMKeyBezier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDAnimationMKeyBezier_a45aa55fc7430c817a8ab08882d2fcb9f}{FCDAnimationMKeyBezier} (uint32 dimension)
+\item 
+virtual \hyperlink{classFCDAnimationMKeyBezier_ae266c127ad7d936f2060b40c5368762f}{$\sim$FCDAnimationMKeyBezier} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFMVector2}{FMVector2} $\ast$ \hyperlink{classFCDAnimationMKeyBezier_aaf6f55f43516c1bf38cef19ecbb8fe21}{inTangent}
+\item 
+\hyperlink{classFMVector2}{FMVector2} $\ast$ \hyperlink{classFCDAnimationMKeyBezier_aea9338c2e0d894e9d5e9a4dcf00928e6}{outTangent}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A multi-\/dimensional animation key with tangents values. This class is used for bezier keys and soon: for hermite keys as well. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDAnimationMKeyBezier_a45aa55fc7430c817a8ab08882d2fcb9f}{
+\index{FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}!FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}}
+\index{FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}!FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}}
+\subsubsection[{FCDAnimationMKeyBezier}]{\setlength{\rightskip}{0pt plus 5cm}FCDAnimationMKeyBezier::FCDAnimationMKeyBezier (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ dimension}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDAnimationMKeyBezier_a45aa55fc7430c817a8ab08882d2fcb9f}
+Constructor: do not use directly. Instead call FCDAnimationCurve::AddKey(FUDaeInterpolation::BEZIER). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dimension}]The number of dimension to the key output. \end{DoxyParams}
+\hypertarget{classFCDAnimationMKeyBezier_ae266c127ad7d936f2060b40c5368762f}{
+\index{FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}!$\sim$FCDAnimationMKeyBezier@{$\sim$FCDAnimationMKeyBezier}}
+\index{$\sim$FCDAnimationMKeyBezier@{$\sim$FCDAnimationMKeyBezier}!FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}}
+\subsubsection[{$\sim$FCDAnimationMKeyBezier}]{\setlength{\rightskip}{0pt plus 5cm}FCDAnimationMKeyBezier::$\sim$FCDAnimationMKeyBezier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDAnimationMKeyBezier_ae266c127ad7d936f2060b40c5368762f}
+Destructor. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classFCDAnimationMKeyBezier_aaf6f55f43516c1bf38cef19ecbb8fe21}{
+\index{FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}!inTangent@{inTangent}}
+\index{inTangent@{inTangent}!FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}}
+\subsubsection[{inTangent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector2}$\ast$ {\bf FCDAnimationMKeyBezier::inTangent}}}
+\label{classFCDAnimationMKeyBezier_aaf6f55f43516c1bf38cef19ecbb8fe21}
+The incoming tangent value. \hypertarget{classFCDAnimationMKeyBezier_aea9338c2e0d894e9d5e9a4dcf00928e6}{
+\index{FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}!outTangent@{outTangent}}
+\index{outTangent@{outTangent}!FCDAnimationMKeyBezier@{FCDAnimationMKeyBezier}}
+\subsubsection[{outTangent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector2}$\ast$ {\bf FCDAnimationMKeyBezier::outTangent}}}
+\label{classFCDAnimationMKeyBezier_aea9338c2e0d894e9d5e9a4dcf00928e6}
+The outcoming tangent value. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDAnimationKey_8h}{FCDAnimationKey.h}\item 
+FCollada/FCDocument/FCDAnimationKey.cpp\end{DoxyCompactItemize}

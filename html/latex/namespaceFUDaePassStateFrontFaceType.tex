@@ -1,0 +1,92 @@
+\hypertarget{namespaceFUDaePassStateFrontFaceType}{
+\section{FUDaePassStateFrontFaceType Namespace Reference}
+\label{namespaceFUDaePassStateFrontFaceType}\index{FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8a}{Type} \{ \hyperlink{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aaf709f84dd0048b4da850c6f1513d36cf}{CLOCKWISE} =  0x0900, 
+\hyperlink{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aa217704ed9cd3355630874e34f351cde5}{COUNTER\_\-CLOCKWISE} =  0x0901, 
+\hyperlink{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aaae10448a4d994ea8f088ac6900791973}{INVALID}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8a}{Type} \hyperlink{namespaceFUDaePassStateFrontFaceType_a195a9aae85ad22979dfed6cdb6b4d0c2}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaePassStateFrontFaceType_a565d7064373942fbbbbd3ead31a5104e}{ToString} (\hyperlink{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8a}{Type} type)
+\item 
+\hyperlink{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8a}{Type} \hyperlink{namespaceFUDaePassStateFrontFaceType_aaa18a93c5ba58971ed8479600143b076}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The render state front face types. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8a}{
+\index{FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}!Type@{Type}}
+\index{Type@{Type}!FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUDaePassStateFrontFaceType::Type}}}
+\label{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8a}
+The winding direction that determines the front surface for a polygon. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CLOCKWISE@{CLOCKWISE}!FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}}\index{FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}!CLOCKWISE@{CLOCKWISE}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aaf709f84dd0048b4da850c6f1513d36cf}{
+CLOCKWISE}
+\label{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aaf709f84dd0048b4da850c6f1513d36cf}
+}]Clockwise winding. \index{COUNTER\_\-CLOCKWISE@{COUNTER\_\-CLOCKWISE}!FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}}\index{FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}!COUNTER\_\-CLOCKWISE@{COUNTER\_\-CLOCKWISE}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aa217704ed9cd3355630874e34f351cde5}{
+COUNTER\_\-CLOCKWISE}
+\label{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aa217704ed9cd3355630874e34f351cde5}
+}]Counter-\/clockwise winding. \index{INVALID@{INVALID}!FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}}\index{FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aaae10448a4d994ea8f088ac6900791973}{
+INVALID}
+\label{namespaceFUDaePassStateFrontFaceType_a4be7a4c2574498a05f6b94662a315c8aaae10448a4d994ea8f088ac6900791973}
+}]An invalid winding. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaePassStateFrontFaceType_a195a9aae85ad22979dfed6cdb6b4d0c2}{
+\index{FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf Type} FUDaePassStateFrontFaceType::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateFrontFaceType_a195a9aae85ad22979dfed6cdb6b4d0c2}
+Converts the COLLADA render state front-\/face type string to the front-\/face type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The render state front-\/face type string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The front-\/face type. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaePassStateFrontFaceType_aaa18a93c5ba58971ed8479600143b076}{
+\index{FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} FUDaePassStateFrontFaceType::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaePassStateFrontFaceType_aaa18a93c5ba58971ed8479600143b076}
+See above. \hypertarget{namespaceFUDaePassStateFrontFaceType_a565d7064373942fbbbbd3ead31a5104e}{
+\index{FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaePassStateFrontFaceType@{FUDaePassStateFrontFaceType}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaePassStateFrontFaceType::ToString (
+\begin{DoxyParamCaption}
+\item[{Type}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateFrontFaceType_a565d7064373942fbbbbd3ead31a5104e}
+Converts the front-\/face type to its COLLADA render state front-\/face type string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The front-\/face type. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state front-\/face type string. 
+\end{DoxyReturn}

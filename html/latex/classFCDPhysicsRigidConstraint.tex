@@ -1,0 +1,944 @@
+\hypertarget{classFCDPhysicsRigidConstraint}{
+\section{FCDPhysicsRigidConstraint Class Reference}
+\label{classFCDPhysicsRigidConstraint}\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsRigidConstraint.h$>$}
+
+Inheritance diagram for FCDPhysicsRigidConstraint:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classFCDPhysicsRigidConstraint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint_a6625956bba6087887e7003cad5e01ade}{FCDPhysicsRigidConstraint} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDPhysicsModel}{FCDPhysicsModel} $\ast$\_\-parent)
+\item 
+virtual \hyperlink{classFCDPhysicsRigidConstraint_ab109ee91a56b7deaf2659adb1dcdebc6}{$\sim$FCDPhysicsRigidConstraint} ()
+\item 
+virtual \hyperlink{classFCDEntity_a9301a4bd5f4d4190ec13e40db4effdd7}{Type} \hyperlink{classFCDPhysicsRigidConstraint_a95fd22d9def1fdfedb0000a16a410851}{GetType} () const 
+\item 
+\hyperlink{classFCDPhysicsModel}{FCDPhysicsModel} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_aa7aed9e03275e8b757de0044bbd0b395}{GetParent} ()
+\item 
+const \hyperlink{classFCDPhysicsModel}{FCDPhysicsModel} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_a376ef778cd819a3bf6d52365cba276ed}{GetParent} () const 
+\item 
+const \hyperlink{classfm_1_1stringT}{fm::string} \& \hyperlink{classFCDPhysicsRigidConstraint_afb23f9ec2cc4ebcb506c5c3f75fb943d}{GetSubId} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a3e2d3a71acb99a4b6d1ca13d01bfa4c6}{SetSubId} (const \hyperlink{classfm_1_1stringT}{fm::string} \&subId)
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a01b9ad045a6a431783f79964d5c7c979}{SetSubId} (const char $\ast$subId)
+\item 
+\hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_a201b3ab455119d313914f32edac5a2b1}{GetReferenceRigidBody} ()
+\item 
+const \hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_aba517b34a3c30353d61a062f4a57cb16}{GetReferenceRigidBody} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_af2838b8841a6119e36c064aaa1fe8f91}{SetReferenceRigidBody} (\hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$\_\-referenceRigidBody)
+\item 
+\hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_aa19d38ffd2893188fe1045b9f0fc57c0}{GetTargetRigidBody} ()
+\item 
+const \hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_a1f5f716e35b3a73fe42cf995d5d27e8f}{GetTargetRigidBody} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_ae3054b2ef168bc99dd265eba23048129}{SetTargetRigidBody} (\hyperlink{classFCDPhysicsRigidBody}{FCDPhysicsRigidBody} $\ast$\_\-targetRigidBody)
+\item 
+\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_aecfa72ef738ace21c10a690baf2022b2}{GetReferenceNode} ()
+\item 
+const \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_ab46b1e054faaaed8a67fcea806e27da4}{GetReferenceNode} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_aeb92802f7e8ee0b97353c88a4baa766e}{SetReferenceNode} (\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$\_\-referenceNode)
+\item 
+\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_afe91ca21e513e5087b3ca85d9c1b618e}{GetTargetNode} ()
+\item 
+const \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_afb0f19a82ccf6bb4025245096d1ec652}{GetTargetNode} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a6771e3e5c69b0372c054a2b385618ba7}{SetTargetNode} (\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$\_\-targetNode)
+\item 
+\hyperlink{classFUObjectContainer}{FCDTransformContainer} \& \hyperlink{classFCDPhysicsRigidConstraint_a65d0a0e27da18419ca1ef2c239ec269e}{GetTransformsRef} ()
+\item 
+const \hyperlink{classFUObjectContainer}{FCDTransformContainer} \& \hyperlink{classFCDPhysicsRigidConstraint_ae24b5ae4e20e8a0556764fe638dc6d40}{GetTransformsRef} () const 
+\item 
+\hyperlink{classFUObjectContainer}{FCDTransformContainer} \& \hyperlink{classFCDPhysicsRigidConstraint_aec006086f6071ba2ecf3d6bda8f436d1}{GetTransformsTar} ()
+\item 
+const \hyperlink{classFUObjectContainer}{FCDTransformContainer} \& \hyperlink{classFCDPhysicsRigidConstraint_a6121e2a0bc57e7cb9ff19f903dfbc4c2}{GetTransformsTar} () const 
+\item 
+\hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_aa640f671262ab9dae5f71dfa00c3d5ff}{AddTransformRef} (\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{FCDTransform::Type} type, size\_\-t index=(size\_\-t)-\/1)
+\item 
+\hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_a767751e1fec6557d92c0fabf047ae878}{AddTransformTar} (\hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{FCDTransform::Type} type, size\_\-t index=(size\_\-t)-\/1)
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a2dcfbcd57a613445ec3e90e0c7394538}{GetEnabled} ()
+\item 
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_aff637d7813284bfbd7b4ba430f6b0fa6}{GetEnabled} () const 
+\item 
+bool \hyperlink{classFCDPhysicsRigidConstraint_aa118dc6e91437e7294210193cd9a1a52}{IsEnabled} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a29ce8a1fdf43832609641b1878391094}{SetEnabled} (bool \_\-enabled)
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a9713d6ef58dc43a391eb148de3f70647}{GetInterpenetrate} ()
+\item 
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a26e5f9dcd04acbf64cbc022c559bb2c1}{GetInterpenetrate} () const 
+\item 
+bool \hyperlink{classFCDPhysicsRigidConstraint_a847f584ac90b0b75a8e8429c2c961583}{IsInterpenetrate} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_ad0ea420e99ac86f54f015b2a976cb7ca}{SetInterpenetrate} (bool \_\-interpenetrate)
+\item 
+\hyperlink{classFUParameterT}{FUParameterVector3} \& \hyperlink{classFCDPhysicsRigidConstraint_ad2f35d2c92bbca72cee81fd098ac2322}{GetLimitsLinearMin} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterVector3} \& \hyperlink{classFCDPhysicsRigidConstraint_aa144e26fa4bd23eca297f3b0b6b0d47c}{GetLimitsLinearMin} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a2fe79d00bba974be3c40a884dad9c668}{SetLimitsLinearMin} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-limitsLinearMin)
+\item 
+\hyperlink{classFUParameterT}{FUParameterVector3} \& \hyperlink{classFCDPhysicsRigidConstraint_aba63d3bd2428186d190dfe3944ba55aa}{GetLimitsLinearMax} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterVector3} \& \hyperlink{classFCDPhysicsRigidConstraint_af64f85d15f8043b0349c336c2fb2d60d}{GetLimitsLinearMax} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a3561f4f05b63b865c25b283c28e286e2}{SetLimitsLinearMax} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-limitsLinearMax)
+\item 
+\hyperlink{classFUParameterT}{FUParameterVector3} \& \hyperlink{classFCDPhysicsRigidConstraint_a20ea69483dccff0b6adbc7e831043c48}{GetLimitsSCTMin} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterVector3} \& \hyperlink{classFCDPhysicsRigidConstraint_ac5a98c8471f032985c60d0de7aea3d13}{GetLimitsSCTMin} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a5e132af0e4279a8b5e953603cd2b8eb0}{SetLimitsSCTMin} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-limitsSCTMin)
+\item 
+\hyperlink{classFUParameterT}{FUParameterVector3} \& \hyperlink{classFCDPhysicsRigidConstraint_abf33f31354bbcc096c84d3fae2db463b}{GetLimitsSCTMax} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterVector3} \& \hyperlink{classFCDPhysicsRigidConstraint_a8974e4bc1cc245b8f618c9d81809253c}{GetLimitsSCTMax} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_ae9ea41b987feed7065a3748ae94b689e}{SetLimitsSCTMax} (const \hyperlink{classFMVector3}{FMVector3} \&\_\-limitsSCTMax)
+\item 
+\hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_af04ab7b87dc559dc3fc22f1ae2ba3d1c}{GetSpringLinearStiffness} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_ab10c7ddef6e04594695cc5dbd122dd86}{GetSpringLinearStiffness} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_ab229222b68cc31d15113f6921e4ee3d3}{SetSpringLinearStiffness} (float \_\-springLinearStiffness)
+\item 
+\hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a041966532526b63b3a2d99d82d619672}{GetSpringLinearDamping} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a3d7e4e73ca4d74061e9cfdc44fab07d1}{GetSpringLinearDamping} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_ac1a792e51afd1be4f909371702ab7531}{SetSpringLinearDamping} (float \_\-springLinearDamping)
+\item 
+\hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_ad18cb64c04a05705c5a4361d8e38c7de}{GetSpringLinearTargetValue} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a5ceb9fe6cd3ca58ae3b89e51bf509165}{GetSpringLinearTargetValue} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_ac64c51727ed14548ba623c1742a3c2f2}{SetSpringLinearTargetValue} (float \_\-springLinearTargetValue)
+\item 
+\hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a7365394178b22920437afa3ee217a69f}{GetSpringAngularStiffness} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a2d886268c987e1797655c31ee57b31b7}{GetSpringAngularStiffness} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a50eff3aece7ef1d1f3937a50c4569746}{SetSpringAngularStiffness} (float \_\-springAngularStiffness)
+\item 
+\hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_afdf08ace1c9d9c4d27ae88aebc451591}{GetSpringAngularDamping} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a66e19157e6a4c5970ebcf639e157fc70}{GetSpringAngularDamping} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_a231532aff9c89c29bf25997647415854}{SetSpringAngularDamping} (float \_\-springAngularDamping)
+\item 
+\hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_a37e69d7f6a60af6447b44705bdf8b0a0}{GetSpringAngularTargetValue} ()
+\item 
+const \hyperlink{classFUParameterT}{FUParameterFloat} \& \hyperlink{classFCDPhysicsRigidConstraint_aace7cc7301f20ba85ad32807a3b2bffd}{GetSpringAngularTargetValue} () const 
+\item 
+void \hyperlink{classFCDPhysicsRigidConstraint_ab0ab82e451611446b736be4a4656cd80}{SetSpringAngularTargetValue} (float \_\-springAngularTargetValue)
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint_a72ffcdeb5fb61c9f0891da39bffd168a}{DEPRECATED} (3.05A, GetEnabled().GetAnimated) FCDAnimated $\ast$GetAnimatedEnabled()
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint_aafc4b3931100ed13df110584b0a72623}{DEPRECATED} (3.05A, GetEnabled().GetAnimated) const FCDAnimated $\ast$GetAnimatedEnabled() const 
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint_adcb526a3ce0c595eef0744e424cb9d12}{DEPRECATED} (3.05A, GetInterpenetrate().GetAnimated) FCDAnimated $\ast$GetAnimatedInterpenetrate()
+\item 
+\hyperlink{classFCDPhysicsRigidConstraint_a7b338e0666f3837068ab955687b51aea}{DEPRECATED} (3.05A, GetInterpenetrate().GetAnimated) const FCDAnimated $\ast$GetAnimatedInterpenetrate() const 
+\item 
+virtual \hyperlink{classFCDEntity}{FCDEntity} $\ast$ \hyperlink{classFCDPhysicsRigidConstraint_a45abae1d5a24c70f830e0a14137cd98e}{Clone} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA rigid constraint.
+
+A rigid constraint attaches two rigid bodies together using springs, ball joints, or other limitations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPhysicsRigidConstraint_a6625956bba6087887e7003cad5e01ade}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{FCDPhysicsRigidConstraint}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidConstraint::FCDPhysicsRigidConstraint (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDPhysicsModel} $\ast$}]{ \_\-parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsRigidConstraint_a6625956bba6087887e7003cad5e01ade}
+Constructor: do not use directly. Create new rigid constraints using the \hyperlink{classFCDPhysicsModel_af9356bcbe4a27ef102a8e49d3cbab53e}{FCDPhysicsModel::AddRigidConstraint} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this rigid constraint. \item[{\em \_\-parent}]The physics model that contains this rigid constraint. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_ab109ee91a56b7deaf2659adb1dcdebc6}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!$\sim$FCDPhysicsRigidConstraint@{$\sim$FCDPhysicsRigidConstraint}}
+\index{$\sim$FCDPhysicsRigidConstraint@{$\sim$FCDPhysicsRigidConstraint}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{$\sim$FCDPhysicsRigidConstraint}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidConstraint::$\sim$FCDPhysicsRigidConstraint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ab109ee91a56b7deaf2659adb1dcdebc6}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPhysicsRigidConstraint_aa640f671262ab9dae5f71dfa00c3d5ff}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!AddTransformRef@{AddTransformRef}}
+\index{AddTransformRef@{AddTransformRef}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{AddTransformRef}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDPhysicsRigidConstraint::AddTransformRef (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform::Type}}]{ type, }
+\item[{size\_\-t}]{ index = {\ttfamily (size\_\-t)-\/1}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsRigidConstraint_aa640f671262ab9dae5f71dfa00c3d5ff}
+Adds a transform for the attached rigid body which is the reference. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of transform. \item[{\em index}]The position to add the transform to. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a767751e1fec6557d92c0fabf047ae878}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!AddTransformTar@{AddTransformTar}}
+\index{AddTransformTar@{AddTransformTar}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{AddTransformTar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDPhysicsRigidConstraint::AddTransformTar (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform::Type}}]{ type, }
+\item[{size\_\-t}]{ index = {\ttfamily (size\_\-t)-\/1}}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPhysicsRigidConstraint_a767751e1fec6557d92c0fabf047ae878}
+Adds a transform for the attached rigid body which is not the reference. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of transform. \item[{\em index}]The position to add the transform to. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a45abae1d5a24c70f830e0a14137cd98e}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEntity} $\ast$ FCDPhysicsRigidConstraint::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEntity} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a45abae1d5a24c70f830e0a14137cd98e}
+Copies the rigid constraint into a clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a new rigid constraint will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_afd21dc9f9dba45786012dea87f70b9fc}{FCDEntity}.
+
+\hypertarget{classFCDPhysicsRigidConstraint_aafc4b3931100ed13df110584b0a72623}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidConstraint::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetEnabled().}]{ GetAnimated}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aafc4b3931100ed13df110584b0a72623}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_adcb526a3ce0c595eef0744e424cb9d12}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidConstraint::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetInterpenetrate().}]{ GetAnimated}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_adcb526a3ce0c595eef0744e424cb9d12}
+Retrieves the animated value for interpenetrate. \begin{DoxyReturn}{Returns}
+The animated value, or NULL if interpenetrate is not animated. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a7b338e0666f3837068ab955687b51aea}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidConstraint::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetInterpenetrate().}]{ GetAnimated}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a7b338e0666f3837068ab955687b51aea}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a72ffcdeb5fb61c9f0891da39bffd168a}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDPhysicsRigidConstraint::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetEnabled().}]{ GetAnimated}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a72ffcdeb5fb61c9f0891da39bffd168a}
+Retrieves the animated value for enabled. \begin{DoxyReturn}{Returns}
+The animated value, or NULL if enabled is not animated. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a2dcfbcd57a613445ec3e90e0c7394538}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetEnabled@{GetEnabled}}
+\index{GetEnabled@{GetEnabled}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetEnabled}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableFloat}\& FCDPhysicsRigidConstraint::GetEnabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a2dcfbcd57a613445ec3e90e0c7394538}
+Retrieves whether this rigid constraint is enabled. \begin{DoxyReturn}{Returns}
+True if enabled. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_aff637d7813284bfbd7b4ba430f6b0fa6}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetEnabled@{GetEnabled}}
+\index{GetEnabled@{GetEnabled}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetEnabled}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDParameterAnimatableFloat}\& FCDPhysicsRigidConstraint::GetEnabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aff637d7813284bfbd7b4ba430f6b0fa6}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a9713d6ef58dc43a391eb148de3f70647}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetInterpenetrate@{GetInterpenetrate}}
+\index{GetInterpenetrate@{GetInterpenetrate}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetInterpenetrate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableFloat}\& FCDPhysicsRigidConstraint::GetInterpenetrate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a9713d6ef58dc43a391eb148de3f70647}
+Retrieves whether the connected rigid bodies can penetrate eachother. \begin{DoxyReturn}{Returns}
+True of they can penetrate. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a26e5f9dcd04acbf64cbc022c559bb2c1}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetInterpenetrate@{GetInterpenetrate}}
+\index{GetInterpenetrate@{GetInterpenetrate}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetInterpenetrate}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDParameterAnimatableFloat}\& FCDPhysicsRigidConstraint::GetInterpenetrate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a26e5f9dcd04acbf64cbc022c559bb2c1}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_aba63d3bd2428186d190dfe3944ba55aa}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetLimitsLinearMax@{GetLimitsLinearMax}}
+\index{GetLimitsLinearMax@{GetLimitsLinearMax}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetLimitsLinearMax}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterVector3}\& FCDPhysicsRigidConstraint::GetLimitsLinearMax (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aba63d3bd2428186d190dfe3944ba55aa}
+Retrieves the linear max limit of the degrees of freedom. \begin{DoxyReturn}{Returns}
+The linear max limit. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_af64f85d15f8043b0349c336c2fb2d60d}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetLimitsLinearMax@{GetLimitsLinearMax}}
+\index{GetLimitsLinearMax@{GetLimitsLinearMax}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetLimitsLinearMax}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterVector3}\& FCDPhysicsRigidConstraint::GetLimitsLinearMax (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_af64f85d15f8043b0349c336c2fb2d60d}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_ad2f35d2c92bbca72cee81fd098ac2322}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetLimitsLinearMin@{GetLimitsLinearMin}}
+\index{GetLimitsLinearMin@{GetLimitsLinearMin}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetLimitsLinearMin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterVector3}\& FCDPhysicsRigidConstraint::GetLimitsLinearMin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ad2f35d2c92bbca72cee81fd098ac2322}
+Retrieves the linear min limit of the degrees of freedom. \begin{DoxyReturn}{Returns}
+The linear min limit. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_aa144e26fa4bd23eca297f3b0b6b0d47c}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetLimitsLinearMin@{GetLimitsLinearMin}}
+\index{GetLimitsLinearMin@{GetLimitsLinearMin}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetLimitsLinearMin}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterVector3}\& FCDPhysicsRigidConstraint::GetLimitsLinearMin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aa144e26fa4bd23eca297f3b0b6b0d47c}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_abf33f31354bbcc096c84d3fae2db463b}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetLimitsSCTMax@{GetLimitsSCTMax}}
+\index{GetLimitsSCTMax@{GetLimitsSCTMax}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetLimitsSCTMax}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterVector3}\& FCDPhysicsRigidConstraint::GetLimitsSCTMax (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_abf33f31354bbcc096c84d3fae2db463b}
+Retrieves the swing cone and twist max limit of the degrees of freedom. \begin{DoxyReturn}{Returns}
+The swing cone and twist max limit. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a8974e4bc1cc245b8f618c9d81809253c}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetLimitsSCTMax@{GetLimitsSCTMax}}
+\index{GetLimitsSCTMax@{GetLimitsSCTMax}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetLimitsSCTMax}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterVector3}\& FCDPhysicsRigidConstraint::GetLimitsSCTMax (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a8974e4bc1cc245b8f618c9d81809253c}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a20ea69483dccff0b6adbc7e831043c48}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetLimitsSCTMin@{GetLimitsSCTMin}}
+\index{GetLimitsSCTMin@{GetLimitsSCTMin}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetLimitsSCTMin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterVector3}\& FCDPhysicsRigidConstraint::GetLimitsSCTMin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a20ea69483dccff0b6adbc7e831043c48}
+Retrieves the swing cone and twist min limit of the degrees of freedom. \begin{DoxyReturn}{Returns}
+The swing cone and twist min limit. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_ac5a98c8471f032985c60d0de7aea3d13}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetLimitsSCTMin@{GetLimitsSCTMin}}
+\index{GetLimitsSCTMin@{GetLimitsSCTMin}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetLimitsSCTMin}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterVector3}\& FCDPhysicsRigidConstraint::GetLimitsSCTMin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ac5a98c8471f032985c60d0de7aea3d13}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_aa7aed9e03275e8b757de0044bbd0b395}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsModel}$\ast$ FCDPhysicsRigidConstraint::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aa7aed9e03275e8b757de0044bbd0b395}
+Retrieves the physics model that contraints this rigid constraint. \begin{DoxyReturn}{Returns}
+The physics model. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a376ef778cd819a3bf6d52365cba276ed}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetParent}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsModel}$\ast$ FCDPhysicsRigidConstraint::GetParent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a376ef778cd819a3bf6d52365cba276ed}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_aecfa72ef738ace21c10a690baf2022b2}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetReferenceNode@{GetReferenceNode}}
+\index{GetReferenceNode@{GetReferenceNode}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetReferenceNode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSceneNode}$\ast$ FCDPhysicsRigidConstraint::GetReferenceNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aecfa72ef738ace21c10a690baf2022b2}
+Retrieves the attached node which is the reference. This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetReferenceRigidBody is NULL. \begin{DoxyReturn}{Returns}
+The attached reference node. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_ab46b1e054faaaed8a67fcea806e27da4}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetReferenceNode@{GetReferenceNode}}
+\index{GetReferenceNode@{GetReferenceNode}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetReferenceNode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSceneNode}$\ast$ FCDPhysicsRigidConstraint::GetReferenceNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ab46b1e054faaaed8a67fcea806e27da4}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_aba517b34a3c30353d61a062f4a57cb16}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetReferenceRigidBody@{GetReferenceRigidBody}}
+\index{GetReferenceRigidBody@{GetReferenceRigidBody}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetReferenceRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidBody}$\ast$ FCDPhysicsRigidConstraint::GetReferenceRigidBody (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aba517b34a3c30353d61a062f4a57cb16}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a201b3ab455119d313914f32edac5a2b1}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetReferenceRigidBody@{GetReferenceRigidBody}}
+\index{GetReferenceRigidBody@{GetReferenceRigidBody}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetReferenceRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidBody}$\ast$ FCDPhysicsRigidConstraint::GetReferenceRigidBody (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a201b3ab455119d313914f32edac5a2b1}
+Retrieves the attached rigid body which is the reference. \begin{DoxyReturn}{Returns}
+The reference rigid body. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_afdf08ace1c9d9c4d27ae88aebc451591}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringAngularDamping@{GetSpringAngularDamping}}
+\index{GetSpringAngularDamping@{GetSpringAngularDamping}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringAngularDamping}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringAngularDamping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_afdf08ace1c9d9c4d27ae88aebc451591}
+Retrieves the spring angular damping of the spring rigid constraint. This is set to 0.0 if there is no spring. \begin{DoxyReturn}{Returns}
+The spring angular damping. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a66e19157e6a4c5970ebcf639e157fc70}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringAngularDamping@{GetSpringAngularDamping}}
+\index{GetSpringAngularDamping@{GetSpringAngularDamping}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringAngularDamping}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringAngularDamping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a66e19157e6a4c5970ebcf639e157fc70}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a7365394178b22920437afa3ee217a69f}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringAngularStiffness@{GetSpringAngularStiffness}}
+\index{GetSpringAngularStiffness@{GetSpringAngularStiffness}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringAngularStiffness}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringAngularStiffness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a7365394178b22920437afa3ee217a69f}
+Retrieves the spring angular stiffness of the spring rigid constraint. This is set to 1.0 if there is no spring. \begin{DoxyReturn}{Returns}
+The spring angular stiffness. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a2d886268c987e1797655c31ee57b31b7}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringAngularStiffness@{GetSpringAngularStiffness}}
+\index{GetSpringAngularStiffness@{GetSpringAngularStiffness}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringAngularStiffness}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringAngularStiffness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a2d886268c987e1797655c31ee57b31b7}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_aace7cc7301f20ba85ad32807a3b2bffd}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringAngularTargetValue@{GetSpringAngularTargetValue}}
+\index{GetSpringAngularTargetValue@{GetSpringAngularTargetValue}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringAngularTargetValue}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringAngularTargetValue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aace7cc7301f20ba85ad32807a3b2bffd}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a37e69d7f6a60af6447b44705bdf8b0a0}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringAngularTargetValue@{GetSpringAngularTargetValue}}
+\index{GetSpringAngularTargetValue@{GetSpringAngularTargetValue}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringAngularTargetValue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringAngularTargetValue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a37e69d7f6a60af6447b44705bdf8b0a0}
+Retrieves the sping angular target value of the spring rigid constraint. This is set to 0.0 if there is no spring. \begin{DoxyReturn}{Returns}
+The spring angular target value. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a3d7e4e73ca4d74061e9cfdc44fab07d1}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringLinearDamping@{GetSpringLinearDamping}}
+\index{GetSpringLinearDamping@{GetSpringLinearDamping}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringLinearDamping}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringLinearDamping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a3d7e4e73ca4d74061e9cfdc44fab07d1}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a041966532526b63b3a2d99d82d619672}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringLinearDamping@{GetSpringLinearDamping}}
+\index{GetSpringLinearDamping@{GetSpringLinearDamping}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringLinearDamping}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringLinearDamping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a041966532526b63b3a2d99d82d619672}
+Retrieves the spring linear damping of the spring rigid constraint. This is set to 0.0 if there is no spring. \begin{DoxyReturn}{Returns}
+The spring linear damping. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_af04ab7b87dc559dc3fc22f1ae2ba3d1c}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringLinearStiffness@{GetSpringLinearStiffness}}
+\index{GetSpringLinearStiffness@{GetSpringLinearStiffness}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringLinearStiffness}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringLinearStiffness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_af04ab7b87dc559dc3fc22f1ae2ba3d1c}
+Retrieves the spring linear stiffness of the spring rigid constraint. This is set to 1.0 if there is no spring. \begin{DoxyReturn}{Returns}
+The spring linear stiffness. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_ab10c7ddef6e04594695cc5dbd122dd86}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringLinearStiffness@{GetSpringLinearStiffness}}
+\index{GetSpringLinearStiffness@{GetSpringLinearStiffness}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringLinearStiffness}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringLinearStiffness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ab10c7ddef6e04594695cc5dbd122dd86}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_ad18cb64c04a05705c5a4361d8e38c7de}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringLinearTargetValue@{GetSpringLinearTargetValue}}
+\index{GetSpringLinearTargetValue@{GetSpringLinearTargetValue}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringLinearTargetValue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringLinearTargetValue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ad18cb64c04a05705c5a4361d8e38c7de}
+Retrieves the sping linear target value of the spring rigid constraint. This is set to 0.0 if there is no spring. \begin{DoxyReturn}{Returns}
+The spring linear target value. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a5ceb9fe6cd3ca58ae3b89e51bf509165}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSpringLinearTargetValue@{GetSpringLinearTargetValue}}
+\index{GetSpringLinearTargetValue@{GetSpringLinearTargetValue}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSpringLinearTargetValue}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUParameterFloat}\& FCDPhysicsRigidConstraint::GetSpringLinearTargetValue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a5ceb9fe6cd3ca58ae3b89e51bf509165}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_afb23f9ec2cc4ebcb506c5c3f75fb943d}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetSubId@{GetSubId}}
+\index{GetSubId@{GetSubId}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetSubId}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fm::string}\& FCDPhysicsRigidConstraint::GetSubId (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_afb23f9ec2cc4ebcb506c5c3f75fb943d}
+Retrieves the wanted sub-\/id for this transform. A wanted sub-\/id will always be exported, even if the transform is not animated. But the wanted sub-\/id may be modified if it isn't unique within the scope. \begin{DoxyReturn}{Returns}
+The sub-\/id. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_afe91ca21e513e5087b3ca85d9c1b618e}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetTargetNode@{GetTargetNode}}
+\index{GetTargetNode@{GetTargetNode}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetTargetNode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDSceneNode}$\ast$ FCDPhysicsRigidConstraint::GetTargetNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_afe91ca21e513e5087b3ca85d9c1b618e}
+Retrieves the attached node which is not the reference. This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetTargetRigidBody is NULL. \begin{DoxyReturn}{Returns}
+The attached non reference node. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_afb0f19a82ccf6bb4025245096d1ec652}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetTargetNode@{GetTargetNode}}
+\index{GetTargetNode@{GetTargetNode}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetTargetNode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDSceneNode}$\ast$ FCDPhysicsRigidConstraint::GetTargetNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_afb0f19a82ccf6bb4025245096d1ec652}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_aa19d38ffd2893188fe1045b9f0fc57c0}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetTargetRigidBody@{GetTargetRigidBody}}
+\index{GetTargetRigidBody@{GetTargetRigidBody}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetTargetRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsRigidBody}$\ast$ FCDPhysicsRigidConstraint::GetTargetRigidBody (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aa19d38ffd2893188fe1045b9f0fc57c0}
+Retrieves the attached rigid body which is not the reference. \begin{DoxyReturn}{Returns}
+The non reference rigid body. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a1f5f716e35b3a73fe42cf995d5d27e8f}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetTargetRigidBody@{GetTargetRigidBody}}
+\index{GetTargetRigidBody@{GetTargetRigidBody}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetTargetRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDPhysicsRigidBody}$\ast$ FCDPhysicsRigidConstraint::GetTargetRigidBody (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a1f5f716e35b3a73fe42cf995d5d27e8f}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a65d0a0e27da18419ca1ef2c239ec269e}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetTransformsRef@{GetTransformsRef}}
+\index{GetTransformsRef@{GetTransformsRef}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetTransformsRef}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransformContainer}\& FCDPhysicsRigidConstraint::GetTransformsRef (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a65d0a0e27da18419ca1ef2c239ec269e}
+Retrieves the transforms for the attached rigid body which is the reference. \begin{DoxyReturn}{Returns}
+The transforms. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_ae24b5ae4e20e8a0556764fe638dc6d40}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetTransformsRef@{GetTransformsRef}}
+\index{GetTransformsRef@{GetTransformsRef}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetTransformsRef}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDTransformContainer}\& FCDPhysicsRigidConstraint::GetTransformsRef (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ae24b5ae4e20e8a0556764fe638dc6d40}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_aec006086f6071ba2ecf3d6bda8f436d1}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetTransformsTar@{GetTransformsTar}}
+\index{GetTransformsTar@{GetTransformsTar}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetTransformsTar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransformContainer}\& FCDPhysicsRigidConstraint::GetTransformsTar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aec006086f6071ba2ecf3d6bda8f436d1}
+Retrieves the transforms for the attached rigid body which is not the reference. \begin{DoxyReturn}{Returns}
+The transforms. 
+\end{DoxyReturn}
+\hypertarget{classFCDPhysicsRigidConstraint_a6121e2a0bc57e7cb9ff19f903dfbc4c2}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetTransformsTar@{GetTransformsTar}}
+\index{GetTransformsTar@{GetTransformsTar}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetTransformsTar}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDTransformContainer}\& FCDPhysicsRigidConstraint::GetTransformsTar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a6121e2a0bc57e7cb9ff19f903dfbc4c2}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a95fd22d9def1fdfedb0000a16a410851}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDPhysicsRigidConstraint::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a95fd22d9def1fdfedb0000a16a410851}
+Retrieves the entity type for this class. This function is part of the \hyperlink{classFCDEntity}{FCDEntity} interface. \begin{DoxyReturn}{Returns}
+The entity type: PHYSICS\_\-RIGID\_\-CONSTRAINT. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEntity_abfd4312a7124f92364c1e6517c7e60ba}{FCDEntity}.
+
+\hypertarget{classFCDPhysicsRigidConstraint_aa118dc6e91437e7294210193cd9a1a52}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!IsEnabled@{IsEnabled}}
+\index{IsEnabled@{IsEnabled}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{IsEnabled}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDPhysicsRigidConstraint::IsEnabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aa118dc6e91437e7294210193cd9a1a52}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a847f584ac90b0b75a8e8429c2c961583}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!IsInterpenetrate@{IsInterpenetrate}}
+\index{IsInterpenetrate@{IsInterpenetrate}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{IsInterpenetrate}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDPhysicsRigidConstraint::IsInterpenetrate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a847f584ac90b0b75a8e8429c2c961583}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a29ce8a1fdf43832609641b1878391094}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetEnabled@{SetEnabled}}
+\index{SetEnabled@{SetEnabled}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetEnabled}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetEnabled (
+\begin{DoxyParamCaption}
+\item[{bool}]{ \_\-enabled}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a29ce8a1fdf43832609641b1878391094}
+Sets whether this rigid constraint is enabled. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-enabled}]True of enabled. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_ad0ea420e99ac86f54f015b2a976cb7ca}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetInterpenetrate@{SetInterpenetrate}}
+\index{SetInterpenetrate@{SetInterpenetrate}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetInterpenetrate}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetInterpenetrate (
+\begin{DoxyParamCaption}
+\item[{bool}]{ \_\-interpenetrate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ad0ea420e99ac86f54f015b2a976cb7ca}
+Sets whether the connected rigid bodies can penetrate eachother. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-interpenetrate}]True of they can penetrate. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a3561f4f05b63b865c25b283c28e286e2}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetLimitsLinearMax@{SetLimitsLinearMax}}
+\index{SetLimitsLinearMax@{SetLimitsLinearMax}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetLimitsLinearMax}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetLimitsLinearMax (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-limitsLinearMax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a3561f4f05b63b865c25b283c28e286e2}
+Sets the linear max limit of the degrees of freedom. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-limitsLinearMax}]The linear max limit. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a2fe79d00bba974be3c40a884dad9c668}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetLimitsLinearMin@{SetLimitsLinearMin}}
+\index{SetLimitsLinearMin@{SetLimitsLinearMin}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetLimitsLinearMin}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetLimitsLinearMin (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-limitsLinearMin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a2fe79d00bba974be3c40a884dad9c668}
+Sets the linear min limit of the degrees of freedom. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-limitsLinearMin}]The linear min limit. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_ae9ea41b987feed7065a3748ae94b689e}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetLimitsSCTMax@{SetLimitsSCTMax}}
+\index{SetLimitsSCTMax@{SetLimitsSCTMax}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetLimitsSCTMax}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetLimitsSCTMax (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-limitsSCTMax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ae9ea41b987feed7065a3748ae94b689e}
+Sets the swing cone and twist max limit of the degrees of freedom. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-limitsSCTMax}]The swing cone and twist max limit. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a5e132af0e4279a8b5e953603cd2b8eb0}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetLimitsSCTMin@{SetLimitsSCTMin}}
+\index{SetLimitsSCTMin@{SetLimitsSCTMin}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetLimitsSCTMin}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetLimitsSCTMin (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ \_\-limitsSCTMin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a5e132af0e4279a8b5e953603cd2b8eb0}
+Sets the swing cone and twist min limit of the degrees of freedom. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-limitsSCTMin}]The swing cone and twist min limit. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_aeb92802f7e8ee0b97353c88a4baa766e}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetReferenceNode@{SetReferenceNode}}
+\index{SetReferenceNode@{SetReferenceNode}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetReferenceNode}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetReferenceNode (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDSceneNode} $\ast$}]{ \_\-referenceNode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_aeb92802f7e8ee0b97353c88a4baa766e}
+Sets the attached node which is the reference. This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetReferenceRigidBody is NULL. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-referenceNode}]The attached reference node. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_af2838b8841a6119e36c064aaa1fe8f91}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetReferenceRigidBody@{SetReferenceRigidBody}}
+\index{SetReferenceRigidBody@{SetReferenceRigidBody}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetReferenceRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetReferenceRigidBody (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDPhysicsRigidBody} $\ast$}]{ \_\-referenceRigidBody}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_af2838b8841a6119e36c064aaa1fe8f91}
+Sets the attached rigid body which is the reference. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-referenceRigidBody}]The reference rigid body. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a231532aff9c89c29bf25997647415854}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetSpringAngularDamping@{SetSpringAngularDamping}}
+\index{SetSpringAngularDamping@{SetSpringAngularDamping}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetSpringAngularDamping}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetSpringAngularDamping (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-springAngularDamping}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a231532aff9c89c29bf25997647415854}
+Sets the spring angular damping of the spring rigid constraint. This is set to 0.0 if there is no spring. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-springAngularDamping}]The spring angular damping. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a50eff3aece7ef1d1f3937a50c4569746}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetSpringAngularStiffness@{SetSpringAngularStiffness}}
+\index{SetSpringAngularStiffness@{SetSpringAngularStiffness}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetSpringAngularStiffness}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetSpringAngularStiffness (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-springAngularStiffness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a50eff3aece7ef1d1f3937a50c4569746}
+Sets the spring angular stiffness of the spring rigid constraint. This is set to 1.0 if there is no spring. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-springAngularStiffness}]The spring angular stiffness. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_ab0ab82e451611446b736be4a4656cd80}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetSpringAngularTargetValue@{SetSpringAngularTargetValue}}
+\index{SetSpringAngularTargetValue@{SetSpringAngularTargetValue}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetSpringAngularTargetValue}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetSpringAngularTargetValue (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-springAngularTargetValue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ab0ab82e451611446b736be4a4656cd80}
+Sets the sping angular target value of the spring rigid constraint. This is set to 0.0 if there is no spring. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-springAngularTargetValue}]The spring angular target value. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_ac1a792e51afd1be4f909371702ab7531}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetSpringLinearDamping@{SetSpringLinearDamping}}
+\index{SetSpringLinearDamping@{SetSpringLinearDamping}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetSpringLinearDamping}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetSpringLinearDamping (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-springLinearDamping}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ac1a792e51afd1be4f909371702ab7531}
+Sets the spring linear damping of the spring rigid constraint. This is set to 0.0 if there is no spring. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-springLinearDamping}]The spring linear damping. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_ab229222b68cc31d15113f6921e4ee3d3}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetSpringLinearStiffness@{SetSpringLinearStiffness}}
+\index{SetSpringLinearStiffness@{SetSpringLinearStiffness}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetSpringLinearStiffness}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetSpringLinearStiffness (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-springLinearStiffness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ab229222b68cc31d15113f6921e4ee3d3}
+Sets the spring linear stiffness of the spring rigid constraint. This is set to 1.0 if there is no spring. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-springLinearStiffness}]The spring linear stiffness. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_ac64c51727ed14548ba623c1742a3c2f2}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetSpringLinearTargetValue@{SetSpringLinearTargetValue}}
+\index{SetSpringLinearTargetValue@{SetSpringLinearTargetValue}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetSpringLinearTargetValue}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetSpringLinearTargetValue (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-springLinearTargetValue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ac64c51727ed14548ba623c1742a3c2f2}
+Sets the sping linear target value of the spring rigid constraint. This is set to 0.0 if there is no spring. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-springLinearTargetValue}]The spring linear target value. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a3e2d3a71acb99a4b6d1ca13d01bfa4c6}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetSubId@{SetSubId}}
+\index{SetSubId@{SetSubId}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetSubId (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ subId}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a3e2d3a71acb99a4b6d1ca13d01bfa4c6}
+Sets the wanted sub-\/id for this transform. A wanted sub-\/id will always be exported, even if the transform is not animated. But the wanted sub-\/id may be modified if it isn't unique within the scope. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subId}]The wanted sub-\/id. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_a01b9ad045a6a431783f79964d5c7c979}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetSubId@{SetSubId}}
+\index{SetSubId@{SetSubId}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetSubId}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetSubId (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ subId}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a01b9ad045a6a431783f79964d5c7c979}
+See above. \hypertarget{classFCDPhysicsRigidConstraint_a6771e3e5c69b0372c054a2b385618ba7}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetTargetNode@{SetTargetNode}}
+\index{SetTargetNode@{SetTargetNode}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetTargetNode}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetTargetNode (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDSceneNode} $\ast$}]{ \_\-targetNode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_a6771e3e5c69b0372c054a2b385618ba7}
+Sets the attached node which is not the reference. This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetTargetRigidBody is NULL. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-targetNode}]The attached non reference node. \end{DoxyParams}
+\hypertarget{classFCDPhysicsRigidConstraint_ae3054b2ef168bc99dd265eba23048129}{
+\index{FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}!SetTargetRigidBody@{SetTargetRigidBody}}
+\index{SetTargetRigidBody@{SetTargetRigidBody}!FCDPhysicsRigidConstraint@{FCDPhysicsRigidConstraint}}
+\subsubsection[{SetTargetRigidBody}]{\setlength{\rightskip}{0pt plus 5cm}void FCDPhysicsRigidConstraint::SetTargetRigidBody (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDPhysicsRigidBody} $\ast$}]{ \_\-targetRigidBody}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDPhysicsRigidConstraint_ae3054b2ef168bc99dd265eba23048129}
+Sets the attached rigid body which is not the reference. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-targetRigidBody}]The non reference rigid body. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsRigidConstraint_8h}{FCDPhysicsRigidConstraint.h}\item 
+FCollada/FCDocument/FCDPhysicsRigidConstraint.cpp\end{DoxyCompactItemize}

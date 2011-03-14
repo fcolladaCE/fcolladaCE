@@ -1,0 +1,326 @@
+\hypertarget{classFCDEffectProfileFX}{
+\section{FCDEffectProfileFX Class Reference}
+\label{classFCDEffectProfileFX}\index{FCDEffectProfileFX@{FCDEffectProfileFX}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectProfileFX.h$>$}
+
+Inheritance diagram for FCDEffectProfileFX:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDEffectProfileFX}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEffectProfileFX_a3a6aa38eb1af1a180116c06c651311c5}{FCDEffectProfileFX} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDEffect}{FCDEffect} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDEffectProfileFX_a30b48d2454decffb4c5b45f3986ac995}{$\sim$FCDEffectProfileFX} ()
+\item 
+virtual \hyperlink{namespaceFUDaeProfileType_ac10ea253a7a141708de2324a929f8a79}{FUDaeProfileType::Type} \hyperlink{classFCDEffectProfileFX_a711f7094d3d2ae864f336a4db558c3c5}{GetType} () const 
+\item 
+void \hyperlink{classFCDEffectProfileFX_a8da90f2c6a32edaa68a0430ecc143017}{SetType} (\hyperlink{namespaceFUDaeProfileType_ac10ea253a7a141708de2324a929f8a79}{FUDaeProfileType::Type} \_\-type)
+\item 
+const \hyperlink{classfm_1_1stringT}{fstring} \& \hyperlink{classFCDEffectProfileFX_a0d4d03330cc23e49a83f7dcb22df0b06}{GetPlatform} () const 
+\item 
+void \hyperlink{classFCDEffectProfileFX_a749574bde12f659c1bae707284f3d630}{SetPlatform} (const \hyperlink{classfm_1_1stringT}{fstring} \&\_\-platform)
+\item 
+\hyperlink{classFCDEffectProfileFX_a883c195463d15960a9d5d1d347ec3a41}{DEPRECATED} (3.05A, GetTechniqueCount and GetTechnique(index)) void GetTechniqueList() const 
+\item 
+size\_\-t \hyperlink{classFCDEffectProfileFX_af1fac9bef78005e8a0936cc4f4cf5b63}{GetTechniqueCount} () const 
+\item 
+\hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$ \hyperlink{classFCDEffectProfileFX_a3cfd88fb24777d0cd909834bf15ab99a}{GetTechnique} (size\_\-t index)
+\item 
+const \hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$ \hyperlink{classFCDEffectProfileFX_aa1f90851b8c0527d30017ecf8f247ea6}{GetTechnique} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$ \hyperlink{classFCDEffectProfileFX_ae6498c1d1bba41fdc63b98cbceb797d0}{AddTechnique} ()
+\item 
+\hyperlink{classFCDEffectProfileFX_a603840ea8a108748a8da26697c6f72ce}{DEPRECATED} (3.05A, GetCodeCount and GetCode(index)) void GetCodeList()
+\item 
+size\_\-t \hyperlink{classFCDEffectProfileFX_a4014013862a3bbda5a93162279dc2698}{GetCodeCount} () const 
+\item 
+\hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectProfileFX_adf8d6b95a3a98efd8c3df44cdf301347}{GetCode} (size\_\-t index)
+\item 
+const \hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectProfileFX_aab857859ae788ec5d8da9641ce4ca6cb}{GetCode} (size\_\-t index) const 
+\item 
+\hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectProfileFX_af704be744d23f8edf5f253649d6f08c2}{FindCode} (const char $\ast$sid)
+\item 
+const \hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectProfileFX_a5a33aac3ed1633e3b02b071debe27492}{FindCode} (const char $\ast$sid) const 
+\item 
+\hyperlink{classFCDEffectCode}{FCDEffectCode} $\ast$ \hyperlink{classFCDEffectProfileFX_a953350d444182d9c325166d120b6510c}{AddCode} ()
+\item 
+virtual \hyperlink{classFCDEffectProfile}{FCDEffectProfile} $\ast$ \hyperlink{classFCDEffectProfileFX_affaefb11964c4000f30e2f7be7cd2aa5}{Clone} (\hyperlink{classFCDEffectProfile}{FCDEffectProfile} $\ast$clone=NULL) const 
+\item 
+\hyperlink{classFCDEffectProfileFX_a3a00d4ed2dec686e7e0a60eb99168ff5}{DEPRECATED} (3.05A, not recommended) void Flatten()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A general effect profile description.
+
+The general effect profile contains all the information necessary to implement the advanced effect profiles, such as CG, HLSL, GLSL and GLES. Since these effect profiles contains extremely similar information, they use the same description structure. For the COMMON profile, see the \hyperlink{classFCDEffectStandard}{FCDEffectStandard} class.
+
+You should use the GetType function to figure out which profile this structure addresses. You can then retrieve one or many of the \hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} objects that describe how to render for this profile. You may want to check the FCDEffectMaterialTechniqueHint objects at the \hyperlink{classFCDMaterial}{FCDMaterial} level, in order to determine which technique(s) to use for your platform. At the profile level of abstraction, parameters may be generated within the FCDEffectParamterList. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEffectProfileFX_a3a6aa38eb1af1a180116c06c651311c5}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{FCDEffectProfileFX}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectProfileFX::FCDEffectProfileFX (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDEffect} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectProfileFX_a3a6aa38eb1af1a180116c06c651311c5}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDEffect_abe53b1e58ce5469b28f63b5155703a95}{FCDEffect::AddProfile} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em parent}]The effect which contains this profile. \item[{\em type}]The type of profile. \end{DoxyParams}
+\hypertarget{classFCDEffectProfileFX_a30b48d2454decffb4c5b45f3986ac995}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!$\sim$FCDEffectProfileFX@{$\sim$FCDEffectProfileFX}}
+\index{$\sim$FCDEffectProfileFX@{$\sim$FCDEffectProfileFX}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{$\sim$FCDEffectProfileFX}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectProfileFX::$\sim$FCDEffectProfileFX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectProfileFX_a30b48d2454decffb4c5b45f3986ac995}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEffectProfileFX_a953350d444182d9c325166d120b6510c}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!AddCode@{AddCode}}
+\index{AddCode@{AddCode}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{AddCode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectCode} $\ast$ FCDEffectProfileFX::AddCode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectProfileFX_a953350d444182d9c325166d120b6510c}
+Adds a new code inclusion to this effect profile. \begin{DoxyReturn}{Returns}
+The new code inclusion. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_ae6498c1d1bba41fdc63b98cbceb797d0}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!AddTechnique@{AddTechnique}}
+\index{AddTechnique@{AddTechnique}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{AddTechnique}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectTechnique} $\ast$ FCDEffectProfileFX::AddTechnique (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectProfileFX_ae6498c1d1bba41fdc63b98cbceb797d0}
+Adds a new technique to this effect profile. \begin{DoxyReturn}{Returns}
+The new technique object. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_affaefb11964c4000f30e2f7be7cd2aa5}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectProfile} $\ast$ FCDEffectProfileFX::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectProfile} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectProfileFX_affaefb11964c4000f30e2f7be7cd2aa5}
+Clones the full effect profile. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The cloned profile. If this pointer is NULL, a new profile is created and you will need to release this new profile. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned profile. This pointer will never be NULL. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEffectProfile_ab7641c9671098f6966146798e61bb098}{FCDEffectProfile}.
+
+\hypertarget{classFCDEffectProfileFX_a883c195463d15960a9d5d1d347ec3a41}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectProfileFX::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetTechniqueCount and }]{ GetTechniqueindex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_a883c195463d15960a9d5d1d347ec3a41}
+Retrieves the list of techniques contained within this effect profile. You may want to check the FCDEffectMaterialTechniqueHint objects at the \hyperlink{classFCDMaterial}{FCDMaterial} level, in order to determine which technique(s) to use for your platform. \begin{DoxyReturn}{Returns}
+The list of inner techniques. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_a3a00d4ed2dec686e7e0a60eb99168ff5}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectProfileFX::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{not}]{ recommended}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_a3a00d4ed2dec686e7e0a60eb99168ff5}
+\mbox{[}INTERNAL\mbox{]} Flattens this effect profile. Pushes all the effect parameter overrides into the effect parameter generators and moves all the parameters to the effect technique level of abstraction. To flatten the material, use the FCDMaterialInstance::FlattenMaterial function. 
+
+Reimplemented from \hyperlink{classFCDEffectProfile_aadc7e65fa145af53ec2bf47c6de550f2}{FCDEffectProfile}.
+
+\hypertarget{classFCDEffectProfileFX_a603840ea8a108748a8da26697c6f72ce}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectProfileFX::DEPRECATED (
+\begin{DoxyParamCaption}
+\item[{3.}]{ 05A, }
+\item[{GetCodeCount and }]{ GetCodeindex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_a603840ea8a108748a8da26697c6f72ce}
+Retrieves the list of code inclusions. \begin{DoxyReturn}{Returns}
+The list of code inclusions. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_af704be744d23f8edf5f253649d6f08c2}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!FindCode@{FindCode}}
+\index{FindCode@{FindCode}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{FindCode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectCode}$\ast$ FCDEffectProfileFX::FindCode (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ sid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_af704be744d23f8edf5f253649d6f08c2}
+Retrieves the code inclusion with the given sub-\/id. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sid}]A COLLADA sub-\/id. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The code inclusion with the given sub-\/id. This pointer will be NULL, if there are no code inclusions that match the given sub-\/id. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_a5a33aac3ed1633e3b02b071debe27492}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!FindCode@{FindCode}}
+\index{FindCode@{FindCode}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{FindCode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectCode} $\ast$ FCDEffectProfileFX::FindCode (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ sid}
+\end{DoxyParamCaption}
+) const}}
+\label{classFCDEffectProfileFX_a5a33aac3ed1633e3b02b071debe27492}
+See above. \hypertarget{classFCDEffectProfileFX_adf8d6b95a3a98efd8c3df44cdf301347}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!GetCode@{GetCode}}
+\index{GetCode@{GetCode}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{GetCode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectCode}$\ast$ FCDEffectProfileFX::GetCode (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_adf8d6b95a3a98efd8c3df44cdf301347}
+Retrieves a code inclusion contained within the effect profile. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the code inclusion. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The code inclusion. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_aab857859ae788ec5d8da9641ce4ca6cb}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!GetCode@{GetCode}}
+\index{GetCode@{GetCode}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{GetCode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectCode}$\ast$ FCDEffectProfileFX::GetCode (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_aab857859ae788ec5d8da9641ce4ca6cb}
+See above. \hypertarget{classFCDEffectProfileFX_a4014013862a3bbda5a93162279dc2698}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!GetCodeCount@{GetCodeCount}}
+\index{GetCodeCount@{GetCodeCount}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{GetCodeCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectProfileFX::GetCodeCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_a4014013862a3bbda5a93162279dc2698}
+Retrieves the number of code inclusions contained within the effect profile. \begin{DoxyReturn}{Returns}
+The number of code inclusions. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_a0d4d03330cc23e49a83f7dcb22df0b06}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!GetPlatform@{GetPlatform}}
+\index{GetPlatform@{GetPlatform}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{GetPlatform}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fstring}\& FCDEffectProfileFX::GetPlatform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_a0d4d03330cc23e49a83f7dcb22df0b06}
+Retrieves the name of the platform in which to use the effect profile. This parameter is very optional. \begin{DoxyReturn}{Returns}
+The platform name. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_aa1f90851b8c0527d30017ecf8f247ea6}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!GetTechnique@{GetTechnique}}
+\index{GetTechnique@{GetTechnique}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{GetTechnique}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDEffectTechnique}$\ast$ FCDEffectProfileFX::GetTechnique (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_aa1f90851b8c0527d30017ecf8f247ea6}
+See above. \hypertarget{classFCDEffectProfileFX_a3cfd88fb24777d0cd909834bf15ab99a}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!GetTechnique@{GetTechnique}}
+\index{GetTechnique@{GetTechnique}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{GetTechnique}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectTechnique}$\ast$ FCDEffectProfileFX::GetTechnique (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_a3cfd88fb24777d0cd909834bf15ab99a}
+Retrieves a technique contained within this effect profile. You may want to check the FCDEffectMaterialTechniqueHint objects at the \hyperlink{classFCDMaterial}{FCDMaterial} level, in order to determine which technique(s) to use for your platform. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the technique. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inner technique. This pointer will be NULL if the index is out-\/of-\/bounds. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_af1fac9bef78005e8a0936cc4f4cf5b63}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!GetTechniqueCount@{GetTechniqueCount}}
+\index{GetTechniqueCount@{GetTechniqueCount}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{GetTechniqueCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FCDEffectProfileFX::GetTechniqueCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_af1fac9bef78005e8a0936cc4f4cf5b63}
+Retrieves the number of techniques contained within this effect profile. \begin{DoxyReturn}{Returns}
+The number of inner techniques. 
+\end{DoxyReturn}
+\hypertarget{classFCDEffectProfileFX_a711f7094d3d2ae864f336a4db558c3c5}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FUDaeProfileType::Type} FCDEffectProfileFX::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDEffectProfileFX_a711f7094d3d2ae864f336a4db558c3c5}
+Retrieves the profile type for this effect. This function is a part of the \hyperlink{classFCDEffectProfile}{FCDEffectProfile} interface and allows you to up-\/cast an effect profile pointer safely to this class. \begin{DoxyReturn}{Returns}
+The profile type. This should never be the value: 'COMMON', but all other profiles currently derive from this class. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDEffectProfile_a48ae9db50d8cce2509d6a3d557a1b0a6}{FCDEffectProfile}.
+
+\hypertarget{classFCDEffectProfileFX_a749574bde12f659c1bae707284f3d630}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!SetPlatform@{SetPlatform}}
+\index{SetPlatform@{SetPlatform}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{SetPlatform}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectProfileFX::SetPlatform (
+\begin{DoxyParamCaption}
+\item[{const {\bf fstring} \&}]{ \_\-platform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_a749574bde12f659c1bae707284f3d630}
+Sets the name of the platform in which to use the effect profile. This parameter is very optional. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-platform}]The platform name. \end{DoxyParams}
+\hypertarget{classFCDEffectProfileFX_a8da90f2c6a32edaa68a0430ecc143017}{
+\index{FCDEffectProfileFX@{FCDEffectProfileFX}!SetType@{SetType}}
+\index{SetType@{SetType}!FCDEffectProfileFX@{FCDEffectProfileFX}}
+\subsubsection[{SetType}]{\setlength{\rightskip}{0pt plus 5cm}void FCDEffectProfileFX::SetType (
+\begin{DoxyParamCaption}
+\item[{{\bf FUDaeProfileType::Type}}]{ \_\-type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDEffectProfileFX_a8da90f2c6a32edaa68a0430ecc143017}
+Sets the profile type for this effect. Do not change the profile type of a completed effect. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectProfileFX_8h}{FCDEffectProfileFX.h}\item 
+FCollada/FCDocument/FCDEffectProfileFX.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{namespaceFUDaeInfinity}{
+\section{FUDaeInfinity Namespace Reference}
+\label{namespaceFUDaeInfinity}\index{FUDaeInfinity@{FUDaeInfinity}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{Infinity} \{ \par
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008ac57389e1772b6bda01dbd602b221df47}{CONSTANT} =  0, 
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a1858c6f256ea4a23240a4fedd1099d61}{LINEAR}, 
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a219f140587c9b90e29c73d0aa2debae9}{CYCLE}, 
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a9c1ce1c8dbaf7010eb813f77057260b4}{CYCLE\_\-RELATIVE}, 
+\par
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a0d3203b302bb15b8b3e11d1e36ec10e6}{OSCILLATE}, 
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008aefd6eeedc4578e0016ecec2ef88d7835}{UNKNOWN}, 
+{\bfseries DEFAULT} =  CONSTANT
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{Infinity} \hyperlink{namespaceFUDaeInfinity_a8b716f46671d07cc679cfeadf1a291d9}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaeInfinity_abbb3cb1b428c493aeb71798dbcb6a24f}{ToString} (\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{Infinity} type)
+\item 
+\hyperlink{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{Infinity} \hyperlink{namespaceFUDaeInfinity_a0ffbc0c3ba1aa55aac2526cc999fc451}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the infinity types and their conversion functions. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}{
+\index{FUDaeInfinity@{FUDaeInfinity}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!FUDaeInfinity@{FUDaeInfinity}}
+\subsubsection[{Infinity}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUDaeInfinity::Infinity}}}
+\label{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008}
+An infinity type. They determine what happens when evaluating an animation curve outside of its bounds. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CONSTANT@{CONSTANT}!FUDaeInfinity@{FUDaeInfinity}}\index{FUDaeInfinity@{FUDaeInfinity}!CONSTANT@{CONSTANT}}\item[{\em 
+\hypertarget{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008ac57389e1772b6bda01dbd602b221df47}{
+CONSTANT}
+\label{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008ac57389e1772b6bda01dbd602b221df47}
+}]Uses the output value of the closest animation key. This is the default infinity type. \index{LINEAR@{LINEAR}!FUDaeInfinity@{FUDaeInfinity}}\index{FUDaeInfinity@{FUDaeInfinity}!LINEAR@{LINEAR}}\item[{\em 
+\hypertarget{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a1858c6f256ea4a23240a4fedd1099d61}{
+LINEAR}
+\label{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a1858c6f256ea4a23240a4fedd1099d61}
+}]Takes the distance between the closest animation key input value and the evaluation time. Multiplies this distance against the instant slope at the closest animation key and offsets the result with the closest animation key output value. \index{CYCLE@{CYCLE}!FUDaeInfinity@{FUDaeInfinity}}\index{FUDaeInfinity@{FUDaeInfinity}!CYCLE@{CYCLE}}\item[{\em 
+\hypertarget{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a219f140587c9b90e29c73d0aa2debae9}{
+CYCLE}
+\label{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a219f140587c9b90e29c73d0aa2debae9}
+}]Iteratively removes or adds the animation curve time length to the evaluation time until it is within the animation curve time interval and evaluates it. \index{CYCLE\_\-RELATIVE@{CYCLE\_\-RELATIVE}!FUDaeInfinity@{FUDaeInfinity}}\index{FUDaeInfinity@{FUDaeInfinity}!CYCLE\_\-RELATIVE@{CYCLE\_\-RELATIVE}}\item[{\em 
+\hypertarget{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a9c1ce1c8dbaf7010eb813f77057260b4}{
+CYCLE\_\-RELATIVE}
+\label{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a9c1ce1c8dbaf7010eb813f77057260b4}
+}]Iteratively removes or adds the animation curve time length to the evaluation time until it is within the animation curve time interval and evaluates it. Adds to the evaluation output the number of iteration done multiplied by the difference between the animation curve start and end key outputs. \index{OSCILLATE@{OSCILLATE}!FUDaeInfinity@{FUDaeInfinity}}\index{FUDaeInfinity@{FUDaeInfinity}!OSCILLATE@{OSCILLATE}}\item[{\em 
+\hypertarget{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a0d3203b302bb15b8b3e11d1e36ec10e6}{
+OSCILLATE}
+\label{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008a0d3203b302bb15b8b3e11d1e36ec10e6}
+}]Iteratively removes or adds the animation curve time length to the evaluation time until it is within the animation curve time interval. If the number of iterations done is even, evaluate the new evaluation time, otherwise evaluate (animation curve time length -\/ evaluation time). \index{UNKNOWN@{UNKNOWN}!FUDaeInfinity@{FUDaeInfinity}}\index{FUDaeInfinity@{FUDaeInfinity}!UNKNOWN@{UNKNOWN}}\item[{\em 
+\hypertarget{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008aefd6eeedc4578e0016ecec2ef88d7835}{
+UNKNOWN}
+\label{namespaceFUDaeInfinity_a9d8fb86affe94d1586d728d4c2e89008aefd6eeedc4578e0016ecec2ef88d7835}
+}]An unknown infinity type. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaeInfinity_a8b716f46671d07cc679cfeadf1a291d9}{
+\index{FUDaeInfinity@{FUDaeInfinity}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaeInfinity@{FUDaeInfinity}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf Infinity} FUDaeInfinity::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaeInfinity_a8b716f46671d07cc679cfeadf1a291d9}
+Converts the \hyperlink{namespaceFCollada}{FCollada} infinity type string into a infinity type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The \hyperlink{namespaceFCollada}{FCollada} infinity type string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The infinity type. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaeInfinity_a0ffbc0c3ba1aa55aac2526cc999fc451}{
+\index{FUDaeInfinity@{FUDaeInfinity}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaeInfinity@{FUDaeInfinity}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Infinity} FUDaeInfinity::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaeInfinity_a0ffbc0c3ba1aa55aac2526cc999fc451}
+See above. \hypertarget{namespaceFUDaeInfinity_abbb3cb1b428c493aeb71798dbcb6a24f}{
+\index{FUDaeInfinity@{FUDaeInfinity}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaeInfinity@{FUDaeInfinity}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaeInfinity::ToString (
+\begin{DoxyParamCaption}
+\item[{Infinity}]{ infinity}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaeInfinity_abbb3cb1b428c493aeb71798dbcb6a24f}
+Converts the infinity type into its \hyperlink{namespaceFCollada}{FCollada} infinity type string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em infinity}]The infinity type. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The infinity type string. 
+\end{DoxyReturn}

@@ -1,0 +1,125 @@
+\hypertarget{namespaceFUDaePassStateStencilOperation}{
+\section{FUDaePassStateStencilOperation Namespace Reference}
+\label{namespaceFUDaePassStateStencilOperation}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7}{Operation} \{ \par
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a7e2166261985b13734744ac4211f6c7e}{KEEP} =  0x1E00, 
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a6c8609b7d92a2ab9e19629a56a4eb4e1}{ZERO} =  0x0000, 
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a150248d4032f56d2197d71237b1b6fec}{REPLACE} =  0x1E01, 
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a430432966a861290884717482f1b5ecb}{INCREMENT} =  0x1E02, 
+\par
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a3eebad146cb6bd9907c63e1715aad02e}{DECREMENT} =  0x1E03, 
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a6157d9c15dc59666780234222499d735}{INVERT} =  0x1E0A, 
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a8de6b37723421988712c9d94aef2b38c}{INCREMENT\_\-WRAP} =  0x8507, 
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7af151081f39eecfe11b9706c0b1bfd14e}{DECREMENT\_\-WRAP} =  0x8508, 
+\par
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7aca19f757adeb31e08def03d0ce264a69}{INVALID}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7}{Operation} \hyperlink{namespaceFUDaePassStateStencilOperation_a13e1da0570eedc3932e24bf9bcaf6e00}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaePassStateStencilOperation_a7e0fb155ca55db3a349b364755ba8cb8}{ToString} (\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7}{Operation} op)
+\item 
+\hyperlink{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7}{Operation} \hyperlink{namespaceFUDaePassStateStencilOperation_ae9ca085be44b57cc8ae1400e33c45617}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The stencil operation types for the effect pass render states. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7}{
+\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!Operation@{Operation}}
+\index{Operation@{Operation}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}
+\subsubsection[{Operation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUDaePassStateStencilOperation::Operation}}}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7}
+Enumerates the COLLADA stencil operation types. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{KEEP@{KEEP}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!KEEP@{KEEP}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a7e2166261985b13734744ac4211f6c7e}{
+KEEP}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a7e2166261985b13734744ac4211f6c7e}
+}]Keep the current stencil value. \index{ZERO@{ZERO}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!ZERO@{ZERO}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a6c8609b7d92a2ab9e19629a56a4eb4e1}{
+ZERO}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a6c8609b7d92a2ab9e19629a56a4eb4e1}
+}]Set the stencil value to zero. \index{REPLACE@{REPLACE}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!REPLACE@{REPLACE}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a150248d4032f56d2197d71237b1b6fec}{
+REPLACE}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a150248d4032f56d2197d71237b1b6fec}
+}]Replace the stencil value with the new value. \index{INCREMENT@{INCREMENT}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!INCREMENT@{INCREMENT}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a430432966a861290884717482f1b5ecb}{
+INCREMENT}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a430432966a861290884717482f1b5ecb}
+}]Increment the stencil value, stop at maximum value. \index{DECREMENT@{DECREMENT}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!DECREMENT@{DECREMENT}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a3eebad146cb6bd9907c63e1715aad02e}{
+DECREMENT}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a3eebad146cb6bd9907c63e1715aad02e}
+}]Decrement the stencil value, stop at zero. \index{INVERT@{INVERT}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!INVERT@{INVERT}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a6157d9c15dc59666780234222499d735}{
+INVERT}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a6157d9c15dc59666780234222499d735}
+}]Invert the stencil value. On a 8-\/bit stencil buffer, this implies the following: StencilValue = 255 -\/ StencilValue. \index{INCREMENT\_\-WRAP@{INCREMENT\_\-WRAP}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!INCREMENT\_\-WRAP@{INCREMENT\_\-WRAP}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a8de6b37723421988712c9d94aef2b38c}{
+INCREMENT\_\-WRAP}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7a8de6b37723421988712c9d94aef2b38c}
+}]Increment the stencil value and if the maximum value is reached, set to zero. \index{DECREMENT\_\-WRAP@{DECREMENT\_\-WRAP}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!DECREMENT\_\-WRAP@{DECREMENT\_\-WRAP}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7af151081f39eecfe11b9706c0b1bfd14e}{
+DECREMENT\_\-WRAP}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7af151081f39eecfe11b9706c0b1bfd14e}
+}]Decrement the stencil value and if zero is reached, set to the maximum value. \index{INVALID@{INVALID}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7aca19f757adeb31e08def03d0ce264a69}{
+INVALID}
+\label{namespaceFUDaePassStateStencilOperation_a8024554a396a96ced879eae8c80b9ea7aca19f757adeb31e08def03d0ce264a69}
+}]An invalid stencil operation. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaePassStateStencilOperation_a13e1da0570eedc3932e24bf9bcaf6e00}{
+\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf Operation} FUDaePassStateStencilOperation::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateStencilOperation_a13e1da0570eedc3932e24bf9bcaf6e00}
+Converts the COLLADA render state stencil operation string to the stencil operation type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The render state stencil operation string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The stencil operation type. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaePassStateStencilOperation_ae9ca085be44b57cc8ae1400e33c45617}{
+\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operation} FUDaePassStateStencilOperation::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaePassStateStencilOperation_ae9ca085be44b57cc8ae1400e33c45617}
+See above. \hypertarget{namespaceFUDaePassStateStencilOperation_a7e0fb155ca55db3a349b364755ba8cb8}{
+\index{FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaePassStateStencilOperation@{FUDaePassStateStencilOperation}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaePassStateStencilOperation::ToString (
+\begin{DoxyParamCaption}
+\item[{Operation}]{ op}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateStencilOperation_a7e0fb155ca55db3a349b364755ba8cb8}
+Converts the stencil operation type to its COLLADA render state function string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em op}]The stencil operation type. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state stencil operation string. 
+\end{DoxyReturn}

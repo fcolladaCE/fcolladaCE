@@ -1,0 +1,97 @@
+\hypertarget{classFCDEffectParameterSurfaceInitFactory}{
+\section{FCDEffectParameterSurfaceInitFactory Class Reference}
+\label{classFCDEffectParameterSurfaceInitFactory}\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectParameterSurface.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892}{InitType} \{ \par
+\hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892aa87c1f6872f211a3f525c11557149e4d}{FROM}, 
+\hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a90f0b3c1c0dfe447ea2f973141eb0b1c}{AS\_\-NULL}, 
+\hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892ad1baa0ff12391ddc3dd1f9c40ea77906}{AS\_\-TARGET}, 
+\hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892ae2d69f0436ba18d343605f554e30ed22}{CUBE}, 
+\par
+\hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a328076a8538f429eb5988879c0e643cd}{VOLUME}, 
+\hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a5c8434819c6046c14dff8f793841ac51}{PLANAR}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} $\ast$ \hyperlink{classFCDEffectParameterSurfaceInitFactory_aaebd11b1bbf4ac88b544c8917bf4c979}{Create} (\hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892}{InitType} type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{[}INTERNAL\mbox{]} The factory for COLLADA effect parameter surface initialization. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892}{
+\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}!InitType@{InitType}}
+\index{InitType@{InitType}!FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}
+\subsubsection[{InitType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDEffectParameterSurfaceInitFactory::InitType}}}
+\label{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892}
+The supported initialization types. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{FROM@{FROM}!FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}!FROM@{FROM}}\item[{\em 
+\hypertarget{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892aa87c1f6872f211a3f525c11557149e4d}{
+FROM}
+\label{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892aa87c1f6872f211a3f525c11557149e4d}
+}]Loads a surface from one simple image file. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDEffectParameterSurfaceInitFrom}{FCDEffectParameterSurfaceInitFrom} 
+\end{DoxySeeAlso}
+\index{AS\_\-NULL@{AS\_\-NULL}!FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}!AS\_\-NULL@{AS\_\-NULL}}\item[{\em 
+\hypertarget{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a90f0b3c1c0dfe447ea2f973141eb0b1c}{
+AS\_\-NULL}
+\label{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a90f0b3c1c0dfe447ea2f973141eb0b1c}
+}]No initialization. This surface may be initialized by some future effect parameter override. \index{AS\_\-TARGET@{AS\_\-TARGET}!FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}!AS\_\-TARGET@{AS\_\-TARGET}}\item[{\em 
+\hypertarget{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892ad1baa0ff12391ddc3dd1f9c40ea77906}{
+AS\_\-TARGET}
+\label{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892ad1baa0ff12391ddc3dd1f9c40ea77906}
+}]Initializes an engine-\/specific render target for offscreen rendering. In this case, the dimensions should be provided by the surface effect parameter. \index{CUBE@{CUBE}!FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}!CUBE@{CUBE}}\item[{\em 
+\hypertarget{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892ae2d69f0436ba18d343605f554e30ed22}{
+CUBE}
+\label{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892ae2d69f0436ba18d343605f554e30ed22}
+}]Loads a cube-\/map from one complex image file or six simple image files. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDEffectParameterSurfaceInitCube}{FCDEffectParameterSurfaceInitCube} 
+\end{DoxySeeAlso}
+\index{VOLUME@{VOLUME}!FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}!VOLUME@{VOLUME}}\item[{\em 
+\hypertarget{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a328076a8538f429eb5988879c0e643cd}{
+VOLUME}
+\label{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a328076a8538f429eb5988879c0e643cd}
+}]Loads a 3D images for one image file. \begin{DoxySeeAlso}{See also}
+\hyperlink{classFCDEffectParameterSurfaceInitVolume}{FCDEffectParameterSurfaceInitVolume} 
+\end{DoxySeeAlso}
+\index{PLANAR@{PLANAR}!FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}!PLANAR@{PLANAR}}\item[{\em 
+\hypertarget{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a5c8434819c6046c14dff8f793841ac51}{
+PLANAR}
+\label{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892a5c8434819c6046c14dff8f793841ac51}
+}]Loads a surface from one simple image file. \end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEffectParameterSurfaceInitFactory_aaebd11b1bbf4ac88b544c8917bf4c979}{
+\index{FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}!Create@{Create}}
+\index{Create@{Create}!FCDEffectParameterSurfaceInitFactory@{FCDEffectParameterSurfaceInitFactory}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterSurfaceInit} $\ast$ FCDEffectParameterSurfaceInitFactory::Create (
+\begin{DoxyParamCaption}
+\item[{{\bf InitType}}]{ type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFCDEffectParameterSurfaceInitFactory_aaebd11b1bbf4ac88b544c8917bf4c979}
+\mbox{[}INTERNAL\mbox{]} Creates a new effect surface initialization parameter, given a type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of initialization parameter to create. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectParameterSurface_8h}{FCDEffectParameterSurface.h}\item 
+FCollada/FCDocument/FCDEffectParameterSurface.cpp\end{DoxyCompactItemize}

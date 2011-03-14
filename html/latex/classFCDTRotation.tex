@@ -1,0 +1,368 @@
+\hypertarget{classFCDTRotation}{
+\section{FCDTRotation Class Reference}
+\label{classFCDTRotation}\index{FCDTRotation@{FCDTRotation}}
+}
+
+
+{\ttfamily \#include $<$FCDTransform.h$>$}
+
+Inheritance diagram for FCDTRotation:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classFCDTRotation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDTRotation_ae92f4d8903836a1bf832a2c1ca42eb90}{FCDTRotation} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$parent)
+\item 
+virtual \hyperlink{classFCDTRotation_adca97a7bdd9f3cd6f31712dce21a610b}{$\sim$FCDTRotation} ()
+\item 
+virtual \hyperlink{classFCDTransform_a13e561c5e53aeaf84dedf4661cdc8921}{Type} \hyperlink{classFCDTRotation_af5ddd1b7b673eaa1d57f36b4e685a3c8}{GetType} () const 
+\item 
+\hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableAngleAxis} \& \hyperlink{classFCDTRotation_a3fd21b3f969e19041caab33747e2a109}{GetAngleAxis} ()
+\item 
+const \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableAngleAxis} \& \hyperlink{classFCDTRotation_afce9e601d1581ea6da3e2723cb5c0ebe}{GetAngleAxis} () const 
+\item 
+void \hyperlink{classFCDTRotation_a0ff581af572642dfa7506402d28ef6fb}{SetAngleAxis} (const \hyperlink{classFMAngleAxis}{FMAngleAxis} \&aa)
+\item 
+\hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFCDTRotation_a2c5629790e8172222f1095be97728e6f}{GetAxis} ()
+\item 
+const \hyperlink{classFMVector3}{FMVector3} \& \hyperlink{classFCDTRotation_a2049a1603120ef757614c31110a18a4d}{GetAxis} () const 
+\item 
+void \hyperlink{classFCDTRotation_a3aa0b0cccfcdb7cea0070bcf0b9b557b}{SetAxis} (const \hyperlink{classFMVector3}{FMVector3} \&axis)
+\item 
+void \hyperlink{classFCDTRotation_a550e50cede877e255589506c9fbc2e34}{SetAxis} (float x, float y, float z)
+\item 
+float \& \hyperlink{classFCDTRotation_a521fd665dca9d5a92450467a5680a156}{GetAngle} ()
+\item 
+const float \& \hyperlink{classFCDTRotation_ab6b9d98eac74729fc5c0c55a13bac478}{GetAngle} () const 
+\item 
+void \hyperlink{classFCDTRotation_a097be8d6e0d8f52e9a2da884d3d397ae}{SetAngle} (float a)
+\item 
+void \hyperlink{classFCDTRotation_a6ebf1ce90ac3247d924190652e595d7f}{SetRotation} (const \hyperlink{classFMVector3}{FMVector3} \&axis, float angle)
+\item 
+\hyperlink{classFMQuaternion}{FMQuaternion} \hyperlink{classFCDTRotation_a6371e350942c3efa33ac7b3ccd253b42}{GetOrientation} ()
+\item 
+void \hyperlink{classFCDTRotation_ab28cabb379c6312e4a5fae609f33dea8}{SetOrientation} (const \hyperlink{classFMQuaternion}{FMQuaternion} \&q)
+\item 
+virtual \hyperlink{classFMMatrix44}{FMMatrix44} \hyperlink{classFCDTRotation_a928ca46c14e83d7efcf840ce3f1452fe}{ToMatrix} () const 
+\item 
+virtual bool \hyperlink{classFCDTRotation_aeb5dc80fb81f11f0fe024f925961c7d9}{IsAnimated} () const 
+\item 
+\hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTRotation_a749761125dbd6f71268696d42ee39450}{GetAnimated} ()
+\item 
+virtual const \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$ \hyperlink{classFCDTRotation_aa15d71e8f12a80fba90bc788c3e26826}{GetAnimated} () const 
+\item 
+virtual bool \hyperlink{classFCDTRotation_a2b5c4b3edef9384c4fa20be5591874a2}{IsInverse} (const \hyperlink{classFCDTransform}{FCDTransform} $\ast$transform) const 
+\item 
+virtual \hyperlink{classFCDTransform}{FCDTransform} $\ast$ \hyperlink{classFCDTRotation_a7b4de1344e7b0e1f930b3bad6f1ae169}{Clone} (\hyperlink{classFCDTransform}{FCDTransform} $\ast$clone=NULL) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA angle-\/axis rotation. This rotation defines an axis around which the 3D points are rotated by a given angle. \begin{Desc}
+\item[\hyperlink{todo__todo000010}{Todo}](clock-\/wise/counter-\/clock-\/wise?)\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDTRotation_ae92f4d8903836a1bf832a2c1ca42eb90}{
+\index{FCDTRotation@{FCDTRotation}!FCDTRotation@{FCDTRotation}}
+\index{FCDTRotation@{FCDTRotation}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{FCDTRotation}]{\setlength{\rightskip}{0pt plus 5cm}FCDTRotation::FCDTRotation (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{{\bf FCDSceneNode} $\ast$}]{ parent}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDTRotation_ae92f4d8903836a1bf832a2c1ca42eb90}
+Constructor: do not use directly. Instead, use the \hyperlink{classFCDSceneNode_a863250572e5a4dbf022192c653222d94}{FCDSceneNode::AddTransform} function with the transformation type: ROTATION. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that owns the rotation. \item[{\em parent}]The visual scene node that contains the rotation. Set this pointer to NULL if the rotation is not owned by a visual scene node. \end{DoxyParams}
+\hypertarget{classFCDTRotation_adca97a7bdd9f3cd6f31712dce21a610b}{
+\index{FCDTRotation@{FCDTRotation}!$\sim$FCDTRotation@{$\sim$FCDTRotation}}
+\index{$\sim$FCDTRotation@{$\sim$FCDTRotation}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{$\sim$FCDTRotation}]{\setlength{\rightskip}{0pt plus 5cm}FCDTRotation::$\sim$FCDTRotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTRotation_adca97a7bdd9f3cd6f31712dce21a610b}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDTRotation_a7b4de1344e7b0e1f930b3bad6f1ae169}{
+\index{FCDTRotation@{FCDTRotation}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDTransform} $\ast$ FCDTRotation::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDTransform} $\ast$}]{ clone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTRotation_a7b4de1344e7b0e1f930b3bad6f1ae169}
+Creates a copy of a rotation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The transform that will be the clone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned transformation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_a5ffc20180fb422a2756e1394576f2901}{FCDTransform}.
+
+\hypertarget{classFCDTRotation_a521fd665dca9d5a92450467a5680a156}{
+\index{FCDTRotation@{FCDTRotation}!GetAngle@{GetAngle}}
+\index{GetAngle@{GetAngle}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetAngle}]{\setlength{\rightskip}{0pt plus 5cm}float\& FCDTRotation::GetAngle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a521fd665dca9d5a92450467a5680a156}
+Retrieves the rotation angle. This angle may be animated. \begin{DoxyReturn}{Returns}
+The rotation angle, in degrees. 
+\end{DoxyReturn}
+\hypertarget{classFCDTRotation_ab6b9d98eac74729fc5c0c55a13bac478}{
+\index{FCDTRotation@{FCDTRotation}!GetAngle@{GetAngle}}
+\index{GetAngle@{GetAngle}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetAngle}]{\setlength{\rightskip}{0pt plus 5cm}const float\& FCDTRotation::GetAngle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_ab6b9d98eac74729fc5c0c55a13bac478}
+See above. \hypertarget{classFCDTRotation_a3fd21b3f969e19041caab33747e2a109}{
+\index{FCDTRotation@{FCDTRotation}!GetAngleAxis@{GetAngleAxis}}
+\index{GetAngleAxis@{GetAngleAxis}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetAngleAxis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDParameterAnimatableAngleAxis}\& FCDTRotation::GetAngleAxis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a3fd21b3f969e19041caab33747e2a109}
+Retrieves the angle-\/axis value of the rotation. \begin{DoxyReturn}{Returns}
+The angle-\/axis value. 
+\end{DoxyReturn}
+\hypertarget{classFCDTRotation_afce9e601d1581ea6da3e2723cb5c0ebe}{
+\index{FCDTRotation@{FCDTRotation}!GetAngleAxis@{GetAngleAxis}}
+\index{GetAngleAxis@{GetAngleAxis}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetAngleAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDParameterAnimatableAngleAxis}\& FCDTRotation::GetAngleAxis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_afce9e601d1581ea6da3e2723cb5c0ebe}
+See above. \hypertarget{classFCDTRotation_a749761125dbd6f71268696d42ee39450}{
+\index{FCDTRotation@{FCDTRotation}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDAnimated}$\ast$ FCDTRotation::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a749761125dbd6f71268696d42ee39450}
+Retrieves the animated element for the angle-\/axis rotation. \begin{DoxySeeAlso}{See also}
+FCDAnimatedAngleAxis 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The animated element. This pointer will be NULL if the rotation is not animated. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDTransform_afefc850b24274c7e3ced421b18bec24b}{FCDTransform}.
+
+\hypertarget{classFCDTRotation_aa15d71e8f12a80fba90bc788c3e26826}{
+\index{FCDTRotation@{FCDTRotation}!GetAnimated@{GetAnimated}}
+\index{GetAnimated@{GetAnimated}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetAnimated}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FCDAnimated} $\ast$ FCDTRotation::GetAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTRotation_aa15d71e8f12a80fba90bc788c3e26826}
+See above. 
+
+Implements \hyperlink{classFCDTransform_aac1ff2df9e63702a90300ba9c38c48e1}{FCDTransform}.
+
+\hypertarget{classFCDTRotation_a2c5629790e8172222f1095be97728e6f}{
+\index{FCDTRotation@{FCDTRotation}!GetAxis@{GetAxis}}
+\index{GetAxis@{GetAxis}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetAxis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector3}\& FCDTRotation::GetAxis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a2c5629790e8172222f1095be97728e6f}
+Retrieves the rotation axis. This 3D vector may be animated. \begin{DoxyReturn}{Returns}
+The rotation axis. 
+\end{DoxyReturn}
+\hypertarget{classFCDTRotation_a2049a1603120ef757614c31110a18a4d}{
+\index{FCDTRotation@{FCDTRotation}!GetAxis@{GetAxis}}
+\index{GetAxis@{GetAxis}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector3}\& FCDTRotation::GetAxis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a2049a1603120ef757614c31110a18a4d}
+See above. \hypertarget{classFCDTRotation_a6371e350942c3efa33ac7b3ccd253b42}{
+\index{FCDTRotation@{FCDTRotation}!GetOrientation@{GetOrientation}}
+\index{GetOrientation@{GetOrientation}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetOrientation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMQuaternion} FCDTRotation::GetOrientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a6371e350942c3efa33ac7b3ccd253b42}
+Retrieves the rotation orientation. \begin{DoxyReturn}{Returns}
+The rotation orientation quaternion. 
+\end{DoxyReturn}
+\hypertarget{classFCDTRotation_af5ddd1b7b673eaa1d57f36b4e685a3c8}{
+\index{FCDTRotation@{FCDTRotation}!GetType@{GetType}}
+\index{GetType@{GetType}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{GetType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} FCDTRotation::GetType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDTRotation_af5ddd1b7b673eaa1d57f36b4e685a3c8}
+Retrieves the transformation class type for the rotation. \begin{DoxyReturn}{Returns}
+The class type: ROTATION. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_af406aebcba6215ebc1358a3cf87ab29d}{FCDTransform}.
+
+\hypertarget{classFCDTRotation_aeb5dc80fb81f11f0fe024f925961c7d9}{
+\index{FCDTRotation@{FCDTRotation}!IsAnimated@{IsAnimated}}
+\index{IsAnimated@{IsAnimated}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{IsAnimated}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDTRotation::IsAnimated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTRotation_aeb5dc80fb81f11f0fe024f925961c7d9}
+Retrieves whether the axis or the angle of the rotation are animated. \begin{DoxyReturn}{Returns}
+Whether the rotation is animated. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_ab12ac63fa2d46fbcf8c025971635cda4}{FCDTransform}.
+
+\hypertarget{classFCDTRotation_a2b5c4b3edef9384c4fa20be5591874a2}{
+\index{FCDTRotation@{FCDTRotation}!IsInverse@{IsInverse}}
+\index{IsInverse@{IsInverse}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{IsInverse}]{\setlength{\rightskip}{0pt plus 5cm}bool FCDTRotation::IsInverse (
+\begin{DoxyParamCaption}
+\item[{const {\bf FCDTransform} $\ast$}]{ transform}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTRotation_a2b5c4b3edef9384c4fa20be5591874a2}
+Retrieves whether a given transform is the exact opposite of this rotation. The opposite of an angle-\/axis rotation has the same axis as this rotation but the angle is multiplied by -\/1. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transform}]A second transformation. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two rotation are opposites. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDTransform_a9fa1a02a51f833f819248c2ff020507c}{FCDTransform}.
+
+\hypertarget{classFCDTRotation_a097be8d6e0d8f52e9a2da884d3d397ae}{
+\index{FCDTRotation@{FCDTRotation}!SetAngle@{SetAngle}}
+\index{SetAngle@{SetAngle}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{SetAngle}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTRotation::SetAngle (
+\begin{DoxyParamCaption}
+\item[{float}]{ a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a097be8d6e0d8f52e9a2da884d3d397ae}
+Sets the rotation angle. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The rotation angle, in degrees. \end{DoxyParams}
+\hypertarget{classFCDTRotation_a0ff581af572642dfa7506402d28ef6fb}{
+\index{FCDTRotation@{FCDTRotation}!SetAngleAxis@{SetAngleAxis}}
+\index{SetAngleAxis@{SetAngleAxis}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{SetAngleAxis}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTRotation::SetAngleAxis (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMAngleAxis} \&}]{ aa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a0ff581af572642dfa7506402d28ef6fb}
+Sets the angle-\/axis value of the rotation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em aa}]The new angle-\/axis value. \end{DoxyParams}
+\hypertarget{classFCDTRotation_a550e50cede877e255589506c9fbc2e34}{
+\index{FCDTRotation@{FCDTRotation}!SetAxis@{SetAxis}}
+\index{SetAxis@{SetAxis}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{SetAxis}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTRotation::SetAxis (
+\begin{DoxyParamCaption}
+\item[{float}]{ x, }
+\item[{float}]{ y, }
+\item[{float}]{ z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a550e50cede877e255589506c9fbc2e34}
+Sets the rotation axis. 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]The x-\/component of the rotation axis. \item[{\em y}]The y-\/component of the rotation axis. \item[{\em z}]The z-\/component of the rotation axis. \end{DoxyParams}
+\hypertarget{classFCDTRotation_a3aa0b0cccfcdb7cea0070bcf0b9b557b}{
+\index{FCDTRotation@{FCDTRotation}!SetAxis@{SetAxis}}
+\index{SetAxis@{SetAxis}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{SetAxis}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTRotation::SetAxis (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ axis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a3aa0b0cccfcdb7cea0070bcf0b9b557b}
+Sets the rotation axis. 
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]The rotation axis. \end{DoxyParams}
+\hypertarget{classFCDTRotation_ab28cabb379c6312e4a5fae609f33dea8}{
+\index{FCDTRotation@{FCDTRotation}!SetOrientation@{SetOrientation}}
+\index{SetOrientation@{SetOrientation}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{SetOrientation}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTRotation::SetOrientation (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMQuaternion} \&}]{ q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_ab28cabb379c6312e4a5fae609f33dea8}
+Sets the rotation orientation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em q}]The rotation orientation quaternion. \end{DoxyParams}
+\hypertarget{classFCDTRotation_a6ebf1ce90ac3247d924190652e595d7f}{
+\index{FCDTRotation@{FCDTRotation}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{SetRotation}]{\setlength{\rightskip}{0pt plus 5cm}void FCDTRotation::SetRotation (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ axis, }
+\item[{float}]{ angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFCDTRotation_a6ebf1ce90ac3247d924190652e595d7f}
+Sets the rotation components 
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]The rotation axis. \item[{\em angle}]The rotation angle, in degrees. \end{DoxyParams}
+\hypertarget{classFCDTRotation_a928ca46c14e83d7efcf840ce3f1452fe}{
+\index{FCDTRotation@{FCDTRotation}!ToMatrix@{ToMatrix}}
+\index{ToMatrix@{ToMatrix}!FCDTRotation@{FCDTRotation}}
+\subsubsection[{ToMatrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMMatrix44} FCDTRotation::ToMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDTRotation_a928ca46c14e83d7efcf840ce3f1452fe}
+Converts the rotation into a matrix. \begin{DoxyReturn}{Returns}
+A matrix equivalent of the rotation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDTransform_afd7fc3c7dc012782ebb2886c5bc13d01}{FCDTransform}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDTransform_8h}{FCDTransform.h}\item 
+FCollada/FCDocument/FCDTransform.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{namespaceFUDaePassStateFogCoordinateType}{
+\section{FUDaePassStateFogCoordinateType Namespace Reference}
+\label{namespaceFUDaePassStateFogCoordinateType}\index{FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7}{Type} \{ \hyperlink{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7ade752efdc9b3807bac2a9d53c867093a}{FOG\_\-COORDINATE} =  0x8451, 
+\hyperlink{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7a55c728dca457f12de99edc5e95a55bab}{FRAGMENT\_\-DEPTH} =  0x8452, 
+\hyperlink{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7ad82ae50d75a09152a709f246cbae3d33}{INVALID}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7}{Type} \hyperlink{namespaceFUDaePassStateFogCoordinateType_ac662240abeaf200d1303ad43f2e67f51}{FromString} (const char $\ast$value)
+\item 
+const char $\ast$ \hyperlink{namespaceFUDaePassStateFogCoordinateType_aa9bf626bbb748bec31c5d4c39a0965ba}{ToString} (\hyperlink{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7}{Type} type)
+\item 
+\hyperlink{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7}{Type} \hyperlink{namespaceFUDaePassStateFogCoordinateType_a5fe561d03117a83f06bc41fc6dd5a3ef}{FromString} (const \hyperlink{classfm_1_1stringT}{fm::string} \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The render state fog coordinate source types. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7}{
+\index{FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}!Type@{Type}}
+\index{Type@{Type}!FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FUDaePassStateFogCoordinateType::Type}}}
+\label{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7}
+A fog coordinate type. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{FOG\_\-COORDINATE@{FOG\_\-COORDINATE}!FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}}\index{FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}!FOG\_\-COORDINATE@{FOG\_\-COORDINATE}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7ade752efdc9b3807bac2a9d53c867093a}{
+FOG\_\-COORDINATE}
+\label{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7ade752efdc9b3807bac2a9d53c867093a}
+}]Use fog coordinate values. \index{FRAGMENT\_\-DEPTH@{FRAGMENT\_\-DEPTH}!FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}}\index{FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}!FRAGMENT\_\-DEPTH@{FRAGMENT\_\-DEPTH}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7a55c728dca457f12de99edc5e95a55bab}{
+FRAGMENT\_\-DEPTH}
+\label{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7a55c728dca457f12de99edc5e95a55bab}
+}]Use the depth value of the fragment. \index{INVALID@{INVALID}!FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}}\index{FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7ad82ae50d75a09152a709f246cbae3d33}{
+INVALID}
+\label{namespaceFUDaePassStateFogCoordinateType_a5aee827a1b7527529d70a8c5cf03a7a7ad82ae50d75a09152a709f246cbae3d33}
+}]An invalid fog coordinate type. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFUDaePassStateFogCoordinateType_ac662240abeaf200d1303ad43f2e67f51}{
+\index{FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT {\bf Type} FUDaePassStateFogCoordinateType::FromString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateFogCoordinateType_ac662240abeaf200d1303ad43f2e67f51}
+Converts the COLLADA render state fog coordinate source type string to the fog coordinate source type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The render state fog coordinate source type string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fog coordinate source type. 
+\end{DoxyReturn}
+\hypertarget{namespaceFUDaePassStateFogCoordinateType_a5fe561d03117a83f06bc41fc6dd5a3ef}{
+\index{FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}!FromString@{FromString}}
+\index{FromString@{FromString}!FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}}
+\subsubsection[{FromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} FUDaePassStateFogCoordinateType::FromString (
+\begin{DoxyParamCaption}
+\item[{const {\bf fm::string} \&}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceFUDaePassStateFogCoordinateType_a5fe561d03117a83f06bc41fc6dd5a3ef}
+See above. \hypertarget{namespaceFUDaePassStateFogCoordinateType_aa9bf626bbb748bec31c5d4c39a0965ba}{
+\index{FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}!ToString@{ToString}}
+\index{ToString@{ToString}!FUDaePassStateFogCoordinateType@{FUDaePassStateFogCoordinateType}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}FCOLLADA\_\-EXPORT const char $\ast$ FUDaePassStateFogCoordinateType::ToString (
+\begin{DoxyParamCaption}
+\item[{Type}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceFUDaePassStateFogCoordinateType_aa9bf626bbb748bec31c5d4c39a0965ba}
+Converts the fog coordinate source type to its COLLADA render state fog coordinate source type string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The fog coordinate source type. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render state fog coordinate source type string. 
+\end{DoxyReturn}
