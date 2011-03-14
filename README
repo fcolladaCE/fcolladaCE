@@ -1,20 +1,9 @@
 successfully merged and build OMK fcollada and WF fcollada. O3D fcollada uses chrome basetypes, requires more work to fix and bring over.
 
-While building 0AD from wildfire games I got this error:
-
-test_MD5.cpp
-In file included from ../../../source/maths/tests/test_MD5.cpp:14:
-/usr/include/bits/string3.h: In function ‘void TestMD5::T.882()’:
-/usr/include/bits/string3.h:52: warning: array subscript is above array bounds
-/usr/include/bits/string3.h:52: warning: array subscript is above array bounds
-
-
-don't quite get it - haven't looked into it yet
+This library works as a drop in replacement in 0ad! Need more external testing...
 
 TODO:
-need to put 64 bit guards in FUStringBuilder.h
 probably autotools build based on the WF makefile (I know it better than cmake).
-test code with 0AD
 finish doxygen?
 
 -- March 13, 2011, Scott Howard <showard@debian.org>
