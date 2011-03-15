@@ -63,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00010"></a>00010 <span class="preprocessor">#elif defined (WIN32)</span>
 <a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#undef HAVE_ERRNO_H</span>
 <a name="l00012"></a>00012 <span class="preprocessor"></span><span class="preprocessor">#include &lt;winsock2.h&gt;</span>
-<a name="l00013"></a>00013 <span class="preprocessor">#elif defined (LINUX)</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#elif defined (__linux__)</span>
 <a name="l00014"></a>00014 <span class="preprocessor"></span><span class="preprocessor">#include &lt;sys/socket.h&gt;</span>
 <a name="l00015"></a>00015 <span class="preprocessor">#endif</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>

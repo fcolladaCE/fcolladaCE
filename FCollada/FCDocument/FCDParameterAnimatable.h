@@ -396,7 +396,7 @@ typedef FCDParameterListAnimatableT<FMVector4, 1> FCDParameterListAnimatableColo
 /** See above. */
 #define InitializeParameterAnimatable(parameterName, ...) parameterName(this, __VA_ARGS__)
 
-#if defined(__APPLE__) || defined(LINUX)
+#if defined(__APPLE__) || defined(__linux__)
 #include <FCDocument/FCDParameterAnimatable.hpp>
 #endif // MAC + LINUX
 

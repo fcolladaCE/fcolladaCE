@@ -48,7 +48,7 @@
 <a name="l00027"></a>00027 <span class="preprocessor"></span><span class="preprocessor">#define FCOLLADA_EXPORT __declspec(dllimport)</span>
 <a name="l00028"></a>00028 <span class="preprocessor"></span><span class="preprocessor">#define FCOLLADA_LOCAL</span>
 <a name="l00029"></a>00029 <span class="preprocessor"></span><span class="preprocessor">#endif // FCOLLADA_INTERNAL</span>
-<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#elif defined(__APPLE__) || defined(LINUX)</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#elif defined(__APPLE__) || defined(__linux__)</span>
 <a name="l00031"></a>00031 <span class="preprocessor"></span><span class="preprocessor">#define FCOLLADA_EXPORT __attribute__((visibility("default")))</span>
 <a name="l00032"></a>00032 <span class="preprocessor"></span><span class="preprocessor">#define FCOLLADA_LOCAL __attribute__((visibility("hidden")))</span>
 <a name="l00033"></a>00033 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
@@ -94,7 +94,7 @@
 <a name="l00073"></a>00073 <span class="preprocessor">#include &lt;string.h&gt;</span>
 <a name="l00074"></a>00074 <span class="preprocessor">#include &lt;wchar.h&gt;</span>
 <a name="l00075"></a>00075 <span class="preprocessor">#else // __APPLE__</span>
-<a name="l00076"></a>00076 <span class="preprocessor"></span><span class="preprocessor">#if defined(LINUX) || defined(__PPU__)</span>
+<a name="l00076"></a>00076 <span class="preprocessor"></span><span class="preprocessor">#if defined(__linux__) || defined(__PPU__)</span>
 <a name="l00077"></a>00077 <span class="preprocessor"></span><span class="preprocessor">#include &lt;ctype.h&gt;</span>
 <a name="l00078"></a>00078 <span class="preprocessor">#include &lt;wctype.h&gt;</span>
 <a name="l00079"></a>00079 <span class="preprocessor">#include &lt;unistd.h&gt;</span>
@@ -142,7 +142,7 @@
 <a name="l00121"></a>00121 <span class="preprocessor">#endif // PLATFORMS</span>
 <a name="l00122"></a>00122 <span class="preprocessor"></span>
 <a name="l00123"></a>00123 <span class="comment">// Important functions that some OSes have missing!</span>
-<a name="l00124"></a>00124 <span class="preprocessor">#if defined(__APPLE__) || defined (LINUX)</span>
+<a name="l00124"></a>00124 <span class="preprocessor">#if defined(__APPLE__) || defined (__linux__)</span>
 <a name="l00125"></a>00125 <span class="preprocessor"></span><span class="keyword">inline</span> <span class="keywordtype">char</span>* strlower(<span class="keywordtype">char</span>* str) { <span class="keywordtype">char</span>* it = str; <span class="keywordflow">while</span> (*it != 0) { *it = tolower(*it); ++it; } <span class="keywordflow">return</span> str; }
 <a name="l00126"></a>00126 <span class="keyword">inline</span> <span class="keywordtype">wchar_t</span>* wcslwr(<span class="keywordtype">wchar_t</span>* str) { <span class="keywordtype">wchar_t</span>* it = str; <span class="keywordflow">while</span> (*it != 0) { *it = towlower(*it); ++it; } <span class="keywordflow">return</span> str; }
 <a name="l00127"></a>00127 <span class="keyword">inline</span> <span class="keywordtype">int</span> wcsicmp(<span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* s1, <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* s2) { <span class="keywordtype">wchar_t</span> c1 = *s1, c2 = *s2; <span class="keywordflow">while</span> (c1 != 0 &amp;&amp; c2 != 0) { <span class="keywordflow">if</span> (c1 &gt;= <span class="charliteral">'a'</span> &amp;&amp; c1 &lt;= <span class="charliteral">'z'</span>) c1 -= <span class="charliteral">'a'</span> + <span class="charliteral">'A'</span>; <span class="keywordflow">if</span> (c2 &gt;= <span class="charliteral">'a'</span> &amp;&amp; c2 &lt;= <span class="charliteral">'z'</span>) c2 -= <span class="charliteral">'a'</span> + <span class="charliteral">'A'</span>; <span class="keywordflow">if</span> (c2 &lt; c1) <span class="keywordflow">return</span> -1; <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c2 &gt; c1) <span class="keywordflow">return</span> 1; c1 = *(++s1); c2 = *(++s2); } <span class="keywordflow">return</span> 0; }

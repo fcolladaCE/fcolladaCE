@@ -48,7 +48,7 @@ BOOL WINAPI DllMain(HINSTANCE _hInstance, ULONG fdwReason, LPVOID UNUSED(lpvRese
 
 	return TRUE;
 }
-#elif defined(__APPLE__) || defined(LINUX)
+#elif defined(__APPLE__) || defined(__linux__)
 void __attribute((constructor)) DllEntry(void)
 {
 }

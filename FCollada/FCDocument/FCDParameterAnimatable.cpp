@@ -8,7 +8,7 @@
 
 #include "StdAfx.h"
 #include "FCDParameterAnimatable.h"
-#if !defined (__APPLE__) && !defined(LINUX)
+#if !defined (__APPLE__) && !defined(__linux__)
 #include "FCDParameterAnimatable.hpp"
 #endif
 #include "FCDAnimated.h"
