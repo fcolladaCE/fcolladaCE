@@ -129,7 +129,7 @@ public:
 	void appendHex(uint8 i);
 	template <class T> inline void appendHex(const T& i) { for (size_t j = 0; j < sizeof(T); ++j) appendHex(*(((uint8*)&i) + j)); } /**< See above. */
 
-#if defined(WIN32)
+#if defined(_WIN32)
 	inline void append(int i) { append((int32) i); } /**< See above. */
 #ifdef _W64
 	inline void append(_W64 unsigned int i) { append((uint32) i); } /**< See above. */

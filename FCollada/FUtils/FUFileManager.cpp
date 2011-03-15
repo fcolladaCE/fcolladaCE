@@ -21,7 +21,7 @@
 
 #include <errno.h>
 
-#if defined(WIN32)
+#if defined(_WIN32)
 	#include <direct.h>
 #elif defined(__APPLE__)
 	#include <mach-o/dyld.h>

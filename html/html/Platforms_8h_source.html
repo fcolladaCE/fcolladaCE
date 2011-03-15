@@ -232,7 +232,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00179"></a>00179 <span class="preprocessor"></span>
 <a name="l00180"></a>00180 <span class="preprocessor">        #ifdef __PPU__</span>
 <a name="l00181"></a>00181 <span class="preprocessor"></span><span class="preprocessor">                #define fstricmp wcscmp         // [claforte] TODO: Implement __PPU__ version of wcsicmp</span>
-<a name="l00182"></a>00182 <span class="preprocessor"></span><span class="preprocessor">        #elif defined(WIN32)</span>
+<a name="l00182"></a>00182 <span class="preprocessor"></span><span class="preprocessor">        #elif defined(_WIN32)</span>
 <a name="l00183"></a>00183 <span class="preprocessor"></span><span class="preprocessor">                #define fstricmp _wcsicmp</span>
 <a name="l00184"></a>00184 <span class="preprocessor"></span><span class="preprocessor">        #else</span>
 <a name="l00185"></a>00185 <span class="preprocessor"></span><span class="preprocessor">                #define fstricmp wcsicmp</span>
@@ -282,7 +282,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00232"></a>00232 <span class="preprocessor"></span><span class="preprocessor">#define ALIGN_STRUCT(byteCount)</span>
 <a name="l00233"></a>00233 <span class="preprocessor"></span><span class="preprocessor">#endif // WIN32</span>
 <a name="l00234"></a>00234 <span class="preprocessor"></span>
-<a name="l00235"></a>00235 <span class="preprocessor">#if defined(WIN32) &amp;&amp; _MSC_VER &gt;= 1400</span>
+<a name="l00235"></a>00235 <span class="preprocessor">#if defined(_WIN32) &amp;&amp; _MSC_VER &gt;= 1400</span>
 <a name="l00236"></a>00236 <span class="preprocessor"></span><span class="preprocessor">#define DEPRECATED(versionNumber, alternative) __declspec(deprecated(&quot;[&quot; #versionNumber &quot;] This function is now deprecated. Please use &#39;&quot; #alternative &quot;&#39; instead.&quot;))</span>
 <a name="l00237"></a>00237 <span class="preprocessor"></span><span class="preprocessor">#else</span>
 <a name="l00238"></a>00238 <span class="preprocessor"></span>

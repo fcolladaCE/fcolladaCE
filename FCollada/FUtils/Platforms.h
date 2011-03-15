@@ -179,7 +179,7 @@ inline int wcsicmp(const wchar_t* s1, const wchar_t* s2) { wchar_t c1 = *s1, c2 
 
 	#ifdef __PPU__
 		#define fstricmp wcscmp		// [claforte] TODO: Implement __PPU__ version of wcsicmp
-	#elif defined(WIN32)
+	#elif defined(_WIN32)
 		#define fstricmp _wcsicmp
 	#else
 		#define fstricmp wcsicmp
@@ -232,7 +232,7 @@ inline int wcsicmp(const wchar_t* s1, const wchar_t* s2) { wchar_t c1 = *s1, c2 
 #define ALIGN_STRUCT(byteCount)
 #endif // WIN32
 
-#if defined(WIN32) && _MSC_VER >= 1400
+#if defined(_WIN32) && _MSC_VER >= 1400
 #define DEPRECATED(versionNumber, alternative) __declspec(deprecated("[" #versionNumber "] This function is now deprecated. Please use '" #alternative "' instead."))
 #else
 /** Deprecated macro for functions.

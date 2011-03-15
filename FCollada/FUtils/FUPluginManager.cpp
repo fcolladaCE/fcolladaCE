@@ -78,7 +78,7 @@ void FUPluginManager::LoadPluginsInFolderName(const fstring& folderName, const f
 		_filter = nextFilter;
 
 		// Windows-only for now.
-#if defined(WIN32)
+#if defined(_WIN32)
 		size_t filterLength = filter.length();
 		// Iterate over all the filtered files within the given folder.
 		ffinddata folderIterator;
@@ -177,7 +177,7 @@ FUPluginManager::~FUPluginManager()
 	// Detach all the plugin libraries.
 	for (PluginLibraryList::iterator it = loadedLibraries.begin(); it != loadedLibraries.end(); ++it)
 	{
-#if defined(WIN32)
+#if defined(_WIN32)
 		if ((*it)->module != NULL) FreeLibrary((*it)->module);
 #elif defined(__linux__) || defined(__APPLE__)
 		if ((*it)->module != NULL) dlclose((*it)->module);

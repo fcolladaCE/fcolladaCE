@@ -10,7 +10,7 @@
 #include "FUTestBed.h"
 #include "FUFileManager.h"
 #include "FUUri.h"
-#if defined(WIN32)
+#if defined(_WIN32)
 	#include <direct.h>
 #endif // WIN32
 

@@ -1,12 +1,3 @@
-OS_ARCH := $(shell uname -s)
-
-ifeq ($(OS_ARCH),Darwin)
-PIC_FLAGS ?= -fPIC
-else
-OS_DEFINE ?= -DLINUX
-PIC_FLAGS ?= -fpic
-endif
-
 CXX := g++
 CXXFLAGS := -fvisibility=hidden -W -Wall -Wno-unused-parameter -Wno-unused-function $(OS_DEFINE) $(PIC_FLAGS) $(CPPFLAGS)
 CXXFLAGS_DEBUG := -O0 -g -D_DEBUG -DRETAIL

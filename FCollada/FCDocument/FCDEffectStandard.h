@@ -35,7 +35,7 @@ class FCDEffect;
 class FCDTexture;
 class FCDEffectParameter;
 
-#if defined(WIN32)
+#if defined(_WIN32)
 template <class T, int Q> class FCOLLADA_EXPORT FCDEffectParameterAnimatableT; /**< Trick Doxygen. */
 #elif defined(__linux__) || defined(__APPLE__)
 template <class T, int Q> class FCDEffectParameterAnimatableT; /**< Trick Doxygen. */

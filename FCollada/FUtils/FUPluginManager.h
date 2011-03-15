@@ -46,7 +46,7 @@ private:
 	struct PluginLibrary
 	{
 		fstring filename;
-#if defined(WIN32)
+#if defined(_WIN32)
 		HMODULE module;
 #elif defined(__APPLE__) || defined(__linux__)
 		void* module;

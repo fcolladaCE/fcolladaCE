@@ -24,7 +24,7 @@ FUDebug::~FUDebug() {}
 #else
 #define STRING_OUT(sz) fprintf(stderr, "%s", sz); fflush(stderr);
 #endif // UNICODE
-#elif defined(WIN32)
+#elif defined(_WIN32)
 #define STRING_OUT(sz) OutputDebugString(sz); OutputDebugString(FC("\n"))
 #elif defined(__PPU__)
 #define STRING_OUT(sz) { fm::string szz = FUStringConversion::ToString(sz); printf("%s\n", szz.c_str()); }
