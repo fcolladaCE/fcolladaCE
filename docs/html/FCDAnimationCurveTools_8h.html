@@ -57,27 +57,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 
+<p>This file contains the <a class="el" href="namespaceFCDAnimationCurveTools.html" title="Contains tools to merge, collapse and otherwise modify animation curve.">FCDAnimationCurveTools</a> namespace.  
+<a href="#_details">More...</a></p>
+
 <p><a href="FCDAnimationCurveTools_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html">FCDAnimationCurveTools</a></td></tr>
+
+<p><tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Contains tools to merge, collapse and otherwise modify animation curve. </p>
+<br/></td></tr>
+</p>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1pvector.html">fm::pvector</a><br class="typebreak"/>
 &lt; <a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDAnimationCurveTools_8h.html#ab12c9984d3fb51bedec646bd9ce6aa52">FCDAnimationCurveList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of animation curves.  <a href="#ab12c9984d3fb51bedec646bd9ce6aa52"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1pvector.html">fm::pvector</a>&lt; const <br class="typebreak"/>
 <a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDAnimationCurveTools_8h.html#a4bf8c1929ceac0d30c440c82571a7ce2">FCDAnimationCurveConstList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of constant animation curve pointers.  <a href="#a4bf8c1929ceac0d30c440c82571a7ce2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef float(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDAnimationCurveTools_8h.html#a108f3f31a5097fdde5a065a1c7ad0acc">FCDCollapsingFunction</a> )(float *values, uint32 count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A collapsing function.  <a href="#a108f3f31a5097fdde5a065a1c7ad0acc"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationMultiCurve.html">FCDAnimationMultiCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#a890739f174e6aaf00597ea67d6710ab8">FCDAnimationCurveTools::MergeCurves</a> (const <a class="el" href="classfm_1_1pvector.html">FCDAnimationCurveConstList</a> &amp;toMerge, const <a class="el" href="classfm_1_1vector.html">FloatList</a> &amp;defaultValues)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#aca4a52281fdbfd6c60337c8aa07aa5ae">FCDAnimationCurveTools::Collapse</a> (const <a class="el" href="classFCDAnimationMultiCurve.html">FCDAnimationMultiCurve</a> *curve, <a class="el" href="FCDAnimationCurveTools_8h.html#a108f3f31a5097fdde5a065a1c7ad0acc">FCDCollapsingFunction</a> collapse)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Merges multiple single-dimensional animation curves into one multi-dimensional animation curve.  <a href="#a890739f174e6aaf00597ea67d6710ab8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#a90b9efa77a216a15613a71f160888c31">FCDAnimationCurveTools::Collapse</a> (const <a class="el" href="classFCDAnimationMultiCurve.html">FCDAnimationMultiCurve</a> *curve, <a class="el" href="FCDAnimationCurveTools_8h.html#a108f3f31a5097fdde5a065a1c7ad0acc">FCDCollapsingFunction</a> collapse=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Collapses a multi-dimensional curve into a one-dimensional curve.  <a href="#a90b9efa77a216a15613a71f160888c31"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#a52f0bc674ece31d37bef0b8cf7999a27">FCDAnimationCurveTools::TakeFirst</a> (float *values, uint32 count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the first floating-point value of a list of floating-point values.  <a href="#a52f0bc674ece31d37bef0b8cf7999a27"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#ac39b972f3c91e9da8c6e6fd0b6f457dc">FCDAnimationCurveTools::Average</a> (float *values, uint32 count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the average value of a list of floating-point values.  <a href="#ac39b972f3c91e9da8c6e6fd0b6f457dc"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This file contains the <a class="el" href="namespaceFCDAnimationCurveTools.html">FCDAnimationCurveTools</a> namespace. </p>
+<p>This file contains the <a class="el" href="namespaceFCDAnimationCurveTools.html" title="Contains tools to merge, collapse and otherwise modify animation curve.">FCDAnimationCurveTools</a> namespace. </p>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="a4bf8c1929ceac0d30c440c82571a7ce2"></a><!-- doxytag: member="FCDAnimationCurveTools.h::FCDAnimationCurveConstList" ref="a4bf8c1929ceac0d30c440c82571a7ce2" args="" -->
 <div class="memitem">
@@ -89,6 +103,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of constant animation curve pointers. </p>
 
 </div>
@@ -103,6 +118,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of animation curves. </p>
 
 </div>
@@ -117,7 +133,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>A collapsing function. It converts multiple floating-point values into one floating-point value. </p>
+
+<p>A collapsing function. </p>
+<p>It converts multiple floating-point values into one floating-point value. </p>
 
 </div>
 </div>
@@ -136,7 +154,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDController" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A generic COLLADA controller.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDController_8h_source.html">FCDController.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDController:</div>
@@ -79,25 +82,43 @@ Inheritance diagram for FCDController:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a04573a2e038e54333ee86fcb3c18540c">FCDController</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a04573a2e038e54333ee86fcb3c18540c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#ae02107dec9fb6fd1d30abcbb3abba043">~FCDController</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ae02107dec9fb6fd1d30abcbb3abba043"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a2ff5b14d564dba7be26d3b8544bec93c">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity class type.  <a href="#a2ff5b14d564dba7be26d3b8544bec93c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a66949037b8bd19c1bbf2f0b0e2b1fefd">IsSkin</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this controller is a skin controller.  <a href="#a66949037b8bd19c1bbf2f0b0e2b1fefd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#ad2894a5bb013f7ee7c21565b1fd0b7fe">IsMorph</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this controller is a morph controller.  <a href="#ad2894a5bb013f7ee7c21565b1fd0b7fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSkinController.html">FCDSkinController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a808ec0e465cf611a6eb934f0abf51994">CreateSkinController</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the type of this controller to a skin controller.  <a href="#a808ec0e465cf611a6eb934f0abf51994"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMorphController.html">FCDMorphController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a7c96f2438b2cd4e69385c9c7d0172371">CreateMorphController</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the type of this controller to a morph controller.  <a href="#a7c96f2438b2cd4e69385c9c7d0172371"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSkinController.html">FCDSkinController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a4088c1f8c04cd88fcafa1a82b2c9d587">GetSkinController</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the skin controller.  <a href="#a4088c1f8c04cd88fcafa1a82b2c9d587"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSkinController.html">FCDSkinController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#ae53ae0573ac7e17cfa4718284f4ad7a7">GetSkinController</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae53ae0573ac7e17cfa4718284f4ad7a7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMorphController.html">FCDMorphController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a6a7af0fbd38bb56cf3603e8674e4f445">GetMorphController</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the morph controller.  <a href="#a6a7af0fbd38bb56cf3603e8674e4f445"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDMorphController.html">FCDMorphController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a500f804426894dd04dcfd30657765305">GetMorphController</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a500f804426894dd04dcfd30657765305"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a28ef9128280dc48afe55f0398a6c7eb1">GetBaseTarget</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the base target entity for this controller.  <a href="#a28ef9128280dc48afe55f0398a6c7eb1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#ae4035016b183c3aa6fd414571c98b664">GetBaseTarget</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae4035016b183c3aa6fd414571c98b664"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDGeometry.html">FCDGeometry</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a407cb338a97fee2bd37ebc7899ee40a8">GetBaseGeometry</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the base target geometry for this controller.  <a href="#a407cb338a97fee2bd37ebc7899ee40a8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDGeometry.html">FCDGeometry</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a9b1bff949a4081b474c0946154ce0034">GetBaseGeometry</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a9b1bff949a4081b474c0946154ce0034"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDController.html">FCDController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#a270b0e643d2b2e104cc057d611ec5ca8">GetBaseGeometryController</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the lowest controller on this stack.  <a href="#a270b0e643d2b2e104cc057d611ec5ca8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDController.html">FCDController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDController.html#ae9a274dc0c85e5de8461810272807374">GetBaseGeometryController</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae9a274dc0c85e5de8461810272807374"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A generic COLLADA controller. A COLLADA controller is used to influence a mesh. COLLADA defines two types of controller: skins (<a class="el" href="classFCDSkinController.html">FCDSkinController</a>) and morphers (<a class="el" href="classFCDMorphController.html">FCDMorphController</a>). </p>
+<p>A generic COLLADA controller. </p>
+<p>A COLLADA controller is used to influence a mesh. COLLADA defines two types of controller: skins (<a class="el" href="classFCDSkinController.html" title="A COLLADA skin controller.">FCDSkinController</a>) and morphers (<a class="el" href="classFCDMorphController.html" title="A COLLADA morpher.">FCDMorphController</a>). </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a04573a2e038e54333ee86fcb3c18540c"></a><!-- doxytag: member="FCDController::FCDController" ref="a04573a2e038e54333ee86fcb3c18540c" args="(FCDocument *document)" -->
 <div class="memitem">
@@ -114,7 +135,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0">FCDLibrary::AddEntity</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0" title="Creates a new entity within this library.">FCDLibrary::AddEntity</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the controller. </td></tr>
@@ -138,6 +161,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -157,7 +181,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the type of this controller to a morph controller. This function will release any previously created morpher or skin. </p>
+
+<p>Sets the type of this controller to a morph controller. </p>
+<p>This function will release any previously created morpher or skin. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new morph controller. </dd></dl>
 
 </div>
@@ -176,7 +202,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the type of this controller to a skin controller. This function will release any previously created morpher or skin. </p>
+
+<p>Sets the type of this controller to a skin controller. </p>
+<p>This function will release any previously created morpher or skin. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new skin controller. </dd></dl>
 
 </div>
@@ -195,7 +223,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the base target geometry for this controller. Controllers can be chained together. This function allows you to retrieve the base target geometry, if there is one. </p>
+
+<p>Retrieves the base target geometry for this controller. </p>
+<p>Controllers can be chained together. This function allows you to retrieve the base target geometry, if there is one. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The base target geometry. This pointer will be NULL if no base target is defined or if the base target entity is not a geometry. </dd></dl>
 
 </div>
@@ -214,6 +244,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -232,6 +263,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -250,7 +282,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the lowest controller on this stack. Controllers can be chained together. This function allows you to retrieve the controller assigned to the base target geometry. </p>
+
+<p>Retrieves the lowest controller on this stack. </p>
+<p>Controllers can be chained together. This function allows you to retrieve the controller assigned to the base target geometry. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The base controller. This pointer will be NULL if no base target is defined or if the base target entity is not a geometry. </dd></dl>
 
 </div>
@@ -269,7 +303,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the base target entity for this controller. The base target entity may be another controller or a geometry entity. To change the base target, use the <a class="el" href="classFCDMorphController.html#a11196ee1bd50c02cbd82e75397816272">FCDMorphController::SetBaseTarget</a> or the <a class="el" href="classFCDSkinController.html#a570337f366b9760bf1828620541c130b">FCDSkinController::SetTarget</a> functions. </p>
+
+<p>Retrieves the base target entity for this controller. </p>
+<p>The base target entity may be another controller or a geometry entity. To change the base target, use the <a class="el" href="classFCDMorphController.html#a11196ee1bd50c02cbd82e75397816272" title="Sets the base entity controlled by this morpher.">FCDMorphController::SetBaseTarget</a> or the <a class="el" href="classFCDSkinController.html#a570337f366b9760bf1828620541c130b" title="Sets the target entity.">FCDSkinController::SetTarget</a> functions. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The base target entity. This pointer will be NULL if no base target is defined. </dd></dl>
 
 </div>
@@ -288,6 +324,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -306,6 +343,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -324,7 +362,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the morph controller. This pointer is only valid for skins. To verify that this is a morpher, check the HasMorphController function. </p>
+
+<p>Retrieves the morph controller. </p>
+<p>This pointer is only valid for skins. To verify that this is a morpher, check the HasMorphController function. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The morph controller. This pointer will be NULL, if the controller is not a morpher. </dd></dl>
 
 </div>
@@ -343,7 +383,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the skin controller. This pointer is only valid for skins. To verify that this is a skin, check the HasSkinController function. </p>
+
+<p>Retrieves the skin controller. </p>
+<p>This pointer is only valid for skins. To verify that this is a skin, check the HasSkinController function. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The skin controller. This pointer will be NULL, if the controller is not a skin. </dd></dl>
 
 </div>
@@ -362,6 +404,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -380,7 +423,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity class type. This function is a part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity class type. </p>
+<p>This function is a part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity class type: CONTROLLER. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -401,6 +446,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this controller is a morph controller. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this controller is a morph controller. </dd></dl>
 
@@ -420,6 +466,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this controller is a skin controller. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this controller is a skin controller. </dd></dl>
 
@@ -444,7 +491,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:26 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:15 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

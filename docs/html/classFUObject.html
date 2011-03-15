@@ -64,6 +64,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUObject" -->
+<p>A basic object.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUObject_8h_source.html">FUObject.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FUObject:</div>
@@ -93,27 +96,37 @@ Inheritance diagram for FUObject:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#a82a14600f9f592cbdba3a0edb457ab0d">FUObject</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a82a14600f9f592cbdba3a0edb457ab0d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#a4dec1cc9b872769d4c3eece218278932">~FUObject</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a4dec1cc9b872769d4c3eece218278932"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#a33be6852b877d7f29520bbe4722b846b">Release</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases this object.  <a href="#a33be6852b877d7f29520bbe4722b846b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#af41252d8da713eae73cd7c1e9a95a9da">GetObjectType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of the object class.  <a href="#af41252d8da713eae73cd7c1e9a95a9da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#a30e5c127c0fe7336dba6e8a15fdcde82">IsType</a> (const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;_type) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this object has exactly the given type.  <a href="#a30e5c127c0fe7336dba6e8a15fdcde82"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#ab838ad4132b756dcd3614440b8e32f2a">HasType</a> (const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;_type) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this object is exactly or inherits the given type.  <a href="#ab838ad4132b756dcd3614440b8e32f2a"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#a907d4f6d284b3ac4f8203d557af41668">GetClassType</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of the base object class.  <a href="#a907d4f6d284b3ac4f8203d557af41668"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#a9cd036c408a27037f59ac80c5c158ea5">Detach</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Detaches this object from its owner.  <a href="#a9cd036c408a27037f59ac80c5c158ea5"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const uint32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#a1fe08ae8277bc677dc3339fcc4c03252">nextAvailableBit</a> = 0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Necessary, in order for the flag macros to work on up-classes.  <a href="#a1fe08ae8277bc677dc3339fcc4c03252"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fed355493a063bf080873e161f105be"></a><!-- doxytag: member="FUObject::FUObjectOwner" ref="a1fed355493a063bf080873e161f105be" args="" -->
 class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObject.html#a1fed355493a063bf080873e161f105be">FUObjectOwner</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A basic object. Each up-class of this basic object class hold an object type that acts just like RTTI to provide a safe way to up-cast. </p>
+<p>A basic object. </p>
+<p>Each up-class of this basic object class hold an object type that acts just like RTTI to provide a safe way to up-cast. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a82a14600f9f592cbdba3a0edb457ab0d"></a><!-- doxytag: member="FUObject::FUObject" ref="a82a14600f9f592cbdba3a0edb457ab0d" args="()" -->
 <div class="memitem">
@@ -129,7 +142,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor. Although it is not an abstract class, this class is not meant to be used directly. </p>
+
+<p>Constructor. </p>
+<p>Although it is not an abstract class, this class is not meant to be used directly. </p>
 
 </div>
 </div>
@@ -147,6 +162,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -166,7 +182,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Detaches this object from its owner. Mainly notifies the owner before the destructor is called. </p>
+
+<p>Detaches this object from its owner. </p>
+<p>Mainly notifies the owner before the destructor is called. </p>
 
 <p>Reimplemented in <a class="el" href="classFUTrackable.html#a2730c931df5604cd68ce8e9da1cdb320">FUTrackable</a>.</p>
 
@@ -186,6 +204,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of the base object class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The type of the base object class. </dd></dl>
 
@@ -205,6 +224,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of the object class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The type of the base object class. </dd></dl>
 
@@ -225,6 +245,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this object is exactly or inherits the given type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -251,6 +272,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this object has exactly the given type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -276,7 +298,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Releases this object. This function essentially calls the destructor. This function is virtual and is always overwritten when using the ImplementObjectType macro. </p>
+
+<p>Releases this object. </p>
+<p>This function essentially calls the destructor. This function is virtual and is always overwritten when using the ImplementObjectType macro. </p>
 
 </div>
 </div>
@@ -291,6 +315,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Necessary, in order for the flag macros to work on up-classes. </p>
 
 </div>
@@ -314,7 +339,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:54 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

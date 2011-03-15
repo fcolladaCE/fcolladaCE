@@ -63,34 +63,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FMMatrix33" -->
+<p>A 3x3 matrix: use to represent 2D transformations.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FMMatrix33_8h_source.html">FMMatrix33.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#aaaa2c13f0e797c868ec3042cb9ed48b6">FMMatrix33</a> (float *_m)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> from the <code>float</code> array.  <a href="#aaaa2c13f0e797c868ec3042cb9ed48b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#ace369b9695f0110475ab09200f914aa6">FMMatrix33</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an empty <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>.  <a href="#ace369b9695f0110475ab09200f914aa6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#a723877ff60d022ec7bb051947a73652b">operator float *</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get this <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> as an array of <code>floats</code>.  <a href="#a723877ff60d022ec7bb051947a73652b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#a0b4c98e78d0a6aff94cd0b9df52b723e">operator const float *</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get this FMMatrix as an array of <code>floats</code>.  <a href="#a0b4c98e78d0a6aff94cd0b9df52b723e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#a17914c286b1df2f8e1727fe9416435e7">operator[]</a> (int a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a specified row of <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> as an array of <code>floats</code>.  <a href="#a17914c286b1df2f8e1727fe9416435e7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMMatrix33.html">FMMatrix33</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#afd6fe3548530aff2889f606ebfce168c">operator=</a> (const <a class="el" href="classFMMatrix33.html">FMMatrix33</a> &amp;copy)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Assign this FMMatrix33's elements to be the same as that of the given <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>.  <a href="#afd6fe3548530aff2889f606ebfce168c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMMatrix33.html">FMMatrix33</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#a4a12b1558c937f7972af9156910eb644">Transposed</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the transposed of this <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>.  <a href="#a4a12b1558c937f7972af9156910eb644"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMMatrix33.html">FMMatrix33</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#ad14af34a608a0e918e03446382c72213">Inverted</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the inversion of this <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>.  <a href="#ad14af34a608a0e918e03446382c72213"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFMMatrix33.html">FMMatrix33</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#a84c00b4f22e56a11231f75d6686e1f99">RotationMatrix</a> (float angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D counter-clockwise rotation about the z-axis.  <a href="#a84c00b4f22e56a11231f75d6686e1f99"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFMMatrix33.html">FMMatrix33</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#ae95865bc6013e404fcf9ff389213fefe">TranslationMatrix</a> (float tx, float ty)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D translation.  <a href="#ae95865bc6013e404fcf9ff389213fefe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFMMatrix33.html">FMMatrix33</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#ac574d1782e22ccf8d093661a75b0e77b">ScaleMatrix</a> (float sx, float sy)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D scale.  <a href="#ac574d1782e22ccf8d093661a75b0e77b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFMMatrix33.html">FMMatrix33</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#a8c3951ad39dd4aa16b82f4baf2e22c2c">TranslationMatrix</a> (<a class="el" href="classFMVector2.html">FMVector2</a> translation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D translation.  <a href="#a8c3951ad39dd4aa16b82f4baf2e22c2c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFMMatrix33.html">FMMatrix33</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#aa8d1703c15367aca1106ed6a20e4cb32">ScaleMatrix</a> (<a class="el" href="classFMVector2.html">FMVector2</a> scale)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D scale.  <a href="#aa8d1703c15367aca1106ed6a20e4cb32"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#a7cb9ef5c51c1e7610e43d1ba923e4269">m</a> [3][3]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The matrix elements stored in a 2D array.  <a href="#a7cb9ef5c51c1e7610e43d1ba923e4269"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFMMatrix33.html">FMMatrix33</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMMatrix33.html#aaed39a65535b75afa28af7409ec5f0b8">identity</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The identity <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>.  <a href="#aaed39a65535b75afa28af7409ec5f0b8"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A 3x3 matrix: use to represent 2D transformations. Not used within <a class="el" href="namespaceFCollada.html">FCollada</a>. </p>
+<p>A 3x3 matrix: use to represent 2D transformations. </p>
+<p>Not used within <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aaaa2c13f0e797c868ec3042cb9ed48b6"></a><!-- doxytag: member="FMMatrix33::FMMatrix33" ref="aaaa2c13f0e797c868ec3042cb9ed48b6" args="(float *_m)" -->
 <div class="memitem">
@@ -107,7 +126,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates a <a class="el" href="classFMMatrix33.html">FMMatrix33</a> from the <code>float</code> array.</p>
+
+<p>Creates a <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> from the <code>float</code> array. </p>
 <p>The float array stores the elements in the following order: m[0][0], m[1][0], m[2][0], m[0][1], m[1][1], m[2][1], m[0][2], m[1][2], m[2][2].</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -132,7 +152,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates an empty <a class="el" href="classFMMatrix33.html">FMMatrix33</a>.</p>
+
+<p>Creates an empty <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>. </p>
 <p>The default values are non deterministic. </p>
 
 </div>
@@ -152,7 +173,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Gets the inversion of this <a class="el" href="classFMMatrix33.html">FMMatrix33</a>.</p>
+
+<p>Gets the inversion of this <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The inversion of this FMMatrix. </dd></dl>
 
 </div>
@@ -171,7 +193,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get this FMMatrix as an array of <code>floats</code>.</p>
+
+<p>Get this FMMatrix as an array of <code>floats</code>. </p>
 <p>The array contains the elements in the following order: m[0][0], m[0][1], m[0][2], m[1][0], m[1][1], m[1][2], m[2][0], m[2][1], m[2][2].</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The <code>float</code> array. </dd></dl>
 
@@ -191,7 +214,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get this <a class="el" href="classFMMatrix33.html">FMMatrix33</a> as an array of <code>floats</code>.</p>
+
+<p>Get this <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> as an array of <code>floats</code>. </p>
 <p>The array contains the elements in the following order: m[0][0], m[0][1], m[0][2], m[1][0], m[1][1], m[1][2], m[2][0], m[2][1], m[2][2].</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The <code>float</code> array. </dd></dl>
 
@@ -212,7 +236,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Assign this FMMatrix33's elements to be the same as that of the given <a class="el" href="classFMMatrix33.html">FMMatrix33</a>.</p>
+
+<p>Assign this FMMatrix33's elements to be the same as that of the given <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>copy</em>&nbsp;</td><td>The FMMatrix to copy elements from. </td></tr>
@@ -238,7 +263,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get a specified row of <a class="el" href="classFMMatrix33.html">FMMatrix33</a> as an array of <code>floats</code>.</p>
+
+<p>Get a specified row of <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> as an array of <code>floats</code>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>a</em>&nbsp;</td><td>The row index, starting at 0, of the row to get. </td></tr>
@@ -264,7 +290,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Gets the <a class="el" href="classFMMatrix33.html">FMMatrix33</a> representation of a 2D counter-clockwise rotation about the z-axis.</p>
+
+<p>Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D counter-clockwise rotation about the z-axis. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>angle</em>&nbsp;</td><td>The angle of rotation in radians. </td></tr>
@@ -299,7 +326,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Gets the <a class="el" href="classFMMatrix33.html">FMMatrix33</a> representation of a 2D scale.</p>
+
+<p>Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D scale. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>sx</em>&nbsp;</td><td>The scale factor in the x direction. </td></tr>
@@ -326,15 +354,16 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Gets the <a class="el" href="classFMMatrix33.html">FMMatrix33</a> representation of a 2D scale.</p>
+
+<p>Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D scale. </p>
 <p>The scale in the x direction is the <em>u</em> componenet of the given FMVector and the scale in the y direction is the <em>v</em> component.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>scale</em>&nbsp;</td><td>The <a class="el" href="classFMVector2.html">FMVector2</a> to get the scale components from. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>scale</em>&nbsp;</td><td>The <a class="el" href="classFMVector2.html" title="A 2 dimensional vector.">FMVector2</a> to get the scale components from. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The scale <a class="el" href="classFMMatrix33.html">FMMatrix33</a>. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The scale <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>. </dd></dl>
 
 </div>
 </div>
@@ -362,7 +391,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Gets the <a class="el" href="classFMMatrix33.html">FMMatrix33</a> representation of a 2D translation.</p>
+
+<p>Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D translation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>tx</em>&nbsp;</td><td>The translation in the x direction. </td></tr>
@@ -389,15 +419,16 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Gets the <a class="el" href="classFMMatrix33.html">FMMatrix33</a> representation of a 2D translation.</p>
-<p>The translation in the x direction is the <em>u</em> componenet of the given <a class="el" href="classFMVector2.html">FMVector2</a> and the translation in the y direction is the <em>v</em> component.</p>
+
+<p>Gets the <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a> representation of a 2D translation. </p>
+<p>The translation in the x direction is the <em>u</em> componenet of the given <a class="el" href="classFMVector2.html" title="A 2 dimensional vector.">FMVector2</a> and the translation in the y direction is the <em>v</em> component.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>translation</em>&nbsp;</td><td>The <a class="el" href="classFMVector2.html">FMVector2</a> to get the translation components from. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>translation</em>&nbsp;</td><td>The <a class="el" href="classFMVector2.html" title="A 2 dimensional vector.">FMVector2</a> to get the translation components from. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The translation <a class="el" href="classFMMatrix33.html">FMMatrix33</a>. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The translation <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>. </dd></dl>
 
 </div>
 </div>
@@ -415,7 +446,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Gets the transposed of this <a class="el" href="classFMMatrix33.html">FMMatrix33</a>.</p>
+
+<p>Gets the transposed of this <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The transposed of this FMMatrix. </dd></dl>
 
 </div>
@@ -431,7 +463,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The identity <a class="el" href="classFMMatrix33.html">FMMatrix33</a>. </p>
+
+<p>The identity <a class="el" href="classFMMatrix33.html" title="A 3x3 matrix: use to represent 2D transformations.">FMMatrix33</a>. </p>
 
 </div>
 </div>
@@ -445,6 +478,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The matrix elements stored in a 2D array. </p>
 
 </div>
@@ -468,7 +502,7 @@ Static Public Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:52 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

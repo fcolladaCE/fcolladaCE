@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDPhysicsModel" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA physics model.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDPhysicsModel_8h_source.html">FCDPhysicsModel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDPhysicsModel:</div>
@@ -79,39 +82,67 @@ Inheritance diagram for FCDPhysicsModel:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a4cdcfff220f1071c13f8141ba715d193">FCDPhysicsModel</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a4cdcfff220f1071c13f8141ba715d193"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#ae1527f7869220fe0d1a6340af40a6c57">~FCDPhysicsModel</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ae1527f7869220fe0d1a6340af40a6c57"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a3da8c015b13e7225d2416c102333fe4b">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity type for this class.  <a href="#a3da8c015b13e7225d2416c102333fe4b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUObjectContainer.html">FCDPhysicsModelInstanceContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a9d4c1eea1be92761c5b7c8a546bc8579">GetInstances</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the instantiated physics models that are part of this physics model.  <a href="#a9d4c1eea1be92761c5b7c8a546bc8579"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFUObjectContainer.html">FCDPhysicsModelInstanceContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a2d02738090b8d06a014b4b30b128e8a2">GetInstances</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2d02738090b8d06a014b4b30b128e8a2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#ac2144145ba0118b5a937b3a1d681269f">GetInstanceCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of instantiated physics models that are part of this physics model.  <a href="#ac2144145ba0118b5a937b3a1d681269f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsModelInstance.html">FCDPhysicsModelInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a1e94dffa1c9c1e88d30f407d0e3aae71">GetInstance</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific instantiated physics model that is a part of this physics model.  <a href="#a1e94dffa1c9c1e88d30f407d0e3aae71"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDPhysicsModelInstance.html">FCDPhysicsModelInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a7966d893455aaa403472fce13bbb5a0d">GetInstance</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7966d893455aaa403472fce13bbb5a0d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsModelInstance.html">FCDPhysicsModelInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#ae222e53d9c0c9a2e7573d0350475b247">AddPhysicsModelInstance</a> (<a class="el" href="classFCDPhysicsModel.html">FCDPhysicsModel</a> *model=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a instantiated physics model to this physics model.  <a href="#ae222e53d9c0c9a2e7573d0350475b247"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUObjectContainer.html">FCDPhysicsRigidBodyContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#ae20872b9a7123fe0249229744c61e372">GetRigidBodies</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the rigid bodies that are a part of this physics model.  <a href="#ae20872b9a7123fe0249229744c61e372"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFUObjectContainer.html">FCDPhysicsRigidBodyContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a66b28ef11ddd98c22cf9d3a0cbcb2208">GetRigidBodies</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a66b28ef11ddd98c22cf9d3a0cbcb2208"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#ab78fe671de0d7fc3aa95696f7b0d733f">GetRigidBodyCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of rigid bodies that are a part of this physics model.  <a href="#ab78fe671de0d7fc3aa95696f7b0d733f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a81a58aa2f1df8cf24197cc722ac8cac7">GetRigidBody</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific rigid body that is a part of this physics model by its index.  <a href="#a81a58aa2f1df8cf24197cc722ac8cac7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a6f48bfc2932d7dac65f11a82e5743627">GetRigidBody</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6f48bfc2932d7dac65f11a82e5743627"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a956793477886604c0a19742047b0583a">FindRigidBodyFromSid</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sid)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific rigid body that is a part of this physics model by its sid.  <a href="#a956793477886604c0a19742047b0583a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a5d78f6bd24271ae8620e2ef12f50117d">FindRigidBodyFromSid</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sid) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5d78f6bd24271ae8620e2ef12f50117d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a4f24faaa9cee06ad6a148eb45572c496">AddRigidBody</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a rigid body to this physics model.  <a href="#a4f24faaa9cee06ad6a148eb45572c496"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUObjectContainer.html">FCDPhysicsRigidConstraintContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#af2cee3570b90eafa0d84a00c827273d1">GetRigidConstraints</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the rigid constraints that are a part of this physics model.  <a href="#af2cee3570b90eafa0d84a00c827273d1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFUObjectContainer.html">FCDPhysicsRigidConstraintContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a0651e65e0820fcc89d6691cf0f1f36fd">GetRigidConstraints</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0651e65e0820fcc89d6691cf0f1f36fd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a8b0483d5e5507540ceabb40951ae147e">GetRigidConstraintCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of rigid constraints that are a part of this physics model.  <a href="#a8b0483d5e5507540ceabb40951ae147e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidConstraint.html">FCDPhysicsRigidConstraint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#aaa881246071f32aeca94c78ccf12b7be">GetRigidConstraint</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific rigid constraint that is a part of tihs physics model by its index.  <a href="#aaa881246071f32aeca94c78ccf12b7be"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDPhysicsRigidConstraint.html">FCDPhysicsRigidConstraint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a16ee7e602747d4e6d603dde97fb63fe4">GetRigidConstraint</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a16ee7e602747d4e6d603dde97fb63fe4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidConstraint.html">FCDPhysicsRigidConstraint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a6ebc6f8ce35c796c9509da44ca113eaf">FindRigidConstraintFromSid</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sid)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific rigid constraint that is a part of tihs physics model by its sid.  <a href="#a6ebc6f8ce35c796c9509da44ca113eaf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDPhysicsRigidConstraint.html">FCDPhysicsRigidConstraint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a6e9b3f4400aec64c3645a115c5dfe013">FindRigidConstraintFromSid</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sid) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6e9b3f4400aec64c3645a115c5dfe013"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidConstraint.html">FCDPhysicsRigidConstraint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#af9356bcbe4a27ef102a8e49d3cbab53e">AddRigidConstraint</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a rigid constraint to this physics model.  <a href="#af9356bcbe4a27ef102a8e49d3cbab53e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a8f50bef0284300f395efb6637ddce559">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the physics model into a clone.  <a href="#a8f50bef0284300f395efb6637ddce559"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a7505505b8a1e5f1c4e0d74fe155a4c53">AttachModelInstances</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Attaches the model instances.  <a href="#a7505505b8a1e5f1c4e0d74fe155a4c53"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModel.html#a2caafe253a23d7336c38fac68dea9579">CleanSubId</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Cleans up the sub identifiers.  <a href="#a2caafe253a23d7336c38fac68dea9579"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA physics model.</p>
+<p>A COLLADA physics model. </p>
 <p>A physics model can contain rigid bodies, rigid constraints, or instances of previously defined physics models. For example, a house physics model could contain a number of instantiated physics models such as walls. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4cdcfff220f1071c13f8141ba715d193"></a><!-- doxytag: member="FCDPhysicsModel::FCDPhysicsModel" ref="a4cdcfff220f1071c13f8141ba715d193" args="(FCDocument *document)" -->
@@ -129,7 +160,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Create new physics models using the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0">FCDLibrary::AddEntity</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Create new physics models using the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0" title="Creates a new entity within this library.">FCDLibrary::AddEntity</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that contains this physics model. </td></tr>
@@ -153,6 +186,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -173,6 +207,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a instantiated physics model to this physics model. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -198,6 +233,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a rigid body to this physics model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new rigid body. </dd></dl>
 
@@ -217,6 +253,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a rigid constraint to this physics model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new rigid constraint. </dd></dl>
 
@@ -236,7 +273,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Attaches the model instances. Because model instances can instance other models, the ordering is unknown so this cannot be done in the LoadFromXML call. This method should be called after LoadFromXML is applied to all physics models. </p>
+
+<p>[INTERNAL] Attaches the model instances. </p>
+<p>Because model instances can instance other models, the ordering is unknown so this cannot be done in the LoadFromXML call. This method should be called after LoadFromXML is applied to all physics models. </p>
 
 </div>
 </div>
@@ -254,7 +293,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Cleans up the sub identifiers. The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. </p>
+
+<p>[INTERNAL] Cleans up the sub identifiers. </p>
+<p>The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. </p>
 
 </div>
 </div>
@@ -282,6 +323,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copies the physics model into a clone. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -311,6 +353,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific rigid body that is a part of this physics model by its sid. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -337,6 +380,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -356,6 +400,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific rigid constraint that is a part of tihs physics model by its sid. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -382,6 +427,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -401,6 +447,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific instantiated physics model that is a part of this physics model. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -427,6 +474,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -445,6 +493,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of instantiated physics models that are part of this physics model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of instantiated physics models. </dd></dl>
 
@@ -464,6 +513,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the instantiated physics models that are part of this physics model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The physics model instances. </dd></dl>
 
@@ -483,6 +533,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -501,6 +552,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the rigid bodies that are a part of this physics model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The rigid bodies. </dd></dl>
 
@@ -520,6 +572,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -539,6 +592,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -558,6 +612,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific rigid body that is a part of this physics model by its index. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -583,6 +638,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of rigid bodies that are a part of this physics model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of rigid bodies. </dd></dl>
 
@@ -603,6 +659,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific rigid constraint that is a part of tihs physics model by its index. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -629,6 +686,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -647,6 +705,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of rigid constraints that are a part of this physics model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of rigid constraints. </dd></dl>
 
@@ -666,6 +725,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -684,6 +744,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the rigid constraints that are a part of this physics model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The rigid constraints. </dd></dl>
 
@@ -703,7 +764,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity type for this class. This function is part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity type for this class. </p>
+<p>This function is part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: PHYSICS_MODEL. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -729,7 +792,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:45 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:21 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

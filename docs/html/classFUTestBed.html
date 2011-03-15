@@ -60,18 +60,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUTestBed" -->
+<p>A test suite runner.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUTestBed_8h_source.html">FUTestBed.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTestBed.html#a621844da7de1de2fbe5afcb84edbfe07">FUTestBed</a> (const fchar *filename, bool isVerbose)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a621844da7de1de2fbe5afcb84edbfe07"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTestBed.html#ada9bf4ed781843713acc9a19c0a38118">IsVerbose</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether verbose logging is enabled.  <a href="#ada9bf4ed781843713acc9a19c0a38118"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFULogFile.html">FULogFile</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTestBed.html#acfb3f38c3e28252beec92d8fa98873bd">GetLogFile</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Retrieves the log file.  <a href="#acfb3f38c3e28252beec92d8fa98873bd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTestBed.html#adf1772ed7565a9d7a2fbbcf8c8f1487e">RunTestbed</a> (<a class="el" href="classFUTestSuite.html">FUTestSuite</a> *headTestSuite)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Runs a test suite and returns the results.  <a href="#adf1772ed7565a9d7a2fbbcf8c8f1487e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTestBed.html#a4aedc0487f0503cb7b1141fcaa008e10">RunTestSuite</a> (<a class="el" href="classFUTestSuite.html">FUTestSuite</a> *testSuite)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Runs a test suite and compiles the results.  <a href="#a4aedc0487f0503cb7b1141fcaa008e10"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A test suite runner. This class is used to run test suites and compile the results. </p>
+<p>A test suite runner. </p>
+<p>This class is used to run test suites and compile the results. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a621844da7de1de2fbe5afcb84edbfe07"></a><!-- doxytag: member="FUTestBed::FUTestBed" ref="a621844da7de1de2fbe5afcb84edbfe07" args="(const fchar *filename, bool isVerbose)" -->
 <div class="memitem">
@@ -97,6 +106,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -123,7 +133,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Retrieves the log file. Used by test suites to write out custom output. </p>
+
+<p>[INTERNAL] Retrieves the log file. </p>
+<p>Used by test suites to write out custom output. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The log file structure. </dd></dl>
 
 </div>
@@ -142,6 +154,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether verbose logging is enabled. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether verbose logging is enabled. </dd></dl>
 
@@ -162,6 +175,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Runs a test suite and returns the results. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -188,7 +202,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Runs a test suite and compiles the results. This is used recursively to run a full hierarchy of test suites. </p>
+
+<p>[INTERNAL] Runs a test suite and compiles the results. </p>
+<p>This is used recursively to run a full hierarchy of test suites. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>testSuite</em>&nbsp;</td><td>A test suite to run. </td></tr>
@@ -217,7 +233,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:58 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:25 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

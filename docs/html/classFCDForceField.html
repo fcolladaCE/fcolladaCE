@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDForceField" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA physics force field.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDForceField_8h_source.html">FCDForceField.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDForceField:</div>
@@ -79,16 +82,22 @@ Inheritance diagram for FCDForceField:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDForceField.html#a1aef5213739e1091a7c8c4e5aa798498">FCDForceField</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a1aef5213739e1091a7c8c4e5aa798498"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDForceField.html#a735c4afd89852cd4bb8298a71085f2f9">~FCDForceField</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a735c4afd89852cd4bb8298a71085f2f9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDForceField.html#acf7035d6b5f08f88182afabf68eb2001">GetInformation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the extra tree for all the force field information.  <a href="#acf7035d6b5f08f88182afabf68eb2001"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa70873280d33536212c026f9a226ce8f"></a><!-- doxytag: member="FCDForceField::GetInformation" ref="aa70873280d33536212c026f9a226ce8f" args="() const " -->
 const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>GetInformation</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDForceField.html#a2ff4416e840c96f2725b067c233198bc">SetInformation</a> (<a class="el" href="classFCDExtra.html">FCDExtra</a> *info)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Set the information.  <a href="#a2ff4416e840c96f2725b067c233198bc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDForceField.html#a494b4e24b7bd9a5f11f9f46736704113">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity class type.  <a href="#a494b4e24b7bd9a5f11f9f46736704113"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDForceField.html#a1d5a404e537c12d32426b98dd6703290">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones the force field information.  <a href="#a1d5a404e537c12d32426b98dd6703290"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA physics force field.</p>
+<p>A COLLADA physics force field. </p>
 <p>This class does not have any parameters in the COMMON profile. You can use the custom extra tree to enter/retrieve your specific customized information. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1aef5213739e1091a7c8c4e5aa798498"></a><!-- doxytag: member="FCDForceField::FCDForceField" ref="a1aef5213739e1091a7c8c4e5aa798498" args="(FCDocument *document)" -->
@@ -106,6 +115,7 @@ const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -130,6 +140,7 @@ const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -159,6 +170,7 @@ const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones the force field information. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -187,6 +199,7 @@ const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the extra tree for all the force field information. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The extra tree. </dd></dl>
 
@@ -206,6 +219,7 @@ const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the entity class type. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity class type: FORCE_FIELD </dd></dl>
 
@@ -228,6 +242,7 @@ const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Set the information. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -257,7 +272,7 @@ const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:36 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:18 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

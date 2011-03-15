@@ -58,6 +58,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCollada/FMath/FMath.h File Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>The file containing functions and constants for math.  
+<a href="#_details">More...</a></p>
 <code>#include &lt;math.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="FMFloat_8h_source.html">FMath/FMFloat.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="FMArray_8h_source.html">FMath/FMArray.h</a>&quot;</code><br/>
@@ -76,11 +79,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html">FMath</a></td></tr>
+
+<p><tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>A namespace for common math functions. </p>
+<br/></td></tr>
+</p>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; double, true &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMath_8h.html#a60e7e5a98121b7d3a454e85d8f52debf">DoubleList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of double-sized floating-point values.  <a href="#a60e7e5a98121b7d3a454e85d8f52debf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; float, true &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMath_8h.html#a583376e97f253ed6f1d9a8ae4f41e850">FloatList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of floating-point values.  <a href="#a583376e97f253ed6f1d9a8ae4f41e850"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; int, true &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMath_8h.html#a1ff18605cdfcfdb4aef86bd3c2063837">IntList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of integer values.  <a href="#a1ff18605cdfcfdb4aef86bd3c2063837"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a6cebb48ac4d487860bfb3000dc83464f">FMath::AXIS</a> { <br/>
@@ -92,33 +102,50 @@ Enumerations</h2></td></tr>
 &nbsp;&nbsp;<a class="el" href="namespaceFMath.html#a6cebb48ac4d487860bfb3000dc83464fa1d8d9e680e2a56fd65804c8177f248f3">FMath::TRANS</a> =  W
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Numerical values for the different axis of the standard axis system. </p>
+ <a href="namespaceFMath.html#a6cebb48ac4d487860bfb3000dc83464f">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="FMath_8h.html#aa73b3f4c579c2e62ba4f4b5517a088b2">IsEquivalent</a> (const T &amp;v1, const T &amp;v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether two values are equivalent.  <a href="#aa73b3f4c579c2e62ba4f4b5517a088b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a3f3ff4d162ca9b81672ab8d5ce1a04ed">FMath::RadToDeg</a> (double val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert radians to degrees.  <a href="#a3f3ff4d162ca9b81672ab8d5ce1a04ed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a126a39f30047703acd42ac277e688959">FMath::RadToDeg</a> (float val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert radians to degrees.  <a href="#a126a39f30047703acd42ac277e688959"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a85780db77107aa93459019cd8cb8e89b">FMath::DegToRad</a> (double val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert degrees to radians.  <a href="#a85780db77107aa93459019cd8cb8e89b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a0d5dc4a5370d82235d4e62cdd510c31c">FMath::DegToRad</a> (float val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert degrees to radians.  <a href="#a0d5dc4a5370d82235d4e62cdd510c31c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#af07527201a796f5c30c8bc10db7a8178">FMath::IsNotANumber</a> (float f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if given float is encoding for not a number (NAN).  <a href="#af07527201a796f5c30c8bc10db7a8178"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a91e13509444b0d8729b8ed769b9de092">FMath::Sign</a> (const T &amp;val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the sign of a number.  <a href="#a91e13509444b0d8729b8ed769b9de092"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T , class T2 , class T3 &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a11c7de43d322da60b90898a62123eaf1">FMath::Clamp</a> (T val, T2 mn, T3 mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clamps the specified object within a range specified by two other objects of the same class.  <a href="#a11c7de43d322da60b90898a62123eaf1"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T , class T2 , class T3 &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a2f5eca80aa5529d47c4d4a152440b7aa">FMath::Wrap</a> (T val, T2 mn, T3 mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wraps the specified object within a range specified by two other objects of the same class.  <a href="#a2f5eca80aa5529d47c4d4a152440b7aa"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">float&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a8166cc70ac2a4ff3e424b16ef7afcbfc">FMath::Wrap</a> (float val, float mn, float mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Template specializations of the Wrap method.  <a href="#a8166cc70ac2a4ff3e424b16ef7afcbfc"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">double&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#ad4db85c2816cc6a8a77dd502f922c05d">FMath::Wrap</a> (double val, double mn, double mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad4db85c2816cc6a8a77dd502f922c05d"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">int&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a338a56e70ba9aaae081c58aa175183e2">FMath::Wrap</a> (int val, int mn, int mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a338a56e70ba9aaae081c58aa175183e2"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">uint32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a3c79bbb04b20622258f981122eaa2a52">FMath::Wrap</a> (uint32 val, uint32 mn, uint32 mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a3c79bbb04b20622258f981122eaa2a52"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#a4c8e25df39e90e06ce866c1b509b9bec">FMath::Pi</a> = 3.14159265358979323846264338327950288419716939937510</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Mathematical value of pi to 50 decimals.  <a href="#a4c8e25df39e90e06ce866c1b509b9bec"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFMath.html#aafd87a7033f63650d2fa9a7ce9f256ea">FMath::Pif</a> = 3.14159265358979323846264338327950288419716939937510f</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aafd87a7033f63650d2fa9a7ce9f256ea"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The file containing functions and constants for math. </p>
@@ -133,6 +160,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of double-sized floating-point values. </p>
 
 </div>
@@ -147,6 +175,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of floating-point values. </p>
 
 </div>
@@ -161,6 +190,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of integer values. </p>
 
 </div>
@@ -192,7 +222,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether two values are equivalent. This template simply calls the operator== on the two values. </p>
+
+<p>Retrieves whether two values are equivalent. </p>
+<p>This template simply calls the operator== on the two values. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>v1</em>&nbsp;</td><td>A first value. </td></tr>
@@ -219,7 +251,7 @@ template&lt;class T &gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

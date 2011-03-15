@@ -63,6 +63,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEntityInstance" --><!-- doxytag: inherits="FCDObject,FUTracker" -->
+<p>A COLLADA entity instance.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEntityInstance_8h_source.html">FCDEntityInstance.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEntityInstance:</div>
@@ -102,41 +105,69 @@ Public Types</h2></td></tr>
 &nbsp;&nbsp;<b>TYPE_COUNT</b>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The class type of the entity instance class. </p>
+ <a href="classFCDEntityInstance.html#a82e95eec7d9242bbedb336b0d35b59d3">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#ac7e14bc4e56fabd5781421423ce45228">~FCDEntityInstance</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ac7e14bc4e56fabd5781421423ce45228"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntityInstance.html#a82e95eec7d9242bbedb336b0d35b59d3">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a773c2cfdbad937e93da7a3fa71a671a7">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity instance class type.  <a href="#a773c2cfdbad937e93da7a3fa71a671a7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">FCDEntity::Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a62d378c0770ebc2ece12f4083701616c">GetEntityType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the instantiated entity type.  <a href="#a62d378c0770ebc2ece12f4083701616c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a88b34b3df90a7067487e5ccf0ca81dd4">GetEntity</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the instantiated entity.  <a href="#a88b34b3df90a7067487e5ccf0ca81dd4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#ac311fa6264528437a06bf02fb9a2b3a8">GetEntity</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the instantiated entity.  <a href="#ac311fa6264528437a06bf02fb9a2b3a8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUUri.html">FUUri</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a4cb45e1e4a30bf419f07b7562115a57b">GetEntityUri</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the Uri to the skin target.  <a href="#a4cb45e1e4a30bf419f07b7562115a57b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a248b8d0d704f7132c90fe394ba3d7183">SetEntityUri</a> (const <a class="el" href="classFUUri.html">FUUri</a> &amp;uri)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the URI of the target mesh.  <a href="#a248b8d0d704f7132c90fe394ba3d7183"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#ab67be7fa194a7ece56000d1895fb03d9">SetEntity</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *entity)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the instantiated entity.  <a href="#ab67be7fa194a7ece56000d1895fb03d9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntityReference.html">FCDEntityReference</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a61a2ecec539dcbd32ae2637eca38b200">GetEntityReference</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntityReference.html">FCDEntityReference</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a16bc7b1145a2ba8c7fb71646f082c693">GetEntityReference</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the contained EntityReference object.  <a href="#a61a2ecec539dcbd32ae2637eca38b200"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16bc7b1145a2ba8c7fb71646f082c693"></a><!-- doxytag: member="FCDEntityInstance::GetEntityReference" ref="a16bc7b1145a2ba8c7fb71646f082c693" args="() const " -->
+const <a class="el" href="classFCDEntityReference.html">FCDEntityReference</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a16bc7b1145a2ba8c7fb71646f082c693">GetEntityReference</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a2c4633c7a62e6a3e998bcbb1e824a0d7">GetName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the name of the entity instance.  <a href="#a2c4633c7a62e6a3e998bcbb1e824a0d7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a64d90994ebec198429a38f7e7d349f5c">SetName</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the name of the entity instance.  <a href="#a64d90994ebec198429a38f7e7d349f5c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#ac5cb2ab3ab829af54320f570df7d8f35">GetWantedSubId</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the optional sub id and is not garanteed to exist.  <a href="#ac5cb2ab3ab829af54320f570df7d8f35"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a4fb6a523d628e1046ebea5d9708453f2">SetWantedSubId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;_wantedSubId)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the sub id for this object.  <a href="#a4fb6a523d628e1046ebea5d9708453f2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#af0318e0e117788b3b26b77c1bb91eaac">GetExtra</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the extra information tree for this entity instance.  <a href="#af0318e0e117788b3b26b77c1bb91eaac"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#ada20db4b24a8be692cf53844ebb08512">GetExtra</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ada20db4b24a8be692cf53844ebb08512"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a429583fbf800628e8d4f8075c593f7ac">IsExternalReference</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this entity instance points to an external entity.  <a href="#a429583fbf800628e8d4f8075c593f7ac"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a3b384a12ff92c1ac984a1772e562d87a">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parent of the entity instance.  <a href="#a3b384a12ff92c1ac984a1772e562d87a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#acb1d825d422ab6484db2b5e862b18bfa">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#acb1d825d422ab6484db2b5e862b18bfa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a61c83c6bc229353ea1c00bbae91df674">HasForParent</a> (<a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *node) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Checks whether or not this instance is below the given scene node in the scene hierarchy.  <a href="#a61c83c6bc229353ea1c00bbae91df674"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a06ed77f5adc21e43eb2617db6af5df6c">CleanSubId</a> (<a class="el" href="classFUUniqueStringMapT.html">FUSUniqueStringMap</a> *parentStringMap=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Cleans up the sub identifiers.  <a href="#a06ed77f5adc21e43eb2617db6af5df6c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a64b11d12fcf0151800084f66bbbeb2d6">Clone</a> (<a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones the entity instance.  <a href="#a64b11d12fcf0151800084f66bbbeb2d6"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a0595d4840743b79b7fe535f250d3a9bf">FCDEntityInstance</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *parent, <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">FCDEntity::Type</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a0595d4840743b79b7fe535f250d3a9bf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#ae66647da209d1030a2e4a36ac3bd7d63">OnObjectReleased</a> (<a class="el" href="classFUTrackable.html">FUTrackable</a> *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Retrieves the COLLADA name for the instantiation of a given entity type.  <a href="#ae66647da209d1030a2e4a36ac3bd7d63"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a069ebb98497ccbc5fdcb75ecfa8b15f7"></a><!-- doxytag: member="FCDEntityInstance::FCDEntityInstanceFactory" ref="a069ebb98497ccbc5fdcb75ecfa8b15f7" args="" -->
 class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntityInstance.html#a069ebb98497ccbc5fdcb75ecfa8b15f7">FCDEntityInstanceFactory</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA entity instance. COLLADA allows for quite a bit of per-instance settings for entities. This information is held by the up-classes of this class. This base class is simply meant to hold the entity that is instantiated.</p>
+<p>A COLLADA entity instance. </p>
+<p>COLLADA allows for quite a bit of per-instance settings for entities. This information is held by the up-classes of this class. This base class is simply meant to hold the entity that is instantiated.</p>
 <p>The entity instance tracks the entity, so that when an entity is released, all its instances are released. </p>
 <hr/><h2>Member Enumeration Documentation</h2>
 <a class="anchor" id="a82e95eec7d9242bbedb336b0d35b59d3"></a><!-- doxytag: member="FCDEntityInstance::Type" ref="a82e95eec7d9242bbedb336b0d35b59d3" args="" -->
@@ -149,10 +180,13 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>The class type of the entity instance class. Used this information to up-cast an entity instance. </p>
+
+<p>The class type of the entity instance class. </p>
+<p>Used this information to up-cast an entity instance. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a82e95eec7d9242bbedb336b0d35b59d3aa31de3dc363bacacbbf12a8f9d760477"></a><!-- doxytag: member="SIMPLE" ref="a82e95eec7d9242bbedb336b0d35b59d3aa31de3dc363bacacbbf12a8f9d760477" args="" -->SIMPLE</em>&nbsp;</td><td>
-<p>A simple entity instance that has no per-instance information. This is used for lights, cameras, physics materials and force fields: there is no up-class. </p>
+<p>A simple entity instance that has no per-instance information. </p>
+<p>This is used for lights, cameras, physics materials and force fields: there is no up-class. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a82e95eec7d9242bbedb336b0d35b59d3a6026b8777b8988f942f78b8172c1604d"></a><!-- doxytag: member="GEOMETRY" ref="a82e95eec7d9242bbedb336b0d35b59d3a6026b8777b8988f942f78b8172c1604d" args="" -->GEOMETRY</em>&nbsp;</td><td>
 <p>A geometry entity(FCDGeometryInstance). </p>
@@ -173,7 +207,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <p>A physics rigid constraint(FCDPhysicsRigidConstraintInstance). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a82e95eec7d9242bbedb336b0d35b59d3ac30d656db09f41bc66b333ef3e15c819"></a><!-- doxytag: member="PHYSICS_FORCE_FIELD" ref="a82e95eec7d9242bbedb336b0d35b59d3ac30d656db09f41bc66b333ef3e15c819" args="" -->PHYSICS_FORCE_FIELD</em>&nbsp;</td><td>
-<p>A physics force field (<a class="el" href="classFCDPhysicsForceFieldInstance.html">FCDPhysicsForceFieldInstance</a>). </p>
+<p>A physics force field (<a class="el" href="classFCDPhysicsForceFieldInstance.html" title="A COLLADA force field instance.">FCDPhysicsForceFieldInstance</a>). </p>
 </td></tr>
 </table>
 </dd>
@@ -212,7 +246,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the appropriate allocation function. For scene node instance: <a class="el" href="classFCDSceneNode.html#a38826dd9b894ad2371511f0228cb04c0">FCDSceneNode::AddInstance</a>. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the appropriate allocation function. For scene node instance: <a class="el" href="classFCDSceneNode.html#a38826dd9b894ad2371511f0228cb04c0" title="Creates a new entity instance.">FCDSceneNode::AddInstance</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the entity instance. </td></tr>
@@ -238,6 +274,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -258,7 +295,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Cleans up the sub identifiers. The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. </p>
+
+<p>[INTERNAL] Cleans up the sub identifiers. </p>
+<p>The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>parentStringMap</em>&nbsp;</td><td>The string map from the parent of this instance in which the sub ids must be unique. </td></tr>
@@ -285,6 +324,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones the entity instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -312,7 +352,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the instantiated entity. If the entity is an external reference, this may load the external document and retrieve the entity. </p>
+
+<p>Retrieves the instantiated entity. </p>
+<p>If the entity is an external reference, this may load the external document and retrieve the entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The instantiated entity. </dd></dl>
 
 </div>
@@ -331,7 +373,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the instantiated entity. If the entity is an external reference, this function will load the entity. Be careful when using this function since it will change the object. </p>
+
+<p>Retrieves the instantiated entity. </p>
+<p>If the entity is an external reference, this function will load the entity. Be careful when using this function since it will change the object. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The instantiated entity, if loaded. </dd></dl>
 
 </div>
@@ -350,25 +394,8 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Get the contained EntityReference object. </p>
 
-</div>
-</div>
-<a class="anchor" id="a16bc7b1145a2ba8c7fb71646f082c693"></a><!-- doxytag: member="FCDEntityInstance::GetEntityReference" ref="a16bc7b1145a2ba8c7fb71646f082c693" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classFCDEntityReference.html">FCDEntityReference</a>* FCDEntityInstance::GetEntityReference </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>See above </p>
+<p>Get the contained EntityReference object. </p>
 
 </div>
 </div>
@@ -386,7 +413,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the instantiated entity type. The instantiated entity type will never change. </p>
+
+<p>Retrieves the instantiated entity type. </p>
+<p>The instantiated entity type will never change. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The instantiated entity type. </dd></dl>
 
 </div>
@@ -405,7 +434,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the Uri to the skin target. This can be an internal or external link </p>
+
+<p>Retrieves the Uri to the skin target. </p>
+<p>This can be an internal or external link </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The uri to the target </dd></dl>
 
 </div>
@@ -424,7 +455,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the extra information tree for this entity instance. The prefered way to save extra information in <a class="el" href="namespaceFCollada.html">FCollada</a> is at the entity level. Use this extra information tree to store any information you want exported and imported back. </p>
+
+<p>Retrieves the extra information tree for this entity instance. </p>
+<p>The prefered way to save extra information in <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> is at the entity level. Use this extra information tree to store any information you want exported and imported back. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The extra information tree. </dd></dl>
 
 </div>
@@ -443,6 +476,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -461,7 +495,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the name of the entity instance. This value has no direct use in COLLADA but is useful to track the user-friendly name of an entity instance. </p>
+
+<p>Retrieves the name of the entity instance. </p>
+<p>This value has no direct use in COLLADA but is useful to track the user-friendly name of an entity instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The name. </dd></dl>
 
 </div>
@@ -480,6 +516,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the parent of the entity instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>the parent visual scene node. This pointer will be NULL when the instance is not created in the visual scene graph. </dd></dl>
 
@@ -501,6 +538,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Reimplemented in <a class="el" href="classFCDMaterialInstance.html#aae8d59b1e623f5b85b3dfc8c5aeaa58e">FCDMaterialInstance</a>, and <a class="el" href="classFCDPhysicsRigidConstraintInstance.html#a1e03bfe2fc403659f16cc8c1f2d0e794">FCDPhysicsRigidConstraintInstance</a>.</p>
@@ -521,8 +559,10 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity instance class type. This is used to determine the up-class for the entity instance object. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Instead use: <a class="el" href="classFUObject.html#ab838ad4132b756dcd3614440b8e32f2a">FCDEntityInstance::HasType()</a>. </dd></dl>
+
+<p>Retrieves the entity instance class type. </p>
+<p>This is used to determine the up-class for the entity instance object. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Instead use: <a class="el" href="classFUObject.html#ab838ad4132b756dcd3614440b8e32f2a" title="Retrieves whether this object is exactly or inherits the given type.">FCDEntityInstance::HasType()</a>. </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The class type: SIMPLE for entity instances with no up-class. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classFCDControllerInstance.html#a5c8057a1560e6b77340218e5d1e0d4ef">FCDControllerInstance</a>, <a class="el" href="classFCDGeometryInstance.html#a6125c229bbac52a27ae4a1fa8cd0dac6">FCDGeometryInstance</a>, <a class="el" href="classFCDPhysicsForceFieldInstance.html#a6c7921f3ba25d5236877ddf966a67886">FCDPhysicsForceFieldInstance</a>, <a class="el" href="classFCDPhysicsModelInstance.html#a84476954bc4c90e663bf775db097b9fb">FCDPhysicsModelInstance</a>, <a class="el" href="classFCDPhysicsRigidBodyInstance.html#a8cc8936e74d129b15b8f7a7ea7e0f7d9">FCDPhysicsRigidBodyInstance</a>, and <a class="el" href="classFCDPhysicsRigidConstraintInstance.html#ae97992fcec6d82605322582fb6c89a4a">FCDPhysicsRigidConstraintInstance</a>.</p>
@@ -543,7 +583,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the optional sub id and is not garanteed to exist. This id is the same as that given in SetSubId or from the COLLADA document using LoadFromXML unless it clashes with another id and CleanSubId has been called. </p>
+
+<p>Retrieves the optional sub id and is not garanteed to exist. </p>
+<p>This id is the same as that given in SetSubId or from the COLLADA document using LoadFromXML unless it clashes with another id and CleanSubId has been called. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The set sub id of the node. </dd></dl>
 
 </div>
@@ -563,6 +605,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Checks whether or not this instance is below the given scene node in the scene hierarchy. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -588,6 +631,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this entity instance points to an external entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this is an external entity instantiation. </dd></dl>
 
@@ -608,7 +652,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Retrieves the COLLADA name for the instantiation of a given entity type. Children can override this method to easily add more class types. </p>
+
+<p>[INTERNAL] Retrieves the COLLADA name for the instantiation of a given entity type. </p>
+<p>Children can override this method to easily add more class types. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The entity class type. </td></tr>
@@ -642,7 +688,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the instantiated entity. The type of the entity will be verified. </p>
+
+<p>Sets the instantiated entity. </p>
+<p>The type of the entity will be verified. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>entity</em>&nbsp;</td><td>The instantiated entity. </td></tr>
@@ -667,6 +715,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the URI of the target mesh. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -692,7 +741,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the name of the entity instance. This value has no direct use in COLLADA but is useful to track the user-friendly name of an entity instance. </p>
+
+<p>Sets the name of the entity instance. </p>
+<p>This value has no direct use in COLLADA but is useful to track the user-friendly name of an entity instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>The name. </td></tr>
@@ -717,7 +768,9 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the sub id for this object. This id must be unique within the scope of the parent element. If it is not, it can be corrected by calling CleanSubId. </p>
+
+<p>Sets the sub id for this object. </p>
+<p>This id must be unique within the scope of the parent element. If it is not, it can be corrected by calling CleanSubId. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_wantedSubId</em>&nbsp;</td><td>The new sub id of the object. </td></tr>
@@ -746,7 +799,7 @@ class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:34 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:18 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

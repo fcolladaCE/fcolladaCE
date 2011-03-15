@@ -63,18 +63,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FU_ERROR_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
 <a name="l00017"></a>00017 <span class="preprocessor">#ifndef _FU_EVENT_H_</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUEvent_8h.html">FUtils/FUEvent.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUEvent_8h.html" title="This file contains templates to contain and trigger callback events.">FUtils/FUEvent.h</a>&quot;</span>
 <a name="l00019"></a>00019 <span class="preprocessor">#endif // _FU_EVENT_H_</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#ifndef _FU_CRITICAL_SECTION_H_</span>
-<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUCriticalSection_8h.html">FUtils/FUCriticalSection.h</a>&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUCriticalSection_8h.html" title="This file contains the FUCriticalSection class.">FUtils/FUCriticalSection.h</a>&quot;</span>
 <a name="l00022"></a>00022 <span class="preprocessor">#endif // _FU_CRITICAL_SECTION_H_</span>
 <a name="l00023"></a>00023 <span class="preprocessor"></span>
 <a name="l00025"></a>00025 <span class="preprocessor">#undef ERROR</span>
 <a name="l00026"></a>00026 <span class="preprocessor"></span>
-<a name="l00033"></a><a class="code" href="classFUError.html">00033</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUError.html">FUError</a>
+<a name="l00033"></a><a class="code" href="classFUError.html">00033</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUError.html" title="Windows API defines this.">FUError</a>
 <a name="l00034"></a>00034 {
 <a name="l00035"></a>00035 <span class="keyword">public</span>:
-<a name="l00039"></a><a class="code" href="classFUError.html#adb409c35dc05786e6742818fc7643d7d">00039</a>         <span class="keyword">enum</span> <a class="code" href="classFUError.html#adb409c35dc05786e6742818fc7643d7d">Code</a>
+<a name="l00039"></a><a class="code" href="classFUError.html#adb409c35dc05786e6742818fc7643d7d">00039</a>         <span class="keyword">enum</span> <a class="code" href="classFUError.html#adb409c35dc05786e6742818fc7643d7d" title="Error code used to retrieve localized error message.">Code</a>
 <a name="l00040"></a>00040         {
 <a name="l00041"></a>00041                 <span class="comment">//</span>
 <a name="l00042"></a>00042                 <span class="comment">// Errors</span>
@@ -265,7 +265,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00227"></a>00227                 ERROR_CUSTOM_STRING = 5000
 <a name="l00228"></a>00228         };
 <a name="l00229"></a>00229 
-<a name="l00233"></a><a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">00233</a>         <span class="keyword">enum</span> <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">Level</a>
+<a name="l00233"></a><a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">00233</a>         <span class="keyword">enum</span> <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">Level</a>
 <a name="l00234"></a>00234         {
 <a name="l00235"></a>00235                 DEBUG_LEVEL = 0,
 <a name="l00236"></a>00236                 WARNING_LEVEL = 1,
@@ -274,78 +274,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00239"></a>00239                 LEVEL_COUNT
 <a name="l00240"></a>00240         };
 <a name="l00241"></a>00241 
-<a name="l00243"></a><a class="code" href="classFUError.html#af681c10c56bca8c0ca09d2a996a85b4b">00243</a>         <span class="keyword">typedef</span> <a class="code" href="classIFunctor3.html">IFunctor3&lt;FUError::Level, uint32, uint32, void&gt;</a> <a class="code" href="classIFunctor3.html">FUErrorFunctor</a>;
+<a name="l00243"></a><a class="code" href="classFUError.html#af681c10c56bca8c0ca09d2a996a85b4b">00243</a>         <span class="keyword">typedef</span> <a class="code" href="classIFunctor3.html" title="A functor with three arguments.">IFunctor3&lt;FUError::Level, uint32, uint32, void&gt;</a> <a class="code" href="classIFunctor3.html" title="A functor with three arguments.">FUErrorFunctor</a>;
 <a name="l00244"></a>00244 
 <a name="l00245"></a>00245 <span class="keyword">private</span>:
-<a name="l00246"></a>00246         <span class="keyword">static</span> <a class="code" href="classFUCriticalSection.html">FUCriticalSection</a> criticalSection;
+<a name="l00246"></a>00246         <span class="keyword">static</span> <a class="code" href="classFUCriticalSection.html" title="An OS dependent critical section.">FUCriticalSection</a> criticalSection;
 <a name="l00247"></a>00247         <span class="keyword">static</span> <a class="code" href="classFUEvent3.html">FUEvent3&lt;FUError::Level, uint32, uint32&gt;</a> onErrorEvent;
 <a name="l00248"></a>00248         <span class="keyword">static</span> <a class="code" href="classFUEvent3.html">FUEvent3&lt;FUError::Level, uint32, uint32&gt;</a> onWarningEvent;
 <a name="l00249"></a>00249         <span class="keyword">static</span> <a class="code" href="classFUEvent3.html">FUEvent3&lt;FUError::Level, uint32, uint32&gt;</a> onDebugEvent;
-<a name="l00250"></a>00250         <span class="keyword">static</span> <a class="code" href="classfm_1_1stringT.html">fm::string</a> customErrorString;
-<a name="l00251"></a>00251         <span class="keyword">static</span> <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> fatalLevel;
+<a name="l00250"></a>00250         <span class="keyword">static</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::string</a> customErrorString;
+<a name="l00251"></a>00251         <span class="keyword">static</span> <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> fatalLevel;
 <a name="l00252"></a>00252 
 <a name="l00253"></a>00253         <span class="comment">// This class is not meant to be constructed.</span>
-<a name="l00254"></a>00254         <a class="code" href="classFUError.html">FUError</a>();
-<a name="l00255"></a>00255         ~<a class="code" href="classFUError.html">FUError</a>();
+<a name="l00254"></a>00254         <a class="code" href="classFUError.html" title="Windows API defines this.">FUError</a>();
+<a name="l00255"></a>00255         ~<a class="code" href="classFUError.html" title="Windows API defines this.">FUError</a>();
 <a name="l00256"></a>00256 
 <a name="l00257"></a>00257 <span class="keyword">public</span>:
-<a name="l00264"></a>00264         <span class="keyword">static</span> <span class="keywordtype">bool</span> Error(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, uint32 errorCode, uint32 line = 0);
+<a name="l00264"></a>00264         <span class="keyword">static</span> <span class="keywordtype">bool</span> Error(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel, uint32 errorCode, uint32 line = 0);
 <a name="l00265"></a>00265 
-<a name="l00269"></a>00269         <span class="keyword">static</span> <span class="keywordtype">void</span> AddErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, <a class="code" href="classIFunctor3.html">FUErrorFunctor</a>* callback);
+<a name="l00269"></a>00269         <span class="keyword">static</span> <span class="keywordtype">void</span> AddErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel, <a class="code" href="classIFunctor3.html" title="A functor with three arguments.">FUErrorFunctor</a>* callback);
 <a name="l00270"></a>00270 
 <a name="l00275"></a>00275         <span class="keyword">template</span> &lt;<span class="keyword">class</span> Class&gt;
-<a name="l00276"></a><a class="code" href="classFUError.html#af997111fb6cfdb5a0aab1ecaf1252e8e">00276</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> AddErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, Class* handle, <span class="keywordtype">void</span> (Class::*_function)(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, uint32))
+<a name="l00276"></a><a class="code" href="classFUError.html#af997111fb6cfdb5a0aab1ecaf1252e8e">00276</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> AddErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel, Class* handle, <span class="keywordtype">void</span> (Class::*_function)(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a>, uint32, uint32))
 <a name="l00277"></a>00277         {
-<a name="l00278"></a>00278                 AddErrorCallback(errorLevel, <span class="keyword">new</span> <a class="code" href="classFUFunctor3.html">FUFunctor3&lt;Class, FUError::Level, uint32, uint32, void&gt;</a>(handle, _function));
+<a name="l00278"></a>00278                 AddErrorCallback(errorLevel, <span class="keyword">new</span> <a class="code" href="classFUFunctor3.html" title="A functor with three arguments.">FUFunctor3&lt;Class, FUError::Level, uint32, uint32, void&gt;</a>(handle, _function));
 <a name="l00279"></a>00279         }
 <a name="l00280"></a>00280 
-<a name="l00284"></a><a class="code" href="classFUError.html#a03947f8a2510b8bfef8e93e67892d12d">00284</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> AddErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, <span class="keywordtype">void</span> (*_function)(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, uint32))
+<a name="l00284"></a><a class="code" href="classFUError.html#a03947f8a2510b8bfef8e93e67892d12d">00284</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> AddErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel, <span class="keywordtype">void</span> (*_function)(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a>, uint32, uint32))
 <a name="l00285"></a>00285         {
-<a name="l00286"></a>00286                 AddErrorCallback(errorLevel, <span class="keyword">new</span> <a class="code" href="classFUStaticFunctor3.html">FUStaticFunctor3&lt;FUError::Level, uint32, uint32, void&gt;</a>(_function));
+<a name="l00286"></a>00286                 AddErrorCallback(errorLevel, <span class="keyword">new</span> <a class="code" href="classFUStaticFunctor3.html" title="A pseudo-functor with three arguments, specialized for static functions.">FUStaticFunctor3&lt;FUError::Level, uint32, uint32, void&gt;</a>(_function));
 <a name="l00287"></a>00287         }
 <a name="l00288"></a>00288 
-<a name="l00293"></a>00293         <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, <span class="keywordtype">void</span>* <span class="keywordtype">object</span>, <span class="keywordtype">void</span>* function);
+<a name="l00293"></a>00293         <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel, <span class="keywordtype">void</span>* <span class="keywordtype">object</span>, <span class="keywordtype">void</span>* function);
 <a name="l00294"></a>00294 
 <a name="l00299"></a>00299         <span class="keyword">template</span> &lt;<span class="keyword">class</span> Class&gt;
-<a name="l00300"></a><a class="code" href="classFUError.html#a80c5c18c086f567648f00c0b4ab8c74f">00300</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, Class* handle, <span class="keywordtype">void</span> (Class::*_function)(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, uint32))
+<a name="l00300"></a><a class="code" href="classFUError.html#a80c5c18c086f567648f00c0b4ab8c74f">00300</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel, Class* handle, <span class="keywordtype">void</span> (Class::*_function)(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a>, uint32, uint32))
 <a name="l00301"></a>00301         {
 <a name="l00302"></a>00302                 <span class="keywordtype">void</span>* function = *(<span class="keywordtype">void</span>**)(<span class="keywordtype">size_t</span>)&amp;_function;
 <a name="l00303"></a>00303                 RemoveErrorCallback(errorLevel, (<span class="keywordtype">void</span>*) handle, function);
 <a name="l00304"></a>00304         }
 <a name="l00305"></a>00305 
-<a name="l00309"></a><a class="code" href="classFUError.html#a96ca4bf271028a7956c71d4d1af72911">00309</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, <span class="keywordtype">void</span> (*_function)(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, uint32))
+<a name="l00309"></a><a class="code" href="classFUError.html#a96ca4bf271028a7956c71d4d1af72911">00309</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel, <span class="keywordtype">void</span> (*_function)(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a>, uint32, uint32))
 <a name="l00310"></a>00310         {
 <a name="l00311"></a>00311                 <span class="keywordtype">void</span>* function = *(<span class="keywordtype">void</span>**)(<span class="keywordtype">size_t</span>)&amp;_function;
 <a name="l00312"></a>00312                 RemoveErrorCallback(errorLevel, NULL, function);
 <a name="l00313"></a>00313         }
 <a name="l00314"></a>00314 
-<a name="l00318"></a>00318         <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* GetErrorString(<a class="code" href="classFUError.html#adb409c35dc05786e6742818fc7643d7d">FUError::Code</a> errorCode);
+<a name="l00318"></a>00318         <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* GetErrorString(<a class="code" href="classFUError.html#adb409c35dc05786e6742818fc7643d7d" title="Error code used to retrieve localized error message.">FUError::Code</a> errorCode);
 <a name="l00319"></a>00319 
 <a name="l00324"></a>00324         <span class="keyword">static</span> <span class="keywordtype">void</span> SetCustomErrorString(<span class="keyword">const</span> <span class="keywordtype">char</span>* customErrorString);
 <a name="l00325"></a>00325 
-<a name="l00328"></a><a class="code" href="classFUError.html#a2362a05e0d3722c056cef1409712aa0a">00328</a>         <span class="keyword">static</span> <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> <a class="code" href="classFUError.html#a2362a05e0d3722c056cef1409712aa0a">GetFatalityLevel</a>() { <span class="keywordflow">return</span> fatalLevel; }
+<a name="l00328"></a><a class="code" href="classFUError.html#a2362a05e0d3722c056cef1409712aa0a">00328</a>         <span class="keyword">static</span> <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> <a class="code" href="classFUError.html#a2362a05e0d3722c056cef1409712aa0a" title="Retrieves the level at which errors are considered fatal.">GetFatalityLevel</a>() { <span class="keywordflow">return</span> fatalLevel; }
 <a name="l00329"></a>00329 
-<a name="l00332"></a><a class="code" href="classFUError.html#a4fba4a813a0a10357f4415fb38bfd8d5">00332</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classFUError.html#a4fba4a813a0a10357f4415fb38bfd8d5">SetFatalityLevel</a>(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> _fatalLevel) { fatalLevel = _fatalLevel; }
+<a name="l00332"></a><a class="code" href="classFUError.html#a4fba4a813a0a10357f4415fb38bfd8d5">00332</a>         <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classFUError.html#a4fba4a813a0a10357f4415fb38bfd8d5" title="Sets the level at which errors will cancel the processing of a COLLADA document.">SetFatalityLevel</a>(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> _fatalLevel) { fatalLevel = _fatalLevel; }
 <a name="l00333"></a>00333 };
 <a name="l00334"></a>00334 
-<a name="l00341"></a><a class="code" href="classFUErrorSimpleHandler.html">00341</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUErrorSimpleHandler.html">FUErrorSimpleHandler</a>
+<a name="l00341"></a><a class="code" href="classFUErrorSimpleHandler.html">00341</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUErrorSimpleHandler.html" title="This class is used as an example of error-handling.">FUErrorSimpleHandler</a>
 <a name="l00342"></a>00342 {
 <a name="l00343"></a>00343 <span class="keyword">private</span>:
 <a name="l00344"></a>00344         <a class="code" href="classFUStringBuilderT.html">FUSStringBuilder</a> message;
-<a name="l00345"></a>00345         <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> localFatalityLevel;
+<a name="l00345"></a>00345         <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> localFatalityLevel;
 <a name="l00346"></a>00346         <span class="keywordtype">bool</span> fails;
 <a name="l00347"></a>00347 
 <a name="l00348"></a>00348 <span class="keyword">public</span>:
-<a name="l00352"></a>00352         <a class="code" href="classFUErrorSimpleHandler.html">FUErrorSimpleHandler</a>(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> fatalLevel = FUError::ERROR_LEVEL);
+<a name="l00352"></a>00352         <a class="code" href="classFUErrorSimpleHandler.html" title="This class is used as an example of error-handling.">FUErrorSimpleHandler</a>(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> fatalLevel = FUError::ERROR_LEVEL);
 <a name="l00353"></a>00353 
-<a name="l00355"></a>00355         ~<a class="code" href="classFUErrorSimpleHandler.html">FUErrorSimpleHandler</a>();
+<a name="l00355"></a>00355         ~<a class="code" href="classFUErrorSimpleHandler.html" title="This class is used as an example of error-handling.">FUErrorSimpleHandler</a>();
 <a name="l00356"></a>00356 
-<a name="l00362"></a><a class="code" href="classFUErrorSimpleHandler.html#a8b33581ea5ea79b7fdeacae91b064070">00362</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classFUErrorSimpleHandler.html#a8b33581ea5ea79b7fdeacae91b064070">GetErrorString</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> message.ToCharPtr(); }
+<a name="l00362"></a><a class="code" href="classFUErrorSimpleHandler.html#a8b33581ea5ea79b7fdeacae91b064070">00362</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classFUErrorSimpleHandler.html#a8b33581ea5ea79b7fdeacae91b064070" title="Retrieves the complete error string.">GetErrorString</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> message.ToCharPtr(); }
 <a name="l00363"></a>00363 
-<a name="l00366"></a><a class="code" href="classFUErrorSimpleHandler.html#a38cd13df513461501d31bd541b7a6098">00366</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFUErrorSimpleHandler.html#a38cd13df513461501d31bd541b7a6098">IsSuccessful</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !fails; }
+<a name="l00366"></a><a class="code" href="classFUErrorSimpleHandler.html#a38cd13df513461501d31bd541b7a6098">00366</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFUErrorSimpleHandler.html#a38cd13df513461501d31bd541b7a6098" title="Retrieves whether the process was successful.">IsSuccessful</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !fails; }
 <a name="l00367"></a>00367 
 <a name="l00368"></a>00368 <span class="keyword">private</span>:
-<a name="l00369"></a>00369         <span class="keywordtype">void</span> OnError(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, uint32 errorCode, uint32 lineNumber);
+<a name="l00369"></a>00369         <span class="keywordtype">void</span> OnError(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel, uint32 errorCode, uint32 lineNumber);
 <a name="l00370"></a>00370 };
 <a name="l00371"></a>00371 
 <a name="l00372"></a>00372 <span class="preprocessor">#endif // _FU_ERROR_H_</span>
@@ -365,7 +365,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:12 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

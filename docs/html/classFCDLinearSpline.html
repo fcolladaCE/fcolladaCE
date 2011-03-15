@@ -57,6 +57,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDLinearSpline" --><!-- doxytag: inherits="FCDSpline" -->
+<p>Represents a Linear spline.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDGeometrySpline_8h_source.html">FCDGeometrySpline.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDLinearSpline:</div>
@@ -75,14 +78,20 @@ Inheritance diagram for FCDLinearSpline:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLinearSpline.html#af5e74815103de8aab4ae286f19acf5ab">FCDLinearSpline</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#af5e74815103de8aab4ae286f19acf5ab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLinearSpline.html#a96e58db71e95b864b7f8f2cb39479afd">~FCDLinearSpline</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a96e58db71e95b864b7f8f2cb39479afd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceFUDaeSplineType.html#a7db2b90bcd53814239cc29f64754d0ab">FUDaeSplineType::Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLinearSpline.html#a7ec1ac08cadd6504ad7dd2a5cbd91640">GetSplineType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classFCDSpline.html" title="Represents a generic spline.">FCDSpline</a> method implementation.  <a href="#a7ec1ac08cadd6504ad7dd2a5cbd91640"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLinearSpline.html#a24ef6b2ff41fc49d42472da57875684b">AddCV</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;cv)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a CV to a Linear spline.  <a href="#a24ef6b2ff41fc49d42472da57875684b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLinearSpline.html#a06be2f207432851791b269fcd9074779">ToBezier</a> (<a class="el" href="classFCDBezierSpline.html">FCDBezierSpline</a> &amp;toFill)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Convert the linear segments contained inside this linear spline into Bezier segments.  <a href="#a06be2f207432851791b269fcd9074779"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLinearSpline.html#a39a847cadde3904109b811b2e1fd0794">IsValid</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if the spline is valid.  <a href="#a39a847cadde3904109b811b2e1fd0794"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Represents a Linear spline.</p>
+<p>Represents a Linear spline. </p>
 <p>Linear splines are, like the Bezier splines, represented as an array of adjacent linear segment. Each segment consisting of 2 control vertices, the last one being reused as the first vertex of the next segment. If the spline is closed, the first vertex is also reused for the last vertex of the last segment. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af5e74815103de8aab4ae286f19acf5ab"></a><!-- doxytag: member="FCDLinearSpline::FCDLinearSpline" ref="af5e74815103de8aab4ae286f19acf5ab" args="(FCDocument *document)" -->
@@ -100,10 +109,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html">FCollada</a> document that owns this spline. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> document that owns this spline. </td></tr>
   </table>
   </dd>
 </dl>
@@ -124,6 +134,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -144,7 +155,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a CV to a Linear spline </p>
+
+<p>Adds a CV to a Linear spline. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>cv</em>&nbsp;</td><td>3D position of the CV. </td></tr>
@@ -168,7 +180,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p><a class="el" href="classFCDSpline.html">FCDSpline</a> method implementation. </p>
+
+<p><a class="el" href="classFCDSpline.html" title="Represents a generic spline.">FCDSpline</a> method implementation. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The LINEAR spline type. </dd></dl>
 
 <p>Implements <a class="el" href="classFCDSpline.html#ad8ad60a198cd8e041fde6587c3d5a9f9">FCDSpline</a>.</p>
@@ -189,6 +202,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Determines if the spline is valid. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>True is the spline is valid, false otherwise. </dd></dl>
 
@@ -209,6 +223,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Convert the linear segments contained inside this linear spline into Bezier segments. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -238,7 +253,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:39 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:19 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

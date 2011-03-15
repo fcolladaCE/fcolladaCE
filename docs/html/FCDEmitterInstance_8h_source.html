@@ -63,25 +63,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="preprocessor"></span><span class="preprocessor">#define _FCD_EMITTER_INSTANCE_H_</span>
 <a name="l00018"></a>00018 <span class="preprocessor"></span>
 <a name="l00019"></a>00019 <span class="preprocessor">#ifndef _FCD_ENTITY_INSTANCE_H_</span>
-<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDEntityInstance_8h.html">FCDocument/FCDEntityInstance.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDEntityInstance_8h.html" title="This file contains the FCDEntityInstance class.">FCDocument/FCDEntityInstance.h</a>&quot;</span>
 <a name="l00021"></a>00021 <span class="preprocessor">#endif // _FCD_ENTITY_INSTANCE_H_</span>
 <a name="l00022"></a>00022 <span class="preprocessor"></span>
-<a name="l00023"></a>00023 <span class="keyword">class </span><a class="code" href="classFCDGeometryPolygons.html">FCDGeometryPolygons</a>;
-<a name="l00024"></a>00024 <span class="keyword">class </span><a class="code" href="classFCDMaterial.html">FCDMaterial</a>;
-<a name="l00025"></a>00025 <span class="keyword">class </span><a class="code" href="classFCDMaterialInstance.html">FCDMaterialInstance</a>;
-<a name="l00026"></a>00026 <span class="keyword">class </span><a class="code" href="classFCDForceField.html">FCDForceField</a>;
+<a name="l00023"></a>00023 <span class="keyword">class </span><a class="code" href="classFCDGeometryPolygons.html" title="A mesh polygon set.">FCDGeometryPolygons</a>;
+<a name="l00024"></a>00024 <span class="keyword">class </span><a class="code" href="classFCDMaterial.html" title="A COLLADA material.">FCDMaterial</a>;
+<a name="l00025"></a>00025 <span class="keyword">class </span><a class="code" href="classFCDMaterialInstance.html" title="A COLLADA material instance.">FCDMaterialInstance</a>;
+<a name="l00026"></a>00026 <span class="keyword">class </span><a class="code" href="classFCDForceField.html" title="A COLLADA physics force field.">FCDForceField</a>;
 <a name="l00027"></a>00027 
-<a name="l00034"></a><a class="code" href="classFCDEmitterInstance.html">00034</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDEmitterInstance.html">FCDEmitterInstance</a> : <span class="keyword">public</span> <a class="code" href="classFCDEntityInstance.html">FCDEntityInstance</a>
+<a name="l00034"></a><a class="code" href="classFCDEmitterInstance.html">00034</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDEmitterInstance.html" title="A COLLADA emitter instance.">FCDEmitterInstance</a> : <span class="keyword">public</span> <a class="code" href="classFCDEntityInstance.html" title="A COLLADA entity instance.">FCDEntityInstance</a>
 <a name="l00035"></a>00035 {
 <a name="l00036"></a>00036 <span class="keyword">private</span>:
-<a name="l00037"></a>00037     <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7">DeclareObjectType</a>(<a class="code" href="classFCDEntityInstance.html">FCDEntityInstance</a>);
-<a name="l00038"></a>00038         <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classFCDEntityInstanceFactory.html">FCDEntityInstanceFactory</a>;
+<a name="l00037"></a>00037     <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7" title="Declares the object type for an object class.">DeclareObjectType</a>(<a class="code" href="classFCDEntityInstance.html" title="A COLLADA entity instance.">FCDEntityInstance</a>);
+<a name="l00038"></a>00038         <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classFCDEntityInstanceFactory.html" title="[INTERNAL] A factory for COLLADA Entity instances.">FCDEntityInstanceFactory</a>;
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040 <span class="keyword">protected</span>:
-<a name="l00047"></a>00047         <a class="code" href="classFCDEmitterInstance.html">FCDEmitterInstance</a>(<a class="code" href="classFCDocument.html">FCDocument</a>* document, <a class="code" href="classFCDSceneNode.html">FCDSceneNode</a>* parent, <a class="code" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">FCDEntity::Type</a> entityType = <a class="code" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7ab6f994b7aaba9add07d533f8945ddb70">FCDEntity::EMITTER</a>);
+<a name="l00047"></a>00047         <a class="code" href="classFCDEmitterInstance.html" title="A COLLADA emitter instance.">FCDEmitterInstance</a>(<a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>* document, <a class="code" href="classFCDSceneNode.html" title="A COLLADA visual scene node.">FCDSceneNode</a>* parent, <a class="code" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7" title="The types of entity classes.">FCDEntity::Type</a> entityType = <a class="code" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7ab6f994b7aaba9add07d533f8945ddb70" title="A generic emitter for sound and particles (FCDEmitter) - Premium feature.">FCDEntity::EMITTER</a>);
 <a name="l00048"></a>00048 
 <a name="l00049"></a>00049 <span class="keyword">public</span>:
-<a name="l00051"></a>00051         <span class="keyword">virtual</span> ~<a class="code" href="classFCDEmitterInstance.html">FCDEmitterInstance</a>();
+<a name="l00051"></a>00051         <span class="keyword">virtual</span> ~<a class="code" href="classFCDEmitterInstance.html" title="A COLLADA emitter instance.">FCDEmitterInstance</a>();
 <a name="l00052"></a>00052 
 <a name="l00053"></a>00053 };
 <a name="l00054"></a>00054 
@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:19 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:11 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

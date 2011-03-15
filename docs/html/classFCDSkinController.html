@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDSkinController" --><!-- doxytag: inherits="FCDObject" -->
+<p>A COLLADA skin controller.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDSkinController_8h_source.html">FCDSkinController.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDSkinController:</div>
@@ -77,34 +80,58 @@ Inheritance diagram for FCDSkinController:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a15bfb70a67633c1a87e4ea887e1bff85">FCDSkinController</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDController.html">FCDController</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a15bfb70a67633c1a87e4ea887e1bff85"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#ab8720fcc6fae0f933439f5f7d394395b">~FCDSkinController</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ab8720fcc6fae0f933439f5f7d394395b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDController.html">FCDController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a17cb7af659591ec87e2839efb855446d">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parent entity for the morpher.  <a href="#a17cb7af659591ec87e2839efb855446d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDController.html">FCDController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#ac81335d8b97084b4afad3f78c50c04fd">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac81335d8b97084b4afad3f78c50c04fd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#afd496fa67e9cb8681b0e42ce77897a57">GetTarget</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the target entity.  <a href="#afd496fa67e9cb8681b0e42ce77897a57"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e4d760d8fa60f2cf41f87efcd46323f"></a><!-- doxytag: member="FCDSkinController::GetTarget" ref="a1e4d760d8fa60f2cf41f87efcd46323f" args="() const " -->
 const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>GetTarget</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUUri.html">FUUri</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#ab4fdf1c8972ebe67b9ccbdf5b32f5e04">GetTargetUri</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the Uri to the skin target.  <a href="#ab4fdf1c8972ebe67b9ccbdf5b32f5e04"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#aba227b645b30f43847dad3246ed34132">SetTargetUri</a> (const <a class="el" href="classFUUri.html">FUUri</a> &amp;uri)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the URI of the target mesh.  <a href="#aba227b645b30f43847dad3246ed34132"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a570337f366b9760bf1828620541c130b">SetTarget</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *_target)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the target entity.  <a href="#a570337f366b9760bf1828620541c130b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#afdd606f592acbdbb18e987dd7ac7f526">GetBindShapeTransform</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the bind-pose transform of the target entity.  <a href="#afdd606f592acbdbb18e987dd7ac7f526"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a98e96fb0d648822f57ac2f94a2d13c63">SetBindShapeTransform</a> (const <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;bindPose)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the bind-pose transform of the target entity.  <a href="#a98e96fb0d648822f57ac2f94a2d13c63"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a4ec9325fef3ed3ed837eb99e82b79f35">GetJointCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of joints that influence the skin.  <a href="#a4ec9325fef3ed3ed837eb99e82b79f35"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a6f6527350df3b392a9aed68834afde5a">SetJointCount</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the number of joints that influence the skin.  <a href="#a6f6527350df3b392a9aed68834afde5a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSkinControllerJoint.html">FCDSkinControllerJoint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a9bdb04c9a9c464828c50e23883ac27ff">GetJoints</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of joints that influence the skin.  <a href="#a9bdb04c9a9c464828c50e23883ac27ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSkinControllerJoint.html">FCDSkinControllerJoint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a3cefba7450f5ffd20eb50ce94930dace">GetJoints</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a3cefba7450f5ffd20eb50ce94930dace"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSkinControllerJoint.html">FCDSkinControllerJoint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a6122344e78bf79eac5d98146eea8ccf1">GetJoint</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an indexed joint from the list of joints that influence this skin.  <a href="#a6122344e78bf79eac5d98146eea8ccf1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSkinControllerJoint.html">FCDSkinControllerJoint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a7ea6ffb632099285cc81b9dbe05a4b07">GetJoint</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7ea6ffb632099285cc81b9dbe05a4b07"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSkinControllerJoint.html">FCDSkinControllerJoint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a0f7a20bb077328f9f6b58daf95ac9a20">AddJoint</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> jSubId=&quot;&quot;, const <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;inverseBindPose=<a class="el" href="classFMMatrix44.html#a6ec620d68ab61a95e3b4b5f7e7300468">FMMatrix44::Identity</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a joint to influence the skin.  <a href="#a0f7a20bb077328f9f6b58daf95ac9a20"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a672679bbfe60f04d6309fd99cebb15c3">GetInfluenceCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of vertices with influences defined in the skin controller.  <a href="#a672679bbfe60f04d6309fd99cebb15c3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a9314bc3b96f9e9c25efd57f370c4f790">SetInfluenceCount</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the number of vertices with influences defined in the skin controller.  <a href="#a9314bc3b96f9e9c25efd57f370c4f790"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSkinControllerVertex.html">FCDSkinControllerVertex</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a75ee2c90f2f8011f476e4f96b1397641">GetVertexInfluences</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a list of the per-vertex influences for the skin.  <a href="#a75ee2c90f2f8011f476e4f96b1397641"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSkinControllerVertex.html">FCDSkinControllerVertex</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a1bf89c968b4e0ffff2ac2478ea31ff2c">GetVertexInfluences</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1bf89c968b4e0ffff2ac2478ea31ff2c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSkinControllerVertex.html">FCDSkinControllerVertex</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#a1b403e5065c0a7635a424379208a1206">GetVertexInfluence</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the per-vertex influences for a given vertex.  <a href="#a1b403e5065c0a7635a424379208a1206"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSkinControllerVertex.html">FCDSkinControllerVertex</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#ad1620f13499b450a80402e88a44089b3">GetVertexInfluence</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad1620f13499b450a80402e88a44089b3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinController.html#aa6257743677e7d538e4b9fcbca98254c">ReduceInfluences</a> (uint32 maxInfluenceCount, float minimumWeight=0.0f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reduces the number of joints influencing each vertex.  <a href="#aa6257743677e7d538e4b9fcbca98254c"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA skin controller.</p>
+<p>A COLLADA skin controller. </p>
 <p>The skin controller holds the information to skin a geometric object. That information includes a target/base entity and its bind-pose matrix, a list of joints and their bind pose and the influences for the joints.</p>
 <p>The influences are a list, for each vertex of the target entity, of which joints affect the vertex and by how much. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
@@ -132,7 +159,9 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDController.html#a808ec0e465cf611a6eb934f0abf51994">FCDController::CreateSkinController</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDController.html#a808ec0e465cf611a6eb934f0abf51994" title="Sets the type of this controller to a skin controller.">FCDController::CreateSkinController</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the skin. </td></tr>
@@ -157,6 +186,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -186,6 +216,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a joint to influence the skin. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -211,6 +242,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the bind-pose transform of the target entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The bind-pose transform. </dd></dl>
 
@@ -230,6 +262,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of vertices with influences defined in the skin controller. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of influenced vertices. </dd></dl>
 
@@ -250,6 +283,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an indexed joint from the list of joints that influence this skin. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -276,6 +310,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -294,6 +329,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of joints that influence the skin. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of joints. </dd></dl>
 
@@ -313,6 +349,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -331,6 +368,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of joints that influence the skin. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of joints that influence the skin. </dd></dl>
 
@@ -350,6 +388,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -368,6 +407,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the parent entity for the morpher. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parent controller entity. </dd></dl>
 
@@ -387,7 +427,9 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the target entity. This entity may be a geometric entity or another controller. </p>
+
+<p>Retrieves the target entity. </p>
+<p>This entity may be a geometric entity or another controller. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The target entity. </dd></dl>
 
 </div>
@@ -406,7 +448,9 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the Uri to the skin target. This can be an internal or external link </p>
+
+<p>Retrieves the Uri to the skin target. </p>
+<p>This can be an internal or external link </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The uri to the target </dd></dl>
 
 </div>
@@ -426,6 +470,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -445,6 +490,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the per-vertex influences for a given vertex. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -470,6 +516,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a list of the per-vertex influences for the skin. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of per-vertex influences. </dd></dl>
 
@@ -489,6 +536,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -517,7 +565,9 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
-<p>Reduces the number of joints influencing each vertex. 1) All the influences with a weight less than the minimum will be removed. 2) If a vertex has more influences than the given maximum, they will be sorted and the most important influences will be kept. If some of the influences for a vertex are removed, the weight will be normalized. </p>
+
+<p>Reduces the number of joints influencing each vertex. </p>
+<p>1) All the influences with a weight less than the minimum will be removed. 2) If a vertex has more influences than the given maximum, they will be sorted and the most important influences will be kept. If some of the influences for a vertex are removed, the weight will be normalized. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>maxInfluenceCount</em>&nbsp;</td><td>The maximum number of influence to keep for each vertex. </td></tr>
@@ -543,6 +593,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the bind-pose transform of the target entity. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -568,6 +619,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the number of vertices with influences defined in the skin controller. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -593,6 +645,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the number of joints that influence the skin. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -618,7 +671,9 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the target entity. This function has very important ramifications, as the number of vertices may change. The influences list will be modified to follow the number of vertices. This entity may be a geometric entity or another controller. </p>
+
+<p>Sets the target entity. </p>
+<p>This function has very important ramifications, as the number of vertices may change. The influences list will be modified to follow the number of vertices. This entity may be a geometric entity or another controller. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_target</em>&nbsp;</td><td>The target entity. </td></tr>
@@ -643,6 +698,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the URI of the target mesh. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -672,7 +728,7 @@ const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td cla
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:48 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:22 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

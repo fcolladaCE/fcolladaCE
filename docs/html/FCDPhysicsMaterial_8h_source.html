@@ -63,39 +63,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FCD_PHYSICSMATERIAL_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
 <a name="l00017"></a>00017 <span class="preprocessor">#ifndef _FCD_ENTITY_H_</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDEntity_8h.html">FCDocument/FCDEntity.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDEntity_8h.html" title="This file contains the FCDEntity class.">FCDocument/FCDEntity.h</a>&quot;</span>
 <a name="l00019"></a>00019 <span class="preprocessor">#endif // _FCD_ENTITY_H_</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span>
-<a name="l00021"></a>00021 <span class="keyword">class </span><a class="code" href="classFCDocument.html">FCDocument</a>;
+<a name="l00021"></a>00021 <span class="keyword">class </span><a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>;
 <a name="l00022"></a>00022 
-<a name="l00032"></a><a class="code" href="classFCDPhysicsMaterial.html">00032</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDPhysicsMaterial.html">FCDPhysicsMaterial</a> : <span class="keyword">public</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>
+<a name="l00032"></a><a class="code" href="classFCDPhysicsMaterial.html">00032</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDPhysicsMaterial.html" title="A COLLADA physics material.">FCDPhysicsMaterial</a> : <span class="keyword">public</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>
 <a name="l00033"></a>00033 {
 <a name="l00034"></a>00034 <span class="keyword">private</span>:
-<a name="l00035"></a>00035         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7">DeclareObjectType</a>(<a class="code" href="classFCDEntity.html">FCDEntity</a>);
+<a name="l00035"></a>00035         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7" title="Declares the object type for an object class.">DeclareObjectType</a>(<a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>);
 <a name="l00036"></a>00036         <span class="keywordtype">float</span> staticFriction;
 <a name="l00037"></a>00037         <span class="keywordtype">float</span> dynamicFriction;
 <a name="l00038"></a>00038         <span class="keywordtype">float</span> restitution;
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040 <span class="keyword">public</span>:
-<a name="l00043"></a>00043         <a class="code" href="classFCDPhysicsMaterial.html">FCDPhysicsMaterial</a>(<a class="code" href="classFCDocument.html">FCDocument</a>* document);
+<a name="l00043"></a>00043         <a class="code" href="classFCDPhysicsMaterial.html" title="A COLLADA physics material.">FCDPhysicsMaterial</a>(<a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>* document);
 <a name="l00044"></a>00044 
-<a name="l00046"></a>00046         <span class="keyword">virtual</span> ~<a class="code" href="classFCDPhysicsMaterial.html">FCDPhysicsMaterial</a>();
+<a name="l00046"></a>00046         <span class="keyword">virtual</span> ~<a class="code" href="classFCDPhysicsMaterial.html" title="A COLLADA physics material.">FCDPhysicsMaterial</a>();
 <a name="l00047"></a>00047 
-<a name="l00051"></a><a class="code" href="classFCDPhysicsMaterial.html#af7b84458b75d65c2e88028cafb865526">00051</a>         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a> <a class="code" href="classFCDPhysicsMaterial.html#af7b84458b75d65c2e88028cafb865526">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> FCDEntity::PHYSICS_MATERIAL; }
+<a name="l00051"></a><a class="code" href="classFCDPhysicsMaterial.html#af7b84458b75d65c2e88028cafb865526">00051</a>         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7" title="The types of entity classes.">Type</a> <a class="code" href="classFCDPhysicsMaterial.html#af7b84458b75d65c2e88028cafb865526" title="Retrieves the entity type for this class.">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> FCDEntity::PHYSICS_MATERIAL; }
 <a name="l00052"></a>00052 
-<a name="l00055"></a><a class="code" href="classFCDPhysicsMaterial.html#adf3cae3fa4dc196807c446530701f482">00055</a>         <span class="keywordtype">float</span> <a class="code" href="classFCDPhysicsMaterial.html#adf3cae3fa4dc196807c446530701f482">GetStaticFriction</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> staticFriction; }
+<a name="l00055"></a><a class="code" href="classFCDPhysicsMaterial.html#adf3cae3fa4dc196807c446530701f482">00055</a>         <span class="keywordtype">float</span> <a class="code" href="classFCDPhysicsMaterial.html#adf3cae3fa4dc196807c446530701f482" title="Retrieves the static friction for this physics material.">GetStaticFriction</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> staticFriction; }
 <a name="l00056"></a>00056 
-<a name="l00059"></a><a class="code" href="classFCDPhysicsMaterial.html#ad89f828ca130c56e54f00f97384d492a">00059</a>         <span class="keywordtype">void</span>  <a class="code" href="classFCDPhysicsMaterial.html#ad89f828ca130c56e54f00f97384d492a">SetStaticFriction</a>(<span class="keywordtype">float</span> _staticFriction) { staticFriction = _staticFriction; SetDirtyFlag(); }
+<a name="l00059"></a><a class="code" href="classFCDPhysicsMaterial.html#ad89f828ca130c56e54f00f97384d492a">00059</a>         <span class="keywordtype">void</span>  <a class="code" href="classFCDPhysicsMaterial.html#ad89f828ca130c56e54f00f97384d492a" title="Sets the static friction for this physics material.">SetStaticFriction</a>(<span class="keywordtype">float</span> _staticFriction) { staticFriction = _staticFriction; SetDirtyFlag(); }
 <a name="l00060"></a>00060 
-<a name="l00063"></a><a class="code" href="classFCDPhysicsMaterial.html#aefdc9cbe348ec8dec6cc2a427740cf6a">00063</a>         <span class="keywordtype">float</span> <a class="code" href="classFCDPhysicsMaterial.html#aefdc9cbe348ec8dec6cc2a427740cf6a">GetDynamicFriction</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> dynamicFriction; }
+<a name="l00063"></a><a class="code" href="classFCDPhysicsMaterial.html#aefdc9cbe348ec8dec6cc2a427740cf6a">00063</a>         <span class="keywordtype">float</span> <a class="code" href="classFCDPhysicsMaterial.html#aefdc9cbe348ec8dec6cc2a427740cf6a" title="Retrieves the dynamic friction for this physics material.">GetDynamicFriction</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> dynamicFriction; }
 <a name="l00064"></a>00064 
-<a name="l00067"></a><a class="code" href="classFCDPhysicsMaterial.html#a6270ec2550be3c522488263908ce8ed3">00067</a>         <span class="keywordtype">void</span>  <a class="code" href="classFCDPhysicsMaterial.html#a6270ec2550be3c522488263908ce8ed3">SetDynamicFriction</a>(<span class="keywordtype">float</span> _dynamicFriction) { dynamicFriction = _dynamicFriction; SetDirtyFlag(); }
+<a name="l00067"></a><a class="code" href="classFCDPhysicsMaterial.html#a6270ec2550be3c522488263908ce8ed3">00067</a>         <span class="keywordtype">void</span>  <a class="code" href="classFCDPhysicsMaterial.html#a6270ec2550be3c522488263908ce8ed3" title="Sets the dynamic friction for this physics material.">SetDynamicFriction</a>(<span class="keywordtype">float</span> _dynamicFriction) { dynamicFriction = _dynamicFriction; SetDirtyFlag(); }
 <a name="l00068"></a>00068 
-<a name="l00071"></a><a class="code" href="classFCDPhysicsMaterial.html#a9cede0114b06eb9fab75f98de2e821c1">00071</a>         <span class="keywordtype">float</span> <a class="code" href="classFCDPhysicsMaterial.html#a9cede0114b06eb9fab75f98de2e821c1">GetRestitution</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> restitution; }
+<a name="l00071"></a><a class="code" href="classFCDPhysicsMaterial.html#a9cede0114b06eb9fab75f98de2e821c1">00071</a>         <span class="keywordtype">float</span> <a class="code" href="classFCDPhysicsMaterial.html#a9cede0114b06eb9fab75f98de2e821c1" title="Retrieves the restitution for this physics material.">GetRestitution</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> restitution; }
 <a name="l00072"></a>00072 
-<a name="l00075"></a><a class="code" href="classFCDPhysicsMaterial.html#a39d172917abbce73b84f194ee7721eaf">00075</a>         <span class="keywordtype">void</span>  <a class="code" href="classFCDPhysicsMaterial.html#a39d172917abbce73b84f194ee7721eaf">SetRestitution</a>(<span class="keywordtype">float</span> _restitution) { restitution = _restitution; SetDirtyFlag(); }
+<a name="l00075"></a><a class="code" href="classFCDPhysicsMaterial.html#a39d172917abbce73b84f194ee7721eaf">00075</a>         <span class="keywordtype">void</span>  <a class="code" href="classFCDPhysicsMaterial.html#a39d172917abbce73b84f194ee7721eaf" title="Sets the restitution for this physics material.">SetRestitution</a>(<span class="keywordtype">float</span> _restitution) { restitution = _restitution; SetDirtyFlag(); }
 <a name="l00076"></a>00076 
-<a name="l00084"></a>00084         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>* <a class="code" href="classFCDEntity.html#afd21dc9f9dba45786012dea87f70b9fc">Clone</a>(<a class="code" href="classFCDEntity.html">FCDEntity</a>* clone = NULL, <span class="keywordtype">bool</span> cloneChildren = <span class="keyword">false</span>) <span class="keyword">const</span>;
+<a name="l00084"></a>00084         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* <a class="code" href="classFCDEntity.html#afd21dc9f9dba45786012dea87f70b9fc" title="Copies the entity information into a clone.">Clone</a>(<a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* clone = NULL, <span class="keywordtype">bool</span> cloneChildren = <span class="keyword">false</span>) <span class="keyword">const</span>;
 <a name="l00085"></a>00085 };
 <a name="l00086"></a>00086 
 <a name="l00087"></a>00087 <span class="preprocessor">#endif // _FCD_MATERIAL_H_</span>
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:19 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:11 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

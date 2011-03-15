@@ -54,13 +54,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCDAnimationCurveTools Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>Contains tools to merge, collapse and otherwise modify animation curve.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationMultiCurve.html">FCDAnimationMultiCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#a890739f174e6aaf00597ea67d6710ab8">MergeCurves</a> (const <a class="el" href="classfm_1_1pvector.html">FCDAnimationCurveConstList</a> &amp;toMerge, const <a class="el" href="classfm_1_1vector.html">FloatList</a> &amp;defaultValues)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#aca4a52281fdbfd6c60337c8aa07aa5ae">Collapse</a> (const <a class="el" href="classFCDAnimationMultiCurve.html">FCDAnimationMultiCurve</a> *curve, <a class="el" href="FCDAnimationCurveTools_8h.html#a108f3f31a5097fdde5a065a1c7ad0acc">FCDCollapsingFunction</a> collapse)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Merges multiple single-dimensional animation curves into one multi-dimensional animation curve.  <a href="#a890739f174e6aaf00597ea67d6710ab8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#a90b9efa77a216a15613a71f160888c31">Collapse</a> (const <a class="el" href="classFCDAnimationMultiCurve.html">FCDAnimationMultiCurve</a> *curve, <a class="el" href="FCDAnimationCurveTools_8h.html#a108f3f31a5097fdde5a065a1c7ad0acc">FCDCollapsingFunction</a> collapse=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Collapses a multi-dimensional curve into a one-dimensional curve.  <a href="#a90b9efa77a216a15613a71f160888c31"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#a52f0bc674ece31d37bef0b8cf7999a27">TakeFirst</a> (float *values, uint32 count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the first floating-point value of a list of floating-point values.  <a href="#a52f0bc674ece31d37bef0b8cf7999a27"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimationCurveTools.html#ac39b972f3c91e9da8c6e6fd0b6f457dc">Average</a> (float *values, uint32 count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the average value of a list of floating-point values.  <a href="#ac39b972f3c91e9da8c6e6fd0b6f457dc"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Contains tools to merge, collapse and otherwise modify animation curve. </p>
@@ -89,7 +96,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the average value of a list of floating-point values. This is a typical conversion function. </p>
+
+<p>Retrieves the average value of a list of floating-point values. </p>
+<p>This is a typical conversion function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>values</em>&nbsp;</td><td>The list of floating-point values. </td></tr>
@@ -100,7 +109,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aca4a52281fdbfd6c60337c8aa07aa5ae"></a><!-- doxytag: member="FCDAnimationCurveTools::Collapse" ref="aca4a52281fdbfd6c60337c8aa07aa5ae" args="(const FCDAnimationMultiCurve *curve, FCDCollapsingFunction collapse)" -->
+<a class="anchor" id="a90b9efa77a216a15613a71f160888c31"></a><!-- doxytag: member="FCDAnimationCurveTools::Collapse" ref="a90b9efa77a216a15613a71f160888c31" args="(const FCDAnimationMultiCurve *curve, FCDCollapsingFunction collapse=NULL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -124,8 +133,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Collapses a multi-dimensional curve into a one-dimensional curve. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFCDAnimationCurveTools.html#ac39b972f3c91e9da8c6e6fd0b6f457dc">Average</a> <a class="el" href="namespaceFCDAnimationCurveTools.html#a52f0bc674ece31d37bef0b8cf7999a27">TakeFirst</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFCDAnimationCurveTools.html#ac39b972f3c91e9da8c6e6fd0b6f457dc" title="Retrieves the average value of a list of floating-point values.">Average</a> <a class="el" href="namespaceFCDAnimationCurveTools.html#a52f0bc674ece31d37bef0b8cf7999a27" title="Retrieves the first floating-point value of a list of floating-point values.">TakeFirst</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>curve</em>&nbsp;</td><td>The multi-dimensional curve to collapse. </td></tr>
@@ -160,7 +170,10 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Merges multiple single-dimensional animation curves into one multi-dimensional animation curve. For each NULL element found within the 'toMerge' list, the corresponding default value is used. If there are not enough default values provided, zero is assumed. The number of dimensions for the output animation curve is taken as the size of the 'toMerge' list. </p>
+
+<p>Merges multiple single-dimensional animation curves into one multi-dimensional animation curve. </p>
+<p>See above.</p>
+<p>For each NULL element found within the 'toMerge' list, the corresponding default value is used. If there are not enough default values provided, zero is assumed. The number of dimensions for the output animation curve is taken as the size of the 'toMerge' list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>toMerge</em>&nbsp;</td><td>The list of single-dimensional animation curves to merge. This list may contain NULL elements, as explained above. </td></tr>
@@ -168,7 +181,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>See above. </p>
 
 </div>
 </div>
@@ -196,7 +208,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the first floating-point value of a list of floating-point values. This is a typical conversion function. </p>
+
+<p>Retrieves the first floating-point value of a list of floating-point values. </p>
+<p>This is a typical conversion function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>values</em>&nbsp;</td><td>The list of floating-point values. </td></tr>
@@ -222,7 +236,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:02 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:27 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDMorphController" --><!-- doxytag: inherits="FCDObject" -->
+<p>A COLLADA morpher.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDMorphController_8h_source.html">FCDMorphController.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDMorphController:</div>
@@ -77,26 +80,41 @@ Inheritance diagram for FCDMorphController:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a7ca19cd7aa4ee0e8ddac751037aa9fb0">FCDMorphController</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDController.html">FCDController</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a7ca19cd7aa4ee0e8ddac751037aa9fb0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a5e655cfc4e3e9419dc6fc6fd61c9b2e4">~FCDMorphController</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a5e655cfc4e3e9419dc6fc6fd61c9b2e4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDController.html">FCDController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#aa30efb4684a80d2c7226e3ad8819a24a">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parent entity for the morpher.  <a href="#aa30efb4684a80d2c7226e3ad8819a24a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDController.html">FCDController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a78fc1ba6858842513dc3a37ae553a786">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a78fc1ba6858842513dc3a37ae553a786"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a7ccafd403cc1abeec2a0324b583fd452">GetBaseTarget</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the base entity controlled by this morpher.  <a href="#a7ccafd403cc1abeec2a0324b583fd452"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a485e835aae8d8764fd0b0deaf5ea8659">GetBaseTarget</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a485e835aae8d8764fd0b0deaf5ea8659"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a11196ee1bd50c02cbd82e75397816272">SetBaseTarget</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *entity)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the base entity controlled by this morpher.  <a href="#a11196ee1bd50c02cbd82e75397816272"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a7ed532b78b17ff96e5cd1f888ecbf1b8">DEPRECATED</a> (3.05A, GetTargetCount and GetTarget(index)) void GetTargets() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of the morph targets.  <a href="#a7ed532b78b17ff96e5cd1f888ecbf1b8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#aec95e35c6454c09cfdd5bb76d5f79cc6">GetTargetCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of morph targets.  <a href="#aec95e35c6454c09cfdd5bb76d5f79cc6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMorphTarget.html">FCDMorphTarget</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a8a6aeeb920cd60af2ae403cdb2bbfb36">GetTarget</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific morph target.  <a href="#a8a6aeeb920cd60af2ae403cdb2bbfb36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDMorphTarget.html">FCDMorphTarget</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a2c08dbafbb92f3f22c660953249f7a76">GetTarget</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2c08dbafbb92f3f22c660953249f7a76"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMorphTarget.html">FCDMorphTarget</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a396c0633ba33ff55e8706fdf3a2e00d1">AddTarget</a> (<a class="el" href="classFCDGeometry.html">FCDGeometry</a> *geometry=NULL, float weight=0.0f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new morph target.  <a href="#a396c0633ba33ff55e8706fdf3a2e00d1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaeMorphMethod.html#a097fa073638c4df9edf9479f8561329e">FUDaeMorphMethod::Method</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a71ff7b5ac5470f189b0f04f8674d2c3c">GetMethod</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the method used to interpolate between the different morph targets.  <a href="#a71ff7b5ac5470f189b0f04f8674d2c3c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#af7519da3b3d47febca0b7a36f34aa3ec">SetMethod</a> (<a class="el" href="namespaceFUDaeMorphMethod.html#a097fa073638c4df9edf9479f8561329e">FUDaeMorphMethod::Method</a> _method)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the method used to interpolate between the different morph targets.  <a href="#af7519da3b3d47febca0b7a36f34aa3ec"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMorphController.html#a43685ec9f55c43b66e75f62c8b820980">IsSimilar</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *entity)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a given entity is similar to the base target.  <a href="#a43685ec9f55c43b66e75f62c8b820980"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA morpher.</p>
+<p>A COLLADA morpher. </p>
 <p>A morpher holds a base geometry and a set of morph targets that contains a geometry and a weight. The geometry must be similar to the base geometry and the weights are used to interpolate the vertex positions of the base geometry. To be similar, two meshes must have the same number of vertices and two splines must have the same number of control points. The morphing weights can be animated.</p>
-<p>There are two interpolation functions defined in COLLADA. See the <a class="el" href="namespaceFUDaeMorphMethod.html#a097fa073638c4df9edf9479f8561329e">FUDaeMorphMethod::Method</a> enumerated type for more information.</p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDMorphTarget.html">FCDMorphTarget</a> <a class="el" href="namespaceFUDaeMorphMethod.html">FUDaeMorphMethod</a> </dd></dl>
+<p>There are two interpolation functions defined in COLLADA. See the <a class="el" href="namespaceFUDaeMorphMethod.html#a097fa073638c4df9edf9479f8561329e" title="A morphing method.">FUDaeMorphMethod::Method</a> enumerated type for more information.</p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDMorphTarget.html" title="A COLLADA morph target.">FCDMorphTarget</a> <a class="el" href="namespaceFUDaeMorphMethod.html" title="Contains the morphing method for morph controllers and their conversion functions.">FUDaeMorphMethod</a> </dd></dl>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7ca19cd7aa4ee0e8ddac751037aa9fb0"></a><!-- doxytag: member="FCDMorphController::FCDMorphController" ref="a7ca19cd7aa4ee0e8ddac751037aa9fb0" args="(FCDocument *document, FCDController *parent)" -->
 <div class="memitem">
@@ -122,7 +140,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDController.html#a7c96f2438b2cd4e69385c9c7d0172371">FCDController::CreateMorphController</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDController.html#a7c96f2438b2cd4e69385c9c7d0172371" title="Sets the type of this controller to a morph controller.">FCDController::CreateMorphController</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the morpher. </td></tr>
@@ -147,6 +167,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -176,6 +197,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new morph target. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -212,7 +234,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the list of the morph targets. All the morph target geometries should be similar to the base entity. </p>
+
+<p>Retrieves the list of the morph targets. </p>
+<p>All the morph target geometries should be similar to the base entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The morph targets. </dd></dl>
 
 </div>
@@ -231,6 +255,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -249,7 +274,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the base entity controlled by this morpher. This entity may be a geometry or another controller. </p>
+
+<p>Retrieves the base entity controlled by this morpher. </p>
+<p>This entity may be a geometry or another controller. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The base target. </dd></dl>
 
 </div>
@@ -268,6 +295,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the method used to interpolate between the different morph targets. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The interpolation method. </dd></dl>
 
@@ -287,6 +315,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -305,6 +334,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the parent entity for the morpher. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parent controller entity. </dd></dl>
 
@@ -325,6 +355,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -344,6 +375,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific morph target. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -369,6 +401,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of morph targets. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of morph targets. </dd></dl>
 
@@ -389,7 +422,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether a given entity is similar to the base target. Entities must be similar to be able to morph between them. </p>
+
+<p>Retrieves whether a given entity is similar to the base target. </p>
+<p>Entities must be similar to be able to morph between them. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>entity</em>&nbsp;</td><td>An entity. </td></tr>
@@ -415,7 +450,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the base entity controlled by this morpher. This entity may be a geometry or another controller. Since the morph targets must be similar to this entity, all the morph targets that are not similar to the new base entity will be removed. </p>
+
+<p>Sets the base entity controlled by this morpher. </p>
+<p>This entity may be a geometry or another controller. Since the morph targets must be similar to this entity, all the morph targets that are not similar to the new base entity will be removed. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>entity</em>&nbsp;</td><td>The new base entity. </td></tr>
@@ -440,6 +477,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the method used to interpolate between the different morph targets. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -469,7 +507,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:40 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:19 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -55,6 +55,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FUDaePassStateStencilOperation Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>The stencil operation types for the effect pass render states.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -72,11 +75,16 @@ Enumerations</h2></td></tr>
 &nbsp;&nbsp;<a class="el" href="namespaceFUDaePassStateStencilOperation.html#a8024554a396a96ced879eae8c80b9ea7aca19f757adeb31e08def03d0ce264a69">INVALID</a>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Enumerates the COLLADA stencil operation types. </p>
+ <a href="namespaceFUDaePassStateStencilOperation.html#a8024554a396a96ced879eae8c80b9ea7">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassStateStencilOperation.html#a8024554a396a96ced879eae8c80b9ea7">Operation</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateStencilOperation.html#a13e1da0570eedc3932e24bf9bcaf6e00">FromString</a> (const char *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the COLLADA render state stencil operation string to the stencil operation type.  <a href="#a13e1da0570eedc3932e24bf9bcaf6e00"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateStencilOperation.html#a7e0fb155ca55db3a349b364755ba8cb8">ToString</a> (<a class="el" href="namespaceFUDaePassStateStencilOperation.html#a8024554a396a96ced879eae8c80b9ea7">Operation</a> op)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the stencil operation type to its COLLADA render state function string.  <a href="#a7e0fb155ca55db3a349b364755ba8cb8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassStateStencilOperation.html#a8024554a396a96ced879eae8c80b9ea7">Operation</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateStencilOperation.html#ae9ca085be44b57cc8ae1400e33c45617">FromString</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae9ca085be44b57cc8ae1400e33c45617"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The stencil operation types for the effect pass render states. </p>
@@ -91,6 +99,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Enumerates the COLLADA stencil operation types. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a8024554a396a96ced879eae8c80b9ea7a7e2166261985b13734744ac4211f6c7e"></a><!-- doxytag: member="KEEP" ref="a8024554a396a96ced879eae8c80b9ea7a7e2166261985b13734744ac4211f6c7e" args="" -->KEEP</em>&nbsp;</td><td>
@@ -109,7 +118,8 @@ Functions</h2></td></tr>
 <p>Decrement the stencil value, stop at zero. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a8024554a396a96ced879eae8c80b9ea7a6157d9c15dc59666780234222499d735"></a><!-- doxytag: member="INVERT" ref="a8024554a396a96ced879eae8c80b9ea7a6157d9c15dc59666780234222499d735" args="" -->INVERT</em>&nbsp;</td><td>
-<p>Invert the stencil value. On a 8-bit stencil buffer, this implies the following: StencilValue = 255 - StencilValue. </p>
+<p>Invert the stencil value. </p>
+<p>On a 8-bit stencil buffer, this implies the following: StencilValue = 255 - StencilValue. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a8024554a396a96ced879eae8c80b9ea7a8de6b37723421988712c9d94aef2b38c"></a><!-- doxytag: member="INCREMENT_WRAP" ref="a8024554a396a96ced879eae8c80b9ea7a8de6b37723421988712c9d94aef2b38c" args="" -->INCREMENT_WRAP</em>&nbsp;</td><td>
 <p>Increment the stencil value and if the maximum value is reached, set to zero. </p>
@@ -142,6 +152,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the COLLADA render state stencil operation string to the stencil operation type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -168,6 +179,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -187,6 +199,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the stencil operation type to its COLLADA render state function string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -213,7 +226,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:04 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:28 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

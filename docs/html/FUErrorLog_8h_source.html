@@ -63,29 +63,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FU_ERROR_LOG_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
 <a name="l00017"></a>00017 <span class="preprocessor">#ifndef _FU_ERROR_H_</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUError_8h.html">FUtils/FUError.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUError_8h.html" title="This file contains the FUError class.">FUtils/FUError.h</a>&quot;</span>
 <a name="l00019"></a>00019 <span class="preprocessor">#endif // _FU_ERROR_H_</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span>
-<a name="l00021"></a>00021 <span class="keyword">class </span><a class="code" href="classFULogFile.html">FULogFile</a>;
+<a name="l00021"></a>00021 <span class="keyword">class </span><a class="code" href="classFULogFile.html" title="A log file.">FULogFile</a>;
 <a name="l00022"></a>00022 
-<a name="l00029"></a><a class="code" href="classFUErrorLog.html">00029</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUErrorLog.html">FUErrorLog</a>
+<a name="l00029"></a><a class="code" href="classFUErrorLog.html">00029</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUErrorLog.html" title="An error log.">FUErrorLog</a>
 <a name="l00030"></a>00030 {
 <a name="l00031"></a>00031 <span class="keyword">private</span>:
-<a name="l00032"></a>00032         <a class="code" href="classFULogFile.html">FULogFile</a>* logFile;
+<a name="l00032"></a>00032         <a class="code" href="classFULogFile.html" title="A log file.">FULogFile</a>* logFile;
 <a name="l00033"></a>00033         uint32 counts[FUError::LEVEL_COUNT];
-<a name="l00034"></a>00034         <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> minimumLevel;
+<a name="l00034"></a>00034         <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> minimumLevel;
 <a name="l00035"></a>00035 
 <a name="l00036"></a>00036 <span class="keyword">public</span>:
-<a name="l00043"></a>00043         <a class="code" href="classFUErrorLog.html">FUErrorLog</a>(<span class="keyword">const</span> fchar* logFilename, <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel);
+<a name="l00043"></a>00043         <a class="code" href="classFUErrorLog.html" title="An error log.">FUErrorLog</a>(<span class="keyword">const</span> fchar* logFilename, <a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> errorLevel);
 <a name="l00044"></a>00044 
-<a name="l00047"></a>00047         ~<a class="code" href="classFUErrorLog.html">FUErrorLog</a>();
+<a name="l00047"></a>00047         ~<a class="code" href="classFUErrorLog.html" title="An error log.">FUErrorLog</a>();
 <a name="l00048"></a>00048 
-<a name="l00052"></a><a class="code" href="classFUErrorLog.html#a5d942e975831c08be9981582b20f311f">00052</a>         <a class="code" href="classFULogFile.html">FULogFile</a>* <a class="code" href="classFUErrorLog.html#a5d942e975831c08be9981582b20f311f">GetLogFile</a>() { <span class="keywordflow">return</span> logFile; }
+<a name="l00052"></a><a class="code" href="classFUErrorLog.html#a5d942e975831c08be9981582b20f311f">00052</a>         <a class="code" href="classFULogFile.html" title="A log file.">FULogFile</a>* <a class="code" href="classFUErrorLog.html#a5d942e975831c08be9981582b20f311f" title="Retrieves the log file handler.">GetLogFile</a>() { <span class="keywordflow">return</span> logFile; }
 <a name="l00053"></a>00053 
 <a name="l00058"></a>00058         <span class="keywordtype">void</span> QueryNewMessages(uint32&amp; debug, uint32&amp; warnings, uint32&amp; errors);
 <a name="l00059"></a>00059 
 <a name="l00060"></a>00060 <span class="keyword">private</span>:
-<a name="l00061"></a>00061         <span class="keywordtype">void</span> OnErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> level, uint32 errorCode, uint32 argument);
+<a name="l00061"></a>00061         <span class="keywordtype">void</span> OnErrorCallback(<a class="code" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c" title="Error level defines supported error message levels in FCollada.">FUError::Level</a> level, uint32 errorCode, uint32 argument);
 <a name="l00062"></a>00062 };
 <a name="l00063"></a>00063 
 <a name="l00064"></a>00064 <span class="preprocessor">#endif // _FU_ERROR_LOG_H_</span>
@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:12 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

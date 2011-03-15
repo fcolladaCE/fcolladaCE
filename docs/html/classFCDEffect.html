@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEffect" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA effect.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffect_8h_source.html">FCDEffect.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEffect:</div>
@@ -79,28 +82,46 @@ Inheritance diagram for FCDEffect:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#ad2e620e6c041da706302e8541344a5e9">FCDEffect</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#ad2e620e6c041da706302e8541344a5e9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a6c1b6a6d3aefb9c011dd8fa7c116e0d6">~FCDEffect</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a6c1b6a6d3aefb9c011dd8fa7c116e0d6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#ab6106f67f33a4cb049ea17a1970bbfbe">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type for this entity class.  <a href="#ab6106f67f33a4cb049ea17a1970bbfbe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a07ca7c378d3ecf158beefe5ba35143ae">GetProfileCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of profiles contained within the effect.  <a href="#a07ca7c378d3ecf158beefe5ba35143ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a22c8dc9f098387eaa2ffb6a66aceb22d">GetProfile</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a profile contained within the effect.  <a href="#a22c8dc9f098387eaa2ffb6a66aceb22d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#aad9b921743685b02b847d30670dc1631">GetProfile</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aad9b921743685b02b847d30670dc1631"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a227ef80a932cf071f0fdd299b00cfed9">DEPRECATED</a> (3.05A, GetProfileCount and GetProfile(index)) void GetProfiles() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of the profiles contained within the effect.  <a href="#a227ef80a932cf071f0fdd299b00cfed9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#ad81082bec4aa4d90bf595b598e8f3330">FindProfile</a> (<a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79">FUDaeProfileType::Type</a> type) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the first profile for a specific profile type.  <a href="#ad81082bec4aa4d90bf595b598e8f3330"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a110a7d6488fc376b63e3f6ef7166e0c4">FindProfile</a> (<a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79">FUDaeProfileType::Type</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a110a7d6488fc376b63e3f6ef7166e0c4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a439f45f6a34e9ae11990e8bded9b9867">FindProfileByTypeAndPlatform</a> (<a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79">FUDaeProfileType::Type</a> type, const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;platform)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the profile for a specific profile type and platform.  <a href="#a439f45f6a34e9ae11990e8bded9b9867"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a6f82a6071958b135a8655702d3875b58">FindProfileByTypeAndPlatform</a> (<a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79">FUDaeProfileType::Type</a> type, const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;platform) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6f82a6071958b135a8655702d3875b58"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a0e210e70a9933fc89f314747edbb3bf5">HasProfile</a> (<a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79">FUDaeProfileType::Type</a> type) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the effect contains a profile of the given type.  <a href="#a0e210e70a9933fc89f314747edbb3bf5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#abe53b1e58ce5469b28f63b5155703a95">AddProfile</a> (<a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79">FUDaeProfileType::Type</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a profile of the given type.  <a href="#abe53b1e58ce5469b28f63b5155703a95"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#aa0a011919dc7b8b3e40d07b3110f85b3">GetEffectParameterCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of local effect parameters.  <a href="#aa0a011919dc7b8b3e40d07b3110f85b3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#aa426058e105da62cec3eb4f8f3efd31c">GetEffectParameter</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a given local effect parameter.  <a href="#aa426058e105da62cec3eb4f8f3efd31c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4da98a447ccfeb406fce54c5a880fd5"></a><!-- doxytag: member="FCDEffect::GetEffectParameter" ref="ac4da98a447ccfeb406fce54c5a880fd5" args="(size_t index) const " -->
 const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>GetEffectParameter</b> (size_t index) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a19ae444c7d61d619accac5eab4f1ea4e">AddEffectParameter</a> (uint32 type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a local effect parameter to the local list.  <a href="#a19ae444c7d61d619accac5eab4f1ea4e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a7582fbc089f3eff95fd522c20d492b98">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones the effect object.  <a href="#a7582fbc089f3eff95fd522c20d492b98"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffect.html#a20106fd0bb005c517153dc5cedc14a23">DEPRECATED</a> (3.05A, not recommended) void Flatten()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Flattens the effect, pushing all the common effect parameters into to the effect technique level of abstraction.  <a href="#a20106fd0bb005c517153dc5cedc14a23"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA effect.</p>
+<p>A COLLADA effect. </p>
 <p>A COLLADA effect is one of many abstraction level that defines how to render mesh polygon sets. It contains one or more rendering profile that the application can choose to support. In theory, all the rendering profiles should reach the same render output, using different rendering technologies.</p>
 <p>An effect may also declare new general purpose parameters that are common to all the profiles. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
@@ -119,7 +140,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead use the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0">FCDLibrary::AddEntity</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead use the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0" title="Creates a new entity within this library.">FCDLibrary::AddEntity</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns this effect. </td></tr>
@@ -143,6 +166,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -163,8 +187,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a local effect parameter to the local list. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">FCDEffectParameter::Type</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08" title="The value type of the effect parameter.">FCDEffectParameter::Type</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The value type of the effect parameter to create. </td></tr>
@@ -190,7 +215,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Creates a profile of the given type. If a profile of this type already exists, it will be released, as a COLLADA effect should only contain one profile of each type. </p>
+
+<p>Creates a profile of the given type. </p>
+<p>If a profile of this type already exists, it will be released, as a COLLADA effect should only contain one profile of each type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The profile type. </td></tr>
@@ -225,6 +252,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones the effect object. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -263,6 +291,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of the profiles contained within the effect. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of effect profiles. </dd></dl>
 
@@ -292,7 +321,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Flattens the effect, pushing all the common effect parameters into to the effect technique level of abstraction. To correctly flatten a material, use the FCDMaterialInstance::FlattenMaterial function. </p>
+
+<p>[INTERNAL] Flattens the effect, pushing all the common effect parameters into to the effect technique level of abstraction. </p>
+<p>To correctly flatten a material, use the FCDMaterialInstance::FlattenMaterial function. </p>
 
 </div>
 </div>
@@ -311,7 +342,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the first profile for a specific profile type. There should only be one profile of each type within an effect. This function allows you to retrieve the profile for a given type. </p>
+
+<p>Retrieves the first profile for a specific profile type. </p>
+<p>There should only be one profile of each type within an effect. This function allows you to retrieve the profile for a given type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The profile type. </td></tr>
@@ -337,6 +370,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -365,6 +399,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -393,7 +428,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the profile for a specific profile type and platform. There should only be one profile of each type within an effect. This function allows you to retrieve the profile for a given type. </p>
+
+<p>Retrieves the profile for a specific profile type and platform. </p>
+<p>There should only be one profile of each type within an effect. This function allows you to retrieve the profile for a given type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The profile type. </td></tr>
@@ -420,6 +457,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a given local effect parameter. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -445,7 +483,8 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the number of local effect parameters </p>
+
+<p>Retrieves the number of local effect parameters. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of local effect parameters. </dd></dl>
 
 </div>
@@ -465,6 +504,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a profile contained within the effect. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -491,6 +531,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -509,6 +550,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of profiles contained within the effect. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of profiles within the effect. </dd></dl>
 
@@ -528,7 +570,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the type for this entity class. This function is a part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the type for this entity class. </p>
+<p>This function is a part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: EFFECT. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -550,6 +594,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether the effect contains a profile of the given type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -580,7 +625,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:27 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:15 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDLight" --><!-- doxytag: inherits="FCDTargetedEntity" -->
+<p>A COLLADA light.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDLight_8h_source.html">FCDLight.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDLight:</div>
@@ -85,53 +88,95 @@ Public Types</h2></td></tr>
 <a class="el" href="classFCDLight.html#a358eac688b4a74aa90531e5206e92e60abf76b195d4f9db1832f491c0b6223c5e">AMBIENT</a>, 
 <a class="el" href="classFCDLight.html#a358eac688b4a74aa90531e5206e92e60a07c34b01d651ace906e59ff728a8112d">DIRECTIONAL</a>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The types of lights supported by this class. </p>
+ <a href="classFCDLight.html#a358eac688b4a74aa90531e5206e92e60">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#aaf95e04d9a0fabdd2fa9d0e58884c9da">FCDLight</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#aaf95e04d9a0fabdd2fa9d0e58884c9da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a1d1691af54cdf575c315978724445d0f">~FCDLight</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a1d1691af54cdf575c315978724445d0f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a846e07aee92d19dd745a98462a9ffd74">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity type for this class.  <a href="#a846e07aee92d19dd745a98462a9ffd74"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a79f78c8ab362a43382aca2ca17009242">DEPRECATED</a> (3.05A, GetExtra()-&gt;GetDefaultType()-&gt;GetTechniques()) virtual bool HasMaxExtras() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Checks if the light uses a DCC specific representation Currently always returns false.  <a href="#a79f78c8ab362a43382aca2ca17009242"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a6abbb56f9c405ea01142624563e98da4">DEPRECATED</a> (3.05A, GetExtra()-&gt;GetDefaultType()-&gt;GetTechniques()) virtual bool HasMayaExtras() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6abbb56f9c405ea01142624563e98da4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#acdbb83fef4b9a591f275c45e189e17d0">DEPRECATED</a> (3.05A, nothing) void SetHasMaxExtras(bool UNUSED(value))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Set DCC specific flags.  <a href="#acdbb83fef4b9a591f275c45e189e17d0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a772b1b8220e7e8d3e8d60a342962116a"></a><!-- doxytag: member="FCDLight::DEPRECATED" ref="a772b1b8220e7e8d3e8d60a342962116a" args="(3.05A, nothing) void SetHasMayaExtras(bool UNUSED(value))" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>DEPRECATED</b> (3.05A, nothing) void SetHasMayaExtras(bool UNUSED(value))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableColor3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a8b7c9d40d5fb2380b695bbb13acf7700">GetColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the base color for the light.  <a href="#a8b7c9d40d5fb2380b695bbb13acf7700"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableColor3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#ad1dac1ef4662b5848641e9effb782fe9">GetColor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad1dac1ef4662b5848641e9effb782fe9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#ae0391538fa3a7e801bf1a67376b99849">SetColor</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;col)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the base color for the light.  <a href="#ae0391538fa3a7e801bf1a67376b99849"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a5f1bf45318a9c58ab16e2617ac3151a7">SetColor</a> (float r, float g, float b)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the base color for the light.  <a href="#a5f1bf45318a9c58ab16e2617ac3151a7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#ad5ec2806163a582d5e03e48b8a45e4c9">GetIntensity</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the intensity of the light.  <a href="#ad5ec2806163a582d5e03e48b8a45e4c9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a16c3d05bff3f7abb521e560ef48d0d04">GetIntensity</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a16c3d05bff3f7abb521e560ef48d0d04"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a5805489e21bcaa487fe165b1e23c48c9">SetIntensity</a> (float _intensity)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the intensity of the light.  <a href="#a5805489e21bcaa487fe165b1e23c48c9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDLight.html#a358eac688b4a74aa90531e5206e92e60">LightType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#aa6a7002af06c8663e083390a8497bc88">GetLightType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of the light.  <a href="#aa6a7002af06c8663e083390a8497bc88"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#af1d0df3b52fd2bc9d19ccc9f7e8f1b2b">SetLightType</a> (<a class="el" href="classFCDLight.html#a358eac688b4a74aa90531e5206e92e60">LightType</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the type of the light.  <a href="#af1d0df3b52fd2bc9d19ccc9f7e8f1b2b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#aea02a8559a510bbeca4f72afaa8e8f22">GetConstantAttenuationFactor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the constant attenuation factor for the light.  <a href="#aea02a8559a510bbeca4f72afaa8e8f22"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a20e469466a910905e4f81e3256befe8a">GetConstantAttenuationFactor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a20e469466a910905e4f81e3256befe8a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#aacb2ad42d6e14393e1016866f2fb90fa">SetConstantAttenuationFactor</a> (float factor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the constant attenuation factor for the light.  <a href="#aacb2ad42d6e14393e1016866f2fb90fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#afa5378f4371d9cd543cac259b8ab7378">GetLinearAttenuationFactor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the linear attenuation factor for the light.  <a href="#afa5378f4371d9cd543cac259b8ab7378"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a14aa36a91c0bcc3a93ffa2ff78e7b835">GetLinearAttenuationFactor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a14aa36a91c0bcc3a93ffa2ff78e7b835"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#ac49add5d8113667515dbf732f54b074c">SetLinearAttenuationFactor</a> (float factor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the linear attenuation factor for the light.  <a href="#ac49add5d8113667515dbf732f54b074c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a3fdaf79fdbf70bd93d79c0bece5584c1">GetQuadraticAttenuationFactor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the quadratic attenuation factor for the light.  <a href="#a3fdaf79fdbf70bd93d79c0bece5584c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#afb2a25f365919613c231f353a2058ca7">GetQuadraticAttenuationFactor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#afb2a25f365919613c231f353a2058ca7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a2d399fdd6cb7acb438f4a928bed8990f">SetQuadraticAttenuationFactor</a> (float factor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the quadratic attenuation factor for the light.  <a href="#a2d399fdd6cb7acb438f4a928bed8990f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a1e02138df1878250de6522a1bc62241f">GetFallOffExponent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the fall-off exponent for the light.  <a href="#a1e02138df1878250de6522a1bc62241f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a1775321a4cf1fba59c3e4a87c8b48c16">GetFallOffExponent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1775321a4cf1fba59c3e4a87c8b48c16"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a41ef012ce10d686bdd298e125523914c">SetFallOffExponent</a> (float exponent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the fall-off exponent for the light.  <a href="#a41ef012ce10d686bdd298e125523914c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#ac6eb92ada915ff9fad5011d3a5791d7e">GetFallOffAngle</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the fall-off angle for the light.  <a href="#ac6eb92ada915ff9fad5011d3a5791d7e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a412b2e2c187cb38ab04a32cf313e8e96">GetFallOffAngle</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a412b2e2c187cb38ab04a32cf313e8e96"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#af5ab71bc8463b42473a3d65d5f5a6f53">SetFallOffAngle</a> (float angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the fall-off angle for the light.  <a href="#af5ab71bc8463b42473a3d65d5f5a6f53"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#aad96306d544e03d49389617e4a1ec423">GetOuterAngle</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the outer angle for the light.  <a href="#aad96306d544e03d49389617e4a1ec423"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a21063a50503cdc2c5ad9337b0e20fac0">GetOuterAngle</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a21063a50503cdc2c5ad9337b0e20fac0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#add7a7a1357b00dee19f0a2add3d21818">SetOuterAngle</a> (float angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the outer angle for the light.  <a href="#add7a7a1357b00dee19f0a2add3d21818"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a127fc0c85f489c5087542cf0267593ab">DEPRECATED</a> (3.05A, GetOuterAngle and GetFallOffAngle) float &amp;GetPenumbraAngle()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the penumbra angle for the light.  <a href="#a127fc0c85f489c5087542cf0267593ab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a95d4f8b8d9b8f7d177405d1139ab346b">DEPRECATED</a> (3.05A, GetOuterAngle and GetFallOffAngle) const float &amp;GetPenumbraAngle() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a95d4f8b8d9b8f7d177405d1139ab346b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#ad69a3aca5f0962c52c75d65bf51f55a5">DEPRECATED</a> (3.05A, SetOuterAngle and SetFallOffAngle) void SetPenumbraAngle(float angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the penumbra angle for the light.  <a href="#ad69a3aca5f0962c52c75d65bf51f55a5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#ae532074b29738e69ef8e0bc73de993ad">GetDropoff</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the drop-off for the light.  <a href="#ae532074b29738e69ef8e0bc73de993ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a11ea9829880b669586fde18745710649">GetDropoff</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a11ea9829880b669586fde18745710649"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLight.html#a78e8a5e5465c92226c41cc93e22652da">SetDropoff</a> (float factor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the drop-off for the light.  <a href="#a78e8a5e5465c92226c41cc93e22652da"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA light. Based on the <a class="el" href="classFCDTargetedEntity.html">FCDTargetedEntity</a> class to supported aimed lights. COLLADA defines four types of native lights: point, spot, ambient and directional. These four types are fully handled by this class: make sure to check the type flag as well as which information to expect for each light type.</p>
+<p>A COLLADA light. </p>
+<p>Based on the <a class="el" href="classFCDTargetedEntity.html" title="A targeted entity.">FCDTargetedEntity</a> class to supported aimed lights. COLLADA defines four types of native lights: point, spot, ambient and directional. These four types are fully handled by this class: make sure to check the type flag as well as which information to expect for each light type.</p>
 <p>A COLLADA ambient light has a global color, which should be added to all other lighting on all geometry.</p>
 <p>A COLLADA directional light has a global color, which should be multiplied to the cosine of the angle between the normal vector of a triangle and the direction of the light. Note that the direction will be calculated from the transforms, for each instance, and is not provided by this class.</p>
 <p>A COLLADA point light has a color which attenuates as the distance increases between the light position and the vertex being shaded. Note that the position will be calculated from the transforms, for each instance, and is not provided by this class.</p>
@@ -147,10 +192,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The types of lights supported by this class. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a358eac688b4a74aa90531e5206e92e60acdd1f5feac88cf971d9edad4126243c5"></a><!-- doxytag: member="POINT" ref="a358eac688b4a74aa90531e5206e92e60acdd1f5feac88cf971d9edad4126243c5" args="" -->POINT</em>&nbsp;</td><td>
-<p>A point light. This is the default type. </p>
+<p>A point light. </p>
+<p>This is the default type. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a358eac688b4a74aa90531e5206e92e60aaca948f926e7b39611a4f5a4886db8cd"></a><!-- doxytag: member="SPOT" ref="a358eac688b4a74aa90531e5206e92e60aaca948f926e7b39611a4f5a4886db8cd" args="" -->SPOT</em>&nbsp;</td><td>
 <p>A spot light. </p>
@@ -183,7 +230,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Create new lights using the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0">FCDLibrary::AddEntity</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Create new lights using the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0" title="Creates a new entity within this library.">FCDLibrary::AddEntity</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that contains this light entity. </td></tr>
@@ -207,6 +256,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -236,8 +286,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Checks if the light uses a DCC specific representation Currently always returns false. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Instead use: <a class="el" href="classFCDEntity.html#a2f05f99564ddf44896602ef020a3b5c1">GetExtra()</a>-&gt;GetDefaultType()-&gt;GetTechniques() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Instead use: <a class="el" href="classFCDEntity.html#a2f05f99564ddf44896602ef020a3b5c1" title="Retrieves the extra information tree for this entity.">GetExtra()</a>-&gt;GetDefaultType()-&gt;GetTechniques() </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The DCC flag. </dd></dl>
 
 </div>
@@ -266,6 +317,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Set DCC specific flags. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Internal method, should never have been used. </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
@@ -301,9 +353,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the penumbra angle for the light. This value is valid only for spot lights. The value is only used by documents exported by ColladaMaya. This value is relative to the fall-off angle and may be negative. If this value is positive, it determines the outer angle, as described above. If this value is negative, the fall-off angle is used as the outer angle and the fall-off angle + the penumbra angle is used as the full-lighting angle. This now actually does nothing but gets the value assigned in SetPenumbraAngle </p>
+
+<p>Retrieves the penumbra angle for the light. </p>
+<p>This value is valid only for spot lights. The value is only used by documents exported by ColladaMaya. This value is relative to the fall-off angle and may be negative. If this value is positive, it determines the outer angle, as described above. If this value is negative, the fall-off angle is used as the outer angle and the fall-off angle + the penumbra angle is used as the full-lighting angle. This now actually does nothing but gets the value assigned in SetPenumbraAngle </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Instead use: GetOuterAngle and GetFallOffAngle </dd></dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDLight.html#aad96306d544e03d49389617e4a1ec423">GetOuterAngle</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDLight.html#aad96306d544e03d49389617e4a1ec423" title="Retrieves the outer angle for the light.">GetOuterAngle</a> </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spot light penumbra angle. </dd></dl>
 
 </div>
@@ -332,6 +386,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -360,8 +415,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the penumbra angle for the light. This now actually doesn't nothing except sets a variable that you can read back with GetPenumbraAngle. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Instead use: SetOuterAngle and SetFallOffAngle, or <a class="el" href="namespaceFCDLightTools.html#ac7e4420bb00c7765b91debb75fbf673f">FCDLightTools::LoadPenumbra</a> </dd></dl>
+
+<p>Sets the penumbra angle for the light. </p>
+<p>This now actually doesn't nothing except sets a variable that you can read back with GetPenumbraAngle. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Instead use: SetOuterAngle and SetFallOffAngle, or <a class="el" href="namespaceFCDLightTools.html#aea637723088e41d5703a25eba8f262fc" title="Loads the penumbra into the light.">FCDLightTools::LoadPenumbra</a> </dd></dl>
 <dl class="see"><dt><b>See also:</b></dt><dd>GetPenumbraAngle </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -396,6 +453,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -414,7 +472,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the base color for the light. To calculate the light color, multiply the base color with the intensity. </p>
+
+<p>Retrieves the base color for the light. </p>
+<p>To calculate the light color, multiply the base color with the intensity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The base color for the light. </dd></dl>
 
 </div>
@@ -433,6 +493,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -451,6 +512,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -469,7 +531,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the constant attenuation factor for the light. This value is valid only for point and spot lights. </p>
+
+<p>Retrieves the constant attenuation factor for the light. </p>
+<p>This value is valid only for point and spot lights. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The constant attenuation factor. </dd></dl>
 
 </div>
@@ -488,7 +552,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the drop-off for the light. It defines the rate at which a spot light gets dimmer from the center of the beam to outside angles. </p>
+
+<p>Retrieves the drop-off for the light. </p>
+<p>It defines the rate at which a spot light gets dimmer from the center of the beam to outside angles. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The drop-off for the light. </dd></dl>
 
 </div>
@@ -507,6 +573,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -525,7 +592,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the fall-off angle for the light. This value is valid only for spot lights. It defines the cone of the spot light. </p>
+
+<p>Retrieves the fall-off angle for the light. </p>
+<p>This value is valid only for spot lights. It defines the cone of the spot light. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spot light fall-off angle. </dd></dl>
 
 </div>
@@ -544,6 +613,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -562,7 +632,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the fall-off exponent for the light. This value is valid only for spot lights. It determines how fast the lighting turns off, with respect to angles greater than the fall-off angle. This results in a smooth lighting at the spot light's edges.</p>
+
+<p>Retrieves the fall-off exponent for the light. </p>
+<p>This value is valid only for spot lights. It determines how fast the lighting turns off, with respect to angles greater than the fall-off angle. This results in a smooth lighting at the spot light's edges.</p>
 <p>IMPORTANT NOTE: Neither ColladaMaya or ColladaMax use this value as neither Maya or 3dsMax use this technique for soft lighting.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spot light fall-off exponent. </dd></dl>
 
@@ -582,6 +654,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -600,7 +673,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the intensity of the light. To calculate the light color, multiply the base color with the intensity. </p>
+
+<p>Retrieves the intensity of the light. </p>
+<p>To calculate the light color, multiply the base color with the intensity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The intensity of the light. </dd></dl>
 
 </div>
@@ -619,6 +694,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -637,7 +713,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the type of the light. Make sure to check the type of light before using the values, as some values may not make sense with some types of light. </p>
+
+<p>Retrieves the type of the light. </p>
+<p>Make sure to check the type of light before using the values, as some values may not make sense with some types of light. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The light type. </dd></dl>
 
 </div>
@@ -656,7 +734,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the linear attenuation factor for the light. This value is valid only for point and spot lights. </p>
+
+<p>Retrieves the linear attenuation factor for the light. </p>
+<p>This value is valid only for point and spot lights. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The linear attenuation factor. </dd></dl>
 
 </div>
@@ -675,6 +755,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -693,6 +774,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -711,7 +793,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the outer angle for the light. This value is valid only for spot lights. This value is used by documents exported by ColladaMax and ColladaMaya. This value should always be greater than the fall-off angle. It represents the angle at which the lighting is black. All lighting between the fall-off angle and the outer angle is a linear interpolation between the light color and black. </p>
+
+<p>Retrieves the outer angle for the light. </p>
+<p>This value is valid only for spot lights. This value is used by documents exported by ColladaMax and ColladaMaya. This value should always be greater than the fall-off angle. It represents the angle at which the lighting is black. All lighting between the fall-off angle and the outer angle is a linear interpolation between the light color and black. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spot light outer angle. </dd></dl>
 
 </div>
@@ -730,7 +814,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the quadratic attenuation factor for the light. This value is valid only for point and spot lights. </p>
+
+<p>Retrieves the quadratic attenuation factor for the light. </p>
+<p>This value is valid only for point and spot lights. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The quadratic attenuation factor. </dd></dl>
 
 </div>
@@ -749,6 +835,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -767,7 +854,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity type for this class. This function is part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity type for this class. </p>
+<p>This function is part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: LIGHT. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -804,7 +893,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the base color for the light. To calculate the light color, multiply the base color with the intensity. </p>
+
+<p>Sets the base color for the light. </p>
+<p>To calculate the light color, multiply the base color with the intensity. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>The red component for the light color. </td></tr>
@@ -831,7 +922,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the base color for the light. To calculate the light color, multiply the base color with the intensity. </p>
+
+<p>Sets the base color for the light. </p>
+<p>To calculate the light color, multiply the base color with the intensity. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>col</em>&nbsp;</td><td>The base color for the light. </td></tr>
@@ -856,7 +949,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the constant attenuation factor for the light. This value is valid only for point and spot lights. </p>
+
+<p>Sets the constant attenuation factor for the light. </p>
+<p>This value is valid only for point and spot lights. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>factor</em>&nbsp;</td><td>The constant attenuation factor. </td></tr>
@@ -881,6 +976,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the drop-off for the light. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -906,8 +1002,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the fall-off angle for the light. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDLight.html#ac6eb92ada915ff9fad5011d3a5791d7e">GetFallOffAngle</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDLight.html#ac6eb92ada915ff9fad5011d3a5791d7e" title="Retrieves the fall-off angle for the light.">GetFallOffAngle</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>angle</em>&nbsp;</td><td>The spot light fall-off angle. </td></tr>
@@ -932,8 +1029,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the fall-off exponent for the light. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDLight.html#a1e02138df1878250de6522a1bc62241f">GetFallOffExponent</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDLight.html#a1e02138df1878250de6522a1bc62241f" title="Retrieves the fall-off exponent for the light.">GetFallOffExponent</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>exponent</em>&nbsp;</td><td>The spot light fall-off exponent. </td></tr>
@@ -958,7 +1056,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the intensity of the light. To calculate the light color, multiply the base color with the intensity. </p>
+
+<p>Sets the intensity of the light. </p>
+<p>To calculate the light color, multiply the base color with the intensity. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_intensity</em>&nbsp;</td><td>The intensity of the light. </td></tr>
@@ -983,7 +1083,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the type of the light. The default type of a new light is POINT. </p>
+
+<p>Sets the type of the light. </p>
+<p>The default type of a new light is POINT. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The light type. </td></tr>
@@ -1008,7 +1110,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the linear attenuation factor for the light. This value is valid only for point and spot lights. </p>
+
+<p>Sets the linear attenuation factor for the light. </p>
+<p>This value is valid only for point and spot lights. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>factor</em>&nbsp;</td><td>The linear attenuation factor. </td></tr>
@@ -1033,8 +1137,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the outer angle for the light. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDLight.html#aad96306d544e03d49389617e4a1ec423">GetOuterAngle</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDLight.html#aad96306d544e03d49389617e4a1ec423" title="Retrieves the outer angle for the light.">GetOuterAngle</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>angle</em>&nbsp;</td><td>The spot light outer angle. </td></tr>
@@ -1059,7 +1164,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the quadratic attenuation factor for the light. This value is valid only for point and spot lights. </p>
+
+<p>Sets the quadratic attenuation factor for the light. </p>
+<p>This value is valid only for point and spot lights. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>factor</em>&nbsp;</td><td>The quadratic attenuation factor. </td></tr>
@@ -1088,7 +1195,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:38 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:19 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

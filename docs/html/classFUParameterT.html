@@ -60,27 +60,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUParameterT" -->
+<p>An interface to a generic <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> parameter.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUParameter_8h_source.html">FUParameter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#afd54a7f281e88c83b50b9dddae6d492d">FUParameterT</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Default constructor.  <a href="#afd54a7f281e88c83b50b9dddae6d492d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#af16c1654ac45224aad98f412576c9613">FUParameterT</a> (const TYPE &amp;defaultValue)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copy constructor.  <a href="#af16c1654ac45224aad98f412576c9613"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#a5a7855cdecf56e2b8876bcd55889e5eb">~FUParameterT</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a5a7855cdecf56e2b8876bcd55889e5eb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#af94699b820b59f8e99f8d47f52d0ab41">operator TYPE &amp;</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the value of this parameter.  <a href="#af94699b820b59f8e99f8d47f52d0ab41"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#aa3f3ebf4d161d9f25c1cabe8930dbcb9">operator const TYPE &amp;</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aa3f3ebf4d161d9f25c1cabe8930dbcb9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">TYPE &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#a7bf69b1165e49a914b0d4b613805431b">operator*</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7bf69b1165e49a914b0d4b613805431b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const TYPE &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#af2840ab65f1dabe425951340139cc068">operator*</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#af2840ab65f1dabe425951340139cc068"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">TYPE *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#a29da053f64be0875a9cb4618a98f45b1">operator-&gt;</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a29da053f64be0875a9cb4618a98f45b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const TYPE *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#a0fb4e55c4cf0f072c3f1a0594d0e6dbb">operator-&gt;</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0fb4e55c4cf0f072c3f1a0594d0e6dbb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterT</a>&lt; TYPE &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterT.html#a56ef63916af42d47fc4ecab3a7b93ec3">operator=</a> (const TYPE &amp;copy)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Replaces the value of this parameter with a given value.  <a href="#a56ef63916af42d47fc4ecab3a7b93ec3"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;class TYPE&gt;<br/>
  class FUParameterT&lt; TYPE &gt;</h3>
 
-<p>An interface to a generic <a class="el" href="namespaceFCollada.html">FCollada</a> parameter. Encapsulates one generic value.</p>
-<p>In PREMIUM <a class="el" href="namespaceFCollada.html">FCollada</a>: this value may be animatable, a list or a complex object, as described by higher-level classes. Useful for user interface, undo/redo and such advanced features. </p>
+<p>An interface to a generic <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> parameter. </p>
+<p>Encapsulates one generic value.</p>
+<p>In PREMIUM <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>: this value may be animatable, a list or a complex object, as described by higher-level classes. Useful for user interface, undo/redo and such advanced features. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afd54a7f281e88c83b50b9dddae6d492d"></a><!-- doxytag: member="FUParameterT::FUParameterT" ref="afd54a7f281e88c83b50b9dddae6d492d" args="()" -->
 <div class="memitem">
@@ -98,6 +112,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Default constructor. </p>
 
 </div>
@@ -119,6 +134,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copy constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -145,6 +161,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -166,6 +183,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -186,6 +204,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the value of this parameter. </p>
 
 </div>
@@ -206,6 +225,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -226,6 +246,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -246,6 +267,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -266,6 +288,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -287,6 +310,7 @@ template&lt;class TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Replaces the value of this parameter with a given value. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -315,7 +339,7 @@ template&lt;class TYPE &gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:56 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:25 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

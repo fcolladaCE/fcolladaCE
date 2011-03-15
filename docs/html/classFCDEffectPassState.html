@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEffectPassState" --><!-- doxytag: inherits="FCDObject" -->
+<p>This class holds the information necessary to set or apply one render state for a given pass.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffectPassState_8h_source.html">FCDEffectPassState.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEffectPassState:</div>
@@ -77,17 +80,26 @@ Inheritance diagram for FCDEffectPassState:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassState.html#abbc4d010d4024ce229baca1894099e9f">FCDEffectPassState</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">FUDaePassState::State</a> renderState)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#abbc4d010d4024ce229baca1894099e9f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassState.html#ab765430051f401516ee57b9aefe5dec7">~FCDEffectPassState</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ab765430051f401516ee57b9aefe5dec7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">FUDaePassState::State</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassState.html#ada8069dff94f685d4b8c65ffde91704c">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of the pass render state.  <a href="#ada8069dff94f685d4b8c65ffde91704c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassState.html#ac7f6bda16f381c3dd55dd103816f458a">GetDataSize</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the data size of the pass render state.  <a href="#ac7f6bda16f381c3dd55dd103816f458a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint8 *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassState.html#a23eb14cd11c0c65586e564199939ccf9">GetData</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the data pointer for the pass render state.  <a href="#a23eb14cd11c0c65586e564199939ccf9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const uint8 *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassState.html#ad0394f4c508bf9058a3208b592e06954">GetData</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad0394f4c508bf9058a3208b592e06954"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassState.html#aaa372d3b7ee42af4c54eff6240fd9f5c">SetDefaultValue</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Use this method to reset the state back to its default value.  <a href="#aaa372d3b7ee42af4c54eff6240fd9f5c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassState.html">FCDEffectPassState</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassState.html#a7b41150adfb37a3ad71d5d3d9d3bd02f">Clone</a> (<a class="el" href="classFCDEffectPassState.html">FCDEffectPassState</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones the effect pass and shaders.  <a href="#a7b41150adfb37a3ad71d5d3d9d3bd02f"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This class holds the information necessary to set or apply one render state for a given pass. To get more information about the render state and how to interpret the data they hold, see the <a class="el" href="namespaceFUDaePassState.html">FUDaePassState</a> namespace and its enumerated type. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">FUDaePassState::State</a> </dd></dl>
+<p>This class holds the information necessary to set or apply one render state for a given pass. </p>
+<p>To get more information about the render state and how to interpret the data they hold, see the <a class="el" href="namespaceFUDaePassState.html" title="The render states for effect passes.">FUDaePassState</a> namespace and its enumerated type. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973" title="Enumerates the COLLADA render states for effect passes.">FUDaePassState::State</a> </dd></dl>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abbc4d010d4024ce229baca1894099e9f"></a><!-- doxytag: member="FCDEffectPassState::FCDEffectPassState" ref="abbc4d010d4024ce229baca1894099e9f" args="(FCDocument *document, FUDaePassState::State renderState)" -->
 <div class="memitem">
@@ -113,7 +125,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor. Once built, the render state associated with this object should never change and the data pointer should be allocated to the correct size and never re-allocated. </p>
+
+<p>Constructor. </p>
+<p>Once built, the render state associated with this object should never change and the data pointer should be allocated to the correct size and never re-allocated. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns this render state. </td></tr>
@@ -138,6 +152,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -158,6 +173,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones the effect pass and shaders. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -183,6 +199,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -201,6 +218,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the data pointer for the pass render state. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The data pointer. </dd></dl>
 
@@ -220,6 +238,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the data size of the pass render state. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The size of the render state data. </dd></dl>
 
@@ -239,6 +258,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of the pass render state. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The render state type. </dd></dl>
 
@@ -258,7 +278,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Use this method to reset the state back to its default value. This method is called in the constructor. </p>
+
+<p>Use this method to reset the state back to its default value. </p>
+<p>This method is called in the constructor. </p>
 
 </div>
 </div>
@@ -281,7 +303,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:32 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:16 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

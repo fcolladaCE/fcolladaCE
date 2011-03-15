@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDCamera" --><!-- doxytag: inherits="FCDTargetedEntity" -->
+<p>A COLLADA camera.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDCamera_8h_source.html">FCDCamera.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDCamera:</div>
@@ -83,6 +86,8 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a6afb103bc3857a0e059dc0174a48616d">ProjectionType</a> { <a class="el" href="classFCDCamera.html#a6afb103bc3857a0e059dc0174a48616da92a6de5e36f59329c5d290c6da31a5bc">PERSPECTIVE</a>, 
 <a class="el" href="classFCDCamera.html#a6afb103bc3857a0e059dc0174a48616da34b6cc066d8993d265896628316c6138">ORTHOGRAPHIC</a>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The types of projection supported. </p>
+ <a href="classFCDCamera.html#a6afb103bc3857a0e059dc0174a48616d">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab05984fe8d1ed66c27d0427ae3160ced"></a><!-- doxytag: member="FCDCamera::DeclareFlag" ref="ab05984fe8d1ed66c27d0427ae3160ced" args="(HasHorizontalView, 0)" -->
@@ -90,44 +95,81 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac21eb4daaaa96b53793ff7d9bfbae48f"></a><!-- doxytag: member="FCDCamera::DeclareFlag" ref="ac21eb4daaaa96b53793ff7d9bfbae48f" args="(HasVerticalView, 1)" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>DeclareFlag</b> (HasVerticalView, 1)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a4d7c2057f783fbb34201c94899b124f7">DeclareFlagCount</a> (2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">5 flags are locally declared.  <a href="#a4d7c2057f783fbb34201c94899b124f7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#accd96cd61f1479822036b39892669160">FCDCamera</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#accd96cd61f1479822036b39892669160"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#adb60b65448c97173f6ef01a625f63871">~FCDCamera</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#adb60b65448c97173f6ef01a625f63871"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#aa07c99de0148e39b46e33733852ef229">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity type for this class.  <a href="#aa07c99de0148e39b46e33733852ef229"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDCamera.html#a6afb103bc3857a0e059dc0174a48616d">ProjectionType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a87c02ee9c85798fde4d7db01da5880f4">GetProjectionType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of projection of this camera.  <a href="#a87c02ee9c85798fde4d7db01da5880f4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a92d5b5ee50e2b59e5661498d97d8fc65">SetProjectionType</a> (<a class="el" href="classFCDCamera.html#a6afb103bc3857a0e059dc0174a48616d">ProjectionType</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the type of projections for this camera.  <a href="#a92d5b5ee50e2b59e5661498d97d8fc65"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a4b1071013b2640f05dbdf14320f75f3a">DEPRECATED</a> (3.05A, GetProjectionType()==FCDCamera::PERSPECTIVE) inline bool IsPerspective() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this camera is a perspective camera.  <a href="#a4b1071013b2640f05dbdf14320f75f3a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#ab0ff15b9a68bd2e02cc5fe6281c65b28">DEPRECATED</a> (3.05A, SetProjectionType(FCDCamera::PERSPECTIVE)) inline void SetPerspective()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the type of this camera to perspective.  <a href="#ab0ff15b9a68bd2e02cc5fe6281c65b28"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#af5b0f3acc94e585b3d6b7a97d2b33600">HasHorizontalFov</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the perspective camera defines an horizontal field of view.  <a href="#af5b0f3acc94e585b3d6b7a97d2b33600"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#ae08e063c02ac91d0fb834aaba29fec74">HasVerticalFov</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the perspective camera defines a vertical field of view.  <a href="#ae08e063c02ac91d0fb834aaba29fec74"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a48a470386f1f7985ee4524a713f92db9">GetFovX</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the horizontal field of view.  <a href="#a48a470386f1f7985ee4524a713f92db9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a2a16b1432904b518c25e4f5c96c79ca3">GetFovX</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2a16b1432904b518c25e4f5c96c79ca3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a1b8d137f1a175ed595f1909b2d081d1c">GetFovY</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the vertical field of view.  <a href="#a1b8d137f1a175ed595f1909b2d081d1c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a0e8362765dede7db889296b708ac48f5">GetFovY</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0e8362765dede7db889296b708ac48f5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a6288922e48ed1426edeeee4cb727a1e5">SetFovX</a> (float fovX)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the horizontal field of view value for this camera.  <a href="#a6288922e48ed1426edeeee4cb727a1e5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a833fe15b9b9186f3946bfc8c2f721e5c">SetFovY</a> (float fovY)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the vertical field of view value for this camera.  <a href="#a833fe15b9b9186f3946bfc8c2f721e5c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a85c12fce7991d68d04f3e458cd33b1c2">DEPRECATED</a> (3.05A, GetProjectionType()==FCDCamera::ORTHOGRAPHIC) inline bool IsOrthographic() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this camera is an orthographic camera.  <a href="#a85c12fce7991d68d04f3e458cd33b1c2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a69f9b90e16ce159cc104b4f5f0b92053">DEPRECATED</a> (3.05A, SetProjectionType(FCDCamera::ORTHOGRAPHIC)) inline void SetOrthographic()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the type of this camera to orthographic.  <a href="#a69f9b90e16ce159cc104b4f5f0b92053"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a8e6652d9695b24aa398b0ab6bb408ecb">HasHorizontalMag</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the orthographic camera defines an horizontal magnification.  <a href="#a8e6652d9695b24aa398b0ab6bb408ecb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a4eddec2fc3082c106b417632103dbe51">HasVerticalMag</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the perspective camera defines a vertical magnification.  <a href="#a4eddec2fc3082c106b417632103dbe51"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a9c24ccb56d566c7bfd0cf884e785f807">GetMagX</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the horizontal magnification.  <a href="#a9c24ccb56d566c7bfd0cf884e785f807"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a688443be783987a85492568fbed75ef1">GetMagX</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a688443be783987a85492568fbed75ef1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a08aeea7cfca052b87a596ac1a559b465">GetMagY</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the vertical magnification.  <a href="#a08aeea7cfca052b87a596ac1a559b465"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a896b2113cc9ea603932518e9423cdc83">GetMagY</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a896b2113cc9ea603932518e9423cdc83"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a6dad0e3978aad3bbd920587ae387e952">SetMagX</a> (float magX)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the horizontal magnification for this camera.  <a href="#a6dad0e3978aad3bbd920587ae387e952"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a4edf1eb03fe522145a18d80aabcef450">SetMagY</a> (float magY)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the vertical magnification value for this camera.  <a href="#a4edf1eb03fe522145a18d80aabcef450"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#ac4de7173eb7c64fcc14c8bbd8c441b9e">GetNearZ</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the near-z value for this camera.  <a href="#ac4de7173eb7c64fcc14c8bbd8c441b9e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a636bb27274e22fb19970827eded29dd0">GetNearZ</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a636bb27274e22fb19970827eded29dd0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a54a1ade62890179821725b0a8a158bab">GetFarZ</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the far-z value for this camera.  <a href="#a54a1ade62890179821725b0a8a158bab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a2604bcc802d800f035bb1417d71bb8f9">GetFarZ</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2604bcc802d800f035bb1417d71bb8f9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a634c417903dd0f337851756b7f506c70">HasAspectRatio</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the camera defines an aspect ratio.  <a href="#a634c417903dd0f337851756b7f506c70"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a16ba395c9fe1d551a80edc8b51e07e0d">GetAspectRatio</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the aspect ratio for the view of this camera.  <a href="#a16ba395c9fe1d551a80edc8b51e07e0d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a51fd69058b906cc152ac0e42bd08fcf0">GetAspectRatio</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a51fd69058b906cc152ac0e42bd08fcf0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#a5897d7a1ba3e10316f0f2f183530ee45">SetNearZ</a> (float _nearZ)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the near-z value for this camera.  <a href="#a5897d7a1ba3e10316f0f2f183530ee45"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#af833473ab121efed5be5f02d8680d51c">SetFarZ</a> (float _farZ)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the far-z value for this camera.  <a href="#af833473ab121efed5be5f02d8680d51c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDCamera.html#ad36e7b6987ff8a7f1a9145148a49fa5b">SetAspectRatio</a> (float aspectRatio)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the aspect ratio for the view of this camera.  <a href="#ad36e7b6987ff8a7f1a9145148a49fa5b"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA camera. Based on the <a class="el" href="classFCDTargetedEntity.html">FCDTargetedEntity</a> class to support aimed cameras. COLLADA defines two types of cameras: perspective and orthographic. Both types are fully handled by this class.</p>
+<p>A COLLADA camera. </p>
+<p>Based on the <a class="el" href="classFCDTargetedEntity.html" title="A targeted entity.">FCDTargetedEntity</a> class to support aimed cameras. COLLADA defines two types of cameras: perspective and orthographic. Both types are fully handled by this class.</p>
 <p>A COLLADA perspective camera defines two of the three following parameters: horizontal field of view, vertical field of view and aspect ratio. The missing parameter can be calculated using the following formulae: aspect ratio = vertical field of view / horizontal field of view. The vertical and horizontal field of view are in degrees.</p>
 <p>A COLLADA orthographic camera defines two of the three following parameters: horizontal magnification, vertical magnification and aspect ratio. The missing parameter can be calculated using the following formulae: aspect ratio = vertical magnification / horizontal magnification. You can calculate the viewport width and height using the following formulas: viewport width = horizontal magnification * 2, viewport height = vertical magnification * 2. </p>
 <hr/><h2>Member Enumeration Documentation</h2>
@@ -141,13 +183,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The types of projection supported. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a6afb103bc3857a0e059dc0174a48616da92a6de5e36f59329c5d290c6da31a5bc"></a><!-- doxytag: member="PERSPECTIVE" ref="a6afb103bc3857a0e059dc0174a48616da92a6de5e36f59329c5d290c6da31a5bc" args="" -->PERSPECTIVE</em>&nbsp;</td><td>
-<p>A perspective projection. Uses a truncated rectangular pyramid frustrum. </p>
+<p>A perspective projection. </p>
+<p>Uses a truncated rectangular pyramid frustrum. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a6afb103bc3857a0e059dc0174a48616da34b6cc066d8993d265896628316c6138"></a><!-- doxytag: member="ORTHOGRAPHIC" ref="a6afb103bc3857a0e059dc0174a48616da34b6cc066d8993d265896628316c6138" args="" -->ORTHOGRAPHIC</em>&nbsp;</td><td>
-<p>An orthographic projection. Uses a rectangular prism frustrum. </p>
+<p>An orthographic projection. </p>
+<p>Uses a rectangular prism frustrum. </p>
 </td></tr>
 </table>
 </dd>
@@ -171,7 +216,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Create new cameras using the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0">FCDLibrary::AddEntity</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Create new cameras using the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0" title="Creates a new entity within this library.">FCDLibrary::AddEntity</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that contains this camera entity. </td></tr>
@@ -195,6 +242,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -215,6 +263,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>5 flags are locally declared. </p>
 
 <p>Reimplemented from <a class="el" href="classFCDObjectWithId.html#a8289e2d57d75f2302effb07b0aee47f8">FCDObjectWithId</a>.</p>
@@ -245,6 +294,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the type of this camera to perspective. </p>
 
 </div>
@@ -273,6 +323,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this camera is an orthographic camera. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this camera is an orthographic camera. </dd></dl>
 
@@ -302,6 +353,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the type of this camera to orthographic. </p>
 
 </div>
@@ -330,7 +382,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether this camera is a perspective camera. This is the default type of camera. </p>
+
+<p>Retrieves whether this camera is a perspective camera. </p>
+<p>This is the default type of camera. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this camera is a perspective camera. </dd></dl>
 
 </div>
@@ -349,7 +403,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the aspect ratio for the view of this camera. Before using this value, check if there are only one of the horizontal and vertical view ratios. If there are both of the view ratios provided for the camera, you will need to calculate the aspect ratio using the following formula: aspect ratio = vertical field of view / horizontal field of view. </p>
+
+<p>Retrieves the aspect ratio for the view of this camera. </p>
+<p>Before using this value, check if there are only one of the horizontal and vertical view ratios. If there are both of the view ratios provided for the camera, you will need to calculate the aspect ratio using the following formula: aspect ratio = vertical field of view / horizontal field of view. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The view aspect ratio. </dd></dl>
 
 </div>
@@ -368,6 +424,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -386,7 +443,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the far-z value for this camera. The far-z value represent how close the far-clip plane of the view frustum is. For orthographic cameras, this value is solely used for depth-buffering. </p>
+
+<p>Retrieves the far-z value for this camera. </p>
+<p>The far-z value represent how close the far-clip plane of the view frustum is. For orthographic cameras, this value is solely used for depth-buffering. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The far-z value for this camera. </dd></dl>
 
 </div>
@@ -405,6 +464,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -423,7 +483,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the horizontal field of view. Before retrieving this value, check whether the camera defines the horizontal field of view using the HasHorizontalFov function. </p>
+
+<p>Retrieves the horizontal field of view. </p>
+<p>Before retrieving this value, check whether the camera defines the horizontal field of view using the HasHorizontalFov function. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The horizontal field of view, in degrees. </dd></dl>
 
 </div>
@@ -442,6 +504,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -460,7 +523,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the vertical field of view. Before retrieving this value, check whether the camera defines the vertical field of view using the HasVerticalFov function. </p>
+
+<p>Retrieves the vertical field of view. </p>
+<p>Before retrieving this value, check whether the camera defines the vertical field of view using the HasVerticalFov function. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The horizontal field of view, in degrees. </dd></dl>
 
 </div>
@@ -479,6 +544,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -497,7 +563,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the horizontal magnification. Before retrieving this value, check whether the camera defines the horizontal magnification using the HasHorizontalMag function. </p>
+
+<p>Retrieves the horizontal magnification. </p>
+<p>Before retrieving this value, check whether the camera defines the horizontal magnification using the HasHorizontalMag function. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The horizontal magnification. </dd></dl>
 
 </div>
@@ -516,6 +584,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -534,7 +603,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the vertical magnification. Before retrieving this value, check whether the camera defines the vertical magnification using the HasVerticalMag function. </p>
+
+<p>Retrieves the vertical magnification. </p>
+<p>Before retrieving this value, check whether the camera defines the vertical magnification using the HasVerticalMag function. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The vertical magnification. </dd></dl>
 
 </div>
@@ -553,6 +624,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -571,7 +643,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the near-z value for this camera. The near-z value represent how close the near-clip plane of the view frustum is. For orthographic cameras, this value is solely used for depth-buffering. </p>
+
+<p>Retrieves the near-z value for this camera. </p>
+<p>The near-z value represent how close the near-clip plane of the view frustum is. For orthographic cameras, this value is solely used for depth-buffering. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The near-z value for this camera. </dd></dl>
 
 </div>
@@ -590,6 +664,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -608,6 +683,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of projection of this camera. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The projection type. </dd></dl>
 
@@ -627,7 +703,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity type for this class. This function is part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity type for this class. </p>
+<p>This function is part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: CAMERA. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -648,6 +726,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether the camera defines an aspect ratio. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the camera defines an aspect ratio. </dd></dl>
 
@@ -667,7 +746,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the perspective camera defines an horizontal field of view. If the camera does not define the horizontal field of view, you can calculate it using the following formula: horizontal field of view = vertical field of view / aspect ratio. </p>
+
+<p>Retrieves whether the perspective camera defines an horizontal field of view. </p>
+<p>If the camera does not define the horizontal field of view, you can calculate it using the following formula: horizontal field of view = vertical field of view / aspect ratio. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the perspective camera defines an horizontal field of view. </dd></dl>
 
 </div>
@@ -686,7 +767,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the orthographic camera defines an horizontal magnification. If the camera does not define the horizontal magnification, you can calculate it using the following formula: horizontal magnification = vertical magnification / aspect ratio. </p>
+
+<p>Retrieves whether the orthographic camera defines an horizontal magnification. </p>
+<p>If the camera does not define the horizontal magnification, you can calculate it using the following formula: horizontal magnification = vertical magnification / aspect ratio. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the orthographic camera defines an horizontal magnification. </dd></dl>
 
 </div>
@@ -705,7 +788,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the perspective camera defines a vertical field of view. If the camera does not define the vertical field of view, you can calculate it using the following formula: vertical field of view = aspect ratio * horizontal field of view. </p>
+
+<p>Retrieves whether the perspective camera defines a vertical field of view. </p>
+<p>If the camera does not define the vertical field of view, you can calculate it using the following formula: vertical field of view = aspect ratio * horizontal field of view. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the perspective camera defines a vertical field of view. </dd></dl>
 
 </div>
@@ -724,7 +809,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the perspective camera defines a vertical magnification. If the camera does not define the vertical magnification, you can calculate it using the following formula: vertical magnification = aspect ratio * horizontal magnification. </p>
+
+<p>Retrieves whether the perspective camera defines a vertical magnification. </p>
+<p>If the camera does not define the vertical magnification, you can calculate it using the following formula: vertical magnification = aspect ratio * horizontal magnification. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the perspective camera defines a vertical magnification. </dd></dl>
 
 </div>
@@ -744,6 +831,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the aspect ratio for the view of this camera. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -769,7 +857,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the far-z value for this camera. The far-z value represent how close the far-clip plane of the view frustum is. For orthographic cameras, this value is solely used for depth-buffering. </p>
+
+<p>Sets the far-z value for this camera. </p>
+<p>The far-z value represent how close the far-clip plane of the view frustum is. For orthographic cameras, this value is solely used for depth-buffering. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_farZ</em>&nbsp;</td><td>A valid far-z value. No check is made to verify that the far-z value is greater than the near-z value. </td></tr>
@@ -794,6 +884,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the horizontal field of view value for this camera. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -819,6 +910,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the vertical field of view value for this camera. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -844,6 +936,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the horizontal magnification for this camera. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -869,6 +962,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the vertical magnification value for this camera. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -894,7 +988,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the near-z value for this camera. The near-z value represent how close the near-clip plane of the view frustum is. For orthographic cameras, this value is solely used for depth-buffering. </p>
+
+<p>Sets the near-z value for this camera. </p>
+<p>The near-z value represent how close the near-clip plane of the view frustum is. For orthographic cameras, this value is solely used for depth-buffering. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_nearZ</em>&nbsp;</td><td>A valid near-z value. No check is made to verify that the near-z value is greater than the far-z value. </td></tr>
@@ -919,6 +1015,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the type of projections for this camera. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -948,7 +1045,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:26 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:15 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

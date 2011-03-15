@@ -55,6 +55,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCollada/FUtils/FUtils.h File Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>Includes the common utilities classes and macros.  
+<a href="#_details">More...</a></p>
 <code>#include &quot;FUtils/Platforms.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="FUAssert_8h_source.html">FUtils/FUAssert.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="FMath_8h_source.html">FMath/FMath.h</a>&quot;</code><br/>
@@ -72,29 +75,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a9f918755b601cf4bffca775992e6fb90">NOMINMAX</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Rid us of the default versions of MINMAX.  <a href="#a9f918755b601cf4bffca775992e6fb90"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#aa2c1c2787f4fc780b0a902fc66d5c3ce">UNUSED</a>(a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a piece of code during the pre-process.  <a href="#aa2c1c2787f4fc780b0a902fc66d5c3ce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a987f4a817ed072818b8d8d98a6605e52">UNUSED_NDEBUG</a>(a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a piece of debug code during the pre-process.  <a href="#a987f4a817ed072818b8d8d98a6605e52"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#ad8322263932e6afc58f7974548e7291a">HAS_VECTORTYPES</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used by <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>, implies that we are including all the common dynamically-sized arrays.  <a href="#ad8322263932e6afc58f7974548e7291a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#acfecc34c0a408ce11eb1960853843007">HAS_LIBXML</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used by <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>, implies that we are including LibXML functions in the library interface.  <a href="#acfecc34c0a408ce11eb1960853843007"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#ad45c5447fa213228e8493458c1770e91">SAFE_DELETE</a>(ptr)&nbsp;&nbsp;&nbsp;if ((ptr) != NULL) { delete (ptr); (ptr) = NULL; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This macro safely deletes a pointer and sets the given pointer to NULL.  <a href="#ad45c5447fa213228e8493458c1770e91"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a7541454697b30d05714aa6b2150500b1">SAFE_DELETE_ARRAY</a>(ptr)&nbsp;&nbsp;&nbsp;if (ptr != NULL) { delete [] ptr; ptr = NULL; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This macro safely deletes an heap array and sets the given pointer to NULL.  <a href="#a7541454697b30d05714aa6b2150500b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a5778427dcd0b3f99b0fc0be7018ec96c">SAFE_FREE</a>(ptr)&nbsp;&nbsp;&nbsp;if (ptr != NULL) { free(ptr); ptr = NULL; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This macro safely frees a memory block and sets the given pointer to NULL.  <a href="#a5778427dcd0b3f99b0fc0be7018ec96c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a6c1219ddc02b0649489919776967e378">SAFE_RELEASE</a>(ptr)&nbsp;&nbsp;&nbsp;{ if ((ptr) != NULL) { (ptr)-&gt;Release(); (ptr) = NULL; } }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This macro safely releases an interface and sets the given pointer to NULL.  <a href="#a6c1219ddc02b0649489919776967e378"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#ae98b3e13794565d9dc59353ac14afd9f">CLEAR_POINTER_VECTOR</a>(a)&nbsp;&nbsp;&nbsp;{ size_t l = (a).size(); for (size_t i = 0; i &lt; l; ++i) SAFE_DELETE((a)[i]); (a).clear(); }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This macro deletes all the object pointers contained within a vector and clears it.  <a href="#ae98b3e13794565d9dc59353ac14afd9f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a87dbe02798512c67d76d95eafd70d0cd">CLEAR_ARRAY_VECTOR</a>(a)&nbsp;&nbsp;&nbsp;{ size_t l = (a).size(); for (size_t i = 0; i &lt; l; ++i) SAFE_DELETE_ARRAY((a)[i]); (a).clear(); }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This macro deletes all the object array pointers contained within a vector and clears it.  <a href="#a87dbe02798512c67d76d95eafd70d0cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a35e698fbb83843530c690a94d093d959">CLEAR_POINTER_STD_PAIR_CONT</a>(cont, a)&nbsp;&nbsp;&nbsp;{ for (cont::iterator it = (a).begin(); it != (a).end(); ++it) SAFE_DELETE((*it).second); (a).clear(); }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This macro deletes all the object pointers contained within any std container and clears it.  <a href="#a35e698fbb83843530c690a94d093d959"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a4ee2f8ba222436c90b13093b3f6ab453">CLEAR_POINTER_STD_CONT</a>(cont, a)&nbsp;&nbsp;&nbsp;{ for (cont::iterator it = (a).begin(); it != (a).end(); ++it) SAFE_DELETE((*it)); (a).clear(); }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This macro deletes all the object pointers contained within any std container and clears it.  <a href="#a4ee2f8ba222436c90b13093b3f6ab453"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a99e2a293479706a4778c6f9c879c4803">ENABLE_TEST</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used by <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>, enables the compilation and gives access to the unit tests.  <a href="#a99e2a293479706a4778c6f9c879c4803"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a6bf30fb9bdb34fc0712cfbc99a29a42f">max</a> (T &amp;x, T &amp;y)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the largest of two values.  <a href="#a6bf30fb9bdb34fc0712cfbc99a29a42f"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a1fbdd452c91023f0654aef1ca199d530">max</a> (const T &amp;x, const T &amp;y)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1fbdd452c91023f0654aef1ca199d530"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#a8a3d121225565de4d119d65c9e979d1c">min</a> (T &amp;x, T &amp;y)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the smallest of two values.  <a href="#a8a3d121225565de4d119d65c9e979d1c"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="FUtils_8h.html#ac4882caa19256e6f990fc79d139db21b">min</a> (const T &amp;x, const T &amp;y)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac4882caa19256e6f990fc79d139db21b"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Includes the common utilities classes and macros. </p>
@@ -114,6 +135,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This macro deletes all the object array pointers contained within a vector and clears it. </p>
 
 </div>
@@ -142,6 +164,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This macro deletes all the object pointers contained within any std container and clears it. </p>
 
 </div>
@@ -170,6 +193,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This macro deletes all the object pointers contained within any std container and clears it. </p>
 
 </div>
@@ -189,6 +213,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This macro deletes all the object pointers contained within a vector and clears it. </p>
 
 </div>
@@ -203,7 +228,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Used by <a class="el" href="namespaceFCollada.html">FCollada</a>, enables the compilation and gives access to the unit tests. Disabled in the retail configurations. </p>
+
+<p>Used by <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>, enables the compilation and gives access to the unit tests. </p>
+<p>Disabled in the retail configurations. </p>
 
 </div>
 </div>
@@ -217,7 +244,8 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Used by <a class="el" href="namespaceFCollada.html">FCollada</a>, implies that we are including LibXML functions in the library interface. </p>
+
+<p>Used by <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>, implies that we are including LibXML functions in the library interface. </p>
 
 </div>
 </div>
@@ -231,7 +259,8 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Used by <a class="el" href="namespaceFCollada.html">FCollada</a>, implies that we are including all the common dynamically-sized arrays. </p>
+
+<p>Used by <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>, implies that we are including all the common dynamically-sized arrays. </p>
 
 </div>
 </div>
@@ -245,6 +274,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Rid us of the default versions of MINMAX. </p>
 
 </div>
@@ -264,6 +294,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This macro safely deletes a pointer and sets the given pointer to NULL. </p>
 
 </div>
@@ -283,6 +314,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This macro safely deletes an heap array and sets the given pointer to NULL. </p>
 
 </div>
@@ -302,6 +334,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This macro safely frees a memory block and sets the given pointer to NULL. </p>
 
 </div>
@@ -321,6 +354,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This macro safely releases an interface and sets the given pointer to NULL. </p>
 
 </div>
@@ -340,7 +374,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Removes a piece of code during the pre-process. This macro is useful for these pesky unused variable warnings. </p>
+
+<p>Removes a piece of code during the pre-process. </p>
+<p>This macro is useful for these pesky unused variable warnings. </p>
 
 </div>
 </div>
@@ -359,7 +395,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Removes a piece of debug code during the pre-process. This macro is useful for these pesky unused variable warnings. </p>
+
+<p>Removes a piece of debug code during the pre-process. </p>
+<p>This macro is useful for these pesky unused variable warnings. </p>
 
 </div>
 </div>
@@ -390,6 +428,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the largest of two values. </p>
 
 </div>
@@ -420,6 +459,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -450,6 +490,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the smallest of two values. </p>
 
 </div>
@@ -480,6 +521,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -499,7 +541,7 @@ template&lt;class T &gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

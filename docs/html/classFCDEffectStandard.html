@@ -62,6 +62,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEffectStandard" --><!-- doxytag: inherits="FCDEffectProfile" -->
+<p>A COMMON profile effect description.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffectStandard_8h_source.html">FCDEffectStandard.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEffectStandard:</div>
@@ -88,98 +91,189 @@ Public Types</h2></td></tr>
 &nbsp;&nbsp;<a class="el" href="classFCDEffectStandard.html#a0c8ec2fb06ea05212a4bb140f909b41dac081dc5deede6d9e1a8293f556a5bcfc">UNKNOWN</a>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The list of the lighting models supported by the COMMON profile of COLLADA. </p>
+ <a href="classFCDEffectStandard.html#a0c8ec2fb06ea05212a4bb140f909b41d">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a9e749ea44e9152c5671985b3e9a7c9a5">TransparencyMode</a> { <a class="el" href="classFCDEffectStandard.html#a9e749ea44e9152c5671985b3e9a7c9a5a68c1c4c107542260f18ff3ef04c46762">A_ONE</a>, 
 <a class="el" href="classFCDEffectStandard.html#a9e749ea44e9152c5671985b3e9a7c9a5a0da1b910a6c9fb9553dd131a56295411">RGB_ZERO</a>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The list of transparency modes supported by the COMMON profile of COLLADA. </p>
+ <a href="classFCDEffectStandard.html#a9e749ea44e9152c5671985b3e9a7c9a5">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a3afc0b015bd0c80e7eae0c9ba7adb5a1">FCDEffectStandard</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDEffect.html">FCDEffect</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a3afc0b015bd0c80e7eae0c9ba7adb5a1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a1579bf493f5dcfa5f8b45b46c4b346f5">~FCDEffectStandard</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a1579bf493f5dcfa5f8b45b46c4b346f5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectStandard.html#a0c8ec2fb06ea05212a4bb140f909b41d">LightingType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a659241e4151186c1a2f59c3583b0035d">GetLightingType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the lighting model to be used for this profile.  <a href="#a659241e4151186c1a2f59c3583b0035d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a0f1e8305c58f97a4b191bfc62db0155e">SetLightingType</a> (<a class="el" href="classFCDEffectStandard.html#a0c8ec2fb06ea05212a4bb140f909b41d">LightingType</a> _type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the lighting model to be used for this profile.  <a href="#a0f1e8305c58f97a4b191bfc62db0155e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79">FUDaeProfileType::Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a5870dbcf350bd3f15781cf9ccf1095f9">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the profile type for this effect.  <a href="#a5870dbcf350bd3f15781cf9ccf1095f9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDTexture.html">FCDTexture</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a92773e450b4ac35adfb15516e90c147f">GetTextureBucket</a> (uint32 bucket)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of textures belonging to a specific channel.  <a href="#a92773e450b4ac35adfb15516e90c147f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDTexture.html">FCDTexture</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a427f196e14042ccc111b9ffb35649c60">GetTextureBucket</a> (uint32 bucket) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a427f196e14042ccc111b9ffb35649c60"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a81a864fa18e3c0ff42abf708c9fca9ff">GetTextureCount</a> (uint32 bucket) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of textures belonging to a specific channel.  <a href="#a81a864fa18e3c0ff42abf708c9fca9ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDTexture.html">FCDTexture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a502f6539d10d624b0d9d22dbe5b6cd33">GetTexture</a> (uint32 bucket, size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a texture.  <a href="#a502f6539d10d624b0d9d22dbe5b6cd33"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDTexture.html">FCDTexture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#adbcd3cc63dc1898ec1a370c104724468">GetTexture</a> (uint32 bucket, size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#adbcd3cc63dc1898ec1a370c104724468"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDTexture.html">FCDTexture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a98e73c677f68753e9630f0c9a1c3947b">AddTexture</a> (uint32 bucket)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a texture to a specific channel.  <a href="#a98e73c677f68753e9630f0c9a1c3947b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a547dc3b97250d3143da3a42b21543400">DEPRECATED</a> (3.05A, texture-&gt;Release()) void ReleaseTexture(FCDTexture *texture)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases a texture contained within this effect profile.  <a href="#a547dc3b97250d3143da3a42b21543400"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a8a74e967a857025c0ffa61d8acad7565">GetParam</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;semantic, bool *isFloat)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a parameter based on the semantic.  <a href="#a8a74e967a857025c0ffa61d8acad7565"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a0ccf7493649cc1870ca48cdde33f787e">GetTranslucencyColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the base translucency color.  <a href="#a0ccf7493649cc1870ca48cdde33f787e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ac42d14b615f0c8a0c7e679204a5925c2">GetTranslucencyColor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac42d14b615f0c8a0c7e679204a5925c2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ae2ef3a8540d5dd7fef08b549b6af0ae0">GetTranslucencyColorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the translucency color.  <a href="#ae2ef3a8540d5dd7fef08b549b6af0ae0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#aa31d56cb3ebb1096bc201daaa93c269c">GetTranslucencyColorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aa31d56cb3ebb1096bc201daaa93c269c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#af3b24d8b85f4637f3bf7fa52ef578686">SetTranslucencyColor</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;color)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the base translucency color.  <a href="#af3b24d8b85f4637f3bf7fa52ef578686"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#affd222f5c17b3cd49e49eae5219ea1ec">GetTranslucencyFactor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the translucency factor.  <a href="#affd222f5c17b3cd49e49eae5219ea1ec"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ab89fda3928774321d1c95bebae1bb13d">GetTranslucencyFactor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab89fda3928774321d1c95bebae1bb13d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a30b06e8ef8177d59483926a70389e764">GetTranslucencyFactorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the translucency factor.  <a href="#a30b06e8ef8177d59483926a70389e764"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ad18eefe810f554e294a1c90044905d28">GetTranslucencyFactorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad18eefe810f554e294a1c90044905d28"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a622c5a44ccfcecbb21bd7181d6653f82">SetTranslucencyFactor</a> (float factor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the translucency factor.  <a href="#a622c5a44ccfcecbb21bd7181d6653f82"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectStandard.html#a9e749ea44e9152c5671985b3e9a7c9a5">TransparencyMode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a986494286968251cd067be0bad9bc85a">GetTransparencyMode</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the transparency mode.  <a href="#a986494286968251cd067be0bad9bc85a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a486d7ddb1801ed110c40b7b8ece29794">SetTransparencyMode</a> (<a class="el" href="classFCDEffectStandard.html#a9e749ea44e9152c5671985b3e9a7c9a5">TransparencyMode</a> mode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the transparency mode.  <a href="#a486d7ddb1801ed110c40b7b8ece29794"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ae10a18d9f1c10bfd334bb914b6c664e4">GetOpacity</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the flat opacity.  <a href="#ae10a18d9f1c10bfd334bb914b6c664e4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a5995a932d71c056adf95c3ac21568d52">GetEmissionColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the base emission/self-illumination color.  <a href="#a5995a932d71c056adf95c3ac21568d52"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#aed08c475e5e46cfc37bfe25127b9b299">GetEmissionColor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aed08c475e5e46cfc37bfe25127b9b299"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ad302349aad357e6c6335e794bc583ae0">GetEmissionColorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the emission color.  <a href="#ad302349aad357e6c6335e794bc583ae0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ae104c6a2552283803cb7642fc9a9793d">GetEmissionColorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae104c6a2552283803cb7642fc9a9793d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a7c0cf1aef71af0350675d32a3b179b4b">SetEmissionColor</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;color)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the base emission/self-illumination color.  <a href="#a7c0cf1aef71af0350675d32a3b179b4b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#aa0c497d8985dfd39f9a0b31ce0e61d90">GetEmissionFactor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the emission/self-illumination factor.  <a href="#aa0c497d8985dfd39f9a0b31ce0e61d90"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#aa8b817f9737206608e87ef4ea1f9c3f8">GetEmissionFactor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aa8b817f9737206608e87ef4ea1f9c3f8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a0c99ef6f5a48cabe5ad756002b2b5292">GetEmissionFactorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the emission/self-illumination factor.  <a href="#a0c99ef6f5a48cabe5ad756002b2b5292"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a39b92132f40f484cf872da1479914ae5">GetEmissionFactorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a39b92132f40f484cf872da1479914ae5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a8bcef4fb2c27fc2e93d584b737666ad2">SetEmissionFactor</a> (float factor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the emission/self-illumination factor.  <a href="#a8bcef4fb2c27fc2e93d584b737666ad2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a45c0775d6da7ed652eaf36bd40bdc4cf">IsEmissionFactor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the emission factor was used, rather than the emission color.  <a href="#a45c0775d6da7ed652eaf36bd40bdc4cf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a33444405bd0753a8fc45e1104c291b7d">SetIsEmissionFactor</a> (bool useFactor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets whether the emission factor is to be used, rather than the emission color.  <a href="#a33444405bd0753a8fc45e1104c291b7d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a626e44192093159c2e352c8338279815">GetDiffuseColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the diffuse color.  <a href="#a626e44192093159c2e352c8338279815"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#acc8baa8b4dc83b02d1d532cbb67b9f72">GetDiffuseColor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#acc8baa8b4dc83b02d1d532cbb67b9f72"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ae93cc60fc1866767d4458fc40ae201d5">GetDiffuseColorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the diffuse color.  <a href="#ae93cc60fc1866767d4458fc40ae201d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a0f33f3f13917f86900c05837ed208d3f">GetDiffuseColorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0f33f3f13917f86900c05837ed208d3f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a1382e93839dc984c16d33bfc93572ecd">SetDiffuseColor</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;color)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the diffuse color.  <a href="#a1382e93839dc984c16d33bfc93572ecd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#aa1d50e4a0b7155f4d0c23f15af65fa12">GetAmbientColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the ambient color.  <a href="#aa1d50e4a0b7155f4d0c23f15af65fa12"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a64f7d494685ff88911848a2726f8203d">GetAmbientColor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a64f7d494685ff88911848a2726f8203d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a94ddd58f63bf7a1460cac5048a2cea17">GetAmbientColorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the ambient color.  <a href="#a94ddd58f63bf7a1460cac5048a2cea17"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a5d3405fde172e64f16f53c119d82a49e">GetAmbientColorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5d3405fde172e64f16f53c119d82a49e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a8777730e606304365b9e9db07bb7f145">SetAmbientColor</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;color)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the ambient color.  <a href="#a8777730e606304365b9e9db07bb7f145"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ae457fc42deb3a72cb9b7840364dcebe1">GetSpecularColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the base specular color.  <a href="#ae457fc42deb3a72cb9b7840364dcebe1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#af82d5eaf48244a5369ef8ed11213221b">GetSpecularColor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#af82d5eaf48244a5369ef8ed11213221b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a04c6cf85df02970023a6146be45f1e9f">GetSpecularColorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the specular color.  <a href="#a04c6cf85df02970023a6146be45f1e9f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a96a3021ea4315499f01b1ab5cefab2a4">GetSpecularColorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a96a3021ea4315499f01b1ab5cefab2a4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a01e8df7c03a4ee76e929d3e2f71aaff8">SetSpecularColor</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;color)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the specular color.  <a href="#a01e8df7c03a4ee76e929d3e2f71aaff8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ac83628e3ccf1c9215249fa4dbe1b9919">GetSpecularFactor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the specular factor.  <a href="#ac83628e3ccf1c9215249fa4dbe1b9919"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a06692330309f95f57281301feb05eedc">GetSpecularFactor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a06692330309f95f57281301feb05eedc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a0d9fde6e676a6dafa1951043e0185ed3">GetSpecularFactorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the specular factor.  <a href="#a0d9fde6e676a6dafa1951043e0185ed3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ac876d1261703bcdab860ee03288c8ac4">GetSpecularFactorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac876d1261703bcdab860ee03288c8ac4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a4511986a5a68aeb47ce042c722bf8071">SetSpecularFactor</a> (float factor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the specular factor.  <a href="#a4511986a5a68aeb47ce042c722bf8071"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ab4654ab8fa86532fe336804f067b58a2">GetShininess</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the specular shininess.  <a href="#ab4654ab8fa86532fe336804f067b58a2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a07d5518f90b17601f0d729885956a56a">GetShininess</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a07d5518f90b17601f0d729885956a56a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a845897c93a379357f9e46224dae9e2ad">GetShininessParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the specular shininess.  <a href="#a845897c93a379357f9e46224dae9e2ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a628bb62efa7a89d2d99212961103fe85">GetShininessParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a628bb62efa7a89d2d99212961103fe85"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a992804e1672eefab311332f23679fb80">SetShininess</a> (float _shininess)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the specular shininess.  <a href="#a992804e1672eefab311332f23679fb80"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a68040795f35f89bf38331e86ba853449">IsReflective</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the reflectivity state.  <a href="#a68040795f35f89bf38331e86ba853449"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a6fdc49307f092d5b20eb66daa48e1920">SetReflective</a> (bool r)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the reflectivity state.  <a href="#a6fdc49307f092d5b20eb66daa48e1920"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#aa8983e27afa9a215fbb33e8edb63444d">GetReflectivityColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the base reflectivity color.  <a href="#aa8983e27afa9a215fbb33e8edb63444d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#abdd5047a0a82b40b5f13b3f666bd1c8a">GetReflectivityColor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#abdd5047a0a82b40b5f13b3f666bd1c8a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a2a69b869efe3a2d58126fff91814e157">GetReflectivityColorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the reflectivity color.  <a href="#a2a69b869efe3a2d58126fff91814e157"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterColor4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ab994ac2a861c5066cfedf435294286e3">GetReflectivityColorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab994ac2a861c5066cfedf435294286e3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a7da791434dd5676d6ab09c860829fb47">SetReflectivityColor</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;color)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the base reflectivity color.  <a href="#a7da791434dd5676d6ab09c860829fb47"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a45478829ccbe6b25b9f3550fc4e04c4a">GetReflectivityFactor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the reflectivity factor.  <a href="#a45478829ccbe6b25b9f3550fc4e04c4a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a2c2f46d7834a17771b18a3f27dab73d4">GetReflectivityFactor</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2c2f46d7834a17771b18a3f27dab73d4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a1ace9e6e264bcf10bd2ac48ecb7fe11f">GetReflectivityFactorParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the reflectivity factor.  <a href="#a1ace9e6e264bcf10bd2ac48ecb7fe11f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a0de5e4f9582f94fc413d563a6abc2fc5">GetReflectivityFactorParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0de5e4f9582f94fc413d563a6abc2fc5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a5d44f575161556c7e32fd01db0cce3b5">SetReflectivityFactor</a> (float factor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the reflectivity factor.  <a href="#a5d44f575161556c7e32fd01db0cce3b5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a0665515f47cf93f0df913f5d345f04c6">GetReflectivity</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the flat reflectivity.  <a href="#a0665515f47cf93f0df913f5d345f04c6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a0dc0c78d14a0beb924cf7fe971ee7bda">IsRefractive</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the refractive state.  <a href="#a0dc0c78d14a0beb924cf7fe971ee7bda"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ab658aa9ac8d10afc1cd3b83abc81d571">SetRefractive</a> (bool r)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the refractive state.  <a href="#ab658aa9ac8d10afc1cd3b83abc81d571"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#aba2edd070372a49560528d901dbf66cd">GetIndexOfRefraction</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the index of refraction.  <a href="#aba2edd070372a49560528d901dbf66cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a749723323b4de3691eabafef079a9342">GetIndexOfRefraction</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a749723323b4de3691eabafef079a9342"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a77001b0842bf3bbe4c904369a4801302">GetIndexOfRefractionParam</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter pointer that contains the index of refraction.  <a href="#a77001b0842bf3bbe4c904369a4801302"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterFloat</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a45c8ea77e71387409eeba9dfd9b54ad7">GetIndexOfRefractionParam</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a45c8ea77e71387409eeba9dfd9b54ad7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#af60264112cb42d1f00d8b6af09ffc43e">SetIndexOfRefraction</a> (float index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the index of refraction.  <a href="#af60264112cb42d1f00d8b6af09ffc43e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#aeadbfb97cdfd733a09a564f457020b66">Clone</a> (<a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones the COMMON profile effect and its parameters.  <a href="#aeadbfb97cdfd733a09a564f457020b66"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a40ab2cc34bd3cf5d3f622a8dcf9e9fcd">DEPRECATED</a> (3.05A, not recommended) void Flatten()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Flattens the profile.  <a href="#a40ab2cc34bd3cf5d3f622a8dcf9e9fcd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#ab7d158f54a2b6d23ed71faa4a3f1598f">AddExtraAttribute</a> (const char *profile, const char *key, const fchar *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an extra attribute to the given profile.  <a href="#ab7d158f54a2b6d23ed71faa4a3f1598f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const fchar *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectStandard.html#a115b0bfdfa3fb1712a51b26607ae8d37">GetExtraAttribute</a> (const char *profile, const char *key) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the extra attribute value corresponding to the given profile and key values.  <a href="#a115b0bfdfa3fb1712a51b26607ae8d37"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1b5eea66dd078d98feb51ba084900b9"></a><!-- doxytag: member="FCDEffectStandard::EmissionColorSemantic" ref="af1b5eea66dd078d98feb51ba084900b9" args="" -->
@@ -208,7 +302,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
 static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>ShininessSemantic</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COMMON profile effect description.</p>
+<p>A COMMON profile effect description. </p>
 <p>The COMMON effect profile holds the information necessary to render your polygon sets using the well-defined lighting models.</p>
 <p>COLLADA supports four lighting models: constant, Lambert, Phong and Blinn. </p>
 <hr/><h2>Member Enumeration Documentation</h2>
@@ -222,19 +316,24 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>The list of the lighting models supported by the COMMON profile of COLLADA. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a0c8ec2fb06ea05212a4bb140f909b41da405f6b6e4e09f73969b9566ec39a37cd"></a><!-- doxytag: member="CONSTANT" ref="a0c8ec2fb06ea05212a4bb140f909b41da405f6b6e4e09f73969b9566ec39a37cd" args="" -->CONSTANT</em>&nbsp;</td><td>
-<p>The constant lighting model. This lighting model uses the emissive color everywhere, without any complex lighting calculations. It also uses the translucency factor and the translucency color, by multiplying them together and applying them to your standard alpha channel according to the final lighting color. </p>
+<p>The constant lighting model. </p>
+<p>This lighting model uses the emissive color everywhere, without any complex lighting calculations. It also uses the translucency factor and the translucency color, by multiplying them together and applying them to your standard alpha channel according to the final lighting color. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0c8ec2fb06ea05212a4bb140f909b41da936fa2b549fcc7833ec86e32a6d26667"></a><!-- doxytag: member="LAMBERT" ref="a0c8ec2fb06ea05212a4bb140f909b41da936fa2b549fcc7833ec86e32a6d26667" args="" -->LAMBERT</em>&nbsp;</td><td>
-<p>The Lambert lighting model. This lighting model improves on the constant lighting model by using the dot-product between the normalized light vectors and the polygon normals to determine how much light should affect each polygon. This value is multiplied to the diffuse color and (1 + the ambient color). </p>
+<p>The Lambert lighting model. </p>
+<p>This lighting model improves on the constant lighting model by using the dot-product between the normalized light vectors and the polygon normals to determine how much light should affect each polygon. This value is multiplied to the diffuse color and (1 + the ambient color). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0c8ec2fb06ea05212a4bb140f909b41dacdf2c5f91356a6c80fd8d764a433e008"></a><!-- doxytag: member="PHONG" ref="a0c8ec2fb06ea05212a4bb140f909b41dacdf2c5f91356a6c80fd8d764a433e008" args="" -->PHONG</em>&nbsp;</td><td>
-<p>The Phong lighting model. This lighting model improves on the Lambert lighting model by calculating how much light is reflected by the polygons into the viewer's eye. For this calculation, the shininess, the specular color and the reflectivity is used. </p>
+<p>The Phong lighting model. </p>
+<p>This lighting model improves on the Lambert lighting model by calculating how much light is reflected by the polygons into the viewer's eye. For this calculation, the shininess, the specular color and the reflectivity is used. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0c8ec2fb06ea05212a4bb140f909b41da589842bebd4c87def8bf1a65fab074f4"></a><!-- doxytag: member="BLINN" ref="a0c8ec2fb06ea05212a4bb140f909b41da589842bebd4c87def8bf1a65fab074f4" args="" -->BLINN</em>&nbsp;</td><td>
-<p>The Blinn lighting model. This lighting model improves on the Lambert lighting model by calculating how much light is reflected by the polygons into the viewer's eye. For this calculation, the shininess, the specular color and the reflectivity is used. </p>
+<p>The Blinn lighting model. </p>
+<p>This lighting model improves on the Lambert lighting model by calculating how much light is reflected by the polygons into the viewer's eye. For this calculation, the shininess, the specular color and the reflectivity is used. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0c8ec2fb06ea05212a4bb140f909b41dac081dc5deede6d9e1a8293f556a5bcfc"></a><!-- doxytag: member="UNKNOWN" ref="a0c8ec2fb06ea05212a4bb140f909b41dac081dc5deede6d9e1a8293f556a5bcfc" args="" -->UNKNOWN</em>&nbsp;</td><td>
 <p>Not a valid lighting model. </p>
@@ -255,6 +354,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>The list of transparency modes supported by the COMMON profile of COLLADA. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a9e749ea44e9152c5671985b3e9a7c9a5a68c1c4c107542260f18ff3ef04c46762"></a><!-- doxytag: member="A_ONE" ref="a9e749ea44e9152c5671985b3e9a7c9a5a68c1c4c107542260f18ff3ef04c46762" args="" -->A_ONE</em>&nbsp;</td><td>
@@ -294,10 +394,12 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDEffect.html#abe53b1e58ce5469b28f63b5155703a95">FCDEffect::AddProfile</a> function with the <a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79ad8aa33a3586c77ac1163a8840cf2ac38">FUDaeProfileType::COMMON</a> parameter. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDEffect.html#abe53b1e58ce5469b28f63b5155703a95" title="Creates a profile of the given type.">FCDEffect::AddProfile</a> function with the <a class="el" href="namespaceFUDaeProfileType.html#ac10ea253a7a141708de2324a929f8a79ad8aa33a3586c77ac1163a8840cf2ac38" title="The common profile which encapsulates the standard lighting equations: Lambert, Phong, Blinn.">FUDaeProfileType::COMMON</a> parameter. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html">FCollada</a> document that owns this effect standard. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> document that owns this effect standard. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>The effect that contains this profile. </td></tr>
   </table>
   </dd>
@@ -319,6 +421,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -354,7 +457,8 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Adds an extra attribute to the given profile </p>
+
+<p>Adds an extra attribute to the given profile. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>profile</em>&nbsp;</td><td>The profile in which to insert the attribute. </td></tr>
@@ -381,10 +485,11 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a texture to a specific channel. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>bucket</em>&nbsp;</td><td>A texture channel index. This index should match one of the values in the <a class="el" href="namespaceFUDaeTextureChannel.html">FUDaeTextureChannel</a> enum. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bucket</em>&nbsp;</td><td>A texture channel index. This index should match one of the values in the <a class="el" href="namespaceFUDaeTextureChannel.html" title="Contains the texture channels and their conversion functions.">FUDaeTextureChannel</a> enum. </td></tr>
   </table>
   </dd>
 </dl>
@@ -407,6 +512,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones the COMMON profile effect and its parameters. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -444,6 +550,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases a texture contained within this effect profile. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -478,7 +585,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Flattens the profile. Does nothing on the common profile. </p>
+
+<p>[INTERNAL] Flattens the profile. </p>
+<p>Does nothing on the common profile. </p>
 
 <p>Reimplemented from <a class="el" href="classFCDEffectProfile.html#aadc7e65fa145af53ec2bf47c6de550f2">FCDEffectProfile</a>.</p>
 
@@ -498,7 +607,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the ambient color. This value is used in the Lambert lighting model. </p>
+
+<p>Retrieves the ambient color. </p>
+<p>This value is used in the Lambert lighting model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The ambient color. </dd></dl>
 
 </div>
@@ -517,6 +628,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -535,7 +647,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the ambient color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
+
+<p>Retrieves the parameter pointer that contains the ambient color. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the ambient color. </dd></dl>
 
 </div>
@@ -554,6 +668,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -572,7 +687,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the diffuse color. This value is used in the Lambert lighting model. </p>
+
+<p>Retrieves the diffuse color. </p>
+<p>This value is used in the Lambert lighting model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The diffuse color. </dd></dl>
 
 </div>
@@ -591,6 +708,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -609,7 +727,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the diffuse color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
+
+<p>Retrieves the parameter pointer that contains the diffuse color. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the diffuse color. </dd></dl>
 
 </div>
@@ -628,6 +748,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -646,7 +767,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the base emission/self-illumination color. This value must be multiplied with the emission factor to get the real emission color. This value is used in all lighting models. </p>
+
+<p>Retrieves the base emission/self-illumination color. </p>
+<p>This value must be multiplied with the emission factor to get the real emission color. This value is used in all lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The base emission color. </dd></dl>
 
 </div>
@@ -665,6 +788,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -683,7 +807,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the emission color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
+
+<p>Retrieves the parameter pointer that contains the emission color. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the emission color. </dd></dl>
 
 </div>
@@ -702,6 +828,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -720,7 +847,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the emission/self-illumination factor. This value must be multiplied with the base emission color to get the real emission color. </p>
+
+<p>Retrieves the emission/self-illumination factor. </p>
+<p>This value must be multiplied with the base emission color to get the real emission color. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The emission factor. </dd></dl>
 
 </div>
@@ -739,6 +868,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -757,6 +887,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -775,7 +906,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the emission/self-illumination factor. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
+
+<p>Retrieves the parameter pointer that contains the emission/self-illumination factor. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the emission/self-illumination factor. </dd></dl>
 
 </div>
@@ -804,7 +937,8 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Get the extra attribute value corresponding to the given profile and key values </p>
+
+<p>Get the extra attribute value corresponding to the given profile and key values. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>profile</em>&nbsp;</td><td>The profile to look for. </td></tr>
@@ -829,7 +963,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the index of refraction. The index of refraction defaults to 1.0f. </p>
+
+<p>Retrieves the index of refraction. </p>
+<p>The index of refraction defaults to 1.0f. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The index of refraction. </dd></dl>
 
 </div>
@@ -848,6 +984,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -866,6 +1003,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -884,7 +1022,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the index of refraction. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
+
+<p>Retrieves the parameter pointer that contains the index of refraction. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the index of refraction. </dd></dl>
 
 </div>
@@ -903,6 +1043,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the lighting model to be used for this profile. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The lighting model. </dd></dl>
 
@@ -922,7 +1063,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the flat opacity. This is a calculated value and will not take into consideration any animations that affect either the base translucency color or the translucency factor. This value can be used in all lighting models. </p>
+
+<p>Retrieves the flat opacity. </p>
+<p>This is a calculated value and will not take into consideration any animations that affect either the base translucency color or the translucency factor. This value can be used in all lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The flat opacity. </dd></dl>
 
 </div>
@@ -951,6 +1094,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a parameter based on the semantic. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -977,7 +1121,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the flat reflectivity. This is a calculated value and will not take into consideration any animations that affect either the base reflectivity color or the reflectivity factor. This value can be used in the Phong and Blinn lighting models. </p>
+
+<p>Retrieves the flat reflectivity. </p>
+<p>This is a calculated value and will not take into consideration any animations that affect either the base reflectivity color or the reflectivity factor. This value can be used in the Phong and Blinn lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The flat reflectivity. </dd></dl>
 
 </div>
@@ -996,7 +1142,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the base reflectivity color. This value must be multiplied to the reflectivity factor to get the real reflectivity color. This value is used in the Phong and Blinn lighting models. </p>
+
+<p>Retrieves the base reflectivity color. </p>
+<p>This value must be multiplied to the reflectivity factor to get the real reflectivity color. This value is used in the Phong and Blinn lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The base reflectivity color. </dd></dl>
 
 </div>
@@ -1015,6 +1163,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1033,7 +1182,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the reflectivity color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
+
+<p>Retrieves the parameter pointer that contains the reflectivity color. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the reflectivity color. </dd></dl>
 
 </div>
@@ -1052,6 +1203,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1070,7 +1222,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the reflectivity factor. This value must be multiplied to the base reflectivity color to get the real reflectivity color. This value is used in the Phong and Blinn lighting models. </p>
+
+<p>Retrieves the reflectivity factor. </p>
+<p>This value must be multiplied to the base reflectivity color to get the real reflectivity color. This value is used in the Phong and Blinn lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The reflectivity factor. </dd></dl>
 
 </div>
@@ -1089,6 +1243,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1107,6 +1262,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1125,7 +1281,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the reflectivity factor. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
+
+<p>Retrieves the parameter pointer that contains the reflectivity factor. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the reflectivity factor. </dd></dl>
 
 </div>
@@ -1144,7 +1302,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the specular shininess. This value represents the exponent to which you must raise the dot-product between the view vector and reflected light vectors: as such, it is usually a number greater than 1. This value is used in the Phong and Blinn lighting models. </p>
+
+<p>Retrieves the specular shininess. </p>
+<p>This value represents the exponent to which you must raise the dot-product between the view vector and reflected light vectors: as such, it is usually a number greater than 1. This value is used in the Phong and Blinn lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The specular shininess. </dd></dl>
 
 </div>
@@ -1163,6 +1323,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1181,7 +1342,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the specular shininess. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
+
+<p>Retrieves the parameter pointer that contains the specular shininess. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the specular shininess. </dd></dl>
 
 </div>
@@ -1200,6 +1363,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1218,7 +1382,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the base specular color. This value must be multiplied with the specular factor to get the real specular color. This value is used in the Phong and Blinn lighting models. </p>
+
+<p>Retrieves the base specular color. </p>
+<p>This value must be multiplied with the specular factor to get the real specular color. This value is used in the Phong and Blinn lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The specular color. </dd></dl>
 
 </div>
@@ -1237,6 +1403,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1255,7 +1422,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the specular color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
+
+<p>Retrieves the parameter pointer that contains the specular color. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the specular color. </dd></dl>
 
 </div>
@@ -1274,6 +1443,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1292,7 +1462,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the specular factor. This value must be multiplied with the base specular color to get the real specular color. This value is used in the Phong and Blinn lighting models. </p>
+
+<p>Retrieves the specular factor. </p>
+<p>This value must be multiplied with the base specular color to get the real specular color. This value is used in the Phong and Blinn lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The specular factor. </dd></dl>
 
 </div>
@@ -1311,6 +1483,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1329,6 +1502,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1347,7 +1521,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the specular factor. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
+
+<p>Retrieves the parameter pointer that contains the specular factor. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the specular factor. </dd></dl>
 
 </div>
@@ -1376,6 +1552,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1404,10 +1581,11 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves a texture </p>
+
+<p>Retrieves a texture. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>bucket</em>&nbsp;</td><td>A texture channel index. This index should match one of the values in the <a class="el" href="namespaceFUDaeTextureChannel.html">FUDaeTextureChannel</a> enum. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bucket</em>&nbsp;</td><td>A texture channel index. This index should match one of the values in the <a class="el" href="namespaceFUDaeTextureChannel.html" title="Contains the texture channels and their conversion functions.">FUDaeTextureChannel</a> enum. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The index of a texture within this channel. </td></tr>
   </table>
   </dd>
@@ -1431,10 +1609,11 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of textures belonging to a specific channel. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>bucket</em>&nbsp;</td><td>A texture channel index. This index should match one of the values in the <a class="el" href="namespaceFUDaeTextureChannel.html">FUDaeTextureChannel</a> enum. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bucket</em>&nbsp;</td><td>A texture channel index. This index should match one of the values in the <a class="el" href="namespaceFUDaeTextureChannel.html" title="Contains the texture channels and their conversion functions.">FUDaeTextureChannel</a> enum. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1457,6 +1636,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1476,10 +1656,11 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of textures belonging to a specific channel. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>bucket</em>&nbsp;</td><td>A texture channel index. This index should match one of the values in the <a class="el" href="namespaceFUDaeTextureChannel.html">FUDaeTextureChannel</a> enum. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bucket</em>&nbsp;</td><td>A texture channel index. This index should match one of the values in the <a class="el" href="namespaceFUDaeTextureChannel.html" title="Contains the texture channels and their conversion functions.">FUDaeTextureChannel</a> enum. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1501,6 +1682,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1519,7 +1701,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the base translucency color. This value must be multiplied with the translucency factor to get the real translucency color. Use the RGB channels in case of a RGB_ZERO transparency mode, and the A channel in case of a A_ONE transparency mode This value is used in all lighting models. </p>
+
+<p>Retrieves the base translucency color. </p>
+<p>This value must be multiplied with the translucency factor to get the real translucency color. Use the RGB channels in case of a RGB_ZERO transparency mode, and the A channel in case of a A_ONE transparency mode This value is used in all lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The base translucency color. </dd></dl>
 
 </div>
@@ -1538,7 +1722,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the translucency color. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
+
+<p>Retrieves the parameter pointer that contains the translucency color. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple color. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the translucency color. </dd></dl>
 
 </div>
@@ -1557,6 +1743,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1575,6 +1762,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1593,7 +1781,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the translucency factor. This value must be multiplied with the translucency color to get the real translucency color. This value is used in all lighting models. </p>
+
+<p>Retrieves the translucency factor. </p>
+<p>This value must be multiplied with the translucency color to get the real translucency color. This value is used in all lighting models. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The translucency factor. </dd></dl>
 
 </div>
@@ -1612,7 +1802,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter pointer that contains the translucency factor. Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
+
+<p>Retrieves the parameter pointer that contains the translucency factor. </p>
+<p>Use this function to modify the value, the semantic, reference or annotations of the parameter. Note: in order to be linked with the profile_COMMON's parameter list, the parameter needs to have a valid semantic and reference. Otherwise it is treated as a simple float. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter that contains the translucency factor. </dd></dl>
 
 </div>
@@ -1631,6 +1823,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1649,6 +1842,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the transparency mode. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The transparency mode. </dd></dl>
 
@@ -1668,7 +1862,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the profile type for this effect. This function is a part of the <a class="el" href="classFCDEffectProfile.html">FCDEffectProfile</a> interface and allows you to up-cast an effect profile pointer safely to this class. </p>
+
+<p>Retrieves the profile type for this effect. </p>
+<p>This function is a part of the <a class="el" href="classFCDEffectProfile.html" title="The base for a COLLADA effect profile.">FCDEffectProfile</a> interface and allows you to up-cast an effect profile pointer safely to this class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The profile type: COMMON. </dd></dl>
 
 <p>Implements <a class="el" href="classFCDEffectProfile.html#a48ae9db50d8cce2509d6a3d557a1b0a6">FCDEffectProfile</a>.</p>
@@ -1689,7 +1885,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the emission factor was used, rather than the emission color. This value is used in conjunction with 3dsMax, in which the self-illumination color and the self-illumination factor are mutually exclusive. </p>
+
+<p>Retrieves whether the emission factor was used, rather than the emission color. </p>
+<p>This value is used in conjunction with 3dsMax, in which the self-illumination color and the self-illumination factor are mutually exclusive. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the emission factor is to be used. </dd></dl>
 
 </div>
@@ -1708,6 +1906,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the reflectivity state. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>True if the effect has reflectivity information. </dd></dl>
 
@@ -1727,6 +1926,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the refractive state. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>True if the effect has refractive information. </dd></dl>
 
@@ -1747,6 +1947,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the ambient color. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1772,6 +1973,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the diffuse color. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1797,6 +1999,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the base emission/self-illumination color. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1822,6 +2025,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the emission/self-illumination factor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1847,6 +2051,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the index of refraction. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1872,7 +2077,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Sets whether the emission factor is to be used, rather than the emission color. This value is used in conjunction with 3dsMax, in which the self-illumination color and the self-illumination factor are mutually exclusive. </p>
+
+<p>Sets whether the emission factor is to be used, rather than the emission color. </p>
+<p>This value is used in conjunction with 3dsMax, in which the self-illumination color and the self-illumination factor are mutually exclusive. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>useFactor</em>&nbsp;</td><td>Whether the emission factor should be used. </td></tr>
@@ -1897,7 +2104,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the lighting model to be used for this profile. Note that which parameters are exported depends on the lighting model. </p>
+
+<p>Sets the lighting model to be used for this profile. </p>
+<p>Note that which parameters are exported depends on the lighting model. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_type</em>&nbsp;</td><td>The lighting model. </td></tr>
@@ -1922,6 +2131,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the reflectivity state. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1947,6 +2157,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the base reflectivity color. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1972,6 +2183,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the reflectivity factor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1997,6 +2209,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the refractive state. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2022,7 +2235,9 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the specular shininess. This value represents the exponent to which you must raise the dot-product between the view vector and reflected light vectors: as such, it is usually a number greater than 1. </p>
+
+<p>Sets the specular shininess. </p>
+<p>This value represents the exponent to which you must raise the dot-product between the view vector and reflected light vectors: as such, it is usually a number greater than 1. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_shininess</em>&nbsp;</td><td>The specular shininess. </td></tr>
@@ -2047,6 +2262,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the specular color. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2072,6 +2288,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the specular factor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2097,6 +2314,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the base translucency color. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2122,6 +2340,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the translucency factor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2147,6 +2366,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the transparency mode. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2176,7 +2396,7 @@ static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:33 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:17 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

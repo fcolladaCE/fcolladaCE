@@ -58,6 +58,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDSpline" --><!-- doxytag: inherits="FCDObject" -->
+<p>Represents a generic spline.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDGeometrySpline_8h_source.html">FCDGeometrySpline.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDSpline:</div>
@@ -78,26 +81,43 @@ Inheritance diagram for FCDSpline:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#ace689bd475c17da2c24f076e06f47388">FCDSpline</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#ace689bd475c17da2c24f076e06f47388"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#abd34e5c4f2b58a8e5acdc8935c91eab1">~FCDSpline</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#abd34e5c4f2b58a8e5acdc8935c91eab1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceFUDaeSplineType.html#a7db2b90bcd53814239cc29f64754d0ab">FUDaeSplineType::Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#ad8ad60a198cd8e041fde6587c3d5a9f9">GetSplineType</a> () const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of the spline.  <a href="#ad8ad60a198cd8e041fde6587c3d5a9f9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#ab35c5ca0b5d061f9f0290cd34e13003b">GetName</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the name of the spline.  <a href="#ab35c5ca0b5d061f9f0290cd34e13003b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#a515cfaf72ec0bf42dbc957f02f387c54">GetName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a515cfaf72ec0bf42dbc957f02f387c54"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#aa2254be48c6fe64bdd88f58fb8542348">SetName</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;_name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the name of the spline.  <a href="#aa2254be48c6fe64bdd88f58fb8542348"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#a17b6ccfe0363f7a7c4bb871a23c10e94">IsClosed</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves if the spline is closed or not.  <a href="#a17b6ccfe0363f7a7c4bb871a23c10e94"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#a3e7e8a8fbc8f2f515c68dec439da887f">SetClosed</a> (bool closed)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets if the spline is closed or not.  <a href="#a3e7e8a8fbc8f2f515c68dec439da887f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#a6ca716ecc294857a4f43c46e76507684">GetCVCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of CVs in the spline.  <a href="#a6ca716ecc294857a4f43c46e76507684"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#a75c0deef9de2a6b45282fa4168aec72f">GetCV</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a pointer to the control vertex specified by the given index.  <a href="#a75c0deef9de2a6b45282fa4168aec72f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector3.html">FMVector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#a61ac245365a6d33f3403af8393f5a23a">GetCV</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a61ac245365a6d33f3403af8393f5a23a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1vector.html">FMVector3List</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#ae1a48bbf64bce61520d5557ff92c0d4f">GetCVs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a reference to the CVs list.  <a href="#ae1a48bbf64bce61520d5557ff92c0d4f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1vector.html">FMVector3List</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#a746674509f8ff3a5579c662b269e728f">GetCVs</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a746674509f8ff3a5579c662b269e728f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#afb753c93f0dd00a7482473b44dd89422">ClearCVs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Empty the spline's control vertex list.  <a href="#afb753c93f0dd00a7482473b44dd89422"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDSpline.html">FCDSpline</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#abff4f438bb811a561891f14e8c0d9c59">Clone</a> (<a class="el" href="classFCDSpline.html">FCDSpline</a> *clone) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Copies the spline into a clone.  <a href="#abff4f438bb811a561891f14e8c0d9c59"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1vector.html">FMVector3List</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSpline.html#a05d1e800f6a9036a4fcb48645f801e97">cvs</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The list of control vertices.  <a href="#a05d1e800f6a9036a4fcb48645f801e97"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Represents a generic spline. A FCSpline contains a list of control vertices and a closed attribute which defaults to false. </p>
+<p>Represents a generic spline. </p>
+<p>A FCSpline contains a list of control vertices and a closed attribute which defaults to false. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ace689bd475c17da2c24f076e06f47388"></a><!-- doxytag: member="FCDSpline::FCDSpline" ref="ace689bd475c17da2c24f076e06f47388" args="(FCDocument *document)" -->
 <div class="memitem">
@@ -114,10 +134,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html">FCollada</a> document that owns this spline. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> document that owns this spline. </td></tr>
   </table>
   </dd>
 </dl>
@@ -138,6 +159,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -157,6 +179,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Empty the spline's control vertex list. </p>
 
 </div>
@@ -176,7 +199,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Copies the spline into a clone. The clone may reside in another document. </p>
+
+<p>[INTERNAL] Copies the spline into a clone. </p>
+<p>The clone may reside in another document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The empty clone. This pointer cannot be NULL. </td></tr>
@@ -204,6 +229,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -223,10 +249,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a pointer to the control vertex specified by the given index. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The index, must be higher or equal to 0 and lower than <a class="el" href="classFCDSpline.html#a6ca716ecc294857a4f43c46e76507684">GetCVCount()</a>. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The index, must be higher or equal to 0 and lower than <a class="el" href="classFCDSpline.html#a6ca716ecc294857a4f43c46e76507684" title="Retrieves the number of CVs in the spline.">GetCVCount()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -248,6 +275,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of CVs in the spline. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of control vertices. </dd></dl>
 
@@ -267,6 +295,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a reference to the CVs list. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The reference to the control vertices. </dd></dl>
 
@@ -286,6 +315,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -304,6 +334,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -322,6 +353,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Gets the name of the spline. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spline name. </dd></dl>
 
@@ -341,8 +373,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the type of the spline. This is the only method of the <a class="el" href="classFCDSpline.html">FCDSpline</a> interface. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="namespaceFUDaeSplineType.html">FUDaeSplineType</a> of the spline. </dd></dl>
+
+<p>Retrieves the type of the spline. </p>
+<p>This is the only method of the <a class="el" href="classFCDSpline.html" title="Represents a generic spline.">FCDSpline</a> interface. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="namespaceFUDaeSplineType.html" title="Contains the spline segment interpolation types and their conversion functions.">FUDaeSplineType</a> of the spline. </dd></dl>
 
 <p>Implemented in <a class="el" href="classFCDLinearSpline.html#a7ec1ac08cadd6504ad7dd2a5cbd91640">FCDLinearSpline</a>, <a class="el" href="classFCDBezierSpline.html#a83442735cc73d09922891e94a96fa373">FCDBezierSpline</a>, and <a class="el" href="classFCDNURBSSpline.html#a0d9cface270d668744063df438332592">FCDNURBSSpline</a>.</p>
 
@@ -362,6 +396,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves if the spline is closed or not. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The closed boolean value. </dd></dl>
 
@@ -382,6 +417,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets if the spline is closed or not. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -407,6 +443,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the name of the spline. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -428,6 +465,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The list of control vertices. </p>
 
 </div>
@@ -451,7 +489,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:49 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:22 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

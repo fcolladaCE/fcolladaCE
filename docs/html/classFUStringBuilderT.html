@@ -61,63 +61,108 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUStringBuilderT" -->
+<p>A dynamically-sized string object.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUStringBuilder_8h_source.html">FUStringBuilder.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; Char &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a2e14969ddb2b31c67625cb3b721d36c0">String</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The standard string object which correspond to the builder.  <a href="#a2e14969ddb2b31c67625cb3b721d36c0"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a91f7ece52aa74e753f4b6062fa5e8b86">FUStringBuilderT</a> (const <a class="el" href="classfm_1_1stringT.html">String</a> &amp;sz)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new builder with the content of the given string.  <a href="#a91f7ece52aa74e753f4b6062fa5e8b86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#afa5973392532db8eeb34bb3a3e7d05b7">FUStringBuilderT</a> (const Char *sz)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new builder with the content of the given character array.  <a href="#afa5973392532db8eeb34bb3a3e7d05b7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#abe37ba1c75915d13b45acd8da4e7f635">FUStringBuilderT</a> (Char ch, size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new builder with the given character repeated multiple times over the array.  <a href="#abe37ba1c75915d13b45acd8da4e7f635"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a5e9d1bc5be1082bf90a938162ad6a884">FUStringBuilderT</a> (size_t reserved)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new builder with an empty buffer.  <a href="#a5e9d1bc5be1082bf90a938162ad6a884"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a00171f846b560f6aeb8dfdeba64f8a80">FUStringBuilderT</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new builder with an empty buffer.  <a href="#a00171f846b560f6aeb8dfdeba64f8a80"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a361e0a5d63664f81da9b05398744d6fc">~FUStringBuilderT</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deletes the builder.  <a href="#a361e0a5d63664f81da9b05398744d6fc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a7b5318f7e8d9141c872d598486cca38a">reserve</a> (size_t length)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reserves a given number of character slots.  <a href="#a7b5318f7e8d9141c872d598486cca38a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a5355e1bb17d7a1289fda368791f9bc65">length</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the length of the content within the builder.  <a href="#a5355e1bb17d7a1289fda368791f9bc65"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#ac96aef7b03a2422724cec6dc25045685">clear</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clears the content of the builder.  <a href="#ac96aef7b03a2422724cec6dc25045685"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#af5b84ae04c1472ef5a83a6dfc4743622">empty</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the builder is empty.  <a href="#af5b84ae04c1472ef5a83a6dfc4743622"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#af33b4c42583e46843d6a59bdc223d256">append</a> (Char c)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a character to the content of the builder.  <a href="#af33b4c42583e46843d6a59bdc223d256"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a4cd340250d45997ba2647b06073a09cd">append</a> (const <a class="el" href="classfm_1_1stringT.html">String</a> &amp;sz)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a string to the content of the builder.  <a href="#a4cd340250d45997ba2647b06073a09cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a93fa36e1388dbb2947195f93dcf5fe6d">append</a> (const Char *sz)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a character array to the content of the builder.  <a href="#a93fa36e1388dbb2947195f93dcf5fe6d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a312b24a1809d3837304c3db9993454a3">append</a> (const Char *sz, size_t len)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a character array to the content of the builder.  <a href="#a312b24a1809d3837304c3db9993454a3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a4b79b3acdf1974ba46b53f158b3241d8">append</a> (const <a class="el" href="classFUStringBuilderT.html">FUStringBuilderT</a> &amp;b)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends the content of a builder to the content of this builder.  <a href="#a4b79b3acdf1974ba46b53f158b3241d8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a9f6cb1cc412a4f668aa4f13c96e3123f">append</a> (const int32 i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends the integer value, after converting it to a string, to the content of the builder.  <a href="#a9f6cb1cc412a4f668aa4f13c96e3123f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a1a16bb77d7263cf01c2c1a830486ea65">append</a> (const uint32 i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1a16bb77d7263cf01c2c1a830486ea65"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a8bb9b4972083b2ed3f8e468e08433f00">append</a> (const uint64 i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a8bb9b4972083b2ed3f8e468e08433f00"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a79b11382b7de987fcd39dd3e5e1c46df">appendHex</a> (uint8 i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends the integer value, after converting it to a <a class="el" href="namespacefm.html#ac112eb8f56d62ea729aa6d1edd7233a4" title="A string of UTF8 characters.">fm::string</a>, in hexadecimal, to the content of the builder.  <a href="#a79b11382b7de987fcd39dd3e5e1c46df"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a0161b2dbfccbb2bdd9b6dff22d36cbe4">appendHex</a> (const T &amp;i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0161b2dbfccbb2bdd9b6dff22d36cbe4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a5a7e03af7f6bba4b7ac6bf80578b6c60">append</a> (unsigned long i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5a7e03af7f6bba4b7ac6bf80578b6c60"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a4f3055b60d9c69e3bebdddd15e1d9944">append</a> (long i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a4f3055b60d9c69e3bebdddd15e1d9944"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a76bfc61012979ee1a8d35ec620eb1565">append</a> (float f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends the floating-point value, after converting it to a string, to the content of the builder.  <a href="#a76bfc61012979ee1a8d35ec620eb1565"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#ad7d3c928169a05d84ed0d0018a81605c">append</a> (double f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad7d3c928169a05d84ed0d0018a81605c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a0b3ed525e7d516e0fbe3de41af5aeca4">append</a> (const <a class="el" href="classFMVector2.html">FMVector2</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a vector to the content of the builder.  <a href="#a0b3ed525e7d516e0fbe3de41af5aeca4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a494dcb8522bb0512f71bde1fea45fdcc">append</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a494dcb8522bb0512f71bde1fea45fdcc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#ac031ffc7004c46f3c3a0ec0799733e75">append</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac031ffc7004c46f3c3a0ec0799733e75"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classFUStringBuilderT.html">FUStringBuilderT</a> &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#ab721552d7de380e056fd7bf0eb4005dd">operator+=</a> (const TYPE &amp;val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a value to the content of the builder.  <a href="#ab721552d7de380e056fd7bf0eb4005dd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a97010c6e8578f54c69e3b63f86f0a22f">appendLine</a> (const Char *sz)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a character array to the content of the builder.  <a href="#a97010c6e8578f54c69e3b63f86f0a22f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a4c9b7d5e462ef7e71e789de3e6c602ea">remove</a> (int32 start)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a section of the content of the builder.  <a href="#a4c9b7d5e462ef7e71e789de3e6c602ea"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#afe012eb9649bab74ad823f2cfc8e8482">remove</a> (int32 start, int32 end)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a section of the content of the builder.  <a href="#afe012eb9649bab74ad823f2cfc8e8482"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a3ad0d96a574dd270bc8c0308ab54dd17">pop_back</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the last character of the content of the builder.  <a href="#a3ad0d96a574dd270bc8c0308ab54dd17"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#aeabb270f37052f15eb733d15a69e49dc">set</a> (const TYPE &amp;val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the content of the builder to a given value.  <a href="#aeabb270f37052f15eb733d15a69e49dc"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classFUStringBuilderT.html">FUStringBuilderT</a> &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a7795fa3b99f62378fc69f7487d8de878">operator=</a> (const TYPE &amp;val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7795fa3b99f62378fc69f7487d8de878"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1stringT.html">String</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a34ae55c7b7b7fcf4f08e734852680c22">ToString</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the content of the builder to a standard string.  <a href="#a34ae55c7b7b7fcf4f08e734852680c22"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const Char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a8b1dfaf8fd3a994c6a6188c53d209867">ToCharPtr</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the content of the builder to a character array.  <a href="#a8b1dfaf8fd3a994c6a6188c53d209867"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#ad7f5199bf848c011bb7879653bfc783c">operator const Char *</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad7f5199bf848c011bb7879653bfc783c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#a5e9eb78dce319fc878d4ad3a932aff8a">index</a> (Char c) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the index of the first character within the content of the builder that is equivalent to the given character.  <a href="#a5e9eb78dce319fc878d4ad3a932aff8a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#ad3b62c0467b20a859c25bc5acd1949c9">rindex</a> (Char c) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the index of the last character within the content of the builder that is equivalent to the given character.  <a href="#ad3b62c0467b20a859c25bc5acd1949c9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">Char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringBuilderT.html#ae9c746ac5c0dc87b84ee53e51c1ab683">back</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the last character within the content of the builder.  <a href="#ae9c746ac5c0dc87b84ee53e51c1ab683"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;class Char&gt;<br/>
  class FUStringBuilderT&lt; Char &gt;</h3>
 
-<p>A dynamically-sized string object. The template has two arguments: the character definition and the sprintf() functor class for float to string conversions.</p>
+<p>A dynamically-sized string object. </p>
+<p>The template has two arguments: the character definition and the sprintf() functor class for float to string conversions.</p>
 <p>This class should be used for all the string operations, as it contains a dynamically-resized buffer that is not directly tied to its content's length. </p>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a2e14969ddb2b31c67625cb3b721d36c0"></a><!-- doxytag: member="FUStringBuilderT::String" ref="a2e14969ddb2b31c67625cb3b721d36c0" args="" -->
@@ -132,6 +177,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The standard string object which correspond to the builder. </p>
 
 </div>
@@ -154,6 +200,7 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a new builder with the content of the given string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -181,6 +228,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a new builder with the content of the given character array. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -217,6 +265,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a new builder with the given character repeated multiple times over the array. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -245,8 +294,9 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a new builder with an empty buffer. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFUStringBuilderT.html#a7b5318f7e8d9141c872d598486cca38a">reserve</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFUStringBuilderT.html#a7b5318f7e8d9141c872d598486cca38a" title="Reserves a given number of character slots.">reserve</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>reserved</em>&nbsp;</td><td>The number of character slots to reserve within the empty buffer. </td></tr>
@@ -272,6 +322,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a new builder with an empty buffer. </p>
 
 </div>
@@ -292,7 +343,9 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Deletes the builder. Its buffer will be cleared. Any pointers to its data will be dangling. </p>
+
+<p>Deletes the builder. </p>
+<p>Its buffer will be cleared. Any pointers to its data will be dangling. </p>
 
 </div>
 </div>
@@ -314,6 +367,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Appends a character to the content of the builder. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -350,6 +404,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Appends a character array to the content of the builder. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -378,6 +433,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Appends the content of a builder to the content of this builder. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -405,6 +461,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -426,7 +483,9 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Appends the floating-point value, after converting it to a string, to the content of the builder. If the floating-point value is the special token that represents infinity, the string "INF" is appended. If it represents the negative infinity, the string "-INF" is appended. If it represents the impossibility, the string "NaN" is appended. </p>
+
+<p>Appends the floating-point value, after converting it to a string, to the content of the builder. </p>
+<p>If the floating-point value is the special token that represents infinity, the string "INF" is appended. If it represents the negative infinity, the string "-INF" is appended. If it represents the impossibility, the string "NaN" is appended. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>f</em>&nbsp;</td><td>A floating-point value. </td></tr>
@@ -453,6 +512,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -474,6 +534,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Appends a vector to the content of the builder. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -499,6 +560,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Appends the integer value, after converting it to a string, to the content of the builder. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -526,6 +588,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -547,6 +610,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -566,6 +630,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -587,6 +652,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Appends a string to the content of the builder. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -612,6 +678,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -633,6 +700,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Appends a character array to the content of the builder. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -660,6 +728,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -681,7 +750,9 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Appends the integer value, after converting it to a <a class="el" href="namespacefm.html#ac112eb8f56d62ea729aa6d1edd7233a4">fm::string</a>, in hexadecimal, to the content of the builder. The size of the integer will determine the number of characters used. </p>
+
+<p>Appends the integer value, after converting it to a <a class="el" href="namespacefm.html#ac112eb8f56d62ea729aa6d1edd7233a4" title="A string of UTF8 characters.">fm::string</a>, in hexadecimal, to the content of the builder. </p>
+<p>The size of the integer will determine the number of characters used. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>i</em>&nbsp;</td><td>An unsigned integer value. </td></tr>
@@ -710,6 +781,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -731,7 +803,9 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Appends a character array to the content of the builder. A newline character will be appended after the character array. </p>
+
+<p>Appends a character array to the content of the builder. </p>
+<p>A newline character will be appended after the character array. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>sz</em>&nbsp;</td><td>A character array. It must terminate with an element containing the 'zero' value. </td></tr>
@@ -757,6 +831,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the last character within the content of the builder. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The last character of the builder. </dd></dl>
 
@@ -778,7 +853,9 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Clears the content of the builder. This does not re-allocate a new buffer. </p>
+
+<p>Clears the content of the builder. </p>
+<p>This does not re-allocate a new buffer. </p>
 
 </div>
 </div>
@@ -798,7 +875,9 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the builder is empty. A builder is considered empty when it has no content, regardless of the size or allocation status of its buffer. </p>
+
+<p>Retrieves whether the builder is empty. </p>
+<p>A builder is considered empty when it has no content, regardless of the size or allocation status of its buffer. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the builder is empty. </dd></dl>
 
 </div>
@@ -820,6 +899,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the index of the first character within the content of the builder that is equivalent to the given character. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -847,6 +927,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the length of the content within the builder. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The length of the string. </dd></dl>
 
@@ -868,6 +949,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -891,8 +973,10 @@ template&lt;typename TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Appends a value to the content of the builder. This is a shortcut for the append function. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFUStringBuilderT.html#af33b4c42583e46843d6a59bdc223d256">append</a> </dd></dl>
+
+<p>Appends a value to the content of the builder. </p>
+<p>This is a shortcut for the append function. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFUStringBuilderT.html#af33b4c42583e46843d6a59bdc223d256" title="Appends a character to the content of the builder.">append</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>val</em>&nbsp;</td><td>A value. This may be numerical, a character, a character array or a string. </td></tr>
@@ -921,6 +1005,7 @@ template&lt;typename TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -941,6 +1026,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes the last character of the content of the builder. </p>
 
 </div>
@@ -971,7 +1057,9 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Removes a section of the content of the builder. The substring defined by the 'start' and 'end' indices will be removed. The 'start' character is removed and is replaced by the 'end' character. </p>
+
+<p>Removes a section of the content of the builder. </p>
+<p>The substring defined by the 'start' and 'end' indices will be removed. The 'start' character is removed and is replaced by the 'end' character. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>start</em>&nbsp;</td><td>The index of the first character of the substring to remove. </td></tr>
@@ -999,7 +1087,9 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Removes a section of the content of the builder. Every character that occurs after the given index will be removed, resulting in a shrunk string. </p>
+
+<p>Removes a section of the content of the builder. </p>
+<p>Every character that occurs after the given index will be removed, resulting in a shrunk string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>start</em>&nbsp;</td><td>An index within the content of the builder. </td></tr>
@@ -1026,7 +1116,9 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Reserves a given number of character slots. If the builder has a buffer with a different number of character slots, a new buffer will be allocated. If the builder has contents, it will be copied within the new buffer. If there is more content than the new buffer can handle, it will be discarded. </p>
+
+<p>Reserves a given number of character slots. </p>
+<p>If the builder has a buffer with a different number of character slots, a new buffer will be allocated. If the builder has contents, it will be copied within the new buffer. If there is more content than the new buffer can handle, it will be discarded. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>length</em>&nbsp;</td><td>The number of character slots to reserve. </td></tr>
@@ -1053,6 +1145,7 @@ template&lt;class Char&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the index of the last character within the content of the builder that is equivalent to the given character. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1083,7 +1176,9 @@ template&lt;typename TYPE &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the content of the builder to a given value. This clears the builder of all its content and appends the given value. </p>
+
+<p>Sets the content of the builder to a given value. </p>
+<p>This clears the builder of all its content and appends the given value. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>val</em>&nbsp;</td><td>A value. This may be numerical, a character, a character array or a string. </td></tr>
@@ -1109,6 +1204,7 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the content of the builder to a character array. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A character array with the content of the builder. This pointer is valid for the lifetime of the buffer of the builder, so do not keep it around. This character array should not be modified. </dd></dl>
 
@@ -1128,6 +1224,7 @@ template&lt;class Char &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the content of the builder to a standard string. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A string with the content of the builder. </dd></dl>
 
@@ -1153,7 +1250,7 @@ template&lt;class Char &gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:58 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:25 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

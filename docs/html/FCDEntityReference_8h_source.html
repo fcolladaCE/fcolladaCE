@@ -63,57 +63,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FCD_ENTITY_REFERENCE_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
 <a name="l00017"></a>00017 <span class="preprocessor">#ifndef __FCD_OBJECT_H_</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDObject_8h.html">FCDocument/FCDObject.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDObject_8h.html" title="This file contains the FCDObject class.">FCDocument/FCDObject.h</a>&quot;</span>
 <a name="l00019"></a>00019 <span class="preprocessor">#endif // __FCD_OBJECT_H_</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#ifndef _FU_URI_H_</span>
 <a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#include &quot;FUtils/FUUri.h&quot;</span>
 <a name="l00022"></a>00022 <span class="preprocessor">#endif // _FU_URI_H_</span>
 <a name="l00023"></a>00023 <span class="preprocessor"></span>
-<a name="l00024"></a>00024 <span class="keyword">class </span><a class="code" href="classFCDPlaceHolder.html">FCDPlaceHolder</a>;
-<a name="l00025"></a>00025 <span class="keyword">class </span><a class="code" href="classFCDObjectWithId.html">FCDObjectWithId</a>;
+<a name="l00024"></a>00024 <span class="keyword">class </span><a class="code" href="classFCDPlaceHolder.html" title="A FCollada document placeholder.">FCDPlaceHolder</a>;
+<a name="l00025"></a>00025 <span class="keyword">class </span><a class="code" href="classFCDObjectWithId.html" title="A basic COLLADA object which has a unique COLLADA id.">FCDObjectWithId</a>;
 <a name="l00026"></a>00026 
-<a name="l00053"></a><a class="code" href="classFCDEntityReference.html">00053</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDEntityReference.html">FCDEntityReference</a> : <span class="keyword">public</span> <a class="code" href="classFCDObject.html">FCDObject</a>, <a class="code" href="classFUTracker.html">FUTracker</a>
+<a name="l00053"></a><a class="code" href="classFCDEntityReference.html">00053</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDEntityReference.html" title="A COLLADA external reference for an entity instance.">FCDEntityReference</a> : <span class="keyword">public</span> <a class="code" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a>, <a class="code" href="classFUTracker.html" title="An object set Each set has access to a list of unique objects.">FUTracker</a>
 <a name="l00054"></a>00054 {
 <a name="l00055"></a>00055 <span class="keyword">private</span>:
-<a name="l00056"></a>00056         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7">DeclareObjectType</a>(<a class="code" href="classFCDObject.html">FCDObject</a>);
+<a name="l00056"></a>00056         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7" title="Declares the object type for an object class.">DeclareObjectType</a>(<a class="code" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a>);
 <a name="l00057"></a>00057 
-<a name="l00058"></a>00058         <a class="code" href="classFCDEntity.html">FCDEntity</a>* entity;
-<a name="l00059"></a>00059         <a class="code" href="classFCDPlaceHolder.html">FCDPlaceHolder</a>* placeHolder;
-<a name="l00060"></a>00060         <a class="code" href="classfm_1_1stringT.html">fm::string</a> entityId;
+<a name="l00058"></a>00058         <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* entity;
+<a name="l00059"></a>00059         <a class="code" href="classFCDPlaceHolder.html" title="A FCollada document placeholder.">FCDPlaceHolder</a>* placeHolder;
+<a name="l00060"></a>00060         <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::string</a> entityId;
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062         <span class="comment">// Pointer back to the nearest object with id that references</span>
 <a name="l00063"></a>00063         <span class="comment">// us down the hierarchy.  This is because the references from the</span>
 <a name="l00064"></a>00064         <span class="comment">// actual object with the link are irrelevant in terms of the hierarchy,</span>
 <a name="l00065"></a>00065         <span class="comment">// it is only objects with id&#39;s (ie FCDEntities) that actually matter in terms</span>
 <a name="l00066"></a>00066         <span class="comment">// of object durability etc.</span>
-<a name="l00067"></a>00067         <a class="code" href="classFCDObjectWithId.html">FCDObjectWithId</a>* baseObject;
+<a name="l00067"></a>00067         <a class="code" href="classFCDObjectWithId.html" title="A basic COLLADA object which has a unique COLLADA id.">FCDObjectWithId</a>* baseObject;
 <a name="l00068"></a>00068 
 <a name="l00069"></a>00069 <span class="keyword">public</span>:
-<a name="l00073"></a>00073         <a class="code" href="classFCDEntityReference.html">FCDEntityReference</a>(<a class="code" href="classFCDocument.html">FCDocument</a>* document, <a class="code" href="classFCDObjectWithId.html">FCDObjectWithId</a>* parent);
+<a name="l00073"></a>00073         <a class="code" href="classFCDEntityReference.html" title="A COLLADA external reference for an entity instance.">FCDEntityReference</a>(<a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>* document, <a class="code" href="classFCDObjectWithId.html" title="A basic COLLADA object which has a unique COLLADA id.">FCDObjectWithId</a>* parent);
 <a name="l00074"></a>00074 
-<a name="l00076"></a>00076         <span class="keyword">virtual</span> ~<a class="code" href="classFCDEntityReference.html">FCDEntityReference</a>();
+<a name="l00076"></a>00076         <span class="keyword">virtual</span> ~<a class="code" href="classFCDEntityReference.html" title="A COLLADA external reference for an entity instance.">FCDEntityReference</a>();
 <a name="l00077"></a>00077 
-<a name="l00081"></a><a class="code" href="classFCDEntityReference.html#a7df4767dc82a8315766f8526db7781e0">00081</a>         <a class="code" href="classFCDPlaceHolder.html">FCDPlaceHolder</a>* <a class="code" href="classFCDEntityReference.html#a7df4767dc82a8315766f8526db7781e0">GetPlaceHolder</a>() { <span class="keywordflow">return</span> placeHolder; }
-<a name="l00082"></a><a class="code" href="classFCDEntityReference.html#a51cb355f0b2647cb9ff8be45b749ab6d">00082</a>         <span class="keyword">const</span> <a class="code" href="classFCDPlaceHolder.html">FCDPlaceHolder</a>* <a class="code" href="classFCDEntityReference.html#a51cb355f0b2647cb9ff8be45b749ab6d">GetPlaceHolder</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> placeHolder; } 
-<a name="l00086"></a><a class="code" href="classFCDEntityReference.html#a71093d0985ba2c7c9a825c6732c3a983">00086</a>         <span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fm::string</a>&amp; <a class="code" href="classFCDEntityReference.html#a71093d0985ba2c7c9a825c6732c3a983">GetEntityId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> entityId; }
+<a name="l00081"></a><a class="code" href="classFCDEntityReference.html#a7df4767dc82a8315766f8526db7781e0">00081</a>         <a class="code" href="classFCDPlaceHolder.html" title="A FCollada document placeholder.">FCDPlaceHolder</a>* <a class="code" href="classFCDEntityReference.html#a7df4767dc82a8315766f8526db7781e0" title="Retrieves the placeholder if this references an entity from an external COLLADA document.">GetPlaceHolder</a>() { <span class="keywordflow">return</span> placeHolder; }
+<a name="l00082"></a><a class="code" href="classFCDEntityReference.html#a51cb355f0b2647cb9ff8be45b749ab6d">00082</a>         <span class="keyword">const</span> <a class="code" href="classFCDPlaceHolder.html" title="A FCollada document placeholder.">FCDPlaceHolder</a>* <a class="code" href="classFCDEntityReference.html#a51cb355f0b2647cb9ff8be45b749ab6d" title="See above.">GetPlaceHolder</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> placeHolder; } 
+<a name="l00086"></a><a class="code" href="classFCDEntityReference.html#a71093d0985ba2c7c9a825c6732c3a983">00086</a>         <span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::string</a>&amp; <a class="code" href="classFCDEntityReference.html#a71093d0985ba2c7c9a825c6732c3a983" title="Retrieves the COLLADA id of the entity that is externally referenced.">GetEntityId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> entityId; }
 <a name="l00087"></a>00087 
-<a name="l00091"></a><a class="code" href="classFCDEntityReference.html#a7959b330c7b15c0eaab8179df82445c9">00091</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFCDEntityReference.html#a7959b330c7b15c0eaab8179df82445c9">IsExternal</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> placeHolder != NULL; }
+<a name="l00091"></a><a class="code" href="classFCDEntityReference.html#a7959b330c7b15c0eaab8179df82445c9">00091</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFCDEntityReference.html#a7959b330c7b15c0eaab8179df82445c9" title="Retrieves whether this entity reference is an external entity reference.">IsExternal</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> placeHolder != NULL; }
 <a name="l00092"></a>00092 
-<a name="l00096"></a><a class="code" href="classFCDEntityReference.html#a54ed0344364c939510281b31290f4fed">00096</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFCDEntityReference.html#a54ed0344364c939510281b31290f4fed">IsLocal</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> placeHolder == NULL; }
+<a name="l00096"></a><a class="code" href="classFCDEntityReference.html#a54ed0344364c939510281b31290f4fed">00096</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFCDEntityReference.html#a54ed0344364c939510281b31290f4fed" title="Retrieves whether this entity reference is a local entity reference.">IsLocal</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> placeHolder == NULL; }
 <a name="l00097"></a>00097 
-<a name="l00100"></a><a class="code" href="classFCDEntityReference.html#a40bc9d2d3bc84815bd948c34e483c389">00100</a>         <span class="keywordtype">void</span> <a class="code" href="classFCDEntityReference.html#a40bc9d2d3bc84815bd948c34e483c389">SetEntityId</a>(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fm::string</a>&amp; <span class="keywordtype">id</span>) { entityId = id; SetDirtyFlag(); }
+<a name="l00100"></a><a class="code" href="classFCDEntityReference.html#a40bc9d2d3bc84815bd948c34e483c389">00100</a>         <span class="keywordtype">void</span> <a class="code" href="classFCDEntityReference.html#a40bc9d2d3bc84815bd948c34e483c389" title="Sets the COLLADA id of the referenced entity.">SetEntityId</a>(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::string</a>&amp; <span class="keywordtype">id</span>) { entityId = id; SetDirtyFlag(); }
 <a name="l00101"></a>00101 
-<a name="l00105"></a>00105         <a class="code" href="classFUUri.html">FUUri</a> GetUri() <span class="keyword">const</span>;
+<a name="l00105"></a>00105         <a class="code" href="classFUUri.html" title="A simple URI structure.">FUUri</a> GetUri() <span class="keyword">const</span>;
 <a name="l00106"></a>00106 
-<a name="l00110"></a>00110         <span class="keywordtype">void</span> SetUri(<span class="keyword">const</span> <a class="code" href="classFUUri.html">FUUri</a>&amp; uri);
+<a name="l00110"></a>00110         <span class="keywordtype">void</span> SetUri(<span class="keyword">const</span> <a class="code" href="classFUUri.html" title="A simple URI structure.">FUUri</a>&amp; uri);
 <a name="l00111"></a>00111         
-<a name="l00116"></a><a class="code" href="classFCDEntityReference.html#a0198480bac39a42d02618cf95657c98d">00116</a>         <a class="code" href="classFCDEntity.html">FCDEntity</a>* <a class="code" href="classFCDEntityReference.html#a0198480bac39a42d02618cf95657c98d">GetEntity</a>() { <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="classFCDEntity.html">FCDEntity</a>*<span class="keyword">&gt;</span>(<span class="keyword">const_cast&lt;</span><span class="keyword">const </span><a class="code" href="classFCDEntityReference.html">FCDEntityReference</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classFCDEntityReference.html#a0198480bac39a42d02618cf95657c98d">GetEntity</a>()); }
-<a name="l00117"></a>00117         <span class="keyword">const</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>* GetEntity() <span class="keyword">const</span>; 
-<a name="l00125"></a><a class="code" href="classFCDEntityReference.html#abdfe1fa4f0c01aba927b90bcd6965b26">00125</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFCDObjectWithId.html">FCDObjectWithId</a>* <a class="code" href="classFCDEntityReference.html#abdfe1fa4f0c01aba927b90bcd6965b26">GetClosestObjectWithId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> baseObject; }
+<a name="l00116"></a><a class="code" href="classFCDEntityReference.html#a0198480bac39a42d02618cf95657c98d">00116</a>         <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* <a class="code" href="classFCDEntityReference.html#a0198480bac39a42d02618cf95657c98d" title="Get the entity this external reference points to.">GetEntity</a>() { <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>*<span class="keyword">&gt;</span>(<span class="keyword">const_cast&lt;</span><span class="keyword">const </span><a class="code" href="classFCDEntityReference.html" title="A COLLADA external reference for an entity instance.">FCDEntityReference</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classFCDEntityReference.html#a0198480bac39a42d02618cf95657c98d" title="Get the entity this external reference points to.">GetEntity</a>()); }
+<a name="l00117"></a>00117         <span class="keyword">const</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* GetEntity() <span class="keyword">const</span>; 
+<a name="l00125"></a><a class="code" href="classFCDEntityReference.html#abdfe1fa4f0c01aba927b90bcd6965b26">00125</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFCDObjectWithId.html" title="A basic COLLADA object which has a unique COLLADA id.">FCDObjectWithId</a>* <a class="code" href="classFCDEntityReference.html#abdfe1fa4f0c01aba927b90bcd6965b26" title="Get a pointer to the entity that either directly or indirectly exclusively contains this reference...">GetClosestObjectWithId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> baseObject; }
 <a name="l00126"></a>00126 
-<a name="l00130"></a><a class="code" href="classFCDEntityReference.html#a7fa9539ed0a87e9be443e46c7fa086f6">00130</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFCDEntityReference.html#a7fa9539ed0a87e9be443e46c7fa086f6">SetClosestObjectWithId</a>(<a class="code" href="classFCDObjectWithId.html">FCDObjectWithId</a>* obj) { <a class="code" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f">FUAssert</a>(baseObject == NULL,); baseObject = obj; }
+<a name="l00130"></a><a class="code" href="classFCDEntityReference.html#a7fa9539ed0a87e9be443e46c7fa086f6">00130</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFCDEntityReference.html#a7fa9539ed0a87e9be443e46c7fa086f6" title="Set the pointer to the closest entity upstream that contains this reference.">SetClosestObjectWithId</a>(<a class="code" href="classFCDObjectWithId.html" title="A basic COLLADA object which has a unique COLLADA id.">FCDObjectWithId</a>* obj) { <a class="code" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f" title="Asserts that a condition is met.">FUAssert</a>(baseObject == NULL,); baseObject = obj; }
 <a name="l00131"></a>00131 
-<a name="l00135"></a>00135         <span class="keywordtype">void</span> SetEntity(<a class="code" href="classFCDEntity.html">FCDEntity</a>* entity);
+<a name="l00135"></a>00135         <span class="keywordtype">void</span> SetEntity(<a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* entity);
 <a name="l00136"></a>00136 
 <a name="l00137"></a>00137 <span class="keyword">private</span>:
 <a name="l00138"></a>00138         <span class="comment">// Attempt to find the entity based on the set URL etc. </span>
@@ -122,14 +122,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00141"></a>00141 
 <a name="l00142"></a>00142         <span class="comment">//      Sets the COLLADA document referenced by the entity instance.</span>
 <a name="l00143"></a>00143         <span class="comment">//      @param document The COLLADA document referenced by the entity instance.</span>
-<a name="l00144"></a>00144         <span class="keywordtype">void</span> SetEntityDocument(<a class="code" href="classFCDocument.html">FCDocument</a>* document);
+<a name="l00144"></a>00144         <span class="keywordtype">void</span> SetEntityDocument(<a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>* document);
 <a name="l00145"></a>00145 
 <a name="l00146"></a>00146         <span class="comment">// Sets the COLLADA document place holder that replaces the</span>
 <a name="l00147"></a>00147         <span class="comment">// external COLLADA document for this reference.</span>
 <a name="l00148"></a>00148         <span class="comment">// @param placeHolder The COLLADA document place holder.</span>
-<a name="l00149"></a>00149         <span class="keywordtype">void</span> SetPlaceHolder(<a class="code" href="classFCDPlaceHolder.html">FCDPlaceHolder</a>* placeHolder);
+<a name="l00149"></a>00149         <span class="keywordtype">void</span> SetPlaceHolder(<a class="code" href="classFCDPlaceHolder.html" title="A FCollada document placeholder.">FCDPlaceHolder</a>* placeHolder);
 <a name="l00150"></a>00150 
-<a name="l00151"></a>00151         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFUTracker.html#a7e79d02821b3ccd2fadc460125cb3ca4">OnObjectReleased</a>(<a class="code" href="classFUTrackable.html">FUTrackable</a>* <span class="keywordtype">object</span>);
+<a name="l00151"></a>00151         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFUTracker.html#a7e79d02821b3ccd2fadc460125cb3ca4" title="Callback when an object tracked by this tracker is being released.">OnObjectReleased</a>(<a class="code" href="classFUTrackable.html" title="A trackable object.">FUTrackable</a>* <span class="keywordtype">object</span>);
 <a name="l00152"></a>00152 };
 <a name="l00153"></a>00153 
 <a name="l00154"></a>00154 <span class="preprocessor">#endif // _FCD_ENTITY_REFERENCE_H_</span>
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:19 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:11 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

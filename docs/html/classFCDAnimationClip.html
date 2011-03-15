@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDAnimationClip" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA animation clip.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDAnimationClip_8h_source.html">FCDAnimationClip.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDAnimationClip:</div>
@@ -79,25 +82,42 @@ Inheritance diagram for FCDAnimationClip:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a7b9a575f0a69924becf22c31309f052e">FCDAnimationClip</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a7b9a575f0a69924becf22c31309f052e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a277876f9e175f04ae9a954aa464b371a">~FCDAnimationClip</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a277876f9e175f04ae9a954aa464b371a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a238068520ca5d5932252fd73f18eb573">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the animation clip entity into a clone.  <a href="#a238068520ca5d5932252fd73f18eb573"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#aef1051c0a708829ae1800e4362b8af7e">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity type for this class.  <a href="#aef1051c0a708829ae1800e4362b8af7e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUTrackedList.html">FCDAnimationCurveTrackList</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#ad3d1c50b00da7dc6092e893f2b2ba1a0">GetClipCurves</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of curves that are used by this animation clip.  <a href="#ad3d1c50b00da7dc6092e893f2b2ba1a0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUTrackedList.html">FCDAnimationCurveTrackList</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#ad815a4be325c0f6e375d9a2dd3ea6fdf">GetClipCurves</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad815a4be325c0f6e375d9a2dd3ea6fdf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a1adf70ff7bf8a26cd7769a93a80eea02">AddClipCurve</a> (<a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *curve)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inserts an existing curve within this animation clip.  <a href="#a1adf70ff7bf8a26cd7769a93a80eea02"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#ab7d15c33a1ead6ed4b87b9cc6e75b866">GetStart</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the start time marker position for this animation clip.  <a href="#ab7d15c33a1ead6ed4b87b9cc6e75b866"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#aba58782b21762c1602022accfafce340">SetStart</a> (float _start)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the start time marker position for this animation clip.  <a href="#aba58782b21762c1602022accfafce340"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a1cef2ba64b8f98f430d394423f1c37f4">GetEnd</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the end time marker position for this animation clip.  <a href="#a1cef2ba64b8f98f430d394423f1c37f4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#aa55db11384a406c48b834326a964e666">SetEnd</a> (float _end)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the end time marker position for this animation clip.  <a href="#aa55db11384a406c48b834326a964e666"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#aa1f97cce1c7ac2d9bb019404a73e923c">GetAnimationCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of instanced animations within this animation clip.  <a href="#aa1f97cce1c7ac2d9bb019404a73e923c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimation.html">FCDAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a11169a159cea62896fa3f4c34fa0b888">GetAnimation</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a given animation instanced by this clip.  <a href="#a11169a159cea62896fa3f4c34fa0b888"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a583019dc6402e191b3a977ab601087fe">SetAnimationName</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;name, size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the name of the animation at a given index.  <a href="#a583019dc6402e191b3a977ab601087fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a6d952c3811daafcddc5b340dcdc519cb">GetAnimationName</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the name of the animation at a given index.  <a href="#a6d952c3811daafcddc5b340dcdc519cb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a5bde27d1a1ac44745e74d611117fabe6">AddInstanceAnimation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Adds an animation instance.  <a href="#a5bde27d1a1ac44745e74d611117fabe6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationClip.html#a3062d021cc77dc77063d669db4ca3322">AddInstanceAnimation</a> (<a class="el" href="classFCDAnimation.html">FCDAnimation</a> *animation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Adds an animation instance.  <a href="#a3062d021cc77dc77063d669db4ca3322"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA animation clip.</p>
+<p>A COLLADA animation clip. </p>
 <p>Animation clips are used to group together animation segments. Animation clips are typically used to form complex animation sequences where all the curves should only be used simultaneously. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7b9a575f0a69924becf22c31309f052e"></a><!-- doxytag: member="FCDAnimationClip::FCDAnimationClip" ref="a7b9a575f0a69924becf22c31309f052e" args="(FCDocument *document)" -->
@@ -115,6 +135,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -139,6 +160,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -159,6 +181,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inserts an existing curve within this animation clip. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -183,6 +206,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Adds an animation instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The empty animation instance. </dd></dl>
 
@@ -203,6 +227,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Adds an animation instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -238,7 +263,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Copies the animation clip entity into a clone. The clone may reside in another document. </p>
+
+<p>Copies the animation clip entity into a clone. </p>
+<p>The clone may reside in another document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The empty clone. If this pointer is NULL, a new animation clip will be created and you will need to release the returned pointer manually. </td></tr>
@@ -267,6 +294,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a given animation instanced by this clip. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -292,6 +320,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of instanced animations within this animation clip. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of instanced animations. </dd></dl>
 
@@ -312,6 +341,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the name of the animation at a given index. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -337,6 +367,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -355,6 +386,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of curves that are used by this animation clip. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of curves for the clip. </dd></dl>
 
@@ -374,7 +406,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the end time marker position for this animation clip. When using the animation clip, all the animation curves will need to be synchronized in order for the animation to complete at the end time. </p>
+
+<p>Retrieves the end time marker position for this animation clip. </p>
+<p>When using the animation clip, all the animation curves will need to be synchronized in order for the animation to complete at the end time. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The end time marker position, in seconds. </dd></dl>
 
 </div>
@@ -393,7 +427,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the start time marker position for this animation clip. When using the animation clip, all the animation curves will need to be synchronized in order for the animation to start at the start time. </p>
+
+<p>Retrieves the start time marker position for this animation clip. </p>
+<p>When using the animation clip, all the animation curves will need to be synchronized in order for the animation to start at the start time. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The start time marker position, in seconds. </dd></dl>
 
 </div>
@@ -412,7 +448,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity type for this class. This function is part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> class interface. </p>
+
+<p>Retrieves the entity type for this class. </p>
+<p>This function is part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> class interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: IMAGE. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -443,6 +481,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the name of the animation at a given index. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -469,6 +508,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the end time marker position for this animation clip. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -494,6 +534,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the start time marker position for this animation clip. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -523,7 +564,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:23 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -56,6 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCollada/FUtils/FUAssert.h File Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>This file contains a simple debugging assertion mechanism.  
+<a href="#_details">More...</a></p>
 <code>#include &quot;FUtils/FUFunctor.h&quot;</code><br/>
 
 <p><a href="FUAssert_8h_source.html">Go to the source code of this file.</a></p>
@@ -63,16 +66,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUAssert_8h.html#a8956ee71fb08a1ba54f0ccfecfa74730">FUBreak</a>&nbsp;&nbsp;&nbsp;{ FUAssertion::OnAssertionFailed(__FILE__, __LINE__); }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Breaks into the debugger.  <a href="#a8956ee71fb08a1ba54f0ccfecfa74730"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUAssert_8h.html#a2aaf258bf29e8c9d10c172100670807d">FUFail</a>(command)&nbsp;&nbsp;&nbsp;{ FUBreak; command; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Forces the debugger to break, or take the fall-back.  <a href="#a2aaf258bf29e8c9d10c172100670807d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f">FUAssert</a>(condition, fall_back)&nbsp;&nbsp;&nbsp;{ if (!(condition)) { FUBreak; fall_back; } }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Asserts that a condition is met.  <a href="#a72b8444eb608787f1db6bf1d53e0310f"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFUStaticFunctor1.html">FUStaticFunctor1</a><br class="typebreak"/>
 &lt; const char *, bool &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUAssertion.html#abbdfcb17c0087c4a35a7dfe197fd9e42">FUAssertion::FUAssertCallback</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A functor that deals with assertions that fail.  <a href="#abbdfcb17c0087c4a35a7dfe197fd9e42"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUAssertion.html#a8850a8543f5e412750a346a6442a4972">FUAssertion::SetAssertionFailedCallback</a> (FUAssertCallback *assertionCallback)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set a functor to be called back on assertion fail.  <a href="#a8850a8543f5e412750a346a6442a4972"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUAssertion.html#aeeaf7c1e2f4c844dad0db1fb11db36e5">FUAssertion::OnAssertionFailed</a> (const char *filename, uint32 line)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Event-handler for failed assertions.  <a href="#aeeaf7c1e2f4c844dad0db1fb11db36e5"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>This file contains a simple debugging assertion mechanism. </p>
@@ -101,7 +110,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Asserts that a condition is met. Use this macro, instead of 'if' statements when you are asserting for a programmer's error. </p>
+
+<p>Asserts that a condition is met. </p>
+<p>Use this macro, instead of 'if' statements when you are asserting for a programmer's error. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>condition</em>&nbsp;</td><td>The condition to assert. </td></tr>
@@ -122,7 +133,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Breaks into the debugger. In release builds, this is an empty function. </p>
+
+<p>Breaks into the debugger. </p>
+<p>In release builds, this is an empty function. </p>
 
 </div>
 </div>
@@ -141,6 +154,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Forces the debugger to break, or take the fall-back. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -166,7 +180,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -63,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FU_PARAMETERIZABLE_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
 <a name="l00017"></a>00017 <span class="preprocessor">#ifndef _FU_TRACKER_H_</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUTracker_8h.html">FUtils/FUTracker.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUTracker_8h.html" title="This file contains the FUTrackable base class and the related tracker template classes.">FUtils/FUTracker.h</a>&quot;</span>
 <a name="l00019"></a>00019 <span class="preprocessor">#endif // _FU_TRACKER_H_</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span>
 <a name="l00021"></a>00021 <span class="keyword">class </span>FUParameter;
@@ -80,33 +80,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00040"></a>00040 <span class="preprocessor">        static const uint32 nextAvailableBit = Parent::nextAvailableBit + count;</span>
 <a name="l00041"></a>00041 <span class="preprocessor"></span>
 <a name="l00042"></a>00042 
-<a name="l00051"></a><a class="code" href="classFUParameterizable.html">00051</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUParameterizable.html">FUParameterizable</a> : <span class="keyword">public</span> <a class="code" href="classFUTrackable.html">FUTrackable</a>
+<a name="l00051"></a><a class="code" href="classFUParameterizable.html">00051</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUParameterizable.html" title="A trackable object which contains parameters.">FUParameterizable</a> : <span class="keyword">public</span> <a class="code" href="classFUTrackable.html" title="A trackable object.">FUTrackable</a>
 <a name="l00052"></a>00052 {
 <a name="l00053"></a>00053 <span class="keyword">private</span>:
-<a name="l00054"></a>00054         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7">DeclareObjectType</a>(<a class="code" href="classFUTrackable.html">FUTrackable</a>);
+<a name="l00054"></a>00054         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7" title="Declares the object type for an object class.">DeclareObjectType</a>(<a class="code" href="classFUTrackable.html" title="A trackable object.">FUTrackable</a>);
 <a name="l00055"></a>00055 
 <a name="l00056"></a>00056 <span class="keyword">protected</span>:
 <a name="l00058"></a><a class="code" href="classFUParameterizable.html#a572a6bd0f1948076600b6e352340fca5">00058</a>         uint32 flags;
 <a name="l00059"></a>00059 
 <a name="l00060"></a>00060 <span class="keyword">public</span>:
-<a name="l00061"></a>00061         <a class="code" href="FUParameterizable_8h.html#a7139772fc324ef4f8855f71ca0a19580">DeclareFlag</a>(Dirty, 0); 
-<a name="l00062"></a>00062         <a class="code" href="FUParameterizable_8h.html#a7139772fc324ef4f8855f71ca0a19580">DeclareFlag</a>(ValueChanged, 1); 
-<a name="l00065"></a>00065         <a class="code" href="FUParameterizable_8h.html#a7139772fc324ef4f8855f71ca0a19580">DeclareFlag</a>(StructureChanged, 2); 
-<a name="l00069"></a>00069         <a class="code" href="FUParameterizable_8h.html#a68282c4933172f7a440ee2d7ef7edf18">DeclareFlagCount</a>(3); 
+<a name="l00061"></a>00061         <a class="code" href="FUParameterizable_8h.html#a7139772fc324ef4f8855f71ca0a19580" title="Use the following macros to declare flags.">DeclareFlag</a>(Dirty, 0); 
+<a name="l00062"></a>00062         <a class="code" href="FUParameterizable_8h.html#a7139772fc324ef4f8855f71ca0a19580" title="Use the following macros to declare flags.">DeclareFlag</a>(ValueChanged, 1); 
+<a name="l00065"></a>00065         <a class="code" href="FUParameterizable_8h.html#a7139772fc324ef4f8855f71ca0a19580" title="Use the following macros to declare flags.">DeclareFlag</a>(StructureChanged, 2); 
+<a name="l00069"></a>00069         <a class="code" href="FUParameterizable_8h.html#a68282c4933172f7a440ee2d7ef7edf18" title="Use the following macro to set the number of local flags declared by this class.">DeclareFlagCount</a>(3); 
 <a name="l00071"></a>00071 <span class="keyword">public</span>:
-<a name="l00073"></a>00073         <a class="code" href="classFUParameterizable.html">FUParameterizable</a>();
+<a name="l00073"></a>00073         <a class="code" href="classFUParameterizable.html" title="A trackable object which contains parameters.">FUParameterizable</a>();
 <a name="l00074"></a>00074 
-<a name="l00076"></a>00076         <span class="keyword">virtual</span> ~<a class="code" href="classFUParameterizable.html">FUParameterizable</a>();
+<a name="l00076"></a>00076         <span class="keyword">virtual</span> ~<a class="code" href="classFUParameterizable.html" title="A trackable object which contains parameters.">FUParameterizable</a>();
 <a name="l00077"></a>00077 
-<a name="l00081"></a><a class="code" href="classFUParameterizable.html#aec7ccfa808f8ec346c894172f5faabb9">00081</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUParameterizable.html#aec7ccfa808f8ec346c894172f5faabb9">SetFlag</a>(uint32 f, <span class="keywordtype">bool</span> value) { flags &amp;= ~f; flags |= f * value; }
+<a name="l00081"></a><a class="code" href="classFUParameterizable.html#aec7ccfa808f8ec346c894172f5faabb9">00081</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUParameterizable.html#aec7ccfa808f8ec346c894172f5faabb9" title="Changes the value of one or more flags to a given value.">SetFlag</a>(uint32 f, <span class="keywordtype">bool</span> value) { flags &amp;= ~f; flags |= f * value; }
 <a name="l00082"></a>00082 
-<a name="l00086"></a><a class="code" href="classFUParameterizable.html#ae8b93315f9374da6b2a6065f7e7edb1b">00086</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUParameterizable.html#ae8b93315f9374da6b2a6065f7e7edb1b">SetFlag</a>(uint32 f) { flags |= f; }
+<a name="l00086"></a><a class="code" href="classFUParameterizable.html#ae8b93315f9374da6b2a6065f7e7edb1b">00086</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUParameterizable.html#ae8b93315f9374da6b2a6065f7e7edb1b" title="Sets the value of one or more flags.">SetFlag</a>(uint32 f) { flags |= f; }
 <a name="l00087"></a>00087 
-<a name="l00091"></a><a class="code" href="classFUParameterizable.html#a6487b738377a3d23ad7a171a96b7aeef">00091</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUParameterizable.html#a6487b738377a3d23ad7a171a96b7aeef">TestFlag</a>(uint32 f)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> flags &amp; f; }
+<a name="l00091"></a><a class="code" href="classFUParameterizable.html#a6487b738377a3d23ad7a171a96b7aeef">00091</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUParameterizable.html#a6487b738377a3d23ad7a171a96b7aeef" title="Retrieves the value of one or more flags.">TestFlag</a>(uint32 f)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> flags &amp; f; }
 <a name="l00092"></a>00092         
-<a name="l00096"></a><a class="code" href="classFUParameterizable.html#a09af3ed0cc0dd54daacf6bc6bf0ad93e">00096</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUParameterizable.html#a09af3ed0cc0dd54daacf6bc6bf0ad93e">ClearFlag</a>(uint32 f) { flags &amp;= ~f; }
+<a name="l00096"></a><a class="code" href="classFUParameterizable.html#a09af3ed0cc0dd54daacf6bc6bf0ad93e">00096</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUParameterizable.html#a09af3ed0cc0dd54daacf6bc6bf0ad93e" title="Resets the value of one or more flags.">ClearFlag</a>(uint32 f) { flags &amp;= ~f; }
 <a name="l00097"></a>00097 
-<a name="l00099"></a><a class="code" href="classFUParameterizable.html#af6fbf123f3488d0af7607aae8241aaf8">00099</a>         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFUParameterizable.html#af6fbf123f3488d0af7607aae8241aaf8">SetValueChange</a>() {}
+<a name="l00099"></a><a class="code" href="classFUParameterizable.html#af6fbf123f3488d0af7607aae8241aaf8">00099</a>         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFUParameterizable.html#af6fbf123f3488d0af7607aae8241aaf8" title="Value change notification.">SetValueChange</a>() {}
 <a name="l00100"></a>00100 };
 <a name="l00101"></a>00101 
 <a name="l00102"></a>00102 <span class="preprocessor">#endif // _FU_PARAMETERIZABLE_H_</span>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

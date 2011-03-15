@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEffectParameterSurfaceInit" -->
+<p>A surface initialization method.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffectParameterSurface_8h_source.html">FCDEffectParameterSurface.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEffectParameterSurfaceInit:</div>
@@ -79,14 +82,19 @@ Inheritance diagram for FCDEffectParameterSurfaceInit:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameterSurfaceInit.html#a6b22a5b52b38cbabb51a39c3ea42db74">FCDEffectParameterSurfaceInit</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: builds a new surface initialization method.  <a href="#a6b22a5b52b38cbabb51a39c3ea42db74"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameterSurfaceInit.html#ac350e10e96cbb79e5f4e5b6487052280">~FCDEffectParameterSurfaceInit</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ac350e10e96cbb79e5f4e5b6487052280"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterSurfaceInitFactory.html#a65e74f1159865702cac5236dd5d83892">FCDEffectParameterSurfaceInitFactory::InitType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameterSurfaceInit.html#ad0109233e63c892e5963a3ca67f7108f">GetInitType</a> () const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the initialization type.  <a href="#ad0109233e63c892e5963a3ca67f7108f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterSurfaceInit.html">FCDEffectParameterSurfaceInit</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameterSurfaceInit.html#ae3ac516773ea5ebb6838ed8a0d10d910">Clone</a> (<a class="el" href="classFCDEffectParameterSurfaceInit.html">FCDEffectParameterSurfaceInit</a> *clone) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies all member variables into clone.  <a href="#ae3ac516773ea5ebb6838ed8a0d10d910"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A surface initialization method. In COLLADA 1.4.1, this information was added to support complex surface types. There are six types of initialization methods, described in the InitType enumerated type. Expect the FROM initialization type in the large majority of cases. </p>
+<p>A surface initialization method. </p>
+<p>In COLLADA 1.4.1, this information was added to support complex surface types. There are six types of initialization methods, described in the InitType enumerated type. Expect the FROM initialization type in the large majority of cases. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6b22a5b52b38cbabb51a39c3ea42db74"></a><!-- doxytag: member="FCDEffectParameterSurfaceInit::FCDEffectParameterSurfaceInit" ref="a6b22a5b52b38cbabb51a39c3ea42db74" args="()" -->
 <div class="memitem">
@@ -102,6 +110,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor: builds a new surface initialization method. </p>
 
 </div>
@@ -120,6 +129,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -140,10 +150,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copies all member variables into clone. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>a valid pointer to a <a class="el" href="classFCDEffectParameterSurfaceInit.html">FCDEffectParameterSurfaceInit</a> object </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>a valid pointer to a <a class="el" href="classFCDEffectParameterSurfaceInit.html" title="A surface initialization method.">FCDEffectParameterSurfaceInit</a> object </td></tr>
   </table>
   </dd>
 </dl>
@@ -166,7 +177,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the initialization type. You cannot modify this value. To change the initialization type of a surface parameter, create a new surface initialization structure of the correct type. </p>
+
+<p>Retrieves the initialization type. </p>
+<p>You cannot modify this value. To change the initialization type of a surface parameter, create a new surface initialization structure of the correct type. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The initialization type. </dd></dl>
 
 <p>Implemented in <a class="el" href="classFCDEffectParameterSurfaceInitCube.html#aa22db1c4680d97b447466bc54a492451">FCDEffectParameterSurfaceInitCube</a>, <a class="el" href="classFCDEffectParameterSurfaceInitVolume.html#ad0490f5d50b8babd77b3294277f4fde5">FCDEffectParameterSurfaceInitVolume</a>, <a class="el" href="classFCDEffectParameterSurfaceInitFrom.html#a33c2001f6d11fe519d7f5c492daec92a">FCDEffectParameterSurfaceInitFrom</a>, <a class="el" href="classFCDEffectParameterSurfaceInitAsNull.html#a91211f6657b5ca23ad0530fe803eea8b">FCDEffectParameterSurfaceInitAsNull</a>, <a class="el" href="classFCDEffectParameterSurfaceInitAsTarget.html#a45bcad832e5dd14719aa1dfbea529db2">FCDEffectParameterSurfaceInitAsTarget</a>, and <a class="el" href="classFCDEffectParameterSurfaceInitPlanar.html#a9e91a455acbcbed40b8e647aa0c56d80">FCDEffectParameterSurfaceInitPlanar</a>.</p>
@@ -192,7 +205,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:29 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:16 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

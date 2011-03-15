@@ -54,16 +54,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCDAnimatedStandardQualifiers Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>The common qualifier lists.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimatedStandardQualifiers.html#ab358332d229e064dcf23d78f790f5d8d">EMPTY</a> [1] = { &quot;&quot; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Common accessor type string arrays.  <a href="#ab358332d229e064dcf23d78f790f5d8d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimatedStandardQualifiers.html#a05e7e8fa7a544c64eb06eb390e856145">XYZW</a> [4] = { &quot;.X&quot;, &quot;.Y&quot;, &quot;.Z&quot;, &quot;.W&quot; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used for position and vector values.  <a href="#a05e7e8fa7a544c64eb06eb390e856145"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimatedStandardQualifiers.html#ab52f470388beb5e2e143950fa66650d1">RGBA</a> [4] = { &quot;.R&quot;, &quot;.G&quot;, &quot;.B&quot;, &quot;.A&quot; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used for color value.  <a href="#ab52f470388beb5e2e143950fa66650d1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimatedStandardQualifiers.html#a3daffe3d91ba79acbfdcd2571d09a819">ROTATE_AXIS</a> [4] = { &quot;.X&quot;, &quot;.Y&quot;, &quot;.Z&quot;, &quot;.ANGLE&quot; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used for angle-axis rotation transforms.  <a href="#a3daffe3d91ba79acbfdcd2571d09a819"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimatedStandardQualifiers.html#a8022c3d11024cfe71bb0d07f3e7dbc55">SKEW</a> [7] = { &quot;.ROTATEX&quot;, &quot;.ROTATEY&quot;, &quot;.ROTATEZ&quot;, &quot;.AROUNDX&quot;, &quot;.AROUNDY&quot;, &quot;.AROUNDZ&quot;, &quot;.ANGLE&quot; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used for the skew transforms.  <a href="#a8022c3d11024cfe71bb0d07f3e7dbc55"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimatedStandardQualifiers.html#a326b2afcd7eb67b2cb9b9b7c255ecd7f">MATRIX</a> [16] = { &quot;(0)(0)&quot;, &quot;(1)(0)&quot;, &quot;(2)(0)&quot;, &quot;(3)(0)&quot;, &quot;(0)(1)&quot;, &quot;(1)(1)&quot;, &quot;(2)(1)&quot;, &quot;(3)(1)&quot;, &quot;(0)(2)&quot;, &quot;(1)(2)&quot;, &quot;(2)(2)&quot;, &quot;(3)(2)&quot;, &quot;(0)(3)&quot;, &quot;(1)(3)&quot;, &quot;(2)(3)&quot;, &quot;(3)(3)&quot; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used for animating matrix values.  <a href="#a326b2afcd7eb67b2cb9b9b7c255ecd7f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDAnimatedStandardQualifiers.html#a7f1f279f434275d7e9ddcb4dc4bb9822">LOOKAT</a> [9] = { &quot;.POSITIONX&quot;, &quot;.POSITIONY&quot;, &quot;.POSITIONZ&quot;, &quot;.TARGETX&quot;, &quot;.TARGETY&quot;, &quot;.TARGETZ&quot;, &quot;.UPX&quot;, &quot;.UPY&quot;, &quot;.UPZ&quot; }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used for the look-at transforms.  <a href="#a7f1f279f434275d7e9ddcb4dc4bb9822"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The common qualifier lists. </p>
@@ -78,7 +88,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Common accessor type string arrays. These are NULL-terminated and can be used with the AddAccessor function. Used for qualifying single values. </p>
+
+<p>Common accessor type string arrays. </p>
+<p>These are NULL-terminated and can be used with the AddAccessor function. Used for qualifying single values. </p>
 
 </div>
 </div>
@@ -92,6 +104,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used for the look-at transforms. </p>
 
 </div>
@@ -106,6 +119,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used for animating matrix values. </p>
 
 </div>
@@ -120,6 +134,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used for color value. </p>
 
 </div>
@@ -134,6 +149,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used for angle-axis rotation transforms. </p>
 
 </div>
@@ -148,6 +164,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used for the skew transforms. </p>
 
 </div>
@@ -162,6 +179,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used for position and vector values. </p>
 
 </div>
@@ -181,7 +199,7 @@ Variables</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:02 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:27 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

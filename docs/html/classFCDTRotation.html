@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDTRotation" --><!-- doxytag: inherits="FCDTransform" -->
+<p>A COLLADA angle-axis rotation.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDTransform_8h_source.html">FCDTransform.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDTRotation:</div>
@@ -78,31 +81,54 @@ Inheritance diagram for FCDTRotation:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#ae92f4d8903836a1bf832a2c1ca42eb90">FCDTRotation</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#ae92f4d8903836a1bf832a2c1ca42eb90"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#adca97a7bdd9f3cd6f31712dce21a610b">~FCDTRotation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#adca97a7bdd9f3cd6f31712dce21a610b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDTransform.html#a13e561c5e53aeaf84dedf4661cdc8921">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#af5ddd1b7b673eaa1d57f36b4e685a3c8">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the transformation class type for the rotation.  <a href="#af5ddd1b7b673eaa1d57f36b4e685a3c8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableAngleAxis</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a3fd21b3f969e19041caab33747e2a109">GetAngleAxis</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the angle-axis value of the rotation.  <a href="#a3fd21b3f969e19041caab33747e2a109"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableAngleAxis</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#afce9e601d1581ea6da3e2723cb5c0ebe">GetAngleAxis</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#afce9e601d1581ea6da3e2723cb5c0ebe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a0ff581af572642dfa7506402d28ef6fb">SetAngleAxis</a> (const <a class="el" href="classFMAngleAxis.html">FMAngleAxis</a> &amp;aa)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the angle-axis value of the rotation.  <a href="#a0ff581af572642dfa7506402d28ef6fb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a2c5629790e8172222f1095be97728e6f">GetAxis</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the rotation axis.  <a href="#a2c5629790e8172222f1095be97728e6f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a2049a1603120ef757614c31110a18a4d">GetAxis</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2049a1603120ef757614c31110a18a4d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a3aa0b0cccfcdb7cea0070bcf0b9b557b">SetAxis</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;axis)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the rotation axis.  <a href="#a3aa0b0cccfcdb7cea0070bcf0b9b557b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a550e50cede877e255589506c9fbc2e34">SetAxis</a> (float x, float y, float z)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the rotation axis.  <a href="#a550e50cede877e255589506c9fbc2e34"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a521fd665dca9d5a92450467a5680a156">GetAngle</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the rotation angle.  <a href="#a521fd665dca9d5a92450467a5680a156"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#ab6b9d98eac74729fc5c0c55a13bac478">GetAngle</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab6b9d98eac74729fc5c0c55a13bac478"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a097be8d6e0d8f52e9a2da884d3d397ae">SetAngle</a> (float a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the rotation angle.  <a href="#a097be8d6e0d8f52e9a2da884d3d397ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a6ebf1ce90ac3247d924190652e595d7f">SetRotation</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;axis, float angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the rotation components.  <a href="#a6ebf1ce90ac3247d924190652e595d7f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a6371e350942c3efa33ac7b3ccd253b42">GetOrientation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the rotation orientation.  <a href="#a6371e350942c3efa33ac7b3ccd253b42"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#ab28cabb379c6312e4a5fae609f33dea8">SetOrientation</a> (const <a class="el" href="classFMQuaternion.html">FMQuaternion</a> &amp;q)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the rotation orientation.  <a href="#ab28cabb379c6312e4a5fae609f33dea8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFMMatrix44.html">FMMatrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a928ca46c14e83d7efcf840ce3f1452fe">ToMatrix</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the rotation into a matrix.  <a href="#a928ca46c14e83d7efcf840ce3f1452fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#aeb5dc80fb81f11f0fe024f925961c7d9">IsAnimated</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the axis or the angle of the rotation are animated.  <a href="#aeb5dc80fb81f11f0fe024f925961c7d9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a749761125dbd6f71268696d42ee39450">GetAnimated</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animated element for the angle-axis rotation.  <a href="#a749761125dbd6f71268696d42ee39450"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#aa15d71e8f12a80fba90bc788c3e26826">GetAnimated</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aa15d71e8f12a80fba90bc788c3e26826"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a2b5c4b3edef9384c4fa20be5591874a2">IsInverse</a> (const <a class="el" href="classFCDTransform.html">FCDTransform</a> *transform) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a given transform is the exact opposite of this rotation.  <a href="#a2b5c4b3edef9384c4fa20be5591874a2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDTransform.html">FCDTransform</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTRotation.html#a7b4de1344e7b0e1f930b3bad6f1ae169">Clone</a> (<a class="el" href="classFCDTransform.html">FCDTransform</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a copy of a rotation.  <a href="#a7b4de1344e7b0e1f930b3bad6f1ae169"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA angle-axis rotation. This rotation defines an axis around which the 3D points are rotated by a given angle. </p>
+<p>A COLLADA angle-axis rotation. </p>
+<p>This rotation defines an axis around which the 3D points are rotated by a given angle. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>(clock-wise/counter-clock-wise?)</dd></dl>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae92f4d8903836a1bf832a2c1ca42eb90"></a><!-- doxytag: member="FCDTRotation::FCDTRotation" ref="ae92f4d8903836a1bf832a2c1ca42eb90" args="(FCDocument *document, FCDSceneNode *parent)" -->
@@ -129,7 +155,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDSceneNode.html#a863250572e5a4dbf022192c653222d94">FCDSceneNode::AddTransform</a> function with the transformation type: ROTATION. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDSceneNode.html#a863250572e5a4dbf022192c653222d94" title="Creates a new transform for this visual scene node.">FCDSceneNode::AddTransform</a> function with the transformation type: ROTATION. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the rotation. </td></tr>
@@ -154,6 +182,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -174,6 +203,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a copy of a rotation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -201,7 +231,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the rotation angle. This angle may be animated. </p>
+
+<p>Retrieves the rotation angle. </p>
+<p>This angle may be animated. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The rotation angle, in degrees. </dd></dl>
 
 </div>
@@ -220,6 +252,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -238,6 +271,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the angle-axis value of the rotation. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The angle-axis value. </dd></dl>
 
@@ -257,6 +291,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -275,6 +310,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the animated element for the angle-axis rotation. </p>
 <dl class="see"><dt><b>See also:</b></dt><dd>FCDAnimatedAngleAxis </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The animated element. This pointer will be NULL if the rotation is not animated. </dd></dl>
@@ -297,6 +333,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Implements <a class="el" href="classFCDTransform.html#aac1ff2df9e63702a90300ba9c38c48e1">FCDTransform</a>.</p>
@@ -317,7 +354,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the rotation axis. This 3D vector may be animated. </p>
+
+<p>Retrieves the rotation axis. </p>
+<p>This 3D vector may be animated. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The rotation axis. </dd></dl>
 
 </div>
@@ -336,6 +375,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -354,6 +394,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the rotation orientation. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The rotation orientation quaternion. </dd></dl>
 
@@ -373,6 +414,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the transformation class type for the rotation. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The class type: ROTATION. </dd></dl>
 
@@ -394,6 +436,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether the axis or the angle of the rotation are animated. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the rotation is animated. </dd></dl>
 
@@ -416,7 +459,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether a given transform is the exact opposite of this rotation. The opposite of an angle-axis rotation has the same axis as this rotation but the angle is multiplied by -1. </p>
+
+<p>Retrieves whether a given transform is the exact opposite of this rotation. </p>
+<p>The opposite of an angle-axis rotation has the same axis as this rotation but the angle is multiplied by -1. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>transform</em>&nbsp;</td><td>A second transformation. </td></tr>
@@ -444,6 +489,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the rotation angle. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -469,6 +515,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the angle-axis value of the rotation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -509,6 +556,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the rotation axis. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -536,6 +584,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the rotation axis. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -561,6 +610,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the rotation orientation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -595,7 +645,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the rotation components </p>
+
+<p>Sets the rotation components. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>axis</em>&nbsp;</td><td>The rotation axis. </td></tr>
@@ -620,6 +671,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the rotation into a matrix. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A matrix equivalent of the rotation. </dd></dl>
 
@@ -646,7 +698,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:50 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:22 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

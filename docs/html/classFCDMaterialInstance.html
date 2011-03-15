@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDMaterialInstance" --><!-- doxytag: inherits="FCDEntityInstance" -->
+<p>A COLLADA material instance.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDMaterialInstance_8h_source.html">FCDMaterialInstance.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDMaterialInstance:</div>
@@ -79,40 +82,71 @@ Inheritance diagram for FCDMaterialInstance:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#aeead20fe8adce58d86d40b4c026a6c01">FCDMaterialInstance</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#aeead20fe8adce58d86d40b4c026a6c01"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a19ef000f5b34ee9d4fe7688a4e4b17af">~FCDMaterialInstance</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a19ef000f5b34ee9d4fe7688a4e4b17af"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a43aeb69d042dcf821de74a63b2ef0e1d">DEPRECATED</a> (3.05A, HasType(FCDMaterialInstance::GetClassType())) virtual Type GetType() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of entity instance.  <a href="#a43aeb69d042dcf821de74a63b2ef0e1d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a84d82c5789d224a2112e076fc730943c">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parent instance.  <a href="#a84d82c5789d224a2112e076fc730943c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#aae8d59b1e623f5b85b3dfc8c5aeaa58e">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aae8d59b1e623f5b85b3dfc8c5aeaa58e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#afb39d26ab1e0eaedcedb9ec7be0ba492">GetSemantic</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the symbolic name used to link the polygons sets with the material of this instance.  <a href="#afb39d26ab1e0eaedcedb9ec7be0ba492"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a8b74872facbef6ce4de3c3eea3ed524a">SetSemantic</a> (const fchar *_semantic)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the symbolic name used to link polygons sets with this instance.  <a href="#a8b74872facbef6ce4de3c3eea3ed524a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a7a1930462c50ff340e40f60fc1642ebd">SetSemantic</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;_semantic)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7a1930462c50ff340e40f60fc1642ebd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMaterial.html">FCDMaterial</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a190f2bb81d391892a0edc501c682bba7">GetMaterial</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the material entity used by this instance.  <a href="#a190f2bb81d391892a0edc501c682bba7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDMaterial.html">FCDMaterial</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a8dd52145748ea4424bd6d5ce67ce4110">GetMaterial</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a8dd52145748ea4424bd6d5ce67ce4110"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#ade599811f26176190f8174d50bacb2b7">SetMaterial</a> (<a class="el" href="classFCDMaterial.html">FCDMaterial</a> *_material)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the material entity used by this instance.  <a href="#ade599811f26176190f8174d50bacb2b7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#ac6ed7f1448b38726d9bd293e30cda6bb">DEPRECATED</a> (3.05A, GetBindingCount and GetBinding(index)) inline void GetBindings() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parameter bindings of the instance.  <a href="#ac6ed7f1448b38726d9bd293e30cda6bb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDMaterialInstanceBind.html">FCDMaterialInstanceBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a41a476a7b82d8406b8bdd321612d041f">FindBinding</a> (const char *semantic)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a given binding.  <a href="#a41a476a7b82d8406b8bdd321612d041f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#aad2749897b63b5ccb090dc2f3e2b6b95">GetBindingCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of parameter bindings for this instance.  <a href="#aad2749897b63b5ccb090dc2f3e2b6b95"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMaterialInstanceBind.html">FCDMaterialInstanceBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a2b1e047084ed5191337e369733b74641">GetBinding</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a parameter binding.  <a href="#a2b1e047084ed5191337e369733b74641"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDMaterialInstanceBind.html">FCDMaterialInstanceBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a8adfe57c81d757c46d1598f782079090">GetBinding</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a8adfe57c81d757c46d1598f782079090"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDObject.html">FCDObject</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a855175cc0d660ed54e5c87b33229f969">GetGeometryTarget</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the geometry target that this instance affects.  <a href="#a855175cc0d660ed54e5c87b33229f969"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMaterialInstanceBind.html">FCDMaterialInstanceBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#acfaa4897f0acf6d89bd62bfcc7690760">AddBinding</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new parameter binding.  <a href="#acfaa4897f0acf6d89bd62bfcc7690760"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMaterialInstanceBind.html">FCDMaterialInstanceBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a7f4dafda2db965c0841e62be86280701">AddBinding</a> (const char *semantic, const char *target)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new parameter binding.  <a href="#a7f4dafda2db965c0841e62be86280701"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a80cf10dc7af55794335d3ac676373cda">RemoveBinding</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a parameter binding.  <a href="#a80cf10dc7af55794335d3ac676373cda"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a8665a75d8a9fbe2d8f2c882a7a6d48cb">DEPRECATED</a> (3.05A, GetVertexInputBindingCount and GetVertexInputBinding(index)) inline void GetVertexInputBindings()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the vertex input bindings.  <a href="#a8665a75d8a9fbe2d8f2c882a7a6d48cb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#afaf92b900b38ecacc565a2823a9d7639">GetVertexInputBindingCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of vertex input bindings.  <a href="#afaf92b900b38ecacc565a2823a9d7639"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMaterialInstanceBindVertexInput.html">FCDMaterialInstanceBindVertexInput</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a1372de985b79a51a54cc5674b275e60d">GetVertexInputBinding</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a vertex input binding.  <a href="#a1372de985b79a51a54cc5674b275e60d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFCDMaterialInstanceBindVertexInput.html">FCDMaterialInstanceBindVertexInput</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a7beb53b836aba0e36f82d251264030c7">GetVertexInputBinding</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7beb53b836aba0e36f82d251264030c7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMaterialInstanceBindVertexInput.html">FCDMaterialInstanceBindVertexInput</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a5081cea89492e19506ac31ae9d01fcf0">FindVertexInputBinding</a> (const char *semantic)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a given vertex input binding.  <a href="#a5081cea89492e19506ac31ae9d01fcf0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFCDMaterialInstanceBindVertexInput.html">FCDMaterialInstanceBindVertexInput</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a32cb9141f1becbc35212537e18e9ab42">FindVertexInputBinding</a> (const char *semantic) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a32cb9141f1becbc35212537e18e9ab42"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMaterialInstanceBindVertexInput.html">FCDMaterialInstanceBindVertexInput</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a91776fc1c3d21da97183a6b066056cc3">AddVertexInputBinding</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new vertex input binding.  <a href="#a91776fc1c3d21da97183a6b066056cc3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDMaterialInstanceBindVertexInput.html">FCDMaterialInstanceBindVertexInput</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#a96bb0dc2620bf91c873bc44371d7aa74">AddVertexInputBinding</a> (const char *semantic, <a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">FUDaeGeometryInput::Semantic</a> inputSemantic, int32 inputSet)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new vertex input binding.  <a href="#a96bb0dc2620bf91c873bc44371d7aa74"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#aa0f7bd7b6f5e4e7f20c40fedbe0022b0">DEPRECATED</a> (3.05A, not recommended) FCDMaterial *FlattenMaterial()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a flattened version of the instantiated material.  <a href="#aa0f7bd7b6f5e4e7f20c40fedbe0022b0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDMaterialInstance.html#afcf47870beed21fcce66de36b57ba216">Clone</a> (<a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones the material instance.  <a href="#afcf47870beed21fcce66de36b57ba216"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA material instance. A material instance is used to given polygon sets with a COLLADA material entity. It is also used to bind data sources with the inputs of an effect. </p>
+<p>A COLLADA material instance. </p>
+<p>A material instance is used to given polygon sets with a COLLADA material entity. It is also used to bind data sources with the inputs of an effect. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aeead20fe8adce58d86d40b4c026a6c01"></a><!-- doxytag: member="FCDMaterialInstance::FCDMaterialInstance" ref="aeead20fe8adce58d86d40b4c026a6c01" args="(FCDocument *document, FCDEntityInstance *parent)" -->
 <div class="memitem">
@@ -138,6 +172,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -162,6 +197,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -181,6 +217,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new parameter binding. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>An empty parameter binding. </dd></dl>
 
@@ -210,6 +247,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new parameter binding. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -236,6 +274,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new vertex input binding. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>An empty vertex input binding. </dd></dl>
 
@@ -271,7 +310,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a new vertex input binding. Together, the data source type and set should always define a unique data source. </p>
+
+<p>Adds a new vertex input binding. </p>
+<p>Together, the data source type and set should always define a unique data source. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>semantic</em>&nbsp;</td><td>The token identify the shader varying input. </td></tr>
@@ -299,6 +340,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones the material instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -336,8 +378,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of entity instance. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Use the following code, instead: entityInstance-&gt;HasType(<a class="el" href="classFUObject.html#a907d4f6d284b3ac4f8203d557af41668">FCDMaterialInstance::GetClassType()</a>). </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Use the following code, instead: entityInstance-&gt;HasType(<a class="el" href="classFUObject.html#a907d4f6d284b3ac4f8203d557af41668" title="Retrieves the type of the base object class.">FCDMaterialInstance::GetClassType()</a>). </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The type of entity instance. </dd></dl>
 
 </div>
@@ -366,7 +409,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the parameter bindings of the instance. Each material instance may re-define any number of material or effect parameters. </p>
+
+<p>Retrieves the parameter bindings of the instance. </p>
+<p>Each material instance may re-define any number of material or effect parameters. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parameter bindings. </dd></dl>
 
 </div>
@@ -395,6 +440,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the vertex input bindings. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The vertex input bindings. </dd></dl>
 
@@ -424,7 +470,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates a flattened version of the instantiated material. This is the preferred way to generate viewer materials from a COLLADA document. </p>
+
+<p>Creates a flattened version of the instantiated material. </p>
+<p>This is the preferred way to generate viewer materials from a COLLADA document. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The flattened version of the instantiated material. You will need to delete this pointer manually. This pointer will be NULL when there is no material attached to this instance. </dd></dl>
 
 </div>
@@ -444,6 +492,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a given binding. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -470,7 +519,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves a given vertex input binding. This is useful when trying to match textures with the texture coordinate sets. </p>
+
+<p>Retrieves a given vertex input binding. </p>
+<p>This is useful when trying to match textures with the texture coordinate sets. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>semantic</em>&nbsp;</td><td>A given vertex input binding semantic. </td></tr>
@@ -496,6 +547,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -515,6 +567,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a parameter binding. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -541,6 +594,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -559,6 +613,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of parameter bindings for this instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of parameter bindings. </dd></dl>
 
@@ -578,7 +633,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the geometry target that this instance affects. Note that this function uses the parent geometry instance and searches for the polygon set. Therefore, the application should buffer the retrieved pointer. </p>
+
+<p>Retrieves the geometry target that this instance affects. </p>
+<p>Note that this function uses the parent geometry instance and searches for the polygon set. Therefore, the application should buffer the retrieved pointer. </p>
 
 </div>
 </div>
@@ -596,6 +653,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -614,6 +672,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the material entity used by this instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The instanced material. </dd></dl>
 
@@ -633,6 +692,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Reimplemented from <a class="el" href="classFCDEntityInstance.html#acb1d825d422ab6484db2b5e862b18bfa">FCDEntityInstance</a>.</p>
@@ -653,6 +713,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the parent instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parent instance. </dd></dl>
 
@@ -674,6 +735,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the symbolic name used to link the polygons sets with the material of this instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The symbolic name of the material instance. </dd></dl>
 
@@ -694,6 +756,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -713,6 +776,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a vertex input binding. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -738,6 +802,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of vertex input bindings. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of vertex input bindings. </dd></dl>
 
@@ -758,6 +823,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes a parameter binding. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -783,6 +849,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the material entity used by this instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -808,8 +875,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the symbolic name used to link polygons sets with this instance. This name should always match against the symbolic name assigned to a polygons set. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDGeometryPolygons.html">FCDGeometryPolygons</a>. </dd></dl>
+
+<p>Sets the symbolic name used to link polygons sets with this instance. </p>
+<p>This name should always match against the symbolic name assigned to a polygons set. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDGeometryPolygons.html" title="A mesh polygon set.">FCDGeometryPolygons</a>. </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_semantic</em>&nbsp;</td><td>The new symbolic name of this instance. </td></tr>
@@ -834,6 +903,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -857,7 +927,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:39 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:19 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

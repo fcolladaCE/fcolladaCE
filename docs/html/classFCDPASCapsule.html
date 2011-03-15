@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDPASCapsule" --><!-- doxytag: inherits="FCDPhysicsAnalyticalGeometry" -->
+<p>A COLLADA physics capsule.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDPhysicsAnalyticalGeometry_8h_source.html">FCDPhysicsAnalyticalGeometry.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDPASCapsule:</div>
@@ -82,14 +85,21 @@ Inheritance diagram for FCDPASCapsule:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASCapsule.html#a02a0865e28bab31f5dce60e167895a1a">FCDPASCapsule</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a02a0865e28bab31f5dce60e167895a1a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASCapsule.html#a872219e08c083b72f0f5e7d62c46cb7b">~FCDPASCapsule</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Desctructor.  <a href="#a872219e08c083b72f0f5e7d62c46cb7b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a511583406e5c6a1bb5bd84c0453a452c">GeomType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASCapsule.html#ad857a4a8159f4928d7260ed38fc46c22">GetGeomType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the analytical geometry type for this class.  <a href="#ad857a4a8159f4928d7260ed38fc46c22"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASCapsule.html#a7aa385c582b13979465e5cb6e3b8665e">CalculateVolume</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calculates the volume of this analytical geometry.  <a href="#a7aa385c582b13979465e5cb6e3b8665e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASCapsule.html#a62a029b060c2bcf64cac963bf9896a92">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the physics capsule into a clone.  <a href="#a62a029b060c2bcf64cac963bf9896a92"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASCapsule.html#a55d417e585c9eee8ec7c5a66702424d8">height</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The height of the capsule.  <a href="#a55d417e585c9eee8ec7c5a66702424d8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASCapsule.html#a3f5d8e952d457e80e0c1c6abd092d96e">radius</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The radius in the X direction and Z direction of the capsule.  <a href="#a3f5d8e952d457e80e0c1c6abd092d96e"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A COLLADA physics capsule. </p>
@@ -109,7 +119,9 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Create new analytical geometries by using <a class="el" href="classFCDPhysicsShape.html#a0674443390f7c6426171fd4bc21187fb">FCDPhysicsShape::CreateAnalyticalGeometry</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Create new analytical geometries by using <a class="el" href="classFCDPhysicsShape.html#a0674443390f7c6426171fd4bc21187fb" title="Creates an analytical geometry for this shape.">FCDPhysicsShape::CreateAnalyticalGeometry</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that contains this physics capsule. </td></tr>
@@ -133,6 +145,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Desctructor. </p>
 
 </div>
@@ -152,6 +165,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Calculates the volume of this analytical geometry. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The volume. </dd></dl>
 
@@ -185,6 +199,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copies the physics capsule into a clone. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -213,6 +228,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the analytical geometry type for this class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The analytical geometry type: CAPSULE. </dd></dl>
 
@@ -233,6 +249,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The height of the capsule. </p>
 
 </div>
@@ -247,6 +264,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The radius in the X direction and Z direction of the capsule. </p>
 
 </div>
@@ -270,7 +288,7 @@ Data Fields</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:43 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:20 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

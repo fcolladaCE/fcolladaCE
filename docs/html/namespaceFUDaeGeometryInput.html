@@ -56,10 +56,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FUDaeGeometryInput Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>Contains the geometry source data types and their conversion functions.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; <a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">Semantic</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaeGeometryInput.html#a06daf7a576c27d3f2ee39c59fc63498c">SemanticList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of geometry source data types.  <a href="#a06daf7a576c27d3f2ee39c59fc63498c"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">Semantic</a> { <br/>
@@ -82,11 +86,16 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061acc6c0ae83a279d133ae37b1aed32f9e9">UNKNOWN</a> =  -1
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The geometry source data types. </p>
+ <a href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">Semantic</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaeGeometryInput.html#aa7fc76fb0ae396ca3ec28b2e90ff97e9">FromString</a> (const char *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the COLLADA geometry input string to a geometry source data type.  <a href="#aa7fc76fb0ae396ca3ec28b2e90ff97e9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaeGeometryInput.html#a782866990c13f5b71e2927efb80e61b6">ToString</a> (<a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">Semantic</a> semantic)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the geometry source data type into a COLLADA geometry input string.  <a href="#a782866990c13f5b71e2927efb80e61b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">Semantic</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaeGeometryInput.html#a7d3985d666f6aa3f336e6e4626ca142d">FromString</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7d3985d666f6aa3f336e6e4626ca142d"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Contains the geometry source data types and their conversion functions. </p>
@@ -101,6 +110,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of geometry source data types. </p>
 
 </div>
@@ -116,6 +126,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The geometry source data types. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a0f887d29f54b10338ebcf73789a7a061a565e9d374597b9e9f546575f2ea6dc94"></a><!-- doxytag: member="POSITION" ref="a0f887d29f54b10338ebcf73789a7a061a565e9d374597b9e9f546575f2ea6dc94" args="" -->POSITION</em>&nbsp;</td><td>
@@ -143,19 +154,23 @@ Functions</h2></td></tr>
 <p>Used for texture-aligned surface binormal vectors. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0f887d29f54b10338ebcf73789a7a061a11a35a3014f2ecc9c3208080c8f5da75"></a><!-- doxytag: member="UV" ref="a0f887d29f54b10338ebcf73789a7a061a11a35a3014f2ecc9c3208080c8f5da75" args="" -->UV</em>&nbsp;</td><td>
-<p>Used for generic mapping parameters. Do not confuse this with TEXCOORD. </p>
+<p>Used for generic mapping parameters. </p>
+<p>Do not confuse this with TEXCOORD. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0f887d29f54b10338ebcf73789a7a061a311e741edb3121400cd62dcb8e312326"></a><!-- doxytag: member="COLOR" ref="a0f887d29f54b10338ebcf73789a7a061a311e741edb3121400cd62dcb8e312326" args="" -->COLOR</em>&nbsp;</td><td>
 <p>Used for vertex colors. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0f887d29f54b10338ebcf73789a7a061a54abe870c29af1c683b477d541be9a80"></a><!-- doxytag: member="EXTRA" ref="a0f887d29f54b10338ebcf73789a7a061a54abe870c29af1c683b477d541be9a80" args="" -->EXTRA</em>&nbsp;</td><td>
-<p>Used for application-specific vertex data. This is Maya-specific to support blind data. </p>
+<p>Used for application-specific vertex data. </p>
+<p>This is Maya-specific to support blind data. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0f887d29f54b10338ebcf73789a7a061ad05397ae138af98f3732fd9afd345d9a"></a><!-- doxytag: member="POINT_SIZE" ref="a0f887d29f54b10338ebcf73789a7a061ad05397ae138af98f3732fd9afd345d9a" args="" -->POINT_SIZE</em>&nbsp;</td><td>
-<p>Used to define the size of the Billboard generated by a given point. This is a type::POINTS specific type. If the size is 0, a single pixel pt is rendered. </p>
+<p>Used to define the size of the Billboard generated by a given point. </p>
+<p>This is a type::POINTS specific type. If the size is 0, a single pixel pt is rendered. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0f887d29f54b10338ebcf73789a7a061ae894e2f0dd91ebd96939d30d2eda0539"></a><!-- doxytag: member="POINT_ROTATION" ref="a0f887d29f54b10338ebcf73789a7a061ae894e2f0dd91ebd96939d30d2eda0539" args="" -->POINT_ROTATION</em>&nbsp;</td><td>
-<p>Used to give a billboard orientation. This is a type::POINTS specific type, and is not compulsory </p>
+<p>Used to give a billboard orientation. </p>
+<p>This is a type::POINTS specific type, and is not compulsory </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a0f887d29f54b10338ebcf73789a7a061acc6c0ae83a279d133ae37b1aed32f9e9"></a><!-- doxytag: member="UNKNOWN" ref="a0f887d29f54b10338ebcf73789a7a061acc6c0ae83a279d133ae37b1aed32f9e9" args="" -->UNKNOWN</em>&nbsp;</td><td>
 <p>An unknown data source. </p>
@@ -182,6 +197,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the COLLADA geometry input string to a geometry source data type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -208,6 +224,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -227,6 +244,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the geometry source data type into a COLLADA geometry input string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -253,7 +271,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:04 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:27 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

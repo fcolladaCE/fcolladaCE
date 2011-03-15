@@ -56,6 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCDGeometryPolygonsTools Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>Holds commonly-used transformation functions for meshes and polygons sets.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -80,25 +83,40 @@ typedef <a class="el" href="classfm_1_1pvector.html">fm::pvector</a><br class="t
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#acc34609095c4d934983f65f5bf068d3d">Triangulate</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *mesh)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#acf2b155dd5781c2a781841097c745396">Triangulate</a> (<a class="el" href="classFCDGeometryPolygons.html">FCDGeometryPolygons</a> *polygons, bool recalculate)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#ac750730d04e82ff25157d06bb77996ce">GenerateTextureTangentBasis</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *mesh, <a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *texcoordSource, bool generateBinormals)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Triangulates a mesh.  <a href="#acc34609095c4d934983f65f5bf068d3d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a0a6bd0428040f348b547ce1febecfdfd">Triangulate</a> (<a class="el" href="classFCDGeometryPolygons.html">FCDGeometryPolygons</a> *polygons, bool recalculate=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Triangulates a polygons set.  <a href="#a0a6bd0428040f348b547ce1febecfdfd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a40b8cf1e1daf1b90a28a31c229efb610">GenerateTextureTangentBasis</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *mesh, <a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *texcoordSource, bool generateBinormals=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Generates the texture tangents and binormals for a given source of texture coordinates.  <a href="#a40b8cf1e1daf1b90a28a31c229efb610"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a7541340d15de908be8cc7f95d568d32c">GenerateUniqueIndices</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *mesh, <a class="el" href="classFCDGeometryPolygons.html">FCDGeometryPolygons</a> *polygonsToProcess, <a class="el" href="classfm_1_1vector.html">FCDNewIndicesList</a> &amp;outIndices, <a class="el" href="classfm_1_1pvector.html">FCDGeometryIndexTranslationMapList</a> &amp;outTranslationMaps)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#af02df362078a3e7467a978862fbf99d5">GenerateUniqueIndices</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *mesh, <a class="el" href="classFCDGeometryPolygons.html">FCDGeometryPolygons</a> *polygonsToProcess, <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> *translationMap)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer.  <a href="#a7541340d15de908be8cc7f95d568d32c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#ad799bb620f676e2f6b842957b3f44219">GenerateUniqueIndices</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *mesh, <a class="el" href="classFCDGeometryPolygons.html">FCDGeometryPolygons</a> *polygons=NULL, <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> *translationMap=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer.  <a href="#ad799bb620f676e2f6b842957b3f44219"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#ad2bfb87fea582dbdd9dcc2021d9e5628">ApplyUniqueIndices</a> (float *targData, float *srcData, uint32 stride, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> *translationMap)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applies the translation map onto some vertex data.  <a href="#ad2bfb87fea582dbdd9dcc2021d9e5628"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5bbb2041c56544d97232372e5856ceb"></a><!-- doxytag: member="FCDGeometryPolygonsTools::ApplyUniqueIndices" ref="af5bbb2041c56544d97232372e5856ceb" args="(FCDGeometrySource *targSource, uint32 nValues, const FCDGeometryIndexTranslationMap *translationMap)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>ApplyUniqueIndices</b> (<a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *targSource, uint32 nValues, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> *translationMap)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a2b715708a01eab1beb8e3b29de70dd0d">ApplyUniqueIndices</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *targMesh, <a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *baseMesh, const <a class="el" href="classfm_1_1vector.html">UInt32List</a> &amp;newIndices, const <a class="el" href="classfm_1_1pvector.html">FCDGeometryIndexTranslationMapList</a> &amp;translationMaps)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applies the translation map onto some vertex data.  <a href="#a2b715708a01eab1beb8e3b29de70dd0d"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a4984fab27cf1ea08f70b33345bc8a589"></a><!-- doxytag: member="FCDGeometryPolygonsTools::PackVertexBuffers" ref="a4984fab27cf1ea08f70b33345bc8a589" args="(uint8 *destBuffer, uint32 destBuffStride, const FCDGeometrySource *source, uint32 vCount, uint16 *vtxPackingMap, const FCDGeometryIndexTranslationMap &amp;translationMap)" -->
 template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><b>PackVertexBuffers</b> (uint8 *destBuffer, uint32 destBuffStride, const <a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *source, uint32 vCount, uint16 *vtxPackingMap, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;translationMap)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a4f9f9b1a23da8801703894929ed78c77">PackVertexBufferV3</a> (uint8 *destBuffer, uint32 destBuffStride, const <a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *source, uint32 vCount, uint16 *vtxPackingMap, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;translationMap)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used to pack a vertex buffer object with 3D float vertex data.  <a href="#a4f9f9b1a23da8801703894929ed78c77"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#ac59d7b587eccb025da8318018b966de6">PackVertexBufferColor</a> (uint8 *destBuffer, uint32 destBuffStride, const <a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *source, uint32 vCount, uint16 *vtxPackingMap, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;translationMap)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used to pack a vertex buffer object object with 4 bytes color data.  <a href="#ac59d7b587eccb025da8318018b966de6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a75da2add1b594593c04bcf253d015567">PackVertexBufferV2</a> (uint8 *destBuffer, uint32 destBuffStride, const <a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *source, uint32 vCount, uint16 *vtxPackingMap, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;translationMap)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint16&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a18a4eb68e6b187f573ca808d78b7cf37">GenerateVertexPackingMap</a> (size_t maxIndex, size_t maxIndices, size_t maxVertices, const uint32 *inIndices, uint16 *outIndices, <a class="el" href="classfm_1_1vector.html">UInt16List</a> *outPackingMap, uint16 *outNVertices)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a10e774316ed58ca98bbf78a24e833ee4">FindLargestUniqueIndex</a> (const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;aMap)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#ab46f2b9cf9e9e830f32e37c4af4ca6a7">RevertUniqueIndices</a> (const <a class="el" href="classFCDGeometryPolygonsInput.html">FCDGeometryPolygonsInput</a> &amp;inPInput, <a class="el" href="classFCDGeometryPolygonsInput.html">FCDGeometryPolygonsInput</a> &amp;outPInput, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;translationMap)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used to pack a vertex buffer object object with 2D float vertex data.  <a href="#a75da2add1b594593c04bcf253d015567"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint16&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#aae3011c83a10e9096b2aedd265e90443">GenerateVertexPackingMap</a> (size_t maxIndex, size_t maxIndices, size_t maxVertices, const uint32 *inIndices, uint16 *outIndices, <a class="el" href="classfm_1_1vector.html">UInt16List</a> *outPackingMap, uint16 *outNVertices=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Generates a packing map for a mesh' given vertex data.  <a href="#aae3011c83a10e9096b2aedd265e90443"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#aff51a4ef9e5879b21031b6383e142173">FindLargestUniqueIndex</a> (const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;translationMap)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the largest unique index within a given translation map.  <a href="#aff51a4ef9e5879b21031b6383e142173"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#ad416bf6ca71314674cf693b46ec1d882">RevertUniqueIndices</a> (const <a class="el" href="classFCDGeometryPolygonsInput.html">FCDGeometryPolygonsInput</a> &amp;inSrc, <a class="el" href="classFCDGeometryPolygonsInput.html">FCDGeometryPolygonsInput</a> &amp;outSrc, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;translationMap)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reverts the modifications done when applying the unique index buffer data translation unto some polygons input.  <a href="#ad416bf6ca71314674cf693b46ec1d882"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#aa53f5d46accb9d94e71029dcabe10510">FitIndexBuffers</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *mesh, size_t maximumIndexCount)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Splits the mesh's polygons sets to ensure that none of them have more than a given number of indices within their index buffers.  <a href="#aa53f5d46accb9d94e71029dcabe10510"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDGeometryPolygonsTools.html#a25f9608e5084b711403e38aafd52e990">ReverseNormals</a> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *mesh)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reverses all the normals of a mesh.  <a href="#a25f9608e5084b711403e38aafd52e990"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Holds commonly-used transformation functions for meshes and polygons sets. </p>
@@ -139,7 +157,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Applies the translation map onto some vertex data. Refer to the information within the translation map to pre-cache the necessary amount of vertices. </p>
+
+<p>Applies the translation map onto some vertex data. </p>
+<p>Refer to the information within the translation map to pre-cache the necessary amount of vertices. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>targData</em>&nbsp;</td><td>The vertex buffer data to be filled-in. </td></tr>
@@ -188,7 +208,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Applies the translation map onto some vertex data. Refer to the information within the translation map to pre-cache the necessary amount of vertices. </p>
+
+<p>Applies the translation map onto some vertex data. </p>
+<p>Refer to the information within the translation map to pre-cache the necessary amount of vertices. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>targMesh</em>&nbsp;</td><td>The mesh object to be modified in-place. </td></tr>
@@ -201,7 +223,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a10e774316ed58ca98bbf78a24e833ee4"></a><!-- doxytag: member="FCDGeometryPolygonsTools::FindLargestUniqueIndex" ref="a10e774316ed58ca98bbf78a24e833ee4" args="(const FCDGeometryIndexTranslationMap &amp;aMap)" -->
+<a class="anchor" id="aff51a4ef9e5879b21031b6383e142173"></a><!-- doxytag: member="FCDGeometryPolygonsTools::FindLargestUniqueIndex" ref="aff51a4ef9e5879b21031b6383e142173" args="(const FCDGeometryIndexTranslationMap &amp;translationMap)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -216,7 +238,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the largest unique index within a given translation map. This function is unnecessary expensive and we suggest that you cache its results. </p>
+
+<p>Retrieves the largest unique index within a given translation map. </p>
+<p>This function is unnecessary expensive and we suggest that you cache its results. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>translationMap</em>&nbsp;</td><td>A translation map. </td></tr>
@@ -251,7 +275,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Splits the mesh's polygons sets to ensure that none of them have more than a given number of indices within their index buffers. If you intend of using the GenerateUniqueIndices tool on your meshes, you should run it before this tool. This function affects only the indices and the number of polygon sets within a mesh and therefore has no impact on skins or morphers attached to the given mesh. </p>
+
+<p>Splits the mesh's polygons sets to ensure that none of them have more than a given number of indices within their index buffers. </p>
+<p>If you intend of using the GenerateUniqueIndices tool on your meshes, you should run it before this tool. This function affects only the indices and the number of polygon sets within a mesh and therefore has no impact on skins or morphers attached to the given mesh. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>mesh</em>&nbsp;</td><td>The mesh to process. </td></tr>
@@ -262,7 +288,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac750730d04e82ff25157d06bb77996ce"></a><!-- doxytag: member="FCDGeometryPolygonsTools::GenerateTextureTangentBasis" ref="ac750730d04e82ff25157d06bb77996ce" args="(FCDGeometryMesh *mesh, FCDGeometrySource *texcoordSource, bool generateBinormals)" -->
+<a class="anchor" id="a40b8cf1e1daf1b90a28a31c229efb610"></a><!-- doxytag: member="FCDGeometryPolygonsTools::GenerateTextureTangentBasis" ref="a40b8cf1e1daf1b90a28a31c229efb610" args="(FCDGeometryMesh *mesh, FCDGeometrySource *texcoordSource, bool generateBinormals=true)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -292,7 +318,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Generates the texture tangents and binormals for a given source of texture coordinates. A source of normals and a source of vertex positions will be expected. </p>
+
+<p>Generates the texture tangents and binormals for a given source of texture coordinates. </p>
+<p>A source of normals and a source of vertex positions will be expected. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>mesh</em>&nbsp;</td><td>The mesh that contains the texture coordinate source. </td></tr>
@@ -340,7 +368,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer. This is useful for older engines and the applications that only support one index per face-vertex pair. This version of the GenerateUniqueIndices function fills in the outTranslationMaps, but does not modify the data in the FCDGeometryPolygon objects. </p>
+
+<p>Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer. </p>
+<p>This is useful for older engines and the applications that only support one index per face-vertex pair. This version of the GenerateUniqueIndices function fills in the outTranslationMaps, but does not modify the data in the FCDGeometryPolygon objects. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>mesh</em>&nbsp;</td><td>The mesh to process. </td></tr>
@@ -353,7 +383,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af02df362078a3e7467a978862fbf99d5"></a><!-- doxytag: member="FCDGeometryPolygonsTools::GenerateUniqueIndices" ref="af02df362078a3e7467a978862fbf99d5" args="(FCDGeometryMesh *mesh, FCDGeometryPolygons *polygonsToProcess, FCDGeometryIndexTranslationMap *translationMap)" -->
+<a class="anchor" id="ad799bb620f676e2f6b842957b3f44219"></a><!-- doxytag: member="FCDGeometryPolygonsTools::GenerateUniqueIndices" ref="ad799bb620f676e2f6b842957b3f44219" args="(FCDGeometryMesh *mesh, FCDGeometryPolygons *polygons=NULL, FCDGeometryIndexTranslationMap *translationMap=NULL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -383,7 +413,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer. This is useful for older engines and the applications that only support one index per face-vertex pair. </p>
+
+<p>Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer. </p>
+<p>This is useful for older engines and the applications that only support one index per face-vertex pair. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>mesh</em>&nbsp;</td><td>The mesh to process. </td></tr>
@@ -395,7 +427,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a18a4eb68e6b187f573ca808d78b7cf37"></a><!-- doxytag: member="FCDGeometryPolygonsTools::GenerateVertexPackingMap" ref="a18a4eb68e6b187f573ca808d78b7cf37" args="(size_t maxIndex, size_t maxIndices, size_t maxVertices, const uint32 *inIndices, uint16 *outIndices, UInt16List *outPackingMap, uint16 *outNVertices)" -->
+<a class="anchor" id="aae3011c83a10e9096b2aedd265e90443"></a><!-- doxytag: member="FCDGeometryPolygonsTools::GenerateVertexPackingMap" ref="aae3011c83a10e9096b2aedd265e90443" args="(size_t maxIndex, size_t maxIndices, size_t maxVertices, const uint32 *inIndices, uint16 *outIndices, UInt16List *outPackingMap, uint16 *outNVertices=NULL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -449,6 +481,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Generates a packing map for a mesh' given vertex data. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -514,6 +547,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used to pack a vertex buffer object object with 4 bytes color data. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -577,6 +611,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used to pack a vertex buffer object object with 2D float vertex data. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -640,6 +675,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Used to pack a vertex buffer object with 3D float vertex data. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -670,7 +706,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Reverses all the normals of a mesh. Since they are related to normals, this function also reverses geometric tangents and binormals as well as texture tangents and binormals. </p>
+
+<p>Reverses all the normals of a mesh. </p>
+<p>Since they are related to normals, this function also reverses geometric tangents and binormals as well as texture tangents and binormals. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>mesh</em>&nbsp;</td><td>The mesh to process. </td></tr>
@@ -680,7 +718,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab46f2b9cf9e9e830f32e37c4af4ca6a7"></a><!-- doxytag: member="FCDGeometryPolygonsTools::RevertUniqueIndices" ref="ab46f2b9cf9e9e830f32e37c4af4ca6a7" args="(const FCDGeometryPolygonsInput &amp;inPInput, FCDGeometryPolygonsInput &amp;outPInput, const FCDGeometryIndexTranslationMap &amp;translationMap)" -->
+<a class="anchor" id="ad416bf6ca71314674cf693b46ec1d882"></a><!-- doxytag: member="FCDGeometryPolygonsTools::RevertUniqueIndices" ref="ad416bf6ca71314674cf693b46ec1d882" args="(const FCDGeometryPolygonsInput &amp;inSrc, FCDGeometryPolygonsInput &amp;outSrc, const FCDGeometryIndexTranslationMap &amp;translationMap)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -710,7 +748,9 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Reverts the modifications done when applying the unique index buffer data translation unto some polygons input. IMPORTANT: this function is un-tested, DO NOT USE. </p>
+
+<p>Reverts the modifications done when applying the unique index buffer data translation unto some polygons input. </p>
+<p>IMPORTANT: this function is un-tested, DO NOT USE. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>inSrc</em>&nbsp;</td><td>? </td></tr>
@@ -737,6 +777,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Triangulates a mesh. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -747,7 +788,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acf2b155dd5781c2a781841097c745396"></a><!-- doxytag: member="FCDGeometryPolygonsTools::Triangulate" ref="acf2b155dd5781c2a781841097c745396" args="(FCDGeometryPolygons *polygons, bool recalculate)" -->
+<a class="anchor" id="a0a6bd0428040f348b547ce1febecfdfd"></a><!-- doxytag: member="FCDGeometryPolygonsTools::Triangulate" ref="a0a6bd0428040f348b547ce1febecfdfd" args="(FCDGeometryPolygons *polygons, bool recalculate=true)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -771,6 +812,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Triangulates a polygons set. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -797,7 +839,7 @@ template&lt;class VAL , bool translateValue, bool isColor&gt; </td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:02 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:27 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

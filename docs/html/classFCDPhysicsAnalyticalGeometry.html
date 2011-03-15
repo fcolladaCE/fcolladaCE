@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDPhysicsAnalyticalGeometry" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA physics analytical geometry.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDPhysicsAnalyticalGeometry_8h_source.html">FCDPhysicsAnalyticalGeometry.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDPhysicsAnalyticalGeometry:</div>
@@ -97,14 +100,22 @@ Public Types</h2></td></tr>
 <a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a511583406e5c6a1bb5bd84c0453a452ca09a4f0d219d85483f8ec1d0319f1a179">TAPERED_CAPSULE</a>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The geometry type of the analytical geometry class. </p>
+ <a href="classFCDPhysicsAnalyticalGeometry.html#a511583406e5c6a1bb5bd84c0453a452c">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a3e92c7528dfeb9909ef2e90dd4888c76">FCDPhysicsAnalyticalGeometry</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a3e92c7528dfeb9909ef2e90dd4888c76"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a50f1ab64cc863c3361528c6cc9931688">~FCDPhysicsAnalyticalGeometry</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a50f1ab64cc863c3361528c6cc9931688"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a9a228510e74aafa38f32d60b01b2cb69">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity type for this class.  <a href="#a9a228510e74aafa38f32d60b01b2cb69"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a511583406e5c6a1bb5bd84c0453a452c">GeomType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a1902e92f195b227e7bee8799060e3084">GetGeomType</a> () const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the analytical geometry type for this class.  <a href="#a1902e92f195b227e7bee8799060e3084"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsAnalyticalGeometry.html#aaf2af0d36280492051e8033ab8dc3ef9">CalculateVolume</a> () const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calculates the volume of this analytical geometry.  <a href="#aaf2af0d36280492051e8033ab8dc3ef9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a804b67f4fccd71a46dd182b3ece13e39">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the analytical geometry into a clone.  <a href="#a804b67f4fccd71a46dd182b3ece13e39"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A COLLADA physics analytical geometry. </p>
@@ -119,7 +130,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The geometry type of the analytical geometry class. Used this information to up-cast an entity instance. </p>
+
+<p>The geometry type of the analytical geometry class. </p>
+<p>Used this information to up-cast an entity instance. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a511583406e5c6a1bb5bd84c0453a452cae83cea13f5c459f83e3b83f26f7bedaa"></a><!-- doxytag: member="BOX" ref="a511583406e5c6a1bb5bd84c0453a452cae83cea13f5c459f83e3b83f26f7bedaa" args="" -->BOX</em>&nbsp;</td><td>
 <p>A box. </p>
@@ -164,7 +177,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Create new analytical geometries by using <a class="el" href="classFCDPhysicsShape.html#a0674443390f7c6426171fd4bc21187fb">FCDPhysicsShape::CreateAnalyticalGeometry</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Create new analytical geometries by using <a class="el" href="classFCDPhysicsShape.html#a0674443390f7c6426171fd4bc21187fb" title="Creates an analytical geometry for this shape.">FCDPhysicsShape::CreateAnalyticalGeometry</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that contains this physics scene. </td></tr>
@@ -188,6 +203,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -207,6 +223,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Calculates the volume of this analytical geometry. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The volume. </dd></dl>
 
@@ -238,6 +255,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copies the analytical geometry into a clone. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -268,6 +286,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the analytical geometry type for this class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The analytical geometry type. </dd></dl>
 
@@ -289,7 +308,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity type for this class. This function is part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity type for this class. </p>
+<p>This function is part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: PHYSICS_ANALYTICAL_GEOMETRY. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -315,7 +336,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:45 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:21 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

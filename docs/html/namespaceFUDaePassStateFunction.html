@@ -55,6 +55,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FUDaePassStateFunction Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>The function types for the effect pass render states.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -72,11 +75,16 @@ Enumerations</h2></td></tr>
 &nbsp;&nbsp;<a class="el" href="namespaceFUDaePassStateFunction.html#af0f6fbb32c14e5a19559a6630f783313a83282fb0c2b2de5fe9814c8bba01aed8">INVALID</a>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Enumerates the COLLADA render state function types. </p>
+ <a href="namespaceFUDaePassStateFunction.html#af0f6fbb32c14e5a19559a6630f783313">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassStateFunction.html#af0f6fbb32c14e5a19559a6630f783313">Function</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateFunction.html#a1ecd500a9e8d0be82e0415c2f0e8047d">FromString</a> (const char *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the COLLADA render state function string to the render state function type.  <a href="#a1ecd500a9e8d0be82e0415c2f0e8047d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateFunction.html#a779cb89b2e35a4f2ab53a669212f41a9">ToString</a> (<a class="el" href="namespaceFUDaePassStateFunction.html#af0f6fbb32c14e5a19559a6630f783313">Function</a> fn)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the render state function type to its COLLADA render state function string.  <a href="#a779cb89b2e35a4f2ab53a669212f41a9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassStateFunction.html#af0f6fbb32c14e5a19559a6630f783313">Function</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateFunction.html#a6d06e1464f66d48fbe15da048e1594c9">FromString</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6d06e1464f66d48fbe15da048e1594c9"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The function types for the effect pass render states. </p>
@@ -91,7 +99,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Enumerates the COLLADA render state function types. The usage of this enumeration type depends on the render state. For the alpha-test and the depth-test, this function determines when a given pixel will be kept when compared against the color/depth buffer's current alpha/depth value. </p>
+
+<p>Enumerates the COLLADA render state function types. </p>
+<p>The usage of this enumeration type depends on the render state. For the alpha-test and the depth-test, this function determines when a given pixel will be kept when compared against the color/depth buffer's current alpha/depth value. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="af0f6fbb32c14e5a19559a6630f783313a25add4ac74e3d5be8370ee5298f4f36a"></a><!-- doxytag: member="NEVER" ref="af0f6fbb32c14e5a19559a6630f783313a25add4ac74e3d5be8370ee5298f4f36a" args="" -->NEVER</em>&nbsp;</td><td>
 <p>Never kept. </p>
@@ -115,7 +125,8 @@ Functions</h2></td></tr>
 <p>The pixel is kept when its value is greater or equal to the current value. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="af0f6fbb32c14e5a19559a6630f783313a83282fb0c2b2de5fe9814c8bba01aed8"></a><!-- doxytag: member="INVALID" ref="af0f6fbb32c14e5a19559a6630f783313a83282fb0c2b2de5fe9814c8bba01aed8" args="" -->INVALID</em>&nbsp;</td><td>
-<p>Always kept. An invalid function. </p>
+<p>Always kept. </p>
+<p>An invalid function. </p>
 </td></tr>
 </table>
 </dd>
@@ -139,6 +150,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the COLLADA render state function string to the render state function type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -165,6 +177,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -184,6 +197,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the render state function type to its COLLADA render state function string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -210,7 +224,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:04 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:28 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

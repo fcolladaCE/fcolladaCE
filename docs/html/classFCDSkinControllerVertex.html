@@ -60,18 +60,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDSkinControllerVertex" -->
+<p>A COLLADA skin controller vertex.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDSkinController_8h_source.html">FCDSkinController.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinControllerVertex.html#a698817cdf93a642d47b4f9428516a025">GetPairCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieve the number of joint-weight pairs defined for this vertex.  <a href="#a698817cdf93a642d47b4f9428516a025"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinControllerVertex.html#a3dcfd3c7cd7f0694295d87d0c8478c9c">SetPairCount</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the number of joint-weight pairs defined for this vertex.  <a href="#a3dcfd3c7cd7f0694295d87d0c8478c9c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFCDJointWeightPair.html">FCDJointWeightPair</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinControllerVertex.html#a344bac52a2519a2ab482836994c412d5">GetPair</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a joint-weight pair.  <a href="#a344bac52a2519a2ab482836994c412d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structFCDJointWeightPair.html">FCDJointWeightPair</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinControllerVertex.html#a55fd0bfcc9015a5c81249ba18b574834">GetPair</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a55fd0bfcc9015a5c81249ba18b574834"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSkinControllerVertex.html#a57770871bd7a86c7959144463228b927">AddPair</a> (int32 jointIndex, float weight)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new joint-weight pair to this vertex.  <a href="#a57770871bd7a86c7959144463228b927"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA skin controller vertex. This structure contains a list of joint-weight pairs that defines how to modify a given mesh vertex in order to skin it properly. </p>
+<p>A COLLADA skin controller vertex. </p>
+<p>This structure contains a list of joint-weight pairs that defines how to modify a given mesh vertex in order to skin it properly. </p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a57770871bd7a86c7959144463228b927"></a><!-- doxytag: member="FCDSkinControllerVertex::AddPair" ref="a57770871bd7a86c7959144463228b927" args="(int32 jointIndex, float weight)" -->
 <div class="memitem">
@@ -97,7 +106,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a new joint-weight pair to this vertex. No verification will be made to ensure that the sum of the weights equal 1.0. </p>
+
+<p>Adds a new joint-weight pair to this vertex. </p>
+<p>No verification will be made to ensure that the sum of the weights equal 1.0. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>jointIndex</em>&nbsp;</td><td>The index of the joint within the skin controller's joint list. </td></tr>
@@ -123,6 +134,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -142,6 +154,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a joint-weight pair. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -167,6 +180,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieve the number of joint-weight pairs defined for this vertex. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of joint-weight pairs. </dd></dl>
 
@@ -187,6 +201,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the number of joint-weight pairs defined for this vertex. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -216,7 +231,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:48 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:22 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

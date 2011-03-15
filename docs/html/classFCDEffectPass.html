@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEffectPass" --><!-- doxytag: inherits="FCDObject" -->
+<p>A COLLADA effect pass.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffectPass_8h_source.html">FCDEffectPass.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEffectPass:</div>
@@ -77,34 +80,60 @@ Inheritance diagram for FCDEffectPass:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a113ecf82cb3f9a875243fa9c392460d6">FCDEffectPass</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDEffectTechnique.html">FCDEffectTechnique</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a113ecf82cb3f9a875243fa9c392460d6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a06f52bed17aedeb976700a42db076288">~FCDEffectPass</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a06f52bed17aedeb976700a42db076288"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectTechnique.html">FCDEffectTechnique</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#ad8c83b72090cee6340c41482c743b19d">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the effect techniques which contains this effect pass.  <a href="#ad8c83b72090cee6340c41482c743b19d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectTechnique.html">FCDEffectTechnique</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#ae3c3a6a9fc9aa96385908b866e730f69">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae3c3a6a9fc9aa96385908b866e730f69"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a2f2be39f5cb737d23be00822c429499f">DEPRECATED</a> (3.05A, GetParent()-&gt;GetParent()-&gt;GetParent()-&gt;GetDaeId()) const fm</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the COLLADA id of the parent effect.  <a href="#a2f2be39f5cb737d23be00822c429499f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a965264f2ebd9bfab1eda85402b4e62b0">GetPassName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the sub-id of the effect pass.  <a href="#a965264f2ebd9bfab1eda85402b4e62b0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a440924efb479a6417fb4c9de15cce12d">SetPassName</a> (const fchar *_name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the optional sub-id for the effect pass.  <a href="#a440924efb479a6417fb4c9de15cce12d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a91266b26fcb7e861dd32d065f1d3e03a">GetShaderCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of shaders contained within the effect pass.  <a href="#a91266b26fcb7e861dd32d065f1d3e03a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a4812f4512392d1c3599adc9411292742">GetShader</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific shader.  <a href="#a4812f4512392d1c3599adc9411292742"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a594254479c6b9459963347609f013c0d">GetShader</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a594254479c6b9459963347609f013c0d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a3f517cc9def825f5ed1eff92fd63767f">AddShader</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new shader to the pass.  <a href="#a3f517cc9def825f5ed1eff92fd63767f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#ad750f820967f201bf16e11810bdd4e61">DEPRECATED</a> (3.05A, shader-&gt;Release()) void ReleaseShader(FCDEffectPassShader *shader)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases a shader contained within the pass.  <a href="#ad750f820967f201bf16e11810bdd4e61"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#ad5be823d1fcf2b809d88edc3d4bd128e">GetVertexShader</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the vertex shader for this effect pass.  <a href="#ad5be823d1fcf2b809d88edc3d4bd128e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a33ba661e6fd6321720446a0a8c194182">GetVertexShader</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a33ba661e6fd6321720446a0a8c194182"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a5c2d7a6cb07d072474a712d7989b0c47">GetFragmentShader</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the fragment shader for this effect pass.  <a href="#a5c2d7a6cb07d072474a712d7989b0c47"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#af897aa752fb8efce514b5fa78a0c1f9c">GetFragmentShader</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#af897aa752fb8efce514b5fa78a0c1f9c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a38b4b91ed84a52f4b3b4f564bc145adc">AddVertexShader</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new vertex shader to the pass.  <a href="#a38b4b91ed84a52f4b3b4f564bc145adc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a994019f83ec1f8664ebe944ac1853972">AddFragmentShader</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new fragment shader to the pass.  <a href="#a994019f83ec1f8664ebe944ac1853972"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a751132054a8fe95f6113ee1dce669315">DEPRECATED</a> (3.05A, GetRenderStateCount and GetRenderState(index)) void GetRenderStates() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the container of the render states for the pass.  <a href="#a751132054a8fe95f6113ee1dce669315"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#ac7b761be64722700e0896574d039a927">GetRenderStateCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of render states defined for the pass.  <a href="#ac7b761be64722700e0896574d039a927"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassState.html">FCDEffectPassState</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a2d9d4bc7ef4a68f0eef84fa133bf2bf4">GetRenderState</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific render state defined for the pass.  <a href="#a2d9d4bc7ef4a68f0eef84fa133bf2bf4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPassState.html">FCDEffectPassState</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a53757eb176c01b3d5014ec405d70949b">GetRenderState</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a53757eb176c01b3d5014ec405d70949b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassState.html">FCDEffectPassState</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a0693c21a2306025fc8853295c07b6927">AddRenderState</a> (<a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">FUDaePassState::State</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new render state to the effect pass.  <a href="#a0693c21a2306025fc8853295c07b6927"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassState.html">FCDEffectPassState</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#ac145319a544b80a7cb1f013609e5ccfa">FindRenderState</a> (<a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">FUDaePassState::State</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific render state defined for the pass.  <a href="#ac145319a544b80a7cb1f013609e5ccfa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPassState.html">FCDEffectPassState</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a613603555b9bae099c4eba84290db2c1">FindRenderState</a> (<a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">FUDaePassState::State</a> type) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a613603555b9bae099c4eba84290db2c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPass.html">FCDEffectPass</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPass.html#a42e60c76a99dff70809a727a87d757ea">Clone</a> (<a class="el" href="classFCDEffectPass.html">FCDEffectPass</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones the effect pass and shaders.  <a href="#a42e60c76a99dff70809a727a87d757ea"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA effect pass.</p>
+<p>A COLLADA effect pass. </p>
 <p>The effect pass contains a list of effect shaders. While they may be missing, it does not make sense for the effect pass to contain more than two shaders: a vertex shader and a fragment/pixel shader.</p>
 <p>For this reason, we provide the GetVertexShader and the GetFragmentShader which we expect will be used for most applications, rather than looking through the list of shader objects. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
@@ -132,10 +161,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDEffectTechnique.html#a485529a79e25dfb6c9d9f3b6ebc4d5c4">FCDEffectTechnique::AddPass</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDEffectTechnique.html#a485529a79e25dfb6c9d9f3b6ebc4d5c4" title="Adds a new pass to this effect technique.">FCDEffectTechnique::AddPass</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html">FCollada</a> document that owns this pass. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> document that owns this pass. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>The effect technique that contains this effect pass. </td></tr>
   </table>
   </dd>
@@ -157,6 +188,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -176,7 +208,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a new fragment shader to the pass. If a fragment shader already exists within the pass, it will be released. </p>
+
+<p>Adds a new fragment shader to the pass. </p>
+<p>If a fragment shader already exists within the pass, it will be released. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new fragment shader. </dd></dl>
 
 </div>
@@ -196,7 +230,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a new render state to the effect pass. Render states automatically get sorted by type. </p>
+
+<p>Adds a new render state to the effect pass. </p>
+<p>Render states automatically get sorted by type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The type of the render state to add. If a render state of this type already exists within the effect pass, it will be returned. </td></tr>
@@ -221,6 +257,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new shader to the pass. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new shader. </dd></dl>
 
@@ -240,7 +277,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a new vertex shader to the pass. If a vertex shader already exists within the pass, it will be released. </p>
+
+<p>Adds a new vertex shader to the pass. </p>
+<p>If a vertex shader already exists within the pass, it will be released. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new vertex shader. </dd></dl>
 
 </div>
@@ -260,6 +299,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones the effect pass and shaders. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -295,7 +335,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the COLLADA id of the parent effect. This function is mostly useful as a shortcut for debugging and reporting. </p>
+
+<p>Retrieves the COLLADA id of the parent effect. </p>
+<p>This function is mostly useful as a shortcut for debugging and reporting. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The COLLADA id of the parent effect. </dd></dl>
 
 </div>
@@ -324,6 +366,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the container of the render states for the pass. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The render state list. </dd></dl>
 
@@ -353,6 +396,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases a shader contained within the pass. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -378,6 +422,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -397,6 +442,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific render state defined for the pass. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -422,6 +468,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the fragment shader for this effect pass. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The fragment shader. This pointer will be NULL if no shader within the pass affects pixels/fragments. </dd></dl>
 
@@ -441,6 +488,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -459,6 +507,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -477,6 +526,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the effect techniques which contains this effect pass. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parent technique. </dd></dl>
 
@@ -496,7 +546,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the sub-id of the effect pass. This sub-id is optional. </p>
+
+<p>Retrieves the sub-id of the effect pass. </p>
+<p>This sub-id is optional. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The sub-id. </dd></dl>
 
 </div>
@@ -516,6 +568,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific render state defined for the pass. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -542,6 +595,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -560,6 +614,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of render states defined for the pass. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The render state count. </dd></dl>
 
@@ -580,6 +635,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -599,6 +655,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific shader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -624,6 +681,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of shaders contained within the effect pass. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of shaders. </dd></dl>
 
@@ -643,6 +701,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -661,6 +720,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the vertex shader for this effect pass. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The vertex shader. This pointer will be NULL if no shader within the pass affects vertices. </dd></dl>
 
@@ -681,7 +741,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the optional sub-id for the effect pass. This sub-id is optional. </p>
+
+<p>Sets the optional sub-id for the effect pass. </p>
+<p>This sub-id is optional. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_name</em>&nbsp;</td><td>The sub-id. </td></tr>
@@ -710,7 +772,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:31 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:16 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

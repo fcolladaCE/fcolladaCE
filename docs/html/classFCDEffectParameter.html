@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEffectParameter" --><!-- doxytag: inherits="FCDObject" -->
+<p>A COLLADA effect parameter.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffectParameter_8h_source.html">FCDEffectParameter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEffectParameter:</div>
@@ -96,6 +99,8 @@ Public Types</h2></td></tr>
 <a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08a217a1f4ad8b74ced28de295ab6de116b">SURFACE</a>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The value type of the effect parameter. </p>
+ <a href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a25a513057c610179b5229dc99e840bb9">ParamType</a> { <br/>
 &nbsp;&nbsp;<a class="el" href="classFCDEffectParameter.html#a25a513057c610179b5229dc99e840bb9a14eca93fcd14630310f36b886eccb457">GENERATOR</a>, 
 <a class="el" href="classFCDEffectParameter.html#a25a513057c610179b5229dc99e840bb9a39a1f8b4018e17cf450cdf1d4b1ff73a">MODIFIER</a>, 
@@ -105,48 +110,83 @@ Public Types</h2></td></tr>
 &nbsp;&nbsp;<a class="el" href="classFCDEffectParameter.html#a25a513057c610179b5229dc99e840bb9abb34bd1f49cb5c89dee19319a990c094">CONSTANT</a>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The usage type of the effect parameter. </p>
+ <a href="classFCDEffectParameter.html#a25a513057c610179b5229dc99e840bb9">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#aab5e11cc5f59d90be17fd8db28146826">FCDEffectParameter</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#aab5e11cc5f59d90be17fd8db28146826"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#ad0314597c4be5629a6b55927ed32f15a">~FCDEffectParameter</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ad0314597c4be5629a6b55927ed32f15a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a5858946f333ea4486ca30c4c1b104871">GetType</a> () const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of effect parameter class.  <a href="#a5858946f333ea4486ca30c4c1b104871"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameter.html#a25a513057c610179b5229dc99e840bb9">ParamType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a48ab8e00ca3648e54795864a901e1b2e">GetParamType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of parameter.  <a href="#a48ab8e00ca3648e54795864a901e1b2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a7f736431830ef8d76e9410747546c6d8">GetReference</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the reference for this effect parameter.  <a href="#a7f736431830ef8d76e9410747546c6d8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a5a1af6ade68203ece99e22e2334e7dda">SetReference</a> (const char *_reference)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the reference for the effect parameter.  <a href="#a5a1af6ade68203ece99e22e2334e7dda"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a766c4c57cce34ae74c7946a166cd4141">GetSemantic</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the semantic for this effect parameter.  <a href="#a766c4c57cce34ae74c7946a166cd4141"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#ab7a042b8a3df0d6c72892ecca6c2f3e1">SetSemantic</a> (const char *_semantic)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the semantic for this effect parameter.  <a href="#ab7a042b8a3df0d6c72892ecca6c2f3e1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#aa77e878bbff4b0d7a85c3f08e46bb206">IsGenerator</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this effect parameter is a parameter generator.  <a href="#aa77e878bbff4b0d7a85c3f08e46bb206"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#ae9e19c411f12e1f456a45be82b4ddf6a">SetGenerator</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets this effect parameter as a generator.  <a href="#ae9e19c411f12e1f456a45be82b4ddf6a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#af0270639bc9e73ca45c15fbbebdc8066">IsModifier</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this effect parameter is a parameter modifier.  <a href="#af0270639bc9e73ca45c15fbbebdc8066"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a620f3208cb12bb3017635fa43cd5b0cf">SetModifier</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets this effect parameter as a modified.  <a href="#a620f3208cb12bb3017635fa43cd5b0cf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#ab592fa7e739aefa0428d7ef5c5ef802c">IsAnimator</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this effect is an animated parameter.  <a href="#ab592fa7e739aefa0428d7ef5c5ef802c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a3f4336d517d28228d97b7d6ba64b0f7f">SetAnimator</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets this effect parameter as animated.  <a href="#a3f4336d517d28228d97b7d6ba64b0f7f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#aeab23a79f8e23c34c578d3dbeaa15ccb">IsReferencer</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this effect is a referenced parameter.  <a href="#aeab23a79f8e23c34c578d3dbeaa15ccb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#ac583526f7633df0f53eb9b2bcb4cc871">SetReferencer</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets this effect parameter as referencer.  <a href="#ac583526f7633df0f53eb9b2bcb4cc871"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#abea9fef6b3f53f3517deecf65e48930d">IsConstant</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this effect is a constant parameter.  <a href="#abea9fef6b3f53f3517deecf65e48930d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a9dfd1408c013fc089814ddc8081d717e">SetConstant</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets this effect parameter as constant.  <a href="#a9dfd1408c013fc089814ddc8081d717e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnnotation.html">FCDEffectParameterAnnotation</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a6ac54dcbf8d32ba46ef33beb59496a85">GetAnnotations</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of annotations for this parameter.  <a href="#a6ac54dcbf8d32ba46ef33beb59496a85"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#ab7044a24dc78a4e5bf4521591d0b7c8b">GetAnnotationCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of annotations for this parameter.  <a href="#ab7044a24dc78a4e5bf4521591d0b7c8b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnnotation.html">FCDEffectParameterAnnotation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a1a65ceee576d44bccfc64e1180512a77">GetAnnotation</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an annotation of this parameter.  <a href="#a1a65ceee576d44bccfc64e1180512a77"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnnotation.html">FCDEffectParameterAnnotation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#ae62a9e58e54ea7430e9de7faae3197a4">GetAnnotation</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae62a9e58e54ea7430e9de7faae3197a4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameterAnnotation.html">FCDEffectParameterAnnotation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a20bfb0f1361f5712c6014300878996e9">AddAnnotation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a blank annotation to this parameter.  <a href="#a20bfb0f1361f5712c6014300878996e9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a196cbd25ffbbd769276b800b7a557409">AddAnnotation</a> (const fchar *name, <a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">FCDEffectParameter::Type</a> type, const fchar *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an annotation to this parameter.  <a href="#a196cbd25ffbbd769276b800b7a557409"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a3e42008248b98e54482a2461cbdcf4da">AddAnnotation</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;name, <a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">FCDEffectParameter::Type</a> type, const fchar *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a3e42008248b98e54482a2461cbdcf4da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a94ed87e08db50adcc733b756530a2a06">AddAnnotation</a> (const fchar *name, <a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">FCDEffectParameter::Type</a> type, const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a94ed87e08db50adcc733b756530a2a06"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a0cc972ecbab3edac8a12476ddf8d88bf">AddAnnotation</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;name, <a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">FCDEffectParameter::Type</a> type, const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0cc972ecbab3edac8a12476ddf8d88bf"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a3c1b2078989b55f9f6bc40d38bb84be6">AddAnnotation</a> (const fchar *name, <a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">FCDEffectParameter::Type</a> type, const T &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a3c1b2078989b55f9f6bc40d38bb84be6"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a69564a01be462524f6d42cf09b443221">AddAnnotation</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;name, <a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">FCDEffectParameter::Type</a> type, const T &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a69564a01be462524f6d42cf09b443221"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a70ae77594ef3b066891f78d1a72502d6">DEPRECATED</a> (3.05A, annotation-&gt;Release) inline void ReleaseAnnotation(FCDEffectParameterAnnotation *annotation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases an annotation of this parameter.  <a href="#a70ae77594ef3b066891f78d1a72502d6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a005a5a316bdb99dbd97ac542c129cc5e">IsValueEqual</a> (<a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *parameter)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compares this parameter's value with another.  <a href="#a005a5a316bdb99dbd97ac542c129cc5e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a75abe4b8964493db40604fa3d0e373eb">Clone</a> (<a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a full copy of the effect parameter.  <a href="#a75abe4b8964493db40604fa3d0e373eb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html#a016be91dbd27ff3c8c30f759f00b8c53">Overwrite</a> (<a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *target)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Overwrites the target parameter with this parameter.  <a href="#a016be91dbd27ff3c8c30f759f00b8c53"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA effect parameter.</p>
+<p>A COLLADA effect parameter. </p>
 <p>This interface class is used to define all the valid ColladaFX parameter types. There are many types of parameters: integers, booleans, floating-point values, 2D, 3D and 4D vectors of floating-point values, matrices, strings, surfaces and their samplers.</p>
 <p>A COLLADA effect parameter may generate a new effect parameter, in which case it will declare a semantic and a reference: to represent it within the COLLADA document. </p>
 <hr/><h2>Member Enumeration Documentation</h2>
@@ -160,22 +200,28 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The usage type of the effect parameter. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a25a513057c610179b5229dc99e840bb9a14eca93fcd14630310f36b886eccb457"></a><!-- doxytag: member="GENERATOR" ref="a25a513057c610179b5229dc99e840bb9a14eca93fcd14630310f36b886eccb457" args="" -->GENERATOR</em>&nbsp;</td><td>
-<p>This should be the type used for a 'newparam' element. Valid only at the levels of effect, profile common or technique common. </p>
+<p>This should be the type used for a 'newparam' element. </p>
+<p>Valid only at the levels of effect, profile common or technique common. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a25a513057c610179b5229dc99e840bb9a39a1f8b4018e17cf450cdf1d4b1ff73a"></a><!-- doxytag: member="MODIFIER" ref="a25a513057c610179b5229dc99e840bb9a39a1f8b4018e17cf450cdf1d4b1ff73a" args="" -->MODIFIER</em>&nbsp;</td><td>
-<p>This should be the type used for a 'setparam' element. Valid only at the instance effect level. </p>
+<p>This should be the type used for a 'setparam' element. </p>
+<p>Valid only at the instance effect level. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a25a513057c610179b5229dc99e840bb9a9bc6e04cd6ea9ab90d07f215aeff3b60"></a><!-- doxytag: member="ANIMATOR" ref="a25a513057c610179b5229dc99e840bb9a9bc6e04cd6ea9ab90d07f215aeff3b60" args="" -->ANIMATOR</em>&nbsp;</td><td>
-<p>This should be the type used for a 'param' element that is to be animated. Valid only at the bind_material level. </p>
+<p>This should be the type used for a 'param' element that is to be animated. </p>
+<p>Valid only at the bind_material level. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a25a513057c610179b5229dc99e840bb9a170fdf70dc1ace376fbe736c84bf8d0c"></a><!-- doxytag: member="REFERENCER" ref="a25a513057c610179b5229dc99e840bb9a170fdf70dc1ace376fbe736c84bf8d0c" args="" -->REFERENCER</em>&nbsp;</td><td>
-<p>This should be the type used for a 'param' element used in any of the common techniques. The 'param' needs to have a reference that is the same as the generator used above. </p>
+<p>This should be the type used for a 'param' element used in any of the common techniques. </p>
+<p>The 'param' needs to have a reference that is the same as the generator used above. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a25a513057c610179b5229dc99e840bb9abb34bd1f49cb5c89dee19319a990c094"></a><!-- doxytag: member="CONSTANT" ref="a25a513057c610179b5229dc99e840bb9abb34bd1f49cb5c89dee19319a990c094" args="" -->CONSTANT</em>&nbsp;</td><td>
-<p>This should be the type used for a parameter that is either a color or a float in any of the common techniques. This type isn't linked to any parameter elsewhere. </p>
+<p>This should be the type used for a parameter that is either a color or a float in any of the common techniques. </p>
+<p>This type isn't linked to any parameter elsewhere. </p>
 </td></tr>
 </table>
 </dd>
@@ -193,10 +239,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The value type of the effect parameter. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a1efe74553d2ed199435085c171743b08a8f5ddd923615701f05a30158b80f56ec"></a><!-- doxytag: member="SAMPLER" ref="a1efe74553d2ed199435085c171743b08a8f5ddd923615701f05a30158b80f56ec" args="" -->SAMPLER</em>&nbsp;</td><td>
-<p>A sampler effect parameter. Points towards a surface parameter and adds extra texturing parameters. </p>
+<p>A sampler effect parameter. </p>
+<p>Points towards a surface parameter and adds extra texturing parameters. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a1efe74553d2ed199435085c171743b08add655617aa5a92725480964718122182"></a><!-- doxytag: member="INTEGER" ref="a1efe74553d2ed199435085c171743b08add655617aa5a92725480964718122182" args="" -->INTEGER</em>&nbsp;</td><td>
 <p>A single integer effect parameter. </p>
@@ -223,7 +271,8 @@ Public Member Functions</h2></td></tr>
 <p>A string effect parameter. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a1efe74553d2ed199435085c171743b08a217a1f4ad8b74ced28de295ab6de116b"></a><!-- doxytag: member="SURFACE" ref="a1efe74553d2ed199435085c171743b08a217a1f4ad8b74ced28de295ab6de116b" args="" -->SURFACE</em>&nbsp;</td><td>
-<p>A surface effect parameter. Contains a COLLADA image pointer. </p>
+<p>A surface effect parameter. </p>
+<p>Contains a COLLADA image pointer. </p>
 </td></tr>
 </table>
 </dd>
@@ -247,7 +296,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the appropriate AddEffectParameter function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the appropriate AddEffectParameter function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the effect parameter. </td></tr>
@@ -271,6 +322,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -290,6 +342,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a blank annotation to this parameter. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The blank annotation. </dd></dl>
 
@@ -325,6 +378,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds an annotation to this parameter. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -367,6 +421,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -401,6 +456,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -435,6 +491,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -471,6 +528,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -507,6 +565,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -526,6 +585,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a full copy of the effect parameter. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -563,6 +623,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases an annotation of this parameter. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -588,6 +649,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an annotation of this parameter. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -614,6 +676,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -632,6 +695,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of annotations for this parameter. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of annotations. </dd></dl>
 
@@ -651,6 +715,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of annotations for this parameter. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of annotations. See above. </dd></dl>
 
@@ -670,7 +735,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the type of parameter. The parameter can be a generator (newparam), a modifier (setparam) or an animated param (animator). </p>
+
+<p>Retrieves the type of parameter. </p>
+<p>The parameter can be a generator (newparam), a modifier (setparam) or an animated param (animator). </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The type of the parameter. </dd></dl>
 
 </div>
@@ -689,7 +756,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the reference for this effect parameter. In the case of generators, the reference string contains the sub-id. </p>
+
+<p>Retrieves the reference for this effect parameter. </p>
+<p>In the case of generators, the reference string contains the sub-id. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The reference. </dd></dl>
 
 </div>
@@ -708,6 +777,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the semantic for this effect parameter. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The semantic. </dd></dl>
 
@@ -727,6 +797,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of effect parameter class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The type of the effect parameter class. </dd></dl>
 
@@ -748,7 +819,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether this effect is an animated parameter. A ColladaFX parameter must be generated to be modified or bound at higher abstraction levels. </p>
+
+<p>Retrieves whether this effect is an animated parameter. </p>
+<p>A ColladaFX parameter must be generated to be modified or bound at higher abstraction levels. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this is an animator. </dd></dl>
 
 </div>
@@ -767,7 +840,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether this effect is a constant parameter. This type of parameter belongs to the technique and isn't referenced anywhere. It should have an empty reference. </p>
+
+<p>Retrieves whether this effect is a constant parameter. </p>
+<p>This type of parameter belongs to the technique and isn't referenced anywhere. It should have an empty reference. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this is a constant parameter. </dd></dl>
 
 </div>
@@ -786,7 +861,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether this effect parameter is a parameter generator. A ColladaFX parameter must be generated to be modified or bound at higher abstraction levels. </p>
+
+<p>Retrieves whether this effect parameter is a parameter generator. </p>
+<p>A ColladaFX parameter must be generated to be modified or bound at higher abstraction levels. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this is a generator. </dd></dl>
 
 </div>
@@ -805,7 +882,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether this effect parameter is a parameter modifier. A ColladaFX parameter must be generated to be modified or bound at higher abstraction levels. </p>
+
+<p>Retrieves whether this effect parameter is a parameter modifier. </p>
+<p>A ColladaFX parameter must be generated to be modified or bound at higher abstraction levels. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this is a modifier. </dd></dl>
 
 </div>
@@ -824,7 +903,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether this effect is a referenced parameter. This type of parameter must have a valid reference equal to that of the generator paramater in order to be properly linked. </p>
+
+<p>Retrieves whether this effect is a referenced parameter. </p>
+<p>This type of parameter must have a valid reference equal to that of the generator paramater in order to be properly linked. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this is a referencer. </dd></dl>
 
 </div>
@@ -844,7 +925,8 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Compares this parameter's value with another </p>
+
+<p>Compares this parameter's value with another. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>parameter</em>&nbsp;</td><td>The given parameter to compare with. </td></tr>
@@ -872,7 +954,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Overwrites the target parameter with this parameter. This function is used during the flattening of materials. </p>
+
+<p>[INTERNAL] Overwrites the target parameter with this parameter. </p>
+<p>This function is used during the flattening of materials. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>target</em>&nbsp;</td><td>The target parameter to overwrite. </td></tr>
@@ -898,6 +982,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets this effect parameter as animated. </p>
 
 </div>
@@ -916,6 +1001,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets this effect parameter as constant. </p>
 
 </div>
@@ -934,6 +1020,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets this effect parameter as a generator. </p>
 
 </div>
@@ -952,6 +1039,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets this effect parameter as a modified. </p>
 
 </div>
@@ -971,7 +1059,9 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the reference for the effect parameter. In the case of generators, the reference string contains the sub-id. </p>
+
+<p>Sets the reference for the effect parameter. </p>
+<p>In the case of generators, the reference string contains the sub-id. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_reference</em>&nbsp;</td><td>The reference. </td></tr>
@@ -995,6 +1085,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets this effect parameter as referencer. </p>
 
 </div>
@@ -1014,6 +1105,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the semantic for this effect parameter. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1043,7 +1135,7 @@ template&lt;class T &gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:28 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:16 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -56,19 +56,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 
+<p>The file containing functions and constants for floating point values.  
+<a href="#_details">More...</a></p>
+
 <p><a href="FMFloat_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMFloat_8h.html#a3458b13111109beee2df9a2d42218678">DBL_TOLERANCE</a>&nbsp;&nbsp;&nbsp;0.0001</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The default tolerance for double-sized floating-point comparison functions.  <a href="#a3458b13111109beee2df9a2d42218678"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMFloat_8h.html#ae1862cb712bfc3a8d5210438601b9a1b">FLT_TOLERANCE</a>&nbsp;&nbsp;&nbsp;0.0001f</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The default tolerance for single-sized floating-point comparison functions.  <a href="#ae1862cb712bfc3a8d5210438601b9a1b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMFloat_8h.html#a7fbf1534f9e0f0bfdb86fb928902474c">FLT_MAX</a>&nbsp;&nbsp;&nbsp;__FLT_MAX__</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The maximum value that can be expressed using a 32-bit floating point value.  <a href="#a7fbf1534f9e0f0bfdb86fb928902474c"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMFloat_8h.html#ab6dd2a235e432f2ee271b2213446fbbf">IsEquivalent</a> (float f1, float f2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether two floating-point values are equivalent within a given tolerance.  <a href="#ab6dd2a235e432f2ee271b2213446fbbf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMFloat_8h.html#a49839e11ca3bf4c2162665c1ec062908">IsEquivalent</a> (float f1, float f2, float tolerance)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether two floating-point values are equivalent within a given tolerance.  <a href="#a49839e11ca3bf4c2162665c1ec062908"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMFloat_8h.html#aeadaba3626e4515a4e0a7b965cb6ed25">IsEquivalent</a> (double f1, double f2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether two double-sized floating-point values are equivalent.  <a href="#aeadaba3626e4515a4e0a7b965cb6ed25"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FMFloat_8h.html#a0eb5ab4f00fba07604caa7e9d2730478">IsEquivalent</a> (double f1, double f2, double tolerance)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether two double-sized floating-point values are equivalent within a given tolerance.  <a href="#a0eb5ab4f00fba07604caa7e9d2730478"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The file containing functions and constants for floating point values. </p>
@@ -83,6 +93,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The default tolerance for double-sized floating-point comparison functions. </p>
 
 </div>
@@ -97,7 +108,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The maximum value that can be expressed using a 32-bit floating point value. This macro is pre-defined in the Windows API but is missing on MacOSX and other platforms. </p>
+
+<p>The maximum value that can be expressed using a 32-bit floating point value. </p>
+<p>This macro is pre-defined in the Windows API but is missing on MacOSX and other platforms. </p>
 
 </div>
 </div>
@@ -111,6 +124,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The default tolerance for single-sized floating-point comparison functions. </p>
 
 </div>
@@ -140,6 +154,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Returns whether two floating-point values are equivalent within a given tolerance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -181,6 +196,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Returns whether two double-sized floating-point values are equivalent within a given tolerance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -217,6 +233,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Returns whether two double-sized floating-point values are equivalent. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -258,6 +275,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Returns whether two floating-point values are equivalent within a given tolerance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -285,7 +303,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

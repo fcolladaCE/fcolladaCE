@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDAnimatedCustom" --><!-- doxytag: inherits="FCDAnimated" -->
+<p>A COLLADA custom animated value.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDAnimated_8h_source.html">FCDAnimated.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDAnimatedCustom:</div>
@@ -79,14 +82,21 @@ Inheritance diagram for FCDAnimatedCustom:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimatedCustom.html#a4e15071aff5b34b08ca8c39754331225">FCDAnimatedCustom</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Don't build directly.  <a href="#a4e15071aff5b34b08ca8c39754331225"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimatedCustom.html#a2e53d1c7918e81312d507e6c196e778f">Copy</a> (const <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *copy)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Initialized a custom animated element from another animated element.  <a href="#a2e53d1c7918e81312d507e6c196e778f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimatedCustom.html#ac23677b9bcc764c90c2a2256c2665c6b">GetDummy</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the floating-point value used for all the value pointers.  <a href="#ac23677b9bcc764c90c2a2256c2665c6b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimatedCustom.html#ae2e70908717bea35adcb50162066ee97">GetDummy</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae2e70908717bea35adcb50162066ee97"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimatedCustom.html#a22c9c44059742d2571f5d9bacf7c39ed">Resize</a> (size_t count, const char **<a class="el" href="classFCDAnimated.html#a02ab9175d25055cd2d10d924de312490">qualifiers</a>=NULL, bool prependDot=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Resizes the wanted qualifiers.  <a href="#a22c9c44059742d2571f5d9bacf7c39ed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimatedCustom.html#ad231a2f2902a351b29a171b3540823d9">Resize</a> (const <a class="el" href="classfm_1_1vector.html">StringList</a> &amp;<a class="el" href="classFCDAnimated.html#a02ab9175d25055cd2d10d924de312490">qualifiers</a>=NULL, bool prependDot=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Resizes the wanted qualifiers.  <a href="#ad231a2f2902a351b29a171b3540823d9"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA custom animated value. Used for animated extra elements. A single value is used multiple times to hold as many value pointers are necessary to hold the animation curves. </p>
+<p>A COLLADA custom animated value. </p>
+<p>Used for animated extra elements. A single value is used multiple times to hold as many value pointers are necessary to hold the animation curves. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4e15071aff5b34b08ca8c39754331225"></a><!-- doxytag: member="FCDAnimatedCustom::FCDAnimatedCustom" ref="a4e15071aff5b34b08ca8c39754331225" args="(FCDObject *object)" -->
 <div class="memitem">
@@ -103,6 +113,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Don't build directly. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -129,7 +140,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Initialized a custom animated element from another animated element. The custom animated element will be resized to copy the given animated element. </p>
+
+<p>[INTERNAL] Initialized a custom animated element from another animated element. </p>
+<p>The custom animated element will be resized to copy the given animated element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>copy</em>&nbsp;</td><td>The animated element to copy. </td></tr>
@@ -153,6 +166,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the floating-point value used for all the value pointers. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The dummy floating-point value. </dd></dl>
 
@@ -172,6 +186,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -206,7 +221,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Resizes the wanted qualifiers. Using the <a class="el" href="namespaceFUDaeAccessor.html">FUDaeAccessor</a> types or the <a class="el" href="namespaceFCDAnimatedStandardQualifiers.html">FCDAnimatedStandardQualifiers</a> types is recommended. </p>
+
+<p>Resizes the wanted qualifiers. </p>
+<p>Using the <a class="el" href="namespaceFUDaeAccessor.html" title="Character-based definition of the various accessors TODO.">FUDaeAccessor</a> types or the <a class="el" href="namespaceFCDAnimatedStandardQualifiers.html" title="The common qualifier lists.">FCDAnimatedStandardQualifiers</a> types is recommended. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>count</em>&nbsp;</td><td>The new size of the animated element. </td></tr>
@@ -242,6 +259,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Resizes the wanted qualifiers. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -272,7 +290,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:22 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

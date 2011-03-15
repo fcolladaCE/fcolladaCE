@@ -59,6 +59,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCollada/FUtils/FUString.h File Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>This file includes <a class="el" href="FUStringBuilder_8h.html" title="This file contains the FUStringBuilderT template class, its defined template classes and its helper c...">FUStringBuilder.h</a> and <a class="el" href="FUStringConversion_8h.html" title="This file contains the FUStringConversion class.">FUStringConversion.h</a> and defines important string-related macros and inline functions.  
+<a href="#_details">More...</a></p>
 <code>#include &quot;<a class="el" href="FMArray_8h_source.html">FMath/FMArray.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="FUStringBuilder_8h_source.html">FUtils/FUStringBuilder.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="FUStringConversion_8h_source.html">FUtils/FUStringConversion.h</a>&quot;</code><br/>
@@ -68,62 +71,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfm_1_1stringT.html">fm::stringT&lt; CH &gt;</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A string template.  <a href="classfm_1_1stringT.html#_details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefm.html">fm</a></td></tr>
+
+<p><tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Namespace that contains the overwritten STL classes. </p>
+<br/></td></tr>
+</p>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#aafc191eda457ff64f0e441d65311e4b8">FS</a>(a)&nbsp;&nbsp;&nbsp;<a class="el" href="classfm_1_1stringT.html">fstring</a>(FC(a))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A Unicode string from a constant 8-bit string.  <a href="#aafc191eda457ff64f0e441d65311e4b8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a07704e1457df8a52db49b436f419d9f9">TO_FSTRING</a>(a)&nbsp;&nbsp;&nbsp;FUStringConversion::ToFString(a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A Unicode string from any convertable value: string, vector-type or simple numeric.  <a href="#a07704e1457df8a52db49b436f419d9f9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#abbdf4f5bce6b0fed7d6a617fab284e7b">TO_STRING</a>(a)&nbsp;&nbsp;&nbsp;FUStringConversion::ToString(a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An 8-bit string from any convertable value: Unicode string, vector-type or simple numeric.  <a href="#abbdf4f5bce6b0fed7d6a617fab284e7b"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef stringT&lt; char &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefm.html#ac112eb8f56d62ea729aa6d1edd7233a4">fm::string</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A string of UTF8 characters.  <a href="#ac112eb8f56d62ea729aa6d1edd7233a4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; fchar &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a2f64dfcae44722d9065c2860c5f78c24">fstring</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A string of UNICODE characters.  <a href="#a2f64dfcae44722d9065c2860c5f78c24"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; <a class="el" href="classfm_1_1stringT.html">fstring</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#ae5ffdc86eb858ba643ebe7a5a05b438b">FStringList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of Unicode strings.  <a href="#ae5ffdc86eb858ba643ebe7a5a05b438b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; <a class="el" href="classfm_1_1stringT.html">fm::string</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a610421708121a5b50f3a001c23a43fcf">StringList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of simple strings.  <a href="#a610421708121a5b50f3a001c23a43fcf"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">stringT&lt; CharT &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#ae1c519de7f44b9d074f17e65c5f56ee8">fm::operator+</a> (const stringT&lt; CharT &gt; &amp;A, const stringT&lt; CharT &gt; &amp;B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Concatenates two strings.  <a href="#ae1c519de7f44b9d074f17e65c5f56ee8"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">stringT&lt; CharT &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#a6dbe5aa45a2924ca3c57f5655b098338">fm::operator+</a> (const CharT *A, const stringT&lt; CharT &gt; &amp;B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6dbe5aa45a2924ca3c57f5655b098338"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">stringT&lt; CharT &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#a9e42af087b963766af56c8519e2cea66">fm::operator+</a> (const stringT&lt; CharT &gt; &amp;A, const CharT *B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a9e42af087b963766af56c8519e2cea66"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">stringT&lt; CharT &gt; &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#ae2a51530ac520855c418d672364f8a8c">fm::operator+=</a> (stringT&lt; CharT &gt; &amp;A, const stringT&lt; CharT &gt; &amp;B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae2a51530ac520855c418d672364f8a8c"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">stringT&lt; CharT &gt; &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#a84c48305a88f6e91eb9355b3d6d4402b">fm::operator+=</a> (stringT&lt; CharT &gt; &amp;A, const CharT *B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a84c48305a88f6e91eb9355b3d6d4402b"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">stringT&lt; CharT &gt; &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#a75a83dfab92ba8527822533f5e85d788">fm::operator+=</a> (stringT&lt; CharT &gt; &amp;A, const CharT &amp;B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a character to a string.  <a href="#a75a83dfab92ba8527822533f5e85d788"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#a242945dabb23c11e3d1ba4028f46237f">fm::operator&lt;</a> (const stringT&lt; CharT &gt; &amp;A, const stringT&lt; CharT &gt; &amp;B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a first string is lesser than a second string.  <a href="#a242945dabb23c11e3d1ba4028f46237f"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#ab5395f6c2bb26023b1f5323cbb6322ab">fm::operator==</a> (const stringT&lt; CharT &gt; &amp;A, const stringT&lt; CharT &gt; &amp;B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a first string is equal to a second string.  <a href="#ab5395f6c2bb26023b1f5323cbb6322ab"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#aae637edcca728debaa3e9e3a4ce913b5">fm::operator!=</a> (const stringT&lt; CharT &gt; &amp;A, const stringT&lt; CharT &gt; &amp;B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a first string differs from a second string.  <a href="#aae637edcca728debaa3e9e3a4ce913b5"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CharT &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefm.html#a289fcca02fd1babcb8bdf4c25b20570c">fm::operator!=</a> (const stringT&lt; CharT &gt; &amp;A, const CharT *B)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a first string differs from a second string.  <a href="#a289fcca02fd1babcb8bdf4c25b20570c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#ae76535c7bb202935f3aa400fa719709f">IsEquivalent</a> (const char *sz1, const char *sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether two 8-bit strings are equivalent.  <a href="#ae76535c7bb202935f3aa400fa719709f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#ad2081ebaf8bab1af055a99a184db65dc">IsEquivalent</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz1, const char *sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ad2081ebaf8bab1af055a99a184db65dc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#abab49546bcd0ddb5c046c89df756e64d">IsEquivalent</a> (const char *sz1, const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#abab49546bcd0ddb5c046c89df756e64d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#ab600b4fbd6c2cca9d3f2f43ba4a4e06d">IsEquivalent</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz1, const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab600b4fbd6c2cca9d3f2f43ba4a4e06d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a428a14bd3d1623974394cc8fad544275">IsEquivalentI</a> (const char *sz1, const char *sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether two 8-bit strings are equivalent.  <a href="#a428a14bd3d1623974394cc8fad544275"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a56976417ef7c49c959a800b354426eba">IsEquivalentI</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz1, const char *sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a56976417ef7c49c959a800b354426eba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#abcb6e791e54ed3b817ff23b6fa4ce980">IsEquivalentI</a> (const char *sz1, const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#abcb6e791e54ed3b817ff23b6fa4ce980"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#afc6c74b43e14505fd37f393f3650172a">IsEquivalentI</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz1, const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#afc6c74b43e14505fd37f393f3650172a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a5def6c564b132fcb3e69a4c676a95578">operator==</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz1, const char *sz2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether two 8-bit strings are equivalent.  <a href="#a5def6c564b132fcb3e69a4c676a95578"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a2e2574151e6928b12f562d2822cc6e83">IsEquivalent</a> (<a class="el" href="classFUStringBuilderT.html">FUSStringBuilder</a> &amp;builder, const char *sz)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether a string builder and a string are equivalent.  <a href="#a2e2574151e6928b12f562d2822cc6e83"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#ae3b97063b8484e72738c3c8f35a12fde">IsEquivalent</a> (<a class="el" href="classFUStringBuilderT.html">FUSStringBuilder</a> &amp;builder, const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sz)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae3b97063b8484e72738c3c8f35a12fde"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a1479590aabf42d55ea0cdc6f7d51bc55">emptyCharString</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An empty UTF-8 string.  <a href="#a1479590aabf42d55ea0cdc6f7d51bc55"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const fchar *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#ab31159a050f3a4ff554ef25aaf81e086">emptyFCharString</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An empty Unicode string.  <a href="#ab31159a050f3a4ff554ef25aaf81e086"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a26d7db74892776628317a3de81520bae">emptyString</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An empty UTF-8 string.  <a href="#a26d7db74892776628317a3de81520bae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">FCOLLADA_EXPORT const <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FUString_8h.html#a7c13272f2634a74aa80ed7c5280f25c9">emptyFString</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An empty Unicode string.  <a href="#a7c13272f2634a74aa80ed7c5280f25c9"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This file includes <a class="el" href="FUStringBuilder_8h.html">FUStringBuilder.h</a> and <a class="el" href="FUStringConversion_8h.html">FUStringConversion.h</a> and defines important string-related macros and inline functions. </p>
+<p>This file includes <a class="el" href="FUStringBuilder_8h.html" title="This file contains the FUStringBuilderT template class, its defined template classes and its helper c...">FUStringBuilder.h</a> and <a class="el" href="FUStringConversion_8h.html" title="This file contains the FUStringConversion class.">FUStringConversion.h</a> and defines important string-related macros and inline functions. </p>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="aafc191eda457ff64f0e441d65311e4b8"></a><!-- doxytag: member="FUString.h::FS" ref="aafc191eda457ff64f0e441d65311e4b8" args="(a)" -->
 <div class="memitem">
@@ -140,6 +180,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A Unicode string from a constant 8-bit string. </p>
 
 </div>
@@ -159,6 +200,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A Unicode string from any convertable value: string, vector-type or simple numeric. </p>
 
 </div>
@@ -178,6 +220,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>An 8-bit string from any convertable value: Unicode string, vector-type or simple numeric. </p>
 
 </div>
@@ -193,6 +236,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A string of UNICODE characters. </p>
 
 </div>
@@ -207,6 +251,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of Unicode strings. </p>
 
 </div>
@@ -221,6 +266,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of simple strings. </p>
 
 </div>
@@ -250,7 +296,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns whether two 8-bit strings are equivalent. This is a case-sensitive comparison. </p>
+
+<p>Returns whether two 8-bit strings are equivalent. </p>
+<p>This is a case-sensitive comparison. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>sz1</em>&nbsp;</td><td>The first 8-bit string to compare. </td></tr>
@@ -286,7 +334,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns whether a string builder and a string are equivalent. This is a case-sensitive comparison. </p>
+
+<p>Returns whether a string builder and a string are equivalent. </p>
+<p>This is a case-sensitive comparison. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>builder</em>&nbsp;</td><td>The string builder to compare. </td></tr>
@@ -322,6 +372,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -350,6 +401,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -378,6 +430,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -406,6 +459,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -434,6 +488,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -462,6 +517,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -490,6 +546,7 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -518,7 +575,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns whether two 8-bit strings are equivalent. This is a case-insensitive comparison. </p>
+
+<p>Returns whether two 8-bit strings are equivalent. </p>
+<p>This is a case-insensitive comparison. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>sz1</em>&nbsp;</td><td>The first 8-bit string to compare. </td></tr>
@@ -554,7 +613,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns whether two 8-bit strings are equivalent. This is a case-sensitive comparison. </p>
+
+<p>Returns whether two 8-bit strings are equivalent. </p>
+<p>This is a case-sensitive comparison. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>sz1</em>&nbsp;</td><td>The first 8-bit string to compare. </td></tr>
@@ -577,7 +638,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>An empty UTF-8 string. This string is returned in many functions when there is an error. </p>
+
+<p>An empty UTF-8 string. </p>
+<p>This string is returned in many functions when there is an error. </p>
 
 </div>
 </div>
@@ -591,7 +654,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>An empty Unicode string. This string is returned in many functions when there is an error. </p>
+
+<p>An empty Unicode string. </p>
+<p>This string is returned in many functions when there is an error. </p>
 
 </div>
 </div>
@@ -605,7 +670,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>An empty Unicode string. This string is returned in many functions when there is an error. </p>
+
+<p>An empty Unicode string. </p>
+<p>This string is returned in many functions when there is an error. </p>
 
 </div>
 </div>
@@ -619,7 +686,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>An empty UTF-8 string. This string is returned in many functions when there is an error. </p>
+
+<p>An empty UTF-8 string. </p>
+<p>This string is returned in many functions when there is an error. </p>
 
 </div>
 </div>
@@ -638,7 +707,7 @@ Variables</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

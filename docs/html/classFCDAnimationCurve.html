@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDAnimationCurve" --><!-- doxytag: inherits="FCDObject" -->
+<p>A COLLADA single-dimensional animation curve.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDAnimationCurve_8h_source.html">FCDAnimationCurve.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDAnimationCurve:</div>
@@ -82,59 +85,105 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb88a31deb0a9ee93279240b24b3947d"></a><!-- doxytag: member="FCDAnimationCurve::DeclareFlagCount" ref="abb88a31deb0a9ee93279240b24b3947d" args="(1)" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>DeclareFlagCount</b> (1)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#ab266e817fd27a881f02c30d18b5c5f72">FCDAnimationCurve</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDAnimationChannel.html">FCDAnimationChannel</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#ab266e817fd27a881f02c30d18b5c5f72"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a505ad851cb7265a300a5342996dd8c84">~FCDAnimationCurve</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a505ad851cb7265a300a5342996dd8c84"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationChannel.html">FCDAnimationChannel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a7913003ec78d23d6e8b42feb17b943d4">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animation channel that contains this animation curve.  <a href="#a7913003ec78d23d6e8b42feb17b943d4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationChannel.html">FCDAnimationChannel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a3e9c80bfc5bf390d79a511687d77f4fa">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a3e9c80bfc5bf390d79a511687d77f4fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationKey.html">FCDAnimationKey</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#acb8c98803d2cd6df5912c53aeb9b18f6">GetKeys</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of keys for the animation curve.  <a href="#acb8c98803d2cd6df5912c53aeb9b18f6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationKey.html">FCDAnimationKey</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a0f4684cb8a2fd9119f294f91697da7bc">GetKeys</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0f4684cb8a2fd9119f294f91697da7bc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a3bbe5d298465ab1679f0236831d88369">GetKeyCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of keys within the animation curve.  <a href="#a3bbe5d298465ab1679f0236831d88369"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#afa4134d2d93011191686d5dc7bd2f69f">SetKeyCount</a> (size_t count, <a class="el" href="namespaceFUDaeInterpolation.html#a209a941c2fb6ece1325352968aa0374f">FUDaeInterpolation::Interpolation</a> interpolation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the number of keys within the animation curve.  <a href="#afa4134d2d93011191686d5dc7bd2f69f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationKey.html">FCDAnimationKey</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a4354985b1d74fc5fc006fc2bb853395f">GetKey</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves one key in the animation curve.  <a href="#a4354985b1d74fc5fc006fc2bb853395f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationKey.html">FCDAnimationKey</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a26c830e127b6a87308bcd7b3fcef3dd7">GetKey</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a26c830e127b6a87308bcd7b3fcef3dd7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationKey.html">FCDAnimationKey</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a58e0870ef3f44d5711694103371df555">AddKey</a> (<a class="el" href="namespaceFUDaeInterpolation.html#a209a941c2fb6ece1325352968aa0374f">FUDaeInterpolation::Interpolation</a> interpolation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a key to the animation curve.  <a href="#a58e0870ef3f44d5711694103371df555"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationKey.html">FCDAnimationKey</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#ace18196c3824cf30dab1fffe2a7590e8">AddKey</a> (<a class="el" href="namespaceFUDaeInterpolation.html#a209a941c2fb6ece1325352968aa0374f">FUDaeInterpolation::Interpolation</a> interpolation, float input)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new key to the animation curve at the given time.  <a href="#ace18196c3824cf30dab1fffe2a7590e8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationKey.html">FCDAnimationKey</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a506f618558dcbf95cbae57e1f98ffd6b">AddKey</a> (<a class="el" href="namespaceFUDaeInterpolation.html#a209a941c2fb6ece1325352968aa0374f">FUDaeInterpolation::Interpolation</a> interpolation, float input, size_t &amp;index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new key to the animation curve at the given time.  <a href="#a506f618558dcbf95cbae57e1f98ffd6b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a056f03ba3077bb7238ae12530d670358">DeleteKey</a> (<a class="el" href="classFCDAnimationKey.html">FCDAnimationKey</a> *key)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the given key from this curves list and deletes it.  <a href="#a056f03ba3077bb7238ae12530d670358"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaeInfinity.html#a9d8fb86affe94d1586d728d4c2e89008">FUDaeInfinity::Infinity</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#ae782d284b00751674f233af37d1be31d">GetPreInfinity</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of behavior for the curve if the input value is outside the input interval defined by the curve keys and less than any key input value.  <a href="#ae782d284b00751674f233af37d1be31d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a854c8a287e5a06adb76b185a3b158d70">SetPreInfinity</a> (<a class="el" href="namespaceFUDaeInfinity.html#a9d8fb86affe94d1586d728d4c2e89008">FUDaeInfinity::Infinity</a> infinity)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the behavior of the curve if the input value is outside the input interval defined by the curve keys and less than any key input value.  <a href="#a854c8a287e5a06adb76b185a3b158d70"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaeInfinity.html#a9d8fb86affe94d1586d728d4c2e89008">FUDaeInfinity::Infinity</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a99c4ee14480666c4f203b616a3bfb026">GetPostInfinity</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of behavior for the curve if the input value is outside the input interval defined by the curve keys and greater than any key input value.  <a href="#a99c4ee14480666c4f203b616a3bfb026"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a3ad6a612d70548dc221c66852f3119ac">SetPostInfinity</a> (<a class="el" href="namespaceFUDaeInfinity.html#a9d8fb86affe94d1586d728d4c2e89008">FUDaeInfinity::Infinity</a> infinity)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the behavior of the curve if the input value is outside the input interval defined by the curve keys and greater than any key input value.  <a href="#a3ad6a612d70548dc221c66852f3119ac"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a458414600d521c80d5a1b96d10ec22ae">HasDriver</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this animation curve has a driver.  <a href="#a458414600d521c80d5a1b96d10ec22ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#ae97116da1f894405a10ff9b7c6b8d78d">GetDriver</a> (<a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&amp;driver, int32 &amp;index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the value pointer that drives this animation curve.  <a href="#ae97116da1f894405a10ff9b7c6b8d78d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a8a489fc84d0a1a1314a70b599cf46e4b">GetDriver</a> (const <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&amp;driver, int32 &amp;index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a8a489fc84d0a1a1314a70b599cf46e4b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdacf9cf08a2370af43b2eabe9b97cd2"></a><!-- doxytag: member="FCDAnimationCurve::GetDriverPtr" ref="afdacf9cf08a2370af43b2eabe9b97cd2" args="()" -->
 <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>GetDriverPtr</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a5b7178c92b0431345b722f3a41ffc1f8">GetDriverIndex</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Retrieve the driver index.  <a href="#a5b7178c92b0431345b722f3a41ffc1f8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#aa440afe6b2fa33e6941be2306aa42eb1">SetDriver</a> (<a class="el" href="classFCDAnimated.html">FCDAnimated</a> *driver, int32 index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the value pointer that drives the animation curve.  <a href="#aa440afe6b2fa33e6941be2306aa42eb1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#ac84352a4fb7e1bbcabd47652e18e9295">GetClipCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of animation clips that use this animation curve.  <a href="#ac84352a4fb7e1bbcabd47652e18e9295"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a21949f9cae3491f6e4c9dc3c9218726d">GetClips</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of animation clips that use this animation curve.  <a href="#a21949f9cae3491f6e4c9dc3c9218726d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a08739b03f09ad4e4d72e2b416b3fc0a5">GetClips</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a08739b03f09ad4e4d72e2b416b3fc0a5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#ad004f56a3b76bfe41415ed4837326a52">GetClip</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an animation clips that use this animation curve.  <a href="#ad004f56a3b76bfe41415ed4837326a52"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a90d654fc9156705c398f996d56d92b16">GetClip</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a90d654fc9156705c398f996d56d92b16"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#af9b490579c37bb15ddee75c415169958">AddClip</a> (<a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> *clip)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an animation clip to the list of animation clips that use this curve.  <a href="#af9b490579c37bb15ddee75c415169958"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#aca5ee7758684615dd5acf659315172c6">SetCurrentAnimationClip</a> (<a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> *clip)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Updates the keys to match the timing of an animation clip that has been registered using RegisterAnimationClip, or returned from GetClips.  <a href="#aca5ee7758684615dd5acf659315172c6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a931bfe407893568022f461dbb1b3f8e1">GetClipOffset</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the offset for an animation clip.  <a href="#a931bfe407893568022f461dbb1b3f8e1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a142d97f7ea0f9312b95c2df9337b2356">Clone</a> (<a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *clone=NULL, bool includeClips=true) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones the animation curve.  <a href="#a142d97f7ea0f9312b95c2df9337b2356"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#abecd157c277b8d1abd0c78b76a97ee83">ConvertValues</a> (<a class="el" href="FCDAnimationCurve_8h.html#a3f37db4cc9939d7b076d4cbfe81680c4">FCDConversionFunction</a> valueConversion, <a class="el" href="FCDAnimationCurve_8h.html#a3f37db4cc9939d7b076d4cbfe81680c4">FCDConversionFunction</a> tangentConversion)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applies a conversion function to the key output values of the animation curve.  <a href="#abecd157c277b8d1abd0c78b76a97ee83"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a21defc6b006ae6f3af9810333e8245bc">ConvertValues</a> (<a class="el" href="classFCDConversionFunctor.html">FCDConversionFunctor</a> *valueConversion, <a class="el" href="classFCDConversionFunctor.html">FCDConversionFunctor</a> *tangentConversion)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a21defc6b006ae6f3af9810333e8245bc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#ac77614a66e9af65e55370da9c41232a7">ConvertInputs</a> (<a class="el" href="FCDAnimationCurve_8h.html#a3f37db4cc9939d7b076d4cbfe81680c4">FCDConversionFunction</a> timeConversion, <a class="el" href="FCDAnimationCurve_8h.html#a3f37db4cc9939d7b076d4cbfe81680c4">FCDConversionFunction</a> tangentWeightConversion)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applies a conversion function to the key input values of the animation curve.  <a href="#ac77614a66e9af65e55370da9c41232a7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a6b61e8a04977404fac8063b6b464ac1d">ConvertInputs</a> (<a class="el" href="classFCDConversionFunctor.html">FCDConversionFunctor</a> *timeConversion, <a class="el" href="classFCDConversionFunctor.html">FCDConversionFunctor</a> *tangentWeightConversion)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6b61e8a04977404fac8063b6b464ac1d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a66887cf60eb77e03592173e6cebec028">Evaluate</a> (float input) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Evaluates the animation curve.  <a href="#a66887cf60eb77e03592173e6cebec028"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#ae255cbba1e90984157274f5713f32342">RegisterAnimationClip</a> (<a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> *clip)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Adds an animation clip to the list of animation clips that use this curve.  <a href="#ae255cbba1e90984157274f5713f32342"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a686961ad58773191b3426600c6e0c375">GetTargetElement</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Retrieves the target element suffix for the curve.  <a href="#a686961ad58773191b3426600c6e0c375"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#aeb17123216607ff98554547641936180">GetTargetQualifier</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Retrieves the target qualifier for the curve.  <a href="#aeb17123216607ff98554547641936180"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a27ff11a7446c95582551eb221993af4b">SetTargetElement</a> (int32 e)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Sets the target element suffix for the curve.  <a href="#a27ff11a7446c95582551eb221993af4b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a9d69a7d44da85da5dfbb8a1489f282a4">SetTargetQualifier</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;q)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Sets the target qualifier for the curve.  <a href="#a9d69a7d44da85da5dfbb8a1489f282a4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#af70751917c31d65a35e96211f31cf239">SetClipOffset</a> (float offset, const <a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> *clip)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Updates the offset for a given animation clip.  <a href="#af70751917c31d65a35e96211f31cf239"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a97853d967dc312958463ee42ced34f64">Set2DCurveEvaluation</a> (bool flag)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the 2D Curve Evaluation flag.  <a href="#a97853d967dc312958463ee42ced34f64"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationCurve.html#a1dc8857d6e5677454ebabbc6df39da9f">Is2DCurveEvaluation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns whether 2D Curve Evaluation is on or off.  <a href="#a1dc8857d6e5677454ebabbc6df39da9f"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA single-dimensional animation curve. An animation curve holds the keyframes necessary to animate an animatable floating-point value.</p>
-<p>There are multiple interpolation mechanisms supported by COLLADA. <a class="el" href="namespaceFCollada.html">FCollada</a> supports the CONSTANT, LINEAR and BEZIER interpolations.</p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInterpolation.html">FUDaeInterpolation</a> <a class="el" href="namespaceFUDaeInfinity.html">FUDaeInfinity</a> </dd></dl>
+<p>A COLLADA single-dimensional animation curve. </p>
+<p>An animation curve holds the keyframes necessary to animate an animatable floating-point value.</p>
+<p>There are multiple interpolation mechanisms supported by COLLADA. <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> supports the CONSTANT, LINEAR and BEZIER interpolations.</p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInterpolation.html" title="Contains the animation curve interpolation types and their conversion functions.">FUDaeInterpolation</a> <a class="el" href="namespaceFUDaeInfinity.html" title="Contains the infinity types and their conversion functions.">FUDaeInfinity</a> </dd></dl>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab266e817fd27a881f02c30d18b5c5f72"></a><!-- doxytag: member="FCDAnimationCurve::FCDAnimationCurve" ref="ab266e817fd27a881f02c30d18b5c5f72" args="(FCDocument *document, FCDAnimationChannel *parent)" -->
 <div class="memitem">
@@ -160,7 +209,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDAnimationChannel.html#ab7d70254bef3270047703746e31522a8">FCDAnimationChannel::AddCurve</a> function. You should also attach the new curve to an animated element using the FCDAnimated::SetCurve function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDAnimationChannel.html#ab7d70254bef3270047703746e31522a8" title="Adds a new animation curve to this animation channel.">FCDAnimationChannel::AddCurve</a> function. You should also attach the new curve to an animated element using the FCDAnimated::SetCurve function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the animation curve. </td></tr>
@@ -185,6 +236,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -205,6 +257,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds an animation clip to the list of animation clips that use this curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -230,6 +283,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Appends a key to the animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -271,6 +325,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new key to the animation curve at the given time. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -308,6 +363,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new key to the animation curve at the given time. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -344,7 +400,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Clones the animation curve. The animation clips can be cloned as well, but this may lead to an infinite recursion because cloning the clips will also clone its curves. </p>
+
+<p>Clones the animation curve. </p>
+<p>The animation clips can be cloned as well, but this may lead to an infinite recursion because cloning the clips will also clone its curves. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The cloned animation curve. If this pointer is NULL, a new animation curve will be created for you. You will then need to release the pointer. </td></tr>
@@ -380,6 +438,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Applies a conversion function to the key input values of the animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -415,6 +474,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -443,6 +503,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -471,6 +532,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Applies a conversion function to the key output values of the animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -497,7 +559,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Removes the given key from this curves list and deletes it </p>
+
+<p>Removes the given key from this curves list and deletes it. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>key</em>&nbsp;</td><td>The key to find and delete </td></tr>
@@ -523,6 +586,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Evaluates the animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -549,6 +613,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an animation clips that use this animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -575,6 +640,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -593,6 +659,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of animation clips that use this animation curve. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of animation clips. </dd></dl>
 
@@ -613,7 +680,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Gets the offset for an animation clip. When the offset is added to the keys, it causes the animation curve to be repositioned so that the animation clip starts at the beginning. </p>
+
+<p>Gets the offset for an animation clip. </p>
+<p>When the offset is added to the keys, it causes the animation curve to be repositioned so that the animation clip starts at the beginning. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The index of the animation clip to get offset for. </td></tr>
@@ -638,6 +707,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of animation clips that use this animation curve. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of animation clips. </dd></dl>
 
@@ -657,6 +727,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -685,6 +756,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the value pointer that drives this animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -720,6 +792,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -738,6 +811,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Retrieve the driver index. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The driver index. </dd></dl>
 
@@ -758,6 +832,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves one key in the animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -784,6 +859,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -802,6 +878,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of keys within the animation curve. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of keys. </dd></dl>
 
@@ -821,6 +898,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of keys for the animation curve. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of keys. </dd></dl>
 
@@ -840,6 +918,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -858,6 +937,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -876,6 +956,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the animation channel that contains this animation curve. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parent animation channel. </dd></dl>
 
@@ -895,8 +976,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of behavior for the curve if the input value is outside the input interval defined by the curve keys and greater than any key input value. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInfinity.html">FUDaeInfinity</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInfinity.html" title="Contains the infinity types and their conversion functions.">FUDaeInfinity</a> </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The post-infinity behavior of the curve. </dd></dl>
 
 </div>
@@ -915,8 +997,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of behavior for the curve if the input value is outside the input interval defined by the curve keys and less than any key input value. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInfinity.html">FUDaeInfinity</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInfinity.html" title="Contains the infinity types and their conversion functions.">FUDaeInfinity</a> </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The pre-infinity behavior of the curve. </dd></dl>
 
 </div>
@@ -935,7 +1018,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Retrieves the target element suffix for the curve. This will be -1 if the animated element does not belong to an animated element list. </p>
+
+<p>[INTERNAL] Retrieves the target element suffix for the curve. </p>
+<p>This will be -1 if the animated element does not belong to an animated element list. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The target element suffix. </dd></dl>
 
 </div>
@@ -954,7 +1039,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Retrieves the target qualifier for the curve. This will be the empty string if that the curve affects a one-dimensional animated element. </p>
+
+<p>[INTERNAL] Retrieves the target qualifier for the curve. </p>
+<p>This will be the empty string if that the curve affects a one-dimensional animated element. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The target qualifier. </dd></dl>
 
 </div>
@@ -973,6 +1060,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this animation curve has a driver. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether there is a driver for this curve. </dd></dl>
 
@@ -992,6 +1080,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Returns whether 2D Curve Evaluation is on or off. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A boolean that indicates if the 2D Curve Evaluation is on or off. </dd></dl>
 
@@ -1012,6 +1101,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Adds an animation clip to the list of animation clips that use this curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1037,7 +1127,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the 2D Curve Evaluation flag. This flag can be set by the user to enable the slower, but higher quality 2D evaluation. If the flag is negative, the faster 1D slope-based evaluation is performed. Defaults to true. </p>
+
+<p>Sets the 2D Curve Evaluation flag. </p>
+<p>This flag can be set by the user to enable the slower, but higher quality 2D evaluation. If the flag is negative, the faster 1D slope-based evaluation is performed. Defaults to true. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>flag</em>&nbsp;</td><td>Whether to enable 2D curve evaluation. </td></tr>
@@ -1071,6 +1163,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Updates the offset for a given animation clip. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1097,6 +1190,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Updates the keys to match the timing of an animation clip that has been registered using RegisterAnimationClip, or returned from GetClips. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1131,6 +1225,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the value pointer that drives the animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1166,6 +1261,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the number of keys within the animation curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1192,8 +1288,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the behavior of the curve if the input value is outside the input interval defined by the curve keys and greater than any key input value. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInfinity.html">FUDaeInfinity</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInfinity.html" title="Contains the infinity types and their conversion functions.">FUDaeInfinity</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>infinity</em>&nbsp;</td><td>The post-infinity behavior of the curve. </td></tr>
@@ -1218,8 +1315,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the behavior of the curve if the input value is outside the input interval defined by the curve keys and less than any key input value. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInfinity.html">FUDaeInfinity</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeInfinity.html" title="Contains the infinity types and their conversion functions.">FUDaeInfinity</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>infinity</em>&nbsp;</td><td>The pre-infinity behavior of the curve. </td></tr>
@@ -1244,6 +1342,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Sets the target element suffix for the curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1269,6 +1368,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Sets the target qualifier for the curve. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1298,7 +1398,7 @@ Static Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:23 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:15 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

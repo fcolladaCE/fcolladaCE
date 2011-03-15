@@ -57,6 +57,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDTargetedEntity" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A targeted entity.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDTargetedEntity_8h_source.html">FCDTargetedEntity.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDTargetedEntity:</div>
@@ -78,18 +81,25 @@ Inheritance diagram for FCDTargetedEntity:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTargetedEntity.html#a1b8288f98ecd87c6d67c160fdbc84c8e">FCDTargetedEntity</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, const char *baseId)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a1b8288f98ecd87c6d67c160fdbc84c8e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTargetedEntity.html#af219ef0c612e1db887770ee173c4b0fc">~FCDTargetedEntity</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#af219ef0c612e1db887770ee173c4b0fc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTargetedEntity.html#aa3b365694bdf46b5be98518607b66518">HasTarget</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a target is defined for this entity.  <a href="#aa3b365694bdf46b5be98518607b66518"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTargetedEntity.html#a50896d5a2017ab08f63bb499e8c09343">GetTargetNode</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the target visual scene node for this entity.  <a href="#a50896d5a2017ab08f63bb499e8c09343"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTargetedEntity.html#a9261ef2dc3b5d387fb62f52ea20efa21">GetTargetNode</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a9261ef2dc3b5d387fb62f52ea20efa21"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTargetedEntity.html#a297fa32e4899f799318e814645772a35">SetTargetNode</a> (<a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *target)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the target visual scene node for this entity.  <a href="#a297fa32e4899f799318e814645772a35"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTargetedEntity.html#a58caa60f030e5eba714015adf54dbd54">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the entity target information into a entity clone.  <a href="#a58caa60f030e5eba714015adf54dbd54"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A targeted entity.</p>
+<p>A targeted entity. </p>
 <p>COLLADA doesn't have targeted entity. Therefore: the behavior of a targeted entity is application-defined.</p>
 <p>This class is used to support 3dsMax's targeted cameras and lights and we also plan to support Maya's targeted cameras and lights.</p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDCamera.html">FCDCamera</a> <a class="el" href="classFCDLight.html">FCDLight</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDCamera.html" title="A COLLADA camera.">FCDCamera</a> <a class="el" href="classFCDLight.html" title="A COLLADA light.">FCDLight</a> </dd></dl>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1b8288f98ecd87c6d67c160fdbc84c8e"></a><!-- doxytag: member="FCDTargetedEntity::FCDTargetedEntity" ref="a1b8288f98ecd87c6d67c160fdbc84c8e" args="(FCDocument *document, const char *baseId)" -->
 <div class="memitem">
@@ -115,7 +125,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, create objects of the up-classes. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, create objects of the up-classes. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the targeted entity. </td></tr>
@@ -140,6 +152,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -169,7 +182,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Copies the entity target information into a entity clone. All the overwriting functions of this function should call this function to copy the target information. The cloned entity may reside in another document. </p>
+
+<p>Copies the entity target information into a entity clone. </p>
+<p>All the overwriting functions of this function should call this function to copy the target information. The cloned entity may reside in another document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The empty clone. If this pointer is NULL, a new entity will be created and you will need to release the returned pointer manually. </td></tr>
@@ -197,6 +212,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the target visual scene node for this entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The target visual scene node. </dd></dl>
 
@@ -216,6 +232,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -234,6 +251,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether a target is defined for this entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether a target is defined for this entity. </dd></dl>
 
@@ -254,6 +272,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the target visual scene node for this entity. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -283,7 +302,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:49 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:22 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

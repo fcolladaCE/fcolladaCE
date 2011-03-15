@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDGeometryPolygonsInput" --><!-- doxytag: inherits="FCDObject,FUTracker" -->
+<p>An input data source for one mesh polygons set.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDGeometryPolygonsInput_8h_source.html">FCDGeometryPolygonsInput.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDGeometryPolygonsInput:</div>
@@ -78,27 +81,47 @@ Inheritance diagram for FCDGeometryPolygonsInput:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#af28777c31ffe03f0ec9e5928a98f9f96">FCDGeometryPolygonsInput</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDGeometryPolygons.html">FCDGeometryPolygons</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#af28777c31ffe03f0ec9e5928a98f9f96"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a81ec274561e90c9c103e4de83a8d2a1d">~FCDGeometryPolygonsInput</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a81ec274561e90c9c103e4de83a8d2a1d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">FUDaeGeometryInput::Semantic</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a00b2b196c94ff22d4ae2cec3759abdc7">GetSemantic</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of data to input.  <a href="#a00b2b196c94ff22d4ae2cec3759abdc7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a713b84b7aeb8f5c0d22ca380c7d5848b">GetSource</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the data source references by this polygon set input.  <a href="#a713b84b7aeb8f5c0d22ca380c7d5848b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#aa2a070f88c0aba41707dfb91e0522a2a">GetSource</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aa2a070f88c0aba41707dfb91e0522a2a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a274087545c26f22c7e815375b100aeff">SetSource</a> (<a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *source)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the data source referenced by this polygon set input.  <a href="#a274087545c26f22c7e815375b100aeff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#aac3017db3ac95e98b7bed95c032eb519">SetOffset</a> (uint32 _offset)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the offset within the interlaced COLLADA indices for this input's indices.  <a href="#aac3017db3ac95e98b7bed95c032eb519"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#ae397c60491172cacd7378d0b58b937d3">GetOffset</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the offset within the interlaced COLLADA indices for this input's indices.  <a href="#ae397c60491172cacd7378d0b58b937d3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a1b0484d39f26b21e5c100bf9c9995ca4">GetSet</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the input set.  <a href="#a1b0484d39f26b21e5c100bf9c9995ca4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a50c9f9a8af36be7635b0cd4d08419851">SetSet</a> (int32 _set)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the input set.  <a href="#a50c9f9a8af36be7635b0cd4d08419851"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#ae371191aa9f4672d8a9b2c02c25426ce">OwnsIndices</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Checks whether this polygon set input owns the local indices for its offset.  <a href="#ae371191aa9f4672d8a9b2c02c25426ce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a27b48af070d7f0df605acbc77000d79a">SetIndices</a> (const uint32 *indices, size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the local indices for the input's offset.  <a href="#a27b48af070d7f0df605acbc77000d79a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#adcf7935cdd571608bd926e43a798835c">SetIndexCount</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the number of indices in this input's index list.  <a href="#adcf7935cdd571608bd926e43a798835c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#adc1244ae383d74286b2cffda2cdf5273">ReserveIndexCount</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reserves memory for a given number of indices.  <a href="#adc1244ae383d74286b2cffda2cdf5273"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a7a0f9b2bd9a029dacb85dedf117be369">AddIndex</a> (uint32 index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an index to the indices of this input.  <a href="#a7a0f9b2bd9a029dacb85dedf117be369"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#aaeaf5df01bcea6367c4f871d83021db6">AddIndices</a> (const <a class="el" href="classfm_1_1vector.html">UInt32List</a> &amp;indices)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a batch of indices to the end of the index list of this input.  <a href="#aaeaf5df01bcea6367c4f871d83021db6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32 *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a5d7b1ca8bcb8b13f82068a081d58ee04">GetIndices</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of indices for this input.  <a href="#a5d7b1ca8bcb8b13f82068a081d58ee04"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const uint32 *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a1c3cb050c3fa5bc0b1a57b80fcbdc463">GetIndices</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1c3cb050c3fa5bc0b1a57b80fcbdc463"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometryPolygonsInput.html#a9cee5af01dde8af915cc2e2b7ffba6e2">GetIndexCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of indices for this input.  <a href="#a9cee5af01dde8af915cc2e2b7ffba6e2"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>An input data source for one mesh polygons set. This structure knows the type of input data in the data source as well as the set and offset for the data. It also contains a pointer to the mesh data source.</p>
+<p>An input data source for one mesh polygons set. </p>
+<p>This structure knows the type of input data in the data source as well as the set and offset for the data. It also contains a pointer to the mesh data source.</p>
 <p>Many polygon set inputs may have the same offset (or 'idx' in older versions) when multiple data sources are compressed together within the COLLADA document. In this case, one and only one of the polygon set input should contain indices. To find the indices of any polygon set input, it is recommended that you use the FCDGeometryPolygons::FindIndicesForIdx function. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af28777c31ffe03f0ec9e5928a98f9f96"></a><!-- doxytag: member="FCDGeometryPolygonsInput::FCDGeometryPolygonsInput" ref="af28777c31ffe03f0ec9e5928a98f9f96" args="(FCDocument *document, FCDGeometryPolygons *parent)" -->
@@ -125,6 +148,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -150,6 +174,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -170,7 +195,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds an index to the indices of this input. Be careful when adding indices directly to multiple inputs: if multiple inputs share an index list, you may be adding unwanted indices. </p>
+
+<p>Adds an index to the indices of this input. </p>
+<p>Be careful when adding indices directly to multiple inputs: if multiple inputs share an index list, you may be adding unwanted indices. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The index to add. </td></tr>
@@ -195,7 +222,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a batch of indices to the end of the index list of this input. Be careful when adding indices directly to multiple inputs: if multiple inputs share an index list, you may be adding unwanted indices. </p>
+
+<p>Adds a batch of indices to the end of the index list of this input. </p>
+<p>Be careful when adding indices directly to multiple inputs: if multiple inputs share an index list, you may be adding unwanted indices. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>indices</em>&nbsp;</td><td>The indices to add. </td></tr>
@@ -219,6 +248,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of indices for this input. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of indices for this input. </dd></dl>
 
@@ -238,6 +268,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -256,6 +287,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of indices for this input. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of indices for this input. </dd></dl>
 
@@ -275,6 +307,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the offset within the interlaced COLLADA indices for this input's indices. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The interlaced indices offset. </dd></dl>
 
@@ -294,7 +327,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the type of data to input. <a class="el" href="namespaceFCollada.html">FCollada</a> doesn't support data sources which are interpreted differently depending on the input. Therefore, this information is retrieved from the source. </p>
+
+<p>Retrieves the type of data to input. </p>
+<p><a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> doesn't support data sources which are interpreted differently depending on the input. Therefore, this information is retrieved from the source. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The source data type. </dd></dl>
 
 </div>
@@ -313,7 +348,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the input set. The input set is used to group together the texture coordinates with the texture tangents and binormals. In ColladaMax, this value should also represent the map channel index for texture coordinates and vertex color channels. </p>
+
+<p>Retrieves the input set. </p>
+<p>The input set is used to group together the texture coordinates with the texture tangents and binormals. In ColladaMax, this value should also represent the map channel index for texture coordinates and vertex color channels. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The input set. </dd></dl>
 
 </div>
@@ -332,7 +369,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the data source references by this polygon set input. This is the data source into which the indices are indexing. You need to take the data source stride into consideration when un-indexing the data. </p>
+
+<p>Retrieves the data source references by this polygon set input. </p>
+<p>This is the data source into which the indices are indexing. You need to take the data source stride into consideration when un-indexing the data. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The data source. </dd></dl>
 
 </div>
@@ -351,6 +390,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -369,7 +409,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Checks whether this polygon set input owns the local indices for its offset. Since an offset may be shared, only one polygon set input will own the local indices. </p>
+
+<p>Checks whether this polygon set input owns the local indices for its offset. </p>
+<p>Since an offset may be shared, only one polygon set input will own the local indices. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this polygon set owns the local indices. </dd></dl>
 
 </div>
@@ -389,7 +431,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Reserves memory for a given number of indices. This is useful for performance reasons, since AddIndex can be extremely costly otherwise. </p>
+
+<p>Reserves memory for a given number of indices. </p>
+<p>This is useful for performance reasons, since AddIndex can be extremely costly otherwise. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>count</em>&nbsp;</td><td>The total number of indices to prepare memory for. </td></tr>
@@ -414,7 +458,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the number of indices in this input's index list. Any additional indices allocated will not be initialized. </p>
+
+<p>Sets the number of indices in this input's index list. </p>
+<p>Any additional indices allocated will not be initialized. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>count</em>&nbsp;</td><td>The number of indices in this input's index list. </td></tr>
@@ -448,7 +494,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the local indices for the input's offset. This function may fail if another input already owns the indices for this offset. </p>
+
+<p>Sets the local indices for the input's offset. </p>
+<p>This function may fail if another input already owns the indices for this offset. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>indices</em>&nbsp;</td><td>A static list of indices. </td></tr>
@@ -474,7 +522,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the offset within the interlaced COLLADA indices for this input's indices. Changing this value after the input's construction is not recommended. </p>
+
+<p>Retrieves the offset within the interlaced COLLADA indices for this input's indices. </p>
+<p>Changing this value after the input's construction is not recommended. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_offset</em>&nbsp;</td><td>The offset within the interlaced COLLADA indices for this input's indices. </td></tr>
@@ -499,7 +549,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the input set. The input set is used to group together the texture coordinates with the texture tangents and binormals. In ColladaMax, this value should also represent the map channel index for texture coordinates and vertex color channels. </p>
+
+<p>Sets the input set. </p>
+<p>The input set is used to group together the texture coordinates with the texture tangents and binormals. In ColladaMax, this value should also represent the map channel index for texture coordinates and vertex color channels. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_set</em>&nbsp;</td><td>The new input set. If the given value is -1, this input does not belong to any set. </td></tr>
@@ -524,6 +576,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the data source referenced by this polygon set input. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -553,7 +606,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:37 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:18 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

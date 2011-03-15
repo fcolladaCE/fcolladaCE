@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDPASBox" --><!-- doxytag: inherits="FCDPhysicsAnalyticalGeometry" -->
+<p>A COLLADA physics box.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDPhysicsAnalyticalGeometry_8h_source.html">FCDPhysicsAnalyticalGeometry.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDPASBox:</div>
@@ -81,13 +84,19 @@ Inheritance diagram for FCDPASBox:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASBox.html#a7bfc08418717115ab302677f5f87821f">FCDPASBox</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a7bfc08418717115ab302677f5f87821f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASBox.html#aae464f9822d5e7fe44df2874a11f2143">~FCDPASBox</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#aae464f9822d5e7fe44df2874a11f2143"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a511583406e5c6a1bb5bd84c0453a452c">GeomType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASBox.html#a4b2cdf28c8dffcc0b4a839f75900baeb">GetGeomType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the analytical geometry type for this class.  <a href="#a4b2cdf28c8dffcc0b4a839f75900baeb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASBox.html#a2b4be02d7f8b4dd8d9dd591d4657b5a4">CalculateVolume</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calculates the volume of this analytical geometry.  <a href="#a2b4be02d7f8b4dd8d9dd591d4657b5a4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASBox.html#a75222259173d8dd1e54e49f08f9ea262">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the physics box into a clone.  <a href="#a75222259173d8dd1e54e49f08f9ea262"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPASBox.html#a1550f8088304f350f1dd3c92b123e82b">halfExtents</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Half extents of the box in 3 dimensions.  <a href="#a1550f8088304f350f1dd3c92b123e82b"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A COLLADA physics box. </p>
@@ -107,7 +116,9 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Create new analytical geometries by using <a class="el" href="classFCDPhysicsShape.html#a0674443390f7c6426171fd4bc21187fb">FCDPhysicsShape::CreateAnalyticalGeometry</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Create new analytical geometries by using <a class="el" href="classFCDPhysicsShape.html#a0674443390f7c6426171fd4bc21187fb" title="Creates an analytical geometry for this shape.">FCDPhysicsShape::CreateAnalyticalGeometry</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that contains this physics box. </td></tr>
@@ -131,6 +142,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -150,6 +162,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Calculates the volume of this analytical geometry. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The volume. </dd></dl>
 
@@ -181,6 +194,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copies the physics box into a clone. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -209,6 +223,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the analytical geometry type for this class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The analytical geometry type: BOX. </dd></dl>
 
@@ -227,6 +242,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Half extents of the box in 3 dimensions. </p>
 
 </div>
@@ -250,7 +266,7 @@ Data Fields</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:43 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:20 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

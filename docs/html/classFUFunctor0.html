@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUFunctor0" --><!-- doxytag: inherits="IFunctor0" -->
+<p>A functor with no arguments.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUFunctor_8h_source.html">FUFunctor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FUFunctor0&lt; Class, ReturnType &gt;:</div>
@@ -74,10 +77,16 @@ Inheritance diagram for FUFunctor0&lt; Class, ReturnType &gt;:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUFunctor0.html#afe195014cc52f8ae7bc69f45a562668a">FUFunctor0</a> (Class *object, ReturnType(Class::*function)())</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#afe195014cc52f8ae7bc69f45a562668a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUFunctor0.html#a219c1cd90104c4394445728b56a555f0">~FUFunctor0</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a219c1cd90104c4394445728b56a555f0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual ReturnType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUFunctor0.html#a5f9574b22edd5dd82f27f94d0f3d5123">operator()</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calls the functor.  <a href="#a5f9574b22edd5dd82f27f94d0f3d5123"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUFunctor0.html#aa099128bf31a2349c5f59510a5718d50">Compare</a> (void *object, void *function) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classIFunctor0.html">IFunctor0</a>&lt; ReturnType &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUFunctor0.html#a6bab1ab360e9ea77435d514a173e3e10">Copy</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Checks whether this functor points towards the given member function.  <a href="#aa099128bf31a2349c5f59510a5718d50"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bab1ab360e9ea77435d514a173e3e10"></a><!-- doxytag: member="FUFunctor0::Copy" ref="a6bab1ab360e9ea77435d514a173e3e10" args="() const " -->
+virtual <a class="el" href="classIFunctor0.html">IFunctor0</a>&lt; ReturnType &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUFunctor0.html#a6bab1ab360e9ea77435d514a173e3e10">Copy</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns a copy of this functor. <br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;class Class, class ReturnType&gt;<br/>
@@ -111,6 +120,7 @@ template&lt;class Class, class ReturnType&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -138,6 +148,7 @@ template&lt;class Class, class ReturnType&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -169,6 +180,7 @@ template&lt;class Class, class ReturnType&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Checks whether this functor points towards the given member function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -180,28 +192,6 @@ template&lt;class Class, class ReturnType&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this functor points towards the given member function. </dd></dl>
 
 <p>Implements <a class="el" href="classIFunctor0.html#a879e46499999d08d3a8eadf2220178c6">IFunctor0&lt; ReturnType &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6bab1ab360e9ea77435d514a173e3e10"></a><!-- doxytag: member="FUFunctor0::Copy" ref="a6bab1ab360e9ea77435d514a173e3e10" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Class, class ReturnType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classIFunctor0.html">IFunctor0</a>&lt;ReturnType&gt;* <a class="el" href="classFUFunctor0.html">FUFunctor0</a>&lt; Class, ReturnType &gt;::Copy </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td> const<code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Returns a copy of this functor </p>
-
-<p>Implements <a class="el" href="classIFunctor0.html#a005f7b1b2ad7249e32be6944e035f3f7">IFunctor0&lt; ReturnType &gt;</a>.</p>
 
 </div>
 </div>
@@ -221,6 +211,7 @@ template&lt;class Class, class ReturnType&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Calls the functor. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Implementation-dependant. </dd></dl>
 
@@ -246,7 +237,7 @@ template&lt;class Class, class ReturnType&gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:53 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

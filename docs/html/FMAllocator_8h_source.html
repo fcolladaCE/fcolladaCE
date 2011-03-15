@@ -74,22 +74,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00026"></a>00026 
 <a name="l00030"></a><a class="code" href="namespacefm.html#a97324e93febfca76d5ed574a89c0197d">00030</a>         <span class="keyword">typedef</span> <span class="keywordtype">void</span>* (*AllocateFunc)(<span class="keywordtype">size_t</span> size);
 <a name="l00031"></a>00031 
-<a name="l00034"></a><a class="code" href="namespacefm.html#a9b240a6540d27367231e6fd6d93ec35c">00034</a>         <span class="keyword">typedef</span> void (*<a class="code" href="namespacefm.html#a9b240a6540d27367231e6fd6d93ec35c">FreeFunc</a>)(<span class="keywordtype">void</span>* buffer);
+<a name="l00034"></a><a class="code" href="namespacefm.html#a9b240a6540d27367231e6fd6d93ec35c">00034</a>         <span class="keyword">typedef</span> void (*<a class="code" href="namespacefm.html#a9b240a6540d27367231e6fd6d93ec35c" title="A deallocation function type.">FreeFunc</a>)(<span class="keywordtype">void</span>* buffer);
 <a name="l00035"></a>00035 
-<a name="l00039"></a>00039         FCOLLADA_EXPORT <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#a08282cf09faa7bc67137a62ba56b329c">SetAllocationFunctions</a>(<a class="code" href="namespacefm.html#a97324e93febfca76d5ed574a89c0197d">AllocateFunc</a> a, <a class="code" href="namespacefm.html#a9b240a6540d27367231e6fd6d93ec35c">FreeFunc</a> f);
+<a name="l00039"></a>00039         FCOLLADA_EXPORT <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#a08282cf09faa7bc67137a62ba56b329c" title="Sets the FCollada memory allocation / deallocation functions.">SetAllocationFunctions</a>(<a class="code" href="namespacefm.html#a97324e93febfca76d5ed574a89c0197d" title="An allocation function type.">AllocateFunc</a> a, <a class="code" href="namespacefm.html#a9b240a6540d27367231e6fd6d93ec35c" title="A deallocation function type.">FreeFunc</a> f);
 <a name="l00040"></a>00040 
-<a name="l00045"></a>00045         FCOLLADA_EXPORT <span class="keywordtype">void</span>* <a class="code" href="namespacefm.html#a554b71c8980290cf12761186ad36c08a">Allocate</a>(<span class="keywordtype">size_t</span> byteCount);
+<a name="l00045"></a>00045         FCOLLADA_EXPORT <span class="keywordtype">void</span>* <a class="code" href="namespacefm.html#a554b71c8980290cf12761186ad36c08a" title="Allocates a requested amount of memory.">Allocate</a>(<span class="keywordtype">size_t</span> byteCount);
 <a name="l00046"></a>00046 
-<a name="l00049"></a>00049         FCOLLADA_EXPORT <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#ac85d46ada49418f6c4b758bc96f24cbf">Release</a>(<span class="keywordtype">void</span>* buffer);
+<a name="l00049"></a>00049         FCOLLADA_EXPORT <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#ac85d46ada49418f6c4b758bc96f24cbf" title="Releases a memory buffer.">Release</a>(<span class="keywordtype">void</span>* buffer);
 <a name="l00050"></a>00050 
 <a name="l00053"></a>00053         <span class="keyword">template</span> &lt;<span class="keyword">class</span> Type1&gt;
-<a name="l00054"></a><a class="code" href="namespacefm.html#abb21e5b6aed1f1af6dd80d0b319c2a93">00054</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#abb21e5b6aed1f1af6dd80d0b319c2a93">Construct</a>(Type1* o)
+<a name="l00054"></a><a class="code" href="namespacefm.html#abb21e5b6aed1f1af6dd80d0b319c2a93">00054</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#abb21e5b6aed1f1af6dd80d0b319c2a93" title="Construct the object at a given pointer.">Construct</a>(Type1* o)
 <a name="l00055"></a>00055         {
 <a name="l00056"></a>00056                 ::new (o) Type1;
 <a name="l00057"></a>00057         }
 <a name="l00058"></a>00058 
 <a name="l00062"></a>00062         <span class="keyword">template</span> &lt;<span class="keyword">class</span> Type1, <span class="keyword">class</span> Type2&gt;
-<a name="l00063"></a><a class="code" href="namespacefm.html#a2f7f76266bc5e32b58c3258289492367">00063</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#abb21e5b6aed1f1af6dd80d0b319c2a93">Construct</a>(Type1* o, <span class="keyword">const</span> Type2&amp; value)
+<a name="l00063"></a><a class="code" href="namespacefm.html#a2f7f76266bc5e32b58c3258289492367">00063</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#abb21e5b6aed1f1af6dd80d0b319c2a93" title="Construct the object at a given pointer.">Construct</a>(Type1* o, <span class="keyword">const</span> Type2&amp; value)
 <a name="l00064"></a>00064         {
 <a name="l00065"></a>00065                 ::new (o) Type1(value);
 <a name="l00066"></a>00066         }
@@ -117,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:12 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEffectTechnique" --><!-- doxytag: inherits="FCDObject" -->
+<p>A COLLADA effect technique.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffectTechnique_8h_source.html">FCDEffectTechnique.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEffectTechnique:</div>
@@ -77,34 +80,58 @@ Inheritance diagram for FCDEffectTechnique:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a1e47ee8356ddfaf650da3601733d2394">FCDEffectTechnique</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDEffectProfileFX.html">FCDEffectProfileFX</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a1e47ee8356ddfaf650da3601733d2394"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a63421c500dc1aea4d475f5cf77300d71">~FCDEffectTechnique</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a63421c500dc1aea4d475f5cf77300d71"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectProfileFX.html">FCDEffectProfileFX</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#ac4649a643cf6949375115dd31a775b28">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the effect profile that contains this technique.  <a href="#ac4649a643cf6949375115dd31a775b28"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectProfileFX.html">FCDEffectProfileFX</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#af1d184dd73bc107f25d6b12debaf5625">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#af1d184dd73bc107f25d6b12debaf5625"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a67b10f9e49ba3cb4ae2bb498d8197f36">DEPRECATED</a> (3.05A, GetParent()-&gt;GetParent()-&gt;GetDaeId) const fm</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the COLLADA id of the parent effect.  <a href="#a67b10f9e49ba3cb4ae2bb498d8197f36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a2d3245870ddab9ce3b442e5afd708a52">GetName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the sub-id of the technique.  <a href="#a2d3245870ddab9ce3b442e5afd708a52"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a07bca55857e485109ce1b499ceef6a40">SetName</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;_name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the sub-id of the technique.  <a href="#a07bca55857e485109ce1b499ceef6a40"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#ac454b0b966bd0ee9dfd181cae1e3cb7b">DEPRECATED</a> (3.05A, GetPassCount and GetPass(index)) void GetPassList()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of passes.  <a href="#ac454b0b966bd0ee9dfd181cae1e3cb7b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a71dae8aafce949a83b7bf0361bc68910">GetPassCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of passes contained within this effect technique.  <a href="#a71dae8aafce949a83b7bf0361bc68910"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPass.html">FCDEffectPass</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a2b957bde5e7142e14724bea627226eff">GetPass</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific pass contained within this effect technique.  <a href="#a2b957bde5e7142e14724bea627226eff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPass.html">FCDEffectPass</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a02721f15869f261d94438d8a1837ed75">GetPass</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a02721f15869f261d94438d8a1837ed75"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPass.html">FCDEffectPass</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a485529a79e25dfb6c9d9f3b6ebc4d5c4">AddPass</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new pass to this effect technique.  <a href="#a485529a79e25dfb6c9d9f3b6ebc4d5c4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a0f2d38037a7fbfb2f80913148d2ea68e">DEPRECATED</a> (3.05A, GetCodeCount and GetCode(index) or FindCode) void GetCodeList()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of code inclusions.  <a href="#a0f2d38037a7fbfb2f80913148d2ea68e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#ab9f545e1ae37dd7bd8ef17bd2d533b85">GetCodeCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of code inclusions contained within the effect profile.  <a href="#ab9f545e1ae37dd7bd8ef17bd2d533b85"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectCode.html">FCDEffectCode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a055752fffaa859ba4b300fc5e1668307">GetCode</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a code inclusion contained within the effect profile.  <a href="#a055752fffaa859ba4b300fc5e1668307"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectCode.html">FCDEffectCode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#ac1bfa956e08f14bd17dcc9dd5c397833">GetCode</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac1bfa956e08f14bd17dcc9dd5c397833"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectCode.html">FCDEffectCode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#aa1d2ca97bd7e689527c2d7a579f0f9ca">FindCode</a> (const char *sid)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the code inclusion with the given sub-id.  <a href="#aa1d2ca97bd7e689527c2d7a579f0f9ca"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectCode.html">FCDEffectCode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#ac4a6ee7e3bac9f19eaa9ed77fc36eca4">FindCode</a> (const char *sid) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac4a6ee7e3bac9f19eaa9ed77fc36eca4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectCode.html">FCDEffectCode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#aa532d3dff7c9c8f159a16811c7cdcf20">AddCode</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new code inclusion to this effect profile.  <a href="#aa532d3dff7c9c8f159a16811c7cdcf20"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a58c423415223bbe1ada049c770562f74">GetEffectParameterCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of local effect parameters.  <a href="#a58c423415223bbe1ada049c770562f74"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a0cf4e90aeff863f03f183e0c3e791df0">GetEffectParameter</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a given local effect parameter.  <a href="#a0cf4e90aeff863f03f183e0c3e791df0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5539b314ef3f3b0460513f4025cfdb97"></a><!-- doxytag: member="FCDEffectTechnique::GetEffectParameter" ref="a5539b314ef3f3b0460513f4025cfdb97" args="(size_t index) const " -->
 const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>GetEffectParameter</b> (size_t index) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#af52fac53bb63d670d5c580b500d15719">AddEffectParameter</a> (uint32 type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a local effect parameter to the local list.  <a href="#af52fac53bb63d670d5c580b500d15719"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectTechnique.html">FCDEffectTechnique</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#ae810ec6ecd9b3baec142868f62dfe154">Clone</a> (<a class="el" href="classFCDEffectTechnique.html">FCDEffectTechnique</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Clones the full effect technique.  <a href="#ae810ec6ecd9b3baec142868f62dfe154"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectTechnique.html#a6f0456eaec5bf45c469a7d9be98cc4ce">DEPRECATED</a> (3.05A, not recommended) void Flatten()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Flattens this effect technique.  <a href="#a6f0456eaec5bf45c469a7d9be98cc4ce"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA effect technique.</p>
+<p>A COLLADA effect technique. </p>
 <p>The COLLADA effect technique contains the passes to be used in the rendering of polygon sets.</p>
 <p>It also contains a list of effect parameters: both generators and overrides and it is the lowest level of abstraction in which you can access effect parameters. For flattened materials, this means that all the effect parameters will be accessible at this level.</p>
 <p>It also contains a list of effect code inclusions. </p>
@@ -133,10 +160,12 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDEffectProfileFX.html#ae6498c1d1bba41fdc63b98cbceb797d0">FCDEffectProfileFX::AddTechnique</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDEffectProfileFX.html#ae6498c1d1bba41fdc63b98cbceb797d0" title="Adds a new technique to this effect profile.">FCDEffectProfileFX::AddTechnique</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html">FCollada</a> document that owns this technique. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> document that owns this technique. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>The effect profile which contains the technique. </td></tr>
   </table>
   </dd>
@@ -158,6 +187,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -177,6 +207,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new code inclusion to this effect profile. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new code inclusion. </dd></dl>
 
@@ -197,8 +228,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a local effect parameter to the local list. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08">FCDEffectParameter::Type</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDEffectParameter.html#a1efe74553d2ed199435085c171743b08" title="The value type of the effect parameter.">FCDEffectParameter::Type</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The value type of the effect parameter to create. </td></tr>
@@ -223,6 +255,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new pass to this effect technique. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new pass. </dd></dl>
 
@@ -243,6 +276,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Clones the full effect technique. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -278,7 +312,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the COLLADA id of the parent effect. This function is mostly useful as a shortcut for debugging and reporting. </p>
+
+<p>Retrieves the COLLADA id of the parent effect. </p>
+<p>This function is mostly useful as a shortcut for debugging and reporting. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The COLLADA id of the parent effect. </dd></dl>
 
 </div>
@@ -307,6 +343,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of code inclusions. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of code inclusions. </dd></dl>
 
@@ -336,7 +373,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Flattens this effect technique. Merges the parameter overrides into the parameter generators. </p>
+
+<p>[INTERNAL] Flattens this effect technique. </p>
+<p>Merges the parameter overrides into the parameter generators. </p>
 
 </div>
 </div>
@@ -364,6 +403,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of passes. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of passes. </dd></dl>
 
@@ -384,6 +424,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -403,6 +444,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the code inclusion with the given sub-id. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -429,6 +471,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a code inclusion contained within the effect profile. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -455,6 +498,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -473,6 +517,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of code inclusions contained within the effect profile. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of code inclusions. </dd></dl>
 
@@ -493,6 +538,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a given local effect parameter. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -518,7 +564,8 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the number of local effect parameters </p>
+
+<p>Retrieves the number of local effect parameters. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of local effect parameters. </dd></dl>
 
 </div>
@@ -537,6 +584,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the sub-id of the technique. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The sub-id of the technique. </dd></dl>
 
@@ -556,6 +604,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the effect profile that contains this technique. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parent effect profile. </dd></dl>
 
@@ -575,6 +624,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -594,6 +644,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific pass contained within this effect technique. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -620,6 +671,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -638,6 +690,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of passes contained within this effect technique. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of passes. </dd></dl>
 
@@ -658,7 +711,9 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the sub-id of the technique. The effect technique must have a valid sub-id that is unique within its scope. Otherwise, one will be provided on XML export. </p>
+
+<p>Sets the sub-id of the technique. </p>
+<p>The effect technique must have a valid sub-id that is unique within its scope. Otherwise, one will be provided on XML export. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_name</em>&nbsp;</td><td>A valid sub-id. </td></tr>
@@ -687,7 +742,7 @@ const <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> *
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:33 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:17 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -63,49 +63,83 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FMQuaternion" -->
+<p>A quaternion.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FMQuaternion_8h_source.html">FMQuaternion.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a005eee578d5c2a7ed5f687e24adb4816">FMQuaternion</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an empty <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a>.  <a href="#a005eee578d5c2a7ed5f687e24adb4816"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#aa919c71bc03cd277d9996b50e4ddefda">FMQuaternion</a> (float _x, float _y, float _z, float _w)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the quaternion with the given component values.  <a href="#aa919c71bc03cd277d9996b50e4ddefda"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a17a6a5a5aca81debb509b8f96626d14d">FMQuaternion</a> (const float *values)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the quaternion with the given component values.  <a href="#a17a6a5a5aca81debb509b8f96626d14d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a14018b57e6f3843aff52bc6fc60e3ea2">FMQuaternion</a> (const double *values)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a14018b57e6f3843aff52bc6fc60e3ea2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a9c5665bf329c191c9c662cf92ae18b6f">FMQuaternion</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;axis, float angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the quaternion from a given axis and angle of rotation.  <a href="#a9c5665bf329c191c9c662cf92ae18b6f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a0e7d1d7d85a8c7f1c70de0d01a44790e">operator float *</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves this quaternion as an array of <code>floats</code>.  <a href="#a0e7d1d7d85a8c7f1c70de0d01a44790e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a1bf6463628b0027b3a4da62f0e93ec17">operator const float *</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1bf6463628b0027b3a4da62f0e93ec17"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMQuaternion.html">FMQuaternion</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#afac9386b2d79c2d63aee70c4d89184ae">operator=</a> (const float *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Assign this <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a> to the given <code>float</code> array.  <a href="#afac9386b2d79c2d63aee70c4d89184ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#aa51d404a7f40faa3da1bfa6745eb6851">LengthSquared</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the squared length of the vector.  <a href="#aa51d404a7f40faa3da1bfa6745eb6851"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#ab21c955c4e7feaadc04e420358e59ecf">Length</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the length of the vector.  <a href="#ab21c955c4e7feaadc04e420358e59ecf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a25977629bc7edf72a611e7e1cd89ae96">NormalizeIt</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Normalizes this vector.  <a href="#a25977629bc7edf72a611e7e1cd89ae96"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a053fddada5c7a90057b0d49264715c71">Normalize</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns a quaternion with a unit length at the same space as this quaternion.  <a href="#a053fddada5c7a90057b0d49264715c71"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a213dae34f7dd861cbe2372cf4751684c">operator*</a> (const <a class="el" href="classFMQuaternion.html">FMQuaternion</a> &amp;q) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the concatonation of this quaternion rotation and the given quaternion rotation.  <a href="#a213dae34f7dd861cbe2372cf4751684c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#acdb1c6fe7ba298e591f0b02f66473f75">operator*</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;v) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the concatonation of this quaternion rotation applied on the given vector.  <a href="#acdb1c6fe7ba298e591f0b02f66473f75"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a8d2b0223f1aeedce2555afd33c9e4ab1">operator~</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the conjugate of this quaternion.  <a href="#a8d2b0223f1aeedce2555afd33c9e4ab1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMQuaternion.html">FMQuaternion</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#ae87b85da5d464f10c85e1018452125db">operator*=</a> (const <a class="el" href="classFMQuaternion.html">FMQuaternion</a> &amp;q)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applies quaternion multiplication of the given quaternion with this quaternion and returns the value.  <a href="#ae87b85da5d464f10c85e1018452125db"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMQuaternion.html">FMQuaternion</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a444d9b3df7d2274a5e229feac90820d0">operator=</a> (const <a class="el" href="classFMQuaternion.html">FMQuaternion</a> &amp;q)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copy constructor.  <a href="#a444d9b3df7d2274a5e229feac90820d0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#ad3d25557ffe21731997fb748f2ae132a">slerp</a> (const <a class="el" href="classFMQuaternion.html">FMQuaternion</a> &amp;other, float time) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the slerp of this quaternion to other at time time.  <a href="#ad3d25557ffe21731997fb748f2ae132a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a2131304bff68befd9926184046dc65ab">ToEuler</a> (<a class="el" href="classFMVector3.html">FMVector3</a> *previousAngles=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a quaternion to its Euler rotation angles.  <a href="#a2131304bff68befd9926184046dc65ab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a5c5f59d725baf0181818be1a8d721dae">ToAngleAxis</a> (<a class="el" href="classFMVector3.html">FMVector3</a> &amp;axis, float &amp;angle) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a quaternion to a angle-axis rotation.  <a href="#a5c5f59d725baf0181818be1a8d721dae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMMatrix44.html">FMMatrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a60ef34b284860015ce4e866a2ad31525">ToMatrix</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a quaternion to a transformation matrix.  <a href="#a60ef34b284860015ce4e866a2ad31525"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a108dce988b1e4c12b513811fd9d77d04">SetToMatrix</a> (<a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;m) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the Quaternions transform onto the specified matrix.  <a href="#a108dce988b1e4c12b513811fd9d77d04"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#ab23f05b76328cdb000200dd1e0d5d193">EulerRotationQuaternion</a> (float <a class="el" href="classFMQuaternion.html#a036c642a43fb84dc5544eb4ce0e0828d">x</a>, float <a class="el" href="classFMQuaternion.html#a996bf6bcb013dbbbe8e255c35e085f81">y</a>, float <a class="el" href="classFMQuaternion.html#a03d06578ec64cf8a4d2032c336153244">z</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a> representation of the Euler rotation angles.  <a href="#ab23f05b76328cdb000200dd1e0d5d193"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#ab5c2808c525eaf712153f0be986e571a">MatrixRotationQuaternion</a> (const <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;mat)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a> that represents the <a class="el" href="classFMMatrix44.html" title="A 4x4 Row Major matrix: use to represent 3D transformations.">FMMatrix44</a> rotation.  <a href="#ab5c2808c525eaf712153f0be986e571a"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a036c642a43fb84dc5544eb4ce0e0828d">x</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The i component.  <a href="#a036c642a43fb84dc5544eb4ce0e0828d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a996bf6bcb013dbbbe8e255c35e085f81">y</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The j component.  <a href="#a996bf6bcb013dbbbe8e255c35e085f81"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a03d06578ec64cf8a4d2032c336153244">z</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The k component.  <a href="#a03d06578ec64cf8a4d2032c336153244"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#ac60123167417258df35a27db4d3e7646">w</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The scalar component.  <a href="#ac60123167417258df35a27db4d3e7646"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a5607b2bda36fbfff32f3a1677e1ebebc">Zero</a> = <a class="el" href="classFMQuaternion.html">FMQuaternion</a>(0.0f, 0.0f, 0.0f, 0.0f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The zero quaternion.  <a href="#a5607b2bda36fbfff32f3a1677e1ebebc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMQuaternion.html">FMQuaternion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMQuaternion.html#a7dccc8f53d6f730b27f784416a53052b">Identity</a> = <a class="el" href="classFMQuaternion.html">FMQuaternion</a>(0.0f, 0.0f, 0.0f, 1.0f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The identity quaternion.  <a href="#a7dccc8f53d6f730b27f784416a53052b"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A quaternion. Used to represent rotations: quaternions have the sole advantage of reduced floating-point error when concatenating rotations. </p>
+<p>A quaternion. </p>
+<p>Used to represent rotations: quaternions have the sole advantage of reduced floating-point error when concatenating rotations. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a005eee578d5c2a7ed5f687e24adb4816"></a><!-- doxytag: member="FMQuaternion::FMQuaternion" ref="a005eee578d5c2a7ed5f687e24adb4816" args="()" -->
 <div class="memitem">
@@ -121,7 +155,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates an empty <a class="el" href="classFMQuaternion.html">FMQuaternion</a>. The default values are non deterministic. </p>
+
+<p>Creates an empty <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a>. </p>
+<p>The default values are non deterministic. </p>
 
 </div>
 </div>
@@ -161,6 +197,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates the quaternion with the given component values. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -189,6 +226,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates the quaternion with the given component values. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -214,6 +252,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -242,6 +281,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates the quaternion from a given axis and angle of rotation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -284,7 +324,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get the <a class="el" href="classFMQuaternion.html">FMQuaternion</a> representation of the Euler rotation angles. </p>
+
+<p>Get the <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a> representation of the Euler rotation angles. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>The rotation about the x-axis (roll), in radians. </td></tr>
@@ -310,6 +351,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the length of the vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The length of this vector. </dd></dl>
 
@@ -329,6 +371,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the squared length of the vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The squared length of this vector. </dd></dl>
 
@@ -349,7 +392,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get the <a class="el" href="classFMQuaternion.html">FMQuaternion</a> that represents the <a class="el" href="classFMMatrix44.html">FMMatrix44</a> rotation </p>
+
+<p>Get the <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a> that represents the <a class="el" href="classFMMatrix44.html" title="A 4x4 Row Major matrix: use to represent 3D transformations.">FMMatrix44</a> rotation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>mat</em>&nbsp;</td><td>The matrix whose rotation we will represent </td></tr>
@@ -373,8 +417,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns a quaternion with a unit length at the same space as this quaternion </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>A <a class="el" href="classFMVector3.html">FMVector3</a> with length 1 and same direction as this vector. </dd></dl>
+
+<p>Returns a quaternion with a unit length at the same space as this quaternion. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> with length 1 and same direction as this vector. </dd></dl>
 
 </div>
 </div>
@@ -392,6 +437,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Normalizes this vector. </p>
 
 </div>
@@ -410,6 +456,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -428,6 +475,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves this quaternion as an array of <code>floats</code>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The <code>float</code> array. </dd></dl>
 
@@ -448,6 +496,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Returns the concatonation of this quaternion rotation and the given quaternion rotation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -474,7 +523,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns the concatonation of this quaternion rotation applied on the given vector. This concatonation works great on vector but will give strange results for points. </p>
+
+<p>Returns the concatonation of this quaternion rotation applied on the given vector. </p>
+<p>This concatonation works great on vector but will give strange results for points. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>v</em>&nbsp;</td><td>A 3D vector to rotate. </td></tr>
@@ -500,6 +551,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Applies quaternion multiplication of the given quaternion with this quaternion and returns the value. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -526,7 +578,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Assign this <a class="el" href="classFMQuaternion.html">FMQuaternion</a> to the given <code>float</code> array. Assigns each coordinate of this <a class="el" href="classFMQuaternion.html">FMQuaternion</a> to the elements in the <code>float</code> array. The first element to the i component, the second to the j, the third to the k, and the forth to the scalar. </p>
+
+<p>Assign this <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a> to the given <code>float</code> array. </p>
+<p>Assigns each coordinate of this <a class="el" href="classFMQuaternion.html" title="A quaternion.">FMQuaternion</a> to the elements in the <code>float</code> array. The first element to the i component, the second to the j, the third to the k, and the forth to the scalar. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>v</em>&nbsp;</td><td>The <code>float</code> array to assign with. </td></tr>
@@ -552,7 +606,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Copy constructor. Clones the given quaternion into this quaternion. </p>
+
+<p>Copy constructor. </p>
+<p>Clones the given quaternion into this quaternion. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>q</em>&nbsp;</td><td>A quaternion to clone. </td></tr>
@@ -577,6 +633,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Returns the conjugate of this quaternion. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The conjugate. </dd></dl>
 
@@ -597,7 +654,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the Quaternions transform onto the specified matrix. This will overwrite any existing rotations, but not positions </p>
+
+<p>Sets the Quaternions transform onto the specified matrix. </p>
+<p>This will overwrite any existing rotations, but not positions </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>m</em>&nbsp;</td><td>The matrix to set our transform onto </td></tr>
@@ -631,7 +690,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns the slerp of this quaternion to other at time time </p>
+
+<p>Returns the slerp of this quaternion to other at time time. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>other</em>&nbsp;</td><td>The Quaternion to interpolate to </td></tr>
@@ -667,6 +727,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a quaternion to a angle-axis rotation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -693,6 +754,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a quaternion to its Euler rotation angles. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -718,6 +780,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a quaternion to a transformation matrix. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The transformation matrix for this quaternion. </dd></dl>
 
@@ -734,7 +797,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The identity quaternion. Transforming a vector or a point with this quaternion returns the same vector or point. </p>
+
+<p>The identity quaternion. </p>
+<p>Transforming a vector or a point with this quaternion returns the same vector or point. </p>
 
 </div>
 </div>
@@ -748,6 +813,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The scalar component. </p>
 
 </div>
@@ -762,6 +828,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The i component. </p>
 
 </div>
@@ -776,6 +843,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The j component. </p>
 
 </div>
@@ -790,6 +858,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The k component. </p>
 
 </div>
@@ -804,6 +873,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The zero quaternion. </p>
 
 </div>
@@ -827,7 +897,7 @@ Static Public Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:52 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

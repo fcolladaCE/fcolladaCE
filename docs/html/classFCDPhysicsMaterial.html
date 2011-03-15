@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDPhysicsMaterial" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA physics material.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDPhysicsMaterial_8h_source.html">FCDPhysicsMaterial.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDPhysicsMaterial:</div>
@@ -79,18 +82,28 @@ Inheritance diagram for FCDPhysicsMaterial:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#af117b2799b8342635e0b0778e496e577">FCDPhysicsMaterial</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#af117b2799b8342635e0b0778e496e577"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#a8c125b5616a838df37f2130501dce9d2">~FCDPhysicsMaterial</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a8c125b5616a838df37f2130501dce9d2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#af7b84458b75d65c2e88028cafb865526">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity type for this class.  <a href="#af7b84458b75d65c2e88028cafb865526"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#adf3cae3fa4dc196807c446530701f482">GetStaticFriction</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the static friction for this physics material.  <a href="#adf3cae3fa4dc196807c446530701f482"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#ad89f828ca130c56e54f00f97384d492a">SetStaticFriction</a> (float _staticFriction)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the static friction for this physics material.  <a href="#ad89f828ca130c56e54f00f97384d492a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#aefdc9cbe348ec8dec6cc2a427740cf6a">GetDynamicFriction</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the dynamic friction for this physics material.  <a href="#aefdc9cbe348ec8dec6cc2a427740cf6a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#a6270ec2550be3c522488263908ce8ed3">SetDynamicFriction</a> (float _dynamicFriction)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the dynamic friction for this physics material.  <a href="#a6270ec2550be3c522488263908ce8ed3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#a9cede0114b06eb9fab75f98de2e821c1">GetRestitution</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the restitution for this physics material.  <a href="#a9cede0114b06eb9fab75f98de2e821c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#a39d172917abbce73b84f194ee7721eaf">SetRestitution</a> (float _restitution)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the restitution for this physics material.  <a href="#a39d172917abbce73b84f194ee7721eaf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsMaterial.html#a37db393d57f224a97e24ee6f5d4c4499">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the physics material into a clone.  <a href="#a37db393d57f224a97e24ee6f5d4c4499"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA physics material.</p>
+<p>A COLLADA physics material. </p>
 <p>A physics material contains physical properties for an object. Because there isn't anything interesting in the physics material instance, this class is used to represent that as well. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af117b2799b8342635e0b0778e496e577"></a><!-- doxytag: member="FCDPhysicsMaterial::FCDPhysicsMaterial" ref="af117b2799b8342635e0b0778e496e577" args="(FCDocument *document)" -->
@@ -108,6 +121,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -132,6 +146,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -161,6 +176,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copies the physics material into a clone. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -189,6 +205,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the dynamic friction for this physics material. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The dynamic friction. </dd></dl>
 
@@ -208,6 +225,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the restitution for this physics material. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The restitution. </dd></dl>
 
@@ -227,6 +245,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the static friction for this physics material. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The static friction. </dd></dl>
 
@@ -246,7 +265,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity type for this class. This function is part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity type for this class. </p>
+<p>This function is part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: PHYSICS_MATERIAL. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -268,6 +289,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the dynamic friction for this physics material. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -293,6 +315,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the restitution for this physics material. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -318,6 +341,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the static friction for this physics material. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -347,7 +371,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:45 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:21 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

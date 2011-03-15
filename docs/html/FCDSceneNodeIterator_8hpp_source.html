@@ -60,7 +60,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00007"></a>00007 <span class="comment">*/</span>
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="preprocessor">#ifndef _FCD_SCENE_NODE_H_</span>
-<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDSceneNode_8h.html">FCDocument/FCDSceneNode.h</a>&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDSceneNode_8h.html" title="This file contains the FCDSceneNode class.">FCDocument/FCDSceneNode.h</a>&quot;</span>
 <a name="l00011"></a>00011 <span class="preprocessor">#endif // _FCD_SCENE_NODE_H_</span>
 <a name="l00012"></a>00012 <span class="preprocessor"></span>
 <a name="l00013"></a>00013 <span class="comment">//</span>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_T&gt;
-<a name="l00018"></a>00018 <a class="code" href="classFCDSceneNodeIteratorT.html#a1e0908d914e1b8c5b452a9816771b0ed">FCDSceneNodeIteratorT&lt;NODE_T&gt;::FCDSceneNodeIteratorT</a>(NODE_T* root, SearchType searchType, <span class="keywordtype">bool</span> pureChildOnly)
+<a name="l00018"></a>00018 <a class="code" href="classFCDSceneNodeIteratorT.html#a1e0908d914e1b8c5b452a9816771b0ed" title="Constructor.">FCDSceneNodeIteratorT&lt;NODE_T&gt;::FCDSceneNodeIteratorT</a>(NODE_T* root, SearchType searchType, <span class="keywordtype">bool</span> pureChildOnly)
 <a name="l00019"></a>00019 {
 <a name="l00020"></a>00020         queue.reserve(8);
 <a name="l00021"></a>00021 
@@ -84,17 +84,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00031"></a>00031                         <span class="keywordtype">size_t</span> childCount = it-&gt;GetChildrenCount();
 <a name="l00032"></a>00032                         <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; childCount; ++c)
 <a name="l00033"></a>00033                         {
-<a name="l00034"></a>00034                                 NODE_T* node = it-&gt;<a class="code" href="classFCDSceneNode.html#a4137a5a0035341285adc7ae30cf4523b">GetChild</a>(c);
+<a name="l00034"></a>00034                                 NODE_T* node = it-&gt;<a class="code" href="classFCDSceneNode.html#a4137a5a0035341285adc7ae30cf4523b" title="Retrieves a specific child of the visual scene node.">GetChild</a>(c);
 <a name="l00035"></a>00035                                 <span class="keywordflow">if</span> (!pureChildOnly || node-&gt;GetParent(0) == it) queue.push_back(node);
 <a name="l00036"></a>00036                         }
 <a name="l00037"></a>00037 
 <a name="l00038"></a>00038                         <span class="keywordflow">if</span> (!pureChildOnly)
 <a name="l00039"></a>00039                         {
-<a name="l00040"></a>00040                                 <span class="keywordtype">size_t</span> instanceCount = it-&gt;<a class="code" href="classFCDSceneNode.html#a191a57fdbb1ae5ddab8b45b4d4984e63">GetInstanceCount</a>();
+<a name="l00040"></a>00040                                 <span class="keywordtype">size_t</span> instanceCount = it-&gt;<a class="code" href="classFCDSceneNode.html#a191a57fdbb1ae5ddab8b45b4d4984e63" title="Retrieves the number of entity instances at this node of the scene graph.">GetInstanceCount</a>();
 <a name="l00041"></a>00041                                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; instanceCount; ++i)
 <a name="l00042"></a>00042                                 {
-<a name="l00043"></a>00043                                         <span class="keyword">const</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>* entity = it-&gt;GetInstance(i)-&gt;GetEntity();
-<a name="l00044"></a>00044                                         <span class="keywordflow">if</span> (entity != NULL &amp;&amp; entity-&gt;<a class="code" href="classFUObject.html#ab838ad4132b756dcd3614440b8e32f2a">HasType</a>(<a class="code" href="classFUObject.html#a907d4f6d284b3ac4f8203d557af41668">FCDSceneNode::GetClassType</a>())) queue.push_back((NODE_T*) entity);
+<a name="l00043"></a>00043                                         <span class="keyword">const</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* entity = it-&gt;GetInstance(i)-&gt;GetEntity();
+<a name="l00044"></a>00044                                         <span class="keywordflow">if</span> (entity != NULL &amp;&amp; entity-&gt;<a class="code" href="classFUObject.html#ab838ad4132b756dcd3614440b8e32f2a" title="Retrieves whether this object is exactly or inherits the given type.">HasType</a>(<a class="code" href="classFUObject.html#a907d4f6d284b3ac4f8203d557af41668" title="Retrieves the type of the base object class.">FCDSceneNode::GetClassType</a>())) queue.push_back((NODE_T*) entity);
 <a name="l00045"></a>00045                                 }
 <a name="l00046"></a>00046                         }
 <a name="l00047"></a>00047                 }
@@ -102,15 +102,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00049"></a>00049         <span class="keywordflow">else</span> <span class="comment">// depth first</span>
 <a name="l00050"></a>00050         {
 <a name="l00051"></a>00051                 <span class="comment">// In depth-first mode, we need a breadth-first processing queue and a depth-first iteration queue.</span>
-<a name="l00052"></a>00052                 <span class="keyword">typedef</span> <a class="code" href="classfm_1_1pair.html">fm::pair&lt;NODE_T*,size_t&gt;</a> Child;
-<a name="l00053"></a>00053                 <a class="code" href="classfm_1_1vector.html">fm::vector&lt;Child&gt;</a> processQueue;
-<a name="l00054"></a>00054                 processQueue.<a class="code" href="classfm_1_1vector.html#a760c90ff63c9bf14cfe36370510c0317">reserve</a>(8);
-<a name="l00055"></a>00055                 processQueue.<a class="code" href="classfm_1_1vector.html#a09016ff1f6226fce15c0993f52d5c155">push_back</a>(Child(root, 0));
+<a name="l00052"></a>00052                 <span class="keyword">typedef</span> <a class="code" href="classfm_1_1pair.html" title="A simple pair template.">fm::pair&lt;NODE_T*,size_t&gt;</a> Child;
+<a name="l00053"></a>00053                 <a class="code" href="classfm_1_1vector.html" title="A dynamically-sized array.">fm::vector&lt;Child&gt;</a> processQueue;
+<a name="l00054"></a>00054                 processQueue.<a class="code" href="classfm_1_1vector.html#a760c90ff63c9bf14cfe36370510c0317" title="Pre-allocate the list to a certain number of values.">reserve</a>(8);
+<a name="l00055"></a>00055                 processQueue.<a class="code" href="classfm_1_1vector.html#a09016ff1f6226fce15c0993f52d5c155" title="Inserts a new item at the end of the list.">push_back</a>(Child(root, 0));
 <a name="l00056"></a>00056                 <span class="keywordflow">if</span> (searchType == DEPTH_FIRST_PREORDER) queue.push_back(root);
 <a name="l00057"></a>00057 
-<a name="l00058"></a>00058                 <span class="keywordflow">while</span> (!processQueue.<a class="code" href="classfm_1_1vector.html#a74ef295eac3b2308a9e76cdabc61064c">empty</a>())
+<a name="l00058"></a>00058                 <span class="keywordflow">while</span> (!processQueue.<a class="code" href="classfm_1_1vector.html#a74ef295eac3b2308a9e76cdabc61064c" title="Retrieves whether there are any elements in the list.">empty</a>())
 <a name="l00059"></a>00059                 {
-<a name="l00060"></a>00060                         Child&amp; it = processQueue.<a class="code" href="classfm_1_1vector.html#a53fc5bae13b2188924ac7a196164dd7f">back</a>();
+<a name="l00060"></a>00060                         Child&amp; it = processQueue.<a class="code" href="classfm_1_1vector.html#a53fc5bae13b2188924ac7a196164dd7f" title="Retrieves the last element of the pointer array.">back</a>();
 <a name="l00061"></a>00061                         <span class="keywordtype">size_t</span> nodeChildCount = it.first-&gt;GetChildrenCount();
 <a name="l00062"></a>00062                         <span class="keywordtype">size_t</span> nodeInstanceCount = it.first-&gt;GetInstanceCount();
 <a name="l00063"></a>00063                         <span class="keywordflow">if</span> (it.second &lt; nodeChildCount)
@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00072"></a>00072                                 }
 <a name="l00073"></a>00073                                 <span class="keywordflow">else</span>
 <a name="l00074"></a>00074                                 {
-<a name="l00075"></a>00075                                         processQueue.<a class="code" href="classfm_1_1vector.html#a09016ff1f6226fce15c0993f52d5c155">push_back</a>(Child(add, 0));
+<a name="l00075"></a>00075                                         processQueue.<a class="code" href="classfm_1_1vector.html#a09016ff1f6226fce15c0993f52d5c155" title="Inserts a new item at the end of the list.">push_back</a>(Child(add, 0));
 <a name="l00076"></a>00076                                 }
 <a name="l00077"></a>00077                         }
 <a name="l00078"></a>00078                         <span class="keywordflow">else</span> <span class="keywordflow">if</span> (it.second &lt; nodeChildCount + nodeInstanceCount &amp;&amp; !pureChildOnly)
@@ -133,8 +133,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00080"></a>00080                                 <span class="keywordflow">for</span> (; it.second &lt; nodeChildCount + nodeInstanceCount; ++it.second)
 <a name="l00081"></a>00081                                 {
 <a name="l00082"></a>00082                                         <span class="keywordtype">size_t</span> instanceIndex = it.second - nodeChildCount;
-<a name="l00083"></a>00083                                         <span class="keyword">const</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>* entity = it.first-&gt;GetInstance(instanceIndex)-&gt;GetEntity();
-<a name="l00084"></a>00084                                         <span class="keywordflow">if</span> (entity != NULL &amp;&amp; entity-&gt;<a class="code" href="classFUObject.html#ab838ad4132b756dcd3614440b8e32f2a">HasType</a>(<a class="code" href="classFUObject.html#a907d4f6d284b3ac4f8203d557af41668">FCDSceneNode::GetClassType</a>()))
+<a name="l00083"></a>00083                                         <span class="keyword">const</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* entity = it.first-&gt;GetInstance(instanceIndex)-&gt;GetEntity();
+<a name="l00084"></a>00084                                         <span class="keywordflow">if</span> (entity != NULL &amp;&amp; entity-&gt;<a class="code" href="classFUObject.html#ab838ad4132b756dcd3614440b8e32f2a" title="Retrieves whether this object is exactly or inherits the given type.">HasType</a>(<a class="code" href="classFUObject.html#a907d4f6d284b3ac4f8203d557af41668" title="Retrieves the type of the base object class.">FCDSceneNode::GetClassType</a>()))
 <a name="l00085"></a>00085                                         {
 <a name="l00086"></a>00086                                                 NODE_T* add = (NODE_T*) entity;
 <a name="l00087"></a>00087                                                 <span class="keywordflow">if</span> (add-&gt;GetChildrenCount() == 0 &amp;&amp; add-&gt;GetInstanceCount() == 0)
@@ -144,7 +144,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00091"></a>00091                                                 }
 <a name="l00092"></a>00092                                                 <span class="keywordflow">else</span>
 <a name="l00093"></a>00093                                                 {
-<a name="l00094"></a>00094                                                         processQueue.<a class="code" href="classfm_1_1vector.html#a09016ff1f6226fce15c0993f52d5c155">push_back</a>(Child(add, 0));
+<a name="l00094"></a>00094                                                         processQueue.<a class="code" href="classfm_1_1vector.html#a09016ff1f6226fce15c0993f52d5c155" title="Inserts a new item at the end of the list.">push_back</a>(Child(add, 0));
 <a name="l00095"></a>00095                                                         ++(it.second);
 <a name="l00096"></a>00096                                                         <span class="keywordflow">break</span>;
 <a name="l00097"></a>00097                                                 }
@@ -154,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00101"></a>00101                         <span class="keywordflow">else</span>
 <a name="l00102"></a>00102                         {
 <a name="l00103"></a>00103                                 <span class="keywordflow">if</span> (searchType == DEPTH_FIRST_POSTORDER) queue.push_back(it.first);
-<a name="l00104"></a>00104                                 processQueue.<a class="code" href="classfm_1_1vector.html#a447dc8502b9c1eb3bb316ea9788bda61">pop_back</a>();
+<a name="l00104"></a>00104                                 processQueue.<a class="code" href="classfm_1_1vector.html#a447dc8502b9c1eb3bb316ea9788bda61" title="Removes the last item from a list.">pop_back</a>();
 <a name="l00105"></a>00105                         }
 <a name="l00106"></a>00106                 }
 <a name="l00107"></a>00107         }
@@ -163,22 +163,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00110"></a>00110 }
 <a name="l00111"></a>00111 
 <a name="l00112"></a>00112 <span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_T&gt;
-<a name="l00113"></a><a class="code" href="classFCDSceneNodeIteratorT.html#aa6b60e205b694c0293a3a1dd6f3c746a">00113</a> <a class="code" href="classFCDSceneNodeIteratorT.html#aa6b60e205b694c0293a3a1dd6f3c746a">FCDSceneNodeIteratorT&lt;NODE_T&gt;::~FCDSceneNodeIteratorT</a>()
+<a name="l00113"></a><a class="code" href="classFCDSceneNodeIteratorT.html#aa6b60e205b694c0293a3a1dd6f3c746a">00113</a> <a class="code" href="classFCDSceneNodeIteratorT.html#aa6b60e205b694c0293a3a1dd6f3c746a" title="Destructor.">FCDSceneNodeIteratorT&lt;NODE_T&gt;::~FCDSceneNodeIteratorT</a>()
 <a name="l00114"></a>00114 {
-<a name="l00115"></a>00115         queue.<a class="code" href="classfm_1_1vector.html#a975b229085aa01bb58f4ece2143199bf">clear</a>();
+<a name="l00115"></a>00115         queue.<a class="code" href="classfm_1_1vector.html#a975b229085aa01bb58f4ece2143199bf" title="Removes all the element in the list.">clear</a>();
 <a name="l00116"></a>00116 }
 <a name="l00117"></a>00117 
 <a name="l00118"></a>00118 <span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_T&gt;
-<a name="l00119"></a><a class="code" href="classFCDSceneNodeIteratorT.html#a276fdda452c3fd746f71e02ba998f895">00119</a> NODE_T* <a class="code" href="classFCDSceneNodeIteratorT.html#a276fdda452c3fd746f71e02ba998f895">FCDSceneNodeIteratorT&lt;NODE_T&gt;::GetNode</a>()
+<a name="l00119"></a><a class="code" href="classFCDSceneNodeIteratorT.html#a276fdda452c3fd746f71e02ba998f895">00119</a> NODE_T* <a class="code" href="classFCDSceneNodeIteratorT.html#a276fdda452c3fd746f71e02ba998f895" title="Retrieves the current node to process.">FCDSceneNodeIteratorT&lt;NODE_T&gt;::GetNode</a>()
 <a name="l00120"></a>00120 {
-<a name="l00121"></a>00121         <span class="keywordflow">return</span> iterator &lt; queue.<a class="code" href="classfm_1_1vector.html#ade5232e5e4af6f14b6b6db490182a867">size</a>() ? queue[iterator] : NULL;
+<a name="l00121"></a>00121         <span class="keywordflow">return</span> iterator &lt; queue.<a class="code" href="classfm_1_1vector.html#ade5232e5e4af6f14b6b6db490182a867" title="Retrieves the number of values contained in the list.">size</a>() ? queue[iterator] : NULL;
 <a name="l00122"></a>00122 }
 <a name="l00123"></a>00123 
 <a name="l00124"></a>00124 <span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_T&gt;
-<a name="l00125"></a><a class="code" href="classFCDSceneNodeIteratorT.html#a0deb5e4e9954390865cde455984ec302">00125</a> NODE_T* <a class="code" href="classFCDSceneNodeIteratorT.html#a0deb5e4e9954390865cde455984ec302">FCDSceneNodeIteratorT&lt;NODE_T&gt;::Next</a>()
+<a name="l00125"></a><a class="code" href="classFCDSceneNodeIteratorT.html#a0deb5e4e9954390865cde455984ec302">00125</a> NODE_T* <a class="code" href="classFCDSceneNodeIteratorT.html#a0deb5e4e9954390865cde455984ec302" title="Advances the iteration pointer and retrieves the next node to process.">FCDSceneNodeIteratorT&lt;NODE_T&gt;::Next</a>()
 <a name="l00126"></a>00126 {
 <a name="l00127"></a>00127         ++iterator;
-<a name="l00128"></a>00128         <span class="keywordflow">return</span> iterator &lt; queue.<a class="code" href="classfm_1_1vector.html#ade5232e5e4af6f14b6b6db490182a867">size</a>() ? queue[iterator] : NULL;
+<a name="l00128"></a>00128         <span class="keywordflow">return</span> iterator &lt; queue.<a class="code" href="classfm_1_1vector.html#ade5232e5e4af6f14b6b6db490182a867" title="Retrieves the number of values contained in the list.">size</a>() ? queue[iterator] : NULL;
 <a name="l00129"></a>00129 }
 </pre></div></div>
 </div>
@@ -196,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:19 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:11 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

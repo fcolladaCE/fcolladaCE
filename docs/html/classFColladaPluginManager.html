@@ -58,6 +58,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FColladaPluginManager" --><!-- doxytag: inherits="FUObject" -->
+<p>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> plug-ins manager.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FColladaPlugin_8h_source.html">FColladaPlugin.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FColladaPluginManager:</div>
@@ -76,21 +79,31 @@ typedef <a class="el" href="classfm_1_1pvector.html">fm::pvector</a><br class="t
 &lt; <a class="el" href="classFCDETechnique.html">FCDETechnique</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>FCDETechniqueList</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1map.html">fm::map</a>&lt; uint32, <br class="typebreak"/>
 <a class="el" href="classFCPExtraTechnique.html">FCPExtraTechnique</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#a31b0354a9ddff1b9f6eb4543662bbed8">FCPExtraMap</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Make a processed map of CRC32 profile names vs plug-ins to handle them.  <a href="#a31b0354a9ddff1b9f6eb4543662bbed8"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#affbab236883a435d8bb08bc52edca2ca">FColladaPluginManager</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#affbab236883a435d8bb08bc52edca2ca"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#a2a0ebfa39ce05b91de49c348a6c5c568">GetArchivePluginsCount</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieve the number of archive plugins that are loaded.  <a href="#a2a0ebfa39ce05b91de49c348a6c5c568"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCPArchive.html">FCPArchive</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#a7137a9d679ac626669fac19e73beb691">GetArchivePlugin</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the archive plugin specified by the given index.  <a href="#a7137a9d679ac626669fac19e73beb691"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#a52fc25de16489fadec449415a0f2c633">RegisterPlugin</a> (<a class="el" href="classFUPlugin.html">FUPlugin</a> *plugin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Manually registers a plugin.  <a href="#a52fc25de16489fadec449415a0f2c633"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#a1160a19c60e7ec7f72759553929454d4">DEPRECATED</a> (3.05A, RegisterPlugin) inline bool AddPlugin(FCPExtraTechnique *plugin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1160a19c60e7ec7f72759553929454d4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#abfd48890f1e1255f68dd6a7d07b5d980">DEPRECATED</a> (3.05A, RegisterPlugin) inline bool AddArchivePlugin(FCPArchive *plugin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#abfd48890f1e1255f68dd6a7d07b5d980"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#a15089895620feae23927be8bc8c60c1d">LoadDocumentFromFile</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, const fchar *filename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Load document to the given file.  <a href="#a15089895620feae23927be8bc8c60c1d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af245b43727fddb1dd3ae4b331afb17d2"></a><!-- doxytag: member="FColladaPluginManager::DEPRECATED" ref="af245b43727fddb1dd3ae4b331afb17d2" args="(3.05A, LoadDocumentFromFile) inline bool LoadDocument(FCDocument *document" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>DEPRECATED</b> (3.05A, LoadDocumentFromFile) inline bool LoadDocument(FCDocument *document</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#ab9deb7df7ff61ec0cb82efb37c5bcc0b">SaveDocumentToFile</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, const fchar *filename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Save document to the given file.  <a href="#ab9deb7df7ff61ec0cb82efb37c5bcc0b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03d0fd439d210cd76c6663f4e89d9825"></a><!-- doxytag: member="FColladaPluginManager::DEPRECATED" ref="a03d0fd439d210cd76c6663f4e89d9825" args="(3.05A, SaveDocumentToFile) inline bool SaveDocument(FCDocument *document" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>DEPRECATED</b> (3.05A, SaveDocumentToFile) inline bool SaveDocument(FCDocument *document</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCPArchive.html">FCPArchive</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFColladaPluginManager.html#ac366a235e5a2704313bc1d7eccb73df0">FindArchivePlugin</a> (const fchar *filename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Find the correct plug-in to the document according to the file extension.  <a href="#ac366a235e5a2704313bc1d7eccb73df0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e72b0a129057dd3f5708d47dbb4f189"></a><!-- doxytag: member="FColladaPluginManager::PostImportDocument" ref="a4e72b0a129057dd3f5708d47dbb4f189" args="(FCDocument *document)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>PostImportDocument</b> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba08d84d5152c8b33c15381a64f5a9bb"></a><!-- doxytag: member="FColladaPluginManager::PreExportDocument" ref="aba08d84d5152c8b33c15381a64f5a9bb" args="(FCDocument *document, FCDETechniqueList &amp;techniques)" -->
@@ -101,7 +114,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>PostExportDocument</b
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniquePluginMap</b> (<a class="el" href="classfm_1_1map.html">FCPExtraMap</a> &amp;map)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>The <a class="el" href="namespaceFCollada.html">FCollada</a> plug-ins manager. </p>
+<p>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> plug-ins manager. </p>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a31b0354a9ddff1b9f6eb4543662bbed8"></a><!-- doxytag: member="FColladaPluginManager::FCPExtraMap" ref="a31b0354a9ddff1b9f6eb4543662bbed8" args="" -->
 <div class="memitem">
@@ -113,6 +126,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>Make a processed map of CRC32 profile names vs plug-ins to handle them. </p>
 
 </div>
@@ -132,6 +146,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 
 </div>
@@ -161,6 +176,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -189,6 +205,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -208,6 +225,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Find the correct plug-in to the document according to the file extension. </p>
 
 </div>
@@ -227,6 +245,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the archive plugin specified by the given index. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -252,6 +271,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieve the number of archive plugins that are loaded. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of archive plugins loaded. </dd></dl>
 
@@ -281,10 +301,11 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>Load document to the given file. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>the <a class="el" href="classFCDocument.html">FCDocument</a> which will be filled with loaded contents. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>the <a class="el" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a> which will be filled with loaded contents. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>The file name of the file to load. </td></tr>
   </table>
   </dd>
@@ -308,7 +329,9 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
-<p>Manually registers a plugin. To manually un-register a plugin, use the plugin-&gt;<a class="el" href="classFUObject.html#a33be6852b877d7f29520bbe4722b846b">Release()</a> function. </p>
+
+<p>Manually registers a plugin. </p>
+<p>To manually un-register a plugin, use the plugin-&gt;<a class="el" href="classFUObject.html#a33be6852b877d7f29520bbe4722b846b" title="Releases this object.">Release()</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>plugin</em>&nbsp;</td><td>The plugin to manually add to the plugin map. </td></tr>
@@ -343,10 +366,11 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
       </table>
 </div>
 <div class="memdoc">
+
 <p>Save document to the given file. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>the <a class="el" href="classFCDocument.html">FCDocument</a> whose contents are to be writtern in the file. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>the <a class="el" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a> whose contents are to be writtern in the file. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>the full path of the file to write. </td></tr>
   </table>
   </dd>
@@ -374,7 +398,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>CreateExtraTechniqueP
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:51 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:22 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

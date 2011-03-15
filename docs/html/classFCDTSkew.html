@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDTSkew" --><!-- doxytag: inherits="FCDTransform" -->
+<p>A COLLADA skew.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDTransform_8h_source.html">FCDTransform.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDTSkew:</div>
@@ -78,29 +81,49 @@ Inheritance diagram for FCDTSkew:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a2aba1a042d54f8a10b304e9b566dcc70">FCDTSkew</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a2aba1a042d54f8a10b304e9b566dcc70"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a92bfc908793e289b13586e792210f841">~FCDTSkew</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a92bfc908793e289b13586e792210f841"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDTransform.html#a13e561c5e53aeaf84dedf4661cdc8921">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a069afb12195014737cc891cf4edd0946">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the transformation class type for the transformation.  <a href="#a069afb12195014737cc891cf4edd0946"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableSkew</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a9431366cb29146c6947c63dbeb9fe2b6">GetSkew</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the skew value for this transformation.  <a href="#a9431366cb29146c6947c63dbeb9fe2b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12c760e6bd411edcae0987118a53cd76"></a><!-- doxytag: member="FCDTSkew::GetSkew" ref="a12c760e6bd411edcae0987118a53cd76" args="() const " -->
 const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableSkew</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>GetSkew</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#af1a6227aa617dd5ed74a711fe951551f">SetSkew</a> (const <a class="el" href="classFMSkew.html">FMSkew</a> &amp;_skew)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the skew value for this transformation.  <a href="#af1a6227aa617dd5ed74a711fe951551f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a3fc21e33c8a5af04410e09a1ed0d7275">GetRotateAxis</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the axis which is rotated.  <a href="#a3fc21e33c8a5af04410e09a1ed0d7275"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a56ecf1919695b36c9dfc1aa8bc3cb7dd">GetRotateAxis</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a56ecf1919695b36c9dfc1aa8bc3cb7dd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#acf018bf27460abd2e354ae3461b294a6">SetRotateAxis</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;axis)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the axis which is rotated.  <a href="#acf018bf27460abd2e354ae3461b294a6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a1cf6d65244d940a70913f396c4a21394">GetAroundAxis</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the axis around which the rotation is done.  <a href="#a1cf6d65244d940a70913f396c4a21394"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#ab555994aa6923ca3be4ed628b0d0b78a">GetAroundAxis</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab555994aa6923ca3be4ed628b0d0b78a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a3fc0739c9c4e57510e849217fa023890">SetAroundAxis</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;axis)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the axis around which the rotation is done.  <a href="#a3fc0739c9c4e57510e849217fa023890"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a6e2b73155535a7206383484a78b36f36">GetAngle</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the rotation angle.  <a href="#a6e2b73155535a7206383484a78b36f36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a7f573a6324acdc92b5e7a71d05e0a8d7">GetAngle</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7f573a6324acdc92b5e7a71d05e0a8d7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a4c85901fe75248b2824053190d6f26bd">SetAngle</a> (float angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the rotation angle.  <a href="#a4c85901fe75248b2824053190d6f26bd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFMMatrix44.html">FMMatrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#ae7e90834c3ca578ebec91fcc0472e479">ToMatrix</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the skew into a matrix.  <a href="#ae7e90834c3ca578ebec91fcc0472e479"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a81f213b6eb3014df1129f806708e7d76">IsAnimated</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the transformation is animated.  <a href="#a81f213b6eb3014df1129f806708e7d76"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a6637a68d104e66b0e8fb8b517f8ad345">GetAnimated</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animated element for the skew.  <a href="#a6637a68d104e66b0e8fb8b517f8ad345"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a38aa6c4cdf590300a71be183fbad50a1">GetAnimated</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a38aa6c4cdf590300a71be183fbad50a1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDTransform.html">FCDTransform</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDTSkew.html#a7c79f16b0a6fbaddad4d15d5911a2443">Clone</a> (<a class="el" href="classFCDTransform.html">FCDTransform</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a copy of a skew transformation.  <a href="#a7c79f16b0a6fbaddad4d15d5911a2443"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA skew. In COLLADA, the skew transformation follows the Renderman convention. A skew is defined by two axis and one angle: the axis which is rotated, the axis around which the rotation is done and the angle of the rotation. </p>
+<p>A COLLADA skew. </p>
+<p>In COLLADA, the skew transformation follows the Renderman convention. A skew is defined by two axis and one angle: the axis which is rotated, the axis around which the rotation is done and the angle of the rotation. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2aba1a042d54f8a10b304e9b566dcc70"></a><!-- doxytag: member="FCDTSkew::FCDTSkew" ref="a2aba1a042d54f8a10b304e9b566dcc70" args="(FCDocument *document, FCDSceneNode *parent)" -->
 <div class="memitem">
@@ -126,7 +149,9 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDSceneNode.html#a863250572e5a4dbf022192c653222d94">FCDSceneNode::AddTransform</a> function with the transformation type: SKEW. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDSceneNode.html#a863250572e5a4dbf022192c653222d94" title="Creates a new transform for this visual scene node.">FCDSceneNode::AddTransform</a> function with the transformation type: SKEW. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the skew. </td></tr>
@@ -151,6 +176,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -171,6 +197,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a copy of a skew transformation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -198,6 +225,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the rotation angle. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The rotation angle. </dd></dl>
 
@@ -217,6 +245,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -235,8 +264,9 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the animated element for the skew. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="namespaceFCollada.html">FCollada</a> doesn't support animated skews: NULL. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> doesn't support animated skews: NULL. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDTransform.html#afefc850b24274c7e3ced421b18bec24b">FCDTransform</a>.</p>
 
@@ -256,6 +286,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Implements <a class="el" href="classFCDTransform.html#aac1ff2df9e63702a90300ba9c38c48e1">FCDTransform</a>.</p>
@@ -276,6 +307,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the axis around which the rotation is done. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The rotation axis. </dd></dl>
 
@@ -295,6 +327,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -313,6 +346,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the axis which is rotated. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The rotated axis. </dd></dl>
 
@@ -332,6 +366,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -350,6 +385,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the skew value for this transformation. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The skew value. </dd></dl>
 
@@ -369,6 +405,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the transformation class type for the transformation. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The class type: SKEW. </dd></dl>
 
@@ -390,8 +427,9 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether the transformation is animated. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="namespaceFCollada.html">FCollada</a> doesn't support animated skews: false. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> doesn't support animated skews: false. </dd></dl>
 
 <p>Implements <a class="el" href="classFCDTransform.html#ab12ac63fa2d46fbcf8c025971635cda4">FCDTransform</a>.</p>
 
@@ -412,6 +450,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the rotation angle. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -437,6 +476,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the axis around which the rotation is done. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -462,6 +502,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the axis which is rotated. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -487,6 +528,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the skew value for this transformation. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -511,6 +553,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the skew into a matrix. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The transformation matrix. </dd></dl>
 
@@ -537,7 +580,7 @@ const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimata
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:51 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:22 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

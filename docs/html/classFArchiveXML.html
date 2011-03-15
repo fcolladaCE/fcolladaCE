@@ -72,34 +72,64 @@ Inheritance diagram for FArchiveXML:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#afaeaeb4ee3cd75bac1ad6a4c54c9b899">IsImportSupported</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaeaeb4ee3cd75bac1ad6a4c54c9b899"></a><!-- doxytag: member="FArchiveXML::IsImportSupported" ref="afaeaeb4ee3cd75bac1ad6a4c54c9b899" args="()" -->
+virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#afaeaeb4ee3cd75bac1ad6a4c54c9b899">IsImportSupported</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See <a class="el" href="FColladaPlugin_8h.html" title="This file contains the various FCollada plug-in classes and the internal FColladaPluginManager class...">FColladaPlugin.h</a>. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#adb1efee2caed4402a02dd20af432e5ef">IsExportSupported</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determine if this plug-in supports export from <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>.  <a href="#adb1efee2caed4402a02dd20af432e5ef"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#ad35bb5dd5d901c86edf794dda76bfc4d">IsPartialExportSupported</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determine if this plug-in supports exporting part of the <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> assets.  <a href="#ad35bb5dd5d901c86edf794dda76bfc4d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a17673f93728bb30dedd2791473c4b14e">IsExtensionSupported</a> (const char *ext)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determine if this plug-in supports the given file extension.  <a href="#a17673f93728bb30dedd2791473c4b14e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a0547ef1565f6543319b9aaad3eca8697">GetSupportedExtensionsCount</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determine the number of file extension this plug-in supports.  <a href="#a0547ef1565f6543319b9aaad3eca8697"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a3908cc84df654da0ded836afcfd7fab8">GetSupportedExtensionAt</a> (int index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieve one supported extension.  <a href="#a3908cc84df654da0ded836afcfd7fab8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#adb22e0884d6059ded32d194a8cdde4dc">AddExtraExtension</a> (const char *ext)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an extra extension to the list of supported extension by this plugin.  <a href="#adb22e0884d6059ded32d194a8cdde4dc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#ad1e57b1a3067f88738ee7a2f0e6fc9ca">RemoveExtraExtension</a> (const char *ext)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes an extension that has previously been added to the extra extension list.  <a href="#ad1e57b1a3067f88738ee7a2f0e6fc9ca"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a10bc809b2a64d9df0cd83742bf0dc49a">ImportFile</a> (const fchar *filePath, <a class="el" href="classFCDocument.html">FCDocument</a> *fcdocument)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Import a file into <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>.  <a href="#a10bc809b2a64d9df0cd83742bf0dc49a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a5a85deaaf25379ea56b30d5a602ae949">ImportFileFromMemory</a> (const fchar *filePath, <a class="el" href="classFCDocument.html">FCDocument</a> *fcdocument, const void *contents, size_t length)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Import a file from the given memory address.  <a href="#a5a85deaaf25379ea56b30d5a602ae949"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#ab7c6e1fab043617e8e6adebf947dcf7e">ExportFile</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *fcdocument, const fchar *filePath)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Export a file from <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>.  <a href="#ab7c6e1fab043617e8e6adebf947dcf7e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a485fad9bad65ed0e6512f9713223982f">StartExport</a> (const fchar *absoluteFilePath)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Start exporting parts of the <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> assets.  <a href="#a485fad9bad65ed0e6512f9713223982f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a36eff362143c86cae961237d4923a35a">ExportObject</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Export one object in <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>.  <a href="#a36eff362143c86cae961237d4923a35a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a877083fc6c055f24042dd50103fb00a4">EndExport</a> (<a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; uint8 &gt; &amp;outData)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">End the export of the current document started by 'StartExport()'.  <a href="#a877083fc6c055f24042dd50103fb00a4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a19693477bc5410a640105cec37febdb6">EndExport</a> (const fchar *filePath)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">End the export of the current document started by 'StartExport()'.  <a href="#a19693477bc5410a640105cec37febdb6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a323f1807851e536b1c46f7583303518e">ImportObject</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, const <a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; uint8 &gt; &amp;data)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#abd9ac092eff78dbc8f8249fa402fe644">GetPluginName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Load the save data onto an object.  <a href="#a323f1807851e536b1c46f7583303518e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd9ac092eff78dbc8f8249fa402fe644"></a><!-- doxytag: member="FArchiveXML::GetPluginName" ref="abd9ac092eff78dbc8f8249fa402fe644" args="() const " -->
+virtual const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#abd9ac092eff78dbc8f8249fa402fe644">GetPluginName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See <a class="el" href="FUPlugin_8h_source.html">FUPlugin.h</a>. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual uint32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a2fb1d4d2d6d862e023d8510ea404bd60">GetPluginVersion</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the version of the plug-in.  <a href="#a2fb1d4d2d6d862e023d8510ea404bd60"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a31a7807261de79f1f8b9e539e7dff0ea">Import</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *theDocument, xmlNode *colladaNode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Imports the parsed xml data into the <a class="el" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>.  <a href="#a31a7807261de79f1f8b9e539e7dff0ea"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a924a76fcef59b49c82ce323badbcc469">ExportDocument</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *theDocument, xmlNode *colladaNode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Export the existing FCOLLADA document to the given xml node.  <a href="#a924a76fcef59b49c82ce323badbcc469"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a9058483d29253567c3bbaa9e557e38b1">Initialize</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#ad9be9f3803f77996d7b155f2110a7105">ClearIntermediateData</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initializes the plug-in.  <a href="#a9058483d29253567c3bbaa9e557e38b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9be9f3803f77996d7b155f2110a7105"></a><!-- doxytag: member="FArchiveXML::ClearIntermediateData" ref="ad9be9f3803f77996d7b155f2110a7105" args="()" -->
+static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#ad9be9f3803f77996d7b155f2110a7105">ClearIntermediateData</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clears intermediate data used in 2nd pass of the loading/writing process. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a6cc3fc2e4e1415c3c411a38f978c77ae">LoadSwitch</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, const <a class="el" href="classFUObjectType.html">FUObjectType</a> *objectType, xmlNode *node)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Takes care of calling the right function to load the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a>.  <a href="#a6cc3fc2e4e1415c3c411a38f978c77ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static xmlNode *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#aaf83155ae7183ba1b4b485fdd239c483">WriteSwitch</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, const <a class="el" href="classFUObjectType.html">FUObjectType</a> *objectType, xmlNode *parentNode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Takes care of calling the right function to export the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a>.  <a href="#aaf83155ae7183ba1b4b485fdd239c483"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static xmlNode *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a2b455f62993fdcc77200439fb917748e">WriteParentSwitch</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, const <a class="el" href="classFUObjectType.html">FUObjectType</a> *objectType, xmlNode *parentNode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a262d6014344ef77f716e08e4149d4c16">LoadObject</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, xmlNode *node)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Takes care of calling the right function to export the parent class information.  <a href="#a2b455f62993fdcc77200439fb917748e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a262d6014344ef77f716e08e4149d4c16"></a><!-- doxytag: member="FArchiveXML::LoadObject" ref="a262d6014344ef77f716e08e4149d4c16" args="(FCDObject *object, xmlNode *node)" -->
+static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#a262d6014344ef77f716e08e4149d4c16">LoadObject</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, xmlNode *node)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Functions to load FCOLLADA objects. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b7970ad7bb676ad4589adc156d0f49c"></a><!-- doxytag: member="FArchiveXML::LoadExtra" ref="a1b7970ad7bb676ad4589adc156d0f49c" args="(FCDObject *object, xmlNode *node)" -->
 static bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>LoadExtra</b> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, xmlNode *node)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a535909ab9a6ad15b14db6a0496d505e6"></a><!-- doxytag: member="FArchiveXML::LoadExtraNode" ref="a535909ab9a6ad15b14db6a0496d505e6" args="(FCDObject *object, xmlNode *node)" -->
@@ -401,7 +431,9 @@ static bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>LinkSkinContro
 static bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>LinkMorphController</b> (<a class="el" href="classFCDMorphController.html">FCDMorphController</a> *morphController)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a888d8c4cf531152d2f919bfdc67a4bc7"></a><!-- doxytag: member="FArchiveXML::LinkGeometryMesh" ref="a888d8c4cf531152d2f919bfdc67a4bc7" args="(FCDGeometryMesh *geometryMesh)" -->
 static bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>LinkGeometryMesh</b> (<a class="el" href="classFCDGeometryMesh.html">FCDGeometryMesh</a> *geometryMesh)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static xmlNode *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#aa13b1e22f3b07d1323b3961d3e6b4ada">WriteObject</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, xmlNode *parentNode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa13b1e22f3b07d1323b3961d3e6b4ada"></a><!-- doxytag: member="FArchiveXML::WriteObject" ref="aa13b1e22f3b07d1323b3961d3e6b4ada" args="(FCDObject *object, xmlNode *parentNode)" -->
+static xmlNode *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFArchiveXML.html#aa13b1e22f3b07d1323b3961d3e6b4ada">WriteObject</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, xmlNode *parentNode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Functions to export FCOLLADA objects. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79f1ae05b3aea45004211bd02a093966"></a><!-- doxytag: member="FArchiveXML::WriteExtraNode" ref="a79f1ae05b3aea45004211bd02a093966" args="(FCDObject *object, xmlNode *parentNode)" -->
 static xmlNode *&nbsp;</td><td class="memItemRight" valign="bottom"><b>WriteExtraNode</b> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, xmlNode *parentNode)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ec98e3e1b99d04e2e4def4817184426"></a><!-- doxytag: member="FArchiveXML::WriteExtra" ref="a4ec98e3e1b99d04e2e4def4817184426" args="(FCDObject *object, xmlNode *parentNode)" -->
@@ -643,6 +675,7 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds an extra extension to the list of supported extension by this plugin. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -653,24 +686,6 @@ template&lt;class T &gt; </td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the extension was added. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCPArchive.html#a94f402ab481e8ac8934de6869ea03902">FCPArchive</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad9be9f3803f77996d7b155f2110a7105"></a><!-- doxytag: member="FArchiveXML::ClearIntermediateData" ref="ad9be9f3803f77996d7b155f2110a7105" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FArchiveXML::ClearIntermediateData </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Clears intermediate data used in 2nd pass of the loading/writing process </p>
 
 </div>
 </div>
@@ -689,7 +704,9 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>End the export of the current document started by 'StartExport()'. Only valid if 'IsPartlyExportSupported()' returns 'true'. This function will release any resources associated with the export. </p>
+
+<p>End the export of the current document started by 'StartExport()'. </p>
+<p>Only valid if 'IsPartlyExportSupported()' returns 'true'. This function will release any resources associated with the export. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>outData</em>&nbsp;</td><td>[out] Void pointer to recieve a pointer to the memory chunk to write </td></tr>
@@ -717,7 +734,9 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>End the export of the current document started by 'StartExport()'. Only valid if 'IsPartlyExportSupported()' returns 'true'. This function will release any resources associated with the export. </p>
+
+<p>End the export of the current document started by 'StartExport()'. </p>
+<p>Only valid if 'IsPartlyExportSupported()' returns 'true'. This function will release any resources associated with the export. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>filePath</em>&nbsp;</td><td>A full file path specifying the location to write the currently exported document too. </td></tr>
@@ -754,6 +773,7 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Export the existing FCOLLADA document to the given xml node. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -790,7 +810,8 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Export a file from <a class="el" href="namespaceFCollada.html">FCollada</a>. </p>
+
+<p>Export a file from <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>a document to be be exported. </td></tr>
@@ -819,37 +840,19 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Export one object in <a class="el" href="namespaceFCollada.html">FCollada</a>. Only valid if 'IsPartlyExportSupported()' returns 'true'. </p>
+
+<p>Export one object in <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>. </p>
+<p>Only valid if 'IsPartlyExportSupported()' returns 'true'. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>the <a class="el" href="classFCDocument.html">FCDocument</a> that contains the object to be exported. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>the <a class="el" href="classFCDObject.html">FCDObject</a> to be exported to the file specified in 'StartExport()' </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>the <a class="el" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a> that contains the object to be exported. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> to be exported to the file specified in 'StartExport()' </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the given object is successfully exported. </dd></dl>
 
 <p>Implements <a class="el" href="classFCPArchive.html#af61f5a312713e2d3103bc803bf1df5ac">FCPArchive</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abd9ac092eff78dbc8f8249fa402fe644"></a><!-- doxytag: member="FArchiveXML::GetPluginName" ref="abd9ac092eff78dbc8f8249fa402fe644" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* FArchiveXML::GetPluginName </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td> const<code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>See <a class="el" href="FUPlugin_8h_source.html">FUPlugin.h</a> </p>
-
-<p>Implements <a class="el" href="classFUPlugin.html#a18b5c936391bcc0e44c9d0552ea5f99f">FUPlugin</a>.</p>
 
 </div>
 </div>
@@ -867,7 +870,9 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the version of the plug-in. For now, no version string formatting is suggested for this integer. It is unused and exists for future expansion only. </p>
+
+<p>Retrieves the version of the plug-in. </p>
+<p>For now, no version string formatting is suggested for this integer. It is unused and exists for future expansion only. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The version number of the plug-in. </dd></dl>
 
 <p>Implements <a class="el" href="classFUPlugin.html#a65f40e837051a381b3922a0db8f871f7">FUPlugin</a>.</p>
@@ -889,10 +894,11 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieve one supported extension. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>the index at which the extension is to be retrieved. Ideally to be less then that returned by <a class="el" href="classFArchiveXML.html#a0547ef1565f6543319b9aaad3eca8697">GetSupportedExtensionsCount()</a>. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>the index at which the extension is to be retrieved. Ideally to be less then that returned by <a class="el" href="classFArchiveXML.html#a0547ef1565f6543319b9aaad3eca8697" title="Determine the number of file extension this plug-in supports.">GetSupportedExtensionsCount()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -916,7 +922,8 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Determine the number of file extension this plug-in supports </p>
+
+<p>Determine the number of file extension this plug-in supports. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>number of supported file extensions. </dd></dl>
 
 <p>Implements <a class="el" href="classFCPArchive.html#a20d84d32ee7f7fd24f1e5a2bfa18c641">FCPArchive</a>.</p>
@@ -947,10 +954,11 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Imports the parsed xml data into the <a class="el" href="classFCDocument.html">FCDocument</a>. </p>
+
+<p>Imports the parsed xml data into the <a class="el" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>theDocument</em>&nbsp;</td><td>the <a class="el" href="classFCDocument.html">FCDocument</a> to be filled with imported data. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>theDocument</em>&nbsp;</td><td>the <a class="el" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a> to be filled with imported data. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>colladaNode</em>&nbsp;</td><td>the xmlNode containing the parsed data. </td></tr>
   </table>
   </dd>
@@ -983,7 +991,8 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Import a file into <a class="el" href="namespaceFCollada.html">FCollada</a>. </p>
+
+<p>Import a file into <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>filePath</em>&nbsp;</td><td>full file path to the file to be imported. </td></tr>
@@ -1033,7 +1042,9 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Import a file from the given memory address. It is the plugin managers duty to ensure that the appropriate plugin is selected based on the content of this memory address. </p>
+
+<p>Import a file from the given memory address. </p>
+<p>It is the plugin managers duty to ensure that the appropriate plugin is selected based on the content of this memory address. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>An empty document to load imported content into. </td></tr>
@@ -1072,7 +1083,9 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Load the save data onto an object. This allows for loads of partial documents </p>
+
+<p>Load the save data onto an object. </p>
+<p>This allows for loads of partial documents </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>The object to recieve the loaded data </td></tr>
@@ -1100,7 +1113,9 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Initializes the plug-in. Add function pointers into the map. </p>
+
+<p>Initializes the plug-in. </p>
+<p>Add function pointers into the map. </p>
 
 </div>
 </div>
@@ -1118,7 +1133,8 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Determine if this plug-in supports export from <a class="el" href="namespaceFCollada.html">FCollada</a>. </p>
+
+<p>Determine if this plug-in supports export from <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this plug-in supports export. </dd></dl>
 
 <p>Implements <a class="el" href="classFCPArchive.html#aa05c42f9060a8e15e49b49444475e4fd">FCPArchive</a>.</p>
@@ -1140,6 +1156,7 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Determine if this plug-in supports the given file extension. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1150,26 +1167,6 @@ template&lt;class T &gt; </td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>'true' if the given file extension is supported by this plug-in. </dd></dl>
 
 <p>Implements <a class="el" href="classFCPArchive.html#aaab914c16d1f875202a345655de3da56">FCPArchive</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afaeaeb4ee3cd75bac1ad6a4c54c9b899"></a><!-- doxytag: member="FArchiveXML::IsImportSupported" ref="afaeaeb4ee3cd75bac1ad6a4c54c9b899" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool FArchiveXML::IsImportSupported </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>See <a class="el" href="FColladaPlugin_8h.html">FColladaPlugin.h</a> </p>
-
-<p>Implements <a class="el" href="classFCPArchive.html#aa0b2959b608384df6886b4aa7ee86986">FCPArchive</a>.</p>
 
 </div>
 </div>
@@ -1187,38 +1184,11 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Determine if this plug-in supports exporting part of the <a class="el" href="namespaceFCollada.html">FCollada</a> assets. </p>
+
+<p>Determine if this plug-in supports exporting part of the <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> assets. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether partial export is supported. </dd></dl>
 
 <p>Implements <a class="el" href="classFCPArchive.html#ac8098f0eee6da0e452e005993a994a34">FCPArchive</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a262d6014344ef77f716e08e4149d4c16"></a><!-- doxytag: member="FArchiveXML::LoadObject" ref="a262d6014344ef77f716e08e4149d4c16" args="(FCDObject *object, xmlNode *node)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool FArchiveXML::LoadObject </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classFCDObject.html">FCDObject</a> *&nbsp;</td>
-          <td class="paramname"> <em>object</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">xmlNode *&nbsp;</td>
-          <td class="paramname"> <em>node</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Functions to load FCOLLADA objects </p>
 
 </div>
 </div>
@@ -1252,10 +1222,11 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Takes care of calling the right function to load the <a class="el" href="classFCDObject.html">FCDObject</a> </p>
+
+<p>Takes care of calling the right function to load the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>The base <a class="el" href="classFCDObject.html">FCDObject</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>The base <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>objectType</em>&nbsp;</td><td>The correponding loading function will be called. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>node</em>&nbsp;</td><td>the xmlNode </td></tr>
   </table>
@@ -1280,6 +1251,7 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes an extension that has previously been added to the extra extension list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1308,7 +1280,9 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Start exporting parts of the <a class="el" href="namespaceFCollada.html">FCollada</a> assets. Only valid if 'IsPartlyExportSupported()' returns 'true'. </p>
+
+<p>Start exporting parts of the <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> assets. </p>
+<p>Only valid if 'IsPartlyExportSupported()' returns 'true'. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>filePath</em>&nbsp;</td><td>A full file path specifying the location of the target path This is in order to process relative file paths correctly. If this parameter is NULL then all paths will be exported absolutely. </td></tr>
@@ -1318,34 +1292,6 @@ template&lt;class T &gt; </td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the operation succeeded. </dd></dl>
 
 <p>Implements <a class="el" href="classFCPArchive.html#a7d142d1ca5e47da608eb3257ae3f36ab">FCPArchive</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa13b1e22f3b07d1323b3961d3e6b4ada"></a><!-- doxytag: member="FArchiveXML::WriteObject" ref="aa13b1e22f3b07d1323b3961d3e6b4ada" args="(FCDObject *object, xmlNode *parentNode)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static xmlNode* FArchiveXML::WriteObject </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classFCDObject.html">FCDObject</a> *&nbsp;</td>
-          <td class="paramname"> <em>object</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">xmlNode *&nbsp;</td>
-          <td class="paramname"> <em>parentNode</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Functions to export FCOLLADA objects </p>
 
 </div>
 </div>
@@ -1379,10 +1325,11 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Takes care of calling the right function to export the parent class information </p>
+
+<p>Takes care of calling the right function to export the parent class information. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>the base <a class="el" href="classFCDObject.html">FCDObject</a> whose parent information is to be exported. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>the base <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> whose parent information is to be exported. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>objectType</em>&nbsp;</td><td>The correponding exporting function will be called for the parent of 'objectType'. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>parentNode</em>&nbsp;</td><td>the parent xmlNode </td></tr>
   </table>
@@ -1422,10 +1369,11 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Takes care of calling the right function to export the <a class="el" href="classFCDObject.html">FCDObject</a> </p>
+
+<p>Takes care of calling the right function to export the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>The base <a class="el" href="classFCDObject.html">FCDObject</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>The base <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>objectType</em>&nbsp;</td><td>The correponding exporting function will be called. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>parentNode</em>&nbsp;</td><td>the parent xmlNode </td></tr>
   </table>
@@ -1479,7 +1427,7 @@ template&lt;class T &gt; </td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:22 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

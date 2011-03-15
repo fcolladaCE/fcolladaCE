@@ -63,24 +63,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FU_UNIQUE_ID_MAP_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
 <a name="l00024"></a>00024 <span class="keyword">template</span> &lt;<span class="keyword">class</span> CH&gt;
-<a name="l00025"></a><a class="code" href="classFUUniqueStringMapT.html">00025</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUUniqueStringMapT.html">FUUniqueStringMapT</a>
+<a name="l00025"></a><a class="code" href="classFUUniqueStringMapT.html">00025</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUUniqueStringMapT.html" title="A set of unique strings.">FUUniqueStringMapT</a>
 <a name="l00026"></a>00026 {
 <a name="l00027"></a>00027 <span class="keyword">private</span>:
-<a name="l00028"></a>00028         <span class="keyword">typedef</span> <a class="code" href="classfm_1_1map.html">fm::map&lt;uint32, uint32&gt;</a> <a class="code" href="classfm_1_1map.html">NumberMap</a>; <span class="comment">// This is really a set and the second uint32 is not used.</span>
-<a name="l00029"></a>00029         <span class="keyword">typedef</span> <a class="code" href="classfm_1_1map.html">fm::map&lt;fm::stringT&lt;CH&gt;</a>, <a class="code" href="classfm_1_1map.html">NumberMap</a>&gt; <a class="code" href="classfm_1_1map.html">StringMap</a>;
+<a name="l00028"></a>00028         <span class="keyword">typedef</span> <a class="code" href="classfm_1_1map.html" title="A STL map.">fm::map&lt;uint32, uint32&gt;</a> <a class="code" href="classfm_1_1map.html" title="A STL map.">NumberMap</a>; <span class="comment">// This is really a set and the second uint32 is not used.</span>
+<a name="l00029"></a>00029         <span class="keyword">typedef</span> <a class="code" href="classfm_1_1map.html" title="A STL map.">fm::map&lt;fm::stringT&lt;CH&gt;</a>, <a class="code" href="classfm_1_1map.html" title="A STL map.">NumberMap</a>&gt; <a class="code" href="classfm_1_1map.html">StringMap</a>;
 <a name="l00030"></a>00030 
 <a name="l00031"></a>00031         <a class="code" href="classfm_1_1map.html">StringMap</a> values;
 <a name="l00032"></a>00032 
 <a name="l00033"></a>00033 <span class="keyword">public</span>:
-<a name="l00038"></a>00038         <span class="keywordtype">void</span> insert(<a class="code" href="classfm_1_1stringT.html">fm::stringT&lt;CH&gt;</a>&amp; wantedStr);
-<a name="l00039"></a><a class="code" href="classFUUniqueStringMapT.html#ab68661fbfa6c780112fb8c621bf57187">00039</a>         <span class="keywordtype">void</span> <a class="code" href="classFUUniqueStringMapT.html#ab68661fbfa6c780112fb8c621bf57187">insert</a>(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fm::stringT&lt;CH&gt;</a>&amp; wantedStr) { <a class="code" href="classfm_1_1stringT.html">fm::stringT&lt;CH&gt;</a> a = wantedStr; <a class="code" href="classFUUniqueStringMapT.html#ab68661fbfa6c780112fb8c621bf57187">insert</a>(a); } 
-<a name="l00043"></a>00043         <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fm::stringT&lt;CH&gt;</a>&amp; str) <span class="keyword">const</span>;
+<a name="l00038"></a>00038         <span class="keywordtype">void</span> insert(<a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::stringT&lt;CH&gt;</a>&amp; wantedStr);
+<a name="l00039"></a><a class="code" href="classFUUniqueStringMapT.html#ab68661fbfa6c780112fb8c621bf57187">00039</a>         <span class="keywordtype">void</span> <a class="code" href="classFUUniqueStringMapT.html#ab68661fbfa6c780112fb8c621bf57187" title="See above.">insert</a>(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::stringT&lt;CH&gt;</a>&amp; wantedStr) { <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::stringT&lt;CH&gt;</a> a = wantedStr; <a class="code" href="classFUUniqueStringMapT.html#ab68661fbfa6c780112fb8c621bf57187" title="See above.">insert</a>(a); } 
+<a name="l00043"></a>00043         <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::stringT&lt;CH&gt;</a>&amp; str) <span class="keyword">const</span>;
 <a name="l00044"></a>00044 
-<a name="l00047"></a>00047         <span class="keywordtype">void</span> erase(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fm::stringT&lt;CH&gt;</a>&amp; str);
+<a name="l00047"></a>00047         <span class="keywordtype">void</span> erase(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::stringT&lt;CH&gt;</a>&amp; str);
 <a name="l00048"></a>00048 };
 <a name="l00049"></a>00049 
-<a name="l00050"></a><a class="code" href="FUUniqueStringMap_8h.html#a4d69340d32347e71e3509cd6a18bf9c3">00050</a> <span class="keyword">typedef</span> <a class="code" href="classFUUniqueStringMapT.html">FUUniqueStringMapT&lt;char&gt;</a> <a class="code" href="classFUUniqueStringMapT.html">FUSUniqueStringMap</a>; 
-<a name="l00051"></a><a class="code" href="FUUniqueStringMap_8h.html#a3ee2c58e5a80a8c3e9d1e0350416ab98">00051</a> <span class="keyword">typedef</span> <a class="code" href="classFUUniqueStringMapT.html">FUUniqueStringMapT&lt;fchar&gt;</a> <a class="code" href="classFUUniqueStringMapT.html">FUUniqueStringMap</a>; 
+<a name="l00050"></a><a class="code" href="FUUniqueStringMap_8h.html#a4d69340d32347e71e3509cd6a18bf9c3">00050</a> <span class="keyword">typedef</span> <a class="code" href="classFUUniqueStringMapT.html" title="A set of unique strings.">FUUniqueStringMapT&lt;char&gt;</a> <a class="code" href="classFUUniqueStringMapT.html" title="A set of unique strings.">FUSUniqueStringMap</a>; 
+<a name="l00051"></a><a class="code" href="FUUniqueStringMap_8h.html#a3ee2c58e5a80a8c3e9d1e0350416ab98">00051</a> <span class="keyword">typedef</span> <a class="code" href="classFUUniqueStringMapT.html" title="A set of unique strings.">FUUniqueStringMapT&lt;fchar&gt;</a> <a class="code" href="classFUUniqueStringMapT.html" title="A set of unique strings.">FUUniqueStringMap</a>; 
 <a name="l00053"></a>00053 <span class="preprocessor">#endif // _FU_UNIQUE_ID_MAP_H_</span>
 <a name="l00054"></a>00054 <span class="preprocessor"></span>
 </pre></div></div>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -60,105 +60,162 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUStringConversion" -->
+<p>Common string conversion.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUStringConversion_8h_source.html">FUStringConversion.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#abb4a873a6310c34c4c951622c84f72ef">ToFString</a> (const char *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a 8-bit string to a Unicode string.  <a href="#abb4a873a6310c34c4c951622c84f72ef"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#afba6f0ac783c8911b0a1d5e2713b8c01">ToFString</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#afba6f0ac783c8911b0a1d5e2713b8c01"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a46a6ea46b0ef1785aa99be67ddc680a6">ToString</a> (const fchar *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts an Unicode string to a 8-bit string.  <a href="#a46a6ea46b0ef1785aa99be67ddc680a6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a102f4876c446b316bcca24cba4d5d144">ToString</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a102f4876c446b316bcca24cba4d5d144"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a7d2dcd2a9d5c98f16e463132f7939994">ToBoolean</a> (const CH *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses a string into a boolean value.  <a href="#a7d2dcd2a9d5c98f16e463132f7939994"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a6b427938c96f5738d3f1ed3a8316a28f">ToBoolean</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6b427938c96f5738d3f1ed3a8316a28f"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT float&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a0a5ae1faadc37e1cc045b51a38ee986f">ToFloat</a> (const CH **value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses a string into a floating-point value.  <a href="#a0a5ae1faadc37e1cc045b51a38ee986f"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static float&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#abce4d1bee0fd3cf53b814b1b260b3869">ToFloat</a> (const CH *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#abce4d1bee0fd3cf53b814b1b260b3869"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static float&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a750201ba66bad5d18711ae4e7106c691">ToFloat</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a750201ba66bad5d18711ae4e7106c691"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT int32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#acef590bfdb61bd397431c51d515c0abf">ToInt32</a> (const CH **value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses a string into a signed integer.  <a href="#acef590bfdb61bd397431c51d515c0abf"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static int32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a73763bd2189fba6bb2f2d54161da00dd">ToInt32</a> (const CH *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a73763bd2189fba6bb2f2d54161da00dd"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static int32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a7fd4003320bb13d25c462fb20a17cbc5">ToInt32</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7fd4003320bb13d25c462fb20a17cbc5"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT uint32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a6eacc9081229081a1fa9e6c8219f2038">ToUInt32</a> (const CH **value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses a string into an unsigned integer.  <a href="#a6eacc9081229081a1fa9e6c8219f2038"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static uint32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#adbc460d4d30403df53b6aaf35e93d9e6">ToUInt32</a> (const CH *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#adbc460d4d30403df53b6aaf35e93d9e6"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static uint32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a5812e8b18cc206cc046fbbcbc9a6127a">ToUInt32</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5812e8b18cc206cc046fbbcbc9a6127a"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT uint32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a0f3f1914975508a0a728bfa6c07e8698">HexToUInt32</a> (const CH **value, uint32 count=UINT_MAX)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses a string into an unsigned integer.  <a href="#a0f3f1914975508a0a728bfa6c07e8698"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static uint32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a02f7da510cafc9a70fe4b89610962fb7">HexToUInt32</a> (const CH *value, uint32 count=UINT_MAX)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a02f7da510cafc9a70fe4b89610962fb7"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static uint32&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#ae05ad2a0f6de28e7c87b1e12f0c3f67e">HexToUInt32</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value, uint32 count=UINT_MAX)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae05ad2a0f6de28e7c87b1e12f0c3f67e"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT <a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#aadd5c84e8c1f0448308f5920884908a9">ToVector2</a> (const CH **value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses a string into a vector.  <a href="#aadd5c84e8c1f0448308f5920884908a9"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a9b0ffddf8953b42852539eaf6354df68">ToVector2</a> (const CH *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a9b0ffddf8953b42852539eaf6354df68"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#abb2b490d8a4a8f5b87003d67f64a37c2">ToVector2</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#abb2b490d8a4a8f5b87003d67f64a37c2"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a56ca60a515246656c1a057f58c2b9d43">ToVector3</a> (const CH **value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a56ca60a515246656c1a057f58c2b9d43"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a2ff559e08b0fe2b0191140af08549103">ToVector3</a> (const CH *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2ff559e08b0fe2b0191140af08549103"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a1fa4938bdc049c285d57a6c62db87146">ToVector3</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1fa4938bdc049c285d57a6c62db87146"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT <a class="el" href="classFMVector4.html">FMVector4</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a4df7227423ebe89c7d00d1e596307a40">ToVector4</a> (const CH **value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a4df7227423ebe89c7d00d1e596307a40"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classFMVector4.html">FMVector4</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a26bb83d87353c91548c24d252af9d3ba">ToVector4</a> (const CH *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a26bb83d87353c91548c24d252af9d3ba"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classFMVector4.html">FMVector4</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#aad2377404f9135e7e1ab29f9a98fdfab">ToVector4</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aad2377404f9135e7e1ab29f9a98fdfab"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#ae6b19cb770170c7e839f98b010c8e299">ToMatrix</a> (const CH **value, <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses a string into a 4x4 matrix.  <a href="#ae6b19cb770170c7e839f98b010c8e299"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a1781605163296a942e849c1667d8f2b3">ToMatrix</a> (const CH *value, <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1781605163296a942e849c1667d8f2b3"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a47e56e394b839262be7915047c2312a7">ToMatrix</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value, <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;mx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a47e56e394b839262be7915047c2312a7"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classFMMatrix44.html">FMMatrix44</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a6534645db166f469b151a6286c0cc794">ToMatrix</a> (const CH *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6534645db166f469b151a6286c0cc794"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classFMMatrix44.html">FMMatrix44</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#ab8e1f155e32fdb38ead8a90673f8c240">ToMatrix</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab8e1f155e32fdb38ead8a90673f8c240"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a4056703abb671eccd31889c01a0076a3">ToDateTime</a> (const CH *value, <a class="el" href="classFUDateTime.html">FUDateTime</a> &amp;dateTime)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses a string into a datetime structure.  <a href="#a4056703abb671eccd31889c01a0076a3"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a17acdbcf1a2a31fbfbba3b70f5647683">ToDateTime</a> (const <a class="el" href="classfm_1_1stringT.html">fm::stringT</a>&lt; CH &gt; &amp;value, <a class="el" href="classFUDateTime.html">FUDateTime</a> &amp;dateTime)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a17acdbcf1a2a31fbfbba3b70f5647683"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#adc2cc6880b4d107663bb527b7450bcfe">ToString</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;p)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a 4D vector into a string.  <a href="#adc2cc6880b4d107663bb527b7450bcfe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a42c0032f42d44dd4afa49818d2baa38a">ToFString</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;p)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a42c0032f42d44dd4afa49818d2baa38a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a1e32d9e1992b451555aedcf0e851cfe4">ToString</a> (const <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a matrix into a string.  <a href="#a1e32d9e1992b451555aedcf0e851cfe4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#ac987762cbe50eb173b9d9580bcafbff4">ToFString</a> (const <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac987762cbe50eb173b9d9580bcafbff4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#aea5310d3597f1a39097707c051a7a85d">ToString</a> (const <a class="el" href="classFMVector2.html">FMVector2</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a 2D vector into a string.  <a href="#aea5310d3597f1a39097707c051a7a85d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a403c2c0111bde04cb202cccdee6eba86">ToFString</a> (const <a class="el" href="classFMVector2.html">FMVector2</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a403c2c0111bde04cb202cccdee6eba86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a3cdd351c2e7ffcf919f6790c35c0004c">ToString</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a 3D vector into a string.  <a href="#a3cdd351c2e7ffcf919f6790c35c0004c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#aefeb37f92cf554c9a9baf72ab0b0b53b">ToFString</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aefeb37f92cf554c9a9baf72ab0b0b53b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a8bd72664eec1369a949c808d52653c7e">ToString</a> (const <a class="el" href="classFUDateTime.html">FUDateTime</a> &amp;dateTime)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a datetime structure into a string.  <a href="#a8bd72664eec1369a949c808d52653c7e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#adc193933dbd4b733c5990fed111dad7c">ToFString</a> (const <a class="el" href="classFUDateTime.html">FUDateTime</a> &amp;dateTime)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#adc193933dbd4b733c5990fed111dad7c"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a63ec0cfa64af9070fa276467d26c530f">ToString</a> (const T &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a primitive value into a string.  <a href="#a63ec0cfa64af9070fa276467d26c530f"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a1bd49c484ca970133abc02f709dce370">ToFString</a> (const T &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1bd49c484ca970133abc02f709dce370"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a685d6e6520cbbdfe81007081c321cefc">ToString</a> (<a class="el" href="classFUStringBuilderT.html">FUStringBuilderT</a>&lt; CH &gt; &amp;builder, const <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a matrix into a string.  <a href="#a685d6e6520cbbdfe81007081c321cefc"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a90e73cb77a987ef8f5d1801c172dd2f1">ToString</a> (<a class="el" href="classFUStringBuilderT.html">FUStringBuilderT</a>&lt; CH &gt; &amp;builder, const <a class="el" href="classFMVector2.html">FMVector2</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a 2D vector into a string.  <a href="#a90e73cb77a987ef8f5d1801c172dd2f1"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#ad3ff2dd7156706f2ea5234e8cb39159f">ToString</a> (<a class="el" href="classFUStringBuilderT.html">FUStringBuilderT</a>&lt; CH &gt; &amp;builder, const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a 3D vector into a string.  <a href="#ad3ff2dd7156706f2ea5234e8cb39159f"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a1d515b61aaba6faca60a0fedba79577f">ToString</a> (<a class="el" href="classFUStringBuilderT.html">FUStringBuilderT</a>&lt; CH &gt; &amp;builder, const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;p)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a195e93613a60b418fa171974ea9c0fc4">SplitTarget</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;target, <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;pointer, <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;qualifier)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a 4D vector into a string.  <a href="#a1d515b61aaba6faca60a0fedba79577f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a195e93613a60b418fa171974ea9c0fc4"></a><!-- doxytag: member="FUStringConversion::SplitTarget" ref="a195e93613a60b418fa171974ea9c0fc4" args="(const fm::string &amp;target, fm::string &amp;pointer, fm::string &amp;qualifier)" -->
+static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#a195e93613a60b418fa171974ea9c0fc4">SplitTarget</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;target, <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;pointer, <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;qualifier)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Split the target string into its pointer and its qualifier(s) Used by the animation system to split to find the animation targets. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#ab230670eecc946527cc91dd5fc13c5d5">ParseQualifier</a> (const char *string)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parses the input string for a qualifier for the animation system.  <a href="#ab230670eecc946527cc91dd5fc13c5d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6c8bf603387a4ac84c3efdb2c14823b"></a><!-- doxytag: member="FUStringConversion::ParseQualifier" ref="ac6c8bf603387a4ac84c3efdb2c14823b" args="(const fm::string &amp;string)" -->
 static int32&nbsp;</td><td class="memItemRight" valign="bottom"><b>ParseQualifier</b> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;string)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class CH &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static FCOLLADA_EXPORT size_t&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUStringConversion.html#ae295e9b2b98a9980aca89e8f0b7d922c">CountValues</a> (const CH *sz)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Count the number of values to expect within this string.  <a href="#ae295e9b2b98a9980aca89e8f0b7d922c"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Common string conversion.</p>
+<p>Common string conversion. </p>
 <p>This static class contains the parsing function for Unicode and 8-bit/UTF-8 fm::strings into common data types: integers, booleans, floating-point values, vectors, matrices, date-time, etc. and dynamically-sized array of these types.</p>
 <p>This class can also convert common data types into an 8-bit or a Unicode string and it contains conversion functions to convert string between 8-bit and Unicode.</p>
 <p>All the functions which return string objects are returning static string objects in order for DLLs to work correctly with non-local heaps. If you are interested in the value of the conversion: save it into a local string object. </p>
@@ -180,7 +237,9 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Count the number of values to expect within this string. This function assumes that the tokens are separated by white spaces. This function is useful to pre-allocate value arrays. </p>
+
+<p>Count the number of values to expect within this string. </p>
+<p>This function assumes that the tokens are separated by white spaces. This function is useful to pre-allocate value arrays. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>sz</em>&nbsp;</td><td>The string whose values to count. </td></tr>
@@ -217,6 +276,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -247,6 +307,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -277,7 +338,9 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Parses a string into an unsigned integer. The string is assumed to have an unsigned integer in hexadecimal format. </p>
+
+<p>Parses a string into an unsigned integer. </p>
+<p>The string is assumed to have an unsigned integer in hexadecimal format. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>The string. For the string pointer versions of this function, the pointer will point to the last processed characters after the parsing. </td></tr>
@@ -304,7 +367,9 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Parses the input string for a qualifier for the animation system. Basically extracts a number from either [XX] or (XX) </p>
+
+<p>Parses the input string for a qualifier for the animation system. </p>
+<p>Basically extracts a number from either [XX] or (XX) </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>The input string to parse the number from </td></tr>
@@ -312,40 +377,6 @@ template&lt;class CH &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The qualifier if found, -1 if not. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a195e93613a60b418fa171974ea9c0fc4"></a><!-- doxytag: member="FUStringConversion::SplitTarget" ref="a195e93613a60b418fa171974ea9c0fc4" args="(const fm::string &amp;target, fm::string &amp;pointer, fm::string &amp;qualifier)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FUStringConversion::SplitTarget </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td>
-          <td class="paramname"> <em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td>
-          <td class="paramname"> <em>pointer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td>
-          <td class="paramname"> <em>qualifier</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Split the target string into its pointer and its qualifier(s) Used by the animation system to split to find the animation targets </p>
 
 </div>
 </div>
@@ -366,6 +397,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Parses a string into a boolean value. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -394,6 +426,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -424,6 +457,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Parses a string into a datetime structure. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -461,6 +495,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -482,6 +517,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -503,6 +539,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -524,6 +561,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Parses a string into a floating-point value. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -550,6 +588,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a 8-bit string to a Unicode string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -576,6 +615,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -595,6 +635,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -614,6 +655,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -633,6 +675,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -652,6 +695,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -671,6 +715,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -692,6 +737,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -713,6 +759,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Parses a string into a signed integer. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -741,6 +788,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -762,6 +810,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -783,6 +832,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -804,6 +854,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -834,6 +885,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Parses a string into a 4x4 matrix. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -871,6 +923,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -901,6 +954,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -922,8 +976,10 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Converts a primitive value into a string. This function is templatized to use the global string builders to convert most primitive value types, such as signed integers, unsigned integers and single floating-point values, into strings. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFUStringBuilderT.html">FUStringBuilderT</a> </dd></dl>
+
+<p>Converts a primitive value into a string. </p>
+<p>This function is templatized to use the global string builders to convert most primitive value types, such as signed integers, unsigned integers and single floating-point values, into strings. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a> </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>A primitive value. </td></tr>
@@ -949,6 +1005,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -968,6 +1025,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a 4D vector into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -994,6 +1052,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a 3D vector into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1020,6 +1079,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a matrix into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1046,6 +1106,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a datetime structure into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1072,6 +1133,7 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a 2D vector into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1109,6 +1171,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a 3D vector into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1146,6 +1209,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a 2D vector into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1172,6 +1236,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts an Unicode string to a 8-bit string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1209,6 +1274,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a 4D vector into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1246,6 +1312,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts a matrix into a string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1274,6 +1341,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1295,6 +1363,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Parses a string into an unsigned integer. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1323,6 +1392,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1344,6 +1414,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1365,6 +1436,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1386,6 +1458,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Parses a string into a vector. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1414,6 +1487,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1435,6 +1509,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1456,6 +1531,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1477,6 +1553,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1498,6 +1575,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1519,6 +1597,7 @@ template&lt;class CH &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1543,7 +1622,7 @@ template&lt;class CH &gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:58 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:25 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

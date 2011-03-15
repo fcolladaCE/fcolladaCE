@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDObjectWithId" --><!-- doxytag: inherits="FCDObject" -->
+<p>A basic COLLADA object which has a unique COLLADA id.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDObjectWithId_8h_source.html">FCDObjectWithId.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDObjectWithId:</div>
@@ -99,23 +102,35 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ff3e2284f4206c968668b93fbc6322b"></a><!-- doxytag: member="FCDObjectWithId::DeclareFlag" ref="a3ff3e2284f4206c968668b93fbc6322b" args="(DaeIdChanged, 1)" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>DeclareFlag</b> (DaeIdChanged, 1)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a8289e2d57d75f2302effb07b0aee47f8">DeclareFlagCount</a> (2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">5 flags are locally declared.  <a href="#a8289e2d57d75f2302effb07b0aee47f8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a985fbb2e196c9fab8cbc2832be31ebab">FCDObjectWithId</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, const char *baseId=&quot;ObjectWithID&quot;)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: sets the prefix COLLADA id to be used if no COLLADA id is provided.  <a href="#a985fbb2e196c9fab8cbc2832be31ebab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a497c84442d6b3b608f24e99a6f89f82e">~FCDObjectWithId</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a497c84442d6b3b608f24e99a6f89f82e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a6a166de3fb2c42cb165c385bbac6010a">GetDaeId</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the unique COLLADA id for this object.  <a href="#a6a166de3fb2c42cb165c385bbac6010a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a73e750bac4c1c2675b14ecc763c166e7">SetDaeId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;id)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the COLLADA id for this object.  <a href="#a73e750bac4c1c2675b14ecc763c166e7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a72e5e1e0f76d1516b833c854523508be">SetDaeId</a> (<a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;id)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the COLLADA id for this object.  <a href="#a72e5e1e0f76d1516b833c854523508be"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a1075bd8450623f83343ce6a698da06e1">RemoveDaeId</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Release the unique COLLADA id of an object.  <a href="#a1075bd8450623f83343ce6a698da06e1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#aea836eca56429cb5607903c2bf9ac111">Clone</a> (<a class="el" href="classFCDObjectWithId.html">FCDObjectWithId</a> *clone) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Clones the object.  <a href="#aea836eca56429cb5607903c2bf9ac111"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a1e96cc0d517ff2747ae1cee333098ff5">CleanId</a> (const char *id)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cleans up a given name into a valid COLLADA id.  <a href="#a1e96cc0d517ff2747ae1cee333098ff5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#acd7db6c71bf9bb396e1a5c751f1db0da">CleanId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;id)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#acd7db6c71bf9bb396e1a5c751f1db0da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#ae5ae1d23f25a57692524fbd36cf2caf4">CleanSubId</a> (const char *sid)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cleans up a given name into a valid COLLADA sub-id.  <a href="#ae5ae1d23f25a57692524fbd36cf2caf4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classfm_1_1stringT.html">fm::string</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDObjectWithId.html#a946857329e2db9a531a136784c870106">CleanSubId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;sid)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a946857329e2db9a531a136784c870106"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A basic COLLADA object which has a unique COLLADA id.</p>
-<p>Many COLLADA structures such as entities and sources need a unique COLLADA id. The COLLADA document contains a map of all the COLLADA ids known in its scope. The interface of the <a class="el" href="classFCDObjectWithId.html">FCDObjectWithId</a> class allows for the retrieval and the modification of the unique COLLADA id attached to these objects.</p>
+<p>A basic COLLADA object which has a unique COLLADA id. </p>
+<p>Many COLLADA structures such as entities and sources need a unique COLLADA id. The COLLADA document contains a map of all the COLLADA ids known in its scope. The interface of the <a class="el" href="classFCDObjectWithId.html" title="A basic COLLADA object which has a unique COLLADA id.">FCDObjectWithId</a> class allows for the retrieval and the modification of the unique COLLADA id attached to these objects.</p>
 <p>A unique COLLADA id is built, if none are provided, using the 'baseId' field of the constructor. A unique COLLADA id is generated only on demand. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a985fbb2e196c9fab8cbc2832be31ebab"></a><!-- doxytag: member="FCDObjectWithId::FCDObjectWithId" ref="a985fbb2e196c9fab8cbc2832be31ebab" args="(FCDocument *document, const char *baseId=&quot;ObjectWithID&quot;)" -->
@@ -142,6 +157,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor: sets the prefix COLLADA id to be used if no COLLADA id is provided. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -167,6 +183,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -187,7 +204,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Cleans up a given name into a valid COLLADA id. This function does no check for uniqueness. </p>
+
+<p>Cleans up a given name into a valid COLLADA id. </p>
+<p>This function does no check for uniqueness. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>A name. </td></tr>
@@ -213,6 +232,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -232,6 +252,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -251,7 +272,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Cleans up a given name into a valid COLLADA sub-id. This function does no check for uniqueness. Sub-ids support even less characters than ids. </p>
+
+<p>Cleans up a given name into a valid COLLADA sub-id. </p>
+<p>This function does no check for uniqueness. Sub-ids support even less characters than ids. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>sid</em>&nbsp;</td><td>A sub-id. </td></tr>
@@ -277,7 +300,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Clones the object. The unique COLLADA id will be copied over to the clone object. Use carefully: when a cloned object with an id is released, it does remove the unique COLLADA id from the unique name map. </p>
+
+<p>[INTERNAL] Clones the object. </p>
+<p>The unique COLLADA id will be copied over to the clone object. Use carefully: when a cloned object with an id is released, it does remove the unique COLLADA id from the unique name map. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The object clone. </td></tr>
@@ -302,6 +327,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>5 flags are locally declared. </p>
 
 <p>Reimplemented from <a class="el" href="classFCDObject.html#a829bea1d332894b2f803754b8832a818">FCDObject</a>.</p>
@@ -324,7 +350,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the unique COLLADA id for this object. If no unique COLLADA id has been previously generated or provided, this function has the side-effect of generating a unique COLLADA id. </p>
+
+<p>Retrieves the unique COLLADA id for this object. </p>
+<p>If no unique COLLADA id has been previously generated or provided, this function has the side-effect of generating a unique COLLADA id. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The unique COLLADA id. </dd></dl>
 
 </div>
@@ -343,7 +371,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Release the unique COLLADA id of an object. Use this function wisely, as it leaves the object id-less and without a way to automatically generate a COLLADA id. </p>
+
+<p>[INTERNAL] Release the unique COLLADA id of an object. </p>
+<p>Use this function wisely, as it leaves the object id-less and without a way to automatically generate a COLLADA id. </p>
 
 </div>
 </div>
@@ -362,7 +392,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the COLLADA id for this object. There is no guarantee that the given COLLADA id will be used, as it may not be unique. </p>
+
+<p>Sets the COLLADA id for this object. </p>
+<p>There is no guarantee that the given COLLADA id will be used, as it may not be unique. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>The wanted COLLADA id for this object. This COLLADA id does not need to be unique. If the COLLADA id is not unique, a new unique COLLADA id will be generated and this formal variable will be modified to contain the new COLLADA id. </td></tr>
@@ -387,7 +419,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the COLLADA id for this object. There is no guarantee that the given COLLADA id will be used, as it may not be unique. You can call the GetDaeId function after this call to retrieve the final, unique COLLADA id. </p>
+
+<p>Sets the COLLADA id for this object. </p>
+<p>There is no guarantee that the given COLLADA id will be used, as it may not be unique. You can call the GetDaeId function after this call to retrieve the final, unique COLLADA id. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>The wanted COLLADA id for this object. This COLLADA id does not need to be unique. If the COLLADA id is not unique, a new unique COLLADA id will be generated. </td></tr>
@@ -416,7 +450,7 @@ Static Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:41 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:20 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

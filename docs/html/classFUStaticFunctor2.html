@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUStaticFunctor2" --><!-- doxytag: inherits="IFunctor2" -->
+<p>A pseudo-functor with two arguments, specialized for static functions.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUFunctor_8h_source.html">FUFunctor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FUStaticFunctor2&lt; Arg1, Arg2, ReturnType &gt;:</div>
@@ -74,11 +77,17 @@ Inheritance diagram for FUStaticFunctor2&lt; Arg1, Arg2, ReturnType &gt;:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStaticFunctor2.html#adb36ce639cd96031681087b8fbb75857">FUStaticFunctor2</a> (ReturnType(*function)(Arg1, Arg2))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#adb36ce639cd96031681087b8fbb75857"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStaticFunctor2.html#a5cfbb75fe610473fe3574f784d5793f0">~FUStaticFunctor2</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a5cfbb75fe610473fe3574f784d5793f0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual ReturnType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStaticFunctor2.html#a8e81b2ae65b8b5afbdc8a88aa4d090ed">operator()</a> (Arg1 argument1, Arg2 argument2) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calls the functor.  <a href="#a8e81b2ae65b8b5afbdc8a88aa4d090ed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStaticFunctor2.html#a96c9d883005e43448a9557b55b56bb47">Compare</a> (void *UNUSED(object), void *function) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classIFunctor2.html">IFunctor2</a>&lt; Arg1, Arg2, <br class="typebreak"/>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Checks whether this pseudo-functor points towards the given function.  <a href="#a96c9d883005e43448a9557b55b56bb47"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e5af6761d3049fcf2b4e7b451c657d5"></a><!-- doxytag: member="FUStaticFunctor2::Copy" ref="a1e5af6761d3049fcf2b4e7b451c657d5" args="() const " -->
+virtual <a class="el" href="classIFunctor2.html">IFunctor2</a>&lt; Arg1, Arg2, <br class="typebreak"/>
 ReturnType &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUStaticFunctor2.html#a1e5af6761d3049fcf2b4e7b451c657d5">Copy</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns a copy of this functor. <br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;class Arg1, class Arg2, class ReturnType&gt;<br/>
@@ -103,6 +112,7 @@ template&lt;class Arg1 , class Arg2 , class ReturnType &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -129,6 +139,7 @@ template&lt;class Arg1 , class Arg2 , class ReturnType &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -160,6 +171,7 @@ template&lt;class Arg1 , class Arg2 , class ReturnType &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Checks whether this pseudo-functor points towards the given function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -169,28 +181,6 @@ template&lt;class Arg1 , class Arg2 , class ReturnType &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this pseudo-functor points towards the given function. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1e5af6761d3049fcf2b4e7b451c657d5"></a><!-- doxytag: member="FUStaticFunctor2::Copy" ref="a1e5af6761d3049fcf2b4e7b451c657d5" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Arg1 , class Arg2 , class ReturnType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classIFunctor2.html">IFunctor2</a>&lt;Arg1, Arg2, ReturnType&gt;* <a class="el" href="classFUStaticFunctor2.html">FUStaticFunctor2</a>&lt; Arg1, Arg2, ReturnType &gt;::Copy </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td> const<code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Returns a copy of this functor </p>
-
-<p>Implements <a class="el" href="classIFunctor2.html#a36868826ad8fc518546d04a0a01ffcfc">IFunctor2&lt; Arg1, Arg2, ReturnType &gt;</a>.</p>
 
 </div>
 </div>
@@ -220,6 +210,7 @@ template&lt;class Arg1 , class Arg2 , class ReturnType &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Calls the functor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -252,7 +243,7 @@ template&lt;class Arg1 , class Arg2 , class ReturnType &gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:57 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:25 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

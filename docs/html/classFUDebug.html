@@ -60,15 +60,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUDebug" -->
+<p>A debugging logging facility.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUDebug_8h_source.html">FUDebug.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUDebug.html#a8497ac8f011328a86b4aedbaf85504dc">DebugOut</a> (uint8 level, uint32 line, const char *filename, const char *message,...)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Outputs a string to the debug monitor.  <a href="#a8497ac8f011328a86b4aedbaf85504dc"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A debugging logging facility. Do not use this static class directly. Instead, use the macros listed below. This class is based on top of the <a class="el" href="classFUError.html">FUError</a> sinks.</p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="FUDebug_8h.html#a20c2b8fc53eb5fc7c525a1a8b201e6f3">DEBUG_OUT</a> <a class="el" href="FUDebug_8h.html#aad84ea318f0287c9b741da8ac0f0ed56">WARNING_OUT</a> <a class="el" href="FUDebug_8h.html#a48e135959518fe8f1103622a977bd400">ERROR_OUT</a> <a class="el" href="classFUError.html">FUError</a> </dd></dl>
+<p>A debugging logging facility. </p>
+<p>Do not use this static class directly. Instead, use the macros listed below. This class is based on top of the <a class="el" href="classFUError.html" title="Windows API defines this.">FUError</a> sinks.</p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="FUDebug_8h.html#a20c2b8fc53eb5fc7c525a1a8b201e6f3" title="Outputs a string to the debug monitor.">DEBUG_OUT</a> <a class="el" href="FUDebug_8h.html#aad84ea318f0287c9b741da8ac0f0ed56" title="See above.">WARNING_OUT</a> <a class="el" href="FUDebug_8h.html#a48e135959518fe8f1103622a977bd400" title="See above.">ERROR_OUT</a> <a class="el" href="classFUError.html" title="Windows API defines this.">FUError</a> </dd></dl>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a8497ac8f011328a86b4aedbaf85504dc"></a><!-- doxytag: member="FUDebug::DebugOut" ref="a8497ac8f011328a86b4aedbaf85504dc" args="(uint8 level, uint32 line, const char *filename, const char *message,...)" -->
 <div class="memitem">
@@ -112,6 +117,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Outputs a string to the debug monitor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -144,7 +150,7 @@ Static Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:52 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

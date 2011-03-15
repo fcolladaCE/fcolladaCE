@@ -58,6 +58,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDFormatHint" -->
+<p>Describes a surface format by providing hints as to its properties.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffectParameterSurface_8h_source.html">FCDEffectParameterSurface.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
@@ -74,6 +77,8 @@ Public Types</h2></td></tr>
 <b>CHANNEL_XYZW</b>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The color channels that the choosen format should have. </p>
+ <a href="structFCDFormatHint.html#a4c22503ef75be12aa19a582b88ce32c1">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#a28f1ee9691301b71d657b472689d77a9">rangeValue</a> { <br/>
 &nbsp;&nbsp;<b>RANGE_UNKNOWN</b>, 
 <b>RANGE_SNORM</b>, 
@@ -85,25 +90,40 @@ Public Types</h2></td></tr>
 <b>RANGE_LOW</b>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The range of the color values for the choosen format. </p>
+ <a href="structFCDFormatHint.html#a28f1ee9691301b71d657b472689d77a9">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#a720a2fffc66e38ba997c263e22ddc2c2">precisionValue</a> { <b>PRECISION_UNKNOWN</b>, 
 <b>PRECISION_LOW</b>, 
 <b>PRECISION_MID</b>, 
 <b>PRECISION_HIGH</b>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The precision of the color values for the choosen format. </p>
+ <a href="structFCDFormatHint.html#a720a2fffc66e38ba997c263e22ddc2c2">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#a4777b8826090e9f6c9812711faf3ac66">optionValue</a> { <b>OPT_SRGB_GAMMA</b>, 
 <b>OPT_NORMALIZED3</b>, 
 <b>OPT_NORMALIZED4</b>, 
 <b>OPT_COMPRESSABLE</b>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Additional options for the surface. </p>
+ <a href="structFCDFormatHint.html#a4777b8826090e9f6c9812711faf3ac66">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFCDFormatHint.html#a4c22503ef75be12aa19a582b88ce32c1">channelValues</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#acfb2c3d8e09bcb65430d2d733ee2023c">channels</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFCDFormatHint.html#a28f1ee9691301b71d657b472689d77a9">rangeValue</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#ab999301788a29244f9b81e9dd6fe4277">range</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFCDFormatHint.html#a720a2fffc66e38ba997c263e22ddc2c2">precisionValue</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#ab9648a25aadd4c375d3b574f3c980d74">precision</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; <a class="el" href="structFCDFormatHint.html#a4777b8826090e9f6c9812711faf3ac66">optionValue</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#aaa86d7af04b996fb90c551b2d401a0be">options</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfb2c3d8e09bcb65430d2d733ee2023c"></a><!-- doxytag: member="FCDFormatHint::channels" ref="acfb2c3d8e09bcb65430d2d733ee2023c" args="" -->
+<a class="el" href="structFCDFormatHint.html#a4c22503ef75be12aa19a582b88ce32c1">channelValues</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#acfb2c3d8e09bcb65430d2d733ee2023c">channels</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The per-texel layout of the format. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab999301788a29244f9b81e9dd6fe4277"></a><!-- doxytag: member="FCDFormatHint::range" ref="ab999301788a29244f9b81e9dd6fe4277" args="" -->
+<a class="el" href="structFCDFormatHint.html#a28f1ee9691301b71d657b472689d77a9">rangeValue</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#ab999301788a29244f9b81e9dd6fe4277">range</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The range format of the channels. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9648a25aadd4c375d3b574f3c980d74"></a><!-- doxytag: member="FCDFormatHint::precision" ref="ab9648a25aadd4c375d3b574f3c980d74" args="" -->
+<a class="el" href="structFCDFormatHint.html#a720a2fffc66e38ba997c263e22ddc2c2">precisionValue</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#ab9648a25aadd4c375d3b574f3c980d74">precision</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Precision (number of bits) of the texel channels. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa86d7af04b996fb90c551b2d401a0be"></a><!-- doxytag: member="FCDFormatHint::options" ref="aaa86d7af04b996fb90c551b2d401a0be" args="" -->
+<a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt; <a class="el" href="structFCDFormatHint.html#a4777b8826090e9f6c9812711faf3ac66">optionValue</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFCDFormatHint.html#aaa86d7af04b996fb90c551b2d401a0be">options</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Additional hints. <br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Describes a surface format by providing hints as to its properties. Used by the <a class="el" href="classFCDEffectParameterSurface.html">FCDEffectParameterSurface</a> class exclusively. </p>
+<p>Describes a surface format by providing hints as to its properties. </p>
+<p>Used by the <a class="el" href="classFCDEffectParameterSurface.html" title="A COLLADA surface parameter.">FCDEffectParameterSurface</a> class exclusively. </p>
 <hr/><h2>Member Enumeration Documentation</h2>
 <a class="anchor" id="a4c22503ef75be12aa19a582b88ce32c1"></a><!-- doxytag: member="FCDFormatHint::channelValues" ref="a4c22503ef75be12aa19a582b88ce32c1" args="" -->
 <div class="memitem">
@@ -115,6 +135,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The color channels that the choosen format should have. </p>
 
 </div>
@@ -129,6 +150,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Additional options for the surface. </p>
 
 </div>
@@ -143,6 +165,7 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The precision of the color values for the choosen format. </p>
 
 </div>
@@ -157,64 +180,8 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The range of the color values for the choosen format. </p>
-
-</div>
-</div>
-<hr/><h2>Field Documentation</h2>
-<a class="anchor" id="acfb2c3d8e09bcb65430d2d733ee2023c"></a><!-- doxytag: member="FCDFormatHint::channels" ref="acfb2c3d8e09bcb65430d2d733ee2023c" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structFCDFormatHint.html#a4c22503ef75be12aa19a582b88ce32c1">channelValues</a> <a class="el" href="structFCDFormatHint.html#acfb2c3d8e09bcb65430d2d733ee2023c">FCDFormatHint::channels</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>The per-texel layout of the format </p>
-
-</div>
-</div>
-<a class="anchor" id="aaa86d7af04b996fb90c551b2d401a0be"></a><!-- doxytag: member="FCDFormatHint::options" ref="aaa86d7af04b996fb90c551b2d401a0be" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classfm_1_1vector.html">fm::vector</a>&lt;<a class="el" href="structFCDFormatHint.html#a4777b8826090e9f6c9812711faf3ac66">optionValue</a>&gt; <a class="el" href="structFCDFormatHint.html#aaa86d7af04b996fb90c551b2d401a0be">FCDFormatHint::options</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Additional hints </p>
-
-</div>
-</div>
-<a class="anchor" id="ab9648a25aadd4c375d3b574f3c980d74"></a><!-- doxytag: member="FCDFormatHint::precision" ref="ab9648a25aadd4c375d3b574f3c980d74" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structFCDFormatHint.html#a720a2fffc66e38ba997c263e22ddc2c2">precisionValue</a> <a class="el" href="structFCDFormatHint.html#ab9648a25aadd4c375d3b574f3c980d74">FCDFormatHint::precision</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Precision (number of bits) of the texel channels </p>
-
-</div>
-</div>
-<a class="anchor" id="ab999301788a29244f9b81e9dd6fe4277"></a><!-- doxytag: member="FCDFormatHint::range" ref="ab999301788a29244f9b81e9dd6fe4277" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structFCDFormatHint.html#a28f1ee9691301b71d657b472689d77a9">rangeValue</a> <a class="el" href="structFCDFormatHint.html#ab999301788a29244f9b81e9dd6fe4277">FCDFormatHint::range</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>The range format of the channels </p>
 
 </div>
 </div>
@@ -236,7 +203,7 @@ Data Fields</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:36 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:18 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

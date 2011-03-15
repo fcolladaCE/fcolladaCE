@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUParameterizable" --><!-- doxytag: inherits="FUTrackable" -->
+<p>A trackable object which contains parameters.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUParameterizable_8h_source.html">FUParameterizable.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FUParameterizable:</div>
@@ -119,23 +122,36 @@ Inheritance diagram for FUParameterizable:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#acbc2c8554d55dbe76840b83dfb934e7d">DeclareFlag</a> (Dirty, 0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[EXPERIMENTAL] Generic Dirty Flag.  <a href="#acbc2c8554d55dbe76840b83dfb934e7d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#ad99e1a6d6842acde6fe7383e84c5d5b1">DeclareFlag</a> (ValueChanged, 1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[EXPERIMENTAL] The value of a member has been changed.  <a href="#ad99e1a6d6842acde6fe7383e84c5d5b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#a7739aae88fcc7c5a30947bfa3cdc9119">DeclareFlag</a> (StructureChanged, 2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[EXPERIMENTAL] The structure of this object has changed.  <a href="#a7739aae88fcc7c5a30947bfa3cdc9119"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#afde5b1719119e6759f4726f525021055">DeclareFlagCount</a> (3)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This class declares three flags.  <a href="#afde5b1719119e6759f4726f525021055"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#a4be261cc6066a1bddbd1b45ba2bc29d5">FUParameterizable</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a4be261cc6066a1bddbd1b45ba2bc29d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#aab5030739efebfdf4fc901822432af2e">~FUParameterizable</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#aab5030739efebfdf4fc901822432af2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#aec7ccfa808f8ec346c894172f5faabb9">SetFlag</a> (uint32 f, bool value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Changes the value of one or more flags to a given value.  <a href="#aec7ccfa808f8ec346c894172f5faabb9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#ae8b93315f9374da6b2a6065f7e7edb1b">SetFlag</a> (uint32 f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the value of one or more flags.  <a href="#ae8b93315f9374da6b2a6065f7e7edb1b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#a6487b738377a3d23ad7a171a96b7aeef">TestFlag</a> (uint32 f) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the value of one or more flags.  <a href="#a6487b738377a3d23ad7a171a96b7aeef"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#a09af3ed0cc0dd54daacf6bc6bf0ad93e">ClearFlag</a> (uint32 f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Resets the value of one or more flags.  <a href="#a09af3ed0cc0dd54daacf6bc6bf0ad93e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#af6fbf123f3488d0af7607aae8241aaf8">SetValueChange</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Value change notification.  <a href="#af6fbf123f3488d0af7607aae8241aaf8"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUParameterizable.html#a572a6bd0f1948076600b6e352340fca5">flags</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A generic flag container.  <a href="#a572a6bd0f1948076600b6e352340fca5"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A trackable object which contains parameters. Having a generic object that contains a generic parameter structure has many applications to improve user interfaces coding and maintenance, including simple edition, undo/redo, animation authoring. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__FUParameter.html">The generic FCollada parameter interface.</a>, <a class="el" href="classFCDParameterAnimatable.html">FCDParameterAnimatable</a> </dd></dl>
+<p>A trackable object which contains parameters. </p>
+<p>Having a generic object that contains a generic parameter structure has many applications to improve user interfaces coding and maintenance, including simple edition, undo/redo, animation authoring. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__FUParameter.html">The generic FCollada parameter interface.</a>, <a class="el" href="classFCDParameterAnimatable.html" title="An animatable value parameter.">FCDParameterAnimatable</a> </dd></dl>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4be261cc6066a1bddbd1b45ba2bc29d5"></a><!-- doxytag: member="FUParameterizable::FUParameterizable" ref="a4be261cc6066a1bddbd1b45ba2bc29d5" args="()" -->
 <div class="memitem">
@@ -151,6 +167,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 
 </div>
@@ -169,6 +186,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -189,7 +207,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Resets the value of one or more flags. When a flag is reset, its value is 0. </p>
+
+<p>Resets the value of one or more flags. </p>
+<p>When a flag is reset, its value is 0. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>f</em>&nbsp;</td><td>The mask of the flag(s) to reset. </td></tr>
@@ -223,7 +243,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[EXPERIMENTAL] Generic Dirty Flag. Should be removed in future versions. </p>
+
+<p>[EXPERIMENTAL] Generic Dirty Flag. </p>
+<p>Should be removed in future versions. </p>
 
 </div>
 </div>
@@ -251,7 +273,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[EXPERIMENTAL] The value of a member has been changed. Examples: 1. the diffuse color changes from black to red. 2. The translation vector changes from {0,3,2} to {5,2,1}. </p>
+
+<p>[EXPERIMENTAL] The value of a member has been changed. </p>
+<p>Examples: 1. the diffuse color changes from black to red. 2. The translation vector changes from {0,3,2} to {5,2,1}. </p>
 
 </div>
 </div>
@@ -279,7 +303,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[EXPERIMENTAL] The structure of this object has changed. Examples: 1. The effect of a material is changed. 2. A new transform is added to the scene node. 3. An effect parameter is removed from the effect's technique. </p>
+
+<p>[EXPERIMENTAL] The structure of this object has changed. </p>
+<p>Examples: 1. The effect of a material is changed. 2. A new transform is added to the scene node. 3. An effect parameter is removed from the effect's technique. </p>
 
 </div>
 </div>
@@ -298,6 +324,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>This class declares three flags. </p>
 
 </div>
@@ -326,6 +353,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Changes the value of one or more flags to a given value. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -352,7 +380,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the value of one or more flags. When a flag is set, its value is 1. </p>
+
+<p>Sets the value of one or more flags. </p>
+<p>When a flag is set, its value is 1. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>f</em>&nbsp;</td><td>The mask of the flag(s) to set. </td></tr>
@@ -376,6 +406,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Value change notification. </p>
 
 <p>Reimplemented in <a class="el" href="classFCDObject.html#a26513baaf8b9a2996f9c050e4a7c16d8">FCDObject</a>, and <a class="el" href="classFCDTransform.html#adb72479a86149a1f93a3dfdf84569b91">FCDTransform</a>.</p>
@@ -397,6 +428,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the value of one or more flags. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -419,7 +451,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>A generic flag container. Contains notifications of object state. </p>
+
+<p>A generic flag container. </p>
+<p>Contains notifications of object state. </p>
 
 </div>
 </div>
@@ -442,7 +476,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:56 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:25 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -63,50 +63,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FCD_EFFECT_CODE_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
 <a name="l00017"></a>00017 <span class="preprocessor">#ifndef __FCD_OBJECT_H_</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDObject_8h.html">FCDocument/FCDObject.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDObject_8h.html" title="This file contains the FCDObject class.">FCDocument/FCDObject.h</a>&quot;</span>
 <a name="l00019"></a>00019 <span class="preprocessor">#endif // __FCD_OBJECT_H_</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span>
-<a name="l00021"></a>00021 <span class="keyword">class </span><a class="code" href="classFCDocument.html">FCDocument</a>;
+<a name="l00021"></a>00021 <span class="keyword">class </span><a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>;
 <a name="l00022"></a>00022 
-<a name="l00036"></a><a class="code" href="classFCDEffectCode.html">00036</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDEffectCode.html">FCDEffectCode</a> : <span class="keyword">public</span> <a class="code" href="classFCDObject.html">FCDObject</a>
+<a name="l00036"></a><a class="code" href="classFCDEffectCode.html">00036</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDEffectCode.html" title="A COLLADA code inclusion.">FCDEffectCode</a> : <span class="keyword">public</span> <a class="code" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a>
 <a name="l00037"></a>00037 {
 <a name="l00038"></a>00038 <span class="keyword">public</span>:
-<a name="l00040"></a><a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424">00040</a>         <span class="keyword">enum</span> <a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424">Type</a>
+<a name="l00040"></a><a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424">00040</a>         <span class="keyword">enum</span> <a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424" title="The list of support code inclusion types.">Type</a>
 <a name="l00041"></a>00041         {
 <a name="l00042"></a>00042                 INCLUDE, 
 <a name="l00043"></a><a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424abd1a77e0d6fd232b43bd48113315b248">00043</a>                 CODE 
 <a name="l00044"></a>00044         };
 <a name="l00045"></a>00045 
 <a name="l00046"></a>00046 <span class="keyword">private</span>:
-<a name="l00047"></a>00047         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7">DeclareObjectType</a>(<a class="code" href="classFCDObject.html">FCDObject</a>);
+<a name="l00047"></a>00047         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7" title="Declares the object type for an object class.">DeclareObjectType</a>(<a class="code" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a>);
 <a name="l00048"></a>00048 
 <a name="l00049"></a>00049         Type type;
-<a name="l00050"></a>00050         <a class="code" href="classfm_1_1stringT.html">fm::string</a> sid;
+<a name="l00050"></a>00050         <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::string</a> sid;
 <a name="l00051"></a>00051         <a class="code" href="classfm_1_1stringT.html">fstring</a> code;
 <a name="l00052"></a>00052         <a class="code" href="classfm_1_1stringT.html">fstring</a> filename;
 <a name="l00053"></a>00053 
 <a name="l00054"></a>00054 <span class="keyword">public</span>:
-<a name="l00059"></a>00059         <a class="code" href="classFCDEffectCode.html">FCDEffectCode</a>(<a class="code" href="classFCDocument.html">FCDocument</a>* document);
+<a name="l00059"></a>00059         <a class="code" href="classFCDEffectCode.html" title="A COLLADA code inclusion.">FCDEffectCode</a>(<a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>* document);
 <a name="l00060"></a>00060 
-<a name="l00062"></a>00062         <span class="keyword">virtual</span> ~<a class="code" href="classFCDEffectCode.html">FCDEffectCode</a>();
+<a name="l00062"></a>00062         <span class="keyword">virtual</span> ~<a class="code" href="classFCDEffectCode.html" title="A COLLADA code inclusion.">FCDEffectCode</a>();
 <a name="l00063"></a>00063 
-<a name="l00066"></a><a class="code" href="classFCDEffectCode.html#a9e00aa62fc3e509f8aedb04443026871">00066</a>         <span class="keyword">inline</span> <a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424">Type</a> <a class="code" href="classFCDEffectCode.html#a9e00aa62fc3e509f8aedb04443026871">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> type; }
+<a name="l00066"></a><a class="code" href="classFCDEffectCode.html#a9e00aa62fc3e509f8aedb04443026871">00066</a>         <span class="keyword">inline</span> <a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424" title="The list of support code inclusion types.">Type</a> <a class="code" href="classFCDEffectCode.html#a9e00aa62fc3e509f8aedb04443026871" title="Retrieves the form of the code inclusion.">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> type; }
 <a name="l00067"></a>00067 
-<a name="l00072"></a><a class="code" href="classFCDEffectCode.html#aee0f522cea26f2b8414c6c023f15702b">00072</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFCDEffectCode.html#aee0f522cea26f2b8414c6c023f15702b">SetType</a>(<a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424">Type</a> _type) { type = _type; SetDirtyFlag(); }
+<a name="l00072"></a><a class="code" href="classFCDEffectCode.html#aee0f522cea26f2b8414c6c023f15702b">00072</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFCDEffectCode.html#aee0f522cea26f2b8414c6c023f15702b" title="Sets the form of the code inclusion.">SetType</a>(<a class="code" href="classFCDEffectCode.html#a0e492088a72daaf6e6e14c50d17c9424" title="The list of support code inclusion types.">Type</a> _type) { type = _type; SetDirtyFlag(); }
 <a name="l00073"></a>00073 
-<a name="l00077"></a><a class="code" href="classFCDEffectCode.html#a98973fd93404c031bc8282a5f84db017">00077</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fm::string</a>&amp; <a class="code" href="classFCDEffectCode.html#a98973fd93404c031bc8282a5f84db017">GetSubId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sid; }
+<a name="l00077"></a><a class="code" href="classFCDEffectCode.html#a98973fd93404c031bc8282a5f84db017">00077</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::string</a>&amp; <a class="code" href="classFCDEffectCode.html#a98973fd93404c031bc8282a5f84db017" title="Retrieves the sub-id of the code inclusion.">GetSubId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sid; }
 <a name="l00078"></a>00078 
-<a name="l00082"></a>00082         <span class="keywordtype">void</span> SetSubId(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fm::string</a>&amp; _sid);
+<a name="l00082"></a>00082         <span class="keywordtype">void</span> SetSubId(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::string</a>&amp; _sid);
 <a name="l00083"></a>00083 
-<a name="l00088"></a><a class="code" href="classFCDEffectCode.html#aeb303dd3b3ce37a77955fe4a2fa1986f">00088</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fstring</a>&amp; <a class="code" href="classFCDEffectCode.html#aeb303dd3b3ce37a77955fe4a2fa1986f">GetCode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> code; }
+<a name="l00088"></a><a class="code" href="classFCDEffectCode.html#aeb303dd3b3ce37a77955fe4a2fa1986f">00088</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fstring</a>&amp; <a class="code" href="classFCDEffectCode.html#aeb303dd3b3ce37a77955fe4a2fa1986f" title="Retrieves the inlined code.">GetCode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> code; }
 <a name="l00089"></a>00089 
-<a name="l00093"></a><a class="code" href="classFCDEffectCode.html#a10347e9dc00a809f0203cadd55e9ab64">00093</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFCDEffectCode.html#a10347e9dc00a809f0203cadd55e9ab64">SetCode</a>(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fstring</a>&amp; _code) { code = _code; type = CODE; SetDirtyFlag(); }
+<a name="l00093"></a><a class="code" href="classFCDEffectCode.html#a10347e9dc00a809f0203cadd55e9ab64">00093</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFCDEffectCode.html#a10347e9dc00a809f0203cadd55e9ab64" title="Sets the inlined code.">SetCode</a>(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fstring</a>&amp; _code) { code = _code; type = CODE; SetDirtyFlag(); }
 <a name="l00094"></a>00094 
-<a name="l00099"></a><a class="code" href="classFCDEffectCode.html#a201251ceb6b7774c33b4cdd64e78b136">00099</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fstring</a>&amp; <a class="code" href="classFCDEffectCode.html#a201251ceb6b7774c33b4cdd64e78b136">GetFilename</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> filename; }
+<a name="l00099"></a><a class="code" href="classFCDEffectCode.html#a201251ceb6b7774c33b4cdd64e78b136">00099</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fstring</a>&amp; <a class="code" href="classFCDEffectCode.html#a201251ceb6b7774c33b4cdd64e78b136" title="Retrieves the filename of the code file to open.">GetFilename</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> filename; }
 <a name="l00100"></a>00100 
 <a name="l00104"></a>00104         <span class="keywordtype">void</span> SetFilename(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fstring</a>&amp; _filename);
 <a name="l00105"></a>00105 
-<a name="l00111"></a>00111         <a class="code" href="classFCDEffectCode.html">FCDEffectCode</a>* Clone(<a class="code" href="classFCDEffectCode.html">FCDEffectCode</a>* clone = NULL) <span class="keyword">const</span>;
+<a name="l00111"></a>00111         <a class="code" href="classFCDEffectCode.html" title="A COLLADA code inclusion.">FCDEffectCode</a>* Clone(<a class="code" href="classFCDEffectCode.html" title="A COLLADA code inclusion.">FCDEffectCode</a>* clone = NULL) <span class="keyword">const</span>;
 <a name="l00112"></a>00112 };
 <a name="l00113"></a>00113 
 <a name="l00114"></a>00114 <span class="preprocessor">#endif // _FCD_EFFECT_CODE_H_</span>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:19 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:10 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

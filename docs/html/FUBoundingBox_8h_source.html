@@ -62,53 +62,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="preprocessor">#ifndef _FU_BOUNDINGBOX_H_</span>
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FU_BOUNDINGBOX_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
-<a name="l00017"></a>00017 <span class="keyword">class </span><a class="code" href="classFUBoundingSphere.html">FUBoundingSphere</a>;
+<a name="l00017"></a>00017 <span class="keyword">class </span><a class="code" href="classFUBoundingSphere.html" title="A bounding sphere.">FUBoundingSphere</a>;
 <a name="l00018"></a>00018 
-<a name="l00024"></a><a class="code" href="classFUBoundingBox.html">00024</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>
+<a name="l00024"></a><a class="code" href="classFUBoundingBox.html">00024</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>
 <a name="l00025"></a>00025 {
 <a name="l00026"></a>00026 <span class="keyword">private</span>:
-<a name="l00027"></a>00027         <a class="code" href="classFMVector3.html">FMVector3</a> minimum;
-<a name="l00028"></a>00028         <a class="code" href="classFMVector3.html">FMVector3</a> maximum;
+<a name="l00027"></a>00027         <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> minimum;
+<a name="l00028"></a>00028         <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> maximum;
 <a name="l00029"></a>00029 
 <a name="l00030"></a>00030 <span class="keyword">public</span>:
-<a name="l00033"></a>00033         <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>();
+<a name="l00033"></a>00033         <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>();
 <a name="l00034"></a>00034 
-<a name="l00038"></a>00038         <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>(<span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; minimum, <span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; maximum);
+<a name="l00038"></a>00038         <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>(<span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; minimum, <span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; maximum);
 <a name="l00039"></a>00039 
-<a name="l00042"></a>00042         <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>(<span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>&amp; copy);
+<a name="l00042"></a>00042         <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>(<span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>&amp; copy);
 <a name="l00043"></a>00043 
-<a name="l00045"></a>00045         ~<a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>();
+<a name="l00045"></a>00045         ~<a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>();
 <a name="l00046"></a>00046 
 <a name="l00050"></a>00050         <span class="keywordtype">void</span> Reset();
 <a name="l00051"></a>00051 
 <a name="l00056"></a>00056         <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>;
 <a name="l00057"></a>00057 
-<a name="l00060"></a><a class="code" href="classFUBoundingBox.html#a4092364ab7ec076ec5dbaa95f308baa3">00060</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; <a class="code" href="classFUBoundingBox.html#a4092364ab7ec076ec5dbaa95f308baa3">GetMin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> minimum; }
+<a name="l00060"></a><a class="code" href="classFUBoundingBox.html#a4092364ab7ec076ec5dbaa95f308baa3">00060</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; <a class="code" href="classFUBoundingBox.html#a4092364ab7ec076ec5dbaa95f308baa3" title="Retrieves the minimum bounds of the bounding box.">GetMin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> minimum; }
 <a name="l00061"></a>00061 
-<a name="l00064"></a><a class="code" href="classFUBoundingBox.html#a03c5ede1bdda53d488a8c3478abe9594">00064</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; <a class="code" href="classFUBoundingBox.html#a03c5ede1bdda53d488a8c3478abe9594">GetMax</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> maximum; }
+<a name="l00064"></a><a class="code" href="classFUBoundingBox.html#a03c5ede1bdda53d488a8c3478abe9594">00064</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; <a class="code" href="classFUBoundingBox.html#a03c5ede1bdda53d488a8c3478abe9594" title="Retrieves the maximum bounds of the bounding box.">GetMax</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> maximum; }
 <a name="l00065"></a>00065 
-<a name="l00068"></a><a class="code" href="classFUBoundingBox.html#a95e7936d3f2f5ee73107e47f3bc23af9">00068</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUBoundingBox.html#a95e7936d3f2f5ee73107e47f3bc23af9">SetMin</a>(<span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; _min) { minimum = _min; }
+<a name="l00068"></a><a class="code" href="classFUBoundingBox.html#a95e7936d3f2f5ee73107e47f3bc23af9">00068</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUBoundingBox.html#a95e7936d3f2f5ee73107e47f3bc23af9" title="Sets the minimum bounds of the bounding box.">SetMin</a>(<span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; _min) { minimum = _min; }
 <a name="l00069"></a>00069 
-<a name="l00072"></a><a class="code" href="classFUBoundingBox.html#a07b2a93e37b1aaa4ba6aa8d8f7c8c898">00072</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUBoundingBox.html#a07b2a93e37b1aaa4ba6aa8d8f7c8c898">SetMax</a>(<span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; _max) { maximum = _max; }
+<a name="l00072"></a><a class="code" href="classFUBoundingBox.html#a07b2a93e37b1aaa4ba6aa8d8f7c8c898">00072</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUBoundingBox.html#a07b2a93e37b1aaa4ba6aa8d8f7c8c898" title="Sets the maximum bounds of the bounding box.">SetMax</a>(<span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; _max) { maximum = _max; }
 <a name="l00073"></a>00073 
-<a name="l00076"></a><a class="code" href="classFUBoundingBox.html#a50ba12b293aac6ea938b230bb5820324">00076</a>         <span class="keyword">inline</span> <a class="code" href="classFMVector3.html">FMVector3</a> <a class="code" href="classFUBoundingBox.html#a50ba12b293aac6ea938b230bb5820324">GetCenter</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (minimum + maximum) / 2.0f; }
+<a name="l00076"></a><a class="code" href="classFUBoundingBox.html#a50ba12b293aac6ea938b230bb5820324">00076</a>         <span class="keyword">inline</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> <a class="code" href="classFUBoundingBox.html#a50ba12b293aac6ea938b230bb5820324" title="Retrieves the center of the bounding box.">GetCenter</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (minimum + maximum) / 2.0f; }
 <a name="l00077"></a>00077 
-<a name="l00081"></a>00081         <span class="keywordtype">bool</span> Contains(<span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; point) <span class="keyword">const</span>;
+<a name="l00081"></a>00081         <span class="keywordtype">bool</span> Contains(<span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; point) <span class="keyword">const</span>;
 <a name="l00082"></a>00082 
-<a name="l00087"></a>00087         <span class="keywordtype">bool</span> Overlaps(<span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>&amp; boundingBox, <a class="code" href="classFMVector3.html">FMVector3</a>* overlapCenter = NULL) <span class="keyword">const</span>;
+<a name="l00087"></a>00087         <span class="keywordtype">bool</span> Overlaps(<span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>&amp; boundingBox, <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>* overlapCenter = NULL) <span class="keyword">const</span>;
 <a name="l00088"></a>00088 
-<a name="l00094"></a>00094         <span class="keywordtype">bool</span> Overlaps(<span class="keyword">const</span> <a class="code" href="classFUBoundingSphere.html">FUBoundingSphere</a>&amp; boundingSphere, <a class="code" href="classFMVector3.html">FMVector3</a>* overlapCenter = NULL) <span class="keyword">const</span>;
+<a name="l00094"></a>00094         <span class="keywordtype">bool</span> Overlaps(<span class="keyword">const</span> <a class="code" href="classFUBoundingSphere.html" title="A bounding sphere.">FUBoundingSphere</a>&amp; boundingSphere, <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>* overlapCenter = NULL) <span class="keyword">const</span>;
 <a name="l00095"></a>00095 
-<a name="l00098"></a>00098         <span class="keywordtype">void</span> Include(<span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; point);
+<a name="l00098"></a>00098         <span class="keywordtype">void</span> Include(<span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; point);
 <a name="l00099"></a>00099 
-<a name="l00102"></a>00102         <span class="keywordtype">void</span> Include(<span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>&amp; boundingBox);
+<a name="l00102"></a>00102         <span class="keywordtype">void</span> Include(<span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>&amp; boundingBox);
 <a name="l00103"></a>00103 
-<a name="l00107"></a>00107         <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a> Transform(<span class="keyword">const</span> <a class="code" href="classFMMatrix44.html">FMMatrix44</a>&amp; transform) <span class="keyword">const</span>;
+<a name="l00107"></a>00107         <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a> Transform(<span class="keyword">const</span> <a class="code" href="classFMMatrix44.html" title="A 4x4 Row Major matrix: use to represent 3D transformations.">FMMatrix44</a>&amp; transform) <span class="keyword">const</span>;
 <a name="l00108"></a>00108 
-<a name="l00112"></a>00112         <span class="keywordtype">bool</span> Equals(<span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a>&amp; right) <span class="keyword">const</span>;
+<a name="l00112"></a>00112         <span class="keywordtype">bool</span> Equals(<span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a>&amp; right) <span class="keyword">const</span>;
 <a name="l00113"></a>00113 
 <a name="l00114"></a>00114 <span class="keyword">public</span>:
-<a name="l00116"></a><a class="code" href="classFUBoundingBox.html#a688baae52b9ddfab1fb0082da0bffe57">00116</a>         <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html">FUBoundingBox</a> Infinity;
+<a name="l00116"></a><a class="code" href="classFUBoundingBox.html#a688baae52b9ddfab1fb0082da0bffe57">00116</a>         <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classFUBoundingBox.html" title="An axis-aligned bounding box.">FUBoundingBox</a> Infinity;
 <a name="l00117"></a>00117 };
 <a name="l00118"></a>00118 
 <a name="l00119"></a>00119 <span class="preprocessor">#endif // _FU_BOUNDINGBOX_H_</span>
@@ -128,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:12 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

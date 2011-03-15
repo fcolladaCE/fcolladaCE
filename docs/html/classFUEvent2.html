@@ -60,22 +60,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUEvent2" -->
+<p>An event with two argument.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUEvent_8h_source.html">FUEvent.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#aaa58c36d65bf730c930b74deb670234c">FUEvent2</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#aaa58c36d65bf730c930b74deb670234c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#ade4ce3f5499b074b6c959725fe4e6ef5">~FUEvent2</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ade4ce3f5499b074b6c959725fe4e6ef5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#a8abbceb8babd882d62e722d8cecdf3ec">GetHandlerCount</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of callbacks registered for this event.  <a href="#a8abbceb8babd882d62e722d8cecdf3ec"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Class &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#a0ab2de478c4cd37a69ec5b99e54baba9">InsertHandler</a> (Class *handle, void(Class::*_function)(Arg1, Arg2))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new callback that handles the event.  <a href="#a0ab2de478c4cd37a69ec5b99e54baba9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#a9d46bbf9a04b4e19d2b09332212319f4">InsertHandler</a> (<a class="el" href="classIFunctor2.html">Handler</a> *functor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a functor that handles the event.  <a href="#a9d46bbf9a04b4e19d2b09332212319f4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#afe991947a6b5a87dc4143d73773906c6">InsertHandler</a> (void(*_function)(Arg1, Arg2))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new callback that handles the event.  <a href="#afe991947a6b5a87dc4143d73773906c6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#af5053eab49374825bc78a5d9c20f532f">ReleaseHandler</a> (void *handle, void *function)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases and unregisters a callback that handles the event.  <a href="#af5053eab49374825bc78a5d9c20f532f"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Class &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#a7ffd7ee797298381359d399bda3bfd7a">ReleaseHandler</a> (Class *handle, void(Class::*_function)(Arg1, Arg2))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases and unregisters a callback that handles the event.  <a href="#a7ffd7ee797298381359d399bda3bfd7a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#a07871d2824a60959fe6e4d82f2c56f23">ReleaseHandler</a> (void(*_function)(Arg1, Arg2))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases and unregisters a callback that handles the event.  <a href="#a07871d2824a60959fe6e4d82f2c56f23"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent2.html#aafb6133b005b9e917d9c5ab8b6bd6a05">operator()</a> (Arg1 argument1, Arg2 argument2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Triggers the event.  <a href="#aafb6133b005b9e917d9c5ab8b6bd6a05"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;class Arg1, class Arg2&gt;<br/>
@@ -99,6 +112,7 @@ template&lt;class Arg1, class Arg2&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 
 </div>
@@ -119,6 +133,7 @@ template&lt;class Arg1, class Arg2&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -140,6 +155,7 @@ template&lt;class Arg1, class Arg2&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of callbacks registered for this event. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of callbacks registered. </dd></dl>
 
@@ -173,6 +189,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -201,6 +218,7 @@ template&lt;class Arg1, class Arg2&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -228,7 +246,9 @@ template&lt;class Arg1, class Arg2&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a functor that handles the event. Note that the event will own the memory for the functor. </p>
+
+<p>Adds a functor that handles the event. </p>
+<p>Note that the event will own the memory for the functor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>functor</em>&nbsp;</td><td>The functor that handlers the event. </td></tr>
@@ -264,7 +284,9 @@ template&lt;class Arg1, class Arg2&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Triggers the event. All the registered callbacks will be called, in reverse-order of their registration. </p>
+
+<p>Triggers the event. </p>
+<p>All the registered callbacks will be called, in reverse-order of their registration. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>argument1</em>&nbsp;</td><td>A first argument. </td></tr>
@@ -292,6 +314,7 @@ template&lt;class Arg1, class Arg2&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases and unregisters a callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -330,6 +353,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases and unregisters a callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -367,6 +391,7 @@ template&lt;class Arg1, class Arg2&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases and unregisters a callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -396,7 +421,7 @@ template&lt;class Arg1, class Arg2&gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:53 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -61,6 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUError" -->
+<p>Windows API defines this.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUError_8h_source.html">FUError.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
@@ -290,32 +293,49 @@ Public Types</h2></td></tr>
 <b>ERROR_CUSTOM_STRING</b> =  5000
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Error code used to retrieve localized error message. </p>
+<br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">Level</a> { <b>DEBUG_LEVEL</b> =  0, 
 <b>WARNING_LEVEL</b> =  1, 
 <b>ERROR_LEVEL</b> =  2, 
 <b>LEVEL_COUNT</b>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Error level defines supported error message levels in <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>. </p>
+<br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classIFunctor3.html">IFunctor3</a><br class="typebreak"/>
 &lt; <a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, <br class="typebreak"/>
 uint32, void &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#af681c10c56bca8c0ca09d2a996a85b4b">FUErrorFunctor</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Callback functor definition.  <a href="#af681c10c56bca8c0ca09d2a996a85b4b"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#a9110b516618c009f9d7385b9be5f5aec">Error</a> (<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, uint32 errorCode, uint32 line=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Logs and error message.  <a href="#a9110b516618c009f9d7385b9be5f5aec"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#abfccbf69fc3aab1c0c93d734d835f239">AddErrorCallback</a> (<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, <a class="el" href="classIFunctor3.html">FUErrorFunctor</a> *callback)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add callback for error messages.  <a href="#abfccbf69fc3aab1c0c93d734d835f239"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Class &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUError.html#af997111fb6cfdb5a0aab1ecaf1252e8e">AddErrorCallback</a> (<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, Class *handle, void(Class::*_function)(<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, uint32))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new callback that handles the event.  <a href="#af997111fb6cfdb5a0aab1ecaf1252e8e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#a03947f8a2510b8bfef8e93e67892d12d">AddErrorCallback</a> (<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, void(*_function)(<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, uint32))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new callback that handles the event.  <a href="#a03947f8a2510b8bfef8e93e67892d12d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#aa3de1b87525cf37fb279b20164429a76">RemoveErrorCallback</a> (<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, void *object, void *function)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes and releases a callback for error messages.  <a href="#aa3de1b87525cf37fb279b20164429a76"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Class &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUError.html#a80c5c18c086f567648f00c0b4ab8c74f">RemoveErrorCallback</a> (<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, Class *handle, void(Class::*_function)(<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, uint32))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes and releases a callback for error messages.  <a href="#a80c5c18c086f567648f00c0b4ab8c74f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#a96ca4bf271028a7956c71d4d1af72911">RemoveErrorCallback</a> (<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> errorLevel, void(*_function)(<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>, uint32, uint32))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes and releases a static callback for error messages.  <a href="#a96ca4bf271028a7956c71d4d1af72911"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#a234f541a90298631a0cf8180513aed3d">GetErrorString</a> (<a class="el" href="classFUError.html#adb409c35dc05786e6742818fc7643d7d">FUError::Code</a> errorCode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the string description of the error code.  <a href="#a234f541a90298631a0cf8180513aed3d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#a4a3b8a2c8f75bcdc5fcbc064386bab6c">SetCustomErrorString</a> (const char *customErrorString)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the error string for the custom error (ERROR_CUSTOM_STRING) Used mainly for the <a class="el" href="classFUDebug.html" title="A debugging logging facility.">FUDebug</a> structure.  <a href="#a4a3b8a2c8f75bcdc5fcbc064386bab6c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#a2362a05e0d3722c056cef1409712aa0a">GetFatalityLevel</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the level at which errors are considered fatal.  <a href="#a2362a05e0d3722c056cef1409712aa0a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUError.html#a4fba4a813a0a10357f4415fb38bfd8d5">SetFatalityLevel</a> (<a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a> _fatalLevel)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the level at which errors will cancel the processing of a COLLADA document.  <a href="#a4fba4a813a0a10357f4415fb38bfd8d5"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Windows API defines this. This class deals with error message generated by <a class="el" href="namespaceFCollada.html">FCollada</a>. The constructor and the destructor are private: this class is meant to be used as a namespace. All error handler is wrapped around a critical section to work correctly in a multi-threaded environment. </p>
+<p>Windows API defines this. </p>
+<p>This class deals with error message generated by <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>. The constructor and the destructor are private: this class is meant to be used as a namespace. All error handler is wrapped around a critical section to work correctly in a multi-threaded environment. </p>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="af681c10c56bca8c0ca09d2a996a85b4b"></a><!-- doxytag: member="FUError::FUErrorFunctor" ref="af681c10c56bca8c0ca09d2a996a85b4b" args="" -->
 <div class="memitem">
@@ -327,36 +347,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Callback functor definition. </p>
-
-</div>
-</div>
-<hr/><h2>Member Enumeration Documentation</h2>
-<a class="anchor" id="adb409c35dc05786e6742818fc7643d7d"></a><!-- doxytag: member="FUError::Code" ref="adb409c35dc05786e6742818fc7643d7d" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classFUError.html#adb409c35dc05786e6742818fc7643d7d">FUError::Code</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Error code used to retrieve localized error message. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac4b066f99c221e180ecfe9183fabbf3c"></a><!-- doxytag: member="FUError::Level" ref="ac4b066f99c221e180ecfe9183fabbf3c" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classFUError.html#ac4b066f99c221e180ecfe9183fabbf3c">FUError::Level</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Error level defines supported error message levels in <a class="el" href="namespaceFCollada.html">FCollada</a> </p>
 
 </div>
 </div>
@@ -385,11 +377,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Add callback for error messages. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>errorLevel</em>&nbsp;</td><td>The error level whose callback is to be set. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>callback</em>&nbsp;</td><td>Callback to be called when <a class="el" href="namespaceFCollada.html">FCollada</a> generates error message. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>callback</em>&nbsp;</td><td>Callback to be called when <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> generates error message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -420,6 +413,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -463,6 +457,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -505,6 +500,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Logs and error message. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -533,7 +529,8 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the string description of the error code </p>
+
+<p>Retrieves the string description of the error code. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>errorCode</em>&nbsp;</td><td>The error code whose string description is to be obtained.  The string description in raw pointer to array of characters. </td></tr>
@@ -557,6 +554,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the level at which errors are considered fatal. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The fatality level. </dd></dl>
 
@@ -594,6 +592,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes and releases a callback for error messages. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -629,6 +628,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes and releases a static callback for error messages. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -669,12 +669,13 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes and releases a callback for error messages. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>errorLevel</em>&nbsp;</td><td>The error level whose callback is to be removed. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>The object that contains the callback. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>function</em>&nbsp;</td><td>Callback that was registered to be called when <a class="el" href="namespaceFCollada.html">FCollada</a> generates error message. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>function</em>&nbsp;</td><td>Callback that was registered to be called when <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> generates error message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -696,7 +697,9 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the error string for the custom error (ERROR_CUSTOM_STRING) Used mainly for the <a class="el" href="classFUDebug.html">FUDebug</a> structure. We encourage applications to also use it in conjunction with the <a class="el" href="classFUErrorLog.html">FUErrorLog</a> class. </p>
+
+<p>Sets the error string for the custom error (ERROR_CUSTOM_STRING) Used mainly for the <a class="el" href="classFUDebug.html" title="A debugging logging facility.">FUDebug</a> structure. </p>
+<p>We encourage applications to also use it in conjunction with the <a class="el" href="classFUErrorLog.html" title="An error log.">FUErrorLog</a> class. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>customErrorString.</em>&nbsp;</td><td></td></tr>
@@ -721,6 +724,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the level at which errors will cancel the processing of a COLLADA document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -750,7 +754,7 @@ template&lt;class Class &gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:53 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

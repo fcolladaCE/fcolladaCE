@@ -55,6 +55,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FUDaePassStateShadeModel Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>The render state shading model.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -62,11 +65,16 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespaceFUDaePassStateShadeModel.html#a064ef370ffcebcea8ed5a4b2f9bcf7a1ad75a25cbf38d18482f85798a496c4b50">SMOOTH</a> =  0x1D01, 
 <a class="el" href="namespaceFUDaePassStateShadeModel.html#a064ef370ffcebcea8ed5a4b2f9bcf7a1af368b5304b55a1f1104d75ccea094337">INVALID</a>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The shading model using when rasterizing. </p>
+ <a href="namespaceFUDaePassStateShadeModel.html#a064ef370ffcebcea8ed5a4b2f9bcf7a1">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassStateShadeModel.html#a064ef370ffcebcea8ed5a4b2f9bcf7a1">Model</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateShadeModel.html#a2cf15df756b082b66649c373ab8df85a">FromString</a> (const char *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the COLLADA render state shading model type string to the shading model.  <a href="#a2cf15df756b082b66649c373ab8df85a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateShadeModel.html#a726a28704b8c2b6a332d851f8e7887b0">ToString</a> (<a class="el" href="namespaceFUDaePassStateShadeModel.html#a064ef370ffcebcea8ed5a4b2f9bcf7a1">Model</a> model)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the shading model to its COLLADA render state shading model type string.  <a href="#a726a28704b8c2b6a332d851f8e7887b0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassStateShadeModel.html#a064ef370ffcebcea8ed5a4b2f9bcf7a1">Model</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassStateShadeModel.html#a5bee3f41c4858c1872b2f0e265a198f9">FromString</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5bee3f41c4858c1872b2f0e265a198f9"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The render state shading model. </p>
@@ -81,13 +89,15 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The shading model using when rasterizing. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a064ef370ffcebcea8ed5a4b2f9bcf7a1ad75a25cbf38d18482f85798a496c4b50"></a><!-- doxytag: member="SMOOTH" ref="a064ef370ffcebcea8ed5a4b2f9bcf7a1ad75a25cbf38d18482f85798a496c4b50" args="" -->SMOOTH</em>&nbsp;</td><td>
 <p>Flat shading. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a064ef370ffcebcea8ed5a4b2f9bcf7a1af368b5304b55a1f1104d75ccea094337"></a><!-- doxytag: member="INVALID" ref="a064ef370ffcebcea8ed5a4b2f9bcf7a1af368b5304b55a1f1104d75ccea094337" args="" -->INVALID</em>&nbsp;</td><td>
-<p>Gouraud shading. An invalid shading model. </p>
+<p>Gouraud shading. </p>
+<p>An invalid shading model. </p>
 </td></tr>
 </table>
 </dd>
@@ -111,6 +121,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the COLLADA render state shading model type string to the shading model. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -137,6 +148,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -156,6 +168,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the shading model to its COLLADA render state shading model type string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -182,7 +195,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:04 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:28 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

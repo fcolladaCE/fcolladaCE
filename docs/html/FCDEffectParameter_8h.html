@@ -55,6 +55,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCollada/FCDocument/FCDEffectParameter.h File Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>This file contains the <a class="el" href="classFCDEffectParameter.html" title="A COLLADA effect parameter.">FCDEffectParameter</a> interface and the simpler of its derivate classes: FCDEffectParameterString, FCDEffectParameterFloat, FCDEffectParameterVector...  
+<a href="#_details">More...</a></p>
 <code>#include &quot;<a class="el" href="FCDObject_8h_source.html">FCDocument/FCDObject.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="FCDParameterAnimatable_8h_source.html">FCDocument/FCDParameterAnimatable.h</a>&quot;</code><br/>
 
@@ -63,47 +66,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA effect parameter.  <a href="classFCDEffectParameter.html#_details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameterT.html">FCDEffectParameterT&lt; PrimitiveType &gt;</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA non-animatable effect parameter template.  <a href="classFCDEffectParameterT.html#_details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterAnimatableT&lt; PrimitiveType, Qualifiers &gt;</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA non-animatable effect parameter template.  <a href="classFCDEffectParameterAnimatableT.html#_details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectParameterAnnotation.html">FCDEffectParameterAnnotation</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A ColladaFX annotation.  <a href="classFCDEffectParameterAnnotation.html#_details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDEffectParameterT.html">FCDEffectParameterT</a><br class="typebreak"/>
 &lt; int32 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#a8d98b22b10bbb6bb4e86107638012833">FCDEffectParameterInt</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An integer effect parameter.  <a href="#a8d98b22b10bbb6bb4e86107638012833"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDEffectParameterT.html">FCDEffectParameterT</a>&lt; bool &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#a8991e6b433c8448e2d67cd6740789dd6">FCDEffectParameterBool</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A boolean effect parameter.  <a href="#a8991e6b433c8448e2d67cd6740789dd6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDEffectParameterT.html">FCDEffectParameterT</a><br class="typebreak"/>
 &lt; <a class="el" href="classfm_1_1stringT.html">fm::string</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#ae566f88e818b924774e6885b054511ad">FCDEffectParameterString</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A string effect parameter.  <a href="#ae566f88e818b924774e6885b054511ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterAnimatableT</a><br class="typebreak"/>
 &lt; float, <br class="typebreak"/>
 FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#a6d4399bb3599f597d24525b14629ea24">FCDEffectParameterFloat</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An effect parameter containing one floating point value.  <a href="#a6d4399bb3599f597d24525b14629ea24"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector2.html">FMVector2</a>, <br class="typebreak"/>
 FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#afbdcdcb0e97be128e03e9cfdae1df6b3">FCDEffectParameterFloat2</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An effect parameter containing a 2D floating point vector.  <a href="#afbdcdcb0e97be128e03e9cfdae1df6b3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector3.html">FMVector3</a>, <br class="typebreak"/>
 FUParameterQualifiers::VECTOR &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#a0fbc90630671e10b9a50af2eef3896ff">FCDEffectParameterFloat3</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An effect parameter containing a 3D floating point vector.  <a href="#a0fbc90630671e10b9a50af2eef3896ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector3.html">FMVector3</a>, <br class="typebreak"/>
 FUParameterQualifiers::COLOR &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#a39e09100e1064dc584d594f798def0fe">FCDEffectParameterColor3</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An effect parameter containing a 3D color value.  <a href="#a39e09100e1064dc584d594f798def0fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector4.html">FMVector4</a>, <br class="typebreak"/>
 FUParameterQualifiers::VECTOR &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#afbdc8350899d3008979adafafe7226e2">FCDEffectParameterVector</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An effect parameter containing a 4D floating point vector.  <a href="#afbdc8350899d3008979adafafe7226e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector4.html">FMVector4</a>, <br class="typebreak"/>
 FUParameterQualifiers::COLOR &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#adae99536fd7506de7948fe105b2305b1">FCDEffectParameterColor4</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An effect parameter containing a 4D color value.  <a href="#adae99536fd7506de7948fe105b2305b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDEffectParameterAnimatableT.html">FCDEffectParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMMatrix44.html">FMMatrix44</a>, <br class="typebreak"/>
 FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDEffectParameter_8h.html#a3653dddf7eab80ecfb3c9587475457ba">FCDEffectParameterMatrix</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An effect parameter containing a 4x4 matrix.  <a href="#a3653dddf7eab80ecfb3c9587475457ba"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This file contains the <a class="el" href="classFCDEffectParameter.html">FCDEffectParameter</a> interface and the simpler of its derivate classes: FCDEffectParameterString, FCDEffectParameterFloat, FCDEffectParameterVector... </p>
+<p>This file contains the <a class="el" href="classFCDEffectParameter.html" title="A COLLADA effect parameter.">FCDEffectParameter</a> interface and the simpler of its derivate classes: FCDEffectParameterString, FCDEffectParameterFloat, FCDEffectParameterVector... </p>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="a8991e6b433c8448e2d67cd6740789dd6"></a><!-- doxytag: member="FCDEffectParameter.h::FCDEffectParameterBool" ref="a8991e6b433c8448e2d67cd6740789dd6" args="" -->
 <div class="memitem">
@@ -115,6 +132,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>A boolean effect parameter. </p>
 
 </div>
@@ -129,6 +147,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>An effect parameter containing a 3D color value. </p>
 
 </div>
@@ -143,6 +162,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>An effect parameter containing a 4D color value. </p>
 
 </div>
@@ -157,6 +177,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>An effect parameter containing one floating point value. </p>
 
 </div>
@@ -171,6 +192,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>An effect parameter containing a 2D floating point vector. </p>
 
 </div>
@@ -185,6 +207,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>An effect parameter containing a 3D floating point vector. </p>
 
 </div>
@@ -199,6 +222,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>An integer effect parameter. </p>
 
 </div>
@@ -213,6 +237,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>An effect parameter containing a 4x4 matrix. </p>
 
 </div>
@@ -227,6 +252,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>A string effect parameter. </p>
 
 </div>
@@ -241,6 +267,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
       </table>
 </div>
 <div class="memdoc">
+
 <p>An effect parameter containing a 4D floating point vector. </p>
 
 </div>
@@ -260,7 +287,7 @@ FUParameterQualifiers::SIMPLE &gt;&nbsp;</td><td class="memItemRight" valign="bo
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

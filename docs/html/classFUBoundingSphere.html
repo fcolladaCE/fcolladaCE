@@ -60,27 +60,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUBoundingSphere" -->
+<p>A bounding sphere.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUBoundingSphere_8h_source.html">FUBoundingSphere.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#aef103eeefb1810269792877638997fdf">FUBoundingSphere</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Empty constructor.  <a href="#aef103eeefb1810269792877638997fdf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a7a9d33bda02b4c6b20a533568b07e197">FUBoundingSphere</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;center, float radius)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a7a9d33bda02b4c6b20a533568b07e197"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a759fa8635bcb2b5fca33386a8a30ba08">FUBoundingSphere</a> (const <a class="el" href="classFUBoundingSphere.html">FUBoundingSphere</a> &amp;copy)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copy constructor.  <a href="#a759fa8635bcb2b5fca33386a8a30ba08"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a102e9b7c27f1139f4c5e75522df4aa55">~FUBoundingSphere</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a102e9b7c27f1139f4c5e75522df4aa55"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a4298b67a087c577a70cbef81d1fa32fa">Reset</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Resets the bounding sphere.  <a href="#a4298b67a087c577a70cbef81d1fa32fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#ab986bd085735a8466643e9d638e0a21b">IsValid</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the bounding sphere contains valid information.  <a href="#ab986bd085735a8466643e9d638e0a21b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#af876a90e6e5dbc651a93f658cab8ced5">GetCenter</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the center of the bounding sphere.  <a href="#af876a90e6e5dbc651a93f658cab8ced5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a617fa08a1821537b09d73d70955a6fcb">GetRadius</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the radius of the bounding sphere.  <a href="#a617fa08a1821537b09d73d70955a6fcb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a9232c3e6042bd31940343c5313e9e337">SetCenter</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;_center)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the center of the bounding sphere.  <a href="#a9232c3e6042bd31940343c5313e9e337"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a376d82614f3888dae7312b109dea1ed8">SetRadius</a> (float _radius)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the radius of the bounding sphere.  <a href="#a376d82614f3888dae7312b109dea1ed8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#afa2a133249cec50f5d0f3175b23c9ff0">Contains</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;point) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a given point is contained within the bounding sphere.  <a href="#afa2a133249cec50f5d0f3175b23c9ff0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#af25dfeab95de4ac4bde2386b15c76c36">Overlaps</a> (const <a class="el" href="classFUBoundingSphere.html">FUBoundingSphere</a> &amp;boundingSphere, <a class="el" href="classFMVector3.html">FMVector3</a> *overlapCenter=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a bounding sphere overlaps with this bounding sphere.  <a href="#af25dfeab95de4ac4bde2386b15c76c36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#abbfabd998defd4a3f8ec6a2570476b9b">Overlaps</a> (const <a class="el" href="classFUBoundingBox.html">FUBoundingBox</a> &amp;boundingBox, <a class="el" href="classFMVector3.html">FMVector3</a> *overlapCenter=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a bounding box overlaps with this bounding sphere.  <a href="#abbfabd998defd4a3f8ec6a2570476b9b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a9204f9a5b8784ad8e1c70fbcbe5b30bb">Include</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;point)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Extends the bounding sphere to include the given 3D coordinate.  <a href="#a9204f9a5b8784ad8e1c70fbcbe5b30bb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#aeedee8e04214d5389bc61fbf4167dd26">Include</a> (const <a class="el" href="classFUBoundingSphere.html">FUBoundingSphere</a> &amp;boundingSphere)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Extends the bounding sphere to include another bounding sphere.  <a href="#aeedee8e04214d5389bc61fbf4167dd26"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#a1bf453ac6fbca95bcaff8fa6e700a9a3">Include</a> (const <a class="el" href="classFUBoundingBox.html">FUBoundingBox</a> &amp;boundingBox)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Extends the bounding sphere to include a bounding box.  <a href="#a1bf453ac6fbca95bcaff8fa6e700a9a3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUBoundingSphere.html">FUBoundingSphere</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUBoundingSphere.html#aafd37f8aaca9a64b02f5c8c6f8cc77f4">Transform</a> (const <a class="el" href="classFMMatrix44.html">FMMatrix44</a> &amp;transform) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transform the bounding sphere into another space basis.  <a href="#aafd37f8aaca9a64b02f5c8c6f8cc77f4"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A bounding sphere. </p>
@@ -99,7 +119,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Empty constructor. The center and radius parameters are set at the largest and most impossible values. </p>
+
+<p>Empty constructor. </p>
+<p>The center and radius parameters are set at the largest and most impossible values. </p>
 
 </div>
 </div>
@@ -127,6 +149,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -153,6 +176,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copy constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -177,6 +201,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -197,6 +222,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether a given point is contained within the bounding sphere. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -222,6 +248,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the center of the bounding sphere. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The bounding sphere center. </dd></dl>
 
@@ -241,6 +268,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the radius of the bounding sphere. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The bounding sphere radius. </dd></dl>
 
@@ -261,6 +289,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Extends the bounding sphere to include the given 3D coordinate. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -286,6 +315,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Extends the bounding sphere to include another bounding sphere. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -311,6 +341,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Extends the bounding sphere to include a bounding box. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -335,7 +366,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the bounding sphere contains valid information. An invalid bounding sphere has a negative radius. Reseting the bounding sphere and the empty constructor generate invalid bounding spheres on purpose. </p>
+
+<p>Retrieves whether the bounding sphere contains valid information. </p>
+<p>An invalid bounding sphere has a negative radius. Reseting the bounding sphere and the empty constructor generate invalid bounding spheres on purpose. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The validity state of the bounding sphere. </dd></dl>
 
 </div>
@@ -364,6 +397,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether a bounding sphere overlaps with this bounding sphere. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -400,6 +434,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether a bounding box overlaps with this bounding sphere. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -426,7 +461,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Resets the bounding sphere. The center and radius are set at the largest and most impossible values. Including a freshly reset bounding sphere to a valid bounding sphere will have no effect. </p>
+
+<p>Resets the bounding sphere. </p>
+<p>The center and radius are set at the largest and most impossible values. Including a freshly reset bounding sphere to a valid bounding sphere will have no effect. </p>
 
 </div>
 </div>
@@ -445,6 +482,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the center of the bounding sphere. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -470,6 +508,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the radius of the bounding sphere. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -495,6 +534,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Transform the bounding sphere into another space basis. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -525,7 +565,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:52 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

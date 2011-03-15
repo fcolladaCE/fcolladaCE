@@ -54,15 +54,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCDLightTools Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>Holds commonly-used transformation functions for lights.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDLightTools.html#ac7e4420bb00c7765b91debb75fbf673f">LoadPenumbra</a> (<a class="el" href="classFCDLight.html">FCDLight</a> *light, float penumbraValue, <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *penumbraAnimated, bool createAnimationChannel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDLightTools.html#aea637723088e41d5703a25eba8f262fc">LoadPenumbra</a> (<a class="el" href="classFCDLight.html">FCDLight</a> *light, float penumbraValue, <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *penumbraAnimated, bool createAnimationChannel=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Loads the penumbra into the light.  <a href="#aea637723088e41d5703a25eba8f262fc"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Holds commonly-used transformation functions for lights. </p>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ac7e4420bb00c7765b91debb75fbf673f"></a><!-- doxytag: member="FCDLightTools::LoadPenumbra" ref="ac7e4420bb00c7765b91debb75fbf673f" args="(FCDLight *light, float penumbraValue, FCDAnimated *penumbraAnimated, bool createAnimationChannel)" -->
+<a class="anchor" id="aea637723088e41d5703a25eba8f262fc"></a><!-- doxytag: member="FCDLightTools::LoadPenumbra" ref="aea637723088e41d5703a25eba8f262fc" args="(FCDLight *light, float penumbraValue, FCDAnimated *penumbraAnimated, bool createAnimationChannel=true)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -98,7 +102,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Loads the penumbra into the light. The <a class="el" href="classFCDLight.html">FCDLight</a> does not contain penumbra information directly, but it can be represented with appropriate values for the outerAngle and the fallOffAngle. If the penumbra is positive, then the outerAngle is the sum of the penumbra value and the fallOffAngle. If the penumbra is negative, then the outerAngle is the fallOffAngle and the fallOffAngle is the outerAngle minus the penumbra. This method sets the fallOffAngle and outerAngle to correspond to the penumbra given. It takes care of the animations as well. </p>
+
+<p>Loads the penumbra into the light. </p>
+<p>The <a class="el" href="classFCDLight.html" title="A COLLADA light.">FCDLight</a> does not contain penumbra information directly, but it can be represented with appropriate values for the outerAngle and the fallOffAngle. If the penumbra is positive, then the outerAngle is the sum of the penumbra value and the fallOffAngle. If the penumbra is negative, then the outerAngle is the fallOffAngle and the fallOffAngle is the outerAngle minus the penumbra. This method sets the fallOffAngle and outerAngle to correspond to the penumbra given. It takes care of the animations as well. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>light</em>&nbsp;</td><td>The light to process. </td></tr>
@@ -126,7 +132,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:02 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:27 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

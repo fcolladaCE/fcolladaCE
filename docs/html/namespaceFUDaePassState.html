@@ -55,6 +55,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FUDaePassState Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>The render states for effect passes.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -198,11 +201,16 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973a3425d6726adb3b7b0321143b1f93ebc2">INVALID</a>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Enumerates the COLLADA render states for effect passes. </p>
+ <a href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">State</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassState.html#a92d6cee907009a2310b957ce7dffe4c1">FromString</a> (const char *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the COLLADA render state name string to the render state enumeration type.  <a href="#a92d6cee907009a2310b957ce7dffe4c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassState.html#a94b3bb7dbf36218b3e730b6929e31b08">ToString</a> (<a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">State</a> state)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the render state enumeration type to its COLLADA render state name string.  <a href="#a94b3bb7dbf36218b3e730b6929e31b08"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaePassState.html#a99a648050f80bc29359e932cffa8c973">State</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFUDaePassState.html#a49ef0cbfa91760f3387ea195368cc7f8">FromString</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a49ef0cbfa91760f3387ea195368cc7f8"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The render states for effect passes. </p>
@@ -217,82 +225,84 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Enumerates the COLLADA render states for effect passes. Each state description states the structure allocated in <a class="el" href="namespaceFCollada.html">FCollada</a> for this state. For example, ALPHA_FUNC describes: { <a class="el" href="namespaceFUDaePassStateFunction.html">FUDaePassStateFunction</a> function = ALWAYS, float alphaComparison = 0.0f }. This implies a 8-byte structure with 1) <a class="el" href="namespaceFUDaePassStateFunction.html#af0f6fbb32c14e5a19559a6630f783313">FUDaePassStateFunction::Function</a> at offset 0; it defaults to the ALWAYS enumerated type. 2) The alpha comparison value at offset 4; it defaults to 0.0f. All enumerated types are 4 byte in length. </p>
+
+<p>Enumerates the COLLADA render states for effect passes. </p>
+<p>Each state description states the structure allocated in <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> for this state. For example, ALPHA_FUNC describes: { <a class="el" href="namespaceFUDaePassStateFunction.html" title="The function types for the effect pass render states.">FUDaePassStateFunction</a> function = ALWAYS, float alphaComparison = 0.0f }. This implies a 8-byte structure with 1) <a class="el" href="namespaceFUDaePassStateFunction.html#af0f6fbb32c14e5a19559a6630f783313" title="Enumerates the COLLADA render state function types.">FUDaePassStateFunction::Function</a> at offset 0; it defaults to the ALWAYS enumerated type. 2) The alpha comparison value at offset 4; it defaults to 0.0f. All enumerated types are 4 byte in length. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a2206d5d871730ba023a86011293ed9b5"></a><!-- doxytag: member="ALPHA_FUNC" ref="a99a648050f80bc29359e932cffa8c973a2206d5d871730ba023a86011293ed9b5" args="" -->ALPHA_FUNC</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFunction.html">FUDaePassStateFunction</a> function = ALWAYS, float alphaComparison = 0.0f } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFunction.html" title="The function types for the effect pass render states.">FUDaePassStateFunction</a> function = ALWAYS, float alphaComparison = 0.0f } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a5c30f96ead83aaf455e93bc7700511d0"></a><!-- doxytag: member="BLEND_FUNC" ref="a99a648050f80bc29359e932cffa8c973a5c30f96ead83aaf455e93bc7700511d0" args="" -->BLEND_FUNC</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateBlendType.html">FUDaePassStateBlendType</a> sourceBlend = ONE, <a class="el" href="namespaceFUDaePassStateBlendType.html">FUDaePassStateBlendType</a> destinationBlend = ZERO } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateBlendType.html" title="The render state blend types for effect passes.">FUDaePassStateBlendType</a> sourceBlend = ONE, <a class="el" href="namespaceFUDaePassStateBlendType.html" title="The render state blend types for effect passes.">FUDaePassStateBlendType</a> destinationBlend = ZERO } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a4ac7c1c6fa8482b46aef7a7145a62469"></a><!-- doxytag: member="BLEND_FUNC_SEPARATE" ref="a99a648050f80bc29359e932cffa8c973a4ac7c1c6fa8482b46aef7a7145a62469" args="" -->BLEND_FUNC_SEPARATE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateBlendType.html">FUDaePassStateBlendType</a> sourceColorBlend = ONE, <a class="el" href="namespaceFUDaePassStateBlendType.html">FUDaePassStateBlendType</a> destinationColorBlend = ZERO, <a class="el" href="namespaceFUDaePassStateBlendType.html">FUDaePassStateBlendType</a> sourceAlphaBlend = ONE, <a class="el" href="namespaceFUDaePassStateBlendType.html">FUDaePassStateBlendType</a> destinationAlphaBlend = ZERO } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateBlendType.html" title="The render state blend types for effect passes.">FUDaePassStateBlendType</a> sourceColorBlend = ONE, <a class="el" href="namespaceFUDaePassStateBlendType.html" title="The render state blend types for effect passes.">FUDaePassStateBlendType</a> destinationColorBlend = ZERO, <a class="el" href="namespaceFUDaePassStateBlendType.html" title="The render state blend types for effect passes.">FUDaePassStateBlendType</a> sourceAlphaBlend = ONE, <a class="el" href="namespaceFUDaePassStateBlendType.html" title="The render state blend types for effect passes.">FUDaePassStateBlendType</a> destinationAlphaBlend = ZERO } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a7d27f0a73740d71e29d158ce23769b9c"></a><!-- doxytag: member="BLEND_EQUATION" ref="a99a648050f80bc29359e932cffa8c973a7d27f0a73740d71e29d158ce23769b9c" args="" -->BLEND_EQUATION</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateBlendEquation.html">FUDaePassStateBlendEquation</a> blendEquation = ADD } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateBlendEquation.html" title="The render state blend equation types.">FUDaePassStateBlendEquation</a> blendEquation = ADD } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a0f29144111e1f75b4d0467b1b5bef7d1"></a><!-- doxytag: member="BLEND_EQUATION_SEPARATE" ref="a99a648050f80bc29359e932cffa8c973a0f29144111e1f75b4d0467b1b5bef7d1" args="" -->BLEND_EQUATION_SEPARATE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateBlendEquation.html">FUDaePassStateBlendEquation</a> colorEquation = ADD, <a class="el" href="namespaceFUDaePassStateBlendEquation.html">FUDaePassStateBlendEquation</a> alphaEquation = ADD } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateBlendEquation.html" title="The render state blend equation types.">FUDaePassStateBlendEquation</a> colorEquation = ADD, <a class="el" href="namespaceFUDaePassStateBlendEquation.html" title="The render state blend equation types.">FUDaePassStateBlendEquation</a> alphaEquation = ADD } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ac12fdce3ee297e46ffd97601b90d63f7"></a><!-- doxytag: member="COLOR_MATERIAL" ref="a99a648050f80bc29359e932cffa8c973ac12fdce3ee297e46ffd97601b90d63f7" args="" -->COLOR_MATERIAL</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html">FUDaePassStateFaceType</a> whichFaces = FRONT_AND_BACK, <a class="el" href="namespaceFUDaePassStateMaterialType.html">FUDaePassStateMaterialType</a> material = AMBIENT_AND_DIFFUSE } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html" title="The render state face types.">FUDaePassStateFaceType</a> whichFaces = FRONT_AND_BACK, <a class="el" href="namespaceFUDaePassStateMaterialType.html" title="The render state material types.">FUDaePassStateMaterialType</a> material = AMBIENT_AND_DIFFUSE } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a0fb9266f46de69c2989c22c9c562034f"></a><!-- doxytag: member="CULL_FACE" ref="a99a648050f80bc29359e932cffa8c973a0fb9266f46de69c2989c22c9c562034f" args="" -->CULL_FACE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html">FUDaePassStateFaceType</a> culledFaces = BACK } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html" title="The render state face types.">FUDaePassStateFaceType</a> culledFaces = BACK } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a7794fa16bb5cd9924849184bf418f7ae"></a><!-- doxytag: member="DEPTH_FUNC" ref="a99a648050f80bc29359e932cffa8c973a7794fa16bb5cd9924849184bf418f7ae" args="" -->DEPTH_FUNC</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFunction.html">FUDaePassStateFunction</a> depthAcceptFunction = ALWAYS } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFunction.html" title="The function types for the effect pass render states.">FUDaePassStateFunction</a> depthAcceptFunction = ALWAYS } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a92208e1bd0a151a37665856a11070e69"></a><!-- doxytag: member="FOG_MODE" ref="a99a648050f80bc29359e932cffa8c973a92208e1bd0a151a37665856a11070e69" args="" -->FOG_MODE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFogType.html">FUDaePassStateFogType</a> fogType = EXP } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFogType.html" title="The render state fog types.">FUDaePassStateFogType</a> fogType = EXP } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a5be4edeedafa43d6ea45f8a19cecb02c"></a><!-- doxytag: member="FOG_COORD_SRC" ref="a99a648050f80bc29359e932cffa8c973a5be4edeedafa43d6ea45f8a19cecb02c" args="" -->FOG_COORD_SRC</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFogCoordinateType.html">FUDaePassStateFogCoordinateType</a> type = FOG_COORDINATE } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFogCoordinateType.html" title="The render state fog coordinate source types.">FUDaePassStateFogCoordinateType</a> type = FOG_COORDINATE } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a20016a957c1412fb206e27b75226b1cf"></a><!-- doxytag: member="FRONT_FACE" ref="a99a648050f80bc29359e932cffa8c973a20016a957c1412fb206e27b75226b1cf" args="" -->FRONT_FACE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFrontFaceType.html">FUDaePassStateFrontFaceType</a> frontFaceSide = COUNTER_CLOCKWISE } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFrontFaceType.html" title="The render state front face types.">FUDaePassStateFrontFaceType</a> frontFaceSide = COUNTER_CLOCKWISE } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a6d2c6c898e475286a5534533c2e72356"></a><!-- doxytag: member="LIGHT_MODEL_COLOR_CONTROL" ref="a99a648050f80bc29359e932cffa8c973a6d2c6c898e475286a5534533c2e72356" args="" -->LIGHT_MODEL_COLOR_CONTROL</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateLightModelColorControlType.html">FUDaePassStateLightModelColorControlType</a> controlType = SINGLE_COLOR } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateLightModelColorControlType.html" title="The render state light model color control types.">FUDaePassStateLightModelColorControlType</a> controlType = SINGLE_COLOR } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973afbc241cd7b2dc80fadee9ef253b9d4be"></a><!-- doxytag: member="LOGIC_OP" ref="a99a648050f80bc29359e932cffa8c973afbc241cd7b2dc80fadee9ef253b9d4be" args="" -->LOGIC_OP</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateLogicOperation.html">FUDaePassStateLogicOperation</a> operation = COPY } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateLogicOperation.html" title="The render state logic operations.">FUDaePassStateLogicOperation</a> operation = COPY } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973aa0b79e5cbb67f78f9e0ef34b308df91c"></a><!-- doxytag: member="POLYGON_MODE" ref="a99a648050f80bc29359e932cffa8c973aa0b79e5cbb67f78f9e0ef34b308df91c" args="" -->POLYGON_MODE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html">FUDaePassStateFaceType</a> whichFaces = FRONT_AND_BACK, <a class="el" href="namespaceFUDaePassStatePolygonMode.html">FUDaePassStatePolygonMode</a> renderMode = FILL } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html" title="The render state face types.">FUDaePassStateFaceType</a> whichFaces = FRONT_AND_BACK, <a class="el" href="namespaceFUDaePassStatePolygonMode.html" title="The render state polygon modes.">FUDaePassStatePolygonMode</a> renderMode = FILL } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973aa637acfe40f202126c45639ddae8f076"></a><!-- doxytag: member="SHADE_MODEL" ref="a99a648050f80bc29359e932cffa8c973aa637acfe40f202126c45639ddae8f076" args="" -->SHADE_MODEL</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateShadeModel.html">FUDaePassStateShadeModel</a> model = SMOOTH } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateShadeModel.html" title="The render state shading model.">FUDaePassStateShadeModel</a> model = SMOOTH } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973aa93638c65b062daf2eeb406645dafc16"></a><!-- doxytag: member="STENCIL_FUNC" ref="a99a648050f80bc29359e932cffa8c973aa93638c65b062daf2eeb406645dafc16" args="" -->STENCIL_FUNC</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFunction.html">FUDaePassStateFunction</a> acceptFunction = ALWAYS, uint8 referenceValue = 0, uint8 mask = 0xFF } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFunction.html" title="The function types for the effect pass render states.">FUDaePassStateFunction</a> acceptFunction = ALWAYS, uint8 referenceValue = 0, uint8 mask = 0xFF } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a450ebc023a3a8b2ac7af3f76e9f4cd9e"></a><!-- doxytag: member="STENCIL_OP" ref="a99a648050f80bc29359e932cffa8c973a450ebc023a3a8b2ac7af3f76e9f4cd9e" args="" -->STENCIL_OP</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateStencilOperation.html">FUDaePassStateStencilOperation</a> failOperation = KEEP, <a class="el" href="namespaceFUDaePassStateStencilOperation.html">FUDaePassStateStencilOperation</a> depthFailOperation = KEEP, <a class="el" href="namespaceFUDaePassStateStencilOperation.html">FUDaePassStateStencilOperation</a> depthPassOperation = KEEP } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateStencilOperation.html" title="The stencil operation types for the effect pass render states.">FUDaePassStateStencilOperation</a> failOperation = KEEP, <a class="el" href="namespaceFUDaePassStateStencilOperation.html" title="The stencil operation types for the effect pass render states.">FUDaePassStateStencilOperation</a> depthFailOperation = KEEP, <a class="el" href="namespaceFUDaePassStateStencilOperation.html" title="The stencil operation types for the effect pass render states.">FUDaePassStateStencilOperation</a> depthPassOperation = KEEP } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a0ce548e11f12e7c71f37fb95511f7a1d"></a><!-- doxytag: member="STENCIL_FUNC_SEPARATE" ref="a99a648050f80bc29359e932cffa8c973a0ce548e11f12e7c71f37fb95511f7a1d" args="" -->STENCIL_FUNC_SEPARATE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFunction.html">FUDaePassStateFunction</a> frontFacesAcceptFunction = ALWAYS, <a class="el" href="namespaceFUDaePassStateFunction.html">FUDaePassStateFunction</a> backFacesAcceptFunction = ALWAYS, uint8 referenceValue = 0, uint8 mask = 0xFF } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFunction.html" title="The function types for the effect pass render states.">FUDaePassStateFunction</a> frontFacesAcceptFunction = ALWAYS, <a class="el" href="namespaceFUDaePassStateFunction.html" title="The function types for the effect pass render states.">FUDaePassStateFunction</a> backFacesAcceptFunction = ALWAYS, uint8 referenceValue = 0, uint8 mask = 0xFF } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ab35ebb094f0d4ba9bad88d7ab2489364"></a><!-- doxytag: member="STENCIL_OP_SEPARATE" ref="a99a648050f80bc29359e932cffa8c973ab35ebb094f0d4ba9bad88d7ab2489364" args="" -->STENCIL_OP_SEPARATE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html">FUDaePassStateFaceType</a> whichFaces = FRONT_AND_BACK, <a class="el" href="namespaceFUDaePassStateStencilOperation.html">FUDaePassStateStencilOperation</a> failOperation = KEEP, <a class="el" href="namespaceFUDaePassStateStencilOperation.html">FUDaePassStateStencilOperation</a> depthFailOperation = KEEP, <a class="el" href="namespaceFUDaePassStateStencilOperation.html">FUDaePassStateStencilOperation</a> depthPassOperation = KEEP } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html" title="The render state face types.">FUDaePassStateFaceType</a> whichFaces = FRONT_AND_BACK, <a class="el" href="namespaceFUDaePassStateStencilOperation.html" title="The stencil operation types for the effect pass render states.">FUDaePassStateStencilOperation</a> failOperation = KEEP, <a class="el" href="namespaceFUDaePassStateStencilOperation.html" title="The stencil operation types for the effect pass render states.">FUDaePassStateStencilOperation</a> depthFailOperation = KEEP, <a class="el" href="namespaceFUDaePassStateStencilOperation.html" title="The stencil operation types for the effect pass render states.">FUDaePassStateStencilOperation</a> depthPassOperation = KEEP } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a47ef44f6cd23c792c0f39883ae3fad62"></a><!-- doxytag: member="STENCIL_MASK_SEPARATE" ref="a99a648050f80bc29359e932cffa8c973a47ef44f6cd23c792c0f39883ae3fad62" args="" -->STENCIL_MASK_SEPARATE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html">FUDaePassStateFaceType</a> whichFaces = FRONT_AND_BACK, uint8 mask = 0xFF } </p>
+<p>{ <a class="el" href="namespaceFUDaePassStateFaceType.html" title="The render state face types.">FUDaePassStateFaceType</a> whichFaces = FRONT_AND_BACK, uint8 mask = 0xFF } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a3cd1f988efc3f3a2df409dcedb0b8ada"></a><!-- doxytag: member="LIGHT_ENABLE" ref="a99a648050f80bc29359e932cffa8c973a3cd1f988efc3f3a2df409dcedb0b8ada" args="" -->LIGHT_ENABLE</em>&nbsp;</td><td>
 <p>{ uint8 lightIndex = 0, bool enabled = false } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a3516fac76a72a658278e2735b8cedc09"></a><!-- doxytag: member="LIGHT_AMBIENT" ref="a99a648050f80bc29359e932cffa8c973a3516fac76a72a658278e2735b8cedc09" args="" -->LIGHT_AMBIENT</em>&nbsp;</td><td>
-<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html">FMVector4</a> ambientColor = [0,0,0,1] } </p>
+<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> ambientColor = [0,0,0,1] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973afa9d64a5ca3f6a98a28b569baa978217"></a><!-- doxytag: member="LIGHT_DIFFUSE" ref="a99a648050f80bc29359e932cffa8c973afa9d64a5ca3f6a98a28b569baa978217" args="" -->LIGHT_DIFFUSE</em>&nbsp;</td><td>
-<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html">FMVector4</a> diffuseColor = [0,0,0,0] } </p>
+<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> diffuseColor = [0,0,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973add84ac0cac833726a05fdb9f3d625a21"></a><!-- doxytag: member="LIGHT_SPECULAR" ref="a99a648050f80bc29359e932cffa8c973add84ac0cac833726a05fdb9f3d625a21" args="" -->LIGHT_SPECULAR</em>&nbsp;</td><td>
-<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html">FMVector4</a> specularColor = [0,0,0,0] } </p>
+<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> specularColor = [0,0,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a2a5c582e7ca46ccd7b64568c956bcec3"></a><!-- doxytag: member="LIGHT_POSITION" ref="a99a648050f80bc29359e932cffa8c973a2a5c582e7ca46ccd7b64568c956bcec3" args="" -->LIGHT_POSITION</em>&nbsp;</td><td>
-<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html">FMVector4</a> position = [0,0,1,0] } </p>
+<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> position = [0,0,1,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973adba80c2493b1b99259d02abe6a2bf887"></a><!-- doxytag: member="LIGHT_CONSTANT_ATTENUATION" ref="a99a648050f80bc29359e932cffa8c973adba80c2493b1b99259d02abe6a2bf887" args="" -->LIGHT_CONSTANT_ATTENUATION</em>&nbsp;</td><td>
 <p>{ uint8 lightIndex = 0, float constantAttenuation = 1.0f } </p>
@@ -307,7 +317,7 @@ Functions</h2></td></tr>
 <p>{ uint8 lightIndex = 0, float cutoff = 180.0f } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a53e101fd075c952cb3ce46e8dc4fa702"></a><!-- doxytag: member="LIGHT_SPOT_DIRECTION" ref="a99a648050f80bc29359e932cffa8c973a53e101fd075c952cb3ce46e8dc4fa702" args="" -->LIGHT_SPOT_DIRECTION</em>&nbsp;</td><td>
-<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html">FMVector4</a> direction = [0,0,-1] } </p>
+<p>{ uint8 lightIndex = 0, <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> direction = [0,0,-1] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ac9eed5f8e2bb49ceb27ed19e71d7a1b2"></a><!-- doxytag: member="LIGHT_SPOT_EXPONENT" ref="a99a648050f80bc29359e932cffa8c973ac9eed5f8e2bb49ceb27ed19e71d7a1b2" args="" -->LIGHT_SPOT_EXPONENT</em>&nbsp;</td><td>
 <p>{ uint8 lightIndex = 0, float exponent = 0.0f } </p>
@@ -349,22 +359,22 @@ Functions</h2></td></tr>
 <p>{ uint8 textureIndex = 0, bool enabled = false } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a18e908cce8399857b2fd735e33365703"></a><!-- doxytag: member="TEXTURE_ENV_COLOR" ref="a99a648050f80bc29359e932cffa8c973a18e908cce8399857b2fd735e33365703" args="" -->TEXTURE_ENV_COLOR</em>&nbsp;</td><td>
-<p>{ uint8 textureIndex = 0, <a class="el" href="classFMVector4.html">FMVector4</a> environmentColor = [0,0,0,0] } </p>
+<p>{ uint8 textureIndex = 0, <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> environmentColor = [0,0,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a671e6a5718b19381bcce4348ccb9cb18"></a><!-- doxytag: member="TEXTURE_ENV_MODE" ref="a99a648050f80bc29359e932cffa8c973a671e6a5718b19381bcce4348ccb9cb18" args="" -->TEXTURE_ENV_MODE</em>&nbsp;</td><td>
 <p>{ uint8 textureIndex = 0, char environmentMode[255] = "" } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ad9bb60f5a1892411fb1809b43d92b430"></a><!-- doxytag: member="CLIP_PLANE" ref="a99a648050f80bc29359e932cffa8c973ad9bb60f5a1892411fb1809b43d92b430" args="" -->CLIP_PLANE</em>&nbsp;</td><td>
-<p>{ uint8 planeIndex = 0, <a class="el" href="classFMVector4.html">FMVector4</a> planeValue = [0,0,0,0] } </p>
+<p>{ uint8 planeIndex = 0, <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> planeValue = [0,0,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a0db3fc530038d6d6981e71a72d5fafc1"></a><!-- doxytag: member="CLIP_PLANE_ENABLE" ref="a99a648050f80bc29359e932cffa8c973a0db3fc530038d6d6981e71a72d5fafc1" args="" -->CLIP_PLANE_ENABLE</em>&nbsp;</td><td>
 <p>{ uint8 planeIndex = 0, bool enabled = false } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973af89f8afdac78eed984558f22af9a9926"></a><!-- doxytag: member="BLEND_COLOR" ref="a99a648050f80bc29359e932cffa8c973af89f8afdac78eed984558f22af9a9926" args="" -->BLEND_COLOR</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> blendColor = [0,0,0,0] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> blendColor = [0,0,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ad80d3d0749e43aca13cfa188c6034743"></a><!-- doxytag: member="CLEAR_COLOR" ref="a99a648050f80bc29359e932cffa8c973ad80d3d0749e43aca13cfa188c6034743" args="" -->CLEAR_COLOR</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> clearColor = [0,0,0,0] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> clearColor = [0,0,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a09fafeddbffe5e5d15d7327e4749235e"></a><!-- doxytag: member="CLEAR_STENCIL" ref="a99a648050f80bc29359e932cffa8c973a09fafeddbffe5e5d15d7327e4749235e" args="" -->CLEAR_STENCIL</em>&nbsp;</td><td>
 <p>{ uint32 clearStencilValue = 0 } </p>
@@ -376,7 +386,7 @@ Functions</h2></td></tr>
 <p>{ bool redWriteMask = true, bool greenWriteMask = true, bool blueWriteMask = true, bool alphaWriteMask = true } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a2988a786633ba6a14fb90b00067fa12a"></a><!-- doxytag: member="DEPTH_BOUNDS" ref="a99a648050f80bc29359e932cffa8c973a2988a786633ba6a14fb90b00067fa12a" args="" -->DEPTH_BOUNDS</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector2.html">FMVector2</a> depthBounds = [0,1] } </p>
+<p>{ <a class="el" href="classFMVector2.html" title="A 2 dimensional vector.">FMVector2</a> depthBounds = [0,1] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973afc594361fa07a4a74e2ea8de1c7eed23"></a><!-- doxytag: member="DEPTH_MASK" ref="a99a648050f80bc29359e932cffa8c973afc594361fa07a4a74e2ea8de1c7eed23" args="" -->DEPTH_MASK</em>&nbsp;</td><td>
 <p>{ bool depthWriteMask = true } </p>
@@ -394,10 +404,10 @@ Functions</h2></td></tr>
 <p>{ float fogEndDepthValue = 1.0f } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a9ca14896cb8fa05543787d6e0512d76f"></a><!-- doxytag: member="FOG_COLOR" ref="a99a648050f80bc29359e932cffa8c973a9ca14896cb8fa05543787d6e0512d76f" args="" -->FOG_COLOR</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> fogColor = [0,0,0,0] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> fogColor = [0,0,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ad59c4c8f9bb31631a5878b1bf0d076cb"></a><!-- doxytag: member="LIGHT_MODEL_AMBIENT" ref="a99a648050f80bc29359e932cffa8c973ad59c4c8f9bb31631a5878b1bf0d076cb" args="" -->LIGHT_MODEL_AMBIENT</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> ambientColor = [0.2,0.2,0.2,1] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> ambientColor = [0.2,0.2,0.2,1] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a781833d016da749ddba91e432ead6f22"></a><!-- doxytag: member="LIGHTING_ENABLE" ref="a99a648050f80bc29359e932cffa8c973a781833d016da749ddba91e432ead6f22" args="" -->LIGHTING_ENABLE</em>&nbsp;</td><td>
 <p>{ bool enabled = false } </p>
@@ -409,25 +419,25 @@ Functions</h2></td></tr>
 <p>{ float lineWidth = 1.0f } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ab68e82eea07d8951cbcaa9cac2d030c9"></a><!-- doxytag: member="MATERIAL_AMBIENT" ref="a99a648050f80bc29359e932cffa8c973ab68e82eea07d8951cbcaa9cac2d030c9" args="" -->MATERIAL_AMBIENT</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> ambientColor = [0.2,0.2,0.2,1] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> ambientColor = [0.2,0.2,0.2,1] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a38128eec7b835b5ce05f18d678ac3aa7"></a><!-- doxytag: member="MATERIAL_DIFFUSE" ref="a99a648050f80bc29359e932cffa8c973a38128eec7b835b5ce05f18d678ac3aa7" args="" -->MATERIAL_DIFFUSE</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> diffuseColor = [0.8,0.8,0.8,1] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> diffuseColor = [0.8,0.8,0.8,1] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a9267c21822d2f0a2663f395d6de2ba8f"></a><!-- doxytag: member="MATERIAL_EMISSION" ref="a99a648050f80bc29359e932cffa8c973a9267c21822d2f0a2663f395d6de2ba8f" args="" -->MATERIAL_EMISSION</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> emissionColor = [0,0,0,1] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> emissionColor = [0,0,0,1] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ae5ee68be7074ba7ed796747056482a8f"></a><!-- doxytag: member="MATERIAL_SHININESS" ref="a99a648050f80bc29359e932cffa8c973ae5ee68be7074ba7ed796747056482a8f" args="" -->MATERIAL_SHININESS</em>&nbsp;</td><td>
 <p>{ float shininessOrSpecularLevel = 0.0f } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973abbc6112006694f788538148626798853"></a><!-- doxytag: member="MATERIAL_SPECULAR" ref="a99a648050f80bc29359e932cffa8c973abbc6112006694f788538148626798853" args="" -->MATERIAL_SPECULAR</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> specularColor = [0,0,0,1] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> specularColor = [0,0,0,1] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973ac0b4d65eea22f71d18b8d9144d582fd6"></a><!-- doxytag: member="MODEL_VIEW_MATRIX" ref="a99a648050f80bc29359e932cffa8c973ac0b4d65eea22f71d18b8d9144d582fd6" args="" -->MODEL_VIEW_MATRIX</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMMatrix44.html">FMMatrix44</a> modelViewMatrix = <a class="el" href="classFMMatrix44.html#a6ec620d68ab61a95e3b4b5f7e7300468">FMMatrix44::Identity</a> } </p>
+<p>{ <a class="el" href="classFMMatrix44.html" title="A 4x4 Row Major matrix: use to represent 3D transformations.">FMMatrix44</a> modelViewMatrix = <a class="el" href="classFMMatrix44.html#a6ec620d68ab61a95e3b4b5f7e7300468" title="The identity matrix.">FMMatrix44::Identity</a> } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a407efbf63b73d2f1da08044ef1639837"></a><!-- doxytag: member="POINT_DISTANCE_ATTENUATION" ref="a99a648050f80bc29359e932cffa8c973a407efbf63b73d2f1da08044ef1639837" args="" -->POINT_DISTANCE_ATTENUATION</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector3.html">FMVector3</a> attenuation = [1,0,0] } </p>
+<p>{ <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> attenuation = [1,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973aa71cf6fca9a55875901b6c07e0aecb01"></a><!-- doxytag: member="POINT_FADE_THRESHOLD_SIZE" ref="a99a648050f80bc29359e932cffa8c973aa71cf6fca9a55875901b6c07e0aecb01" args="" -->POINT_FADE_THRESHOLD_SIZE</em>&nbsp;</td><td>
 <p>{ float threshold = 1.0f } </p>
@@ -445,10 +455,10 @@ Functions</h2></td></tr>
 <p>{ float factor = 0.0f, float units = 0.0f } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a0d90dd528789ff598063716bb2e9f74c"></a><!-- doxytag: member="PROJECTION_MATRIX" ref="a99a648050f80bc29359e932cffa8c973a0d90dd528789ff598063716bb2e9f74c" args="" -->PROJECTION_MATRIX</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMMatrix44.html">FMMatrix44</a> projectionMatrix = <a class="el" href="classFMMatrix44.html#a6ec620d68ab61a95e3b4b5f7e7300468">FMMatrix44::Identity</a> } </p>
+<p>{ <a class="el" href="classFMMatrix44.html" title="A 4x4 Row Major matrix: use to represent 3D transformations.">FMMatrix44</a> projectionMatrix = <a class="el" href="classFMMatrix44.html#a6ec620d68ab61a95e3b4b5f7e7300468" title="The identity matrix.">FMMatrix44::Identity</a> } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a8332ac569a5613c83f389ac01a7616c7"></a><!-- doxytag: member="SCISSOR" ref="a99a648050f80bc29359e932cffa8c973a8332ac569a5613c83f389ac01a7616c7" args="" -->SCISSOR</em>&nbsp;</td><td>
-<p>{ <a class="el" href="classFMVector4.html">FMVector4</a> scissor = [0,0,0,0] } </p>
+<p>{ <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> scissor = [0,0,0,0] } </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a99a648050f80bc29359e932cffa8c973a3a5e0e49b8e51ddc633017c4186f5105"></a><!-- doxytag: member="STENCIL_MASK" ref="a99a648050f80bc29359e932cffa8c973a3a5e0e49b8e51ddc633017c4186f5105" args="" -->STENCIL_MASK</em>&nbsp;</td><td>
 <p>{ uint32 mask = 0xFFFFFFFF } </p>
@@ -571,6 +581,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the COLLADA render state name string to the render state enumeration type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -597,6 +608,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -616,6 +628,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Converts the render state enumeration type to its COLLADA render state name string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -642,7 +655,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:04 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:27 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

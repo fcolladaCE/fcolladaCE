@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDGeometrySource" --><!-- doxytag: inherits="FCDObjectWithId" -->
+<p>A COLLADA data source for geometric meshes.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDGeometrySource_8h_source.html">FCDGeometrySource.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDGeometrySource:</div>
@@ -78,40 +81,68 @@ Inheritance diagram for FCDGeometrySource:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a02597e76122f43117f30b0c89739e819">FCDGeometrySource</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a02597e76122f43117f30b0c89739e819"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a752a3a52c5cf4df2173616a332eff9a9">~FCDGeometrySource</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a752a3a52c5cf4df2173616a332eff9a9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a663219a15914187c3b6c31a3a6ba1dc4">Clone</a> (<a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the data source into a clone.  <a href="#a663219a15914187c3b6c31a3a6ba1dc4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a50fbd22bd142ca689a7b5fb42d9e47eb">GetName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the name of the data source.  <a href="#a50fbd22bd142ca689a7b5fb42d9e47eb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a450adee10f06fc187f62cd9ecb6567bb">GetData</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the pure data of the data source.  <a href="#a450adee10f06fc187f62cd9ecb6567bb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a1dcd473a747b643cdd7cdf03499e5a04">GetData</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1dcd473a747b643cdd7cdf03499e5a04"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a9fcede2e0dcb96722ffec269d6748a97">GetSourceData</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Retrieve the reference to the source data.  <a href="#a9fcede2e0dcb96722ffec269d6748a97"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2301514d5678d6e123fcb867a7219c7c"></a><!-- doxytag: member="FCDGeometrySource::GetSourceData" ref="a2301514d5678d6e123fcb867a7219c7c" args="() const " -->
 const <br class="typebreak"/>
 <a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>GetSourceData</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a902252a6cba269b85c933ee8cc3c9755">GetDataPtr</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a ptr to the data of the data source.  <a href="#a902252a6cba269b85c933ee8cc3c9755"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a91b9f12b26795439637bc59498c4334e">GetDataPtr</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a91b9f12b26795439637bc59498c4334e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#ad758049fb9d2a7dc8950ecadc2dd8cbc">GetDataCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the amount of data inside the source.  <a href="#ad758049fb9d2a7dc8950ecadc2dd8cbc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a6e363fb7c4ab24adc86a6c84e32c79c1">SetDataCount</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the amount of data contained inside the source.  <a href="#a6e363fb7c4ab24adc86a6c84e32c79c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a7dcebe0cf5ce917044a08b76df5e20a0">GetStride</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the stride of the data within the source.  <a href="#a7dcebe0cf5ce917044a08b76df5e20a0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a32044849fd334877d739eb2c5177a182">GetValueCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of individual source values contained in the source.  <a href="#a32044849fd334877d739eb2c5177a182"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a81d3ea07195965e947e8bb132b2719ce">GetValueReserved</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the max number of values this input can handle before memory is reallocated.  <a href="#a81d3ea07195965e947e8bb132b2719ce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#ae60c3542035bc651c4cd76de926e97da">SetValueCount</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the number of individual source values contained in the source.  <a href="#ae60c3542035bc651c4cd76de926e97da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a48d19574bd5fc73ab935a357d42334e2">GetValue</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves one source value out of this source.  <a href="#a48d19574bd5fc73ab935a357d42334e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a5221f77080c27478b7ad92aa50aee88a">SetValue</a> (size_t index, const float *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets one source value out of this source.  <a href="#a5221f77080c27478b7ad92aa50aee88a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">FUDaeGeometryInput::Semantic</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#ade05c553563ec84625cd8351da4d952b">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of data contained within the source.  <a href="#ade05c553563ec84625cd8351da4d952b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#ae98809e1d73eab01671c853020e18604">SetType</a> (<a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">FUDaeGeometryInput::Semantic</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the type of data contained within the source.  <a href="#ae98809e1d73eab01671c853020e18604"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUObjectContainer.html">FUObjectContainer</a>&lt; <a class="el" href="classFCDAnimated.html">FCDAnimated</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#aa09bb6623337764f8371a66fdddf322d">GetAnimatedValues</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of animated values for the data of the source.  <a href="#aa09bb6623337764f8371a66fdddf322d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUObjectContainer.html">FUObjectContainer</a><br class="typebreak"/>
 &lt; <a class="el" href="classFCDAnimated.html">FCDAnimated</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a2e8125a8f7974d40c7153a34ad743ea2">GetAnimatedValues</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2e8125a8f7974d40c7153a34ad743ea2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a8e9469c35a0e45c15407b63387fc1aa6">SetName</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;_name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the user-friendly name of the data source.  <a href="#a8e9469c35a0e45c15407b63387fc1aa6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#af42830becb886962cdcb345c05def0d3">SetData</a> (const <a class="el" href="classfm_1_1vector.html">FloatList</a> &amp;_sourceData, uint32 _sourceStride, size_t count=0, size_t offset=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Overwrites the data contained within the data source.  <a href="#af42830becb886962cdcb345c05def0d3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a24b59fdf6b4a8732e57124c197d34c2d">SetStride</a> (uint32 _stride)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the stride for the source data.  <a href="#a24b59fdf6b4a8732e57124c197d34c2d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#ada666b2bf53d7c96c8116da04d06ae6f">SetSourceType</a> (<a class="el" href="namespaceFUDaeGeometryInput.html#a0f887d29f54b10338ebcf73789a7a061">FUDaeGeometryInput::Semantic</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Set the source type.  <a href="#ada666b2bf53d7c96c8116da04d06ae6f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#a3bb420a157eab5853e162757d528add2">GetExtra</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the extra information contained by this data source.  <a href="#a3bb420a157eab5853e162757d528add2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#ae2eb04c56a3041d79fda59e9df13e5a5">GetExtra</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae2eb04c56a3041d79fda59e9df13e5a5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDGeometrySource.html">FCDGeometrySource</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDGeometrySource.html#ac06f878ba71c0d70e36b0f8dee2370b1">Clone</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Clones this data source.  <a href="#ac06f878ba71c0d70e36b0f8dee2370b1"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA data source for geometric meshes.</p>
+<p>A COLLADA data source for geometric meshes. </p>
 <p>A COLLADA data source for geometric meshes contains a list of floating-point values and the information to parse these floating-point values into meaningful content: the stride of the list and the type of data that the floating-point values represent. When the floating-point values are split according to the stride, you get the individual source values of the given type. A data source may also have a user-generated name to identify the data within. The name is optional and is used to keep around the user-friendly name for texture coordinate sets or color sets.</p>
 <p>Each source values of the COLLADA data source may be animated individually, or together: as an element. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
@@ -130,7 +161,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Use <a class="el" href="classFCDGeometryMesh.html#a394981429e2d56f865d4b5866da5fc8c">FCDGeometryMesh::AddSource</a> or FCDGeometryMesh::AddValueSource instead. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Use <a class="el" href="classFCDGeometryMesh.html#a394981429e2d56f865d4b5866da5fc8c" title="Creates a new data source for this geometric mesh.">FCDGeometryMesh::AddSource</a> or FCDGeometryMesh::AddValueSource instead. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document which owns the data source. </td></tr>
@@ -154,6 +187,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -174,7 +208,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Copies the data source into a clone. The clone may reside in another document. </p>
+
+<p>Copies the data source into a clone. </p>
+<p>The clone may reside in another document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The empty clone. If this pointer is NULL, a new data source will be created and you will need to release the returned pointer manually. </td></tr>
@@ -199,7 +235,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Clones this data source. You will need to release the returned pointer manually. </p>
+
+<p>[INTERNAL] Clones this data source. </p>
+<p>You will need to release the returned pointer manually. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>An identical copy of the data source. </dd></dl>
 
 </div>
@@ -218,6 +256,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of animated values for the data of the source. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of animated values. </dd></dl>
 
@@ -237,6 +276,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -255,6 +295,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -273,7 +314,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the pure data of the data source. This is a dynamically-sized array of floating-point values that contains all the data of the source. </p>
+
+<p>Retrieves the pure data of the data source. </p>
+<p>This is a dynamically-sized array of floating-point values that contains all the data of the source. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The pure data of the data source. </dd></dl>
 
 </div>
@@ -292,6 +335,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the amount of data inside the source. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of data entries in the source. </dd></dl>
 
@@ -311,6 +355,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -329,7 +374,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves a ptr to the data of the data source. This allows external objects to store pointers to our data even when the data memory is reallocated </p>
+
+<p>Retrieves a ptr to the data of the data source. </p>
+<p>This allows external objects to store pointers to our data even when the data memory is reallocated </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The ptr to the pure data of the data source. </dd></dl>
 
 </div>
@@ -348,6 +395,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -366,6 +414,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the extra information contained by this data source. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The extra tree. This pointer will be NULL, in the const-version of this function, if there is no extra information. In the modifiable-version of this function: you will always get a valid extra tree that you can fill in. </dd></dl>
 
@@ -385,7 +434,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the name of the data source. The name is optional and is used to keep around a user-friendly name for texture coordinate sets or color sets. </p>
+
+<p>Retrieves the name of the data source. </p>
+<p>The name is optional and is used to keep around a user-friendly name for texture coordinate sets or color sets. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The name of the data source. </dd></dl>
 
 </div>
@@ -404,6 +455,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Retrieve the reference to the source data. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The reference to the source data. </dd></dl>
 
@@ -423,7 +475,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the stride of the data within the source. There is no guarantee that the number of data values within the source is a multiple of the stride, yet you should always verify that the stride is at least the wanted dimension. For example, there is no guarantee that your vertex position data source has a stride of 3. 3dsMax is known to always export 3D texture coordinate positions. </p>
+
+<p>Retrieves the stride of the data within the source. </p>
+<p>There is no guarantee that the number of data values within the source is a multiple of the stride, yet you should always verify that the stride is at least the wanted dimension. For example, there is no guarantee that your vertex position data source has a stride of 3. 3dsMax is known to always export 3D texture coordinate positions. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The stride of the data. </dd></dl>
 
 </div>
@@ -442,8 +496,10 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the type of data contained within the source. Common values for the type of data are POSITION, NORMAL, COLOR and TEXCOORD. Please see <a class="el" href="namespaceFUDaeGeometryInput.html">FUDaeGeometryInput</a> for more information. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeGeometryInput.html">FUDaeGeometryInput</a>. </dd></dl>
+
+<p>Retrieves the type of data contained within the source. </p>
+<p>Common values for the type of data are POSITION, NORMAL, COLOR and TEXCOORD. Please see <a class="el" href="namespaceFUDaeGeometryInput.html" title="Contains the geometry source data types and their conversion functions.">FUDaeGeometryInput</a> for more information. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeGeometryInput.html" title="Contains the geometry source data types and their conversion functions.">FUDaeGeometryInput</a>. </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The type of data contained within the source. </dd></dl>
 
 </div>
@@ -463,6 +519,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves one source value out of this source. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -488,6 +545,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of individual source values contained in the source. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of source values. </dd></dl>
 
@@ -507,6 +565,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the max number of values this input can handle before memory is reallocated. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of source values. </dd></dl>
 
@@ -548,6 +607,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Overwrites the data contained within the data source. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -576,7 +636,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the amount of data contained inside the source. It is preferable to set the stride and to use SetValueCount. No initialization of new values is done. </p>
+
+<p>Sets the amount of data contained inside the source. </p>
+<p>It is preferable to set the stride and to use SetValueCount. No initialization of new values is done. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>count</em>&nbsp;</td><td>The amount of data for the source to contain. </td></tr>
@@ -601,7 +663,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the user-friendly name of the data source. The name is optional and is used to keep around a user-friendly name for texture coordinate sets or color sets. </p>
+
+<p>Sets the user-friendly name of the data source. </p>
+<p>The name is optional and is used to keep around a user-friendly name for texture coordinate sets or color sets. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_name</em>&nbsp;</td><td>The user-friendly name of the data source. </td></tr>
@@ -626,6 +690,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Set the source type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -651,6 +716,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the stride for the source data. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -676,8 +742,10 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the type of data contained within the source. Modifying the source type of an existing source is not recommended. Common values for the type of data are POSITION, NORMAL, COLOR and TEXCOORD. Please see <a class="el" href="namespaceFUDaeGeometryInput.html">FUDaeGeometryInput</a> for more information. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeGeometryInput.html">FUDaeGeometryInput</a>. </dd></dl>
+
+<p>Sets the type of data contained within the source. </p>
+<p>Modifying the source type of an existing source is not recommended. Common values for the type of data are POSITION, NORMAL, COLOR and TEXCOORD. Please see <a class="el" href="namespaceFUDaeGeometryInput.html" title="Contains the geometry source data types and their conversion functions.">FUDaeGeometryInput</a> for more information. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUDaeGeometryInput.html" title="Contains the geometry source data types and their conversion functions.">FUDaeGeometryInput</a>. </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The type of data to be contained within the source. </td></tr>
@@ -711,6 +779,7 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets one source value out of this source. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -737,7 +806,9 @@ const <br class="typebreak"/>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the number of individual source values contained in the source. No initialization of new values is done. </p>
+
+<p>Sets the number of individual source values contained in the source. </p>
+<p>No initialization of new values is done. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>count</em>&nbsp;</td><td>The number of individual source values to contain in this source. </td></tr>
@@ -766,7 +837,7 @@ const <br class="typebreak"/>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:37 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:18 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

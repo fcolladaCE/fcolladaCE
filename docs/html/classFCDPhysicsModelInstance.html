@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDPhysicsModelInstance" --><!-- doxytag: inherits="FCDEntityInstance" -->
+<p>A COLLADA physics model instance.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDPhysicsModelInstance_8h_source.html">FCDPhysicsModelInstance.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDPhysicsModelInstance:</div>
@@ -79,18 +82,31 @@ Inheritance diagram for FCDPhysicsModelInstance:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a8beb946a1fd493c742eb4847c7225b80">FCDPhysicsModelInstance</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a8beb946a1fd493c742eb4847c7225b80"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#ae5c49ecb35c2f09d1c542f8df89ab0c4">~FCDPhysicsModelInstance</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ae5c49ecb35c2f09d1c542f8df89ab0c4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntityInstance.html#a82e95eec7d9242bbedb336b0d35b59d3">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a84476954bc4c90e663bf775db097b9fb">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity type for this class.  <a href="#a84476954bc4c90e663bf775db097b9fb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a7b673f1eef1db2ae557052facff5a525">DEPRECATED</a> (3.05A, GetInstanceCount and GetInstance(index)) void GetInstances() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves all the instances from this physics model instance.  <a href="#a7b673f1eef1db2ae557052facff5a525"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a078fb9b47516651b4cf766cb26142f93">GetInstanceCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of instances from this physics model instance.  <a href="#a078fb9b47516651b4cf766cb26142f93"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#af26a56bbfe0e7bd5caa8261b41ba10e6">GetInstance</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specified instance from this physics model instance by index.  <a href="#af26a56bbfe0e7bd5caa8261b41ba10e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a6a999aab87642a3ea8753316d9789986">GetInstance</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6a999aab87642a3ea8753316d9789986"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidBodyInstance.html">FCDPhysicsRigidBodyInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a47ed41df54b61aee0ae2b5ed78717786">AddRigidBodyInstance</a> (<a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *rigidBody=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an instantiated rigid body to this physics model instance.  <a href="#a47ed41df54b61aee0ae2b5ed78717786"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidConstraintInstance.html">FCDPhysicsRigidConstraintInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a6d720a4d9bc51e8ceb21fd0d2ea23a70">AddRigidConstraintInstance</a> (<a class="el" href="classFCDPhysicsRigidConstraint.html">FCDPhysicsRigidConstraint</a> *rigidConstraint=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an instantiated rigid constraint to this physics model instance.  <a href="#a6d720a4d9bc51e8ceb21fd0d2ea23a70"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsForceFieldInstance.html">FCDPhysicsForceFieldInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a626669f91d2baa2919ade7bdd469c15b">AddForceFieldInstance</a> (<a class="el" href="classFCDForceField.html">FCDForceField</a> *forceField=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an instantiated force field to this physics model instance.  <a href="#a626669f91d2baa2919ade7bdd469c15b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#ade18370226bfc59d2f62db463b508259">DEPRECATED</a> (3.05A, instance-&gt;Release() or SAFE_RELEASE(instance)) bool RemoveInstance(FCDEntityInstance *instance)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes and deletes the instance from the model.  <a href="#ade18370226bfc59d2f62db463b508259"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a701959f01ffd8e0b2be6d4318d665dc0">Clone</a> (<a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the physics model instance into a clone.  <a href="#a701959f01ffd8e0b2be6d4318d665dc0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsModelInstance.html#a5d69b58ff479dc0006dc92e4689b557e">CleanSubId</a> (<a class="el" href="classFUUniqueStringMapT.html">FUSUniqueStringMap</a> *parentStringMap)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Cleans up the sub identifiers.  <a href="#a5d69b58ff479dc0006dc92e4689b557e"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A COLLADA physics model instance. </p>
@@ -110,7 +126,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Create new physics models using the <a class="el" href="classFCDPhysicsModel.html#ae222e53d9c0c9a2e7573d0350475b247">FCDPhysicsModel::AddPhysicsModelInstance</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Create new physics models using the <a class="el" href="classFCDPhysicsModel.html#ae222e53d9c0c9a2e7573d0350475b247" title="Adds a instantiated physics model to this physics model.">FCDPhysicsModel::AddPhysicsModelInstance</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that contains this physics model instance. </td></tr>
@@ -134,6 +152,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -154,6 +173,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds an instantiated force field to this physics model instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -180,6 +200,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds an instantiated rigid body to this physics model instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -206,6 +227,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds an instantiated rigid constraint to this physics model instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -232,7 +254,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Cleans up the sub identifiers. The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. </p>
+
+<p>[INTERNAL] Cleans up the sub identifiers. </p>
+<p>The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>parentStringMap</em>&nbsp;</td><td>The string map from the parent of this instance in which the sub ids must be unique. </td></tr>
@@ -259,6 +283,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copies the physics model instance into a clone. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -296,6 +321,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes and deletes the instance from the model. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -331,6 +357,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves all the instances from this physics model instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The instances. </dd></dl>
 
@@ -351,6 +378,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specified instance from this physics model instance by index. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -377,6 +405,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -395,6 +424,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of instances from this physics model instance. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of instances. </dd></dl>
 
@@ -414,7 +444,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity type for this class. This function is part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity type for this class. </p>
+<p>This function is part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: PHYSICS_MODEL. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntityInstance.html#a773c2cfdbad937e93da7a3fa71a671a7">FCDEntityInstance</a>.</p>
@@ -440,7 +472,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:46 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:21 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

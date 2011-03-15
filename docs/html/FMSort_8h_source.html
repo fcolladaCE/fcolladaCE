@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="keyword">namespace </span>fm
 <a name="l00018"></a>00018 {
 <a name="l00020"></a>00020         <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
-<a name="l00021"></a><a class="code" href="namespacefm.html#a969a63d5081b8d2dce35a096af1fb7d2">00021</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#a969a63d5081b8d2dce35a096af1fb7d2">swap</a>(T&amp; a, T&amp; b)
+<a name="l00021"></a><a class="code" href="namespacefm.html#a969a63d5081b8d2dce35a096af1fb7d2">00021</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacefm.html#a969a63d5081b8d2dce35a096af1fb7d2" title="A utility function to swap data.">swap</a>(T&amp; a, T&amp; b)
 <a name="l00022"></a>00022         {
 <a name="l00023"></a>00023                 T temp = a;
 <a name="l00024"></a>00024                 a = b;
@@ -73,17 +73,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00026"></a>00026         }
 <a name="l00027"></a>00027 
 <a name="l00029"></a>00029         <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
-<a name="l00030"></a><a class="code" href="classfm_1_1comparator.html">00030</a>         <span class="keyword">class </span><a class="code" href="classfm_1_1comparator.html">comparator</a>
+<a name="l00030"></a><a class="code" href="classfm_1_1comparator.html">00030</a>         <span class="keyword">class </span><a class="code" href="classfm_1_1comparator.html" title="A utility to sort arrays.">comparator</a>
 <a name="l00031"></a>00031         {
 <a name="l00032"></a>00032         <span class="keyword">public</span>:
-<a name="l00034"></a><a class="code" href="classfm_1_1comparator.html#a08c191871b8d6e4a868571018d08cc6b">00034</a>                 <span class="keyword">virtual</span> <a class="code" href="classfm_1_1comparator.html#a08c191871b8d6e4a868571018d08cc6b">~comparator</a>() {}
+<a name="l00034"></a><a class="code" href="classfm_1_1comparator.html#a08c191871b8d6e4a868571018d08cc6b">00034</a>                 <span class="keyword">virtual</span> <a class="code" href="classfm_1_1comparator.html#a08c191871b8d6e4a868571018d08cc6b" title="Destructor.">~comparator</a>() {}
 <a name="l00035"></a>00035 
-<a name="l00041"></a><a class="code" href="classfm_1_1comparator.html#a4cc38737a2c598b76977625a75bc5c24">00041</a>                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfm_1_1comparator.html#a4cc38737a2c598b76977625a75bc5c24">compare</a>(<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b)
+<a name="l00041"></a><a class="code" href="classfm_1_1comparator.html#a4cc38737a2c598b76977625a75bc5c24">00041</a>                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfm_1_1comparator.html#a4cc38737a2c598b76977625a75bc5c24" title="Compares two elements in ascending order, using operator&amp;lt;.">compare</a>(<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b)
 <a name="l00042"></a>00042                 {
 <a name="l00043"></a>00043                         <span class="keywordflow">return</span> (a &lt; b);
 <a name="l00044"></a>00044                 }
 <a name="l00045"></a>00045 
-<a name="l00049"></a><a class="code" href="classfm_1_1comparator.html#abc9d0fddf1f79bd7028c519adf9f7908">00049</a>                 <span class="keywordtype">void</span> <a class="code" href="classfm_1_1comparator.html#abc9d0fddf1f79bd7028c519adf9f7908">sort</a>(T* data, <span class="keywordtype">size_t</span> count)
+<a name="l00049"></a><a class="code" href="classfm_1_1comparator.html#abc9d0fddf1f79bd7028c519adf9f7908">00049</a>                 <span class="keywordtype">void</span> <a class="code" href="classfm_1_1comparator.html#abc9d0fddf1f79bd7028c519adf9f7908" title="Sorts the given array using the quick sort algorithm.">sort</a>(T* data, <span class="keywordtype">size_t</span> count)
 <a name="l00050"></a>00050                 {
 <a name="l00051"></a>00051                         <span class="keywordflow">if</span> (data == NULL) <span class="keywordflow">return</span>;
 <a name="l00052"></a>00052                         quicksort(data, 0, count);
@@ -98,12 +98,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00061"></a>00061                                 T&amp; pivot = data[beg];
 <a name="l00062"></a>00062                                 <span class="keywordflow">while</span> (l &lt; r)
 <a name="l00063"></a>00063                                 {
-<a name="l00064"></a>00064                                         <span class="keywordflow">if</span> (<a class="code" href="classfm_1_1comparator.html#a4cc38737a2c598b76977625a75bc5c24">compare</a>(data[l], pivot))
+<a name="l00064"></a>00064                                         <span class="keywordflow">if</span> (<a class="code" href="classfm_1_1comparator.html#a4cc38737a2c598b76977625a75bc5c24" title="Compares two elements in ascending order, using operator&amp;lt;.">compare</a>(data[l], pivot))
 <a name="l00065"></a>00065                                                 l++;
 <a name="l00066"></a>00066                                         <span class="keywordflow">else</span>
-<a name="l00067"></a>00067                                                 <a class="code" href="namespacefm.html#a969a63d5081b8d2dce35a096af1fb7d2">swap</a>(data[l], data[--r]);
+<a name="l00067"></a>00067                                                 <a class="code" href="namespacefm.html#a969a63d5081b8d2dce35a096af1fb7d2" title="A utility function to swap data.">swap</a>(data[l], data[--r]);
 <a name="l00068"></a>00068                                 }
-<a name="l00069"></a>00069                                 <a class="code" href="namespacefm.html#a969a63d5081b8d2dce35a096af1fb7d2">swap</a>(data[--l], data[beg]);
+<a name="l00069"></a>00069                                 <a class="code" href="namespacefm.html#a969a63d5081b8d2dce35a096af1fb7d2" title="A utility function to swap data.">swap</a>(data[--l], data[beg]);
 <a name="l00070"></a>00070                                 quicksort(data, beg, l);
 <a name="l00071"></a>00071                                 quicksort(data, r, end);
 <a name="l00072"></a>00072                         }
@@ -111,33 +111,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00074"></a>00074         };
 <a name="l00075"></a>00075 
 <a name="l00077"></a>00077         <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
-<a name="l00078"></a><a class="code" href="classfm_1_1icomparator.html">00078</a>         <span class="keyword">class </span><a class="code" href="classfm_1_1icomparator.html">icomparator</a> : <span class="keyword">public</span> <a class="code" href="classfm_1_1comparator.html">comparator</a>&lt;T&gt;
+<a name="l00078"></a><a class="code" href="classfm_1_1icomparator.html">00078</a>         <span class="keyword">class </span><a class="code" href="classfm_1_1icomparator.html" title="A utility to sort an array in descending order, using operator&amp;lt;.">icomparator</a> : <span class="keyword">public</span> <a class="code" href="classfm_1_1comparator.html" title="A utility to sort arrays.">comparator</a>&lt;T&gt;
 <a name="l00079"></a>00079         {
 <a name="l00080"></a>00080         <span class="keyword">public</span>:
-<a name="l00082"></a><a class="code" href="classfm_1_1icomparator.html#a585d0008c9ccde7160a3002b3b917cea">00082</a>                 <span class="keyword">virtual</span> <a class="code" href="classfm_1_1icomparator.html#a585d0008c9ccde7160a3002b3b917cea">~icomparator</a>() {}
+<a name="l00082"></a><a class="code" href="classfm_1_1icomparator.html#a585d0008c9ccde7160a3002b3b917cea">00082</a>                 <span class="keyword">virtual</span> <a class="code" href="classfm_1_1icomparator.html#a585d0008c9ccde7160a3002b3b917cea" title="Destructor.">~icomparator</a>() {}
 <a name="l00083"></a>00083 
-<a name="l00089"></a><a class="code" href="classfm_1_1icomparator.html#a8f1b1d5d8657fa5f852bf7b9437cefc9">00089</a>                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfm_1_1icomparator.html#a8f1b1d5d8657fa5f852bf7b9437cefc9">compare</a>(<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b)
+<a name="l00089"></a><a class="code" href="classfm_1_1icomparator.html#a8f1b1d5d8657fa5f852bf7b9437cefc9">00089</a>                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfm_1_1icomparator.html#a8f1b1d5d8657fa5f852bf7b9437cefc9" title="Compares two elements in descending order, using operator&amp;lt;.">compare</a>(<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b)
 <a name="l00090"></a>00090                 {
 <a name="l00091"></a>00091                         <span class="keywordflow">return</span> (b &lt; a);
 <a name="l00092"></a>00092                 }
 <a name="l00093"></a>00093         };
 <a name="l00094"></a>00094 
 <a name="l00096"></a>00096         <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
-<a name="l00097"></a><a class="code" href="classfm_1_1pcomparator.html">00097</a>         <span class="keyword">class </span><a class="code" href="classfm_1_1pcomparator.html">pcomparator</a> : <span class="keyword">public</span> <a class="code" href="classfm_1_1comparator.html">comparator</a>&lt;const void*&gt;
+<a name="l00097"></a><a class="code" href="classfm_1_1pcomparator.html">00097</a>         <span class="keyword">class </span><a class="code" href="classfm_1_1pcomparator.html" title="A utility to sort arrays of pointer elements.">pcomparator</a> : <span class="keyword">public</span> <a class="code" href="classfm_1_1comparator.html" title="A utility to sort arrays.">comparator</a>&lt;const void*&gt;
 <a name="l00098"></a>00098         {
 <a name="l00099"></a>00099         <span class="keyword">public</span>:
 <a name="l00100"></a>00100                 <span class="keyword">typedef</span> <span class="keyword">const</span> <span class="keywordtype">void</span>* valueType;
 <a name="l00101"></a>00101 
-<a name="l00103"></a><a class="code" href="classfm_1_1pcomparator.html#a51d3e370d60cdf97ec446215bab8f96d">00103</a>                 <span class="keyword">virtual</span> <a class="code" href="classfm_1_1pcomparator.html#a51d3e370d60cdf97ec446215bab8f96d">~pcomparator</a>() {}
+<a name="l00103"></a><a class="code" href="classfm_1_1pcomparator.html#a51d3e370d60cdf97ec446215bab8f96d">00103</a>                 <span class="keyword">virtual</span> <a class="code" href="classfm_1_1pcomparator.html#a51d3e370d60cdf97ec446215bab8f96d" title="Destructor.">~pcomparator</a>() {}
 <a name="l00104"></a>00104 
-<a name="l00110"></a><a class="code" href="classfm_1_1pcomparator.html#a52f376a1379f7f119f54c8d6722169ee">00110</a>                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfm_1_1pcomparator.html#a52f376a1379f7f119f54c8d6722169ee">compare</a>(<span class="keyword">const</span> T* a, <span class="keyword">const</span> T* b)
+<a name="l00110"></a><a class="code" href="classfm_1_1pcomparator.html#a52f376a1379f7f119f54c8d6722169ee">00110</a>                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfm_1_1pcomparator.html#a52f376a1379f7f119f54c8d6722169ee" title="Compares two pointers.">compare</a>(<span class="keyword">const</span> T* a, <span class="keyword">const</span> T* b)
 <a name="l00111"></a>00111                 {
 <a name="l00112"></a>00112                         <span class="keywordflow">return</span> (a &lt; b);
 <a name="l00113"></a>00113                 }
 <a name="l00114"></a>00114 
-<a name="l00120"></a><a class="code" href="classfm_1_1pcomparator.html#a66c4ec2eecb10b1606f8271d69474eef">00120</a>                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfm_1_1pcomparator.html#a52f376a1379f7f119f54c8d6722169ee">compare</a>(<span class="keyword">const</span> valueType&amp; a, <span class="keyword">const</span> valueType&amp; b)
+<a name="l00120"></a><a class="code" href="classfm_1_1pcomparator.html#a66c4ec2eecb10b1606f8271d69474eef">00120</a>                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfm_1_1pcomparator.html#a52f376a1379f7f119f54c8d6722169ee" title="Compares two pointers.">compare</a>(<span class="keyword">const</span> valueType&amp; a, <span class="keyword">const</span> valueType&amp; b)
 <a name="l00121"></a>00121                 {
-<a name="l00122"></a>00122                         <span class="keywordflow">return</span> <a class="code" href="classfm_1_1pcomparator.html#a52f376a1379f7f119f54c8d6722169ee">compare</a>((<span class="keyword">const</span> T*)a, (<span class="keyword">const</span> T*)b);
+<a name="l00122"></a>00122                         <span class="keywordflow">return</span> <a class="code" href="classfm_1_1pcomparator.html#a52f376a1379f7f119f54c8d6722169ee" title="Compares two pointers.">compare</a>((<span class="keyword">const</span> T*)a, (<span class="keyword">const</span> T*)b);
 <a name="l00123"></a>00123                 }
 <a name="l00124"></a>00124         };
 <a name="l00125"></a>00125 }
@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:12 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

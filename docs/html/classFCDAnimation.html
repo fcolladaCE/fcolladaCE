@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDAnimation" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA animation entity.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDAnimation_8h_source.html">FCDAnimation.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDAnimation:</div>
@@ -79,29 +82,51 @@ Inheritance diagram for FCDAnimation:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a2ea6557524f3013849f60205215f9e64">FCDAnimation</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDAnimation.html">FCDAnimation</a> *parent=NULL)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a2ea6557524f3013849f60205215f9e64"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a3c7b9e277d2a7444caf5400747557ea1">~FCDAnimation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor .  <a href="#a3c7b9e277d2a7444caf5400747557ea1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a91e3239617da238768340a8bf62b4132">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity class type.  <a href="#a91e3239617da238768340a8bf62b4132"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimation.html">FCDAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a968e8f57dbe5c45b97c876e76b9caa98">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parent of the animation structure.  <a href="#a968e8f57dbe5c45b97c876e76b9caa98"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimation.html">FCDAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a65e7147ad3c70f725f09ae391e2ea956">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a65e7147ad3c70f725f09ae391e2ea956"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a1b23f8e4444121882edf5418c094b023">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the animation tree into a clone.  <a href="#a1b23f8e4444121882edf5418c094b023"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a24615001e7529a89ce80245ddbea2a0e">FindDaeId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;daeId)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity with the given COLLADA id.  <a href="#a24615001e7529a89ce80245ddbea2a0e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a8e3f44f012007ca3b3f9b125c0fb8771">FindDaeId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;daeId) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a8e3f44f012007ca3b3f9b125c0fb8771"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a2e978db4aac9e1d378b31bd5652fe951">GetChildrenCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of animation entity sub-trees contained by this animation entity tree.  <a href="#a2e978db4aac9e1d378b31bd5652fe951"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimation.html">FCDAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#ae308d048c95ea72df642f06865e37c3c">GetChild</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an animation entity sub-tree contained by this animation entity tree.  <a href="#ae308d048c95ea72df642f06865e37c3c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimation.html">FCDAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a49937056a91b0676fe3604457c579009">GetChild</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a49937056a91b0676fe3604457c579009"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimation.html">FCDAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a3e0b21ac9ffa48f85c0c7000b41ad555">AddChild</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new animation entity sub-tree contained within this animation entity tree.  <a href="#a3e0b21ac9ffa48f85c0c7000b41ad555"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#ab1598e18c09d09536a7e1b173c379927">GetHierarchicalAssets</a> (<a class="el" href="classfm_1_1pvector.html">FCDAssetList</a> &amp;assets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the asset information structures that affect this entity in its hierarchy.  <a href="#ab1598e18c09d09536a7e1b173c379927"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#add68466cc91957fc0b0fe0961cb3948e">GetHierarchicalAssets</a> (<a class="el" href="classfm_1_1pvector.html">FCDAssetConstList</a> &amp;assets) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#add68466cc91957fc0b0fe0961cb3948e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#ae86237e164a1d535dc6f6a93412fd9d9">FindAnimationChannels</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;pointer, <a class="el" href="classfm_1_1pvector.html">FCDAnimationChannelList</a> &amp;targetChannels)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animation channels that target the given COLLADA target pointer.  <a href="#ae86237e164a1d535dc6f6a93412fd9d9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#ace899d6bc499d07fb65bcdd2c5a7fd3c">GetChannelCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of animation channels at this level within the animation tree.  <a href="#ace899d6bc499d07fb65bcdd2c5a7fd3c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationChannel.html">FCDAnimationChannel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a09826937c16c3c73bdc9995aa751279c">GetChannel</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an animation channel contained by this animation entity.  <a href="#a09826937c16c3c73bdc9995aa751279c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationChannel.html">FCDAnimationChannel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#ac406240a1265a474bef985478d925286">GetChannel</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac406240a1265a474bef985478d925286"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a0fd3e11834d0ceb9fdd13ac8796976b9">GetChannels</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Retrieves the channels' list  <a href="#a0fd3e11834d0ceb9fdd13ac8796976b9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationChannel.html">FCDAnimationChannel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a4ad6d5f5fb7b3c043af8fab2b4db766c">AddChannel</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new animation channel to this animation entity.  <a href="#a4ad6d5f5fb7b3c043af8fab2b4db766c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimation.html#a6018679c8025b3c67e7cddccdb437fc5">GetCurves</a> (<a class="el" href="classfm_1_1pvector.html">FCDAnimationCurveList</a> &amp;curves)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves all the curves created in the subtree of this animation element.  <a href="#a6018679c8025b3c67e7cddccdb437fc5"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA animation entity. An animation entity contains a list of child animation entities, in order to form a tree of animation entities. It also hold a list of animation channels, which hold the information to generate animation curves.</p>
+<p>A COLLADA animation entity. </p>
+<p>An animation entity contains a list of child animation entities, in order to form a tree of animation entities. It also hold a list of animation channels, which hold the information to generate animation curves.</p>
 <p>In other words, the animation entity is a structural class used to group animation channels hierarchically. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2ea6557524f3013849f60205215f9e64"></a><!-- doxytag: member="FCDAnimation::FCDAnimation" ref="a2ea6557524f3013849f60205215f9e64" args="(FCDocument *document, FCDAnimation *parent=NULL)" -->
@@ -128,10 +153,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor. Do not use directly. Instead, use the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0">FCDLibrary::AddEntity</a> function or the AddChild function, depending on the hierarchical level of the animation entity. </p>
+
+<p>Constructor. </p>
+<p>Do not use directly. Instead, use the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0" title="Creates a new entity within this library.">FCDLibrary::AddEntity</a> function or the AddChild function, depending on the hierarchical level of the animation entity. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html">FCollada</a> document that owns the animation entity. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> document that owns the animation entity. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>The parent animation entity. This pointer will be NULL for root animation entities. </td></tr>
   </table>
   </dd>
@@ -153,6 +180,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor . </p>
 
 </div>
@@ -172,6 +200,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new animation channel to this animation entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new animation channel. </dd></dl>
 
@@ -191,6 +220,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a new animation entity sub-tree contained within this animation entity tree. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new animation sub-tree. </dd></dl>
 
@@ -220,7 +250,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Copies the animation tree into a clone. The clone may reside in another document. </p>
+
+<p>Copies the animation tree into a clone. </p>
+<p>The clone may reside in another document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The empty clone. If this pointer is NULL, a new animation tree will be created and you will need to release the returned pointer manually. </td></tr>
@@ -258,6 +290,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the animation channels that target the given COLLADA target pointer. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -284,7 +317,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity with the given COLLADA id. This function will look through the local sub-tree of animations for the given COLLADA id. </p>
+
+<p>Retrieves the entity with the given COLLADA id. </p>
+<p>This function will look through the local sub-tree of animations for the given COLLADA id. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>daeId</em>&nbsp;</td><td>A COLLADA id. </td></tr>
@@ -312,6 +347,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#a1a17dca81798431f54ec10f5da5c5c6b">FCDEntity</a>.</p>
@@ -333,6 +369,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -352,6 +389,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an animation channel contained by this animation entity. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -377,6 +415,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of animation channels at this level within the animation tree. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of animation channels. </dd></dl>
 
@@ -396,6 +435,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Retrieves the channels' list </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of channels </dd></dl>
@@ -417,6 +457,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -436,6 +477,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an animation entity sub-tree contained by this animation entity tree. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -461,6 +503,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of animation entity sub-trees contained by this animation entity tree. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of animation entity sub-trees. </dd></dl>
 
@@ -481,6 +524,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves all the curves created in the subtree of this animation element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -506,6 +550,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the asset information structures that affect this entity in its hierarchy. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -533,6 +578,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#a8586473fa13fe14b34633342c864656a">FCDEntity</a>.</p>
@@ -553,6 +599,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the parent of the animation structure. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The animation parent. This pointer will be NULL to indicate a root-level animation structure that is contained within the animation library. </dd></dl>
 
@@ -572,6 +619,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -590,7 +638,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity class type. This function is a part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity class type. </p>
+<p>This function is a part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity class type: ANIMATION. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -616,7 +666,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:23 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

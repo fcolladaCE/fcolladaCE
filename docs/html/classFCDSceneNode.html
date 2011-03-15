@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDSceneNode" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA visual scene node.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDSceneNode_8h_source.html">FCDSceneNode.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDSceneNode:</div>
@@ -79,60 +82,110 @@ Inheritance diagram for FCDSceneNode:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#ac460b0c44f59a0f74481b8575759ee32">DeclareFlag</a> (TransformsDirty, 0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Whether the transforms have been dirtied.  <a href="#ac460b0c44f59a0f74481b8575759ee32"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a2f96f35092cee2a7bd41026abf969398">DeclareFlag</a> (Joint, 1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Whether the scene node is a joint.  <a href="#a2f96f35092cee2a7bd41026abf969398"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a014d704b3c4a43bd5a5031d0f09488ff">DeclareFlagCount</a> (2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"> <a href="#a014d704b3c4a43bd5a5031d0f09488ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#aca298791ceb66267f0c8856c404a5a92">FCDSceneNode</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#aca298791ceb66267f0c8856c404a5a92"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a71261a699dc97a679e0ba35a31e06f65">~FCDSceneNode</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a71261a699dc97a679e0ba35a31e06f65"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a5dad40efa762d2cb7b3df38288c7f5aa">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of the entity class.  <a href="#a5dad40efa762d2cb7b3df38288c7f5aa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#acce55d7e3bbcb7219e1f568ade78a33e">GetParentCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of parent nodes for this visual scene node.  <a href="#acce55d7e3bbcb7219e1f568ade78a33e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#ae8d1c192e6c14a332d5e60b8956b00f5">GetParent</a> (size_t index=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific parent of the visual scene node.  <a href="#ae8d1c192e6c14a332d5e60b8956b00f5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a95e707d6ae9e15397c5c2128e0ddea86">GetParent</a> (size_t index=0) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a95e707d6ae9e15397c5c2128e0ddea86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a383c128774398aff23dd47990511f86a">GetParents</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of parents for the visual scene node.  <a href="#a383c128774398aff23dd47990511f86a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a3d626d46b55be55ecebdb44036705c62">GetChildrenCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of child nodes for this visual scene node.  <a href="#a3d626d46b55be55ecebdb44036705c62"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a4137a5a0035341285adc7ae30cf4523b">GetChild</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific child of the visual scene node.  <a href="#a4137a5a0035341285adc7ae30cf4523b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a48e743198b721783eec2058f719c4c8d">GetChild</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a48e743198b721783eec2058f719c4c8d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a2f1e9396f8a6a8c150bf7c53fe76073a">GetChildren</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of children of the visual scene node.  <a href="#a2f1e9396f8a6a8c150bf7c53fe76073a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a1d2cca80ae66e0ceef9a093e37284b03">AddChildNode</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new child scene node.  <a href="#a1d2cca80ae66e0ceef9a093e37284b03"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a2aa73a31353db13b3c9cb9931c8479e8">AddChildNode</a> (<a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *sceneNode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Attaches a existing scene node to this visual scene node.  <a href="#a2aa73a31353db13b3c9cb9931c8479e8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a07a1b64efd68b7a88b42cff860347859">RemoveChildNode</a> (<a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *childNode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a scene node from this scene node direct child list.  <a href="#a07a1b64efd68b7a88b42cff860347859"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a191a57fdbb1ae5ddab8b45b4d4984e63">GetInstanceCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of entity instances at this node of the scene graph.  <a href="#a191a57fdbb1ae5ddab8b45b4d4984e63"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a5289e4d1feedb3af83a0719d04da348e">GetInstance</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific entity instance.  <a href="#a5289e4d1feedb3af83a0719d04da348e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#adaee3075febbaa2443fba9bd6c1fe56b">GetInstance</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#adaee3075febbaa2443fba9bd6c1fe56b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a5a027253c1b201a213404b3635be224a">GetInstances</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of entity instances at this node of the scene graph.  <a href="#a5a027253c1b201a213404b3635be224a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a38826dd9b894ad2371511f0228cb04c0">AddInstance</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *entity)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new entity instance.  <a href="#a38826dd9b894ad2371511f0228cb04c0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntityInstance.html">FCDEntityInstance</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#ac9133483ba61e9b690d4ff0509678255">AddInstance</a> (<a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">FCDEntity::Type</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new entity instance.  <a href="#ac9133483ba61e9b690d4ff0509678255"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a3767ecd3e9c672a4e13e7185ccd7305c">GetTransformCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of transforms for this node of the scene graph.  <a href="#a3767ecd3e9c672a4e13e7185ccd7305c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDTransform.html">FCDTransform</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a77f7cd7f791b74d161f5b0a88d21018c">GetTransform</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a specific transform.  <a href="#a77f7cd7f791b74d161f5b0a88d21018c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDTransform.html">FCDTransform</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#aa21348079b3e12aaa49ffa80c931bc97">GetTransform</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aa21348079b3e12aaa49ffa80c931bc97"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDTransform.html">FCDTransform</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a76eb38bae0f0388e8f7aea9d193b0f74">GetTransforms</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of transforms for this node of the scene graph.  <a href="#a76eb38bae0f0388e8f7aea9d193b0f74"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDTransform.html">FCDTransform</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a863250572e5a4dbf022192c653222d94">AddTransform</a> (<a class="el" href="classFCDTransform.html#a13e561c5e53aeaf84dedf4661cdc8921">FCDTransform::Type</a> type, size_t index=(size_t)-1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a new transform for this visual scene node.  <a href="#a863250572e5a4dbf022192c653222d94"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#aeab0e88d0beeb832bd1b5fd457700c45">GetHierarchicalAssets</a> (<a class="el" href="classfm_1_1pvector.html">FCDAssetList</a> &amp;assets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the asset information structures that affect this entity in its hierarchy.  <a href="#aeab0e88d0beeb832bd1b5fd457700c45"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#ae3b739c9548ec44effd945a30590098f">GetHierarchicalAssets</a> (<a class="el" href="classfm_1_1pvector.html">FCDAssetConstList</a> &amp;assets) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae3b739c9548ec44effd945a30590098f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#ab4963aa56327cbb6b6d871d1483f4f43">FindDaeId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;daeId)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the visual scene node with the given id.  <a href="#ab4963aa56327cbb6b6d871d1483f4f43"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a55654ef3acc406b4ca7d1aafda9edcce">FindDaeId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;daeId) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a55654ef3acc406b4ca7d1aafda9edcce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a13704a88612d130a6fb93c9795340508">GetSubId</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">&lt; See above.  <a href="#a13704a88612d130a6fb93c9795340508"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a1c122c00f8c75a74228043cdb584e6ba">SetSubId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;id)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the sub-id for this node.  <a href="#a1c122c00f8c75a74228043cdb584e6ba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a662b611fcb6becf807c61f2271a0dd90">FindSubId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;subId)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the visual scene node with the given sub-id.  <a href="#a662b611fcb6becf807c61f2271a0dd90"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a044b42776197433885e2950ba7531f9d">FindSubId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;subId) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a044b42776197433885e2950ba7531f9d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#aa433451cde90a143a376d1fa8d62b42b">GetVisibility</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the visual scene node is visible.  <a href="#aa433451cde90a143a376d1fa8d62b42b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a4f7afd39c98b61b80dc3cbee97b3f132">GetVisibility</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a4f7afd39c98b61b80dc3cbee97b3f132"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#ac8302f5ea740d300e9525cef4afd40a3">IsVisible</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac8302f5ea740d300e9525cef4afd40a3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a03230a78e14fc4be25c8e0b60b4e0222">SetVisibility</a> (bool isVisible)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the visibility of the visual scene node.  <a href="#a03230a78e14fc4be25c8e0b60b4e0222"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a0c06b667e6f1545745e0ce30f8f8a044">IsTarget</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this visual scene node is the target of an entity.  <a href="#a0c06b667e6f1545745e0ce30f8f8a044"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a065c60f2bca63753e5cf1a3a6164af27">DEPRECATED</a> (3.05A, GetJointFlag) bool IsJoint() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this visual scene node is a joint.  <a href="#a065c60f2bca63753e5cf1a3a6164af27"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMMatrix44.html">FMMatrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#ad14e7dc6ec8ff1755f40eade0e607f70">ToMatrix</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the local transform for this visual scene node.  <a href="#ad14e7dc6ec8ff1755f40eade0e607f70"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMMatrix44.html">FMMatrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a3b5a25aad0f37490746a081de68aaa7b">CalculateLocalTransform</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the local transform for this visual scene node.  <a href="#a3b5a25aad0f37490746a081de68aaa7b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMMatrix44.html">FMMatrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a1cf1f54c879c9ea5a6ae86fc5e1b7f70">CalculateWorldTransform</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the world transform for this visual scene node.  <a href="#a1cf1f54c879c9ea5a6ae86fc5e1b7f70"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a5e115ea183d284ebcdff42d358c06e2e">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the entity information into a clone.  <a href="#a5e115ea183d284ebcdff42d358c06e2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a8d2667408080453df148768c648695e9">IncrementTargetCount</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Increments the number of entities target this node.  <a href="#a8d2667408080453df148768c648695e9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a80bef3c1b93bc7f746a4d2af9c4e5883">DecrementTargetCount</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Decrements the number of entities target this node.  <a href="#a80bef3c1b93bc7f746a4d2af9c4e5883"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDSceneNode.html#a58a0797e6705aa5fc048521a28e04f3b">CleanSubId</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Cleans up the sub identifiers.  <a href="#a58a0797e6705aa5fc048521a28e04f3b"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA visual scene node. This class is also used to represent COLLADA visual scene entities.</p>
+<p>A COLLADA visual scene node. </p>
+<p>This class is also used to represent COLLADA visual scene entities.</p>
 <p>A visual scene node contains child scene nodes to make a tree. A visual scene node may appear multiple times within the scene graph, but checks are made to verify that there are no cycles within the graph.</p>
 <p>A visual scene node also contained an ordered list of transformations and a list of entity instances.</p>
-<p>NOTE: The GenerateSampledMatrixAnimation function was moved to the <a class="el" href="namespaceFCDSceneNodeTools.html">FCDSceneNodeTools</a> namespace to improve DLL support. </p>
+<p>NOTE: The GenerateSampledMatrixAnimation function was moved to the <a class="el" href="namespaceFCDSceneNodeTools.html" title="A set of tools that operates or modifies visual scene nodes.">FCDSceneNodeTools</a> namespace to improve DLL support. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aca298791ceb66267f0c8856c404a5a92"></a><!-- doxytag: member="FCDSceneNode::FCDSceneNode" ref="aca298791ceb66267f0c8856c404a5a92" args="(FCDocument *document)" -->
 <div class="memitem">
@@ -149,14 +202,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the FCDSceneNode::AddChild function for child visual scene nodes or the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0">FCDLibrary::AddEntity</a> function for visual scenes. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Needs custom construction in the UI.</p>
+<p>Instead, use the FCDSceneNode::AddChild function for child visual scene nodes or the <a class="el" href="classFCDLibrary.html#aa5cdcac5a447298d5e3816e4f8c864d0" title="Creates a new entity within this library.">FCDLibrary::AddEntity</a> function for visual scenes. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the scene node.</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the scene node. </td></tr>
   </table>
   </dd>
 </dl>
-<p>Needs custom construction in the UI </p>
 
 </div>
 </div>
@@ -174,6 +229,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -193,6 +249,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates a new child scene node. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new child scene node. </dd></dl>
 
@@ -213,7 +270,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Attaches a existing scene node to this visual scene node. This function will fail if attaching the given scene node to this visual scene node creates a cycle within the scene graph. </p>
+
+<p>Attaches a existing scene node to this visual scene node. </p>
+<p>This function will fail if attaching the given scene node to this visual scene node creates a cycle within the scene graph. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>sceneNode</em>&nbsp;</td><td>The scene node to attach. </td></tr>
@@ -239,7 +298,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates a new entity instance. Only geometric entities, controllers, light and cameras can be instantiated in the scene graph. To instantiate visual scene nodes, use the AddChildNode function. </p>
+
+<p>Creates a new entity instance. </p>
+<p>Only geometric entities, controllers, light and cameras can be instantiated in the scene graph. To instantiate visual scene nodes, use the AddChildNode function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>entity</em>&nbsp;</td><td>The entity to instantiate. This pointer cannot be NULL. </td></tr>
@@ -265,7 +326,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates a new entity instance. Only geometric entities, controllers, light and cameras can be instantiated in the scene graph. To instantiate visual scene nodes, use the AddChildNode function. </p>
+
+<p>Creates a new entity instance. </p>
+<p>Only geometric entities, controllers, light and cameras can be instantiated in the scene graph. To instantiate visual scene nodes, use the AddChildNode function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The type of entity to instantiate. </td></tr>
@@ -300,7 +363,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates a new transform for this visual scene node. The transforms are processed in order and COLLADA is column-major. For row-major matrix stacks, such as DirectX, this implies that the transformations will be processed in reverse order. By default, a transform is added at the end of the list. </p>
+
+<p>Creates a new transform for this visual scene node. </p>
+<p>The transforms are processed in order and COLLADA is column-major. For row-major matrix stacks, such as DirectX, this implies that the transformations will be processed in reverse order. By default, a transform is added at the end of the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The type of transform to create. </td></tr>
@@ -326,7 +391,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the local transform for this visual scene node. This is a shortcut to the above function. The above function will be deprecated in the future. </p>
+
+<p>Retrieves the local transform for this visual scene node. </p>
+<p>This is a shortcut to the above function. The above function will be deprecated in the future. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The local transform. </dd></dl>
 
 </div>
@@ -345,7 +412,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the world transform for this visual scene node. This function is not optimized and will not work with node instances. </p>
+
+<p>Retrieves the world transform for this visual scene node. </p>
+<p>This function is not optimized and will not work with node instances. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The world transform. </dd></dl>
 
 </div>
@@ -364,7 +433,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Cleans up the sub identifiers. The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. </p>
+
+<p>[INTERNAL] Cleans up the sub identifiers. </p>
+<p>The sub identifiers must be unique with respect to its parent. This method corrects the sub ids if there are conflicts. </p>
 
 </div>
 </div>
@@ -392,7 +463,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Copies the entity information into a clone. All the overwriting functions of this function should call this function to copy the COLLADA id and the other entity-level information. All the up-classes of this class should implement this function. The cloned entity may reside in another document. </p>
+
+<p>Copies the entity information into a clone. </p>
+<p>All the overwriting functions of this function should call this function to copy the COLLADA id and the other entity-level information. All the up-classes of this class should implement this function. The cloned entity may reside in another document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The empty clone. If this pointer is NULL, a new entity will be created and you will need to release the returned pointer manually. </td></tr>
@@ -430,6 +503,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Whether the scene node is a joint. </p>
 
 </div>
@@ -458,6 +532,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Whether the transforms have been dirtied. </p>
 
 </div>
@@ -478,6 +553,8 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p></p>
+
 <p>Reimplemented from <a class="el" href="classFCDObjectWithId.html#a8289e2d57d75f2302effb07b0aee47f8">FCDObjectWithId</a>.</p>
 
 </div>
@@ -496,7 +573,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Decrements the number of entities target this node. To set targets, use the FCDTargetedEntity::SetTarget function. </p>
+
+<p>[INTERNAL] Decrements the number of entities target this node. </p>
+<p>To set targets, use the FCDTargetedEntity::SetTarget function. </p>
 
 </div>
 </div>
@@ -524,7 +603,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether this visual scene node is a joint. Joints are called bones in 3dsMax. A joint is a scene node that is used in skinning. </p>
+
+<p>Retrieves whether this visual scene node is a joint. </p>
+<p>Joints are called bones in 3dsMax. A joint is a scene node that is used in skinning. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this node is a joint. </dd></dl>
 
 </div>
@@ -544,7 +625,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the visual scene node with the given id. This function looks through the whole sub-tree of visual scene nodes for the wanted COLLADA id. </p>
+
+<p>Retrieves the visual scene node with the given id. </p>
+<p>This function looks through the whole sub-tree of visual scene nodes for the wanted COLLADA id. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>daeId</em>&nbsp;</td><td>The COLLADA id to look for. </td></tr>
@@ -572,6 +655,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#a1a17dca81798431f54ec10f5da5c5c6b">FCDEntity</a>.</p>
@@ -593,7 +677,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the visual scene node with the given sub-id. This function looks through the whole sub-tree of visual scene nodes for the wanted COLLADA sub-id. </p>
+
+<p>Retrieves the visual scene node with the given sub-id. </p>
+<p>This function looks through the whole sub-tree of visual scene nodes for the wanted COLLADA sub-id. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>subId</em>&nbsp;</td><td>The COLLADA sub-id to look for. </td></tr>
@@ -619,6 +705,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -638,6 +725,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific child of the visual scene node. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -664,6 +752,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -682,6 +771,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of children of the visual scene node. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of child scene nodes. </dd></dl>
 
@@ -701,6 +791,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of child nodes for this visual scene node. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of children. </dd></dl>
 
@@ -721,6 +812,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the asset information structures that affect this entity in its hierarchy. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -748,6 +840,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#a8586473fa13fe14b34633342c864656a">FCDEntity</a>.</p>
@@ -769,6 +862,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific entity instance. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -795,6 +889,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -813,6 +908,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of entity instances at this node of the scene graph. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of entity instances. </dd></dl>
 
@@ -832,6 +928,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of entity instances at this node of the scene graph. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of entity instances. </dd></dl>
 
@@ -852,6 +949,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific parent of the visual scene node. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -878,6 +976,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -896,6 +995,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of parent nodes for this visual scene node. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of parents. </dd></dl>
 
@@ -915,6 +1015,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of parents for the visual scene node. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of parents. </dd></dl>
 
@@ -934,7 +1035,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>&lt; See above. Retrieves the optional sub-id of the node. This sub-id is neither unique nor guaranteed to exist. </p>
+
+<p>&lt; See above. </p>
+<p>Retrieves the optional sub-id of the node. This sub-id is neither unique nor guaranteed to exist. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The sub-id of the node. </dd></dl>
 
 </div>
@@ -954,6 +1057,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a specific transform. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -980,6 +1084,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -998,6 +1103,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of transforms for this node of the scene graph. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of transforms. </dd></dl>
 
@@ -1017,6 +1123,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of transforms for this node of the scene graph. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of transforms. See above. </dd></dl>
 
@@ -1036,6 +1143,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of the entity class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The type of entity class: SCENE_NODE. </dd></dl>
 
@@ -1057,7 +1165,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the visual scene node is visible. A hidden visual scene node will not be rendered but will still affect the world. This parameter is a floating-point value because it is animated. It should be intepreted as a Boolean value. </p>
+
+<p>Retrieves whether the visual scene node is visible. </p>
+<p>A hidden visual scene node will not be rendered but will still affect the world. This parameter is a floating-point value because it is animated. It should be intepreted as a Boolean value. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the scene node is visible. </dd></dl>
 
 </div>
@@ -1076,6 +1186,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1094,7 +1205,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Increments the number of entities target this node. To set targets, use the FCDTargetedEntity::SetTarget function. </p>
+
+<p>[INTERNAL] Increments the number of entities target this node. </p>
+<p>To set targets, use the FCDTargetedEntity::SetTarget function. </p>
 
 </div>
 </div>
@@ -1112,6 +1225,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this visual scene node is the target of an entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this is an entity target. </dd></dl>
 
@@ -1131,6 +1245,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1150,7 +1265,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Removes a scene node from this scene node direct child list. This function should be used to detach a scene node with multiple parents. To completely delete a scene node, you should use the <a class="el" href="classFUObject.html#a33be6852b877d7f29520bbe4722b846b">FCDSceneNode::Release</a> function on the scene node to delete. If the given child node is instanced multiple times within this scene node, only the first instance will be removed. </p>
+
+<p>Removes a scene node from this scene node direct child list. </p>
+<p>This function should be used to detach a scene node with multiple parents. To completely delete a scene node, you should use the <a class="el" href="classFUObject.html#a33be6852b877d7f29520bbe4722b846b" title="Releases this object.">FCDSceneNode::Release</a> function on the scene node to delete. If the given child node is instanced multiple times within this scene node, only the first instance will be removed. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>childNode</em>&nbsp;</td><td>The child node to remove from the direct hierarchy. </td></tr>
@@ -1175,7 +1292,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the sub-id for this node. The sub-id of an object is not required to be unique. </p>
+
+<p>Sets the sub-id for this node. </p>
+<p>The sub-id of an object is not required to be unique. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>The new sub-id of the node. </td></tr>
@@ -1200,7 +1319,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the visibility of the visual scene node. A hidden visual scene node will not be rendered but will still affect the world. </p>
+
+<p>Sets the visibility of the visual scene node. </p>
+<p>A hidden visual scene node will not be rendered but will still affect the world. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>isVisible</em>&nbsp;</td><td>Whether the visual scene node is visible. </td></tr>
@@ -1224,7 +1345,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the local transform for this visual scene node. This function does not handle or apply animations. </p>
+
+<p>Retrieves the local transform for this visual scene node. </p>
+<p>This function does not handle or apply animations. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The local transform. </dd></dl>
 
 </div>
@@ -1248,7 +1371,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:48 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:22 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

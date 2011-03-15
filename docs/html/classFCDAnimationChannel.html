@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDAnimationChannel" --><!-- doxytag: inherits="FCDObject" -->
+<p>A COLLADA animation channel.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDAnimationChannel_8h_source.html">FCDAnimationChannel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDAnimationChannel:</div>
@@ -77,19 +80,30 @@ Inheritance diagram for FCDAnimationChannel:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#a06b82dde2395bf29253670cd20e6b04c">FCDAnimationChannel</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDAnimation.html">FCDAnimation</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a06b82dde2395bf29253670cd20e6b04c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#a71b4294f13adc2a0f57be0c3114c0cc9">~FCDAnimationChannel</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a71b4294f13adc2a0f57be0c3114c0cc9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationChannel.html">FCDAnimationChannel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#a5736fd5d7dd229bb0d64a26d8ff1f39e">Clone</a> (<a class="el" href="classFCDAnimationChannel.html">FCDAnimationChannel</a> *clone=NULL) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the animation channel into a clone.  <a href="#a5736fd5d7dd229bb0d64a26d8ff1f39e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimation.html">FCDAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#a208109679a16dec1f0103cbaa7b28324">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animation sub-tree that contains the animation channel.  <a href="#a208109679a16dec1f0103cbaa7b28324"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimation.html">FCDAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#a984c713570fdcd79242c2b260df91b0c">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a984c713570fdcd79242c2b260df91b0c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#a978b4fceff674c0ae3bda2b5890760a2">GetCurves</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of animation curves contained within the channel.  <a href="#a978b4fceff674c0ae3bda2b5890760a2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#ac1b1e057ebccde60502ea1a12b00f358">GetCurveCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of animation curves contained within the channel.  <a href="#ac1b1e057ebccde60502ea1a12b00f358"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#a6022ce6350b29c74b21f253f779739c4">GetCurve</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an animation curve contained within the channel.  <a href="#a6022ce6350b29c74b21f253f779739c4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#ae6716d448ab360c794901b072e27909c">GetCurve</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae6716d448ab360c794901b072e27909c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimationChannel.html#ab7d70254bef3270047703746e31522a8">AddCurve</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new animation curve to this animation channel.  <a href="#ab7d70254bef3270047703746e31522a8"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA animation channel. Each animation channel holds the animation curves for one animatable element, such as a single floating-point value, a 3D vector or a matrix.</p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDAnimated.html">FCDAnimated</a> </dd></dl>
+<p>A COLLADA animation channel. </p>
+<p>Each animation channel holds the animation curves for one animatable element, such as a single floating-point value, a 3D vector or a matrix.</p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> </dd></dl>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a06b82dde2395bf29253670cd20e6b04c"></a><!-- doxytag: member="FCDAnimationChannel::FCDAnimationChannel" ref="a06b82dde2395bf29253670cd20e6b04c" args="(FCDocument *document, FCDAnimation *parent)" -->
 <div class="memitem">
@@ -115,7 +129,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, call the <a class="el" href="classFCDAnimation.html#a4ad6d5f5fb7b3c043af8fab2b4db766c">FCDAnimation::AddChannel</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, call the <a class="el" href="classFCDAnimation.html#a4ad6d5f5fb7b3c043af8fab2b4db766c" title="Adds a new animation channel to this animation entity.">FCDAnimation::AddChannel</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the animation channel. </td></tr>
@@ -140,6 +156,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -159,6 +176,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new animation curve to this animation channel. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new animation curve. </dd></dl>
 
@@ -179,7 +197,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Copies the animation channel into a clone. The clone may reside in another document. </p>
+
+<p>Copies the animation channel into a clone. </p>
+<p>The clone may reside in another document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The empty clone. If this pointer is NULL, a new animation channel will be created and you will need to release the returned pointer manually. </td></tr>
@@ -205,6 +225,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -224,6 +245,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an animation curve contained within the channel. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -249,6 +271,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of animation curves contained within the channel. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of animation curves. </dd></dl>
 
@@ -268,6 +291,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of animation curves contained within the channel. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd></dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of animation curves. </dd></dl>
@@ -288,6 +312,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -306,6 +331,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the animation sub-tree that contains the animation channel. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parent animation sub-tree. </dd></dl>
 
@@ -330,7 +356,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:23 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -62,6 +62,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDParameterListAnimatable" -->
+<p>An animatable value parameter.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDParameterAnimatable_8h_source.html">FCDParameterAnimatable.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDParameterListAnimatable:</div>
@@ -76,22 +79,34 @@ Inheritance diagram for FCDParameterListAnimatable:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#aab7bce9e1d72680f76a27fedfdee4fb5">FCDParameterListAnimatable</a> (<a class="el" href="classFUParameterizable.html">FUParameterizable</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#aab7bce9e1d72680f76a27fedfdee4fb5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a4c7467dc2053b50cd8aac7ec8cbe6daa">~FCDParameterListAnimatable</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a4c7467dc2053b50cd8aac7ec8cbe6daa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFUParameterizable.html">FUParameterizable</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a8730d6ab1f478da7ff8510fa46693c5c">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the parent object for this animatable parameter.  <a href="#a8730d6ab1f478da7ff8510fa46693c5c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a5b6a461611d9e53b7c21ce92956a5b45">GetAnimated</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animation helper for an animatable value in this parameter.  <a href="#a5b6a461611d9e53b7c21ce92956a5b45"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a4b99387f17182a5885df2f356e56abad">GetAnimated</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a4b99387f17182a5885df2f356e56abad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a0c72ae40090c584d4444a5ea18a0dea7">IsAnimated</a> (size_t index=~(size_t) 0) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this animatable list parameter has valid animation data.  <a href="#a0c72ae40090c584d4444a5ea18a0dea7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUObjectContainer.html">FUObjectContainer</a>&lt; <a class="el" href="classFCDAnimated.html">FCDAnimated</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a7b16dc971e16a0dbd3aa310833db59ac">GetAnimatedValues</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of animated values for this list parameter.  <a href="#a7b16dc971e16a0dbd3aa310833db59ac"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUObjectContainer.html">FUObjectContainer</a><br class="typebreak"/>
 &lt; <a class="el" href="classFCDAnimated.html">FCDAnimated</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#af9854bc7e739b316aa4badd4cf27ab6e">GetAnimatedValues</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#af9854bc7e739b316aa4badd4cf27ab6e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#ae26241a1e4214a96f9c7735712d65ab0">CreateAnimated</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Requests from the up-class that the correct <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> helper class be created for this parameter.  <a href="#ae26241a1e4214a96f9c7735712d65ab0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a0b9f3e66fa656882d0dd96990fecb5b2">OnInsertion</a> (size_t offset, size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Process a list insertion event.  <a href="#a0b9f3e66fa656882d0dd96990fecb5b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a4d691c5060728861b49b63b64ccff98c">OnRemoval</a> (size_t offset, size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Process a list removal event.  <a href="#a4d691c5060728861b49b63b64ccff98c"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUObjectContainer.html">FUObjectContainer</a>&lt; <a class="el" href="classFCDAnimated.html">FCDAnimated</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html#a145430d7d71b81045b718a6ec935202a">animateds</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The list of <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> helpers.  <a href="#a145430d7d71b81045b718a6ec935202a"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>An animatable value parameter. </p>
@@ -111,10 +126,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html">FCollada</a> object that owns this parameter. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> object that owns this parameter. </td></tr>
   </table>
   </dd>
 </dl>
@@ -135,6 +151,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -155,14 +172,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Requests from the up-class that the correct <a class="el" href="classFCDAnimated.html">FCDAnimated</a> helper class be created for this parameter. This should be handled by the <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a> template specializations. </p>
+
+<p>Requests from the up-class that the correct <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> helper class be created for this parameter. </p>
+<p>This should be handled by the <a class="el" href="classFCDParameterAnimatableT.html" title="A typed animatable FCollada value parameter.">FCDParameterAnimatableT</a> template specializations. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The element array index of the animatable value. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>A newly-created <a class="el" href="classFCDAnimated.html">FCDAnimated</a> helper object. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A newly-created <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> helper object. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classFCDParameterListAnimatableT.html#a2f498f408d7fba3ea732d93ef336d487">FCDParameterListAnimatableT&lt; TYPE, QUALIFIERS &gt;</a>.</p>
 
@@ -183,7 +202,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the animation helper for an animatable value in this parameter. This animation helper will be created if non-existant. </p>
+
+<p>Retrieves the animation helper for an animatable value in this parameter. </p>
+<p>This animation helper will be created if non-existant. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>The</em>&nbsp;</td><td>index of the animatable value. </td></tr>
@@ -209,6 +230,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -227,6 +249,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of animated values for this list parameter. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of animated values. </dd></dl>
 
@@ -246,6 +269,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -264,6 +288,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the parent object for this animatable parameter. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The parent object of the parameter. </dd></dl>
 
@@ -284,6 +309,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this animatable list parameter has valid animation data. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -319,7 +345,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Process a list insertion event. The affected array element indices in the <a class="el" href="classFCDAnimated.html">FCDAnimated</a> helpers will be modified accordingly. </p>
+
+<p>Process a list insertion event. </p>
+<p>The affected array element indices in the <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> helpers will be modified accordingly. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>offset</em>&nbsp;</td><td>The index of where the insertion was done. </td></tr>
@@ -354,7 +382,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Process a list removal event. The affected <a class="el" href="classFCDAnimated.html">FCDAnimated</a> helpers will be released and the element indices of the other helpers will be modified accordingly. </p>
+
+<p>Process a list removal event. </p>
+<p>The affected <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> helpers will be released and the element indices of the other helpers will be modified accordingly. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>offset</em>&nbsp;</td><td>The index of where the removal was done. </td></tr>
@@ -376,7 +406,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The list of <a class="el" href="classFCDAnimated.html">FCDAnimated</a> helpers. This value is marked "protected" because OnPotentialSizeChange uses it.. Needs some more thought? </p>
+
+<p>The list of <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> helpers. </p>
+<p>This value is marked "protected" because OnPotentialSizeChange uses it.. Needs some more thought? </p>
 
 </div>
 </div>
@@ -399,7 +431,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:42 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:20 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

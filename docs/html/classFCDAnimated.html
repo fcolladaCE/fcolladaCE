@@ -62,6 +62,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDAnimated" --><!-- doxytag: inherits="FCDObject,FUTracker" -->
+<p>An animated element.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDAnimated_8h_source.html">FCDAnimated.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDAnimated:</div>
@@ -81,58 +84,106 @@ Inheritance diagram for FCDAnimated:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#ac837003f50e0f80a8931fbc81e26a58f">DeclareFlag</a> (RelativeAnimation, 0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Flag to indicate that the animation should be applied relative to the default value.  <a href="#ac837003f50e0f80a8931fbc81e26a58f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a4eda43378afc55e11489da7b9dc2dcd2">DeclareFlagCount</a> (1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> class declares one flag.  <a href="#a4eda43378afc55e11489da7b9dc2dcd2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a167d5abc5e40cf3fc4324bb03c745e36">FCDAnimated</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *object, size_t valueCount, const char **<a class="el" href="classFCDAnimated.html#a02ab9175d25055cd2d10d924de312490">qualifiers</a>, float **<a class="el" href="classFCDAnimated.html#afa9e0b280ba2cd7c18e8454eb296e453">values</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a167d5abc5e40cf3fc4324bb03c745e36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a9b99432d57703358264e5cf4db911570">FCDAnimated</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, size_t valueCount, const char **<a class="el" href="classFCDAnimated.html#a02ab9175d25055cd2d10d924de312490">qualifiers</a>, float **<a class="el" href="classFCDAnimated.html#afa9e0b280ba2cd7c18e8454eb296e453">values</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a9b99432d57703358264e5cf4db911570"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a8f3542f8832c28a2ac577eae2b63304b">~FCDAnimated</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a8f3542f8832c28a2ac577eae2b63304b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#ab327a9cd5a07649b00105ee399926b86">GetValueCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of values contained within this animated element.  <a href="#ab327a9cd5a07649b00105ee399926b86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#aed087870f52e45cb31f0671739fdd22a">GetCurveCount</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of animation curves affecting one value of an animated element.  <a href="#aed087870f52e45cb31f0671739fdd22a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a1f001d1c8c99792304bddc3e4940d239">GetCurve</a> (size_t index, size_t curveIndex=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animation curve affecting the value of an animated element.  <a href="#a1f001d1c8c99792304bddc3e4940d239"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a7ed98f7465fc04cee9d1daf463719f05">GetCurve</a> (size_t index, size_t curveIndex=0) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7ed98f7465fc04cee9d1daf463719f05"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1vector.html">FCDAnimationCurveListList</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#ad2ed5c2ba6f42d423b28025cf6f10090">GetCurves</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of the curves affecting the values of an animated element.  <a href="#ad2ed5c2ba6f42d423b28025cf6f10090"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1vector.html">FCDAnimationCurveListList</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a68b8b307c20c21ad2172cab63e97805a">GetCurves</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a68b8b307c20c21ad2172cab63e97805a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#aeb1a5d7190c09b8a52e8004d852d44d2">AddCurve</a> (size_t index, <a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *curve)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Assigns a curve to a value of the animated element.  <a href="#aeb1a5d7190c09b8a52e8004d852d44d2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#adf19a87cc5623a4cba67979673872e3b">AddCurve</a> (size_t index, <a class="el" href="classfm_1_1pvector.html">FCDAnimationCurveList</a> &amp;curve)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#adf19a87cc5623a4cba67979673872e3b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#aca4a4bcb2f4a4e4300dd3a49a97d210b">RemoveCurve</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the curves affecting a value of the animated element.  <a href="#aca4a4bcb2f4a4e4300dd3a49a97d210b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#ab28462e611ad8d67a601c75b74b323c5">GetValue</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the value of an animated element.  <a href="#ab28462e611ad8d67a601c75b74b323c5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a121b81d9b2f509c8b4c169d41173f4df">GetValue</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a121b81d9b2f509c8b4c169d41173f4df"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a4ae4a3041789375550621b68c19cec0d">SetValue</a> (size_t index, float *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Overwrites the value pointer of an animated element.  <a href="#a4ae4a3041789375550621b68c19cec0d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a6f0e09b0549d25f1d244984a22f59ed8">GetQualifier</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the qualifier of the value of an animated element.  <a href="#a6f0e09b0549d25f1d244984a22f59ed8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1vector.html">StringList</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a0cd874022861ee825398284c6a3e5dcd">GetQualifiers</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Retrieve the qualifier list directly.  <a href="#a0cd874022861ee825398284c6a3e5dcd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a4b77d83d7a9763e57150f53f3b47496f">FindValue</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;qualifier)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an animated value given a valid qualifier.  <a href="#a4b77d83d7a9763e57150f53f3b47496f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a635f0277e3da5cbdf20751279a972f24">FindValue</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;qualifier) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a635f0277e3da5cbdf20751279a972f24"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a431e0ae388de3bacbd7c42499f9f1405">FindCurve</a> (const char *qualifier)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an animation curve given a valid qualifier.  <a href="#a431e0ae388de3bacbd7c42499f9f1405"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#aab87b39e82d91a0cf2d6819339dee16e">FindCurve</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;qualifier)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aab87b39e82d91a0cf2d6819339dee16e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a7e54c3e4ef1375e0bd7911f8a6779967">FindCurve</a> (const char *qualifier) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7e54c3e4ef1375e0bd7911f8a6779967"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a9459a2c65b46053d887bc2e0aab16549">FindCurve</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;qualifier) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a9459a2c65b46053d887bc2e0aab16549"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a3b6f378a1057bff112715a70efcbc195">FindCurve</a> (const float *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an animation curve given a value pointer.  <a href="#a3b6f378a1057bff112715a70efcbc195"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAnimationCurve.html">FCDAnimationCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a010defa487b611547292e75e955e99d5">FindCurve</a> (const float *value) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a010defa487b611547292e75e955e99d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#abc95fade652f7cb561363a2f572a6783">FindQualifier</a> (const char *qualifier) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the value index for a given qualifier.  <a href="#abc95fade652f7cb561363a2f572a6783"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#ab021f4938ac47274ed7beb906644ae96">FindQualifier</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;qualifier) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab021f4938ac47274ed7beb906644ae96"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a596cb5706f21ec11a38a21cd08d0b593">FindValue</a> (const float *value) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the value index for a given value pointer.  <a href="#a596cb5706f21ec11a38a21cd08d0b593"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#aa184ab9d719e1e798f099ff820041d9a">SetTargetObject</a> (<a class="el" href="classFCDObject.html">FCDObject</a> *_target)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> this animated value will notify when making changes.  <a href="#aa184ab9d719e1e798f099ff820041d9a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDObject.html">FCDObject</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a9b3fae0cc1f766c2312c955e83ed7d1d">GetTargetObject</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> this animated value will notify when making changes.  <a href="#a9b3fae0cc1f766c2312c955e83ed7d1d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a3e5c36661a7ebbceeeece5a6a5ef24a8">GetArrayElement</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the array index for an animated element.  <a href="#a3e5c36661a7ebbceeeece5a6a5ef24a8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a8c9c8b720246764d0e5d5c88a55c31ff">SetArrayElement</a> (int32 index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the array index for an animated element.  <a href="#a8c9c8b720246764d0e5d5c88a55c31ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a2e475c6ce1890734b8b9bc5226b79b6a">HasCurve</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this animated element has any animation curves affecting its values.  <a href="#a2e475c6ce1890734b8b9bc5226b79b6a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimationMultiCurve.html">FCDAnimationMultiCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a04a1a0a8b83d4718c3be05761d724e11">CreateMultiCurve</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates one multi-dimensional animation curve from this animated element.  <a href="#a04a1a0a8b83d4718c3be05761d724e11"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a1bd0b6deb59cc5343aba007c9f5eae0c">Evaluate</a> (float time)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Evaluates the animated element at a given time.  <a href="#a1bd0b6deb59cc5343aba007c9f5eae0c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a94bbb32ae705dacebe1223ba15f3356e">Clone</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones an animated element.  <a href="#a94bbb32ae705dacebe1223ba15f3356e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAnimated.html">FCDAnimated</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a0c88b1e9ac37d6bd67abc13fee817bc7">Clone</a> (<a class="el" href="classFCDAnimated.html">FCDAnimated</a> *clone) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#af56690d3ce4fcec0caceff540129ba97">OnObjectReleased</a> (<a class="el" href="classFUTrackable.html">FUTrackable</a> *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones an animated element.  <a href="#a0c88b1e9ac37d6bd67abc13fee817bc7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af56690d3ce4fcec0caceff540129ba97"></a><!-- doxytag: member="FCDAnimated::OnObjectReleased" ref="af56690d3ce4fcec0caceff540129ba97" args="(FUTrackable *object)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#af56690d3ce4fcec0caceff540129ba97">OnObjectReleased</a> (<a class="el" href="classFUTrackable.html">FUTrackable</a> *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] See <a class="el" href="classFUTracker.html" title="An object set Each set has access to a list of unique objects.">FUTracker</a> On object deletion, remove ourselves as we no longer have any values to animate <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFCDAnimationMultiCurve.html">FCDAnimationMultiCurve</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#ad2ab07c9324f1921f16d741cea22d332">CreateMultiCurve</a> (const <a class="el" href="classfm_1_1pvector.html">FCDAnimatedList</a> &amp;toMerge)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates one multi-dimensional animation curve from a list of animated element.  <a href="#ad2ab07c9324f1921f16d741cea22d332"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1pvector.html">FloatPtrList</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#afa9e0b280ba2cd7c18e8454eb296e453">values</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The list of value pointers.  <a href="#afa9e0b280ba2cd7c18e8454eb296e453"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1vector.html">StringList</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a02ab9175d25055cd2d10d924de312490">qualifiers</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The list of target qualifiers.  <a href="#a02ab9175d25055cd2d10d924de312490"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfm_1_1vector.html">FCDAnimationCurveListList</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a602e65dada6111b6b748555550c0cb18">curves</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The list of animation curves.  <a href="#a602e65dada6111b6b748555550c0cb18"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDObject.html">FCDObject</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#aca46cbdc7ee7a1b4cf90a5aa6849f4e0">target</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The target object who contain the float values.  <a href="#aca46cbdc7ee7a1b4cf90a5aa6849f4e0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDAnimated.html#a27daa356d592abe62b5f84871bb6fefc">arrayElement</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The array index for animated element that belong to a list of animated elements.  <a href="#a27daa356d592abe62b5f84871bb6fefc"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>An animated element. An animated element encapsulates a set of floating-point values that are marked as animated.</p>
+<p>An animated element. </p>
+<p>An animated element encapsulates a set of floating-point values that are marked as animated.</p>
 <p>For this purpose, an animated element holds a list of floating-point values, their animation curves and their COLLADA qualifiers for the generation of COLLADA targets. For animated list elements, an animated element holds an array index.</p>
 <p>There are many classes built on top of this class. They represent the different element types that may be animated, such as 3D points, colors and matrices. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
@@ -172,12 +223,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html">FCollada</a> object that owns this animated element. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>object</em>&nbsp;</td><td>The <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> object that owns this animated element. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>valueCount</em>&nbsp;</td><td>The number of values inside the animated element. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>qualifiers</em>&nbsp;</td><td>A constant array of UTF8 string defining the qualifier for each value. You should check out the arrays in <a class="el" href="namespaceFUDaeAccessor.html">FUDaeAccessor</a> for examples. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>qualifiers</em>&nbsp;</td><td>A constant array of UTF8 string defining the qualifier for each value. You should check out the arrays in <a class="el" href="namespaceFUDaeAccessor.html" title="Character-based definition of the various accessors TODO.">FUDaeAccessor</a> for examples. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>values</em>&nbsp;</td><td>A constant array containing the value pointers. </td></tr>
   </table>
   </dd>
@@ -221,12 +273,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns this animated element. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>valueCount</em>&nbsp;</td><td>The number of values inside the animated element. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>qualifiers</em>&nbsp;</td><td>A constant array of UTF8 string defining the qualifier for each value. You should check out the arrays in <a class="el" href="namespaceFUDaeAccessor.html">FUDaeAccessor</a> for examples. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>qualifiers</em>&nbsp;</td><td>A constant array of UTF8 string defining the qualifier for each value. You should check out the arrays in <a class="el" href="namespaceFUDaeAccessor.html" title="Character-based definition of the various accessors TODO.">FUDaeAccessor</a> for examples. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>values</em>&nbsp;</td><td>A constant array containing the value pointers. </td></tr>
   </table>
   </dd>
@@ -248,6 +301,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -277,7 +331,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Assigns a curve to a value of the animated element. The previously assigned curve will be deleted. </p>
+
+<p>Assigns a curve to a value of the animated element. </p>
+<p>The previously assigned curve will be deleted. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The value index. </td></tr>
@@ -313,6 +369,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -332,6 +389,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones an animated element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -358,6 +416,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones an animated element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -384,7 +443,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates one multi-dimensional animation curve from a list of animated element. This function is useful if your application does not handle animations per-values. For example, we use this function is ColladaMax for animated scale values, where one scale value is two rotations for the scale rotation pivot and one 3D point for the scale factors. </p>
+
+<p>Creates one multi-dimensional animation curve from a list of animated element. </p>
+<p>This function is useful if your application does not handle animations per-values. For example, we use this function is ColladaMax for animated scale values, where one scale value is two rotations for the scale rotation pivot and one 3D point for the scale factors. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>toMerge</em>&nbsp;</td><td>The list of animated elements to merge </td></tr>
@@ -409,7 +470,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates one multi-dimensional animation curve from this animated element. This function is useful is your application does not handle animations per-values, but instead needs one animation per-element. </p>
+
+<p>Creates one multi-dimensional animation curve from this animated element. </p>
+<p>This function is useful is your application does not handle animations per-values, but instead needs one animation per-element. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The multi-dimensional animation curve. </dd></dl>
 
 </div>
@@ -438,6 +501,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Flag to indicate that the animation should be applied relative to the default value. </p>
 
 </div>
@@ -457,7 +521,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The <a class="el" href="classFCDAnimated.html">FCDAnimated</a> class declares one flag. </p>
+
+<p>The <a class="el" href="classFCDAnimated.html" title="An animated element.">FCDAnimated</a> class declares one flag. </p>
 
 </div>
 </div>
@@ -476,7 +541,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Evaluates the animated element at a given time. This function directly and <b>permanently</b> modifies the values of the animated element according to the curves affecting them. </p>
+
+<p>Evaluates the animated element at a given time. </p>
+<p>This function directly and <b>permanently</b> modifies the values of the animated element according to the curves affecting them. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>time</em>&nbsp;</td><td>The evaluation time. </td></tr>
@@ -501,6 +568,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an animation curve given a valid qualifier. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -527,6 +595,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -546,6 +615,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -565,6 +635,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -584,6 +655,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an animation curve given a value pointer. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -610,6 +682,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -629,6 +702,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the value index for a given qualifier. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -655,6 +729,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -674,6 +749,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an animated value given a valid qualifier. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -700,6 +776,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -719,6 +796,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the value index for a given value pointer. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -744,7 +822,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the array index for an animated element. This value is used only for animated elements that belong to a list of animated elements within the COLLADA document. </p>
+
+<p>Retrieves the array index for an animated element. </p>
+<p>This value is used only for animated elements that belong to a list of animated elements within the COLLADA document. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The array index. This value will be -1 to indicate that the animated element does not belong to a list. </dd></dl>
 
 </div>
@@ -773,6 +853,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the animation curve affecting the value of an animated element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -809,6 +890,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -828,6 +910,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of animation curves affecting one value of an animated element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -853,6 +936,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -871,7 +955,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the list of the curves affecting the values of an animated element. This list may contain the NULL pointer, where a value is not animated. </p>
+
+<p>Retrieves the list of the curves affecting the values of an animated element. </p>
+<p>This list may contain the NULL pointer, where a value is not animated. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of animation curves. </dd></dl>
 
 </div>
@@ -891,6 +977,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the qualifier of the value of an animated element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -916,6 +1003,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>[INTERNAL] Retrieve the qualifier list directly. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The reference to the qualifier list. </dd></dl>
 
@@ -935,8 +1023,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns the <a class="el" href="classFCDObject.html">FCDObject</a> this animated value will notify when making changes </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the <a class="el" href="classFCDObject.html">FCDObject</a> we notify </dd></dl>
+
+<p>Returns the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> this animated value will notify when making changes. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> we notify </dd></dl>
 
 </div>
 </div>
@@ -955,6 +1044,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -974,6 +1064,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the value of an animated element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -999,6 +1090,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of values contained within this animated element. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of values. </dd></dl>
 
@@ -1018,29 +1110,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this animated element has any animation curves affecting its values. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether any curves affect this animated element. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af56690d3ce4fcec0caceff540129ba97"></a><!-- doxytag: member="FCDAnimated::OnObjectReleased" ref="af56690d3ce4fcec0caceff540129ba97" args="(FUTrackable *object)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FCDAnimated::OnObjectReleased </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classFUTrackable.html">FUTrackable</a> *&nbsp;</td>
-          <td class="paramname"> <em>object</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>[INTERNAL] See <a class="el" href="classFUTracker.html">FUTracker</a> On object deletion, remove ourselves as we no longer have any values to animate </p>
-
-<p>Implements <a class="el" href="classFUTracker.html#a7e79d02821b3ccd2fadc460125cb3ca4">FUTracker</a>.</p>
 
 </div>
 </div>
@@ -1059,6 +1131,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes the curves affecting a value of the animated element. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1085,7 +1158,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the array index for an animated element. This value is used only for animated elements that belong to a list of animated elements within the COLLADA document. </p>
+
+<p>Sets the array index for an animated element. </p>
+<p>This value is used only for animated elements that belong to a list of animated elements within the COLLADA document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The array index. This value should be -1 to indicate that the animated element does not belong to a list. </td></tr>
@@ -1110,10 +1185,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the <a class="el" href="classFCDObject.html">FCDObject</a> this animated value will notify when making changes </p>
+
+<p>Sets the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> this animated value will notify when making changes. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>_target</em>&nbsp;</td><td>Pointer to the <a class="el" href="classFCDObject.html">FCDObject</a> we will notify </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>_target</em>&nbsp;</td><td>Pointer to the <a class="el" href="classFCDObject.html" title="A basic COLLADA document object.">FCDObject</a> we will notify </td></tr>
   </table>
   </dd>
 </dl>
@@ -1144,7 +1220,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Overwrites the value pointer of an animated element. Used when changing the list size within FCDParameterAnimatableList. </p>
+
+<p>[INTERNAL] Overwrites the value pointer of an animated element. </p>
+<p>Used when changing the list size within FCDParameterAnimatableList. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The value index. </td></tr>
@@ -1166,7 +1244,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The array index for animated element that belong to a list of animated elements. This value may be -1 to indicate that the element does not belong to a list. Otherwise, the index should always be unsigned. </p>
+
+<p>The array index for animated element that belong to a list of animated elements. </p>
+<p>This value may be -1 to indicate that the element does not belong to a list. Otherwise, the index should always be unsigned. </p>
 
 </div>
 </div>
@@ -1180,7 +1260,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The list of animation curves. There is always one curve for one value pointer, although that curve may be the NULL pointer to indicate a non-animated value. </p>
+
+<p>The list of animation curves. </p>
+<p>There is always one curve for one value pointer, although that curve may be the NULL pointer to indicate a non-animated value. </p>
 
 </div>
 </div>
@@ -1194,7 +1276,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The list of target qualifiers. There is always one qualifier for one value pointer. </p>
+
+<p>The list of target qualifiers. </p>
+<p>There is always one qualifier for one value pointer. </p>
 
 </div>
 </div>
@@ -1208,6 +1292,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The target object who contain the float values. </p>
 
 </div>
@@ -1222,6 +1307,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The list of value pointers. </p>
 
 </div>
@@ -1245,7 +1331,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:22 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:14 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

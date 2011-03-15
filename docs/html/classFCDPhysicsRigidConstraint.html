@@ -60,6 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDPhysicsRigidConstraint" --><!-- doxytag: inherits="FCDEntity" -->
+<p>A COLLADA rigid constraint.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDPhysicsRigidConstraint_8h_source.html">FCDPhysicsRigidConstraint.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDPhysicsRigidConstraint:</div>
@@ -79,77 +82,146 @@ Inheritance diagram for FCDPhysicsRigidConstraint:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a6625956bba6087887e7003cad5e01ade">FCDPhysicsRigidConstraint</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDPhysicsModel.html">FCDPhysicsModel</a> *_parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#a6625956bba6087887e7003cad5e01ade"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ab109ee91a56b7deaf2659adb1dcdebc6">~FCDPhysicsRigidConstraint</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ab109ee91a56b7deaf2659adb1dcdebc6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a95fd22d9def1fdfedb0000a16a410851">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity type for this class.  <a href="#a95fd22d9def1fdfedb0000a16a410851"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsModel.html">FCDPhysicsModel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aa7aed9e03275e8b757de0044bbd0b395">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the physics model that contraints this rigid constraint.  <a href="#aa7aed9e03275e8b757de0044bbd0b395"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDPhysicsModel.html">FCDPhysicsModel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a376ef778cd819a3bf6d52365cba276ed">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a376ef778cd819a3bf6d52365cba276ed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#afb23f9ec2cc4ebcb506c5c3f75fb943d">GetSubId</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the wanted sub-id for this transform.  <a href="#afb23f9ec2cc4ebcb506c5c3f75fb943d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a3e2d3a71acb99a4b6d1ca13d01bfa4c6">SetSubId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;subId)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the wanted sub-id for this transform.  <a href="#a3e2d3a71acb99a4b6d1ca13d01bfa4c6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a01b9ad045a6a431783f79964d5c7c979">SetSubId</a> (const char *subId)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a01b9ad045a6a431783f79964d5c7c979"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a201b3ab455119d313914f32edac5a2b1">GetReferenceRigidBody</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the attached rigid body which is the reference.  <a href="#a201b3ab455119d313914f32edac5a2b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aba517b34a3c30353d61a062f4a57cb16">GetReferenceRigidBody</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aba517b34a3c30353d61a062f4a57cb16"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#af2838b8841a6119e36c064aaa1fe8f91">SetReferenceRigidBody</a> (<a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *_referenceRigidBody)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the attached rigid body which is the reference.  <a href="#af2838b8841a6119e36c064aaa1fe8f91"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aa19d38ffd2893188fe1045b9f0fc57c0">GetTargetRigidBody</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the attached rigid body which is not the reference.  <a href="#aa19d38ffd2893188fe1045b9f0fc57c0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a1f5f716e35b3a73fe42cf995d5d27e8f">GetTargetRigidBody</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1f5f716e35b3a73fe42cf995d5d27e8f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ae3054b2ef168bc99dd265eba23048129">SetTargetRigidBody</a> (<a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a> *_targetRigidBody)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the attached rigid body which is not the reference.  <a href="#ae3054b2ef168bc99dd265eba23048129"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aecfa72ef738ace21c10a690baf2022b2">GetReferenceNode</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the attached node which is the reference.  <a href="#aecfa72ef738ace21c10a690baf2022b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ab46b1e054faaaed8a67fcea806e27da4">GetReferenceNode</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab46b1e054faaaed8a67fcea806e27da4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aeb92802f7e8ee0b97353c88a4baa766e">SetReferenceNode</a> (<a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *_referenceNode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the attached node which is the reference.  <a href="#aeb92802f7e8ee0b97353c88a4baa766e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#afe91ca21e513e5087b3ca85d9c1b618e">GetTargetNode</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the attached node which is not the reference.  <a href="#afe91ca21e513e5087b3ca85d9c1b618e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#afb0f19a82ccf6bb4025245096d1ec652">GetTargetNode</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#afb0f19a82ccf6bb4025245096d1ec652"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a6771e3e5c69b0372c054a2b385618ba7">SetTargetNode</a> (<a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> *_targetNode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the attached node which is not the reference.  <a href="#a6771e3e5c69b0372c054a2b385618ba7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUObjectContainer.html">FCDTransformContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a65d0a0e27da18419ca1ef2c239ec269e">GetTransformsRef</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the transforms for the attached rigid body which is the reference.  <a href="#a65d0a0e27da18419ca1ef2c239ec269e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUObjectContainer.html">FCDTransformContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ae24b5ae4e20e8a0556764fe638dc6d40">GetTransformsRef</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae24b5ae4e20e8a0556764fe638dc6d40"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUObjectContainer.html">FCDTransformContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aec006086f6071ba2ecf3d6bda8f436d1">GetTransformsTar</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the transforms for the attached rigid body which is not the reference.  <a href="#aec006086f6071ba2ecf3d6bda8f436d1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUObjectContainer.html">FCDTransformContainer</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a6121e2a0bc57e7cb9ff19f903dfbc4c2">GetTransformsTar</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6121e2a0bc57e7cb9ff19f903dfbc4c2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDTransform.html">FCDTransform</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aa640f671262ab9dae5f71dfa00c3d5ff">AddTransformRef</a> (<a class="el" href="classFCDTransform.html#a13e561c5e53aeaf84dedf4661cdc8921">FCDTransform::Type</a> type, size_t index=(size_t)-1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a transform for the attached rigid body which is the reference.  <a href="#aa640f671262ab9dae5f71dfa00c3d5ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDTransform.html">FCDTransform</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a767751e1fec6557d92c0fabf047ae878">AddTransformTar</a> (<a class="el" href="classFCDTransform.html#a13e561c5e53aeaf84dedf4661cdc8921">FCDTransform::Type</a> type, size_t index=(size_t)-1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a transform for the attached rigid body which is not the reference.  <a href="#a767751e1fec6557d92c0fabf047ae878"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a2dcfbcd57a613445ec3e90e0c7394538">GetEnabled</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this rigid constraint is enabled.  <a href="#a2dcfbcd57a613445ec3e90e0c7394538"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aff637d7813284bfbd7b4ba430f6b0fa6">GetEnabled</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aff637d7813284bfbd7b4ba430f6b0fa6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aa118dc6e91437e7294210193cd9a1a52">IsEnabled</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aa118dc6e91437e7294210193cd9a1a52"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a29ce8a1fdf43832609641b1878391094">SetEnabled</a> (bool _enabled)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets whether this rigid constraint is enabled.  <a href="#a29ce8a1fdf43832609641b1878391094"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a9713d6ef58dc43a391eb148de3f70647">GetInterpenetrate</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the connected rigid bodies can penetrate eachother.  <a href="#a9713d6ef58dc43a391eb148de3f70647"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a26e5f9dcd04acbf64cbc022c559bb2c1">GetInterpenetrate</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a26e5f9dcd04acbf64cbc022c559bb2c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a847f584ac90b0b75a8e8429c2c961583">IsInterpenetrate</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a847f584ac90b0b75a8e8429c2c961583"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ad0ea420e99ac86f54f015b2a976cb7ca">SetInterpenetrate</a> (bool _interpenetrate)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets whether the connected rigid bodies can penetrate eachother.  <a href="#ad0ea420e99ac86f54f015b2a976cb7ca"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ad2f35d2c92bbca72cee81fd098ac2322">GetLimitsLinearMin</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the linear min limit of the degrees of freedom.  <a href="#ad2f35d2c92bbca72cee81fd098ac2322"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aa144e26fa4bd23eca297f3b0b6b0d47c">GetLimitsLinearMin</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aa144e26fa4bd23eca297f3b0b6b0d47c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a2fe79d00bba974be3c40a884dad9c668">SetLimitsLinearMin</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;_limitsLinearMin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the linear min limit of the degrees of freedom.  <a href="#a2fe79d00bba974be3c40a884dad9c668"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aba63d3bd2428186d190dfe3944ba55aa">GetLimitsLinearMax</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the linear max limit of the degrees of freedom.  <a href="#aba63d3bd2428186d190dfe3944ba55aa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#af64f85d15f8043b0349c336c2fb2d60d">GetLimitsLinearMax</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#af64f85d15f8043b0349c336c2fb2d60d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a3561f4f05b63b865c25b283c28e286e2">SetLimitsLinearMax</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;_limitsLinearMax)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the linear max limit of the degrees of freedom.  <a href="#a3561f4f05b63b865c25b283c28e286e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a20ea69483dccff0b6adbc7e831043c48">GetLimitsSCTMin</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the swing cone and twist min limit of the degrees of freedom.  <a href="#a20ea69483dccff0b6adbc7e831043c48"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ac5a98c8471f032985c60d0de7aea3d13">GetLimitsSCTMin</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac5a98c8471f032985c60d0de7aea3d13"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a5e132af0e4279a8b5e953603cd2b8eb0">SetLimitsSCTMin</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;_limitsSCTMin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the swing cone and twist min limit of the degrees of freedom.  <a href="#a5e132af0e4279a8b5e953603cd2b8eb0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#abf33f31354bbcc096c84d3fae2db463b">GetLimitsSCTMax</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the swing cone and twist max limit of the degrees of freedom.  <a href="#abf33f31354bbcc096c84d3fae2db463b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a8974e4bc1cc245b8f618c9d81809253c">GetLimitsSCTMax</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a8974e4bc1cc245b8f618c9d81809253c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ae9ea41b987feed7065a3748ae94b689e">SetLimitsSCTMax</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;_limitsSCTMax)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the swing cone and twist max limit of the degrees of freedom.  <a href="#ae9ea41b987feed7065a3748ae94b689e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#af04ab7b87dc559dc3fc22f1ae2ba3d1c">GetSpringLinearStiffness</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the spring linear stiffness of the spring rigid constraint.  <a href="#af04ab7b87dc559dc3fc22f1ae2ba3d1c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ab10c7ddef6e04594695cc5dbd122dd86">GetSpringLinearStiffness</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ab10c7ddef6e04594695cc5dbd122dd86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ab229222b68cc31d15113f6921e4ee3d3">SetSpringLinearStiffness</a> (float _springLinearStiffness)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the spring linear stiffness of the spring rigid constraint.  <a href="#ab229222b68cc31d15113f6921e4ee3d3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a041966532526b63b3a2d99d82d619672">GetSpringLinearDamping</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the spring linear damping of the spring rigid constraint.  <a href="#a041966532526b63b3a2d99d82d619672"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a3d7e4e73ca4d74061e9cfdc44fab07d1">GetSpringLinearDamping</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a3d7e4e73ca4d74061e9cfdc44fab07d1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ac1a792e51afd1be4f909371702ab7531">SetSpringLinearDamping</a> (float _springLinearDamping)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the spring linear damping of the spring rigid constraint.  <a href="#ac1a792e51afd1be4f909371702ab7531"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ad18cb64c04a05705c5a4361d8e38c7de">GetSpringLinearTargetValue</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the sping linear target value of the spring rigid constraint.  <a href="#ad18cb64c04a05705c5a4361d8e38c7de"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a5ceb9fe6cd3ca58ae3b89e51bf509165">GetSpringLinearTargetValue</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5ceb9fe6cd3ca58ae3b89e51bf509165"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ac64c51727ed14548ba623c1742a3c2f2">SetSpringLinearTargetValue</a> (float _springLinearTargetValue)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the sping linear target value of the spring rigid constraint.  <a href="#ac64c51727ed14548ba623c1742a3c2f2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a7365394178b22920437afa3ee217a69f">GetSpringAngularStiffness</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the spring angular stiffness of the spring rigid constraint.  <a href="#a7365394178b22920437afa3ee217a69f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a2d886268c987e1797655c31ee57b31b7">GetSpringAngularStiffness</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2d886268c987e1797655c31ee57b31b7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a50eff3aece7ef1d1f3937a50c4569746">SetSpringAngularStiffness</a> (float _springAngularStiffness)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the spring angular stiffness of the spring rigid constraint.  <a href="#a50eff3aece7ef1d1f3937a50c4569746"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#afdf08ace1c9d9c4d27ae88aebc451591">GetSpringAngularDamping</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the spring angular damping of the spring rigid constraint.  <a href="#afdf08ace1c9d9c4d27ae88aebc451591"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a66e19157e6a4c5970ebcf639e157fc70">GetSpringAngularDamping</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a66e19157e6a4c5970ebcf639e157fc70"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a231532aff9c89c29bf25997647415854">SetSpringAngularDamping</a> (float _springAngularDamping)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the spring angular damping of the spring rigid constraint.  <a href="#a231532aff9c89c29bf25997647415854"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a37e69d7f6a60af6447b44705bdf8b0a0">GetSpringAngularTargetValue</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the sping angular target value of the spring rigid constraint.  <a href="#a37e69d7f6a60af6447b44705bdf8b0a0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUParameterT.html">FUParameterFloat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aace7cc7301f20ba85ad32807a3b2bffd">GetSpringAngularTargetValue</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aace7cc7301f20ba85ad32807a3b2bffd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#ab0ab82e451611446b736be4a4656cd80">SetSpringAngularTargetValue</a> (float _springAngularTargetValue)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the sping angular target value of the spring rigid constraint.  <a href="#ab0ab82e451611446b736be4a4656cd80"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a72ffcdeb5fb61c9f0891da39bffd168a">DEPRECATED</a> (3.05A, GetEnabled().GetAnimated) FCDAnimated *GetAnimatedEnabled()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animated value for enabled.  <a href="#a72ffcdeb5fb61c9f0891da39bffd168a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#aafc4b3931100ed13df110584b0a72623">DEPRECATED</a> (3.05A, GetEnabled().GetAnimated) const FCDAnimated *GetAnimatedEnabled() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#aafc4b3931100ed13df110584b0a72623"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#adcb526a3ce0c595eef0744e424cb9d12">DEPRECATED</a> (3.05A, GetInterpenetrate().GetAnimated) FCDAnimated *GetAnimatedInterpenetrate()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the animated value for interpenetrate.  <a href="#adcb526a3ce0c595eef0744e424cb9d12"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a7b338e0666f3837068ab955687b51aea">DEPRECATED</a> (3.05A, GetInterpenetrate().GetAnimated) const FCDAnimated *GetAnimatedInterpenetrate() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7b338e0666f3837068ab955687b51aea"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDPhysicsRigidConstraint.html#a45abae1d5a24c70f830e0a14137cd98e">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the rigid constraint into a clone.  <a href="#a45abae1d5a24c70f830e0a14137cd98e"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA rigid constraint.</p>
+<p>A COLLADA rigid constraint. </p>
 <p>A rigid constraint attaches two rigid bodies together using springs, ball joints, or other limitations. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6625956bba6087887e7003cad5e01ade"></a><!-- doxytag: member="FCDPhysicsRigidConstraint::FCDPhysicsRigidConstraint" ref="a6625956bba6087887e7003cad5e01ade" args="(FCDocument *document, FCDPhysicsModel *_parent)" -->
@@ -176,7 +248,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Create new rigid constraints using the <a class="el" href="classFCDPhysicsModel.html#af9356bcbe4a27ef102a8e49d3cbab53e">FCDPhysicsModel::AddRigidConstraint</a> function. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Create new rigid constraints using the <a class="el" href="classFCDPhysicsModel.html#af9356bcbe4a27ef102a8e49d3cbab53e" title="Adds a rigid constraint to this physics model.">FCDPhysicsModel::AddRigidConstraint</a> function. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that contains this rigid constraint. </td></tr>
@@ -201,6 +275,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -230,6 +305,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a transform for the attached rigid body which is the reference. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -265,6 +341,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a transform for the attached rigid body which is not the reference. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -300,6 +377,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copies the rigid constraint into a clone. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -338,6 +416,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -366,6 +445,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the animated value for interpenetrate. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The animated value, or NULL if interpenetrate is not animated. </dd></dl>
 
@@ -395,6 +475,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -423,6 +504,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the animated value for enabled. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The animated value, or NULL if enabled is not animated. </dd></dl>
 
@@ -442,6 +524,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this rigid constraint is enabled. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>True if enabled. </dd></dl>
 
@@ -461,6 +544,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -479,6 +563,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether the connected rigid bodies can penetrate eachother. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>True of they can penetrate. </dd></dl>
 
@@ -498,6 +583,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -516,6 +602,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the linear max limit of the degrees of freedom. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The linear max limit. </dd></dl>
 
@@ -535,6 +622,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -553,6 +641,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the linear min limit of the degrees of freedom. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The linear min limit. </dd></dl>
 
@@ -572,6 +661,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -590,6 +680,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the swing cone and twist max limit of the degrees of freedom. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The swing cone and twist max limit. </dd></dl>
 
@@ -609,6 +700,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -627,6 +719,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the swing cone and twist min limit of the degrees of freedom. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The swing cone and twist min limit. </dd></dl>
 
@@ -646,6 +739,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -664,6 +758,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the physics model that contraints this rigid constraint. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The physics model. </dd></dl>
 
@@ -683,6 +778,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -701,7 +797,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the attached node which is the reference. This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetReferenceRigidBody is NULL. </p>
+
+<p>Retrieves the attached node which is the reference. </p>
+<p>This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetReferenceRigidBody is NULL. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The attached reference node. </dd></dl>
 
 </div>
@@ -720,6 +818,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -738,6 +837,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -756,6 +856,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the attached rigid body which is the reference. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The reference rigid body. </dd></dl>
 
@@ -775,7 +876,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the spring angular damping of the spring rigid constraint. This is set to 0.0 if there is no spring. </p>
+
+<p>Retrieves the spring angular damping of the spring rigid constraint. </p>
+<p>This is set to 0.0 if there is no spring. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spring angular damping. </dd></dl>
 
 </div>
@@ -794,6 +897,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -812,7 +916,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the spring angular stiffness of the spring rigid constraint. This is set to 1.0 if there is no spring. </p>
+
+<p>Retrieves the spring angular stiffness of the spring rigid constraint. </p>
+<p>This is set to 1.0 if there is no spring. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spring angular stiffness. </dd></dl>
 
 </div>
@@ -831,6 +937,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -849,6 +956,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -867,7 +975,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the sping angular target value of the spring rigid constraint. This is set to 0.0 if there is no spring. </p>
+
+<p>Retrieves the sping angular target value of the spring rigid constraint. </p>
+<p>This is set to 0.0 if there is no spring. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spring angular target value. </dd></dl>
 
 </div>
@@ -886,6 +996,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -904,7 +1015,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the spring linear damping of the spring rigid constraint. This is set to 0.0 if there is no spring. </p>
+
+<p>Retrieves the spring linear damping of the spring rigid constraint. </p>
+<p>This is set to 0.0 if there is no spring. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spring linear damping. </dd></dl>
 
 </div>
@@ -923,7 +1036,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the spring linear stiffness of the spring rigid constraint. This is set to 1.0 if there is no spring. </p>
+
+<p>Retrieves the spring linear stiffness of the spring rigid constraint. </p>
+<p>This is set to 1.0 if there is no spring. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spring linear stiffness. </dd></dl>
 
 </div>
@@ -942,6 +1057,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -960,7 +1076,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the sping linear target value of the spring rigid constraint. This is set to 0.0 if there is no spring. </p>
+
+<p>Retrieves the sping linear target value of the spring rigid constraint. </p>
+<p>This is set to 0.0 if there is no spring. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The spring linear target value. </dd></dl>
 
 </div>
@@ -979,6 +1097,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -997,7 +1116,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the wanted sub-id for this transform. A wanted sub-id will always be exported, even if the transform is not animated. But the wanted sub-id may be modified if it isn't unique within the scope. </p>
+
+<p>Retrieves the wanted sub-id for this transform. </p>
+<p>A wanted sub-id will always be exported, even if the transform is not animated. But the wanted sub-id may be modified if it isn't unique within the scope. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The sub-id. </dd></dl>
 
 </div>
@@ -1016,7 +1137,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the attached node which is not the reference. This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetTargetRigidBody is NULL. </p>
+
+<p>Retrieves the attached node which is not the reference. </p>
+<p>This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetTargetRigidBody is NULL. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The attached non reference node. </dd></dl>
 
 </div>
@@ -1035,6 +1158,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1053,6 +1177,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the attached rigid body which is not the reference. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The non reference rigid body. </dd></dl>
 
@@ -1072,6 +1197,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1090,6 +1216,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the transforms for the attached rigid body which is the reference. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The transforms. </dd></dl>
 
@@ -1109,6 +1236,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1127,6 +1255,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the transforms for the attached rigid body which is not the reference. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The transforms. </dd></dl>
 
@@ -1146,6 +1275,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1164,7 +1294,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity type for this class. This function is part of the <a class="el" href="classFCDEntity.html">FCDEntity</a> interface. </p>
+
+<p>Retrieves the entity type for this class. </p>
+<p>This function is part of the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity type: PHYSICS_RIGID_CONSTRAINT. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">FCDEntity</a>.</p>
@@ -1185,6 +1317,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1203,6 +1336,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1222,6 +1356,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets whether this rigid constraint is enabled. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1247,6 +1382,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets whether the connected rigid bodies can penetrate eachother. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1272,6 +1408,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the linear max limit of the degrees of freedom. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1297,6 +1434,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the linear min limit of the degrees of freedom. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1322,6 +1460,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the swing cone and twist max limit of the degrees of freedom. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1347,6 +1486,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the swing cone and twist min limit of the degrees of freedom. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1372,7 +1512,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the attached node which is the reference. This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetReferenceRigidBody is NULL. </p>
+
+<p>Sets the attached node which is the reference. </p>
+<p>This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetReferenceRigidBody is NULL. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_referenceNode</em>&nbsp;</td><td>The attached reference node. </td></tr>
@@ -1397,6 +1539,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the attached rigid body which is the reference. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1422,7 +1565,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the spring angular damping of the spring rigid constraint. This is set to 0.0 if there is no spring. </p>
+
+<p>Sets the spring angular damping of the spring rigid constraint. </p>
+<p>This is set to 0.0 if there is no spring. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_springAngularDamping</em>&nbsp;</td><td>The spring angular damping. </td></tr>
@@ -1447,7 +1592,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the spring angular stiffness of the spring rigid constraint. This is set to 1.0 if there is no spring. </p>
+
+<p>Sets the spring angular stiffness of the spring rigid constraint. </p>
+<p>This is set to 1.0 if there is no spring. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_springAngularStiffness</em>&nbsp;</td><td>The spring angular stiffness. </td></tr>
@@ -1472,7 +1619,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the sping angular target value of the spring rigid constraint. This is set to 0.0 if there is no spring. </p>
+
+<p>Sets the sping angular target value of the spring rigid constraint. </p>
+<p>This is set to 0.0 if there is no spring. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_springAngularTargetValue</em>&nbsp;</td><td>The spring angular target value. </td></tr>
@@ -1497,7 +1646,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the spring linear damping of the spring rigid constraint. This is set to 0.0 if there is no spring. </p>
+
+<p>Sets the spring linear damping of the spring rigid constraint. </p>
+<p>This is set to 0.0 if there is no spring. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_springLinearDamping</em>&nbsp;</td><td>The spring linear damping. </td></tr>
@@ -1522,7 +1673,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the spring linear stiffness of the spring rigid constraint. This is set to 1.0 if there is no spring. </p>
+
+<p>Sets the spring linear stiffness of the spring rigid constraint. </p>
+<p>This is set to 1.0 if there is no spring. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_springLinearStiffness</em>&nbsp;</td><td>The spring linear stiffness. </td></tr>
@@ -1547,7 +1700,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the sping linear target value of the spring rigid constraint. This is set to 0.0 if there is no spring. </p>
+
+<p>Sets the sping linear target value of the spring rigid constraint. </p>
+<p>This is set to 0.0 if there is no spring. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_springLinearTargetValue</em>&nbsp;</td><td>The spring linear target value. </td></tr>
@@ -1572,7 +1727,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the wanted sub-id for this transform. A wanted sub-id will always be exported, even if the transform is not animated. But the wanted sub-id may be modified if it isn't unique within the scope. </p>
+
+<p>Sets the wanted sub-id for this transform. </p>
+<p>A wanted sub-id will always be exported, even if the transform is not animated. But the wanted sub-id may be modified if it isn't unique within the scope. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>subId</em>&nbsp;</td><td>The wanted sub-id. </td></tr>
@@ -1597,6 +1754,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1616,7 +1774,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the attached node which is not the reference. This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetTargetRigidBody is NULL. </p>
+
+<p>Sets the attached node which is not the reference. </p>
+<p>This method should be avoided as the specification says the attachment should be to a rigid body. This value is only used if GetTargetRigidBody is NULL. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_targetNode</em>&nbsp;</td><td>The attached non reference node. </td></tr>
@@ -1641,6 +1801,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the attached rigid body which is not the reference. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1670,7 +1831,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:47 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:21 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

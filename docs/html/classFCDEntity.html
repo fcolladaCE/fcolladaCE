@@ -62,6 +62,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEntity" --><!-- doxytag: inherits="FCDObjectWithId" -->
+<p>A COLLADA entity.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEntity_8h_source.html">FCDEntity.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEntity:</div>
@@ -125,33 +128,53 @@ Public Types</h2></td></tr>
 &nbsp;&nbsp;<b>TYPE_COUNT</b>
 <br/>
  }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The types of entity classes. </p>
+ <a href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#ad302a33b87642d93072c49b385ab93a0">FCDEntity</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, const char *baseId=&quot;GenericEntity&quot;)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#ad302a33b87642d93072c49b385ab93a0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#acfd3e8347c030bcb1ee823f90037f925">~FCDEntity</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#acfd3e8347c030bcb1ee823f90037f925"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#abfd4312a7124f92364c1e6517c7e60ba">GetType</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the entity class type for an entity.  <a href="#abfd4312a7124f92364c1e6517c7e60ba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a35cfd66b81c3cdf9024077f36e076db3">GetName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the name of the entity.  <a href="#a35cfd66b81c3cdf9024077f36e076db3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a1babd49b4bd5c3165932d8c390dae61e">SetName</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;_name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the name of the entity.  <a href="#a1babd49b4bd5c3165932d8c390dae61e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a2f05f99564ddf44896602ef020a3b5c1">GetExtra</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the extra information tree for this entity.  <a href="#a2f05f99564ddf44896602ef020a3b5c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDExtra.html">FCDExtra</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a9198b84815c826fed3d872c72b1c6137">GetExtra</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a9198b84815c826fed3d872c72b1c6137"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDAsset.html">FCDAsset</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a73ae046205624749743904ffe23525e8">GetAsset</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the asset information for this entity.  <a href="#a73ae046205624749743904ffe23525e8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDAsset.html">FCDAsset</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a252f9f1bfbfa8fe2bcc6a447026e0ed5">GetAsset</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a252f9f1bfbfa8fe2bcc6a447026e0ed5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#aacb2bd0c7d9906e6935a4cc65a0d5535">GetHierarchicalAssets</a> (<a class="el" href="classfm_1_1pvector.html">FCDAssetList</a> &amp;assets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the asset information structures that affect this entity in its hierarchy.  <a href="#aacb2bd0c7d9906e6935a4cc65a0d5535"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a8586473fa13fe14b34633342c864656a">GetHierarchicalAssets</a> (<a class="el" href="classfm_1_1pvector.html">FCDAssetConstList</a> &amp;assets) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a8586473fa13fe14b34633342c864656a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a8026453fbf365692639dfdeda0dca56c">HasNote</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether the entity has a user-defined note.  <a href="#a8026453fbf365692639dfdeda0dca56c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a33412ca4c24d35ba0fe6721083c82373">GetNote</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the user-defined note for this entity.  <a href="#a33412ca4c24d35ba0fe6721083c82373"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a8589906fc686e63486db9bc8e899f794">SetNote</a> (const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;_note)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the user-defined note for this entity.  <a href="#a8589906fc686e63486db9bc8e899f794"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a308cd3366b76e70ded4f09d05e4d7294">FindDaeId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;daeId)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the child entity that has the given COLLADA id.  <a href="#a308cd3366b76e70ded4f09d05e4d7294"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#a1a17dca81798431f54ec10f5da5c5c6b">FindDaeId</a> (const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;daeId) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1a17dca81798431f54ec10f5da5c5c6b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFCDEntity.html">FCDEntity</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#afd21dc9f9dba45786012dea87f70b9fc">Clone</a> (<a class="el" href="classFCDEntity.html">FCDEntity</a> *clone=NULL, bool cloneChildren=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copies the entity information into a clone.  <a href="#afd21dc9f9dba45786012dea87f70b9fc"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfm_1_1stringT.html">fstring</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEntity.html#ac3e33404794eafcba3279ae4e8414da0">CleanName</a> (const fchar *c)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cleans illegal characters in from the input char string.  <a href="#ac3e33404794eafcba3279ae4e8414da0"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA entity.</p>
-<p>A COLLADA entity is an object contained within a COLLADA library. As such, it is based on the <a class="el" href="classFCDObjectWithId.html">FCDObjectWithId</a> class so that it can be accessed by other entities, such as the scene graph.</p>
-<p>The entity adds to the <a class="el" href="classFCDObjectWithId.html">FCDObjectWithId</a> class: a name, an extra tree and an optional note, as well as a way to identity the type of the entity, in order to up-cast it to its correct class. </p>
+<p>A COLLADA entity. </p>
+<p>A COLLADA entity is an object contained within a COLLADA library. As such, it is based on the <a class="el" href="classFCDObjectWithId.html" title="A basic COLLADA object which has a unique COLLADA id.">FCDObjectWithId</a> class so that it can be accessed by other entities, such as the scene graph.</p>
+<p>The entity adds to the <a class="el" href="classFCDObjectWithId.html" title="A basic COLLADA object which has a unique COLLADA id.">FCDObjectWithId</a> class: a name, an extra tree and an optional note, as well as a way to identity the type of the entity, in order to up-cast it to its correct class. </p>
 <hr/><h2>Member Enumeration Documentation</h2>
 <a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7"></a><!-- doxytag: member="FCDEntity::Type" ref="a9301a4bd5f4d4190ec13e40db4effdd7" args="" -->
 <div class="memitem">
@@ -163,67 +186,72 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The types of entity classes. Each type corresponds directly to one class that contains the <a class="el" href="classFCDEntity.html">FCDEntity</a> class as a parent, so you can up-cast <a class="el" href="classFCDEntity.html">FCDEntity</a> pointers. </p>
+
+<p>The types of entity classes. </p>
+<p>Each type corresponds directly to one class that contains the <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> class as a parent, so you can up-cast <a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a> pointers. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7ad3c81776d7cbf8bc30f5a92aa1cdc6af"></a><!-- doxytag: member="ENTITY" ref="a9301a4bd5f4d4190ec13e40db4effdd7ad3c81776d7cbf8bc30f5a92aa1cdc6af" args="" -->ENTITY</em>&nbsp;</td><td>
-<p>A generic entity (<a class="el" href="classFCDEntity.html">FCDEntity</a>). Should never be used. </p>
+<p>A generic entity (<a class="el" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>). </p>
+<p>Should never be used. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7ad056f9a0c0836aa9add7e10969736fd5"></a><!-- doxytag: member="ANIMATION" ref="a9301a4bd5f4d4190ec13e40db4effdd7ad056f9a0c0836aa9add7e10969736fd5" args="" -->ANIMATION</em>&nbsp;</td><td>
-<p>An animation (<a class="el" href="classFCDAnimation.html">FCDAnimation</a>). </p>
+<p>An animation (<a class="el" href="classFCDAnimation.html" title="A COLLADA animation entity.">FCDAnimation</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a71cf4ef98b4af310de2fca7cfd3c6b63"></a><!-- doxytag: member="ANIMATION_CLIP" ref="a9301a4bd5f4d4190ec13e40db4effdd7a71cf4ef98b4af310de2fca7cfd3c6b63" args="" -->ANIMATION_CLIP</em>&nbsp;</td><td>
-<p>An animation clip (<a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a>). </p>
+<p>An animation clip (<a class="el" href="classFCDAnimationClip.html" title="A COLLADA animation clip.">FCDAnimationClip</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a079dc3be01f63d3552374a7717f23f8f"></a><!-- doxytag: member="CAMERA" ref="a9301a4bd5f4d4190ec13e40db4effdd7a079dc3be01f63d3552374a7717f23f8f" args="" -->CAMERA</em>&nbsp;</td><td>
-<p>A camera (<a class="el" href="classFCDCamera.html">FCDCamera</a>). </p>
+<p>A camera (<a class="el" href="classFCDCamera.html" title="A COLLADA camera.">FCDCamera</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7aeaff98f940446b32b452289b0a79de71"></a><!-- doxytag: member="LIGHT" ref="a9301a4bd5f4d4190ec13e40db4effdd7aeaff98f940446b32b452289b0a79de71" args="" -->LIGHT</em>&nbsp;</td><td>
-<p>A light (<a class="el" href="classFCDLight.html">FCDLight</a>). </p>
+<p>A light (<a class="el" href="classFCDLight.html" title="A COLLADA light.">FCDLight</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a9ad49c80c980e901cfefb18e037fce81"></a><!-- doxytag: member="IMAGE" ref="a9301a4bd5f4d4190ec13e40db4effdd7a9ad49c80c980e901cfefb18e037fce81" args="" -->IMAGE</em>&nbsp;</td><td>
-<p>An image (<a class="el" href="classFCDImage.html">FCDImage</a>). </p>
+<p>An image (<a class="el" href="classFCDImage.html" title="A COLLADA image.">FCDImage</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7af0658dd0aa3b5a1b0c5e3dc44c5d763c"></a><!-- doxytag: member="MATERIAL" ref="a9301a4bd5f4d4190ec13e40db4effdd7af0658dd0aa3b5a1b0c5e3dc44c5d763c" args="" -->MATERIAL</em>&nbsp;</td><td>
-<p>A visual material definition (<a class="el" href="classFCDMaterial.html">FCDMaterial</a>). </p>
+<p>A visual material definition (<a class="el" href="classFCDMaterial.html" title="A COLLADA material.">FCDMaterial</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a25776f0c3122d297fd3b6026618d50af"></a><!-- doxytag: member="EFFECT" ref="a9301a4bd5f4d4190ec13e40db4effdd7a25776f0c3122d297fd3b6026618d50af" args="" -->EFFECT</em>&nbsp;</td><td>
-<p>An effect definition (<a class="el" href="classFCDEffect.html">FCDEffect</a>). </p>
+<p>An effect definition (<a class="el" href="classFCDEffect.html" title="A COLLADA effect.">FCDEffect</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a99b17e5e6e7e9cdcb353bad7ff811c85"></a><!-- doxytag: member="GEOMETRY" ref="a9301a4bd5f4d4190ec13e40db4effdd7a99b17e5e6e7e9cdcb353bad7ff811c85" args="" -->GEOMETRY</em>&nbsp;</td><td>
-<p>A geometric object (<a class="el" href="classFCDGeometry.html">FCDGeometry</a>). Includes splines and meshes. </p>
+<p>A geometric object (<a class="el" href="classFCDGeometry.html" title="A COLLADA geometry entity.">FCDGeometry</a>). </p>
+<p>Includes splines and meshes. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7ad1448b2688394292605bed327a679afe"></a><!-- doxytag: member="CONTROLLER" ref="a9301a4bd5f4d4190ec13e40db4effdd7ad1448b2688394292605bed327a679afe" args="" -->CONTROLLER</em>&nbsp;</td><td>
-<p>A geometric controller (<a class="el" href="classFCDController.html">FCDController</a>). Includes skins and morphers. </p>
+<p>A geometric controller (<a class="el" href="classFCDController.html" title="A generic COLLADA controller.">FCDController</a>). </p>
+<p>Includes skins and morphers. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7ad56e9eb11f4aa44893f27411ac9a2455"></a><!-- doxytag: member="SCENE_NODE" ref="a9301a4bd5f4d4190ec13e40db4effdd7ad56e9eb11f4aa44893f27411ac9a2455" args="" -->SCENE_NODE</em>&nbsp;</td><td>
-<p>A visual scene node (<a class="el" href="classFCDSceneNode.html">FCDSceneNode</a>). </p>
+<p>A visual scene node (<a class="el" href="classFCDSceneNode.html" title="A COLLADA visual scene node.">FCDSceneNode</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a026283951793084a7a849e508857d603"></a><!-- doxytag: member="PHYSICS_RIGID_CONSTRAINT" ref="a9301a4bd5f4d4190ec13e40db4effdd7a026283951793084a7a849e508857d603" args="" -->PHYSICS_RIGID_CONSTRAINT</em>&nbsp;</td><td>
-<p>A physics rigid constraint (<a class="el" href="classFCDPhysicsRigidConstraint.html">FCDPhysicsRigidConstraint</a>). </p>
+<p>A physics rigid constraint (<a class="el" href="classFCDPhysicsRigidConstraint.html" title="A COLLADA rigid constraint.">FCDPhysicsRigidConstraint</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7ae754a84e2c8b4c525e8207e0a971b89c"></a><!-- doxytag: member="PHYSICS_MATERIAL" ref="a9301a4bd5f4d4190ec13e40db4effdd7ae754a84e2c8b4c525e8207e0a971b89c" args="" -->PHYSICS_MATERIAL</em>&nbsp;</td><td>
-<p>A physics material definiton (<a class="el" href="classFCDPhysicsMaterial.html">FCDPhysicsMaterial</a>). </p>
+<p>A physics material definiton (<a class="el" href="classFCDPhysicsMaterial.html" title="A COLLADA physics material.">FCDPhysicsMaterial</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a9bc7a8ae178d5f9cb06111b4d51240d0"></a><!-- doxytag: member="PHYSICS_RIGID_BODY" ref="a9301a4bd5f4d4190ec13e40db4effdd7a9bc7a8ae178d5f9cb06111b4d51240d0" args="" -->PHYSICS_RIGID_BODY</em>&nbsp;</td><td>
-<p>A physics rigid body (<a class="el" href="classFCDPhysicsRigidBody.html">FCDPhysicsRigidBody</a>). </p>
+<p>A physics rigid body (<a class="el" href="classFCDPhysicsRigidBody.html" title="A COLLADA rigid body.">FCDPhysicsRigidBody</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7ad4b1f4af3fdb3f4b7a0188437749baf7"></a><!-- doxytag: member="PHYSICS_SHAPE" ref="a9301a4bd5f4d4190ec13e40db4effdd7ad4b1f4af3fdb3f4b7a0188437749baf7" args="" -->PHYSICS_SHAPE</em>&nbsp;</td><td>
-<p>A physics shape (<a class="el" href="classFCDPhysicsShape.html">FCDPhysicsShape</a>). </p>
+<p>A physics shape (<a class="el" href="classFCDPhysicsShape.html" title="A COLLADA shape object.">FCDPhysicsShape</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a84bd56ee18a6f6e1118f89078714a761"></a><!-- doxytag: member="PHYSICS_ANALYTICAL_GEOMETRY" ref="a9301a4bd5f4d4190ec13e40db4effdd7a84bd56ee18a6f6e1118f89078714a761" args="" -->PHYSICS_ANALYTICAL_GEOMETRY</em>&nbsp;</td><td>
-<p>A physics analytical geometric object (<a class="el" href="classFCDPhysicsAnalyticalGeometry.html">FCDPhysicsAnalyticalGeometry</a>). </p>
+<p>A physics analytical geometric object (<a class="el" href="classFCDPhysicsAnalyticalGeometry.html" title="A COLLADA physics analytical geometry.">FCDPhysicsAnalyticalGeometry</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7acc96ac70dd041d7bf674e18c11d628af"></a><!-- doxytag: member="PHYSICS_MODEL" ref="a9301a4bd5f4d4190ec13e40db4effdd7acc96ac70dd041d7bf674e18c11d628af" args="" -->PHYSICS_MODEL</em>&nbsp;</td><td>
-<p>A physics model (<a class="el" href="classFCDPhysicsModel.html">FCDPhysicsModel</a>). </p>
+<p>A physics model (<a class="el" href="classFCDPhysicsModel.html" title="A COLLADA physics model.">FCDPhysicsModel</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a3f3aa51d0684a57da181845722e8cc1f"></a><!-- doxytag: member="PHYSICS_SCENE_NODE" ref="a9301a4bd5f4d4190ec13e40db4effdd7a3f3aa51d0684a57da181845722e8cc1f" args="" -->PHYSICS_SCENE_NODE</em>&nbsp;</td><td>
-<p>A physics scene node (<a class="el" href="classFCDPhysicsScene.html">FCDPhysicsScene</a>). </p>
+<p>A physics scene node (<a class="el" href="classFCDPhysicsScene.html" title="A COLLADA physics scene.">FCDPhysicsScene</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7a82f3b68df09fcd2bc6ba839b41e01b58"></a><!-- doxytag: member="FORCE_FIELD" ref="a9301a4bd5f4d4190ec13e40db4effdd7a82f3b68df09fcd2bc6ba839b41e01b58" args="" -->FORCE_FIELD</em>&nbsp;</td><td>
-<p>A physics force field (<a class="el" href="classFCDForceField.html">FCDForceField</a>). </p>
+<p>A physics force field (<a class="el" href="classFCDForceField.html" title="A COLLADA physics force field.">FCDForceField</a>). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9301a4bd5f4d4190ec13e40db4effdd7ab6f994b7aaba9add07d533f8945ddb70"></a><!-- doxytag: member="EMITTER" ref="a9301a4bd5f4d4190ec13e40db4effdd7ab6f994b7aaba9add07d533f8945ddb70" args="" -->EMITTER</em>&nbsp;</td><td>
-<p>A generic emitter for sound and particles (<a class="el" href="classFCDEmitter.html">FCDEmitter</a>) - Premium feature. </p>
+<p>A generic emitter for sound and particles (<a class="el" href="classFCDEmitter.html" title="A COLLADA generic emitter.">FCDEmitter</a>) - Premium feature. </p>
 </td></tr>
 </table>
 </dd>
@@ -256,7 +284,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, create objects of the up-classes. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, create objects of the up-classes. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document that owns the entity. </td></tr>
@@ -281,6 +311,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -301,7 +332,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Cleans illegal characters in from the input char string </p>
+
+<p>Cleans illegal characters in from the input char string. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>c</em>&nbsp;</td><td>The string to clean </td></tr>
@@ -336,7 +368,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Copies the entity information into a clone. All the overwriting functions of this function should call this function to copy the COLLADA id and the other entity-level information. All the up-classes of this class should implement this function. The cloned entity may reside in another document. </p>
+
+<p>Copies the entity information into a clone. </p>
+<p>All the overwriting functions of this function should call this function to copy the COLLADA id and the other entity-level information. All the up-classes of this class should implement this function. The cloned entity may reside in another document. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>clone</em>&nbsp;</td><td>The empty clone. If this pointer is NULL, a new entity will be created and you will need to release the returned pointer manually. </td></tr>
@@ -365,7 +399,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the child entity that has the given COLLADA id. This function is only useful for entities that are hierarchical: visual/physics scene nodes and animations. </p>
+
+<p>Retrieves the child entity that has the given COLLADA id. </p>
+<p>This function is only useful for entities that are hierarchical: visual/physics scene nodes and animations. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>daeId</em>&nbsp;</td><td>A COLLADA id. </td></tr>
@@ -393,6 +429,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Reimplemented in <a class="el" href="classFCDAnimation.html#a8e3f44f012007ca3b3f9b125c0fb8771">FCDAnimation</a>, and <a class="el" href="classFCDSceneNode.html#a55654ef3acc406b4ca7d1aafda9edcce">FCDSceneNode</a>.</p>
@@ -413,6 +450,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -431,7 +469,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the asset information for this entity. In the non-const version, calling this function will create an asset structure. If you are interested in a specific asset-type information, such as up_axis and units, please use the <a class="el" href="classFCDEntity.html#aacb2bd0c7d9906e6935a4cc65a0d5535">FCDEntity::GetHierarchicalAssets</a> function. </p>
+
+<p>Retrieves the asset information for this entity. </p>
+<p>In the non-const version, calling this function will create an asset structure. If you are interested in a specific asset-type information, such as up_axis and units, please use the <a class="el" href="classFCDEntity.html#aacb2bd0c7d9906e6935a4cc65a0d5535" title="Retrieves the asset information structures that affect this entity in its hierarchy.">FCDEntity::GetHierarchicalAssets</a> function. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The asset information structure. </dd></dl>
 
 </div>
@@ -450,6 +490,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -468,7 +509,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the extra information tree for this entity. The prefered way to save extra information in <a class="el" href="namespaceFCollada.html">FCollada</a> is at the entity level. Use this extra information tree to store any information you want exported and imported back. </p>
+
+<p>Retrieves the extra information tree for this entity. </p>
+<p>The prefered way to save extra information in <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> is at the entity level. Use this extra information tree to store any information you want exported and imported back. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The extra information tree. </dd></dl>
 
 </div>
@@ -488,6 +531,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the asset information structures that affect this entity in its hierarchy. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -515,6 +559,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 <p>Reimplemented in <a class="el" href="classFCDAnimation.html#add68466cc91957fc0b0fe0961cb3948e">FCDAnimation</a>, and <a class="el" href="classFCDSceneNode.html#ae3b739c9548ec44effd945a30590098f">FCDSceneNode</a>.</p>
@@ -535,7 +580,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the name of the entity. This value has no direct use in COLLADA but is useful to track the user-friendly name of an entity. </p>
+
+<p>Retrieves the name of the entity. </p>
+<p>This value has no direct use in COLLADA but is useful to track the user-friendly name of an entity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The name. </dd></dl>
 
 </div>
@@ -554,7 +601,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the user-defined note for this entity. This value is a simpler way, than the extra tree, to store user-defined information that does not belong in COLLADA. </p>
+
+<p>Retrieves the user-defined note for this entity. </p>
+<p>This value is a simpler way, than the extra tree, to store user-defined information that does not belong in COLLADA. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The user-defined note. </dd></dl>
 
 </div>
@@ -573,7 +622,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the entity class type for an entity. You can use the entity class type of up-cast an entity pointer to the correct up-class. This function should be overwritten by all up-classes. </p>
+
+<p>Retrieves the entity class type for an entity. </p>
+<p>You can use the entity class type of up-cast an entity pointer to the correct up-class. This function should be overwritten by all up-classes. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The entity class type. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classFCDAnimation.html#a91e3239617da238768340a8bf62b4132">FCDAnimation</a>, <a class="el" href="classFCDAnimationClip.html#aef1051c0a708829ae1800e4362b8af7e">FCDAnimationClip</a>, <a class="el" href="classFCDCamera.html#aa07c99de0148e39b46e33733852ef229">FCDCamera</a>, <a class="el" href="classFCDController.html#a2ff5b14d564dba7be26d3b8544bec93c">FCDController</a>, <a class="el" href="classFCDEffect.html#ab6106f67f33a4cb049ea17a1970bbfbe">FCDEffect</a>, <a class="el" href="classFCDEmitter.html#a2921acf052b38f68d148b0fdcaa366b9">FCDEmitter</a>, <a class="el" href="classFCDForceField.html#a494b4e24b7bd9a5f11f9f46736704113">FCDForceField</a>, <a class="el" href="classFCDGeometry.html#a220b50045d5a815dce0c1be69e06f926">FCDGeometry</a>, <a class="el" href="classFCDImage.html#a137caaacfc6ee0f82a4f654e142f23ea">FCDImage</a>, <a class="el" href="classFCDLight.html#a846e07aee92d19dd745a98462a9ffd74">FCDLight</a>, <a class="el" href="classFCDMaterial.html#aeeaf2e7f96a1b3efc7daac490b1e5e8f">FCDMaterial</a>, <a class="el" href="classFCDPhysicsAnalyticalGeometry.html#a9a228510e74aafa38f32d60b01b2cb69">FCDPhysicsAnalyticalGeometry</a>, <a class="el" href="classFCDPhysicsMaterial.html#af7b84458b75d65c2e88028cafb865526">FCDPhysicsMaterial</a>, <a class="el" href="classFCDPhysicsModel.html#a3da8c015b13e7225d2416c102333fe4b">FCDPhysicsModel</a>, <a class="el" href="classFCDPhysicsRigidBody.html#a5cfe206a60862fd34274e257d94628eb">FCDPhysicsRigidBody</a>, <a class="el" href="classFCDPhysicsRigidConstraint.html#a95fd22d9def1fdfedb0000a16a410851">FCDPhysicsRigidConstraint</a>, <a class="el" href="classFCDPhysicsScene.html#a568a005e55d570ad78e6ae02dc912e9c">FCDPhysicsScene</a>, and <a class="el" href="classFCDSceneNode.html#a5dad40efa762d2cb7b3df38288c7f5aa">FCDSceneNode</a>.</p>
@@ -594,7 +645,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether the entity has a user-defined note. This value is a simpler way, than the extra tree, to store user-defined information that does not belong in COLLADA. </p>
+
+<p>Retrieves whether the entity has a user-defined note. </p>
+<p>This value is a simpler way, than the extra tree, to store user-defined information that does not belong in COLLADA. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether the entity has an user-defined note. </dd></dl>
 
 </div>
@@ -614,7 +667,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the name of the entity. This value has no direct use in COLLADA but is useful to track the user-friendly name of an entity. </p>
+
+<p>Sets the name of the entity. </p>
+<p>This value has no direct use in COLLADA but is useful to track the user-friendly name of an entity. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_name</em>&nbsp;</td><td>The name. </td></tr>
@@ -639,7 +694,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the user-defined note for this entity. This value is a simpler way, than the extra tree, to store user-defined information that does not belong in COLLADA. </p>
+
+<p>Sets the user-defined note for this entity. </p>
+<p>This value is a simpler way, than the extra tree, to store user-defined information that does not belong in COLLADA. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_note</em>&nbsp;</td><td>The user-defined note. </td></tr>
@@ -668,7 +725,7 @@ Static Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:34 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:17 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

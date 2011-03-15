@@ -62,17 +62,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00009"></a>00009 <span class="preprocessor">#ifndef _FU_PLUGIN_MANAGER_H_</span>
 <a name="l00010"></a>00010 <span class="preprocessor"></span><span class="preprocessor">#define _FU_PLUGIN_MANAGER_H_</span>
 <a name="l00011"></a>00011 <span class="preprocessor"></span>
-<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classFUObjectType.html">FUObjectType</a>;
-<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classFUPlugin.html">FUPlugin</a>;
+<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>;
+<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classFUPlugin.html" title="A generic plug-in interface structure.">FUPlugin</a>;
 <a name="l00014"></a>00014 
-<a name="l00027"></a><a class="code" href="classFUPluginManager.html">00027</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUPluginManager.html">FUPluginManager</a>
+<a name="l00027"></a><a class="code" href="classFUPluginManager.html">00027</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUPluginManager.html" title="A generic plug-in manager.">FUPluginManager</a>
 <a name="l00028"></a>00028 {
 <a name="l00029"></a>00029 <span class="keyword">public</span>:
 <a name="l00033"></a><a class="code" href="classFUPluginManager.html#aa7465d51db4f1f1e0386310ae6922250">00033</a>         <span class="keyword">typedef</span> uint32 (*GetPluginCount)(void);
 <a name="l00034"></a>00034 
-<a name="l00038"></a><a class="code" href="classFUPluginManager.html#ad253785d39bca14d77ddf9d9181e7fb1">00038</a>         <span class="keyword">typedef</span> <span class="keyword">const</span> <a class="code" href="classFUObjectType.html">FUObjectType</a>* (*GetPluginType)(uint32 index);
+<a name="l00038"></a><a class="code" href="classFUPluginManager.html#ad253785d39bca14d77ddf9d9181e7fb1">00038</a>         <span class="keyword">typedef</span> <span class="keyword">const</span> <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>* (*GetPluginType)(uint32 index);
 <a name="l00039"></a>00039 
-<a name="l00043"></a><a class="code" href="classFUPluginManager.html#a8e4ad834c03cad334f3bbd6158416a43">00043</a>         <span class="keyword">typedef</span> <a class="code" href="classFUPlugin.html">FUPlugin</a>* (*CreatePlugin)(uint32 index);
+<a name="l00043"></a><a class="code" href="classFUPluginManager.html#a8e4ad834c03cad334f3bbd6158416a43">00043</a>         <span class="keyword">typedef</span> <a class="code" href="classFUPlugin.html" title="A generic plug-in interface structure.">FUPlugin</a>* (*CreatePlugin)(uint32 index);
 <a name="l00044"></a>00044 
 <a name="l00045"></a>00045 <span class="keyword">private</span>:
 <a name="l00046"></a>00046         <span class="keyword">struct </span>PluginLibrary
@@ -95,22 +95,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00063"></a>00063         <a class="code" href="classFUObjectContainer.html">FUObjectContainer&lt;FUPlugin&gt;</a> loadedPlugins;
 <a name="l00064"></a>00064 
 <a name="l00065"></a>00065 <span class="keyword">public</span>:
-<a name="l00071"></a>00071         <a class="code" href="classFUPluginManager.html">FUPluginManager</a>(<span class="keyword">const</span> fchar* pluginLibraryFilter);
+<a name="l00071"></a>00071         <a class="code" href="classFUPluginManager.html" title="A generic plug-in manager.">FUPluginManager</a>(<span class="keyword">const</span> fchar* pluginLibraryFilter);
 <a name="l00072"></a>00072 
-<a name="l00076"></a>00076         <span class="keyword">virtual</span> ~<a class="code" href="classFUPluginManager.html">FUPluginManager</a>();
+<a name="l00076"></a>00076         <span class="keyword">virtual</span> ~<a class="code" href="classFUPluginManager.html" title="A generic plug-in manager.">FUPluginManager</a>();
 <a name="l00077"></a>00077         
-<a name="l00084"></a>00084         <span class="keywordtype">void</span> AddPluginLibrary(<a class="code" href="classFUPluginManager.html#aa7465d51db4f1f1e0386310ae6922250">FUPluginManager::GetPluginCount</a> fnGetPluginCount, <a class="code" href="classFUPluginManager.html#ad253785d39bca14d77ddf9d9181e7fb1">FUPluginManager::GetPluginType</a> fnGetPluginType, <a class="code" href="classFUPluginManager.html#a8e4ad834c03cad334f3bbd6158416a43">FUPluginManager::CreatePlugin</a> fnCreatePlugin);
+<a name="l00084"></a>00084         <span class="keywordtype">void</span> AddPluginLibrary(<a class="code" href="classFUPluginManager.html#aa7465d51db4f1f1e0386310ae6922250" title="Callback to retrieve the number of plug-ins contained within a library.">FUPluginManager::GetPluginCount</a> fnGetPluginCount, <a class="code" href="classFUPluginManager.html#ad253785d39bca14d77ddf9d9181e7fb1" title="Callback to retrieve the type of a given library plug-in.">FUPluginManager::GetPluginType</a> fnGetPluginType, <a class="code" href="classFUPluginManager.html#a8e4ad834c03cad334f3bbd6158416a43" title="Callback to create a given library plug-in.">FUPluginManager::CreatePlugin</a> fnCreatePlugin);
 <a name="l00085"></a>00085 
-<a name="l00092"></a>00092         <span class="keywordtype">void</span> LoadPlugins(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html">FUObjectType</a>&amp; pluginType);
+<a name="l00092"></a>00092         <span class="keywordtype">void</span> LoadPlugins(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>&amp; pluginType);
 <a name="l00093"></a>00093 
 <a name="l00097"></a>00097         <span class="keywordtype">void</span> UnloadPlugins();
 <a name="l00098"></a>00098 
-<a name="l00101"></a><a class="code" href="classFUPluginManager.html#a8da16d6823219e0b04251c7577009fb4">00101</a>         <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="classFUPluginManager.html#a8da16d6823219e0b04251c7577009fb4">GetLoadedPluginCount</a>() { <span class="keywordflow">return</span> loadedPlugins.size(); }
+<a name="l00101"></a><a class="code" href="classFUPluginManager.html#a8da16d6823219e0b04251c7577009fb4">00101</a>         <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="classFUPluginManager.html#a8da16d6823219e0b04251c7577009fb4" title="Retrieves the number of loaded plug-ins.">GetLoadedPluginCount</a>() { <span class="keywordflow">return</span> loadedPlugins.size(); }
 <a name="l00102"></a>00102         
-<a name="l00105"></a><a class="code" href="classFUPluginManager.html#a0dbca385003a3a3d4d16334f08f93a33">00105</a>         <span class="keyword">inline</span> <a class="code" href="classFUPlugin.html">FUPlugin</a>** <a class="code" href="classFUPluginManager.html#a0dbca385003a3a3d4d16334f08f93a33">GetLoadedPlugins</a>() { <span class="keywordflow">return</span> loadedPlugins.begin(); }
-<a name="l00106"></a><a class="code" href="classFUPluginManager.html#a17da8db670809dd03a8ab6eef17f4db9">00106</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFUPlugin.html">FUPlugin</a>** <a class="code" href="classFUPluginManager.html#a17da8db670809dd03a8ab6eef17f4db9">GetLoadedPlugins</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> loadedPlugins.begin(); } 
-<a name="l00111"></a><a class="code" href="classFUPluginManager.html#a4be42bc54895efe5e48abc9121961f5c">00111</a>         <span class="keyword">inline</span> <a class="code" href="classFUPlugin.html">FUPlugin</a>* <a class="code" href="classFUPluginManager.html#a4be42bc54895efe5e48abc9121961f5c">GetLoadedPlugin</a>(<span class="keywordtype">size_t</span> index) { <a class="code" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f">FUAssert</a>(index &lt; loadedPlugins.size(), <span class="keywordflow">return</span> NULL); <span class="keywordflow">return</span> loadedPlugins.at(index); }
-<a name="l00112"></a><a class="code" href="classFUPluginManager.html#a316b3e7aa0de5c8c6c90376a61ccbe1f">00112</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFUPlugin.html">FUPlugin</a>* <a class="code" href="classFUPluginManager.html#a316b3e7aa0de5c8c6c90376a61ccbe1f">GetLoadedPlugin</a>(<span class="keywordtype">size_t</span> index)<span class="keyword"> const </span>{ <a class="code" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f">FUAssert</a>(index &lt; loadedPlugins.size(), <span class="keywordflow">return</span> NULL); <span class="keywordflow">return</span> loadedPlugins.at(index); } 
+<a name="l00105"></a><a class="code" href="classFUPluginManager.html#a0dbca385003a3a3d4d16334f08f93a33">00105</a>         <span class="keyword">inline</span> <a class="code" href="classFUPlugin.html" title="A generic plug-in interface structure.">FUPlugin</a>** <a class="code" href="classFUPluginManager.html#a0dbca385003a3a3d4d16334f08f93a33" title="Retrieves all the loaded plug-ins.">GetLoadedPlugins</a>() { <span class="keywordflow">return</span> loadedPlugins.begin(); }
+<a name="l00106"></a><a class="code" href="classFUPluginManager.html#a17da8db670809dd03a8ab6eef17f4db9">00106</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFUPlugin.html" title="A generic plug-in interface structure.">FUPlugin</a>** <a class="code" href="classFUPluginManager.html#a17da8db670809dd03a8ab6eef17f4db9" title="See above.">GetLoadedPlugins</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> loadedPlugins.begin(); } 
+<a name="l00111"></a><a class="code" href="classFUPluginManager.html#a4be42bc54895efe5e48abc9121961f5c">00111</a>         <span class="keyword">inline</span> <a class="code" href="classFUPlugin.html" title="A generic plug-in interface structure.">FUPlugin</a>* <a class="code" href="classFUPluginManager.html#a4be42bc54895efe5e48abc9121961f5c" title="Retrieves a loaded plug-in.">GetLoadedPlugin</a>(<span class="keywordtype">size_t</span> index) { <a class="code" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f" title="Asserts that a condition is met.">FUAssert</a>(index &lt; loadedPlugins.size(), <span class="keywordflow">return</span> NULL); <span class="keywordflow">return</span> loadedPlugins.at(index); }
+<a name="l00112"></a><a class="code" href="classFUPluginManager.html#a316b3e7aa0de5c8c6c90376a61ccbe1f">00112</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFUPlugin.html" title="A generic plug-in interface structure.">FUPlugin</a>* <a class="code" href="classFUPluginManager.html#a316b3e7aa0de5c8c6c90376a61ccbe1f" title="See above.">GetLoadedPlugin</a>(<span class="keywordtype">size_t</span> index)<span class="keyword"> const </span>{ <a class="code" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f" title="Asserts that a condition is met.">FUAssert</a>(index &lt; loadedPlugins.size(), <span class="keywordflow">return</span> NULL); <span class="keywordflow">return</span> loadedPlugins.at(index); } 
 <a name="l00114"></a>00114 <span class="keyword">private</span>:
 <a name="l00115"></a>00115         <span class="keywordtype">void</span> LoadPluginsInFolderName(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">fstring</a>&amp; folderName, <span class="keyword">const</span> fchar* pluginLibraryFilter);
 <a name="l00116"></a>00116 };
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

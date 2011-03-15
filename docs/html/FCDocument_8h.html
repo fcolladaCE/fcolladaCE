@@ -55,6 +55,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCollada/FCDocument/FCDocument.h File Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>This file declares the COLLADA document object model top class: <a class="el" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>.  
+<a href="#_details">More...</a></p>
 <code>#include &quot;<a class="el" href="FCDObject_8h_source.html">FCDocument/FCDObject.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="FUParameter_8h_source.html">FUtils/FUParameter.h</a>&quot;</code><br/>
 
@@ -63,35 +66,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDLayer.html">FCDLayer</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A layer declaration.  <a href="classFCDLayer.html#_details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDocument.html">FCDocument</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The top class for the COLLADA object model.  <a href="classFCDocument.html#_details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1pvector.html">fm::pvector</a>&lt; <a class="el" href="classFCDLayer.html">FCDLayer</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#ab3c7cfae6baba689b49f24e74ec41705">FCDLayerList</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A dynamically-sized array of layer declarations.  <a href="#ab3c7cfae6baba689b49f24e74ec41705"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDAnimation.html">FCDAnimation</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a57d45e5321165349349287ea97dfb48e">FCDAnimationLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of animation entities.  <a href="#a57d45e5321165349349287ea97dfb48e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a><br class="typebreak"/>
 &lt; <a class="el" href="classFCDAnimationClip.html">FCDAnimationClip</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a74bd1908b99bb53fa0254ebca06927b2">FCDAnimationClipLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of animation clip entities.  <a href="#a74bd1908b99bb53fa0254ebca06927b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDCamera.html">FCDCamera</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#ab6279b6bc21f767b82f149f215cd9992">FCDCameraLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of camera entities.  <a href="#ab6279b6bc21f767b82f149f215cd9992"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDController.html">FCDController</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a22bf36412fc48661021a1978714fae55">FCDControllerLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of controller entities.  <a href="#a22bf36412fc48661021a1978714fae55"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDEffect.html">FCDEffect</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a89d41f05f0834aaca7bc7449aa816d85">FCDEffectLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of effect entities.  <a href="#a89d41f05f0834aaca7bc7449aa816d85"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDEmitter.html">FCDEmitter</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a019fc8a53c8506b1db5ba8e8be04f923">FCDEmitterLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A non-standard library of generic emitters.  <a href="#a019fc8a53c8506b1db5ba8e8be04f923"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDForceField.html">FCDForceField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#aac54f56c2b6488a8b696f309d0889e61">FCDForceFieldLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of force fields.  <a href="#aac54f56c2b6488a8b696f309d0889e61"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDGeometry.html">FCDGeometry</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#aaf38e757fdd9d6fafcca17ef083c02a7">FCDGeometryLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of geometric entities.  <a href="#aaf38e757fdd9d6fafcca17ef083c02a7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDImage.html">FCDImage</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#ab5559101f03eaa1423ccffec5b325b74">FCDImageLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of images.  <a href="#ab5559101f03eaa1423ccffec5b325b74"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDLight.html">FCDLight</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#afebcd7340edd6cc703ee365f3fdeff54">FCDLightLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of light entities.  <a href="#afebcd7340edd6cc703ee365f3fdeff54"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDMaterial.html">FCDMaterial</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#ab3da7c1270d0296f8a7f0ec45d038bad">FCDMaterialLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of visual material entities.  <a href="#ab3da7c1270d0296f8a7f0ec45d038bad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a>&lt; <a class="el" href="classFCDSceneNode.html">FCDSceneNode</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#ac2aabfb5e7aa01319379c8600d8c9821">FCDVisualSceneNodeLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of visual scene nodes.  <a href="#ac2aabfb5e7aa01319379c8600d8c9821"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a><br class="typebreak"/>
 &lt; <a class="el" href="classFCDPhysicsModel.html">FCDPhysicsModel</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a5fa1b77185800879d9467ae17ecd5cec">FCDPhysicsModelLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of physics model entities.  <a href="#a5fa1b77185800879d9467ae17ecd5cec"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a><br class="typebreak"/>
 &lt; <a class="el" href="classFCDPhysicsMaterial.html">FCDPhysicsMaterial</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#ae3bde7521f644a4729b86b21042247f4">FCDPhysicsMaterialLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of physics material entities.  <a href="#ae3bde7521f644a4729b86b21042247f4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFCDLibrary.html">FCDLibrary</a><br class="typebreak"/>
 &lt; <a class="el" href="classFCDPhysicsScene.html">FCDPhysicsScene</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a0d3c62dcef9e708a401f73f9b2e16085">FCDPhysicsSceneLibrary</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A COLLADA library of physics scene nodes.  <a href="#a0d3c62dcef9e708a401f73f9b2e16085"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classFUUniqueStringMapT.html">FUUniqueStringMapT</a>&lt; char &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a4d69340d32347e71e3509cd6a18bf9c3">FUSUniqueStringMap</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A set of unique strings.  <a href="#a4d69340d32347e71e3509cd6a18bf9c3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfm_1_1map.html">fm::map</a>&lt; <a class="el" href="classFCDExtra.html">FCDExtra</a> <br class="typebreak"/>
 *, <a class="el" href="classFCDExtra.html">FCDExtra</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDocument_8h.html#a8a27640ffa0d127009a889e48f85b6e4">FCDExtraSet</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A set of extra trees.  <a href="#a8a27640ffa0d127009a889e48f85b6e4"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This file declares the COLLADA document object model top class: <a class="el" href="classFCDocument.html">FCDocument</a>. </p>
+<p>This file declares the COLLADA document object model top class: <a class="el" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>. </p>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="a74bd1908b99bb53fa0254ebca06927b2"></a><!-- doxytag: member="FCDocument.h::FCDAnimationClipLibrary" ref="a74bd1908b99bb53fa0254ebca06927b2" args="" -->
 <div class="memitem">
@@ -103,6 +126,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of animation clip entities. </p>
 
 </div>
@@ -117,6 +141,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of animation entities. </p>
 
 </div>
@@ -131,6 +156,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of camera entities. </p>
 
 </div>
@@ -145,6 +171,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of controller entities. </p>
 
 </div>
@@ -159,6 +186,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of effect entities. </p>
 
 </div>
@@ -173,6 +201,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A non-standard library of generic emitters. </p>
 
 </div>
@@ -187,6 +216,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A set of extra trees. </p>
 
 </div>
@@ -201,6 +231,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of force fields. </p>
 
 </div>
@@ -215,6 +246,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of geometric entities. </p>
 
 </div>
@@ -229,6 +261,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of images. </p>
 
 </div>
@@ -243,6 +276,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A dynamically-sized array of layer declarations. </p>
 
 </div>
@@ -257,6 +291,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of light entities. </p>
 
 </div>
@@ -271,6 +306,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of visual material entities. </p>
 
 </div>
@@ -285,6 +321,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of physics material entities. </p>
 
 </div>
@@ -299,6 +336,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of physics model entities. </p>
 
 </div>
@@ -313,6 +351,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of physics scene nodes. </p>
 
 </div>
@@ -327,6 +366,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A COLLADA library of visual scene nodes. </p>
 
 </div>
@@ -341,6 +381,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A set of unique strings. </p>
 
 </div>
@@ -360,7 +401,7 @@ Typedefs</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

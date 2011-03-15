@@ -62,41 +62,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FMVector2" -->
+<p>A 2 dimensional vector.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FMVector2_8h_source.html">FMVector2.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#aa96a0629fd333f71e455fcc2069b3193">FMVector2</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an empty <a class="el" href="classFMVector2.html" title="A 2 dimensional vector.">FMVector2</a>.  <a href="#aa96a0629fd333f71e455fcc2069b3193"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#a29aeec6ea2cf4feb0375af535f8e7490">FMVector2</a> (float _u, float _v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the vector with the coordinates given.  <a href="#a29aeec6ea2cf4feb0375af535f8e7490"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#a9058c2c9c8d6f3904d1f830572269271">LengthSquared</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the squared length of the vector.  <a href="#a9058c2c9c8d6f3904d1f830572269271"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#ad59987a2ec38d77461b127c6774b2b2c">Length</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the length of the vector.  <a href="#ad59987a2ec38d77461b127c6774b2b2c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#a09f58542bf08b4e6e1f79881e7287057">NormalizeIt</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Normalizes this vector.  <a href="#a09f58542bf08b4e6e1f79881e7287057"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#aecb7fbc50f98a61510a80b97c9b0ca64">Normalize</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a normalized vector with the same direction as this vector.  <a href="#aecb7fbc50f98a61510a80b97c9b0ca64"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#ac7b603a55230c6f7d50a5706f5266c91">operator float *</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get this vector as an array of <code>floats</code>.  <a href="#ac7b603a55230c6f7d50a5706f5266c91"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector2.html">FMVector2</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#a10996ad35ebbe593238dd505232cbad9">operator+=</a> (const <a class="el" href="classFMVector2.html">FMVector2</a> &amp;a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds two vector.  <a href="#a10996ad35ebbe593238dd505232cbad9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector2.html">FMVector2</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#a694e6f2df85e23d500a0d7a6fa79d78f">operator*=</a> (float a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Multiplies this vector by a scaler.  <a href="#a694e6f2df85e23d500a0d7a6fa79d78f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector2.html">FMVector2</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#aa4138ab608dde492d0f7fa5cb61b225c">operator=</a> (const float *f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Assign this vector to the given float array.  <a href="#aa4138ab608dde492d0f7fa5cb61b225c"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" ><a class="anchor" id="a8022286014825126faa6122da6f3618a"></a><!-- doxytag: member="FMVector2::@1" ref="a8022286014825126faa6122da6f3618a" args="" -->
 union {</td></tr>
 <tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="classFMVector2.html#ae9271c21509c9a23fdeaacb30e3ec49f">u</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The first coordinate.  <a href="#a818f399ffe44491485da8addee8475fc"></a><br/></td></tr>
 <tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="classFMVector2.html#add13f67c553344452ad5274297afeebf">x</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The first coordinate.  <a href="#a5288a95eb8dcf426a36832ef37f9cbe8"></a><br/></td></tr>
 <tr><td class="memItemLeft" valign="top">};&nbsp;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr><td class="memItemLeft" ><a class="anchor" id="ac40bad49e031da1ce98bcefdecd4cd23"></a><!-- doxytag: member="FMVector2::@3" ref="ac40bad49e031da1ce98bcefdecd4cd23" args="" -->
 union {</td></tr>
 <tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="classFMVector2.html#ad336a3412e6070c3419df8a82ccdfeac">v</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The second coordinate.  <a href="#a5e26c929a33a64cad7355825fa489d32"></a><br/></td></tr>
 <tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="classFMVector2.html#a2220c4429844ade53dc10c5e8b1d87e0">y</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The second coordinate.  <a href="#a5ead6cd8e7cf4ef3de8471e958fdcc5a"></a><br/></td></tr>
 <tr><td class="memItemLeft" valign="top">};&nbsp;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#aff17a6d216a00383aeeaf94655168bc8">Zero</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The zero vector.  <a href="#aff17a6d216a00383aeeaf94655168bc8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#ac92a195612c79d7228214b8ad17d3c83">Origin</a> = <a class="el" href="classFMVector2.html#aff17a6d216a00383aeeaf94655168bc8">FMVector2::Zero</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The zero vector.  <a href="#ac92a195612c79d7228214b8ad17d3c83"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#af1e472e6de273133987bb212befb2615">XAxis</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The 2D X axis.  <a href="#af1e472e6de273133987bb212befb2615"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector2.html">FMVector2</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector2.html#ab5048e7e1432c3c0a96a84a91348830b">YAxis</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The 2D Y axis.  <a href="#ab5048e7e1432c3c0a96a84a91348830b"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A 2 dimensional vector. Not used within <a class="el" href="namespaceFCollada.html">FCollada</a>. </p>
+<p>A 2 dimensional vector. </p>
+<p>Not used within <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a>. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa96a0629fd333f71e455fcc2069b3193"></a><!-- doxytag: member="FMVector2::FMVector2" ref="aa96a0629fd333f71e455fcc2069b3193" args="()" -->
 <div class="memitem">
@@ -112,7 +134,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates an empty <a class="el" href="classFMVector2.html">FMVector2</a>. </p>
+
+<p>Creates an empty <a class="el" href="classFMVector2.html" title="A 2 dimensional vector.">FMVector2</a>. </p>
 
 </div>
 </div>
@@ -140,6 +163,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Creates the vector with the coordinates given. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -166,6 +190,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the length of the vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The length of this vector. </dd></dl>
 
@@ -185,6 +210,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the squared length of the vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The squared length of this vector. </dd></dl>
 
@@ -204,6 +230,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Get a normalized vector with the same direction as this vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A vector with length 1 and same direction as this vector. </dd></dl>
 
@@ -223,6 +250,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Normalizes this vector. </p>
 
 </div>
@@ -241,6 +269,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Get this vector as an array of <code>floats</code>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The <code>float</code> array. </dd></dl>
 
@@ -261,7 +290,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Multiplies this vector by a scaler. Multiplies each of this vector's coordinates with the scaler and returns this vector. </p>
+
+<p>Multiplies this vector by a scaler. </p>
+<p>Multiplies each of this vector's coordinates with the scaler and returns this vector. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>a</em>&nbsp;</td><td>The scalar to multiply with. </td></tr>
@@ -287,7 +318,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds two vector. Adds to this vector's coordinates the individual components of the given vector and returns this vector. </p>
+
+<p>Adds two vector. </p>
+<p>Adds to this vector's coordinates the individual components of the given vector and returns this vector. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>a</em>&nbsp;</td><td>The vector to add with this one. </td></tr>
@@ -313,7 +346,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Assign this vector to the given float array. Assigns each coordinate of this vector to the elements in the <code>float</code> array. The first element to the first coordinate and the second to the second. It returns this vector. </p>
+
+<p>Assign this vector to the given float array. </p>
+<p>Assigns each coordinate of this vector to the elements in the <code>float</code> array. The first element to the first coordinate and the second to the second. It returns this vector. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>f</em>&nbsp;</td><td>The <code>float</code> array to assign with. </td></tr>
@@ -335,6 +370,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The zero vector. </p>
 
 </div>
@@ -349,6 +385,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The first coordinate. </p>
 
 </div>
@@ -363,6 +400,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The second coordinate. </p>
 
 </div>
@@ -377,6 +415,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The first coordinate. </p>
 
 </div>
@@ -391,6 +430,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The 2D X axis. </p>
 
 </div>
@@ -405,6 +445,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The second coordinate. </p>
 
 </div>
@@ -419,6 +460,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The 2D Y axis. </p>
 
 </div>
@@ -433,6 +475,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>The zero vector. </p>
 
 </div>
@@ -456,7 +499,7 @@ Static Public Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:52 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

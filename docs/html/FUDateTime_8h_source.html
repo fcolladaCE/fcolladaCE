@@ -62,7 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="preprocessor">#ifndef _FU_DATETIME_H_</span>
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _FU_DATETIME_H_</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
-<a name="l00024"></a><a class="code" href="classFUDateTime.html">00024</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUDateTime.html">FUDateTime</a>
+<a name="l00024"></a><a class="code" href="classFUDateTime.html">00024</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUDateTime.html" title="A common date-time.">FUDateTime</a>
 <a name="l00025"></a>00025 {
 <a name="l00026"></a>00026 <span class="keyword">private</span>:
 <a name="l00027"></a>00027         <span class="comment">// To be more friendly, &#39;day&#39; and &#39;month&#39; are 1-indexed</span>
@@ -74,25 +74,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00033"></a>00033         uint32 year;
 <a name="l00034"></a>00034 
 <a name="l00035"></a>00035 <span class="keyword">public</span>:
-<a name="l00037"></a>00037         <a class="code" href="classFUDateTime.html">FUDateTime</a>();
-<a name="l00040"></a>00040         <a class="code" href="classFUDateTime.html">FUDateTime</a>(<span class="keyword">const</span> <a class="code" href="classFUDateTime.html">FUDateTime</a>&amp; time);
-<a name="l00042"></a>00042         ~<a class="code" href="classFUDateTime.html">FUDateTime</a>();
+<a name="l00037"></a>00037         <a class="code" href="classFUDateTime.html" title="A common date-time.">FUDateTime</a>();
+<a name="l00040"></a>00040         <a class="code" href="classFUDateTime.html" title="A common date-time.">FUDateTime</a>(<span class="keyword">const</span> <a class="code" href="classFUDateTime.html" title="A common date-time.">FUDateTime</a>&amp; time);
+<a name="l00042"></a>00042         ~<a class="code" href="classFUDateTime.html" title="A common date-time.">FUDateTime</a>();
 <a name="l00043"></a>00043 
-<a name="l00046"></a><a class="code" href="classFUDateTime.html#ac6a02c221215238a779bff61093626b2">00046</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#ac6a02c221215238a779bff61093626b2">GetSeconds</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> seconds; }
-<a name="l00049"></a><a class="code" href="classFUDateTime.html#a3ec9ad7624c058a0790c4de0a984702b">00049</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#a3ec9ad7624c058a0790c4de0a984702b">GetMinutes</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> minutes; }
-<a name="l00052"></a><a class="code" href="classFUDateTime.html#abe0949d5c8c1d00a2c164ded6e11b30d">00052</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#abe0949d5c8c1d00a2c164ded6e11b30d">GetHour</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> hour; }
-<a name="l00056"></a><a class="code" href="classFUDateTime.html#a98db1109451fbc3e6a1544185a44fb73">00056</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#a98db1109451fbc3e6a1544185a44fb73">GetDay</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> day; }
-<a name="l00059"></a><a class="code" href="classFUDateTime.html#aa5a4762ef4023a8746684fc9306508e4">00059</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#aa5a4762ef4023a8746684fc9306508e4">GetMonth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> month; }
-<a name="l00063"></a><a class="code" href="classFUDateTime.html#affed2783369ecf09a877ed640dd47923">00063</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#affed2783369ecf09a877ed640dd47923">GetYear</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> year; }
+<a name="l00046"></a><a class="code" href="classFUDateTime.html#ac6a02c221215238a779bff61093626b2">00046</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#ac6a02c221215238a779bff61093626b2" title="Retrieves the seconds component of the date-time structure.">GetSeconds</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> seconds; }
+<a name="l00049"></a><a class="code" href="classFUDateTime.html#a3ec9ad7624c058a0790c4de0a984702b">00049</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#a3ec9ad7624c058a0790c4de0a984702b" title="Retrieves the minutes component of the date-time structure.">GetMinutes</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> minutes; }
+<a name="l00052"></a><a class="code" href="classFUDateTime.html#abe0949d5c8c1d00a2c164ded6e11b30d">00052</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#abe0949d5c8c1d00a2c164ded6e11b30d" title="Retrieves the hour component of the date-time structure.">GetHour</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> hour; }
+<a name="l00056"></a><a class="code" href="classFUDateTime.html#a98db1109451fbc3e6a1544185a44fb73">00056</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#a98db1109451fbc3e6a1544185a44fb73" title="Retrieves the day component of the date-time structure.">GetDay</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> day; }
+<a name="l00059"></a><a class="code" href="classFUDateTime.html#aa5a4762ef4023a8746684fc9306508e4">00059</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#aa5a4762ef4023a8746684fc9306508e4" title="Retrieves the month component of the date-time structure.">GetMonth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> month; }
+<a name="l00063"></a><a class="code" href="classFUDateTime.html#affed2783369ecf09a877ed640dd47923">00063</a>         <span class="keyword">inline</span> uint32 <a class="code" href="classFUDateTime.html#affed2783369ecf09a877ed640dd47923" title="Retrieves the year component of the date-time structure.">GetYear</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> year; }
 <a name="l00064"></a>00064 
-<a name="l00068"></a><a class="code" href="classFUDateTime.html#ac29ee580eb76914ede1b5b1a55720dce">00068</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#ac29ee580eb76914ede1b5b1a55720dce">SetSeconds</a>(uint32 _seconds) { seconds = _seconds; }
-<a name="l00072"></a><a class="code" href="classFUDateTime.html#adefd51182822f0bea94e02087dd6433d">00072</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#adefd51182822f0bea94e02087dd6433d">SetMinutes</a>(uint32 _minutes) { minutes = _minutes; }
-<a name="l00076"></a><a class="code" href="classFUDateTime.html#ae0418848399c02b37a046bd6afe6eb0d">00076</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#ae0418848399c02b37a046bd6afe6eb0d">SetHour</a>(uint32 _hour) { hour = _hour; }
-<a name="l00080"></a><a class="code" href="classFUDateTime.html#a824fc5c8edd8727961c2fe29df8333ed">00080</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#a824fc5c8edd8727961c2fe29df8333ed">SetDay</a>(uint32 _day) { day = _day; }
-<a name="l00084"></a><a class="code" href="classFUDateTime.html#af409696781158db5961a43c32050f1fd">00084</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#af409696781158db5961a43c32050f1fd">SetMonth</a>(uint32 _month) { month = _month; }
-<a name="l00088"></a><a class="code" href="classFUDateTime.html#a1f8eab94e0f884ef3f10b481672d665f">00088</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#a1f8eab94e0f884ef3f10b481672d665f">SetYear</a>(uint32 _year) { year = _year; }
+<a name="l00068"></a><a class="code" href="classFUDateTime.html#ac29ee580eb76914ede1b5b1a55720dce">00068</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#ac29ee580eb76914ede1b5b1a55720dce" title="Sets the seconds component of the date-time structure.">SetSeconds</a>(uint32 _seconds) { seconds = _seconds; }
+<a name="l00072"></a><a class="code" href="classFUDateTime.html#adefd51182822f0bea94e02087dd6433d">00072</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#adefd51182822f0bea94e02087dd6433d" title="Sets the minutes component of the date-time structure.">SetMinutes</a>(uint32 _minutes) { minutes = _minutes; }
+<a name="l00076"></a><a class="code" href="classFUDateTime.html#ae0418848399c02b37a046bd6afe6eb0d">00076</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#ae0418848399c02b37a046bd6afe6eb0d" title="Sets the hour component of the date-time structure.">SetHour</a>(uint32 _hour) { hour = _hour; }
+<a name="l00080"></a><a class="code" href="classFUDateTime.html#a824fc5c8edd8727961c2fe29df8333ed">00080</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#a824fc5c8edd8727961c2fe29df8333ed" title="Sets the day component of the date-time structure.">SetDay</a>(uint32 _day) { day = _day; }
+<a name="l00084"></a><a class="code" href="classFUDateTime.html#af409696781158db5961a43c32050f1fd">00084</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#af409696781158db5961a43c32050f1fd" title="Sets the month component of the date-time structure.">SetMonth</a>(uint32 _month) { month = _month; }
+<a name="l00088"></a><a class="code" href="classFUDateTime.html#a1f8eab94e0f884ef3f10b481672d665f">00088</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUDateTime.html#a1f8eab94e0f884ef3f10b481672d665f" title="Sets the year component of the date-time structure.">SetYear</a>(uint32 _year) { year = _year; }
 <a name="l00089"></a>00089 
-<a name="l00093"></a>00093         <span class="keyword">static</span> <a class="code" href="classFUDateTime.html">FUDateTime</a> GetNow();
+<a name="l00093"></a>00093         <span class="keyword">static</span> <a class="code" href="classFUDateTime.html" title="A common date-time.">FUDateTime</a> GetNow();
 <a name="l00094"></a>00094 };
 <a name="l00095"></a>00095 
 <a name="l00096"></a>00096 <span class="preprocessor">#endif // _FU_DATETIME_H_</span>
@@ -112,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:12 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

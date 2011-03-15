@@ -56,6 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCollada/FCDocument/FCDParameterAnimatable.h File Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>This file contains the <a class="el" href="classFCDParameterAnimatable.html" title="An animatable value parameter.">FCDParameterAnimatable</a> template and related functions.  
+<a href="#_details">More...</a></p>
 <code>#include &lt;<a class="el" href="FUParameter_8h_source.html">FUtils/FUParameter.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="FMAngleAxis_8h_source.html">FMath/FMAngleAxis.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="FMLookAt_8h_source.html">FMath/FMLookAt.h</a>&gt;</code><br/>
@@ -66,67 +69,91 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterAnimatable.html">FCDParameterAnimatable</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An animatable value parameter.  <a href="classFCDParameterAnimatable.html#_details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT&lt; TYPE, QUALIFIERS &gt;</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A typed animatable <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> value parameter.  <a href="classFCDParameterAnimatableT.html#_details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatable.html">FCDParameterListAnimatable</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An animatable value parameter.  <a href="classFCDParameterListAnimatable.html#_details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT&lt; TYPE, QUALIFIERS &gt;</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A typed animatable <a class="el" href="namespaceFCollada.html" title="This namespace contains FCollada global functions and member variables.">FCollada</a> value parameter.  <a href="classFCDParameterListAnimatableT.html#_details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#adbbb53d0b4c6015338af222222ea75e5">DeclareParameterAnimatable</a>(type, qual, parameterName, niceName)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Declares an animatable parameter for the objects of the current class.  <a href="#adbbb53d0b4c6015338af222222ea75e5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#af4c6cf0d0b9d38310ca69ede10350532">DeclareParameterListAnimatable</a>(type, qual, parameterName, niceName)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#af4c6cf0d0b9d38310ca69ede10350532"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#ab8fc97067463511aea252d1594c6a4a7">InitializeParameterAnimatableNoArg</a>(parameterName)&nbsp;&nbsp;&nbsp;parameterName(this)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initializes the member variable for an animatable parameter.  <a href="#ab8fc97067463511aea252d1594c6a4a7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a89dfadf3d9fe067ad46bc85a43b1fa93">InitializeParameterAnimatable</a>(parameterName,...)&nbsp;&nbsp;&nbsp;parameterName(this, __VA_ARGS__)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a89dfadf3d9fe067ad46bc85a43b1fa93"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a>&lt; float, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a7699d704107ee36419800e2c791bd9ef">FCDParameterAnimatableFloat</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A floating-point value animatable parameter.  <a href="#a7699d704107ee36419800e2c791bd9ef"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector2.html">FMVector2</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a7c7ad7dfaaea9beb21962da624ea1360">FCDParameterAnimatableVector2</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 2D vector animatable parameter.  <a href="#a7c7ad7dfaaea9beb21962da624ea1360"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector3.html">FMVector3</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a85dc293791fe2fe2d322dc838bf90d04">FCDParameterAnimatableVector3</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 3D vector animatable parameter.  <a href="#a85dc293791fe2fe2d322dc838bf90d04"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector3.html">FMVector3</a>, 1 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#acb02ef096cf82173a0079e77b1908345">FCDParameterAnimatableColor3</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 3D vector animatable parameter.  <a href="#acb02ef096cf82173a0079e77b1908345"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector4.html">FMVector4</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a995c0529ba76bcb52c2b4fc55570aa0b">FCDParameterAnimatableVector4</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 4D vector animatable parameter.  <a href="#a995c0529ba76bcb52c2b4fc55570aa0b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector4.html">FMVector4</a>, 1 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a43eb2f631d8d18ec4ae436a8990bc359">FCDParameterAnimatableColor4</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 4D color animatable parameter.  <a href="#a43eb2f631d8d18ec4ae436a8990bc359"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMMatrix44.html">FMMatrix44</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a2368a50dd46f38c2f0eff12c7b960386">FCDParameterAnimatableMatrix44</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A matrix animatable parameter.  <a href="#a2368a50dd46f38c2f0eff12c7b960386"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMAngleAxis.html">FMAngleAxis</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#ab18438f48c6f8b8888d2dcaab0181922">FCDParameterAnimatableAngleAxis</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An angle-axis rotation animatable parameter.  <a href="#ab18438f48c6f8b8888d2dcaab0181922"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMLookAt.html">FMLookAt</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#ae33681977d1c811194b0ea1d7992ef9a">FCDParameterAnimatableLookAt</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A look-at animatable parameter.  <a href="#ae33681977d1c811194b0ea1d7992ef9a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMSkew.html">FMSkew</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#abb0a8ce3e20e369248c37639d653b2b1">FCDParameterAnimatableSkew</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A skew animatable parameter.  <a href="#abb0a8ce3e20e369248c37639d653b2b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT</a><br class="typebreak"/>
 &lt; float, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a81c285157d5494d46c56f6abb15c2c0c">FCDParameterListAnimatableFloat</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A floating-point value animatable list parameter.  <a href="#a81c285157d5494d46c56f6abb15c2c0c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector2.html">FMVector2</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a8ec34442a93f2589b2dfc46461a46d2a">FCDParameterListAnimatableVector2</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 2D vector animatable list parameter.  <a href="#a8ec34442a93f2589b2dfc46461a46d2a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector3.html">FMVector3</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#a77bcf55236e4352a6e33b212b5a6390d">FCDParameterListAnimatableVector3</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 3D vector animatable list parameter.  <a href="#a77bcf55236e4352a6e33b212b5a6390d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector3.html">FMVector3</a>, 1 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#ad69218de9589c23ecb22fdf96a75808c">FCDParameterListAnimatableColor3</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 3D color animatable list parameter.  <a href="#ad69218de9589c23ecb22fdf96a75808c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector4.html">FMVector4</a>, 0 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#aeaaba5e7e9410f45a8da4ff46ccf9a3c">FCDParameterListAnimatableVector4</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 4D vector animatable list parameter.  <a href="#aeaaba5e7e9410f45a8da4ff46ccf9a3c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT</a><br class="typebreak"/>
 &lt; <a class="el" href="classFMVector4.html">FMVector4</a>, 1 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="FCDParameterAnimatable_8h.html#aae22e5cf37d539f8be19273eec7640d3">FCDParameterListAnimatableColor4</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A 4D color animatable list parameter.  <a href="#aae22e5cf37d539f8be19273eec7640d3"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This file contains the <a class="el" href="classFCDParameterAnimatable.html">FCDParameterAnimatable</a> template and related functions. </p>
+<p>This file contains the <a class="el" href="classFCDParameterAnimatable.html" title="An animatable value parameter.">FCDParameterAnimatable</a> template and related functions. </p>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="adbbb53d0b4c6015338af222222ea75e5"></a><!-- doxytag: member="FCDParameterAnimatable.h::DeclareParameterAnimatable" ref="adbbb53d0b4c6015338af222222ea75e5" args="(type, qual, parameterName, niceName)" -->
 <div class="memitem">
@@ -164,22 +191,24 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">class </span>Parameter_##parameterName : <span class="keyword">public</span> <a class="code" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a>&lt;type, qual&gt; { \
-        <span class="keyword">public</span>: Parameter_##parameterName(<a class="code" href="classFUParameterizable.html">FUParameterizable</a>* parent) : <a class="code" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a>&lt;type, qual&gt;(parent) {} \
-        Parameter_##parameterName(<a class="code" href="classFUParameterizable.html">FUParameterizable</a>* parent, <span class="keyword">const</span> type&amp; defaultValue) : <a class="code" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT</a>&lt;type, qual&gt;(parent, defaultValue) {} \
+<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">class </span>Parameter_##parameterName : <span class="keyword">public</span> <a class="code" href="classFCDParameterAnimatableT.html" title="A typed animatable FCollada value parameter.">FCDParameterAnimatableT</a>&lt;type, qual&gt; { \
+        <span class="keyword">public</span>: Parameter_##parameterName(<a class="code" href="classFUParameterizable.html" title="A trackable object which contains parameters.">FUParameterizable</a>* parent) : <a class="code" href="classFCDParameterAnimatableT.html" title="A typed animatable FCollada value parameter.">FCDParameterAnimatableT</a>&lt;type, qual&gt;(parent) {} \
+        Parameter_##parameterName(<a class="code" href="classFUParameterizable.html" title="A trackable object which contains parameters.">FUParameterizable</a>* parent, <span class="keyword">const</span> type&amp; defaultValue) : <a class="code" href="classFCDParameterAnimatableT.html" title="A typed animatable FCollada value parameter.">FCDParameterAnimatableT</a>&lt;type, qual&gt;(parent, defaultValue) {} \
         <span class="keyword">virtual</span> ~Parameter_##parameterName() {} \
-        Parameter_##parameterName&amp; <a class="code" href="classFCDParameterAnimatableT.html#a69989c687eba331bc1da00e07218bc14">operator= </a>(<span class="keyword">const</span> type&amp; copy) { <a class="code" href="classFCDParameterAnimatableT.html">FCDParameterAnimatableT&lt;type, qual&gt;::operator=</a>(copy); <span class="keywordflow">return</span> *<span class="keyword">this</span>; } \
+        Parameter_##parameterName&amp; <a class="code" href="classFCDParameterAnimatableT.html#a69989c687eba331bc1da00e07218bc14" title="Assigns to this parameter the given value.">operator= </a>(<span class="keyword">const</span> type&amp; copy) { <a class="code" href="classFCDParameterAnimatableT.html" title="A typed animatable FCollada value parameter.">FCDParameterAnimatableT&lt;type, qual&gt;::operator=</a>(copy); <span class="keywordflow">return</span> *<span class="keyword">this</span>; } \
         } parameterName;
-</pre></div><p>Declares an animatable parameter for the objects of the current class. Use this macro within a class declaration to add an animatable parameter to it. The different versions of this macro are used for different parameter types:</p>
+</pre></div>
+<p>Declares an animatable parameter for the objects of the current class. </p>
+<p>Use this macro within a class declaration to add an animatable parameter to it. The different versions of this macro are used for different parameter types:</p>
 <p>For floats, Booleans, vectors and strings, use DeclareParameterAnimatable. For arrays of floats, Booleans, vectors and strings, use DeclareParameterListAnimatable. For tracked pointers, use DeclareParameterPtr. For contained pointers, use DeclareParameterRef. For tracked lists of objects, use DeclareParameterTrackList. For containers of objects, use DeclareParameterContainer.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The value type of the animatable parameter. Ex: float, bool, <a class="el" href="classFMVector4.html">FMVector4</a> or string. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>The value type of the animatable parameter. Ex: float, bool, <a class="el" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a> or string. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>qual</em>&nbsp;</td><td>The qualifier for the animatable parameter type. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUParameterQualifiers.html#a3eda99ee3b301da228d3df63a75d3612">FUParameterQualifiers::Qualifiers</a>. </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespaceFUParameterQualifiers.html#a3eda99ee3b301da228d3df63a75d3612" title="Qualifiers for parameters types.">FUParameterQualifiers::Qualifiers</a>. </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>parameterName</em>&nbsp;</td><td>The member variable name for the animatable parameter. </td></tr>
@@ -226,11 +255,12 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">class </span>Parameter_##parameterName : <span class="keyword">public</span> <a class="code" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT</a>&lt;type, qual&gt; { \
-        <span class="keyword">public</span>: Parameter_##parameterName(<a class="code" href="classFUParameterizable.html">FUParameterizable</a>* parent) : <a class="code" href="classFCDParameterListAnimatableT.html">FCDParameterListAnimatableT</a>&lt;type, qual&gt;(parent) {} \
+<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">class </span>Parameter_##parameterName : <span class="keyword">public</span> <a class="code" href="classFCDParameterListAnimatableT.html" title="A typed animatable FCollada value parameter.">FCDParameterListAnimatableT</a>&lt;type, qual&gt; { \
+        <span class="keyword">public</span>: Parameter_##parameterName(<a class="code" href="classFUParameterizable.html" title="A trackable object which contains parameters.">FUParameterizable</a>* parent) : <a class="code" href="classFCDParameterListAnimatableT.html" title="A typed animatable FCollada value parameter.">FCDParameterListAnimatableT</a>&lt;type, qual&gt;(parent) {} \
         <span class="keyword">virtual</span> ~Parameter_##parameterName() {} \
         } parameterName;
-</pre></div><p>See above. </p>
+</pre></div>
+<p>See above. </p>
 
 </div>
 </div>
@@ -258,6 +288,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -277,7 +308,9 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Initializes the member variable for an animatable parameter. Either one of these macros must be included for each member animatable parameter of a class, within that class' constructors. The different versions of this macro are used for different contexts:</p>
+
+<p>Initializes the member variable for an animatable parameter. </p>
+<p>Either one of these macros must be included for each member animatable parameter of a class, within that class' constructors. The different versions of this macro are used for different contexts:</p>
 <p>For a parameter where the default constructor is to be used, use InitializeParameterAnimatableNoArg. For a parameter where one or more values should be used in the constructor, use InitializeParameterAnimatable.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -299,6 +332,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>An angle-axis rotation animatable parameter. </p>
 
 </div>
@@ -313,6 +347,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 3D vector animatable parameter. </p>
 
 </div>
@@ -327,6 +362,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 4D color animatable parameter. </p>
 
 </div>
@@ -341,6 +377,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A floating-point value animatable parameter. </p>
 
 </div>
@@ -355,6 +392,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A look-at animatable parameter. </p>
 
 </div>
@@ -369,6 +407,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A matrix animatable parameter. </p>
 
 </div>
@@ -383,6 +422,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A skew animatable parameter. </p>
 
 </div>
@@ -397,6 +437,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 2D vector animatable parameter. </p>
 
 </div>
@@ -411,6 +452,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 3D vector animatable parameter. </p>
 
 </div>
@@ -425,6 +467,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 4D vector animatable parameter. </p>
 
 </div>
@@ -439,6 +482,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 3D color animatable list parameter. </p>
 
 </div>
@@ -453,6 +497,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 4D color animatable list parameter. </p>
 
 </div>
@@ -467,6 +512,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A floating-point value animatable list parameter. </p>
 
 </div>
@@ -481,6 +527,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 2D vector animatable list parameter. </p>
 
 </div>
@@ -495,6 +542,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 3D vector animatable list parameter. </p>
 
 </div>
@@ -509,6 +557,7 @@ Typedefs</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>A 4D vector animatable list parameter. </p>
 
 </div>
@@ -528,7 +577,7 @@ Typedefs</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

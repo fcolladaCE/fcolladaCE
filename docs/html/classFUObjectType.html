@@ -60,21 +60,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUObjectType" -->
+<p>An object type.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUObjectType_8h_source.html">FUObjectType.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectType.html#a2720b7c1dc89ba2b04067fb54651cfb2">FUObjectType</a> (const char *typeName)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Constructor: do not use directly.  <a href="#a2720b7c1dc89ba2b04067fb54651cfb2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectType.html#a2ef2d00f85e58205470a634991bbd710">FUObjectType</a> (const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;parent, const char *typeName)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">[INTERNAL] Constructor: do not use directly.  <a href="#a2ef2d00f85e58205470a634991bbd710"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectType.html#a7b903f10975077d2d613a6cfe02762a8">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the type of the down-class.  <a href="#a7b903f10975077d2d613a6cfe02762a8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectType.html#ac7bf4a03be4c6c482ca9e6df8771601b">Includes</a> (const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;otherType) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this object type includes a given object type.  <a href="#ac7bf4a03be4c6c482ca9e6df8771601b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectType.html#a14945dfb834216b994e12e555c7e4ec6">operator==</a> (const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;otherType) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a given object type is equivalent to this object type.  <a href="#a14945dfb834216b994e12e555c7e4ec6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectType.html#a051455b488bf11ded50b271b261286dc">operator!=</a> (const <a class="el" href="classFUObjectType.html">FUObjectType</a> &amp;otherType) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether a given object type is different from this object type.  <a href="#a051455b488bf11ded50b271b261286dc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectType.html#a791d88a8d7b5fdfaad29c17f2050d8b0">GetTypeName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the object type name.  <a href="#a791d88a8d7b5fdfaad29c17f2050d8b0"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>An object type.</p>
-<p>Used for RTTI-purpose and to easily allow up-classing of objects. Every object class should have one object type has a static member and available through the virtual <a class="el" href="classFUObject.html#af41252d8da713eae73cd7c1e9a95a9da">FUObject::GetObjectType</a> function. All <a class="el" href="classFUObject.html">FUObject</a> up-classes should use the DeclareObjectType macro. </p>
+<p>An object type. </p>
+<p>Used for RTTI-purpose and to easily allow up-classing of objects. Every object class should have one object type has a static member and available through the virtual <a class="el" href="classFUObject.html#af41252d8da713eae73cd7c1e9a95a9da" title="Retrieves the type of the object class.">FUObject::GetObjectType</a> function. All <a class="el" href="classFUObject.html" title="A basic object.">FUObject</a> up-classes should use the DeclareObjectType macro. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2720b7c1dc89ba2b04067fb54651cfb2"></a><!-- doxytag: member="FUObjectType::FUObjectType" ref="a2720b7c1dc89ba2b04067fb54651cfb2" args="(const char *typeName)" -->
 <div class="memitem">
@@ -91,7 +101,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Constructor: do not use directly. Only the <a class="el" href="classFUObject.html">FUObject</a> class should use this constructor. All other class object types should use the constructor below. Use neither constructor directly: use the ImplementObjectType macro. </p>
+
+<p>[INTERNAL] Constructor: do not use directly. </p>
+<p>Only the <a class="el" href="classFUObject.html" title="A basic object.">FUObject</a> class should use this constructor. All other class object types should use the constructor below. Use neither constructor directly: use the ImplementObjectType macro. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>typeName</em>&nbsp;</td><td>The name of type. Used only in debug builds for debugging purposes. </td></tr>
@@ -125,7 +137,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>[INTERNAL] Constructor: do not use directly. Use the ImplementObjectType macro. </p>
+
+<p>[INTERNAL] Constructor: do not use directly. </p>
+<p>Use the ImplementObjectType macro. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>The parent class object type. </td></tr>
@@ -151,8 +165,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the type of the down-class. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The type of the down-class. The <a class="el" href="classFUObject.html">FUObject</a> class will return itself as the parent, so be careful when looping down. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The type of the down-class. The <a class="el" href="classFUObject.html" title="A basic object.">FUObject</a> class will return itself as the parent, so be careful when looping down. </dd></dl>
 
 </div>
 </div>
@@ -170,6 +185,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the object type name. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The object type name. </dd></dl>
 
@@ -190,7 +206,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves whether this object type includes a given object type. This function allows you to verify if this object type is of a given object type or some up-class of the given object type. You should use this comparison function before up-casting an object. </p>
+
+<p>Retrieves whether this object type includes a given object type. </p>
+<p>This function allows you to verify if this object type is of a given object type or some up-class of the given object type. You should use this comparison function before up-casting an object. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>otherType</em>&nbsp;</td><td>A second object type. </td></tr>
@@ -216,6 +234,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether a given object type is different from this object type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -242,6 +261,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether a given object type is equivalent to this object type. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -272,7 +292,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:55 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:24 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -60,22 +60,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUEvent1" -->
+<p>An event with one argument.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUEvent_8h_source.html">FUEvent.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#aeb2857b76a289959fc00e1703f78013d">FUEvent1</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#aeb2857b76a289959fc00e1703f78013d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#a468c6dc59c55f8fec158918570c6a63d">~FUEvent1</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a468c6dc59c55f8fec158918570c6a63d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#a1d7a397abec6f4107819c7e51446a834">GetHandlerCount</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of callbacks registered for this event.  <a href="#a1d7a397abec6f4107819c7e51446a834"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Class &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#aae1bd5925c353f9e5b04d2af09041f57">InsertHandler</a> (Class *handle, void(Class::*_function)(Arg1))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new callback that handles the event.  <a href="#aae1bd5925c353f9e5b04d2af09041f57"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#a4b909e5a3c1d81fe60264d1fb29fe9fa">InsertHandler</a> (<a class="el" href="classIFunctor1.html">Handler</a> *functor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a functor that handles the event.  <a href="#a4b909e5a3c1d81fe60264d1fb29fe9fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#a2be03967857daeafbc053b4104b06bbb">InsertHandler</a> (void(*_function)(Arg1))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new callback that handles the event.  <a href="#a2be03967857daeafbc053b4104b06bbb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#afb98dd5422f51541b03b744c0440f156">ReleaseHandler</a> (void *handle, void *function)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases and unregisters a callback that handles the event.  <a href="#afb98dd5422f51541b03b744c0440f156"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Class &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#a5796ad84ec938d63a4d4211b4007ae52">ReleaseHandler</a> (Class *handle, void(Class::*_function)(Arg1))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases and unregisters a callback that handles the event.  <a href="#a5796ad84ec938d63a4d4211b4007ae52"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#a5083879b0f594292f83b438be55e50a9">ReleaseHandler</a> (void(*_function)(Arg1))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases and unregisters a callback that handles the event.  <a href="#a5083879b0f594292f83b438be55e50a9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUEvent1.html#ad3fa78f0350b34361cf65d65fd75dece">operator()</a> (Arg1 argument1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Triggers the event.  <a href="#ad3fa78f0350b34361cf65d65fd75dece"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;class Arg1&gt;<br/>
@@ -99,6 +112,7 @@ template&lt;class Arg1&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Constructor. </p>
 
 </div>
@@ -119,6 +133,7 @@ template&lt;class Arg1&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -140,6 +155,7 @@ template&lt;class Arg1&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of callbacks registered for this event. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of callbacks registered. </dd></dl>
 
@@ -173,6 +189,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -201,6 +218,7 @@ template&lt;class Arg1&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -228,7 +246,9 @@ template&lt;class Arg1&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a functor that handles the event. Note that the event will own the memory for the functor. </p>
+
+<p>Adds a functor that handles the event. </p>
+<p>Note that the event will own the memory for the functor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>functor</em>&nbsp;</td><td>The functor that handlers the event. </td></tr>
@@ -255,7 +275,9 @@ template&lt;class Arg1&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Triggers the event. All the registered callbacks will be called, in reverse-order of their registration. </p>
+
+<p>Triggers the event. </p>
+<p>All the registered callbacks will be called, in reverse-order of their registration. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>argument1</em>&nbsp;</td><td>A first argument. </td></tr>
@@ -282,6 +304,7 @@ template&lt;class Arg1&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases and unregisters a callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -320,6 +343,7 @@ template&lt;class Class &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases and unregisters a callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -357,6 +381,7 @@ template&lt;class Arg1&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases and unregisters a callback that handles the event. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -386,7 +411,7 @@ template&lt;class Arg1&gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:53 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

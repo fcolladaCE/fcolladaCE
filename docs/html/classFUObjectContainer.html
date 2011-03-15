@@ -62,6 +62,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUObjectContainer" --><!-- doxytag: inherits="pvector&lt; ObjectClass &gt;,FUObjectOwner" -->
+<p>A contained object list.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUObject_8h_source.html">FUObject.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FUObjectContainer&lt; ObjectClass &gt;:</div>
@@ -83,60 +86,102 @@ typedef const ObjectClass **&nbsp;</td><td class="memItemRight" valign="bottom">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a2536f916c73734766a0d5384c8b4e4fa">~FUObjectContainer</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a2536f916c73734766a0d5384c8b4e4fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a6a5de13497a54059c8e64eeb0c7d4649">clear</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clears and releases the object tracked by this object list.  <a href="#a6a5de13497a54059c8e64eeb0c7d4649"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#af113112622cecb6303ad80c9638581cd">size</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of elements in the container.  <a href="#af113112622cecb6303ad80c9638581cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#ade02770e2fb1c1584756f7397e6217c1">empty</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether there are values in this container.  <a href="#ade02770e2fb1c1584756f7397e6217c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ObjectClass *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a31bb811b878d95c6be48813e54b576eb">front</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the first element of the container.  <a href="#a31bb811b878d95c6be48813e54b576eb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const ObjectClass *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a0492e4bbed66840780ed99fb39aca04c">front</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0492e4bbed66840780ed99fb39aca04c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ObjectClass *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a706056bc564047b69ee3921402f17d5c">back</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the last element of the container.  <a href="#a706056bc564047b69ee3921402f17d5c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const ObjectClass *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a5b996cbc75ccca1f3251323eb528a634">back</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5b996cbc75ccca1f3251323eb528a634"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ObjectClass *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#ac03e95b5bb925d980a08fe87ea580d17">at</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an indexed object in the list.  <a href="#ac03e95b5bb925d980a08fe87ea580d17"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const ObjectClass *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#ae7ab424e108015d69d2cace86e9f47b0">at</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ae7ab424e108015d69d2cace86e9f47b0"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class INTEGER &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">ObjectClass *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a930075fdd29acb874cacaf3f4a31cde1">operator[]</a> (INTEGER index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a930075fdd29acb874cacaf3f4a31cde1"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class INTEGER &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">const ObjectClass *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a9ccb9a78dc99bfed9a003d289b20cbc6">operator[]</a> (INTEGER index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a9ccb9a78dc99bfed9a003d289b20cbc6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#afec7bfee54ac21da128ef9726b45895f">begin</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an iterator for the first element in the list.  <a href="#afec7bfee54ac21da128ef9726b45895f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#ac94e733aeaa214ebfc83a2266893a217">begin</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ac94e733aeaa214ebfc83a2266893a217"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#afa538b19b625b12df198dd5604d49ffa">end</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an iterator for the element after the last element in the list.  <a href="#afa538b19b625b12df198dd5604d49ffa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#af0a3be7ae01b6803ac6dd4911ec9b740">end</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#af0a3be7ae01b6803ac6dd4911ec9b740"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a789a4b7a1032d25f725ad43a124afc79">find</a> (const ObjectClass *<a class="el" href="classfm_1_1pvector.html#af6ced3802a18342adc0b26355d1b75bf">item</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an iterator for a given element in the list.  <a href="#a789a4b7a1032d25f725ad43a124afc79"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a7bf320e12a4a134521a5eb0d1550d1fe">find</a> (const ObjectClass *<a class="el" href="classfm_1_1pvector.html#af6ced3802a18342adc0b26355d1b75bf">item</a>) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7bf320e12a4a134521a5eb0d1550d1fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a9a1a09f62802a2e9741a64e1c360562b">push_back</a> (ObjectClass *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an object to the container's containment list.  <a href="#a9a1a09f62802a2e9741a64e1c360562b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a98521997753d6c926a8a95f7cae44889">insert</a> (iterator _iterator, ObjectClass *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inserts an object in the container's containment list.  <a href="#a98521997753d6c926a8a95f7cae44889"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#ac2a100c856c985e4f8873a3e5ae78bc8">insert</a> (size_t index, ObjectClass *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inserts an object in the container's containment list.  <a href="#ac2a100c856c985e4f8873a3e5ae78bc8"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class _It &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a7a80b268403f74d794a09e6b057850da">insert</a> (iterator _where, _It _startIterator, _It _endIterator)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inserts a list of object in the container's containment list.  <a href="#a7a80b268403f74d794a09e6b057850da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a5ca44ff29a0b7d9a0fe570c20128e4c7">pop_back</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the last value of the tracked object list.  <a href="#a5ca44ff29a0b7d9a0fe570c20128e4c7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#acbc75007166b9ff643e19c3155521798">pop_front</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the first value of the object container.  <a href="#acbc75007166b9ff643e19c3155521798"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a33e43cf985c1d89f3b6cdf686c45a89a">erase</a> (iterator _it)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the value at the given position within the list.  <a href="#a33e43cf985c1d89f3b6cdf686c45a89a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a074fe8d95fdcf84aa566ef1f3b8f5a62">erase</a> (iterator first, iterator last)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a range of values from the list.  <a href="#a074fe8d95fdcf84aa566ef1f3b8f5a62"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a9120fc640d75119b516988e46c14e7b1">erase</a> (size_t first, size_t last)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a range of values from the list.  <a href="#a9120fc640d75119b516988e46c14e7b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#abd0271c9bac9e03afb4fe0ee46f46fbf">erase</a> (const ObjectClass *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a value contained within the list, once.  <a href="#abd0271c9bac9e03afb4fe0ee46f46fbf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a5eb14ee7d9342da1320df89c53e0bd26">Detach</a> (iterator _it)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Detaches the value at the given position from the list.  <a href="#a5eb14ee7d9342da1320df89c53e0bd26"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#acdd17688a17e2d2719cae789a5baf52f">Detach</a> (iterator first, iterator last)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Detaches a range of values from the list.  <a href="#acdd17688a17e2d2719cae789a5baf52f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a9a337a5fd58808ae6133e2bba7e3fccf">Detach</a> (size_t first, size_t last)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Detaches a range of values from the list.  <a href="#a9a337a5fd58808ae6133e2bba7e3fccf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a0ec6311406a55d9c5764fd433797fe8a">Detach</a> (const ObjectClass *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Detaches a given value from the list.  <a href="#a0ec6311406a55d9c5764fd433797fe8a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a40f942b5f10e64778f5fd2e7b3ad69e6">erase</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes an indexed value contained within the list.  <a href="#a40f942b5f10e64778f5fd2e7b3ad69e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a5b23781486e11fb4a42f3d58f4090c11">reserve</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pre-caches the wanted number of pointers.  <a href="#a5b23781486e11fb4a42f3d58f4090c11"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#abbdf9da16c7fb4e65ea1e3c0d63dc4e8">contains</a> (const ObjectClass *value) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this container owns a given object.  <a href="#abbdf9da16c7fb4e65ea1e3c0d63dc4e8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#aa84fe4da7ea1e0440632e76f3c81ad19">DEPRECATED</a> (3.05A,&quot;FUObject::Release()&quot;) bool release(const ObjectClass *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases a value contained within a list.  <a href="#aa84fe4da7ea1e0440632e76f3c81ad19"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ObjectClass *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a6f55ac27fc3ee7ce312405392a061a2c">Add</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new empty object to the container.  <a href="#a6f55ac27fc3ee7ce312405392a061a2c"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class A1 &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">ObjectClass *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#a3e8cb0c8385944bffc86edb9211bc6c5">Add</a> (const A1 &amp;arg1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new object to the container.  <a href="#a3e8cb0c8385944bffc86edb9211bc6c5"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class A1 , class A2 &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">ObjectClass *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#ae28150f3cdd2fb436abb24d7f53d3ef8">Add</a> (const A1 &amp;arg1, const A2 &amp;arg2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new object to the container.  <a href="#ae28150f3cdd2fb436abb24d7f53d3ef8"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class A1 , class A2 , class A3 &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">ObjectClass *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#afc882af5ef9f135c20d6cef1d3e9dc22">Add</a> (const A1 &amp;arg1, const A2 &amp;arg2, const A3 &amp;arg3)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new object to the container.  <a href="#afc882af5ef9f135c20d6cef1d3e9dc22"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUObjectContainer.html#ac2ab4f1342e3c49e41362a4024fe411b">OnOwnedObjectReleased</a> (<a class="el" href="classFUObject.html">FUObject</a> *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes an object from the container's owned list.  <a href="#ac2ab4f1342e3c49e41362a4024fe411b"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;typename ObjectClass = FUObject&gt;<br/>
  class FUObjectContainer&lt; ObjectClass &gt;</h3>
 
-<p>A contained object list. When this list is released, the contained objects are also released. Each object should have only one owner. </p>
+<p>A contained object list. </p>
+<p>When this list is released, the contained objects are also released. Each object should have only one owner. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2536f916c73734766a0d5384c8b4e4fa"></a><!-- doxytag: member="FUObjectContainer::~FUObjectContainer" ref="a2536f916c73734766a0d5384c8b4e4fa" args="()" -->
 <div class="memitem">
@@ -154,7 +199,9 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Destructor. Releases all the objects contained within this container. </p>
+
+<p>Destructor. </p>
+<p>Releases all the objects contained within this container. </p>
 
 </div>
 </div>
@@ -175,6 +222,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new empty object to the container. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new empty object. </dd></dl>
 
@@ -199,6 +247,7 @@ template&lt;class A1 &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new object to the container. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -238,6 +287,7 @@ template&lt;class A1 , class A2 &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new object to the container. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -284,6 +334,7 @@ template&lt;class A1 , class A2 , class A3 &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new object to the container. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -314,6 +365,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an indexed object in the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -342,6 +394,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -362,6 +415,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the last element of the container. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The last element in the container. </dd></dl>
 
@@ -383,6 +437,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -403,6 +458,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an iterator for the first element in the list. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>an iterator for the first element in the list. </dd></dl>
 
@@ -424,6 +480,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -444,6 +501,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clears and releases the object tracked by this object list. </p>
 
 </div>
@@ -465,6 +523,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this container owns a given object. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -502,8 +561,10 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Releases a value contained within a list. Use this function only if there is no duplicate pointers within the list. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Use <a class="el" href="classFUObject.html#a33be6852b877d7f29520bbe4722b846b">FUObject::Release</a> instead. </dd></dl>
+
+<p>Releases a value contained within a list. </p>
+<p>Use this function only if there is no duplicate pointers within the list. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Use <a class="el" href="classFUObject.html#a33be6852b877d7f29520bbe4722b846b" title="Releases this object.">FUObject::Release</a> instead. </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>The value, contained within the list, to release. </td></tr>
@@ -531,7 +592,9 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Detaches a given value from the list. The object is not released, so after this call: it has no owner and must be released manually. </p>
+
+<p>Detaches a given value from the list. </p>
+<p>The object is not released, so after this call: it has no owner and must be released manually. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>The value, contained within the list, to detach from it. </td></tr>
@@ -559,7 +622,9 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Detaches the value at the given position from the list. The object is not released, so after this call: it has no owner and must be released manually. </p>
+
+<p>Detaches the value at the given position from the list. </p>
+<p>The object is not released, so after this call: it has no owner and must be released manually. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_it</em>&nbsp;</td><td>The list position for the value to remove. </td></tr>
@@ -595,7 +660,9 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Detaches a range of values from the list. The objects are not released, so after this call: they have no owner and must be released manually. </p>
+
+<p>Detaches a range of values from the list. </p>
+<p>The objects are not released, so after this call: they have no owner and must be released manually. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>first</em>&nbsp;</td><td>The list position of the first value to remove. </td></tr>
@@ -632,7 +699,9 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Detaches a range of values from the list. The objects are not released, so after this call: they have no owner and must be released manually. </p>
+
+<p>Detaches a range of values from the list. </p>
+<p>The objects are not released, so after this call: they have no owner and must be released manually. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>first</em>&nbsp;</td><td>The index of the first value to remove. </td></tr>
@@ -659,6 +728,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether there are values in this container. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether there are values in the container. </dd></dl>
 
@@ -680,6 +750,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -700,6 +771,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an iterator for the element after the last element in the list. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>an iterator for the element after the last element in the list. </dd></dl>
 
@@ -722,6 +794,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes an indexed value contained within the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -758,6 +831,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes a range of values from the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -786,6 +860,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes the value at the given position within the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -822,6 +897,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes a range of values from the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -850,6 +926,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes a value contained within the list, once. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -878,6 +955,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an iterator for a given element in the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -885,7 +963,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>An iterator for the given item. If the item is not found in the list, the <a class="el" href="classFUObjectContainer.html#afa538b19b625b12df198dd5604d49ffa">end()</a> iterator is returned. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An iterator for the given item. If the item is not found in the list, the <a class="el" href="classFUObjectContainer.html#afa538b19b625b12df198dd5604d49ffa" title="Retrieves an iterator for the element after the last element in the list.">end()</a> iterator is returned. </dd></dl>
 
 </div>
 </div>
@@ -906,6 +984,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -926,6 +1005,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the first element of the container. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The first element in the container. </dd></dl>
 
@@ -947,6 +1027,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -985,6 +1066,7 @@ template&lt;class _It &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inserts a list of object in the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1023,6 +1105,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inserts an object in the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1060,6 +1143,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inserts an object in the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1089,6 +1173,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes an object from the container's owned list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1120,6 +1205,7 @@ template&lt;class INTEGER &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1143,6 +1229,7 @@ template&lt;class INTEGER &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -1163,6 +1250,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes the last value of the tracked object list. </p>
 
 </div>
@@ -1183,7 +1271,9 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Removes the first value of the object container. Warning: this function may result in large memory copies, since we use an array to contain objects. </p>
+
+<p>Removes the first value of the object container. </p>
+<p>Warning: this function may result in large memory copies, since we use an array to contain objects. </p>
 
 </div>
 </div>
@@ -1204,6 +1294,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds an object to the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1231,7 +1322,9 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Pre-caches the wanted number of pointers. Use this function to avoid many memory re-allocations. </p>
+
+<p>Pre-caches the wanted number of pointers. </p>
+<p>Use this function to avoid many memory re-allocations. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>count</em>&nbsp;</td><td>The wanted number of pre-cached pointers. </td></tr>
@@ -1257,6 +1350,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of elements in the container. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of elements in the container. </dd></dl>
 
@@ -1280,7 +1374,7 @@ template&lt;typename ObjectClass = FUObject&gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:54 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:24 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

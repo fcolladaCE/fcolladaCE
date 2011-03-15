@@ -69,31 +69,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#define _FCD_TARGETED_ENTITY_H_</span>
 <a name="l00022"></a>00022 <span class="preprocessor"></span>
 <a name="l00023"></a>00023 <span class="preprocessor">#ifndef _FCD_ENTITY_H_</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDEntity_8h.html">FCDocument/FCDEntity.h</a>&quot;</span>
+<a name="l00024"></a>00024 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDEntity_8h.html" title="This file contains the FCDEntity class.">FCDocument/FCDEntity.h</a>&quot;</span>
 <a name="l00025"></a>00025 <span class="preprocessor">#endif // _FCD_ENTITY_H_</span>
 <a name="l00026"></a>00026 <span class="preprocessor"></span>
-<a name="l00027"></a>00027 <span class="keyword">class </span><a class="code" href="classFCDSceneNode.html">FCDSceneNode</a>;
+<a name="l00027"></a>00027 <span class="keyword">class </span><a class="code" href="classFCDSceneNode.html" title="A COLLADA visual scene node.">FCDSceneNode</a>;
 <a name="l00028"></a>00028 
-<a name="l00041"></a><a class="code" href="classFCDTargetedEntity.html">00041</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDTargetedEntity.html">FCDTargetedEntity</a> : <span class="keyword">public</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>
+<a name="l00041"></a><a class="code" href="classFCDTargetedEntity.html">00041</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDTargetedEntity.html" title="A targeted entity.">FCDTargetedEntity</a> : <span class="keyword">public</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>
 <a name="l00042"></a>00042 {
 <a name="l00043"></a>00043 <span class="keyword">private</span>:
-<a name="l00044"></a>00044         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7">DeclareObjectType</a>(<a class="code" href="classFCDEntity.html">FCDEntity</a>);
+<a name="l00044"></a>00044         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7" title="Declares the object type for an object class.">DeclareObjectType</a>(<a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>);
 <a name="l00045"></a>00045 
 <a name="l00046"></a>00046         <span class="comment">// Target</span>
-<a name="l00047"></a>00047         <a class="code" href="FUParameter_8h.html#a1e8fec9493c1fbeb9488e401bff212a4">DeclareParameterPtr</a>(<a class="code" href="classFCDSceneNode.html">FCDSceneNode</a>, targetNode, FC(<span class="stringliteral">&quot;Target Node&quot;</span>));
+<a name="l00047"></a>00047         <a class="code" href="FUParameter_8h.html#a1e8fec9493c1fbeb9488e401bff212a4" title="See above.">DeclareParameterPtr</a>(<a class="code" href="classFCDSceneNode.html" title="A COLLADA visual scene node.">FCDSceneNode</a>, targetNode, FC(<span class="stringliteral">&quot;Target Node&quot;</span>));
 <a name="l00048"></a>00048 
 <a name="l00049"></a>00049 <span class="keyword">public</span>:
-<a name="l00054"></a>00054         <a class="code" href="classFCDTargetedEntity.html">FCDTargetedEntity</a>(<a class="code" href="classFCDocument.html">FCDocument</a>* document, <span class="keyword">const</span> <span class="keywordtype">char</span>* baseId);
+<a name="l00054"></a>00054         <a class="code" href="classFCDTargetedEntity.html" title="A targeted entity.">FCDTargetedEntity</a>(<a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>* document, <span class="keyword">const</span> <span class="keywordtype">char</span>* baseId);
 <a name="l00055"></a>00055 
-<a name="l00057"></a>00057         <span class="keyword">virtual</span> ~<a class="code" href="classFCDTargetedEntity.html">FCDTargetedEntity</a>();
+<a name="l00057"></a>00057         <span class="keyword">virtual</span> ~<a class="code" href="classFCDTargetedEntity.html" title="A targeted entity.">FCDTargetedEntity</a>();
 <a name="l00058"></a>00058 
-<a name="l00061"></a><a class="code" href="classFCDTargetedEntity.html#aa3b365694bdf46b5be98518607b66518">00061</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFCDTargetedEntity.html#aa3b365694bdf46b5be98518607b66518">HasTarget</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> targetNode != NULL; }
+<a name="l00061"></a><a class="code" href="classFCDTargetedEntity.html#aa3b365694bdf46b5be98518607b66518">00061</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFCDTargetedEntity.html#aa3b365694bdf46b5be98518607b66518" title="Retrieves whether a target is defined for this entity.">HasTarget</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> targetNode != NULL; }
 <a name="l00062"></a>00062 
-<a name="l00065"></a><a class="code" href="classFCDTargetedEntity.html#a50896d5a2017ab08f63bb499e8c09343">00065</a>         <span class="keyword">inline</span> <a class="code" href="classFCDSceneNode.html">FCDSceneNode</a>* <a class="code" href="classFCDTargetedEntity.html#a50896d5a2017ab08f63bb499e8c09343">GetTargetNode</a>() { <span class="keywordflow">return</span> targetNode; }
-<a name="l00066"></a><a class="code" href="classFCDTargetedEntity.html#a9261ef2dc3b5d387fb62f52ea20efa21">00066</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFCDSceneNode.html">FCDSceneNode</a>* <a class="code" href="classFCDTargetedEntity.html#a9261ef2dc3b5d387fb62f52ea20efa21">GetTargetNode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> targetNode; } 
-<a name="l00070"></a>00070         <span class="keywordtype">void</span> SetTargetNode(<a class="code" href="classFCDSceneNode.html">FCDSceneNode</a>* target);
+<a name="l00065"></a><a class="code" href="classFCDTargetedEntity.html#a50896d5a2017ab08f63bb499e8c09343">00065</a>         <span class="keyword">inline</span> <a class="code" href="classFCDSceneNode.html" title="A COLLADA visual scene node.">FCDSceneNode</a>* <a class="code" href="classFCDTargetedEntity.html#a50896d5a2017ab08f63bb499e8c09343" title="Retrieves the target visual scene node for this entity.">GetTargetNode</a>() { <span class="keywordflow">return</span> targetNode; }
+<a name="l00066"></a><a class="code" href="classFCDTargetedEntity.html#a9261ef2dc3b5d387fb62f52ea20efa21">00066</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classFCDSceneNode.html" title="A COLLADA visual scene node.">FCDSceneNode</a>* <a class="code" href="classFCDTargetedEntity.html#a9261ef2dc3b5d387fb62f52ea20efa21" title="See above.">GetTargetNode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> targetNode; } 
+<a name="l00070"></a>00070         <span class="keywordtype">void</span> SetTargetNode(<a class="code" href="classFCDSceneNode.html" title="A COLLADA visual scene node.">FCDSceneNode</a>* target);
 <a name="l00071"></a>00071 
-<a name="l00080"></a>00080         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>* <a class="code" href="classFCDEntity.html#afd21dc9f9dba45786012dea87f70b9fc">Clone</a>(<a class="code" href="classFCDEntity.html">FCDEntity</a>* clone = NULL, <span class="keywordtype">bool</span> cloneChildren = <span class="keyword">false</span>) <span class="keyword">const</span>;
+<a name="l00080"></a>00080         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* <a class="code" href="classFCDEntity.html#afd21dc9f9dba45786012dea87f70b9fc" title="Copies the entity information into a clone.">Clone</a>(<a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* clone = NULL, <span class="keywordtype">bool</span> cloneChildren = <span class="keyword">false</span>) <span class="keyword">const</span>;
 <a name="l00081"></a>00081 
 <a name="l00082"></a>00082 };
 <a name="l00083"></a>00083 
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:19 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:12 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

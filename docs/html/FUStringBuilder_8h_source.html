@@ -67,10 +67,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 
 <a name="l00021"></a>00021 <span class="preprocessor">#ifndef _FCU_STRING_BUILDER_</span>
 <a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define _FCU_STRING_BUILDER_</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUString_8h.html">FUString.h</a>&quot;</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FUString_8h.html" title="This file includes FUStringBuilder.h and FUStringConversion.h and defines important string-related ma...">FUString.h</a>&quot;</span>
 <a name="l00024"></a>00024 
 <a name="l00035"></a>00035 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Char&gt;
-<a name="l00036"></a><a class="code" href="classFUStringBuilderT.html">00036</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>
+<a name="l00036"></a><a class="code" href="classFUStringBuilderT.html">00036</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>
 <a name="l00037"></a>00037 {
 <a name="l00038"></a>00038 <span class="keyword">private</span>:
 <a name="l00039"></a>00039         Char* buffer;
@@ -78,27 +78,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00041"></a>00041         <span class="keywordtype">size_t</span> size;
 <a name="l00042"></a>00042 
 <a name="l00043"></a>00043 <span class="keyword">public</span>:
-<a name="l00045"></a><a class="code" href="classFUStringBuilderT.html#a2e14969ddb2b31c67625cb3b721d36c0">00045</a>         <span class="keyword">typedef</span> <a class="code" href="classfm_1_1stringT.html">fm::stringT&lt;Char&gt;</a> <a class="code" href="classfm_1_1stringT.html">String</a>;
+<a name="l00045"></a><a class="code" href="classFUStringBuilderT.html#a2e14969ddb2b31c67625cb3b721d36c0">00045</a>         <span class="keyword">typedef</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">fm::stringT&lt;Char&gt;</a> <a class="code" href="classfm_1_1stringT.html" title="A string template.">String</a>;
 <a name="l00046"></a>00046 
-<a name="l00049"></a>00049         <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html">String</a>&amp; sz);
+<a name="l00049"></a>00049         <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>(<span class="keyword">const</span> <a class="code" href="classfm_1_1stringT.html" title="A string template.">String</a>&amp; sz);
 <a name="l00050"></a>00050 
-<a name="l00054"></a>00054         <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>(<span class="keyword">const</span> Char* sz);
+<a name="l00054"></a>00054         <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>(<span class="keyword">const</span> Char* sz);
 <a name="l00055"></a>00055 
-<a name="l00059"></a>00059         <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>(Char ch, <span class="keywordtype">size_t</span> count);
+<a name="l00059"></a>00059         <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>(Char ch, <span class="keywordtype">size_t</span> count);
 <a name="l00060"></a>00060 
-<a name="l00064"></a>00064         <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>(<span class="keywordtype">size_t</span> reserved);
+<a name="l00064"></a>00064         <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>(<span class="keywordtype">size_t</span> reserved);
 <a name="l00065"></a>00065 
-<a name="l00067"></a>00067         <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>();
+<a name="l00067"></a>00067         <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>();
 <a name="l00068"></a>00068 
-<a name="l00071"></a>00071         ~<a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>();
+<a name="l00071"></a>00071         ~<a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>();
 <a name="l00072"></a>00072 
 <a name="l00079"></a>00079         <span class="keywordtype">void</span> reserve(<span class="keywordtype">size_t</span> length);
 <a name="l00080"></a>00080 
-<a name="l00083"></a><a class="code" href="classFUStringBuilderT.html#a5355e1bb17d7a1289fda368791f9bc65">00083</a>         <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="classFUStringBuilderT.html#a5355e1bb17d7a1289fda368791f9bc65">length</a>() { <span class="keywordflow">return</span> size; }
+<a name="l00083"></a><a class="code" href="classFUStringBuilderT.html#a5355e1bb17d7a1289fda368791f9bc65">00083</a>         <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="classFUStringBuilderT.html#a5355e1bb17d7a1289fda368791f9bc65" title="Retrieves the length of the content within the builder.">length</a>() { <span class="keywordflow">return</span> size; }
 <a name="l00084"></a>00084 
 <a name="l00087"></a>00087         <span class="keywordtype">void</span> clear();
 <a name="l00088"></a>00088 
-<a name="l00093"></a><a class="code" href="classFUStringBuilderT.html#af5b84ae04c1472ef5a83a6dfc4743622">00093</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFUStringBuilderT.html#af5b84ae04c1472ef5a83a6dfc4743622">empty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size == 0; }
+<a name="l00093"></a><a class="code" href="classFUStringBuilderT.html#af5b84ae04c1472ef5a83a6dfc4743622">00093</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFUStringBuilderT.html#af5b84ae04c1472ef5a83a6dfc4743622" title="Retrieves whether the builder is empty.">empty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size == 0; }
 <a name="l00094"></a>00094 
 <a name="l00097"></a>00097         <span class="keywordtype">void</span> append(Char c);
 <a name="l00098"></a>00098 
@@ -108,13 +108,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00107"></a>00107 
 <a name="l00112"></a>00112         <span class="keywordtype">void</span> append(<span class="keyword">const</span> Char* sz, <span class="keywordtype">size_t</span> len);
 <a name="l00113"></a>00113 
-<a name="l00116"></a>00116         <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>&amp; b);
+<a name="l00116"></a>00116         <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>&amp; b);
 <a name="l00117"></a>00117 
 <a name="l00121"></a>00121         <span class="keywordtype">void</span> append(<span class="keyword">const</span> int32 i);
 <a name="l00122"></a>00122         <span class="keywordtype">void</span> append(<span class="keyword">const</span> uint32 i); 
 <a name="l00123"></a>00123         <span class="keywordtype">void</span> append(<span class="keyword">const</span> uint64 i); 
 <a name="l00129"></a>00129         <span class="keywordtype">void</span> appendHex(uint8 i);
-<a name="l00130"></a><a class="code" href="classFUStringBuilderT.html#a0161b2dbfccbb2bdd9b6dff22d36cbe4">00130</a>         <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUStringBuilderT.html#a0161b2dbfccbb2bdd9b6dff22d36cbe4">appendHex</a>(<span class="keyword">const</span> T&amp; i) { <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <span class="keyword">sizeof</span>(T); ++j) <a class="code" href="classFUStringBuilderT.html#a0161b2dbfccbb2bdd9b6dff22d36cbe4">appendHex</a>(*(((uint8*)&amp;i) + j)); } 
+<a name="l00130"></a><a class="code" href="classFUStringBuilderT.html#a0161b2dbfccbb2bdd9b6dff22d36cbe4">00130</a>         <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUStringBuilderT.html#a0161b2dbfccbb2bdd9b6dff22d36cbe4" title="See above.">appendHex</a>(<span class="keyword">const</span> T&amp; i) { <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <span class="keyword">sizeof</span>(T); ++j) <a class="code" href="classFUStringBuilderT.html#a0161b2dbfccbb2bdd9b6dff22d36cbe4" title="See above.">appendHex</a>(*(((uint8*)&amp;i) + j)); } 
 <a name="l00132"></a>00132 <span class="preprocessor">#if defined(_WIN32)</span>
 <a name="l00133"></a>00133 <span class="preprocessor"></span>        <span class="keyword">inline</span> <span class="keywordtype">void</span> append(<span class="keywordtype">int</span> i) { append((int32) i); } 
 <a name="l00134"></a>00134 <span class="preprocessor">#ifdef _W64</span>
@@ -128,17 +128,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00142"></a>00142 <span class="preprocessor">#else</span>
 <a name="l00143"></a>00143 <span class="preprocessor"></span><span class="preprocessor">#ifndef _LP64</span>
 <a name="l00144"></a>00144 <span class="preprocessor"></span>        <span class="comment">// the following method is also append(uint64) on a 64 bits platform!</span>
-<a name="l00145"></a><a class="code" href="classFUStringBuilderT.html#a5a7e03af7f6bba4b7ac6bf80578b6c60">00145</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUStringBuilderT.html#a5a7e03af7f6bba4b7ac6bf80578b6c60">append</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> i) { <a class="code" href="classFUStringBuilderT.html#a5a7e03af7f6bba4b7ac6bf80578b6c60">append</a>((uint32) i); } 
+<a name="l00145"></a><a class="code" href="classFUStringBuilderT.html#a5a7e03af7f6bba4b7ac6bf80578b6c60">00145</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUStringBuilderT.html#a5a7e03af7f6bba4b7ac6bf80578b6c60" title="See above.">append</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> i) { <a class="code" href="classFUStringBuilderT.html#a5a7e03af7f6bba4b7ac6bf80578b6c60" title="See above.">append</a>((uint32) i); } 
 <a name="l00146"></a>00146 <span class="preprocessor">#endif</span>
-<a name="l00147"></a><a class="code" href="classFUStringBuilderT.html#a4f3055b60d9c69e3bebdddd15e1d9944">00147</a> <span class="preprocessor"></span>        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUStringBuilderT.html#a4f3055b60d9c69e3bebdddd15e1d9944">append</a>(<span class="keywordtype">long</span> i) { <a class="code" href="classFUStringBuilderT.html#a4f3055b60d9c69e3bebdddd15e1d9944">append</a>((int32) i); } 
+<a name="l00147"></a><a class="code" href="classFUStringBuilderT.html#a4f3055b60d9c69e3bebdddd15e1d9944">00147</a> <span class="preprocessor"></span>        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUStringBuilderT.html#a4f3055b60d9c69e3bebdddd15e1d9944" title="See above.">append</a>(<span class="keywordtype">long</span> i) { <a class="code" href="classFUStringBuilderT.html#a4f3055b60d9c69e3bebdddd15e1d9944" title="See above.">append</a>((int32) i); } 
 <a name="l00148"></a>00148 <span class="preprocessor">#endif // platform-switch.</span>
 <a name="l00149"></a>00149 <span class="preprocessor"></span>
 <a name="l00156"></a>00156         <span class="keywordtype">void</span> append(<span class="keywordtype">float</span> f);
 <a name="l00157"></a>00157         <span class="keywordtype">void</span> append(<span class="keywordtype">double</span> f); 
-<a name="l00161"></a>00161         <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code" href="classFMVector2.html">FMVector2</a>&amp; v);
-<a name="l00162"></a>00162         <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code" href="classFMVector3.html">FMVector3</a>&amp; v); 
-<a name="l00163"></a>00163         <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code" href="classFMVector4.html">FMVector4</a>&amp; v); 
-<a name="l00169"></a><a class="code" href="classFUStringBuilderT.html#ab721552d7de380e056fd7bf0eb4005dd">00169</a>         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYPE&gt; <span class="keyword">inline</span> <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>&amp; <a class="code" href="classFUStringBuilderT.html#ab721552d7de380e056fd7bf0eb4005dd">operator+=</a>(<span class="keyword">const</span> TYPE&amp; val) { append(val); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }
+<a name="l00161"></a>00161         <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code" href="classFMVector2.html" title="A 2 dimensional vector.">FMVector2</a>&amp; v);
+<a name="l00162"></a>00162         <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>&amp; v); 
+<a name="l00163"></a>00163         <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code" href="classFMVector4.html" title="A 4 dimensional vector.">FMVector4</a>&amp; v); 
+<a name="l00169"></a><a class="code" href="classFUStringBuilderT.html#ab721552d7de380e056fd7bf0eb4005dd">00169</a>         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYPE&gt; <span class="keyword">inline</span> <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>&amp; <a class="code" href="classFUStringBuilderT.html#ab721552d7de380e056fd7bf0eb4005dd" title="Appends a value to the content of the builder.">operator+=</a>(<span class="keyword">const</span> TYPE&amp; val) { append(val); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }
 <a name="l00170"></a>00170 
 <a name="l00175"></a>00175         <span class="keywordtype">void</span> appendLine(<span class="keyword">const</span> Char* sz);
 <a name="l00176"></a>00176 
@@ -146,10 +146,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00182"></a>00182 
 <a name="l00189"></a>00189         <span class="keywordtype">void</span> <span class="keyword">remove</span>(int32 start, int32 end);
 <a name="l00190"></a>00190 
-<a name="l00192"></a><a class="code" href="classFUStringBuilderT.html#a3ad0d96a574dd270bc8c0308ab54dd17">00192</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUStringBuilderT.html#a3ad0d96a574dd270bc8c0308ab54dd17">pop_back</a>() { <span class="keywordflow">if</span> (size &gt; 0) --size; }
+<a name="l00192"></a><a class="code" href="classFUStringBuilderT.html#a3ad0d96a574dd270bc8c0308ab54dd17">00192</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classFUStringBuilderT.html#a3ad0d96a574dd270bc8c0308ab54dd17" title="Removes the last character of the content of the builder.">pop_back</a>() { <span class="keywordflow">if</span> (size &gt; 0) --size; }
 <a name="l00193"></a>00193 
 <a name="l00197"></a><a class="code" href="classFUStringBuilderT.html#aeabb270f37052f15eb733d15a69e49dc">00197</a>         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYPE&gt; <span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">set</span>(<span class="keyword">const</span> TYPE&amp; val) { clear(); append(val); }
-<a name="l00198"></a><a class="code" href="classFUStringBuilderT.html#a7795fa3b99f62378fc69f7487d8de878">00198</a>         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYPE&gt; <span class="keyword">inline</span> <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT</a>&amp; <a class="code" href="classFUStringBuilderT.html#a7795fa3b99f62378fc69f7487d8de878">operator=</a>(<span class="keyword">const</span> TYPE&amp; val) { clear(); append(val); <span class="keywordflow">return</span> *<span class="keyword">this</span>; } 
+<a name="l00198"></a><a class="code" href="classFUStringBuilderT.html#a7795fa3b99f62378fc69f7487d8de878">00198</a>         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYPE&gt; <span class="keyword">inline</span> <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT</a>&amp; <a class="code" href="classFUStringBuilderT.html#a7795fa3b99f62378fc69f7487d8de878" title="See above.">operator=</a>(<span class="keyword">const</span> TYPE&amp; val) { clear(); append(val); <span class="keywordflow">return</span> *<span class="keyword">this</span>; } 
 <a name="l00202"></a>00202         String ToString() <span class="keyword">const</span>;
 <a name="l00203"></a>00203 
 <a name="l00208"></a>00208         <span class="keyword">const</span> Char* ToCharPtr() <span class="keyword">const</span>;
@@ -158,13 +158,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00217"></a>00217 
 <a name="l00223"></a>00223         int32 rindex(Char c) <span class="keyword">const</span>;
 <a name="l00224"></a>00224 
-<a name="l00227"></a><a class="code" href="classFUStringBuilderT.html#ae9c746ac5c0dc87b84ee53e51c1ab683">00227</a>         Char <a class="code" href="classFUStringBuilderT.html#ae9c746ac5c0dc87b84ee53e51c1ab683">back</a>()<span class="keyword"> const </span>{ <a class="code" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f">FUAssert</a>(size &gt; 0, <span class="keywordflow">return</span> (Char) 0); <span class="keywordflow">return</span> buffer[size-1]; }
+<a name="l00227"></a><a class="code" href="classFUStringBuilderT.html#ae9c746ac5c0dc87b84ee53e51c1ab683">00227</a>         Char <a class="code" href="classFUStringBuilderT.html#ae9c746ac5c0dc87b84ee53e51c1ab683" title="Retrieves the last character within the content of the builder.">back</a>()<span class="keyword"> const </span>{ <a class="code" href="FUAssert_8h.html#a72b8444eb608787f1db6bf1d53e0310f" title="Asserts that a condition is met.">FUAssert</a>(size &gt; 0, <span class="keywordflow">return</span> (Char) 0); <span class="keywordflow">return</span> buffer[size-1]; }
 <a name="l00228"></a>00228 
 <a name="l00229"></a>00229 <span class="keyword">private</span>:
 <a name="l00230"></a>00230         <span class="keywordtype">void</span> enlarge(<span class="keywordtype">size_t</span> minimum);
 <a name="l00231"></a>00231 };
 <a name="l00232"></a>00232 
-<a name="l00233"></a><a class="code" href="FUStringBuilder_8h.html#ac9304d0b916fe039cf204ce7e8111ce5">00233</a> <span class="keyword">typedef</span> <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT&lt;fchar&gt;</a> <a class="code" href="classFUStringBuilderT.html">FUStringBuilder</a>; 
+<a name="l00233"></a><a class="code" href="FUStringBuilder_8h.html#ac9304d0b916fe039cf204ce7e8111ce5">00233</a> <span class="keyword">typedef</span> <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilderT&lt;fchar&gt;</a> <a class="code" href="classFUStringBuilderT.html" title="A dynamically-sized string object.">FUStringBuilder</a>; 
 <a name="l00234"></a><a class="code" href="FUStringBuilder_8h.html#a10f5aebe21818e4328ad47e4a401bb65">00234</a> <span class="keyword">typedef</span> <a class="code" href="classFUStringBuilderT.html">FUStringBuilderT&lt;char&gt;</a> <a class="code" href="classFUStringBuilderT.html">FUSStringBuilder</a>;  
 <a name="l00236"></a>00236 <span class="preprocessor">#if defined(__APPLE__)</span>
 <a name="l00237"></a>00237 <span class="preprocessor"></span><span class="preprocessor">#include &quot;FUtils/FUStringBuilder.hpp&quot;</span>
@@ -188,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

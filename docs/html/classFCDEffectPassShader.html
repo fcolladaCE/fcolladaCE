@@ -57,6 +57,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FCDEffectPassShader" --><!-- doxytag: inherits="FCDObject" -->
+<p>A COLLADA shader.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FCDEffectPassShader_8h_source.html">FCDEffectPassShader.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FCDEffectPassShader:</div>
@@ -74,36 +77,64 @@ Inheritance diagram for FCDEffectPassShader:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#ae57864a08401f39717f7efda046a632f">FCDEffectPassShader</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDEffectPass.html">FCDEffectPass</a> *parent)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor: do not use directly.  <a href="#ae57864a08401f39717f7efda046a632f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a38684fa5bcf757fb8e71cdf3909c12d9">~FCDEffectPassShader</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a38684fa5bcf757fb8e71cdf3909c12d9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPass.html">FCDEffectPass</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a365da412e637795e1745e54d8358c115">GetParent</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the effect pass that contains this shader.  <a href="#a365da412e637795e1745e54d8358c115"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPass.html">FCDEffectPass</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a6bc5edd010e61c5724c16b3d7f29c6bd">GetParent</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6bc5edd010e61c5724c16b3d7f29c6bd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#ac3d106f0382036bda3a0a8d9bda95417">AffectsVertices</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets this shader as affecting vertices.  <a href="#ac3d106f0382036bda3a0a8d9bda95417"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a927b034d38cc794d291bca6a89efcf7c">AffectsFragments</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets this shader as affecting fragments/pixels.  <a href="#a927b034d38cc794d291bca6a89efcf7c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a6c044d94c60e622df3ce526d19dad566">IsFragmentShader</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this shader affects fragments/pixels.  <a href="#a6c044d94c60e622df3ce526d19dad566"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#afaae07ba360e49a3a3e9d44ed820469c">IsVertexShader</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether this shader affects vertices.  <a href="#afaae07ba360e49a3a3e9d44ed820469c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#ac3244952b3fd0fe46c39ef1f4b65a321">DEPRECATED</a> (3.05A, GetBindingCount and GetBinding(index)) void GetBindings() const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the list of bindings for this shader.  <a href="#ac3244952b3fd0fe46c39ef1f4b65a321"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a968248d378a857d4f9fca2b6b209847e">GetBindingCount</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the number of bindings for this shader.  <a href="#a968248d378a857d4f9fca2b6b209847e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassBind.html">FCDEffectPassBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#aa3cc0fa0e41ff5a3e0409ed6bd66bed4">GetBinding</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a binding contained in this shader.  <a href="#aa3cc0fa0e41ff5a3e0409ed6bd66bed4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPassBind.html">FCDEffectPassBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a7126aac03331d3f87b8ee109dd5fd199">GetBinding</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7126aac03331d3f87b8ee109dd5fd199"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPassBind.html">FCDEffectPassBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a7df9cd1c21d04856e7b3cf23b2aa9a2c">FindBindingReference</a> (const char *reference) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a binding for a given COLLADA reference.  <a href="#a7df9cd1c21d04856e7b3cf23b2aa9a2c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassBind.html">FCDEffectPassBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a7676d499e9a4d2f85d6db549e8e2d353">FindBindingReference</a> (const char *reference)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a7676d499e9a4d2f85d6db549e8e2d353"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectPassBind.html">FCDEffectPassBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a9271fa40c72737fcfa9e0c44a5ee2e11">FindBindingSymbol</a> (const char *symbol) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves a binding for a given FX symbol.  <a href="#a9271fa40c72737fcfa9e0c44a5ee2e11"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassBind.html">FCDEffectPassBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a5e4c5b5eafffbabc2ac6cefa3351a6f5">FindBindingSymbol</a> (const char *symbol)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5e4c5b5eafffbabc2ac6cefa3351a6f5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassBind.html">FCDEffectPassBind</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#ac99bba07d76ccb9be805d64fa7693bbd">AddBinding</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a new binding to this shader.  <a href="#ac99bba07d76ccb9be805d64fa7693bbd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a447a9016612aa1f0e836d7e04dc18963">DEPRECATED</a> (3.05A, binding-&gt;Release()) void ReleaseBinding(FCDEffectPassBind *binding)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases a binding contained within this shader.  <a href="#a447a9016612aa1f0e836d7e04dc18963"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a15899c058bde932cf352ab1f4741ac6e">GetCompilerTarget</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the compiler target information.  <a href="#a15899c058bde932cf352ab1f4741ac6e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a54510d91cdb8a8a0acb8e8de365751e9">SetCompilerTarget</a> (const fchar *_compilerTarget)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the compiler target information string.  <a href="#a54510d91cdb8a8a0acb8e8de365751e9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fstring</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a86a7b27f70b58589dd9cd8c0366c585a">GetCompilerOptions</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the compiler option string.  <a href="#a86a7b27f70b58589dd9cd8c0366c585a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#af7d74246e413298b96ef3568e2dd9913">SetCompilerOptions</a> (const fchar *_compilerOptions)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the compiler option string.  <a href="#af7d74246e413298b96ef3568e2dd9913"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfm_1_1stringT.html">fm::string</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#ad8500b40b69fa965e7c9339848d4c7ec">GetName</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the sub-id of the shader.  <a href="#ad8500b40b69fa965e7c9339848d4c7ec"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a7d907beb4ad9f6aa77ea6f2ca10366af">SetName</a> (const char *_name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the sub-id of the shader.  <a href="#a7d907beb4ad9f6aa77ea6f2ca10366af"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectCode.html">FCDEffectCode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#af2d089e27b1378d3e258a640307e89ba">GetCode</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the code inclusion that contains the code for this shader.  <a href="#af2d089e27b1378d3e258a640307e89ba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFCDEffectCode.html">FCDEffectCode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a5531627c61332877f09641f4d508f57a">GetCode</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a5531627c61332877f09641f4d508f57a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a0ca1befb72b2e5dec4a67bbb8b8167ea">SetCode</a> (<a class="el" href="classFCDEffectCode.html">FCDEffectCode</a> *_code)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the code inclusion that contains the code for this shader.  <a href="#a0ca1befb72b2e5dec4a67bbb8b8167ea"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFCDEffectPassShader.html#a409fbe05f0be92651824f238b7a89cfd">Clone</a> (<a class="el" href="classFCDEffectPassShader.html">FCDEffectPassShader</a> *clone) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones this shader.  <a href="#a409fbe05f0be92651824f238b7a89cfd"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A COLLADA shader.</p>
+<p>A COLLADA shader. </p>
 <p>The shader abstraction level in ColladaFX is contained within the effect passes. There are two types of shaders: vertex shaders and fragment/pixel shaders. A COLLADA shader contains a list of bindings to attach the effect parameters to the shader input parameters.</p>
 <p>The shader object also contains the compiler information necessary to build the shader: its code, the compiler target and the compiler options. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
@@ -131,7 +162,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor: do not use directly. Instead, use the <a class="el" href="classFCDEffectPass.html#a3f517cc9def825f5ed1eff92fd63767f">FCDEffectPass::AddShader</a>, <a class="el" href="classFCDEffectPass.html#a38b4b91ed84a52f4b3b4f564bc145adc">FCDEffectPass::AddVertexShader</a> or <a class="el" href="classFCDEffectPass.html#a994019f83ec1f8664ebe944ac1853972">FCDEffectPass::AddFragmentShader</a> functions. </p>
+
+<p>Constructor: do not use directly. </p>
+<p>Instead, use the <a class="el" href="classFCDEffectPass.html#a3f517cc9def825f5ed1eff92fd63767f" title="Adds a new shader to the pass.">FCDEffectPass::AddShader</a>, <a class="el" href="classFCDEffectPass.html#a38b4b91ed84a52f4b3b4f564bc145adc" title="Adds a new vertex shader to the pass.">FCDEffectPass::AddVertexShader</a> or <a class="el" href="classFCDEffectPass.html#a994019f83ec1f8664ebe944ac1853972" title="Adds a new fragment shader to the pass.">FCDEffectPass::AddFragmentShader</a> functions. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>The effect pass that contains this shader. </td></tr>
@@ -155,6 +188,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -174,6 +208,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds a new binding to this shader. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new binding. </dd></dl>
 
@@ -193,7 +228,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets this shader as affecting fragments/pixels. This sets the stage of the shader to the fragment/pixel pipeline. </p>
+
+<p>Sets this shader as affecting fragments/pixels. </p>
+<p>This sets the stage of the shader to the fragment/pixel pipeline. </p>
 
 </div>
 </div>
@@ -211,7 +248,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets this shader as affecting vertices. This sets the stage of the shader to the vertex pipeline. </p>
+
+<p>Sets this shader as affecting vertices. </p>
+<p>This sets the stage of the shader to the vertex pipeline. </p>
 
 </div>
 </div>
@@ -230,6 +269,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clones this shader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -265,6 +305,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Releases a binding contained within this shader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -299,6 +340,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the list of bindings for this shader. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The list of bindings. </dd></dl>
 
@@ -319,6 +361,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a binding for a given COLLADA reference. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -345,6 +388,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -364,6 +408,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a binding for a given FX symbol. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -390,6 +435,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -409,6 +455,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves a binding contained in this shader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -435,6 +482,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -453,6 +501,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the number of bindings for this shader. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of bindings. </dd></dl>
 
@@ -472,6 +521,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the code inclusion that contains the code for this shader. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The code inclusion. This pointer will be NULL if this shader is not yet attached to any code. </dd></dl>
 
@@ -491,6 +541,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -509,7 +560,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the compiler option string. The validity of this string depends on the type of the profile that contains this shader. </p>
+
+<p>Retrieves the compiler option string. </p>
+<p>The validity of this string depends on the type of the profile that contains this shader. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The compiler option string. </dd></dl>
 
 </div>
@@ -528,7 +581,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Retrieves the compiler target information. The validity of this string depends on the type of the profile that contains this shader. </p>
+
+<p>Retrieves the compiler target information. </p>
+<p>The validity of this string depends on the type of the profile that contains this shader. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The compiler target information string. </dd></dl>
 
 </div>
@@ -547,6 +602,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the sub-id of the shader. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The sub-id. </dd></dl>
 
@@ -566,6 +622,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -584,6 +641,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the effect pass that contains this shader. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The effect pass. </dd></dl>
 
@@ -603,6 +661,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this shader affects fragments/pixels. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this shader affects fragments/pixels. </dd></dl>
 
@@ -622,6 +681,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether this shader affects vertices. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Whether this shader affects vertices. </dd></dl>
 
@@ -642,6 +702,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the code inclusion that contains the code for this shader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -667,7 +728,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the compiler option string. The validity of this string depends on the type of the profile that contains this shader. </p>
+
+<p>Sets the compiler option string. </p>
+<p>The validity of this string depends on the type of the profile that contains this shader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_compilerOptions</em>&nbsp;</td><td>The compiler option string. </td></tr>
@@ -692,7 +755,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the compiler target information string. The validity of this string depends on the type of the profile that contains this shader. </p>
+
+<p>Sets the compiler target information string. </p>
+<p>The validity of this string depends on the type of the profile that contains this shader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_compilerTarget</em>&nbsp;</td><td>The compiler target information. </td></tr>
@@ -717,6 +782,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Sets the sub-id of the shader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -746,7 +812,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:32 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:16 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

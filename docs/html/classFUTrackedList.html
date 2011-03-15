@@ -62,6 +62,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FUTrackedList" --><!-- doxytag: inherits="pvector&lt; ObjectClass &gt;,FUTracker" -->
+<p>An object list.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FUTracker_8h_source.html">FUTracker.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FUTrackedList&lt; ObjectClass &gt;:</div>
@@ -89,51 +92,87 @@ typedef const_item *&nbsp;</td><td class="memItemRight" valign="bottom"><b>const
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#ad730ca17f8231dd5532666d8bf80f00d">~FUTrackedList</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#ad730ca17f8231dd5532666d8bf80f00d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a9635878f68eab4f01a4aa63ad383137b">clear</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clears the object tracked by this object list.  <a href="#a9635878f68eab4f01a4aa63ad383137b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ObjectClass *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a88c999b20be2b2a2047c7951beb253b7">front</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the first element of the container.  <a href="#a88c999b20be2b2a2047c7951beb253b7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const ObjectClass *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a99bc7ac1138ef4a3db1fd47bfb44c6ff">front</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a99bc7ac1138ef4a3db1fd47bfb44c6ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ObjectClass *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#ab5fdc0c96b25954dd2e79a689507f798">back</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the last element of the container.  <a href="#ab5fdc0c96b25954dd2e79a689507f798"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const ObjectClass *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a01ec28e90a1ffb6718a9aa2c99672867">back</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a01ec28e90a1ffb6718a9aa2c99672867"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ObjectClass *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a02f8513855a343d1446a0ee4a3ef189d">at</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an indexed object in the list.  <a href="#a02f8513855a343d1446a0ee4a3ef189d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const ObjectClass *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a754719106b3cb07fa3156116fdea6454">at</a> (size_t index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a754719106b3cb07fa3156116fdea6454"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class INTEGER &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">ObjectClass *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a2244033eb12fe7aa6814007eee7a0182">operator[]</a> (INTEGER index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a2244033eb12fe7aa6814007eee7a0182"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class INTEGER &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">const ObjectClass *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a0923280d552dd1ed005a2c592ff4f790">operator[]</a> (INTEGER index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a0923280d552dd1ed005a2c592ff4f790"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#ab85af6466a6a5b93fc8302fa12a8b719">begin</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an iterator for the first element in the list.  <a href="#ab85af6466a6a5b93fc8302fa12a8b719"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a526d284d9253181fe8494c357d07f1db">begin</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a526d284d9253181fe8494c357d07f1db"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a8ae5e0a0b3069c9789c04e1456d4f6e3">end</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an iterator for the element after the last element in the list.  <a href="#a8ae5e0a0b3069c9789c04e1456d4f6e3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a1fc9f5d51f4b7a94f4a99de81701e784">end</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a1fc9f5d51f4b7a94f4a99de81701e784"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#ac145979c8492c626cf0c892b8f72820c">find</a> (const ObjectClass *item)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves an iterator for a given element in the list.  <a href="#ac145979c8492c626cf0c892b8f72820c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#ade22159f06bc941388912ca7bf6f155b">find</a> (const ObjectClass *item) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#ade22159f06bc941388912ca7bf6f155b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a95ed03da98833cc720efe8871ec40fab">push_back</a> (ObjectClass *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds an object to the container's containment list.  <a href="#a95ed03da98833cc720efe8871ec40fab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a34c17d4a1bf1d5a4b3f7be84e6fe16dc">insert</a> (iterator _iterator, ObjectClass *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inserts an object in the container's containment list.  <a href="#a34c17d4a1bf1d5a4b3f7be84e6fe16dc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a17216d308ba13dac2f01ecf741346014">insert</a> (size_t index, ObjectClass *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inserts an object in the container's containment list.  <a href="#a17216d308ba13dac2f01ecf741346014"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class _It &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#ab6189e48c995d141272e97c99d15ec84">insert</a> (iterator _where, _It _startIterator, _It _endIterator)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inserts a list of object in the container's containment list.  <a href="#ab6189e48c995d141272e97c99d15ec84"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a5301cc416c6a5067d630b5a73eea2ad8">pop_back</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the last value of the tracked object list.  <a href="#a5301cc416c6a5067d630b5a73eea2ad8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a8d1e300064559488107187976f813386">erase</a> (iterator _it)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the value at the given position within the list.  <a href="#a8d1e300064559488107187976f813386"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#adf935cdfe7598293f763c4ae7f24e300">erase</a> (iterator first, iterator last)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a range of values from the list.  <a href="#adf935cdfe7598293f763c4ae7f24e300"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a2184b185e53a253e0233921db43da79c">erase</a> (size_t first, size_t last)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a range of values from the list.  <a href="#a2184b185e53a253e0233921db43da79c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a1b1ddb3de169490cc96bf5d2de2619f9">erase</a> (const ObjectClass *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes a value contained within the list, once.  <a href="#a1b1ddb3de169490cc96bf5d2de2619f9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#aad03167cf0af9eb14597a5bde9c9aa4a">erase</a> (size_t index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes an indexed value contained within the list.  <a href="#aad03167cf0af9eb14597a5bde9c9aa4a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#aa63f9fba707a10b006cda1f8baf125b0">TracksObject</a> (const <a class="el" href="classFUTrackable.html">FUTrackable</a> *object) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves whether an object is contained by this container.  <a href="#aa63f9fba707a10b006cda1f8baf125b0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFUTrackedList.html">FUTrackedList</a>&lt; ObjectClass &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a14a3605c6453a24a61a681af1a3d7f69">operator=</a> (const <a class="el" href="classFUTrackedList.html">FUTrackedList</a>&lt; ObjectClass &gt; &amp;other)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clones a list of tracked objects.  <a href="#a14a3605c6453a24a61a681af1a3d7f69"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a0219343188d5ee72516e9bef1609489c">empty</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inherited from pvector.  <a href="#a0219343188d5ee72516e9bef1609489c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a4d1e76713092ed2bf08c982e78fe4bd2">size</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inherited from pvector.  <a href="#a4d1e76713092ed2bf08c982e78fe4bd2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a34cbbb2273ffda83a32cb6ae7e77f644">reserve</a> (size_t count)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inherited from pvector.  <a href="#a34cbbb2273ffda83a32cb6ae7e77f644"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a463ffe1ab7a33bedf26cc47f516b5371">contains</a> (const ObjectClass *value) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inherited from pvector.  <a href="#a463ffe1ab7a33bedf26cc47f516b5371"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#a92eaa0b3fdf974082bec7ac63c9bf86e">release</a> (const ObjectClass *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Releases a value contained within a list.  <a href="#a92eaa0b3fdf974082bec7ac63c9bf86e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#ac8852b52fe35d11dc65ba87161431a81">pop_front</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the first value of the tracked object list.  <a href="#ac8852b52fe35d11dc65ba87161431a81"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFUTrackedList.html#aa4133eacd415bfb7650543870eadcc17">OnObjectReleased</a> (<a class="el" href="classFUTrackable.html">FUTrackable</a> *object)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes an object from the container's containment list.  <a href="#aa4133eacd415bfb7650543870eadcc17"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;class ObjectClass = FUTrackable&gt;<br/>
  class FUTrackedList&lt; ObjectClass &gt;</h3>
 
-<p>An object list. Based on top of our modified version of the STL vector class, this contained object list holds pointers to some <a class="el" href="classFUTrackable.html">FUTrackable</a> derived class and automatically removes objects when they are deleted. </p>
+<p>An object list. </p>
+<p>Based on top of our modified version of the STL vector class, this contained object list holds pointers to some <a class="el" href="classFUTrackable.html" title="A trackable object.">FUTrackable</a> derived class and automatically removes objects when they are deleted. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad730ca17f8231dd5532666d8bf80f00d"></a><!-- doxytag: member="FUTrackedList::~FUTrackedList" ref="ad730ca17f8231dd5532666d8bf80f00d" args="()" -->
 <div class="memitem">
@@ -151,6 +190,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Destructor. </p>
 
 </div>
@@ -173,6 +213,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an indexed object in the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -201,6 +242,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -221,6 +263,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -241,6 +284,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the last element of the container. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The last element in the container. </dd></dl>
 
@@ -262,6 +306,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an iterator for the first element in the list. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>an iterator for the first element in the list. </dd></dl>
 
@@ -283,6 +328,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -303,6 +349,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Clears the object tracked by this object list. </p>
 
 </div>
@@ -324,6 +371,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inherited from pvector. </p>
 
 </div>
@@ -344,6 +392,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inherited from pvector. </p>
 
 </div>
@@ -364,6 +413,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an iterator for the element after the last element in the list. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>an iterator for the element after the last element in the list. </dd></dl>
 
@@ -385,6 +435,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -406,6 +457,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes the value at the given position within the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -442,6 +494,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes a range of values from the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -479,6 +532,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes a range of values from the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -507,6 +561,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes a value contained within the list, once. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -535,6 +590,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes an indexed value contained within the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -562,6 +618,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves an iterator for a given element in the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -569,7 +626,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>An iterator for the given item. If the item is not found in the list, the <a class="el" href="classFUTrackedList.html#a8ae5e0a0b3069c9789c04e1456d4f6e3">end()</a> iterator is returned. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An iterator for the given item. If the item is not found in the list, the <a class="el" href="classFUTrackedList.html#a8ae5e0a0b3069c9789c04e1456d4f6e3" title="Retrieves an iterator for the element after the last element in the list.">end()</a> iterator is returned. </dd></dl>
 
 </div>
 </div>
@@ -590,6 +647,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -610,6 +668,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the first element of the container. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The first element in the container. </dd></dl>
 
@@ -631,6 +690,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -661,6 +721,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inserts an object in the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -699,6 +760,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inserts an object in the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -744,6 +806,7 @@ template&lt;class _It &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inserts a list of object in the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -773,6 +836,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes an object from the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -802,7 +866,9 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Clones a list of tracked objects. This list will stop tracking all its current tracked objects and will start tracking the objects within the other list. </p>
+
+<p>Clones a list of tracked objects. </p>
+<p>This list will stop tracking all its current tracked objects and will start tracking the objects within the other list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>other</em>&nbsp;</td><td>A second list of tracked objects. </td></tr>
@@ -832,6 +898,7 @@ template&lt;class INTEGER &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -855,6 +922,7 @@ template&lt;class INTEGER &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -875,6 +943,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes the last value of the tracked object list. </p>
 
 </div>
@@ -895,6 +964,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Removes the first value of the tracked object list. </p>
 
 </div>
@@ -916,6 +986,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Adds an object to the container's containment list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -943,7 +1014,9 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Releases a value contained within a list. Use this function only if there is no duplicate pointers within the list. </p>
+
+<p>Releases a value contained within a list. </p>
+<p>Use this function only if there is no duplicate pointers within the list. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>The value, contained within the list, to release. </td></tr>
@@ -971,6 +1044,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inherited from pvector. </p>
 
 </div>
@@ -991,6 +1065,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Inherited from pvector. </p>
 
 </div>
@@ -1012,6 +1087,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves whether an object is contained by this container. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1042,7 +1118,7 @@ template&lt;class ObjectClass = FUTrackable&gt; </div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:59 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:26 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

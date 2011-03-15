@@ -63,50 +63,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 <span class="preprocessor"></span><span class="preprocessor">#define _FCD_GEOMETRY_H_</span>
 <a name="l00017"></a>00017 <span class="preprocessor"></span>
 <a name="l00018"></a>00018 <span class="preprocessor">#ifndef _FCD_ENTITY_H_</span>
-<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDEntity_8h.html">FCDocument/FCDEntity.h</a>&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="FCDEntity_8h.html" title="This file contains the FCDEntity class.">FCDocument/FCDEntity.h</a>&quot;</span>
 <a name="l00020"></a>00020 <span class="preprocessor">#endif // _FCD_ENTITY_H_</span>
 <a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#ifndef _FU_DAE_ENUM_H_</span>
 <a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#include &quot;FUtils/FUDaeEnum.h&quot;</span>
 <a name="l00023"></a>00023 <span class="preprocessor">#endif // _FU_DAE_ENUM_H_</span>
 <a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="keyword">class </span><a class="code" href="classFCDocument.html">FCDocument</a>;
-<a name="l00026"></a>00026 <span class="keyword">class </span><a class="code" href="classFCDGeometryMesh.html">FCDGeometryMesh</a>;
-<a name="l00027"></a>00027 <span class="keyword">class </span><a class="code" href="classFCDGeometrySpline.html">FCDGeometrySpline</a>;
+<a name="l00025"></a>00025 <span class="keyword">class </span><a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>;
+<a name="l00026"></a>00026 <span class="keyword">class </span><a class="code" href="classFCDGeometryMesh.html" title="A COLLADA geometric mesh.">FCDGeometryMesh</a>;
+<a name="l00027"></a>00027 <span class="keyword">class </span><a class="code" href="classFCDGeometrySpline.html" title="A COLLADA geometric spline.">FCDGeometrySpline</a>;
 <a name="l00028"></a>00028 
-<a name="l00053"></a><a class="code" href="classFCDGeometry.html">00053</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDGeometry.html">FCDGeometry</a> : <span class="keyword">public</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>
+<a name="l00053"></a><a class="code" href="classFCDGeometry.html">00053</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFCDGeometry.html" title="A COLLADA geometry entity.">FCDGeometry</a> : <span class="keyword">public</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>
 <a name="l00054"></a>00054 {
 <a name="l00055"></a>00055 <span class="keyword">private</span>:
-<a name="l00056"></a>00056         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7">DeclareObjectType</a>(<a class="code" href="classFCDEntity.html">FCDEntity</a>);
+<a name="l00056"></a>00056         <a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7" title="Declares the object type for an object class.">DeclareObjectType</a>(<a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>);
 <a name="l00057"></a>00057 
 <a name="l00058"></a>00058         <span class="comment">// Contains only one of the following, in order of importance.</span>
-<a name="l00059"></a>00059         <a class="code" href="FUParameter_8h.html#af04d16c1cc16a87e7d54491f23dc4fe6">DeclareParameterRef</a>(<a class="code" href="classFCDGeometryMesh.html">FCDGeometryMesh</a>, mesh, FC(<span class="stringliteral">&quot;Mesh&quot;</span>));
-<a name="l00060"></a>00060         <a class="code" href="FUParameter_8h.html#af04d16c1cc16a87e7d54491f23dc4fe6">DeclareParameterRef</a>(<a class="code" href="classFCDGeometrySpline.html">FCDGeometrySpline</a>, spline, FC(<span class="stringliteral">&quot;Spline&quot;</span>));
+<a name="l00059"></a>00059         <a class="code" href="FUParameter_8h.html#af04d16c1cc16a87e7d54491f23dc4fe6" title="See above.">DeclareParameterRef</a>(<a class="code" href="classFCDGeometryMesh.html" title="A COLLADA geometric mesh.">FCDGeometryMesh</a>, mesh, FC(<span class="stringliteral">&quot;Mesh&quot;</span>));
+<a name="l00060"></a>00060         <a class="code" href="FUParameter_8h.html#af04d16c1cc16a87e7d54491f23dc4fe6" title="See above.">DeclareParameterRef</a>(<a class="code" href="classFCDGeometrySpline.html" title="A COLLADA geometric spline.">FCDGeometrySpline</a>, spline, FC(<span class="stringliteral">&quot;Spline&quot;</span>));
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062 <span class="keyword">public</span>:
-<a name="l00066"></a>00066         <a class="code" href="classFCDGeometry.html">FCDGeometry</a>(<a class="code" href="classFCDocument.html">FCDocument</a>* document);
+<a name="l00066"></a>00066         <a class="code" href="classFCDGeometry.html" title="A COLLADA geometry entity.">FCDGeometry</a>(<a class="code" href="classFCDocument.html" title="The top class for the COLLADA object model.">FCDocument</a>* document);
 <a name="l00067"></a>00067 
-<a name="l00069"></a>00069         <span class="keyword">virtual</span> ~<a class="code" href="classFCDGeometry.html">FCDGeometry</a>();
+<a name="l00069"></a>00069         <span class="keyword">virtual</span> ~<a class="code" href="classFCDGeometry.html" title="A COLLADA geometry entity.">FCDGeometry</a>();
 <a name="l00070"></a>00070 
-<a name="l00074"></a><a class="code" href="classFCDGeometry.html#a5ee6d764e3446b9380d9386c7524991d">00074</a>         <span class="keywordtype">void</span> <a class="code" href="classFCDGeometry.html#a5ee6d764e3446b9380d9386c7524991d">SetMesh</a>(<a class="code" href="classFCDGeometryMesh.html">FCDGeometryMesh</a>* data){ mesh = data; }
-<a name="l00075"></a>00075         <span class="keywordtype">void</span> SetSpline(<a class="code" href="classFCDGeometrySpline.html">FCDGeometrySpline</a>* data){ spline = data; } 
-<a name="l00080"></a><a class="code" href="classFCDGeometry.html#a220b50045d5a815dce0c1be69e06f926">00080</a>         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7">Type</a> <a class="code" href="classFCDGeometry.html#a220b50045d5a815dce0c1be69e06f926">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> GEOMETRY; }
+<a name="l00074"></a><a class="code" href="classFCDGeometry.html#a5ee6d764e3446b9380d9386c7524991d">00074</a>         <span class="keywordtype">void</span> <a class="code" href="classFCDGeometry.html#a5ee6d764e3446b9380d9386c7524991d" title="[INTERNAL] Set geometry information.">SetMesh</a>(<a class="code" href="classFCDGeometryMesh.html" title="A COLLADA geometric mesh.">FCDGeometryMesh</a>* data){ mesh = data; }
+<a name="l00075"></a>00075         <span class="keywordtype">void</span> SetSpline(<a class="code" href="classFCDGeometrySpline.html" title="A COLLADA geometric spline.">FCDGeometrySpline</a>* data){ spline = data; } 
+<a name="l00080"></a><a class="code" href="classFCDGeometry.html#a220b50045d5a815dce0c1be69e06f926">00080</a>         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html#a9301a4bd5f4d4190ec13e40db4effdd7" title="The types of entity classes.">Type</a> <a class="code" href="classFCDGeometry.html#a220b50045d5a815dce0c1be69e06f926" title="see above">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> GEOMETRY; }
 <a name="l00081"></a>00081 
-<a name="l00084"></a><a class="code" href="classFCDGeometry.html#a2c8f918ca0734d57fc32f7b06ba2dcd1">00084</a>         <span class="keywordtype">bool</span> <a class="code" href="classFCDGeometry.html#a2c8f918ca0734d57fc32f7b06ba2dcd1">IsMesh</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mesh != NULL; }
+<a name="l00084"></a><a class="code" href="classFCDGeometry.html#a2c8f918ca0734d57fc32f7b06ba2dcd1">00084</a>         <span class="keywordtype">bool</span> <a class="code" href="classFCDGeometry.html#a2c8f918ca0734d57fc32f7b06ba2dcd1" title="Retrieves whether the type of this geometry is a mesh.">IsMesh</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mesh != NULL; }
 <a name="l00085"></a>00085 
-<a name="l00089"></a><a class="code" href="classFCDGeometry.html#acf98b948f99bb3f83cb6c09db05877b5">00089</a>         <a class="code" href="classFCDGeometryMesh.html">FCDGeometryMesh</a>* <a class="code" href="classFCDGeometry.html#acf98b948f99bb3f83cb6c09db05877b5">GetMesh</a>() { <span class="keywordflow">return</span> mesh; }
-<a name="l00090"></a><a class="code" href="classFCDGeometry.html#acf3bf2789cfb07effcf66b8fe74d1478">00090</a>         <span class="keyword">const</span> <a class="code" href="classFCDGeometryMesh.html">FCDGeometryMesh</a>* <a class="code" href="classFCDGeometry.html#acf3bf2789cfb07effcf66b8fe74d1478">GetMesh</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mesh; } 
-<a name="l00095"></a>00095         <a class="code" href="classFCDGeometryMesh.html">FCDGeometryMesh</a>* CreateMesh();
+<a name="l00089"></a><a class="code" href="classFCDGeometry.html#acf98b948f99bb3f83cb6c09db05877b5">00089</a>         <a class="code" href="classFCDGeometryMesh.html" title="A COLLADA geometric mesh.">FCDGeometryMesh</a>* <a class="code" href="classFCDGeometry.html#acf98b948f99bb3f83cb6c09db05877b5" title="Retrieves the mesh information structure for this geometry.">GetMesh</a>() { <span class="keywordflow">return</span> mesh; }
+<a name="l00090"></a><a class="code" href="classFCDGeometry.html#acf3bf2789cfb07effcf66b8fe74d1478">00090</a>         <span class="keyword">const</span> <a class="code" href="classFCDGeometryMesh.html" title="A COLLADA geometric mesh.">FCDGeometryMesh</a>* <a class="code" href="classFCDGeometry.html#acf3bf2789cfb07effcf66b8fe74d1478" title="See above.">GetMesh</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mesh; } 
+<a name="l00095"></a>00095         <a class="code" href="classFCDGeometryMesh.html" title="A COLLADA geometric mesh.">FCDGeometryMesh</a>* CreateMesh();
 <a name="l00096"></a>00096 
-<a name="l00099"></a><a class="code" href="classFCDGeometry.html#a939f0b6f72a6178fc38d8c09d2b4c5e2">00099</a>         <span class="keywordtype">bool</span> <a class="code" href="classFCDGeometry.html#a939f0b6f72a6178fc38d8c09d2b4c5e2">IsSpline</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> spline != NULL; }
+<a name="l00099"></a><a class="code" href="classFCDGeometry.html#a939f0b6f72a6178fc38d8c09d2b4c5e2">00099</a>         <span class="keywordtype">bool</span> <a class="code" href="classFCDGeometry.html#a939f0b6f72a6178fc38d8c09d2b4c5e2" title="Retrieves whether the type of this geometry is a spline.">IsSpline</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> spline != NULL; }
 <a name="l00100"></a>00100 
-<a name="l00104"></a><a class="code" href="classFCDGeometry.html#ae0e0c4d96306a22cc89682058cbe95c0">00104</a>         <a class="code" href="classFCDGeometrySpline.html">FCDGeometrySpline</a>* <a class="code" href="classFCDGeometry.html#ae0e0c4d96306a22cc89682058cbe95c0">GetSpline</a>() { <span class="keywordflow">return</span> spline; }
-<a name="l00105"></a><a class="code" href="classFCDGeometry.html#a9054bad549b0e2e904210d8068b02792">00105</a>         <span class="keyword">const</span> <a class="code" href="classFCDGeometrySpline.html">FCDGeometrySpline</a>* <a class="code" href="classFCDGeometry.html#a9054bad549b0e2e904210d8068b02792">GetSpline</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> spline; } 
-<a name="l00110"></a>00110         <a class="code" href="classFCDGeometrySpline.html">FCDGeometrySpline</a>* CreateSpline();
+<a name="l00104"></a><a class="code" href="classFCDGeometry.html#ae0e0c4d96306a22cc89682058cbe95c0">00104</a>         <a class="code" href="classFCDGeometrySpline.html" title="A COLLADA geometric spline.">FCDGeometrySpline</a>* <a class="code" href="classFCDGeometry.html#ae0e0c4d96306a22cc89682058cbe95c0" title="Retrieves the spline information structure for this geometry.">GetSpline</a>() { <span class="keywordflow">return</span> spline; }
+<a name="l00105"></a><a class="code" href="classFCDGeometry.html#a9054bad549b0e2e904210d8068b02792">00105</a>         <span class="keyword">const</span> <a class="code" href="classFCDGeometrySpline.html" title="A COLLADA geometric spline.">FCDGeometrySpline</a>* <a class="code" href="classFCDGeometry.html#a9054bad549b0e2e904210d8068b02792" title="See above.">GetSpline</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> spline; } 
+<a name="l00110"></a>00110         <a class="code" href="classFCDGeometrySpline.html" title="A COLLADA geometric spline.">FCDGeometrySpline</a>* CreateSpline();
 <a name="l00111"></a>00111 
 <a name="l00112"></a>00112 
-<a name="l00115"></a><a class="code" href="classFCDGeometry.html#a82d47e5b122836f234ff9f4e8a04bdc5">00115</a>         <span class="keywordtype">bool</span> <a class="code" href="classFCDGeometry.html#a82d47e5b122836f234ff9f4e8a04bdc5">IsPSurface</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }
+<a name="l00115"></a><a class="code" href="classFCDGeometry.html#a82d47e5b122836f234ff9f4e8a04bdc5">00115</a>         <span class="keywordtype">bool</span> <a class="code" href="classFCDGeometry.html#a82d47e5b122836f234ff9f4e8a04bdc5" title="Retrieves whether the type of this geometry is a parameterized surface.">IsPSurface</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }
 <a name="l00116"></a>00116 
-<a name="l00123"></a>00123         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html">FCDEntity</a>* <a class="code" href="classFCDEntity.html#afd21dc9f9dba45786012dea87f70b9fc">Clone</a>(<a class="code" href="classFCDEntity.html">FCDEntity</a>* clone = NULL, <span class="keywordtype">bool</span> cloneChildren = <span class="keyword">false</span>) <span class="keyword">const</span>;
+<a name="l00123"></a>00123         <span class="keyword">virtual</span> <a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* <a class="code" href="classFCDEntity.html#afd21dc9f9dba45786012dea87f70b9fc" title="Copies the entity information into a clone.">Clone</a>(<a class="code" href="classFCDEntity.html" title="A COLLADA entity.">FCDEntity</a>* clone = NULL, <span class="keywordtype">bool</span> cloneChildren = <span class="keyword">false</span>) <span class="keyword">const</span>;
 <a name="l00124"></a>00124 };
 <a name="l00125"></a>00125 
 <a name="l00126"></a>00126 <span class="preprocessor">#endif // _FCD_GEOMETRY_H_</span>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:19 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:11 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

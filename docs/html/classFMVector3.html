@@ -62,69 +62,91 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="FMVector3" -->
+<p>A 3 dimensional vector.  
+<a href="#_details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FMVector3_8h_source.html">FMVector3.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a7cee33ae8a870a7b7e14669fe599461b">FMVector3</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cee33ae8a870a7b7e14669fe599461b"></a><!-- doxytag: member="FMVector3::FMVector3" ref="a7cee33ae8a870a7b7e14669fe599461b" args="()" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a7cee33ae8a870a7b7e14669fe599461b">FMVector3</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an empty <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#ac4ebdd15669aea066ea5858b8a7deec5">FMVector3</a> (float _x, float _y, float _z)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> with the coordinates given.  <a href="#ac4ebdd15669aea066ea5858b8a7deec5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#ab99057d6a4d1e5f595cb2ffdb8367d76">FMVector3</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;rhs)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copy constuctor.  <a href="#ab99057d6a4d1e5f595cb2ffdb8367d76"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a7d031ab14f2635b737511cb2ac377a2c">FMVector3</a> (const <a class="el" href="classFMVector4.html">FMVector4</a> &amp;vect4)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a7d031ab14f2635b737511cb2ac377a2c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#aeda87a2ab88edfd0275cfa9dd196cdc3">FMVector3</a> (const float *source, uint32 startIndex=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> from a list of floating-point values.  <a href="#aeda87a2ab88edfd0275cfa9dd196cdc3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a6361844cc95f7b488c99bb7b33e70e32">FMVector3</a> (const double *source, uint32 startIndex=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See above.  <a href="#a6361844cc95f7b488c99bb7b33e70e32"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#abf0253baa904834ecfc026869f84f634">LengthSquared</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the squared length of the vector.  <a href="#abf0253baa904834ecfc026869f84f634"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a4afad998497b127652eb14048932dd36">Length</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the length of the vector.  <a href="#a4afad998497b127652eb14048932dd36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a1cf1c273e7462d8b7d07d5795e3abaab">NormalizeIt</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Normalizes this vector.  <a href="#a1cf1c273e7462d8b7d07d5795e3abaab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a3d32f0806d047b4a4d34bac48842451b">Normalize</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a normalized <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> with the same direction as this vector.  <a href="#a3d32f0806d047b4a4d34bac48842451b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a1fe5b378f95449817837dc0ecadf1ccf">Project</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;unto)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Project this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> onto another <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>.  <a href="#a1fe5b378f95449817837dc0ecadf1ccf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a02d02648049d4acb0868f42bf99ae1c3">Projected</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;unto) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the projection of this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> onto another <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>.  <a href="#a02d02648049d4acb0868f42bf99ae1c3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a767d55b848c49e297cd683ca961fe138">operator float *</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> as an array of <code>floats</code>.  <a href="#a767d55b848c49e297cd683ca961fe138"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#aa293da50dcc86b53884296e2ac8ca578">operator const float *</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> as an array of <code>floats</code>.  <a href="#aa293da50dcc86b53884296e2ac8ca578"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a9e59e251faad4951e50db8f04b7b8481">Set</a> (float <a class="el" href="classFMVector3.html#ab31613614892bba88807d31b2c9ee87e">x</a>, float <a class="el" href="classFMVector3.html#a6e8a45596a095d86205557d7231ef973">y</a>, float <a class="el" href="classFMVector3.html#ad912906661058ab718fb887ad67f5ad4">z</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the values of this vector.  <a href="#a9e59e251faad4951e50db8f04b7b8481"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a8b02f3c679758d31f1c5208c954cdbb9">operator=</a> (const float *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Assign this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> to the given float array.  <a href="#a8b02f3c679758d31f1c5208c954cdbb9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFMVector3.html">FMVector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a4732a6439ff955252445b45b054ee0bb">operator=</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;rhs)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Assigns the <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> passed to outselves.  <a href="#a4732a6439ff955252445b45b054ee0bb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a7ec4ab34895012f156add04613322c82">ComponentMinimum</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;min)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Update each component of this FMVector to the minimum of two FMVector3s.  <a href="#a7ec4ab34895012f156add04613322c82"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a90460eb75019e378d47d7fbdbb754398">ComponentMinimum</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the smallest component of the vector.  <a href="#a90460eb75019e378d47d7fbdbb754398"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a8682b0a239be2b72b85c3ff43b30d9e2">ComponentMaximum</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;max)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Update each component of this FMVector to the maximum of two FMVector3s.  <a href="#a8682b0a239be2b72b85c3ff43b30d9e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a5f3b1065cb7615be6016be00ec6d5d49">ComponentMaximum</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the largest component of the vector.  <a href="#a5f3b1065cb7615be6016be00ec6d5d49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a0bbd056f588ca19bcaec3b4b92ff8351">ComponentClamp</a> (const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;min, const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;max)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clamp each component of this FMVector by the corresponding components in the specified min and max <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>.  <a href="#a0bbd056f588ca19bcaec3b4b92ff8351"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a370f45ad1365232180b34d6eec7d3f0e">ComponentAverage</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retrieves the average of the three vector components.  <a href="#a370f45ad1365232180b34d6eec7d3f0e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#ab31613614892bba88807d31b2c9ee87e">x</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The first coordinate.  <a href="#ab31613614892bba88807d31b2c9ee87e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a6e8a45596a095d86205557d7231ef973">y</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The second coordinate.  <a href="#a6e8a45596a095d86205557d7231ef973"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#ad912906661058ab718fb887ad67f5ad4">z</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The third coordinate.  <a href="#ad912906661058ab718fb887ad67f5ad4"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a363010f82c60ec1d53a495de6284daf7">XAxis</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a4e67235dec2d974161ecb965b6590555">YAxis</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a3f1666b8e732a6480e3e3ac3416d0a22">ZAxis</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a886c355491c083e2664286caa7aa9ed8">Origin</a> = <a class="el" href="classFMVector3.html#a18fc0513121c660cc2dc3f172d698adb">FMVector3::Zero</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a363010f82c60ec1d53a495de6284daf7"></a><!-- doxytag: member="FMVector3::XAxis" ref="a363010f82c60ec1d53a495de6284daf7" args="" -->
+static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a363010f82c60ec1d53a495de6284daf7">XAxis</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> representing the x axis. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e67235dec2d974161ecb965b6590555"></a><!-- doxytag: member="FMVector3::YAxis" ref="a4e67235dec2d974161ecb965b6590555" args="" -->
+static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a4e67235dec2d974161ecb965b6590555">YAxis</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> representing the y axis. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f1666b8e732a6480e3e3ac3416d0a22"></a><!-- doxytag: member="FMVector3::ZAxis" ref="a3f1666b8e732a6480e3e3ac3416d0a22" args="" -->
+static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a3f1666b8e732a6480e3e3ac3416d0a22">ZAxis</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> representing the z axis. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a886c355491c083e2664286caa7aa9ed8"></a><!-- doxytag: member="FMVector3::Origin" ref="a886c355491c083e2664286caa7aa9ed8" args="" -->
+static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a886c355491c083e2664286caa7aa9ed8">Origin</a> = <a class="el" href="classFMVector3.html#a18fc0513121c660cc2dc3f172d698adb">FMVector3::Zero</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> representing the origin. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a18fc0513121c660cc2dc3f172d698adb">Zero</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> containing all zeroes: (0,0,0).  <a href="#a18fc0513121c660cc2dc3f172d698adb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classFMVector3.html">FMVector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFMVector3.html#a7f981857b8d0f3f6839c0a9ff0c3e430">One</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> containing all ones: (1,1,1).  <a href="#a7f981857b8d0f3f6839c0a9ff0c3e430"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A 3 dimensional vector.</p>
+<p>A 3 dimensional vector. </p>
 <p>Simple, non-optimized vector class: * is the dot-product, ^ is the cross-product. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7cee33ae8a870a7b7e14669fe599461b"></a><!-- doxytag: member="FMVector3::FMVector3" ref="a7cee33ae8a870a7b7e14669fe599461b" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FMVector3::FMVector3 </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Creates an empty <a class="el" href="classFMVector3.html">FMVector3</a>. </p>
-
-</div>
-</div>
 <a class="anchor" id="ac4ebdd15669aea066ea5858b8a7deec5"></a><!-- doxytag: member="FMVector3::FMVector3" ref="ac4ebdd15669aea066ea5858b8a7deec5" args="(float _x, float _y, float _z)" -->
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +177,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates the <a class="el" href="classFMVector3.html">FMVector3</a> with the coordinates given. </p>
+
+<p>Creates the <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> with the coordinates given. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>_x</em>&nbsp;</td><td>The first coordinate. </td></tr>
@@ -182,6 +205,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Copy constuctor. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -207,7 +231,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor. Reduces the 4D vector into 3D by removing the 4th dimension. </p>
+
+<p>Constructor. </p>
+<p>Reduces the 4D vector into 3D by removing the 4th dimension. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>vect4</em>&nbsp;</td><td>A 4D vector. </td></tr>
@@ -241,7 +267,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates the <a class="el" href="classFMVector3.html">FMVector3</a> from a list of floating-point values. It takes the first three floating-point starting from and including <em>startIndex</em> (0 indexing) in the array as the 3 coordinates. The first as the first coordinate, the second as the second, and the third as the third. </p>
+
+<p>Creates the <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> from a list of floating-point values. </p>
+<p>It takes the first three floating-point starting from and including <em>startIndex</em> (0 indexing) in the array as the 3 coordinates. The first as the first coordinate, the second as the second, and the third as the third. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>source</em>&nbsp;</td><td>The floating-point value array. </td></tr>
@@ -276,6 +304,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>See above. </p>
 
 </div>
@@ -295,6 +324,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the average of the three vector components. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The component average. </dd></dl>
 
@@ -324,7 +354,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Clamp each component of this FMVector by the corresponding components in the specified min and max <a class="el" href="classFMVector3.html">FMVector3</a>. Clamp refers to setting a value within a given range. If the value is lower than the minimum of the range, it is set to the minimum; same for the maximum. </p>
+
+<p>Clamp each component of this FMVector by the corresponding components in the specified min and max <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>. </p>
+<p>Clamp refers to setting a value within a given range. If the value is lower than the minimum of the range, it is set to the minimum; same for the maximum. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>min</em>&nbsp;</td><td>The FMVector to take the minimum values from. </td></tr>
@@ -350,7 +382,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Update each component of this FMVector to the maximum of two FMVector3s. Updates each of the three components to be the maximum of the current value and that of the corresponding value of the given <a class="el" href="classFMVector3.html">FMVector3</a>. </p>
+
+<p>Update each component of this FMVector to the maximum of two FMVector3s. </p>
+<p>Updates each of the three components to be the maximum of the current value and that of the corresponding value of the given <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>max</em>&nbsp;</td><td>The FMVector to take values from. </td></tr>
@@ -374,6 +408,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the largest component of the vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The largest component of the vector. </dd></dl>
 
@@ -393,6 +428,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the smallest component of the vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The smallest component of the vector. </dd></dl>
 
@@ -413,7 +449,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Update each component of this FMVector to the minimum of two FMVector3s. Updates each of the three components to be the minimum of the current value and that of the corresponding value of the given <a class="el" href="classFMVector3.html">FMVector3</a>. </p>
+
+<p>Update each component of this FMVector to the minimum of two FMVector3s. </p>
+<p>Updates each of the three components to be the minimum of the current value and that of the corresponding value of the given <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>min</em>&nbsp;</td><td>The FMVector to take values from. </td></tr>
@@ -437,6 +475,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the length of the vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The length of this vector. </dd></dl>
 
@@ -456,6 +495,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Retrieves the squared length of the vector. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The squared length of this vector. </dd></dl>
 
@@ -475,8 +515,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get a normalized <a class="el" href="classFMVector3.html">FMVector3</a> with the same direction as this vector. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>A <a class="el" href="classFMVector3.html">FMVector3</a> with length 1 and same direction as this vector. </dd></dl>
+
+<p>Get a normalized <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> with the same direction as this vector. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> with length 1 and same direction as this vector. </dd></dl>
 
 </div>
 </div>
@@ -494,6 +535,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Normalizes this vector. </p>
 
 </div>
@@ -512,7 +554,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get this <a class="el" href="classFMVector3.html">FMVector3</a> as an array of <code>floats</code>. </p>
+
+<p>Get this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> as an array of <code>floats</code>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The <code>float</code> array. </dd></dl>
 
 </div>
@@ -531,7 +574,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get this <a class="el" href="classFMVector3.html">FMVector3</a> as an array of <code>floats</code>. </p>
+
+<p>Get this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> as an array of <code>floats</code>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The <code>float</code> array. </dd></dl>
 
 </div>
@@ -551,7 +595,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Assigns the <a class="el" href="classFMVector3.html">FMVector3</a> passed to outselves. Copies XYZ from the passed vector </p>
+
+<p>Assigns the <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> passed to outselves. </p>
+<p>Copies XYZ from the passed vector </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>rhs</em>&nbsp;</td><td>The vector copy off </td></tr>
@@ -576,7 +622,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Assign this <a class="el" href="classFMVector3.html">FMVector3</a> to the given float array. Assigns each coordinate of this <a class="el" href="classFMVector3.html">FMVector3</a> to the elements in the <code>float</code> array. The first element to the first coordinate, the second to the second, and the third to the third. It returns this <a class="el" href="classFMVector3.html">FMVector3</a>. </p>
+
+<p>Assign this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> to the given float array. </p>
+<p>Assigns each coordinate of this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> to the elements in the <code>float</code> array. The first element to the first coordinate, the second to the second, and the third to the third. It returns this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>v</em>&nbsp;</td><td>The <code>float</code> array to assign with. </td></tr>
@@ -602,10 +650,11 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Project this <a class="el" href="classFMVector3.html">FMVector3</a> onto another <a class="el" href="classFMVector3.html">FMVector3</a>. </p>
+
+<p>Project this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> onto another <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>unto</em>&nbsp;</td><td>The <a class="el" href="classFMVector3.html">FMVector3</a> to project onto. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>unto</em>&nbsp;</td><td>The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> to project onto. </td></tr>
   </table>
   </dd>
 </dl>
@@ -627,14 +676,15 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get the projection of this <a class="el" href="classFMVector3.html">FMVector3</a> onto another <a class="el" href="classFMVector3.html">FMVector3</a>. </p>
+
+<p>Get the projection of this <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> onto another <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>unto</em>&nbsp;</td><td>The <a class="el" href="classFMVector3.html">FMVector3</a> to project onto. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>unto</em>&nbsp;</td><td>The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> to project onto. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The projected <a class="el" href="classFMVector3.html">FMVector3</a>. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The projected <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a>. </dd></dl>
 
 </div>
 </div>
@@ -668,7 +718,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Set the values of this vector </p>
+
+<p>Set the values of this vector. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>The new X value </td></tr>
@@ -691,21 +742,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The <a class="el" href="classFMVector3.html">FMVector3</a> containing all ones: (1,1,1). </p>
 
-</div>
-</div>
-<a class="anchor" id="a886c355491c083e2664286caa7aa9ed8"></a><!-- doxytag: member="FMVector3::Origin" ref="a886c355491c083e2664286caa7aa9ed8" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classFMVector3.html">FMVector3</a> <a class="el" href="classFMVector3.html#a886c355491c083e2664286caa7aa9ed8">FMVector3::Origin</a> = <a class="el" href="classFMVector3.html#a18fc0513121c660cc2dc3f172d698adb">FMVector3::Zero</a><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>The <a class="el" href="classFMVector3.html">FMVector3</a> representing the origin </p>
+<p>The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> containing all ones: (1,1,1). </p>
 
 </div>
 </div>
@@ -719,21 +757,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The first coordinate. </p>
 
-</div>
-</div>
-<a class="anchor" id="a363010f82c60ec1d53a495de6284daf7"></a><!-- doxytag: member="FMVector3::XAxis" ref="a363010f82c60ec1d53a495de6284daf7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classFMVector3.html">FMVector3</a> <a class="el" href="classFMVector3.html#a363010f82c60ec1d53a495de6284daf7">FMVector3::XAxis</a><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>The <a class="el" href="classFMVector3.html">FMVector3</a> representing the x axis </p>
+<p>The first coordinate. </p>
 
 </div>
 </div>
@@ -747,21 +772,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The second coordinate. </p>
 
-</div>
-</div>
-<a class="anchor" id="a4e67235dec2d974161ecb965b6590555"></a><!-- doxytag: member="FMVector3::YAxis" ref="a4e67235dec2d974161ecb965b6590555" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classFMVector3.html">FMVector3</a> <a class="el" href="classFMVector3.html#a4e67235dec2d974161ecb965b6590555">FMVector3::YAxis</a><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>The <a class="el" href="classFMVector3.html">FMVector3</a> representing the y axis </p>
+<p>The second coordinate. </p>
 
 </div>
 </div>
@@ -775,21 +787,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The third coordinate. </p>
 
-</div>
-</div>
-<a class="anchor" id="a3f1666b8e732a6480e3e3ac3416d0a22"></a><!-- doxytag: member="FMVector3::ZAxis" ref="a3f1666b8e732a6480e3e3ac3416d0a22" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classFMVector3.html">FMVector3</a> <a class="el" href="classFMVector3.html#a3f1666b8e732a6480e3e3ac3416d0a22">FMVector3::ZAxis</a><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>The <a class="el" href="classFMVector3.html">FMVector3</a> representing the z axis </p>
+<p>The third coordinate. </p>
 
 </div>
 </div>
@@ -803,7 +802,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The <a class="el" href="classFMVector3.html">FMVector3</a> containing all zeroes: (0,0,0). </p>
+
+<p>The <a class="el" href="classFMVector3.html" title="A 3 dimensional vector.">FMVector3</a> containing all zeroes: (0,0,0). </p>
 
 </div>
 </div>
@@ -826,7 +826,7 @@ Static Public Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:52 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:23 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

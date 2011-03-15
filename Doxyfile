@@ -137,7 +137,7 @@ SHORT_NAMES            = NO
 # comments will behave just like regular Qt-style comments
 # (thus requiring an explicit @brief command for a brief description.)
 
-JAVADOC_AUTOBRIEF      = NO
+JAVADOC_AUTOBRIEF      = YES
 
 # If the QT_AUTOBRIEF tag is set to YES then Doxygen will
 # interpret the first line (until the first dot) of a Qt-style
@@ -1085,7 +1085,7 @@ SERVER_BASED_SEARCH    = NO
 # If the GENERATE_LATEX tag is set to YES (the default) Doxygen will
 # generate Latex output.
 
-GENERATE_LATEX         = YES
+GENERATE_LATEX         = NO
 
 # The LATEX_OUTPUT tag is used to specify where the LaTeX docs will be put.
 # If a relative path is entered the value of OUTPUT_DIRECTORY will be

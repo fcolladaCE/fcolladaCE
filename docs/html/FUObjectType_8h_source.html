@@ -65,26 +65,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="preprocessor">#ifndef _FU_OBJECT_TYPE_H_</span>
 <a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#define _FU_OBJECT_TYPE_H_</span>
 <a name="l00019"></a>00019 <span class="preprocessor"></span>
-<a name="l00030"></a><a class="code" href="classFUObjectType.html">00030</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUObjectType.html">FUObjectType</a>
+<a name="l00030"></a><a class="code" href="classFUObjectType.html">00030</a> <span class="keyword">class </span>FCOLLADA_EXPORT <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>
 <a name="l00031"></a>00031 {
 <a name="l00032"></a>00032 <span class="keyword">private</span>:
-<a name="l00033"></a>00033         <span class="keyword">const</span> <a class="code" href="classFUObjectType.html">FUObjectType</a>* parent;
+<a name="l00033"></a>00033         <span class="keyword">const</span> <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>* parent;
 <a name="l00034"></a>00034         <span class="keyword">const</span> <span class="keywordtype">char</span>* typeName;
 <a name="l00035"></a>00035 
 <a name="l00036"></a>00036 <span class="keyword">public</span>:
-<a name="l00043"></a>00043         <a class="code" href="classFUObjectType.html">FUObjectType</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* typeName);
+<a name="l00043"></a>00043         <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* typeName);
 <a name="l00044"></a>00044 
-<a name="l00050"></a>00050         <a class="code" href="classFUObjectType.html">FUObjectType</a>(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html">FUObjectType</a>&amp; parent, <span class="keyword">const</span> <span class="keywordtype">char</span>* typeName);
+<a name="l00050"></a>00050         <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>&amp; parent, <span class="keyword">const</span> <span class="keywordtype">char</span>* typeName);
 <a name="l00051"></a>00051 
-<a name="l00055"></a><a class="code" href="classFUObjectType.html#a7b903f10975077d2d613a6cfe02762a8">00055</a>         <span class="keyword">const</span> <a class="code" href="classFUObjectType.html">FUObjectType</a>&amp; <a class="code" href="classFUObjectType.html#a7b903f10975077d2d613a6cfe02762a8">GetParent</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (parent != NULL) ? *parent : *<span class="keyword">this</span>; }
+<a name="l00055"></a><a class="code" href="classFUObjectType.html#a7b903f10975077d2d613a6cfe02762a8">00055</a>         <span class="keyword">const</span> <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>&amp; <a class="code" href="classFUObjectType.html#a7b903f10975077d2d613a6cfe02762a8" title="Retrieves the type of the down-class.">GetParent</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (parent != NULL) ? *parent : *<span class="keyword">this</span>; }
 <a name="l00056"></a>00056 
-<a name="l00063"></a>00063         <span class="keywordtype">bool</span> Includes(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html">FUObjectType</a>&amp; otherType) <span class="keyword">const</span>;
+<a name="l00063"></a>00063         <span class="keywordtype">bool</span> Includes(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>&amp; otherType) <span class="keyword">const</span>;
 <a name="l00064"></a>00064 
-<a name="l00068"></a><a class="code" href="classFUObjectType.html#a14945dfb834216b994e12e555c7e4ec6">00068</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFUObjectType.html#a14945dfb834216b994e12e555c7e4ec6">operator==</a>(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html">FUObjectType</a>&amp; otherType)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;otherType == <span class="keyword">this</span>; }
+<a name="l00068"></a><a class="code" href="classFUObjectType.html#a14945dfb834216b994e12e555c7e4ec6">00068</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFUObjectType.html#a14945dfb834216b994e12e555c7e4ec6" title="Retrieves whether a given object type is equivalent to this object type.">operator==</a>(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>&amp; otherType)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;otherType == <span class="keyword">this</span>; }
 <a name="l00069"></a>00069 
-<a name="l00073"></a><a class="code" href="classFUObjectType.html#a051455b488bf11ded50b271b261286dc">00073</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFUObjectType.html#a051455b488bf11ded50b271b261286dc">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html">FUObjectType</a>&amp; otherType)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;otherType != <span class="keyword">this</span>; }
+<a name="l00073"></a><a class="code" href="classFUObjectType.html#a051455b488bf11ded50b271b261286dc">00073</a>         <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classFUObjectType.html#a051455b488bf11ded50b271b261286dc" title="Retrieves whether a given object type is different from this object type.">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classFUObjectType.html" title="An object type.">FUObjectType</a>&amp; otherType)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;otherType != <span class="keyword">this</span>; }
 <a name="l00074"></a>00074 
-<a name="l00077"></a><a class="code" href="classFUObjectType.html#a791d88a8d7b5fdfaad29c17f2050d8b0">00077</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classFUObjectType.html#a791d88a8d7b5fdfaad29c17f2050d8b0">GetTypeName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> typeName; }
+<a name="l00077"></a><a class="code" href="classFUObjectType.html#a791d88a8d7b5fdfaad29c17f2050d8b0">00077</a>         <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classFUObjectType.html#a791d88a8d7b5fdfaad29c17f2050d8b0" title="Retrieves the object type name.">GetTypeName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> typeName; }
 <a name="l00078"></a>00078 };
 <a name="l00079"></a>00079 
 <a name="l00086"></a><a class="code" href="FUObjectType_8h.html#acb7acacc11115fc800aefc31346046a7">00086</a> <span class="preprocessor">#define DeclareObjectType(_ParentClass) \</span>
@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:42:20 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:13 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

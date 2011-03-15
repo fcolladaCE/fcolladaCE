@@ -54,10 +54,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>FCDControllerTools Namespace Reference</h1>  </div>
 </div>
 <div class="contents">
+
+<p>Holds commonly-used transformation functions for skin controllers.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDControllerTools.html#a83e6026ea91b4495fc0faf58a7b5b6fa">ApplyTranslationMap</a> (const <a class="el" href="classFCDSkinController.html">FCDSkinController</a> *controller, const <a class="el" href="classfm_1_1map.html">FCDGeometryIndexTranslationMap</a> &amp;translationMap, const <a class="el" href="classfm_1_1vector.html">UInt16List</a> &amp;packingMap, <a class="el" href="classfm_1_1pvector.html">fm::pvector</a>&lt; const <a class="el" href="classFCDSkinControllerVertex.html">FCDSkinControllerVertex</a> &gt; &amp;skinInfluences)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applies a translation map obtained from <a class="el" href="namespaceFCDGeometryPolygonsTools.html#a7541340d15de908be8cc7f95d568d32c" title="Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer...">FCDGeometryPolygonsTools::GenerateUniqueIndices</a> to a given <a class="el" href="classFCDSkinController.html" title="A COLLADA skin controller.">FCDSkinController</a> to synchronize with the updated indices.  <a href="#a83e6026ea91b4495fc0faf58a7b5b6fa"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Holds commonly-used transformation functions for skin controllers. </p>
@@ -98,11 +102,13 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Applies a translation map obtained from <a class="el" href="namespaceFCDGeometryPolygonsTools.html#a7541340d15de908be8cc7f95d568d32c">FCDGeometryPolygonsTools::GenerateUniqueIndices</a> to a given <a class="el" href="classFCDSkinController.html">FCDSkinController</a> to synchronize with the updated indices. This is useful for older engines and the applications that only support one index per face-vertex pair. </p>
+
+<p>Applies a translation map obtained from <a class="el" href="namespaceFCDGeometryPolygonsTools.html#a7541340d15de908be8cc7f95d568d32c" title="Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer...">FCDGeometryPolygonsTools::GenerateUniqueIndices</a> to a given <a class="el" href="classFCDSkinController.html" title="A COLLADA skin controller.">FCDSkinController</a> to synchronize with the updated indices. </p>
+<p>This is useful for older engines and the applications that only support one index per face-vertex pair. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>controller</em>&nbsp;</td><td>The skin controller to process. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>translationMap</em>&nbsp;</td><td>The map that translates old vertex position indices into new indices. This map is recieved from <a class="el" href="namespaceFCDGeometryPolygonsTools.html#a7541340d15de908be8cc7f95d568d32c">FCDGeometryPolygonsTools::GenerateUniqueIndices</a>. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>translationMap</em>&nbsp;</td><td>The map that translates old vertex position indices into new indices. This map is recieved from <a class="el" href="namespaceFCDGeometryPolygonsTools.html#a7541340d15de908be8cc7f95d568d32c" title="Prepares the mesh for using its geometry sources in vertex buffers with a unique index buffer...">FCDGeometryPolygonsTools::GenerateUniqueIndices</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -124,7 +130,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:02 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:27 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

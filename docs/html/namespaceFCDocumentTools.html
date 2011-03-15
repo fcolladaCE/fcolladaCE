@@ -59,6 +59,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </h1>  </div>
 </div>
 <div class="contents">
+
+<p>Contains pre-processing tools or post-processing tools used to modify whole COLLADA documents.  
+<a href="#_details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -86,12 +89,13 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>ConvertAnimationVecto
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>ConvertAnimationVector3</b> (<a class="el" href="classFCDAnimated.html">FCDAnimated</a> *animated, <a class="el" href="classFMVector3.html">FMVector3</a> &amp;v, <a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDocumentTools_1_1FCDConversionUnitFunctor.html">FCDConversionUnitFunctor</a> &amp;lengthFunctor, <a class="el" href="classFCDocumentTools_1_1FCDConversionSwapFunctor.html">FCDConversionSwapFunctor</a> &amp;upAxisFunctor, bool convertLength, bool isScale=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad45522454e59e87d8e5d35d914c5ff32"></a><!-- doxytag: member="FCDocumentTools::ConvertAnimationFloat" ref="ad45522454e59e87d8e5d35d914c5ff32" args="(FCDAnimated *animated, float &amp;f, FCDocument *document, FCDConversionUnitFunctor &amp;lengthFunctor, FCDConversionSwapFunctor &amp;upAxisFunctor)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>ConvertAnimationFloat</b> (<a class="el" href="classFCDAnimated.html">FCDAnimated</a> *animated, float &amp;f, <a class="el" href="classFCDocument.html">FCDocument</a> *document, <a class="el" href="classFCDocumentTools_1_1FCDConversionUnitFunctor.html">FCDConversionUnitFunctor</a> &amp;lengthFunctor, <a class="el" href="classFCDocumentTools_1_1FCDConversionSwapFunctor.html">FCDConversionSwapFunctor</a> &amp;upAxisFunctor)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDocumentTools.html#a2c30506a0db61b68aa07f18b025e935e">StandardizeUpAxisAndLength</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;upAxis, float unitInMeters, bool handleTargets)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFCDocumentTools.html#ac009a3c7fda627f5aad78a8daf823f43">StandardizeUpAxisAndLength</a> (<a class="el" href="classFCDocument.html">FCDocument</a> *document, const <a class="el" href="classFMVector3.html">FMVector3</a> &amp;upAxis=<a class="el" href="classFMVector3.html#a886c355491c083e2664286caa7aa9ed8">FMVector3::Origin</a>, float unitInMeters=0.0f, bool handleTargets=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Standardizes the up-axis and the length units accross the whole document.  <a href="#ac009a3c7fda627f5aad78a8daf823f43"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Contains pre-processing tools or post-processing tools used to modify whole COLLADA documents. </p>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a2c30506a0db61b68aa07f18b025e935e"></a><!-- doxytag: member="FCDocumentTools::StandardizeUpAxisAndLength" ref="a2c30506a0db61b68aa07f18b025e935e" args="(FCDocument *document, const FMVector3 &amp;upAxis, float unitInMeters, bool handleTargets)" -->
+<a class="anchor" id="ac009a3c7fda627f5aad78a8daf823f43"></a><!-- doxytag: member="FCDocumentTools::StandardizeUpAxisAndLength" ref="ac009a3c7fda627f5aad78a8daf823f43" args="(FCDocument *document, const FMVector3 &amp;upAxis=FMVector3::Origin, float unitInMeters=0.0f, bool handleTargets=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -127,7 +131,9 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>ConvertAnimationFloat
       </table>
 </div>
 <div class="memdoc">
-<p>Standardizes the up-axis and the length units accross the whole document. Regardless of whether your application can handle different up-axis values or different length units, you should call this function at least once to ensure that the whole document has only one up-axis and one length unit. </p>
+
+<p>Standardizes the up-axis and the length units accross the whole document. </p>
+<p>Regardless of whether your application can handle different up-axis values or different length units, you should call this function at least once to ensure that the whole document has only one up-axis and one length unit. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>document</em>&nbsp;</td><td>The COLLADA document to process. </td></tr>
@@ -155,7 +161,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>ConvertAnimationFloat
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Mar 14 2011 20:43:02 for FCollada by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 15 2011 18:18:27 for FCollada by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
