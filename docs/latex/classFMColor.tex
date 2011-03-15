@@ -1,0 +1,188 @@
+\hypertarget{classFMColor}{
+\section{FMColor Class Reference}
+\label{classFMColor}\index{FMColor@{FMColor}}
+}
+
+
+{\ttfamily \#include $<$FMColor.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFMColor_a9acb710671c50f603c90e06ec2ed86b8}{FMColor} ()
+\item 
+\hyperlink{classFMColor_aee3407cc1b6df36919c3199e428bcb36}{FMColor} (uint8 \_\-r, uint8 \_\-g, uint8 \_\-b, uint8 \_\-a=255)
+\item 
+\hyperlink{classFMColor_aed846f140eef6e7379d2a4d7e11e0ce3}{FMColor} (uint32 hex)
+\item 
+\hyperlink{classFMColor_ae3df0928bc78ec430804397fd47e8df5}{FMColor} (const float $\ast$components, uint32 componentCount)
+\item 
+\hyperlink{classFMColor_a07b3d5e6216562e8ebf74a945a258dec}{FMColor} (const \hyperlink{classFMVector3}{FMVector3} \&v)
+\item 
+\hyperlink{classFMColor_a47217e9d9c89a93123e44a7e080a74b8}{FMColor} (const \hyperlink{classFMVector4}{FMVector4} \&v)
+\item 
+void \hyperlink{classFMColor_a89dcfa30dd18ff55c4aa79504fcabf24}{ToFloats} (float $\ast$components, uint32 componentCount)
+\item 
+uint8 \hyperlink{classFMColor_a911f0f47225a8c9c89246dd01280f789}{ComponentAverage} ()
+\item 
+\hyperlink{classFMColor_a4cbe7fa247d38162d700fabe70240b0a}{operator uint8 $\ast$} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8 \hyperlink{classFMColor_a36789d346608eb0c778d58204ea1f406}{r}
+\item 
+uint8 \hyperlink{classFMColor_a0868b26c7d46f6fd5fb753e63010c377}{g}
+\item 
+uint8 \hyperlink{classFMColor_aba4a975fc1d71d6f0065cf67f90d3c45}{b}
+\item 
+uint8 \hyperlink{classFMColor_a42355f56b082b874c5580a9b4625be7c}{a}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A RBGA color. Not used within \hyperlink{namespaceFCollada}{FCollada}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFMColor_a9acb710671c50f603c90e06ec2ed86b8}{
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\subsubsection[{FMColor}]{\setlength{\rightskip}{0pt plus 5cm}FMColor::FMColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMColor_a9acb710671c50f603c90e06ec2ed86b8}
+Creates an empty \hyperlink{classFMColor}{FMColor}. The default values are non deterministic. \hypertarget{classFMColor_aee3407cc1b6df36919c3199e428bcb36}{
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\subsubsection[{FMColor}]{\setlength{\rightskip}{0pt plus 5cm}FMColor::FMColor (
+\begin{DoxyParamCaption}
+\item[{uint8}]{ \_\-r, }
+\item[{uint8}]{ \_\-g, }
+\item[{uint8}]{ \_\-b, }
+\item[{uint8}]{ \_\-a = {\ttfamily 255}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMColor_aee3407cc1b6df36919c3199e428bcb36}
+Creates the \hyperlink{classFMColor}{FMColor} with the coordinates values. The first three coordinates are taken from the \hyperlink{classFMVector3}{FMVector3}, where the first one is the x value, the second is that y, and the third is the z. The forth value is the {\ttfamily float} specified. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-r}]The red value. \item[{\em \_\-g}]The green value. \item[{\em \_\-b}]The blue value. \item[{\em \_\-a}]The alpha value. \end{DoxyParams}
+\hypertarget{classFMColor_aed846f140eef6e7379d2a4d7e11e0ce3}{
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\subsubsection[{FMColor}]{\setlength{\rightskip}{0pt plus 5cm}FMColor::FMColor (
+\begin{DoxyParamCaption}
+\item[{uint32}]{ hex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMColor_aed846f140eef6e7379d2a4d7e11e0ce3}
+Creates the \hyperlink{classFMColor}{FMColor} from a color encoded into a uint32. The most significant byte makes up the red value. The second most significant makes up the green value, the third the blue, and the forth the alpha. 
+\begin{DoxyParams}{Parameters}
+\item[{\em hex}]The uint to decode the color values from. \end{DoxyParams}
+\hypertarget{classFMColor_ae3df0928bc78ec430804397fd47e8df5}{
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\subsubsection[{FMColor}]{\setlength{\rightskip}{0pt plus 5cm}FMColor::FMColor (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{ components, }
+\item[{uint32}]{ componentCount}
+\end{DoxyParamCaption}
+)}}
+\label{classFMColor_ae3df0928bc78ec430804397fd47e8df5}
+Creates the \hyperlink{classFMColor}{FMColor} from a list of {\ttfamily floats}. It creates the \hyperlink{classFMColor}{FMColor} with the values specified in the {\ttfamily floats}, which range from 0.0f to 1.0f. {\itshape componentCount\/} is used to determined how many values to take from the {\ttfamily float} array. If there are insufficient values, then it will give the remaining values default values. The default values are 0 for the colors and 255 for the alpha. It fills in the values in this order: red, green, blue, alpha. 
+\begin{DoxyParams}{Parameters}
+\item[{\em components}]The {\ttfamily float} array to get values from. \item[{\em componentCount}]The amount of {\ttfamily float} to take from the array. \end{DoxyParams}
+\hypertarget{classFMColor_a07b3d5e6216562e8ebf74a945a258dec}{
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\subsubsection[{FMColor}]{\setlength{\rightskip}{0pt plus 5cm}FMColor::FMColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector3} \&}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{classFMColor_a07b3d5e6216562e8ebf74a945a258dec}
+Creates a color value from a 3D vector. The alpha value of the color is set to the default of 255 (1.0f). 
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]The 3D vector representing the color value. \end{DoxyParams}
+\hypertarget{classFMColor_a47217e9d9c89a93123e44a7e080a74b8}{
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\index{FMColor@{FMColor}!FMColor@{FMColor}}
+\subsubsection[{FMColor}]{\setlength{\rightskip}{0pt plus 5cm}FMColor::FMColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector4} \&}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{classFMColor_a47217e9d9c89a93123e44a7e080a74b8}
+Creates a color value from a 4D vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]The 4D vector representing the color value. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFMColor_a911f0f47225a8c9c89246dd01280f789}{
+\index{FMColor@{FMColor}!ComponentAverage@{ComponentAverage}}
+\index{ComponentAverage@{ComponentAverage}!FMColor@{FMColor}}
+\subsubsection[{ComponentAverage}]{\setlength{\rightskip}{0pt plus 5cm}uint8 FMColor::ComponentAverage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMColor_a911f0f47225a8c9c89246dd01280f789}
+Get the average of the three color values of this \hyperlink{classFMColor}{FMColor}. \begin{DoxyReturn}{Returns}
+The averages of the three colors values of this \hyperlink{classFMColor}{FMColor}. 
+\end{DoxyReturn}
+\hypertarget{classFMColor_a4cbe7fa247d38162d700fabe70240b0a}{
+\index{FMColor@{FMColor}!operator uint8 $\ast$@{operator uint8 $\ast$}}
+\index{operator uint8 $\ast$@{operator uint8 $\ast$}!FMColor@{FMColor}}
+\subsubsection[{operator uint8 $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}FMColor::operator uint8 $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMColor_a4cbe7fa247d38162d700fabe70240b0a}
+Get this \hyperlink{classFMColor}{FMColor} as an array of uint8s. \begin{DoxyReturn}{Returns}
+The {\ttfamily uint8} array. 
+\end{DoxyReturn}
+\hypertarget{classFMColor_a89dcfa30dd18ff55c4aa79504fcabf24}{
+\index{FMColor@{FMColor}!ToFloats@{ToFloats}}
+\index{ToFloats@{ToFloats}!FMColor@{FMColor}}
+\subsubsection[{ToFloats}]{\setlength{\rightskip}{0pt plus 5cm}void FMColor::ToFloats (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ components, }
+\item[{uint32}]{ componentCount}
+\end{DoxyParamCaption}
+)}}
+\label{classFMColor_a89dcfa30dd18ff55c4aa79504fcabf24}
+Get this \hyperlink{classFMColor}{FMColor} as an array of {\ttfamily floats}. It fills the first {\itshape componentCount\/} elements (max 4) of {\ttfamily components} with the red, green, blue, alpha values of this \hyperlink{classFMColor}{FMColor} in that order. 
+\begin{DoxyParams}{Parameters}
+\item[{\em components}]The {\ttfamily float} array to fill. \item[{\em componentCount}]The amount of {\ttfamily float} to fill into the array. \end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\hypertarget{classFMColor_a42355f56b082b874c5580a9b4625be7c}{
+\index{FMColor@{FMColor}!a@{a}}
+\index{a@{a}!FMColor@{FMColor}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}uint8 {\bf FMColor::a}}}
+\label{classFMColor_a42355f56b082b874c5580a9b4625be7c}
+The alpha component. \hypertarget{classFMColor_aba4a975fc1d71d6f0065cf67f90d3c45}{
+\index{FMColor@{FMColor}!b@{b}}
+\index{b@{b}!FMColor@{FMColor}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}uint8 {\bf FMColor::b}}}
+\label{classFMColor_aba4a975fc1d71d6f0065cf67f90d3c45}
+The blue component. \hypertarget{classFMColor_a0868b26c7d46f6fd5fb753e63010c377}{
+\index{FMColor@{FMColor}!g@{g}}
+\index{g@{g}!FMColor@{FMColor}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}uint8 {\bf FMColor::g}}}
+\label{classFMColor_a0868b26c7d46f6fd5fb753e63010c377}
+The green component. \hypertarget{classFMColor_a36789d346608eb0c778d58204ea1f406}{
+\index{FMColor@{FMColor}!r@{r}}
+\index{r@{r}!FMColor@{FMColor}}
+\subsubsection[{r}]{\setlength{\rightskip}{0pt plus 5cm}uint8 {\bf FMColor::r}}}
+\label{classFMColor_a36789d346608eb0c778d58204ea1f406}
+The red component. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FMath/\hyperlink{FMColor_8h}{FMColor.h}\item 
+FCollada/FMath/FMColor.cpp\end{DoxyCompactItemize}

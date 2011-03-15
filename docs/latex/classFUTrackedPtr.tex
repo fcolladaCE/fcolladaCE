@@ -1,0 +1,207 @@
+\hypertarget{classFUTrackedPtr}{
+\section{FUTrackedPtr$<$ ObjectClass $>$ Class Template Reference}
+\label{classFUTrackedPtr}\index{FUTrackedPtr@{FUTrackedPtr}}
+}
+
+
+{\ttfamily \#include $<$FUTracker.h$>$}
+
+Inheritance diagram for FUTrackedPtr$<$ ObjectClass $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFUTrackedPtr}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUTrackedPtr_a8d06eda52089bd1b8083971fbbee4e8a}{FUTrackedPtr} (ObjectClass $\ast$\_\-ptr=NULL)
+\item 
+\hyperlink{classFUTrackedPtr_a90700d759d056aea22247057f2617b0f}{$\sim$FUTrackedPtr} ()
+\item 
+\hyperlink{classFUTrackedPtr}{FUTrackedPtr} \& \hyperlink{classFUTrackedPtr_a1c67239537e055d45f884b9b556daf58}{operator=} (ObjectClass $\ast$\_\-ptr)
+\item 
+\hyperlink{classFUTrackedPtr}{FUTrackedPtr} \& \hyperlink{classFUTrackedPtr_a6ee593ae6da2be257bd7646cf2813253}{operator=} (const \hyperlink{classFUTrackedPtr}{FUTrackedPtr} \&\_\-ptr)
+\item 
+virtual bool \hyperlink{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{TracksObject} (const \hyperlink{classFUTrackable}{FUTrackable} $\ast$object) const 
+\item 
+ObjectClass \& \hyperlink{classFUTrackedPtr_a17f179100092048a16632f8ab0d4ac9d}{operator$\ast$} ()
+\item 
+const ObjectClass \& \hyperlink{classFUTrackedPtr_aecb920ff96938a8e88c51d4183ef1641}{operator$\ast$} () const 
+\item 
+ObjectClass $\ast$ \hyperlink{classFUTrackedPtr_ab47cb5dadec50c75c7ec7670ce204e99}{operator-\/$>$} ()
+\item 
+const ObjectClass $\ast$ \hyperlink{classFUTrackedPtr_ac0974140bd933025cc1511f8ff7e31ac}{operator-\/$>$} () const 
+\item 
+\hyperlink{classFUTrackedPtr_a46251fc0078061192dbbc91d0f3696ae}{operator ObjectClass $\ast$} ()
+\item 
+\hyperlink{classFUTrackedPtr_a967cbf01d3184c86a7b8edae489d7585}{operator const ObjectClass $\ast$} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{OnObjectReleased} (\hyperlink{classFUTrackable}{FUTrackable} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ObjectClass $\ast$ \hyperlink{classFUTrackedPtr_aa7964388a4365d5823467848dd5de579}{ptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class ObjectClass = FUTrackable$>$ class FUTrackedPtr$<$ ObjectClass $>$}
+
+A tracked object pointer The reverse idea of a smart pointer: if the object pointed to by the pointer is released, the pointer will become NULL. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUTrackedPtr_a8d06eda52089bd1b8083971fbbee4e8a}{
+\index{FUTrackedPtr@{FUTrackedPtr}!FUTrackedPtr@{FUTrackedPtr}}
+\index{FUTrackedPtr@{FUTrackedPtr}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{FUTrackedPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ {\bf FUTrackedPtr}$<$ ObjectClass $>$::{\bf FUTrackedPtr} (
+\begin{DoxyParamCaption}
+\item[{ObjectClass $\ast$}]{ \_\-ptr = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_a8d06eda52089bd1b8083971fbbee4e8a}
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-ptr}]The object to track. This pointer can be NULL to indicate that no object should be tracked at this time. \end{DoxyParams}
+\hypertarget{classFUTrackedPtr_a90700d759d056aea22247057f2617b0f}{
+\index{FUTrackedPtr@{FUTrackedPtr}!$\sim$FUTrackedPtr@{$\sim$FUTrackedPtr}}
+\index{$\sim$FUTrackedPtr@{$\sim$FUTrackedPtr}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{$\sim$FUTrackedPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ {\bf FUTrackedPtr}$<$ ObjectClass $>$::$\sim${\bf FUTrackedPtr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_a90700d759d056aea22247057f2617b0f}
+Destructor. Stops the tracking of the pointer. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}{
+\index{FUTrackedPtr@{FUTrackedPtr}!OnObjectReleased@{OnObjectReleased}}
+\index{OnObjectReleased@{OnObjectReleased}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{OnObjectReleased}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ virtual void {\bf FUTrackedPtr}$<$ ObjectClass $>$::OnObjectReleased (
+\begin{DoxyParamCaption}
+\item[{{\bf FUTrackable} $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classFUTrackedPtr_afb32d45ac4620963033cd64ee95a2ee1}
+Callback when an object tracked by this tracker is being released. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]A contained object. \end{DoxyParams}
+
+
+Implements \hyperlink{classFUTracker_a7e79d02821b3ccd2fadc460125cb3ca4}{FUTracker}.
+
+\hypertarget{classFUTrackedPtr_a967cbf01d3184c86a7b8edae489d7585}{
+\index{FUTrackedPtr@{FUTrackedPtr}!operator const ObjectClass $\ast$@{operator const ObjectClass $\ast$}}
+\index{operator const ObjectClass $\ast$@{operator const ObjectClass $\ast$}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{operator const ObjectClass $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ {\bf FUTrackedPtr}$<$ ObjectClass $>$::operator const ObjectClass $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_a967cbf01d3184c86a7b8edae489d7585}
+See above. \hypertarget{classFUTrackedPtr_a46251fc0078061192dbbc91d0f3696ae}{
+\index{FUTrackedPtr@{FUTrackedPtr}!operator ObjectClass $\ast$@{operator ObjectClass $\ast$}}
+\index{operator ObjectClass $\ast$@{operator ObjectClass $\ast$}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{operator ObjectClass $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ {\bf FUTrackedPtr}$<$ ObjectClass $>$::operator ObjectClass $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_a46251fc0078061192dbbc91d0f3696ae}
+See above. \hypertarget{classFUTrackedPtr_aecb920ff96938a8e88c51d4183ef1641}{
+\index{FUTrackedPtr@{FUTrackedPtr}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ const ObjectClass\& {\bf FUTrackedPtr}$<$ ObjectClass $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_aecb920ff96938a8e88c51d4183ef1641}
+See above. \hypertarget{classFUTrackedPtr_a17f179100092048a16632f8ab0d4ac9d}{
+\index{FUTrackedPtr@{FUTrackedPtr}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ ObjectClass\& {\bf FUTrackedPtr}$<$ ObjectClass $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_a17f179100092048a16632f8ab0d4ac9d}
+Accesses the tracked object. \begin{DoxyReturn}{Returns}
+The tracked object. 
+\end{DoxyReturn}
+\hypertarget{classFUTrackedPtr_ac0974140bd933025cc1511f8ff7e31ac}{
+\index{FUTrackedPtr@{FUTrackedPtr}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ const ObjectClass$\ast$ {\bf FUTrackedPtr}$<$ ObjectClass $>$::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_ac0974140bd933025cc1511f8ff7e31ac}
+See above. \hypertarget{classFUTrackedPtr_ab47cb5dadec50c75c7ec7670ce204e99}{
+\index{FUTrackedPtr@{FUTrackedPtr}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ ObjectClass$\ast$ {\bf FUTrackedPtr}$<$ ObjectClass $>$::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_ab47cb5dadec50c75c7ec7670ce204e99}
+See above. \hypertarget{classFUTrackedPtr_a6ee593ae6da2be257bd7646cf2813253}{
+\index{FUTrackedPtr@{FUTrackedPtr}!operator=@{operator=}}
+\index{operator=@{operator=}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ {\bf FUTrackedPtr}\& {\bf FUTrackedPtr}$<$ ObjectClass $>$::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUTrackedPtr}$<$ ObjectClass $>$ \&}]{ \_\-ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_a6ee593ae6da2be257bd7646cf2813253}
+See above. \hypertarget{classFUTrackedPtr_a1c67239537e055d45f884b9b556daf58}{
+\index{FUTrackedPtr@{FUTrackedPtr}!operator=@{operator=}}
+\index{operator=@{operator=}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ {\bf FUTrackedPtr}\& {\bf FUTrackedPtr}$<$ ObjectClass $>$::operator= (
+\begin{DoxyParamCaption}
+\item[{ObjectClass $\ast$}]{ \_\-ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUTrackedPtr_a1c67239537e055d45f884b9b556daf58}
+Assigns this tracking pointer a new object to track. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-ptr}]The new object to track. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This reference. 
+\end{DoxyReturn}
+\hypertarget{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}{
+\index{FUTrackedPtr@{FUTrackedPtr}!TracksObject@{TracksObject}}
+\index{TracksObject@{TracksObject}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{TracksObject}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ virtual bool {\bf FUTrackedPtr}$<$ ObjectClass $>$::TracksObject (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUTrackable} $\ast$}]{ object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFUTrackedPtr_a8715a735d43ad08ecae5b716b3833433}
+Retrieves whether an object is tracked by this tracker. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]An object. \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classFUTracker_ab58cddea7242921a4b9e6c07dfd64b11}{FUTracker}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classFUTrackedPtr_aa7964388a4365d5823467848dd5de579}{
+\index{FUTrackedPtr@{FUTrackedPtr}!ptr@{ptr}}
+\index{ptr@{ptr}!FUTrackedPtr@{FUTrackedPtr}}
+\subsubsection[{ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class ObjectClass = FUTrackable$>$ ObjectClass$\ast$ {\bf FUTrackedPtr}$<$ ObjectClass $>$::{\bf ptr}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classFUTrackedPtr_aa7964388a4365d5823467848dd5de579}
+The tracked pointer. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/\hyperlink{FUTracker_8h}{FUTracker.h}\end{DoxyCompactItemize}

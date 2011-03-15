@@ -1,0 +1,196 @@
+\hypertarget{classFUPluginManager}{
+\section{FUPluginManager Class Reference}
+\label{classFUPluginManager}\index{FUPluginManager@{FUPluginManager}}
+}
+
+
+{\ttfamily \#include $<$FUPluginManager.h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries PluginLibrary}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32($\ast$ \hyperlink{classFUPluginManager_aa7465d51db4f1f1e0386310ae6922250}{GetPluginCount} )(void)
+\item 
+typedef const \hyperlink{classFUObjectType}{FUObjectType} $\ast$($\ast$ \hyperlink{classFUPluginManager_ad253785d39bca14d77ddf9d9181e7fb1}{GetPluginType} )(uint32 index)
+\item 
+typedef \hyperlink{classFUPlugin}{FUPlugin} $\ast$($\ast$ \hyperlink{classFUPluginManager_a8e4ad834c03cad334f3bbd6158416a43}{CreatePlugin} )(uint32 index)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFUPluginManager_aa97b81224206a2626c1f8be258f444c3}{FUPluginManager} (const fchar $\ast$pluginLibraryFilter)
+\item 
+virtual \hyperlink{classFUPluginManager_a6bbc30b218bef777c704d63fe75a3132}{$\sim$FUPluginManager} ()
+\item 
+void \hyperlink{classFUPluginManager_a8a0d8627cc79ae1eedcb1450178c8184}{AddPluginLibrary} (\hyperlink{classFUPluginManager_aa7465d51db4f1f1e0386310ae6922250}{FUPluginManager::GetPluginCount} fnGetPluginCount, \hyperlink{classFUPluginManager_ad253785d39bca14d77ddf9d9181e7fb1}{FUPluginManager::GetPluginType} fnGetPluginType, \hyperlink{classFUPluginManager_a8e4ad834c03cad334f3bbd6158416a43}{FUPluginManager::CreatePlugin} fnCreatePlugin)
+\item 
+void \hyperlink{classFUPluginManager_a0ebe80f92e495c20e7cce5663510401b}{LoadPlugins} (const \hyperlink{classFUObjectType}{FUObjectType} \&pluginType)
+\item 
+void \hyperlink{classFUPluginManager_a0b6695e71aa89a2ce7b800543f52f03d}{UnloadPlugins} ()
+\item 
+size\_\-t \hyperlink{classFUPluginManager_a8da16d6823219e0b04251c7577009fb4}{GetLoadedPluginCount} ()
+\item 
+\hyperlink{classFUPlugin}{FUPlugin} $\ast$$\ast$ \hyperlink{classFUPluginManager_a0dbca385003a3a3d4d16334f08f93a33}{GetLoadedPlugins} ()
+\item 
+const \hyperlink{classFUPlugin}{FUPlugin} $\ast$$\ast$ \hyperlink{classFUPluginManager_a17da8db670809dd03a8ab6eef17f4db9}{GetLoadedPlugins} () const 
+\item 
+\hyperlink{classFUPlugin}{FUPlugin} $\ast$ \hyperlink{classFUPluginManager_a4be42bc54895efe5e48abc9121961f5c}{GetLoadedPlugin} (size\_\-t index)
+\item 
+const \hyperlink{classFUPlugin}{FUPlugin} $\ast$ \hyperlink{classFUPluginManager_a316b3e7aa0de5c8c6c90376a61ccbe1f}{GetLoadedPlugin} (size\_\-t index) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic plug-\/in manager. Use this structure to attach and detach plug-\/in libraries as well as load and unload plug-\/ins. For a plug-\/in library to be valid, it must expose three functions:
+\begin{DoxyItemize}
+\item GetPluginCount
+\item GetPluginType
+\item CreatePlugin The implementation of these functions and their exposition is highly OS-\/dependant. 
+\end{DoxyItemize}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classFUPluginManager_a8e4ad834c03cad334f3bbd6158416a43}{
+\index{FUPluginManager@{FUPluginManager}!CreatePlugin@{CreatePlugin}}
+\index{CreatePlugin@{CreatePlugin}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{CreatePlugin}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FUPlugin}$\ast$($\ast$ {\bf FUPluginManager::CreatePlugin})(uint32 index)}}
+\label{classFUPluginManager_a8e4ad834c03cad334f3bbd6158416a43}
+Callback to create a given library plug-\/in. Necessary plugin function definition. Under Win32, this function MUST be a DLL export and called \char`\"{}CreatePlugin\char`\"{}. \hypertarget{classFUPluginManager_aa7465d51db4f1f1e0386310ae6922250}{
+\index{FUPluginManager@{FUPluginManager}!GetPluginCount@{GetPluginCount}}
+\index{GetPluginCount@{GetPluginCount}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{GetPluginCount}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32($\ast$ {\bf FUPluginManager::GetPluginCount})(void)}}
+\label{classFUPluginManager_aa7465d51db4f1f1e0386310ae6922250}
+Callback to retrieve the number of plug-\/ins contained within a library. Necessary plugin function definition. Under Win32, this function MUST be a DLL export and called \char`\"{}GetPluginCount\char`\"{}. \hypertarget{classFUPluginManager_ad253785d39bca14d77ddf9d9181e7fb1}{
+\index{FUPluginManager@{FUPluginManager}!GetPluginType@{GetPluginType}}
+\index{GetPluginType@{GetPluginType}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{GetPluginType}]{\setlength{\rightskip}{0pt plus 5cm}typedef const {\bf FUObjectType}$\ast$($\ast$ {\bf FUPluginManager::GetPluginType})(uint32 index)}}
+\label{classFUPluginManager_ad253785d39bca14d77ddf9d9181e7fb1}
+Callback to retrieve the type of a given library plug-\/in. Necessary plugin function definition. Under Win32, this function MUST be a DLL export and called \char`\"{}GetPluginType\char`\"{}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFUPluginManager_aa97b81224206a2626c1f8be258f444c3}{
+\index{FUPluginManager@{FUPluginManager}!FUPluginManager@{FUPluginManager}}
+\index{FUPluginManager@{FUPluginManager}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{FUPluginManager}]{\setlength{\rightskip}{0pt plus 5cm}FUPluginManager::FUPluginManager (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ pluginLibraryFilter}
+\end{DoxyParamCaption}
+)}}
+\label{classFUPluginManager_aa97b81224206a2626c1f8be258f444c3}
+Constructor. Look for the \char`\"{}plugins\char`\"{} folder within the given application filepath and attaches itself to the plug-\/in libraries it finds within the given file filter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em pluginLibraryFilter}]A filter string for plug-\/in library files. An example of a valid filter on Win32 is \char`\"{}$\ast$.fcp\char`\"{} or \char`\"{}$\ast$.fcp$|$$\ast$.dll\char`\"{}. \end{DoxyParams}
+\hypertarget{classFUPluginManager_a6bbc30b218bef777c704d63fe75a3132}{
+\index{FUPluginManager@{FUPluginManager}!$\sim$FUPluginManager@{$\sim$FUPluginManager}}
+\index{$\sim$FUPluginManager@{$\sim$FUPluginManager}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{$\sim$FUPluginManager}]{\setlength{\rightskip}{0pt plus 5cm}FUPluginManager::$\sim$FUPluginManager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFUPluginManager_a6bbc30b218bef777c704d63fe75a3132}
+Destructor. Releases all the loaded plug-\/ins and detaches all the plug-\/in libraries. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFUPluginManager_a8a0d8627cc79ae1eedcb1450178c8184}{
+\index{FUPluginManager@{FUPluginManager}!AddPluginLibrary@{AddPluginLibrary}}
+\index{AddPluginLibrary@{AddPluginLibrary}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{AddPluginLibrary}]{\setlength{\rightskip}{0pt plus 5cm}void FUPluginManager::AddPluginLibrary (
+\begin{DoxyParamCaption}
+\item[{{\bf FUPluginManager::GetPluginCount}}]{ fnGetPluginCount, }
+\item[{{\bf FUPluginManager::GetPluginType}}]{ fnGetPluginType, }
+\item[{{\bf FUPluginManager::CreatePlugin}}]{ fnCreatePlugin}
+\end{DoxyParamCaption}
+)}}
+\label{classFUPluginManager_a8a0d8627cc79ae1eedcb1450178c8184}
+Add one custom plug-\/in library. This function is useful when dealing with static plug-\/in libraries. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fnGetPluginCount}]The library's plugin count retrieval function. \item[{\em fnGetPluginType}]The library's plugin type retrieval function. \item[{\em fnCreatePlugin}]The library's plugin creation function. \end{DoxyParams}
+\hypertarget{classFUPluginManager_a316b3e7aa0de5c8c6c90376a61ccbe1f}{
+\index{FUPluginManager@{FUPluginManager}!GetLoadedPlugin@{GetLoadedPlugin}}
+\index{GetLoadedPlugin@{GetLoadedPlugin}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{GetLoadedPlugin}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUPlugin}$\ast$ FUPluginManager::GetLoadedPlugin (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUPluginManager_a316b3e7aa0de5c8c6c90376a61ccbe1f}
+See above. \hypertarget{classFUPluginManager_a4be42bc54895efe5e48abc9121961f5c}{
+\index{FUPluginManager@{FUPluginManager}!GetLoadedPlugin@{GetLoadedPlugin}}
+\index{GetLoadedPlugin@{GetLoadedPlugin}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{GetLoadedPlugin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUPlugin}$\ast$ FUPluginManager::GetLoadedPlugin (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUPluginManager_a4be42bc54895efe5e48abc9121961f5c}
+Retrieves a loaded plug-\/in. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the loaded plug-\/in. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The plug-\/in at the given index. 
+\end{DoxyReturn}
+\hypertarget{classFUPluginManager_a8da16d6823219e0b04251c7577009fb4}{
+\index{FUPluginManager@{FUPluginManager}!GetLoadedPluginCount@{GetLoadedPluginCount}}
+\index{GetLoadedPluginCount@{GetLoadedPluginCount}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{GetLoadedPluginCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t FUPluginManager::GetLoadedPluginCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUPluginManager_a8da16d6823219e0b04251c7577009fb4}
+Retrieves the number of loaded plug-\/ins. \begin{DoxyReturn}{Returns}
+The number of loaded plug-\/ins. 
+\end{DoxyReturn}
+\hypertarget{classFUPluginManager_a0dbca385003a3a3d4d16334f08f93a33}{
+\index{FUPluginManager@{FUPluginManager}!GetLoadedPlugins@{GetLoadedPlugins}}
+\index{GetLoadedPlugins@{GetLoadedPlugins}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{GetLoadedPlugins}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FUPlugin}$\ast$$\ast$ FUPluginManager::GetLoadedPlugins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUPluginManager_a0dbca385003a3a3d4d16334f08f93a33}
+Retrieves all the loaded plug-\/ins. \begin{DoxyReturn}{Returns}
+The loaded plug-\/ins list. 
+\end{DoxyReturn}
+\hypertarget{classFUPluginManager_a17da8db670809dd03a8ab6eef17f4db9}{
+\index{FUPluginManager@{FUPluginManager}!GetLoadedPlugins@{GetLoadedPlugins}}
+\index{GetLoadedPlugins@{GetLoadedPlugins}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{GetLoadedPlugins}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FUPlugin}$\ast$$\ast$ FUPluginManager::GetLoadedPlugins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFUPluginManager_a17da8db670809dd03a8ab6eef17f4db9}
+See above. \hypertarget{classFUPluginManager_a0ebe80f92e495c20e7cce5663510401b}{
+\index{FUPluginManager@{FUPluginManager}!LoadPlugins@{LoadPlugins}}
+\index{LoadPlugins@{LoadPlugins}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{LoadPlugins}]{\setlength{\rightskip}{0pt plus 5cm}void FUPluginManager::LoadPlugins (
+\begin{DoxyParamCaption}
+\item[{const {\bf FUObjectType} \&}]{ pluginType}
+\end{DoxyParamCaption}
+)}}
+\label{classFUPluginManager_a0ebe80f92e495c20e7cce5663510401b}
+Loads the plug-\/ins from the loaded plug-\/in libraries. 
+\begin{DoxyParams}{Parameters}
+\item[{\em pluginType}]The minimum object type for the plug-\/ins that must be loaded. This filters all the plug-\/ins within the plug-\/in libraries in order to creates only wanted plug-\/ins. When the given type is \hyperlink{classFUObject_a907d4f6d284b3ac4f8203d557af41668}{FUObject::GetClassType}, then all plug-\/ins will always be loaded. \end{DoxyParams}
+\hypertarget{classFUPluginManager_a0b6695e71aa89a2ce7b800543f52f03d}{
+\index{FUPluginManager@{FUPluginManager}!UnloadPlugins@{UnloadPlugins}}
+\index{UnloadPlugins@{UnloadPlugins}!FUPluginManager@{FUPluginManager}}
+\subsubsection[{UnloadPlugins}]{\setlength{\rightskip}{0pt plus 5cm}void FUPluginManager::UnloadPlugins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFUPluginManager_a0b6695e71aa89a2ce7b800543f52f03d}
+Unloads all the loaded plug-\/ins. This function releases all the loaded plug-\/ins, but does not detach all the plug-\/in libraries. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FUtils/FUPluginManager.h\item 
+FCollada/FUtils/FUPluginManager.cpp\end{DoxyCompactItemize}

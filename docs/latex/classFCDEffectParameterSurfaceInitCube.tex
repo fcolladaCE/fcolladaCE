@@ -1,0 +1,143 @@
+\hypertarget{classFCDEffectParameterSurfaceInitCube}{
+\section{FCDEffectParameterSurfaceInitCube Class Reference}
+\label{classFCDEffectParameterSurfaceInitCube}\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectParameterSurface.h$>$}
+
+Inheritance diagram for FCDEffectParameterSurfaceInitCube:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFCDEffectParameterSurfaceInitCube}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07}{CubeType} \{ {\bfseries ALL}, 
+\hyperlink{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07a5f20c13bdba2e0c6acd3616d3af70936}{PRIMARY}, 
+\hyperlink{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07ad8ea23e52036e6ad637a7169021239f3}{FACE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEffectParameterSurfaceInitCube_ae55fc2856c67f2572dc5eb26cdafda76}{FCDEffectParameterSurfaceInitCube} ()
+\item 
+virtual \hyperlink{classFCDEffectParameterSurfaceInitCube_ad69a070147d26f23d81d4380c9dd6ec8}{$\sim$FCDEffectParameterSurfaceInitCube} ()
+\item 
+virtual \hyperlink{classFCDEffectParameterSurfaceInitFactory_a65e74f1159865702cac5236dd5d83892}{FCDEffectParameterSurfaceInitFactory::InitType} \hyperlink{classFCDEffectParameterSurfaceInitCube_aa22db1c4680d97b447466bc54a492451}{GetInitType} () const 
+\item 
+virtual \hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} $\ast$ \hyperlink{classFCDEffectParameterSurfaceInitCube_a46ae1522ddb60038c59f9a1511157713}{Clone} (\hyperlink{classFCDEffectParameterSurfaceInit}{FCDEffectParameterSurfaceInit} $\ast$clone) const 
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07}{CubeType} \hyperlink{classFCDEffectParameterSurfaceInitCube_af13376d1509627b73843e631db0abffb}{cubeType}
+\item 
+\hyperlink{classfm_1_1vector}{UInt16List} \hyperlink{classFCDEffectParameterSurfaceInitCube_abb0a85514c43581c62d9b1167d329035}{order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A cube-\/map surface initialization method. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07}{
+\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!CubeType@{CubeType}}
+\index{CubeType@{CubeType}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+\subsubsection[{CubeType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDEffectParameterSurfaceInitCube::CubeType}}}
+\label{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07}
+The types of cube-\/map initializations. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{PRIMARY@{PRIMARY}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!PRIMARY@{PRIMARY}}\item[{\em 
+\hypertarget{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07a5f20c13bdba2e0c6acd3616d3af70936}{
+PRIMARY}
+\label{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07a5f20c13bdba2e0c6acd3616d3af70936}
+}]Load all the mip-\/levels of all the cube-\/map faces from one image file. \index{FACE@{FACE}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!FACE@{FACE}}\item[{\em 
+\hypertarget{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07ad8ea23e52036e6ad637a7169021239f3}{
+FACE}
+\label{classFCDEffectParameterSurfaceInitCube_a59228097e934d37b9e8ae788a749bc07ad8ea23e52036e6ad637a7169021239f3}
+}]Load the first mip-\/level of all the cube-\/map faces from one image file. Load all the cube-\/map faces from separate image files. \end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDEffectParameterSurfaceInitCube_ae55fc2856c67f2572dc5eb26cdafda76}{
+\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+\subsubsection[{FCDEffectParameterSurfaceInitCube}]{\setlength{\rightskip}{0pt plus 5cm}FCDEffectParameterSurfaceInitCube::FCDEffectParameterSurfaceInitCube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDEffectParameterSurfaceInitCube_ae55fc2856c67f2572dc5eb26cdafda76}
+Constructor: builds a new cube-\/map initialization method. \hypertarget{classFCDEffectParameterSurfaceInitCube_ad69a070147d26f23d81d4380c9dd6ec8}{
+\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!$\sim$FCDEffectParameterSurfaceInitCube@{$\sim$FCDEffectParameterSurfaceInitCube}}
+\index{$\sim$FCDEffectParameterSurfaceInitCube@{$\sim$FCDEffectParameterSurfaceInitCube}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+\subsubsection[{$\sim$FCDEffectParameterSurfaceInitCube}]{\setlength{\rightskip}{0pt plus 5cm}virtual FCDEffectParameterSurfaceInitCube::$\sim$FCDEffectParameterSurfaceInitCube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurfaceInitCube_ad69a070147d26f23d81d4380c9dd6ec8}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDEffectParameterSurfaceInitCube_a46ae1522ddb60038c59f9a1511157713}{
+\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDEffectParameterSurfaceInit} $\ast$ FCDEffectParameterSurfaceInitCube::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDEffectParameterSurfaceInit} $\ast$}]{ clone}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurfaceInitCube_a46ae1522ddb60038c59f9a1511157713}
+Creates a full copy of the surface initialization parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The cloned surface initialization. If this pointer is NULL, a new surface initialization parameter will be created and you will need to delete this pointer. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cloned surface initialization. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDEffectParameterSurfaceInit_ae3ac516773ea5ebb6838ed8a0d10d910}{FCDEffectParameterSurfaceInit}.
+
+\hypertarget{classFCDEffectParameterSurfaceInitCube_aa22db1c4680d97b447466bc54a492451}{
+\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!GetInitType@{GetInitType}}
+\index{GetInitType@{GetInitType}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+\subsubsection[{GetInitType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FCDEffectParameterSurfaceInitFactory::InitType} FCDEffectParameterSurfaceInitCube::GetInitType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDEffectParameterSurfaceInitCube_aa22db1c4680d97b447466bc54a492451}
+Retrieves the initialization type. You cannot modify this value. To change the initialization type of a surface parameter, create a new surface initialization structure of the correct type. \begin{DoxyReturn}{Returns}
+The initialization type. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCDEffectParameterSurfaceInit_ad0109233e63c892e5963a3ca67f7108f}{FCDEffectParameterSurfaceInit}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classFCDEffectParameterSurfaceInitCube_af13376d1509627b73843e631db0abffb}{
+\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!cubeType@{cubeType}}
+\index{cubeType@{cubeType}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+\subsubsection[{cubeType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CubeType} {\bf FCDEffectParameterSurfaceInitCube::cubeType}}}
+\label{classFCDEffectParameterSurfaceInitCube_af13376d1509627b73843e631db0abffb}
+The type of cube-\/map initialization. \hypertarget{classFCDEffectParameterSurfaceInitCube_abb0a85514c43581c62d9b1167d329035}{
+\index{FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}!order@{order}}
+\index{order@{order}!FCDEffectParameterSurfaceInitCube@{FCDEffectParameterSurfaceInitCube}}
+\subsubsection[{order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt16List} {\bf FCDEffectParameterSurfaceInitCube::order}}}
+\label{classFCDEffectParameterSurfaceInitCube_abb0a85514c43581c62d9b1167d329035}
+The list of image indices. The images are contained within the surface effect parameter. This is used only for the FACE cube-\/map initialization type and indicates how to match the faces of faces of the cube-\/map with the images in the surface effect parameter. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectParameterSurface_8h}{FCDEffectParameterSurface.h}\item 
+FCollada/FCDocument/FCDEffectParameterSurface.cpp\end{DoxyCompactItemize}

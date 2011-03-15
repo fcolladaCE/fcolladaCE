@@ -1,0 +1,104 @@
+\label{deprecated__deprecated000001}
+\hypertarget{deprecated__deprecated000001}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDAnimation_a0fd3e11834d0ceb9fdd13ac8796976b9}{FCDAnimation::GetChannels}() const  ]
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000002}
+\hypertarget{deprecated__deprecated000002}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDAnimationChannel_a978b4fceff674c0ae3bda2b5890760a2}{FCDAnimationChannel::GetCurves}() const  ]
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000003}
+\hypertarget{deprecated__deprecated000003}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDControllerInstance_a5c8057a1560e6b77340218e5d1e0d4ef}{FCDControllerInstance::GetType}() const  ]Instead use: \hyperlink{classFUObject_ab838ad4132b756dcd3614440b8e32f2a}{FCDEntityInstance::HasType}(\hyperlink{classFUObject_a907d4f6d284b3ac4f8203d557af41668}{FCDController::GetClassType()}) 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000004}
+\hypertarget{deprecated__deprecated000004}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDEntityInstance_a773c2cfdbad937e93da7a3fa71a671a7}{FCDEntityInstance::GetType}() const  ]Instead use: \hyperlink{classFUObject_ab838ad4132b756dcd3614440b8e32f2a}{FCDEntityInstance::HasType()}. 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000005}
+\hypertarget{deprecated__deprecated000005}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDGeometryInstance_a6125c229bbac52a27ae4a1fa8cd0dac6}{FCDGeometryInstance::GetType}() const  ]Instead use: \hyperlink{classFUObject_ab838ad4132b756dcd3614440b8e32f2a}{FCDEntityInstance::HasType}(\hyperlink{classFUObject_a907d4f6d284b3ac4f8203d557af41668}{FCDGeometryInstance::GetClassType()}) 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000006}
+\hypertarget{deprecated__deprecated000006}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDGeometryMesh_a85bfd86c44d637d2fc61cceb21e915c7}{FCDGeometryMesh::GetPositionSource}() ]Use FindSourceByType instead. 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000008}
+\hypertarget{deprecated__deprecated000008}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDLight_acdbb83fef4b9a591f275c45e189e17d0}{FCDLight::DEPRECATED}(3.05A, nothing) void SetHasMaxExtras(bool \hyperlink{FUtils_8h_aa2c1c2787f4fc780b0a902fc66d5c3ce}{UNUSED(value)}) ]Internal method, should never have been used. 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000009}
+\hypertarget{deprecated__deprecated000009}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDLight_a127fc0c85f489c5087542cf0267593ab}{FCDLight::DEPRECATED}(3.05A, GetOuterAngle and GetFallOffAngle) float \&GetPenumbraAngle() ]Instead use: GetOuterAngle and GetFallOffAngle 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000010}
+\hypertarget{deprecated__deprecated000010}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDLight_ad69a3aca5f0962c52c75d65bf51f55a5}{FCDLight::DEPRECATED}(3.05A, SetOuterAngle and SetFallOffAngle) void SetPenumbraAngle(float angle) ]Instead use: SetOuterAngle and SetFallOffAngle, or \hyperlink{namespaceFCDLightTools_ac7e4420bb00c7765b91debb75fbf673f}{FCDLightTools::LoadPenumbra} 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000007}
+\hypertarget{deprecated__deprecated000007}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDLight_a79f78c8ab362a43382aca2ca17009242}{FCDLight::DEPRECATED}(3.05A, GetExtra()-\/$>$GetDefaultType()-\/$>$GetTechniques()) virtual bool HasMaxExtras() const  ]Instead use: GetExtra()-\/$>$GetDefaultType()-\/$>$GetTechniques() 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000011}
+\hypertarget{deprecated__deprecated000011}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDMaterialInstance_a43aeb69d042dcf821de74a63b2ef0e1d}{FCDMaterialInstance::DEPRECATED}(3.05A, HasType(\hyperlink{classFUObject_a907d4f6d284b3ac4f8203d557af41668}{FCDMaterialInstance::GetClassType()})) virtual Type GetType() const  ]Use the following code, instead: entityInstance-\/$>$HasType(\hyperlink{classFUObject_a907d4f6d284b3ac4f8203d557af41668}{FCDMaterialInstance::GetClassType()}). 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000012}
+\hypertarget{deprecated__deprecated000012}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFCDPhysicsForceFieldInstance_a6c7921f3ba25d5236877ddf966a67886}{FCDPhysicsForceFieldInstance::GetType}() const  ]Instead use: \hyperlink{classFUObject_ab838ad4132b756dcd3614440b8e32f2a}{FCDEntityInstance::HasType}( \hyperlink{classFUObject_a907d4f6d284b3ac4f8203d557af41668}{FCDGeometryInstance::GetClassType()}) 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000013}
+\hypertarget{deprecated__deprecated000013}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{namespaceFCollada_a6d047a68a1957e70ff47a695bffa1ebd}{FCollada::DEPRECATED}(3.05A, GetPluginManager()-\/$>$RegisterPlugin) FCOLLADA\_\-EXPORT bool RegisterPlugin(FUPlugin $\ast$plugin) ]Use GetPluginManager()-\/$>$AddPlugin() instead. 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000014}
+\hypertarget{deprecated__deprecated000014}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFUFile_afa1c4f220686af45a24071dd3c5b0c41}{FUFile::GetHandle}() ]Retrieves the OS-\/specific handle to the file. Using this function is not recommended. 
+\end{DoxyDescription}
+
+\label{deprecated__deprecated000015}
+\hypertarget{deprecated__deprecated000015}{}
+ 
+\begin{DoxyDescription}
+\item[Global \hyperlink{classFUObjectContainer_aa84fe4da7ea1e0440632e76f3c81ad19}{FUObjectContainer$<$ ObjectClass $>$::DEPRECATED}(3.05A,\char`\"{}FUObject::Release()\char`\"{}) bool release(const ObjectClass $\ast$value) ]Use \hyperlink{classFUObject_a33be6852b877d7f29520bbe4722b846b}{FUObject::Release} instead. 
+\end{DoxyDescription}

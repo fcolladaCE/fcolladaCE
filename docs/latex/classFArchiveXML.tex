@@ -1,0 +1,1854 @@
+\hypertarget{classFArchiveXML}{
+\section{FArchiveXML Class Reference}
+\label{classFArchiveXML}\index{FArchiveXML@{FArchiveXML}}
+}
+Inheritance diagram for FArchiveXML:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classFArchiveXML}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classFArchiveXML_afaeaeb4ee3cd75bac1ad6a4c54c9b899}{IsImportSupported} ()
+\item 
+virtual bool \hyperlink{classFArchiveXML_adb1efee2caed4402a02dd20af432e5ef}{IsExportSupported} ()
+\item 
+virtual bool \hyperlink{classFArchiveXML_ad35bb5dd5d901c86edf794dda76bfc4d}{IsPartialExportSupported} ()
+\item 
+virtual bool \hyperlink{classFArchiveXML_a17673f93728bb30dedd2791473c4b14e}{IsExtensionSupported} (const char $\ast$ext)
+\item 
+virtual int \hyperlink{classFArchiveXML_a0547ef1565f6543319b9aaad3eca8697}{GetSupportedExtensionsCount} ()
+\item 
+virtual const char $\ast$ \hyperlink{classFArchiveXML_a3908cc84df654da0ded836afcfd7fab8}{GetSupportedExtensionAt} (int index)
+\item 
+virtual bool \hyperlink{classFArchiveXML_adb22e0884d6059ded32d194a8cdde4dc}{AddExtraExtension} (const char $\ast$ext)
+\item 
+virtual bool \hyperlink{classFArchiveXML_ad1e57b1a3067f88738ee7a2f0e6fc9ca}{RemoveExtraExtension} (const char $\ast$ext)
+\item 
+virtual bool \hyperlink{classFArchiveXML_a10bc809b2a64d9df0cd83742bf0dc49a}{ImportFile} (const fchar $\ast$filePath, \hyperlink{classFCDocument}{FCDocument} $\ast$fcdocument)
+\item 
+virtual bool \hyperlink{classFArchiveXML_a5a85deaaf25379ea56b30d5a602ae949}{ImportFileFromMemory} (const fchar $\ast$filePath, \hyperlink{classFCDocument}{FCDocument} $\ast$fcdocument, const void $\ast$contents, size\_\-t length)
+\item 
+virtual bool \hyperlink{classFArchiveXML_ab7c6e1fab043617e8e6adebf947dcf7e}{ExportFile} (\hyperlink{classFCDocument}{FCDocument} $\ast$fcdocument, const fchar $\ast$filePath)
+\item 
+virtual bool \hyperlink{classFArchiveXML_a485fad9bad65ed0e6512f9713223982f}{StartExport} (const fchar $\ast$absoluteFilePath)
+\item 
+virtual bool \hyperlink{classFArchiveXML_a36eff362143c86cae961237d4923a35a}{ExportObject} (\hyperlink{classFCDObject}{FCDObject} $\ast$object)
+\item 
+virtual bool \hyperlink{classFArchiveXML_a877083fc6c055f24042dd50103fb00a4}{EndExport} (\hyperlink{classfm_1_1vector}{fm::vector}$<$ uint8 $>$ \&outData)
+\item 
+virtual bool \hyperlink{classFArchiveXML_a19693477bc5410a640105cec37febdb6}{EndExport} (const fchar $\ast$filePath)
+\item 
+virtual bool \hyperlink{classFArchiveXML_a323f1807851e536b1c46f7583303518e}{ImportObject} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, const \hyperlink{classfm_1_1vector}{fm::vector}$<$ uint8 $>$ \&data)
+\item 
+virtual const char $\ast$ \hyperlink{classFArchiveXML_abd9ac092eff78dbc8f8249fa402fe644}{GetPluginName} () const 
+\item 
+virtual uint32 \hyperlink{classFArchiveXML_a2fb1d4d2d6d862e023d8510ea404bd60}{GetPluginVersion} () const 
+\item 
+bool \hyperlink{classFArchiveXML_a31a7807261de79f1f8b9e539e7dff0ea}{Import} (\hyperlink{classFCDocument}{FCDocument} $\ast$theDocument, xmlNode $\ast$colladaNode)
+\item 
+bool \hyperlink{classFArchiveXML_a924a76fcef59b49c82ce323badbcc469}{ExportDocument} (\hyperlink{classFCDocument}{FCDocument} $\ast$theDocument, xmlNode $\ast$colladaNode)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classFArchiveXML_a9058483d29253567c3bbaa9e557e38b1}{Initialize} ()
+\item 
+static void \hyperlink{classFArchiveXML_ad9be9f3803f77996d7b155f2110a7105}{ClearIntermediateData} ()
+\item 
+static bool \hyperlink{classFArchiveXML_a6cc3fc2e4e1415c3c411a38f978c77ae}{LoadSwitch} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, const \hyperlink{classFUObjectType}{FUObjectType} $\ast$objectType, xmlNode $\ast$node)
+\item 
+static xmlNode $\ast$ \hyperlink{classFArchiveXML_aaf83155ae7183ba1b4b485fdd239c483}{WriteSwitch} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, const \hyperlink{classFUObjectType}{FUObjectType} $\ast$objectType, xmlNode $\ast$parentNode)
+\item 
+static xmlNode $\ast$ \hyperlink{classFArchiveXML_a2b455f62993fdcc77200439fb917748e}{WriteParentSwitch} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, const \hyperlink{classFUObjectType}{FUObjectType} $\ast$objectType, xmlNode $\ast$parentNode)
+\item 
+static bool \hyperlink{classFArchiveXML_a262d6014344ef77f716e08e4149d4c16}{LoadObject} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)
+\item 
+\hypertarget{classFArchiveXML_a1b7970ad7bb676ad4589adc156d0f49c}{
+static bool {\bfseries LoadExtra} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a1b7970ad7bb676ad4589adc156d0f49c}
+
+\item 
+\hypertarget{classFArchiveXML_a535909ab9a6ad15b14db6a0496d505e6}{
+static bool {\bfseries LoadExtraNode} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a535909ab9a6ad15b14db6a0496d505e6}
+
+\item 
+\hypertarget{classFArchiveXML_a53dcee9d989ad31d7b18c5a993988421}{
+static bool {\bfseries LoadExtraTechnique} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a53dcee9d989ad31d7b18c5a993988421}
+
+\item 
+\hypertarget{classFArchiveXML_a42482076998e2198f9a0425ff8dcc6dc}{
+static bool {\bfseries LoadExtraType} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a42482076998e2198f9a0425ff8dcc6dc}
+
+\item 
+\hypertarget{classFArchiveXML_a5a49f5747b16985482ddc172fc81b734}{
+static bool {\bfseries LoadScene} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a5a49f5747b16985482ddc172fc81b734}
+
+\item 
+\hypertarget{classFArchiveXML_a875e91a66a9b40641d083af3e8c9fe1b}{
+static bool {\bfseries LoadAsset} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a875e91a66a9b40641d083af3e8c9fe1b}
+
+\item 
+\hypertarget{classFArchiveXML_a367c11921b7c1537718047064d1e5ffe}{
+static bool {\bfseries LoadAssetContributor} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a367c11921b7c1537718047064d1e5ffe}
+
+\item 
+\hypertarget{classFArchiveXML_a8cadc7aba5cbef80ba1e0a05d566abdd}{
+static bool {\bfseries LoadEntityReference} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a8cadc7aba5cbef80ba1e0a05d566abdd}
+
+\item 
+\hypertarget{classFArchiveXML_a957566c1300a2ab443077fb3cc554387}{
+static bool {\bfseries LoadExternalReferenceManager} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a957566c1300a2ab443077fb3cc554387}
+
+\item 
+\hypertarget{classFArchiveXML_a6f9aa794147a5c59286711fe7245586a}{
+static bool {\bfseries LoadPlaceHolder} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a6f9aa794147a5c59286711fe7245586a}
+
+\item 
+\hypertarget{classFArchiveXML_aad15689fbfca61712581151d2acb598e}{
+static void {\bfseries FindAnimationChannelsArrayIndices} (\hyperlink{classFCDocument}{FCDocument} $\ast$fcdocument, xmlNode $\ast$targetArray, \hyperlink{classfm_1_1vector}{Int32List} \&animatedIndices)}
+\label{classFArchiveXML_aad15689fbfca61712581151d2acb598e}
+
+\item 
+\hypertarget{classFArchiveXML_a114e99422f7d398d7f59b21439cebe9e}{
+static void {\bfseries RegisterLoadedDocument} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)}
+\label{classFArchiveXML_a114e99422f7d398d7f59b21439cebe9e}
+
+\item 
+\hypertarget{classFArchiveXML_a44ed8a9ade24b76a36fa20f875d31afc}{
+static bool {\bfseries LoadEntity} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a44ed8a9ade24b76a36fa20f875d31afc}
+
+\item 
+\hypertarget{classFArchiveXML_ada4170520a4eb94ea5259c952c48c69b}{
+static bool {\bfseries LoadTargetedEntity} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ada4170520a4eb94ea5259c952c48c69b}
+
+\item 
+\hypertarget{classFArchiveXML_a487520c0383bf2beccbe4ed9b47ea358}{
+static bool {\bfseries LoadSceneNode} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a487520c0383bf2beccbe4ed9b47ea358}
+
+\item 
+\hypertarget{classFArchiveXML_aca9add5b61e4ccc0e22be9a2038b4352}{
+static bool {\bfseries LoadTransform} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_aca9add5b61e4ccc0e22be9a2038b4352}
+
+\item 
+\hypertarget{classFArchiveXML_a1169d63ba7a5e2afec67d3582f3093e1}{
+static bool {\bfseries LoadTransformLookAt} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a1169d63ba7a5e2afec67d3582f3093e1}
+
+\item 
+\hypertarget{classFArchiveXML_a11bf1d14aa206adfd006733ad7e5015a}{
+static bool {\bfseries LoadTransformMatrix} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a11bf1d14aa206adfd006733ad7e5015a}
+
+\item 
+\hypertarget{classFArchiveXML_a446646e0da33d48808c83018dfc9efdf}{
+static bool {\bfseries LoadTransformRotation} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a446646e0da33d48808c83018dfc9efdf}
+
+\item 
+\hypertarget{classFArchiveXML_abfd157c5d4f7569b81d84b7c493aa4e4}{
+static bool {\bfseries LoadTransformScale} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_abfd157c5d4f7569b81d84b7c493aa4e4}
+
+\item 
+\hypertarget{classFArchiveXML_a53c5e477e3f94544e64e8d5ab4beca3b}{
+static bool {\bfseries LoadTransformSkew} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a53c5e477e3f94544e64e8d5ab4beca3b}
+
+\item 
+\hypertarget{classFArchiveXML_ab61719bd09628e5162b71a9b799b869b}{
+static bool {\bfseries LoadTransformTranslation} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ab61719bd09628e5162b71a9b799b869b}
+
+\item 
+\hypertarget{classFArchiveXML_aed27eb532121fbeaf0d39c0ce5f5ff00}{
+static bool {\bfseries LoadFromExtraSceneNode} (\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$sceneNode)}
+\label{classFArchiveXML_aed27eb532121fbeaf0d39c0ce5f5ff00}
+
+\item 
+\hypertarget{classFArchiveXML_a260ad693ec5a2cb70aef89db90f5ab60}{
+static uint32 {\bfseries GetTransformType} (xmlNode $\ast$node)}
+\label{classFArchiveXML_a260ad693ec5a2cb70aef89db90f5ab60}
+
+\item 
+\hypertarget{classFArchiveXML_a92f8ac29a7828b5a7d4084321463912d}{
+static bool {\bfseries LoadController} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a92f8ac29a7828b5a7d4084321463912d}
+
+\item 
+\hypertarget{classFArchiveXML_a34c3cb5de48205da989e7755c2ffdc78}{
+static bool {\bfseries LoadSkinController} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a34c3cb5de48205da989e7755c2ffdc78}
+
+\item 
+\hypertarget{classFArchiveXML_a7b81e68b09f6269713d4c9fe2ada5f43}{
+static bool {\bfseries LoadMorphController} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a7b81e68b09f6269713d4c9fe2ada5f43}
+
+\item 
+\hypertarget{classFArchiveXML_a98489c2838a3d4eb96a4f04824081edb}{
+static \hyperlink{classFCDSkinController}{FCDSkinController} $\ast$ {\bfseries FindSkinController} (\hyperlink{classFCDControllerInstance}{FCDControllerInstance} $\ast$controllerInstance, \hyperlink{classFCDEntity}{FCDEntity} $\ast$entity)}
+\label{classFArchiveXML_a98489c2838a3d4eb96a4f04824081edb}
+
+\item 
+\hypertarget{classFArchiveXML_a900937020ac203ca5350ba3caadc7d28}{
+static bool {\bfseries LoadEntityInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a900937020ac203ca5350ba3caadc7d28}
+
+\item 
+\hypertarget{classFArchiveXML_ae91329905ec5e6b5a3e07b3ab6b0597c}{
+static bool {\bfseries LoadEmitterInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ae91329905ec5e6b5a3e07b3ab6b0597c}
+
+\item 
+\hypertarget{classFArchiveXML_a09864f68aba557a580a42d6b0091d121}{
+static bool {\bfseries LoadGeometryInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a09864f68aba557a580a42d6b0091d121}
+
+\item 
+\hypertarget{classFArchiveXML_a0a00cd269234eb419f4cd6a66854afad}{
+static bool {\bfseries LoadControllerInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a0a00cd269234eb419f4cd6a66854afad}
+
+\item 
+\hypertarget{classFArchiveXML_a8cacba7e220337fafb9af191769ef8ef}{
+static bool {\bfseries LoadMaterialInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a8cacba7e220337fafb9af191769ef8ef}
+
+\item 
+\hypertarget{classFArchiveXML_a1bdb975b6666fe700a24d6e31d1b02f6}{
+static bool {\bfseries LoadPhysicsForceFieldInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a1bdb975b6666fe700a24d6e31d1b02f6}
+
+\item 
+\hypertarget{classFArchiveXML_a601db1bc80cc144e179fef96dd82f6dc}{
+static bool {\bfseries LoadPhysicsModelInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a601db1bc80cc144e179fef96dd82f6dc}
+
+\item 
+\hypertarget{classFArchiveXML_a844e802b67f84ad81301a339e76d3b7b}{
+static bool {\bfseries LoadPhysicsRigidBodyInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a844e802b67f84ad81301a339e76d3b7b}
+
+\item 
+\hypertarget{classFArchiveXML_a23d938ee0bf9e6a2b017646b639fee68}{
+static bool {\bfseries LoadPhysicsRigidConstraintInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a23d938ee0bf9e6a2b017646b639fee68}
+
+\item 
+\hypertarget{classFArchiveXML_aa02dcab5cfd175401750a05d992e1d2b}{
+static bool {\bfseries LinkControllerInstance} (\hyperlink{classFCDControllerInstance}{FCDControllerInstance} $\ast$controllerInstance)}
+\label{classFArchiveXML_aa02dcab5cfd175401750a05d992e1d2b}
+
+\item 
+\hypertarget{classFArchiveXML_a1c77296a350a216bafcd5275447d58fd}{
+static bool {\bfseries LinkEmitterInstance} (\hyperlink{classFCDEmitterInstance}{FCDEmitterInstance} $\ast$emitterInstance)}
+\label{classFArchiveXML_a1c77296a350a216bafcd5275447d58fd}
+
+\item 
+\hypertarget{classFArchiveXML_aa8f1c68e99ccbe83af81a014d7b81fb3}{
+static bool {\bfseries ImportEmittedInstanceList} (\hyperlink{classFCDEmitterInstance}{FCDEmitterInstance} $\ast$emitterInstance, xmlNode $\ast$node)}
+\label{classFArchiveXML_aa8f1c68e99ccbe83af81a014d7b81fb3}
+
+\item 
+\hypertarget{classFArchiveXML_a55429934b31d562678dbe3b6750785b7}{
+static uint32 {\bfseries GetEntityInstanceType} (xmlNode $\ast$node)}
+\label{classFArchiveXML_a55429934b31d562678dbe3b6750785b7}
+
+\item 
+\hypertarget{classFArchiveXML_a78515848c51397e3eb41b95a97eea267}{
+static bool {\bfseries LoadMaterial} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a78515848c51397e3eb41b95a97eea267}
+
+\item 
+\hypertarget{classFArchiveXML_a24d260139664a8ebfd6c03867ac8fef1}{
+static bool {\bfseries LoadEffectCode} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a24d260139664a8ebfd6c03867ac8fef1}
+
+\item 
+\hypertarget{classFArchiveXML_a6efa928ba5a0471fc33f9b7623ace940}{
+static bool {\bfseries LoadEffectParameter} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a6efa928ba5a0471fc33f9b7623ace940}
+
+\item 
+\hypertarget{classFArchiveXML_a29c3f291898ca121df019ba96562c972}{
+static bool {\bfseries LoadEffectParameterBool} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a29c3f291898ca121df019ba96562c972}
+
+\item 
+\hypertarget{classFArchiveXML_a96bc1c1dbd9288ab5d0ab53bf332744e}{
+static bool {\bfseries LoadEffectParameterFloat} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a96bc1c1dbd9288ab5d0ab53bf332744e}
+
+\item 
+\hypertarget{classFArchiveXML_a2823a5559af325bd967dd88c6d1951d3}{
+static bool {\bfseries LoadEffectParameterFloat2} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a2823a5559af325bd967dd88c6d1951d3}
+
+\item 
+\hypertarget{classFArchiveXML_a305287ced718d4dc17e5601ffbb1fcec}{
+static bool {\bfseries LoadEffectParameterFloat3} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a305287ced718d4dc17e5601ffbb1fcec}
+
+\item 
+\hypertarget{classFArchiveXML_af963cd0c755b4111dfcbf7a04a592e6c}{
+static bool {\bfseries LoadEffectParameterInt} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_af963cd0c755b4111dfcbf7a04a592e6c}
+
+\item 
+\hypertarget{classFArchiveXML_a382fcc2676fa9c3d221fb360af796103}{
+static bool {\bfseries LoadEffectParameterMatrix} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a382fcc2676fa9c3d221fb360af796103}
+
+\item 
+\hypertarget{classFArchiveXML_ac117edb1dbd423e36e2c16f0a0436e49}{
+static bool {\bfseries LoadEffectParameterSampler} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ac117edb1dbd423e36e2c16f0a0436e49}
+
+\item 
+\hypertarget{classFArchiveXML_a09d5269f821f5200d9d62c9393a66975}{
+static bool {\bfseries LoadEffectParameterString} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a09d5269f821f5200d9d62c9393a66975}
+
+\item 
+\hypertarget{classFArchiveXML_ac507675658747c50aa09c93df518b500}{
+static bool {\bfseries LoadEffectParameterSurface} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ac507675658747c50aa09c93df518b500}
+
+\item 
+\hypertarget{classFArchiveXML_a6696c767cda5cf04eee1535b776af176}{
+static bool {\bfseries LoadEffectParameterVector} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a6696c767cda5cf04eee1535b776af176}
+
+\item 
+\hypertarget{classFArchiveXML_a2251423924d3c0353a07abc15b494297}{
+static bool {\bfseries LoadEffectPass} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a2251423924d3c0353a07abc15b494297}
+
+\item 
+\hypertarget{classFArchiveXML_a019160d91b921e4a8b2a16310044df3f}{
+static bool {\bfseries LoadEffectPassShader} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a019160d91b921e4a8b2a16310044df3f}
+
+\item 
+\hypertarget{classFArchiveXML_a853a7dc1f9dcea98145943d0b569f3eb}{
+static bool {\bfseries LoadEffectPassState} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a853a7dc1f9dcea98145943d0b569f3eb}
+
+\item 
+\hypertarget{classFArchiveXML_a82e1f4d0f14af35527ec2a7fd51ef02f}{
+static bool {\bfseries LoadEffectProfile} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a82e1f4d0f14af35527ec2a7fd51ef02f}
+
+\item 
+\hypertarget{classFArchiveXML_a321afcd5fb3bf1bd8f0a6068ea95f230}{
+static bool {\bfseries LoadEffectProfileFX} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a321afcd5fb3bf1bd8f0a6068ea95f230}
+
+\item 
+\hypertarget{classFArchiveXML_a5bf4e7feb6cf2e1d8cecc47a2d5c5d5a}{
+static bool {\bfseries LoadEffectStandard} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a5bf4e7feb6cf2e1d8cecc47a2d5c5d5a}
+
+\item 
+\hypertarget{classFArchiveXML_ab02955007a3e0a50373cd03e44ad1eb2}{
+static bool {\bfseries LoadEffectTechnique} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ab02955007a3e0a50373cd03e44ad1eb2}
+
+\item 
+\hypertarget{classFArchiveXML_a3a1872c89840e3b0af2f45fc1375e672}{
+static bool {\bfseries LoadEffect} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a3a1872c89840e3b0af2f45fc1375e672}
+
+\item 
+\hypertarget{classFArchiveXML_a3292f8a8a3dca9046bec1a417cd13d14}{
+static bool {\bfseries LoadTexture} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a3292f8a8a3dca9046bec1a417cd13d14}
+
+\item 
+\hypertarget{classFArchiveXML_ac40abf7d8f99b67eafea35aef962870c}{
+static bool {\bfseries LoadImage} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ac40abf7d8f99b67eafea35aef962870c}
+
+\item 
+\hypertarget{classFArchiveXML_ac4e5157296983ebccf95db178d1ce8c0}{
+static bool {\bfseries ParseColorTextureParameter} (\hyperlink{classFCDEffectStandard}{FCDEffectStandard} $\ast$effectStandard, xmlNode $\ast$parameterNode, \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$value, uint32 bucketIndex)}
+\label{classFArchiveXML_ac4e5157296983ebccf95db178d1ce8c0}
+
+\item 
+\hypertarget{classFArchiveXML_a3564c020122c1c0dc5b42cb0d29bac74}{
+static bool {\bfseries ParseFloatTextureParameter} (\hyperlink{classFCDEffectStandard}{FCDEffectStandard} $\ast$effectStandard, xmlNode $\ast$parameterNode, \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$value, uint32 bucketIndex)}
+\label{classFArchiveXML_a3564c020122c1c0dc5b42cb0d29bac74}
+
+\item 
+\hypertarget{classFArchiveXML_a8bb8080121201b7b720577379407ee7b}{
+static bool {\bfseries ParseSimpleTextureParameter} (\hyperlink{classFCDEffectStandard}{FCDEffectStandard} $\ast$effectStandard, xmlNode $\ast$parameterNode, uint32 bucketIndex)}
+\label{classFArchiveXML_a8bb8080121201b7b720577379407ee7b}
+
+\item 
+\hypertarget{classFArchiveXML_aef32fcbf50e0217463fdb5aa244b0c0b}{
+static uint32 {\bfseries GetEffectParameterType} (xmlNode $\ast$parameterNode)}
+\label{classFArchiveXML_aef32fcbf50e0217463fdb5aa244b0c0b}
+
+\item 
+\hypertarget{classFArchiveXML_ab90611d72d439141c2afa67bdb608775}{
+static bool {\bfseries LoadAnimated} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ab90611d72d439141c2afa67bdb608775}
+
+\item 
+\hypertarget{classFArchiveXML_a11076b3abe8bab3edeb99630d6db1238}{
+static bool {\bfseries LoadAnimationChannel} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a11076b3abe8bab3edeb99630d6db1238}
+
+\item 
+\hypertarget{classFArchiveXML_a9314af33577fe249ec39ccb42d5c059d}{
+static bool {\bfseries LoadAnimationCurve} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a9314af33577fe249ec39ccb42d5c059d}
+
+\item 
+\hypertarget{classFArchiveXML_a80ab0a3010b7723624892e7006201951}{
+static bool {\bfseries LoadAnimationMultiCurve} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a80ab0a3010b7723624892e7006201951}
+
+\item 
+\hypertarget{classFArchiveXML_a1556e23523434a156d05927399317f75}{
+static bool {\bfseries LoadAnimation} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a1556e23523434a156d05927399317f75}
+
+\item 
+\hypertarget{classFArchiveXML_a8059e941d148962985a842ec7fc4ab9d}{
+static bool {\bfseries LoadAnimationClip} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a8059e941d148962985a842ec7fc4ab9d}
+
+\item 
+\hypertarget{classFArchiveXML_a7ca2c2a7c5b93049947ff855936e2036}{
+static bool {\bfseries LoadCamera} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a7ca2c2a7c5b93049947ff855936e2036}
+
+\item 
+\hypertarget{classFArchiveXML_a0cfda9575a465a13ffe357491e622cce}{
+static bool {\bfseries LoadLight} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a0cfda9575a465a13ffe357491e622cce}
+
+\item 
+\hypertarget{classFArchiveXML_abd6b7eedb5a38c372c868d00584803cc}{
+static bool {\bfseries LoadGeometrySource} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_abd6b7eedb5a38c372c868d00584803cc}
+
+\item 
+\hypertarget{classFArchiveXML_a2efcffe1c9d1a5995041c1c67e4c8880}{
+static bool {\bfseries LoadGeometryMesh} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a2efcffe1c9d1a5995041c1c67e4c8880}
+
+\item 
+\hypertarget{classFArchiveXML_a7cbb70e74b9798c3b5522da0fb7fafb8}{
+static bool {\bfseries LoadGeometryNURBSSurface} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a7cbb70e74b9798c3b5522da0fb7fafb8}
+
+\item 
+\hypertarget{classFArchiveXML_aae7d1bddc6e15d3dce05b47ae15cb4d2}{
+static bool {\bfseries LoadGeometry} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_aae7d1bddc6e15d3dce05b47ae15cb4d2}
+
+\item 
+\hypertarget{classFArchiveXML_a0bc5ec838d4bb7b50952d317b4a1bbf0}{
+static bool {\bfseries LoadGeometryPolygons} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a0bc5ec838d4bb7b50952d317b4a1bbf0}
+
+\item 
+\hypertarget{classFArchiveXML_a2333e909f2b1bcc4b5c9434f205f1750}{
+static bool {\bfseries LoadGeometrySpline} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a2333e909f2b1bcc4b5c9434f205f1750}
+
+\item 
+\hypertarget{classFArchiveXML_a624aeb310f4820e643e240d088a3151a}{
+static bool {\bfseries LoadSpline} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a624aeb310f4820e643e240d088a3151a}
+
+\item 
+\hypertarget{classFArchiveXML_abcb8278daa17a482a7c4a396b894d6bb}{
+static bool {\bfseries LoadBezierSpline} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_abcb8278daa17a482a7c4a396b894d6bb}
+
+\item 
+\hypertarget{classFArchiveXML_a8b584c08ceb7b26668d37ef6d5a56d1d}{
+static bool {\bfseries LoadLinearSpline} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a8b584c08ceb7b26668d37ef6d5a56d1d}
+
+\item 
+\hypertarget{classFArchiveXML_a48c403aa203b02ea9a7a17957cf49fe0}{
+static bool {\bfseries LoadNURBSSpline} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a48c403aa203b02ea9a7a17957cf49fe0}
+
+\item 
+\hypertarget{classFArchiveXML_a4c3548f119f2bb0c585f95ea44eba284}{
+static void {\bfseries SetTypeFCDGeometrySource} (\hyperlink{classFCDGeometrySource}{FCDGeometrySource} $\ast$geometrySource, \hyperlink{namespaceFUDaeGeometryInput_a0f887d29f54b10338ebcf73789a7a061}{FUDaeGeometryInput::Semantic} type)}
+\label{classFArchiveXML_a4c3548f119f2bb0c585f95ea44eba284}
+
+\item 
+\hypertarget{classFArchiveXML_aefcf31bf5c792c5ee9e961d2e781a4fa}{
+static bool {\bfseries LoadPhysicsRigidBodyParameters} (\hyperlink{classFCDPhysicsRigidBodyParameters}{FCDPhysicsRigidBodyParameters} $\ast$parameters, xmlNode $\ast$techniqueNode, \hyperlink{classFCDPhysicsRigidBodyParameters}{FCDPhysicsRigidBodyParameters} $\ast$defaultParameters=NULL)}
+\label{classFArchiveXML_aefcf31bf5c792c5ee9e961d2e781a4fa}
+
+\item 
+\hypertarget{classFArchiveXML_a984772ce7a60a0d21642939bd1421078}{
+static bool {\bfseries AttachModelInstancesFCDPhysicsModel} (\hyperlink{classFCDPhysicsModel}{FCDPhysicsModel} $\ast$physicsModel)}
+\label{classFArchiveXML_a984772ce7a60a0d21642939bd1421078}
+
+\item 
+\hypertarget{classFArchiveXML_a64acef1ffd5aba18564d2c7b9b870376}{
+static bool {\bfseries LoadPhysicsShape} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a64acef1ffd5aba18564d2c7b9b870376}
+
+\item 
+\hypertarget{classFArchiveXML_ae46a2616d1919f184268991daa937d95}{
+static bool {\bfseries LoadPhysicsAnalyticalGeometry} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ae46a2616d1919f184268991daa937d95}
+
+\item 
+\hypertarget{classFArchiveXML_af63374014ddf15b1dd31975596f1ced3}{
+static bool {\bfseries LoadPASBox} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_af63374014ddf15b1dd31975596f1ced3}
+
+\item 
+\hypertarget{classFArchiveXML_a223c29850e37f72af05c3d66dc28a978}{
+static bool {\bfseries LoadPASCapsule} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a223c29850e37f72af05c3d66dc28a978}
+
+\item 
+\hypertarget{classFArchiveXML_aabd1fd0875ffaf8ef6fb0689d37e81cf}{
+static bool {\bfseries LoadPASTaperedCapsule} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_aabd1fd0875ffaf8ef6fb0689d37e81cf}
+
+\item 
+\hypertarget{classFArchiveXML_a590ab8128ebf104f25968fc1c76dcda1}{
+static bool {\bfseries LoadPASCylinder} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a590ab8128ebf104f25968fc1c76dcda1}
+
+\item 
+\hypertarget{classFArchiveXML_ae33494b0714790692fdcc31195bb64c0}{
+static bool {\bfseries LoadPASTaperedCylinder} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ae33494b0714790692fdcc31195bb64c0}
+
+\item 
+\hypertarget{classFArchiveXML_ae534146f87505d3702730261a143ffb4}{
+static bool {\bfseries LoadPASPlane} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ae534146f87505d3702730261a143ffb4}
+
+\item 
+\hypertarget{classFArchiveXML_a2f2b3f695d4cafb82c1107a450736f23}{
+static bool {\bfseries LoadPASSphere} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a2f2b3f695d4cafb82c1107a450736f23}
+
+\item 
+\hypertarget{classFArchiveXML_abbc224a6cb3d7c5445358199fe5f587f}{
+static bool {\bfseries LoadPhysicsMaterial} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_abbc224a6cb3d7c5445358199fe5f587f}
+
+\item 
+\hypertarget{classFArchiveXML_a04cb9c9989157dc2567e75be5470aca0}{
+static bool {\bfseries LoadPhysicsModel} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a04cb9c9989157dc2567e75be5470aca0}
+
+\item 
+\hypertarget{classFArchiveXML_ac3a5fcb3474dfb503c68cd9387abe180}{
+static bool {\bfseries LoadPhysicsRigidBody} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ac3a5fcb3474dfb503c68cd9387abe180}
+
+\item 
+\hypertarget{classFArchiveXML_a0512e8df437af58424e0bf64abcee55d}{
+static bool {\bfseries LoadPhysicsRigidConstraint} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a0512e8df437af58424e0bf64abcee55d}
+
+\item 
+\hypertarget{classFArchiveXML_ae7dd322663acecf932d959b69af4e00d}{
+static bool {\bfseries LoadPhysicsScene} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ae7dd322663acecf932d959b69af4e00d}
+
+\item 
+\hypertarget{classFArchiveXML_a24ce1334527d99a8d177d7596548a234}{
+static bool {\bfseries LoadEmitter} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a24ce1334527d99a8d177d7596548a234}
+
+\item 
+\hypertarget{classFArchiveXML_a634d59668009bd2fda13656b90304993}{
+static bool {\bfseries LoadForceField} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a634d59668009bd2fda13656b90304993}
+
+\item 
+\hypertarget{classFArchiveXML_a393c060981bea9bebcd033c86428c246}{
+{\footnotesize template$<$class T $>$ }\\static bool {\bfseries LoadLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a393c060981bea9bebcd033c86428c246}
+
+\item 
+\hypertarget{classFArchiveXML_a1aa5d6c15add9802dbcd4f5d8444b546}{
+static bool {\bfseries LoadAnimationLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a1aa5d6c15add9802dbcd4f5d8444b546}
+
+\item 
+\hypertarget{classFArchiveXML_a6d626a607be69305bd828079d21b0e34}{
+static bool {\bfseries LoadAnimationClipLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a6d626a607be69305bd828079d21b0e34}
+
+\item 
+\hypertarget{classFArchiveXML_acec8ee660cfd5b3e35c7f45fca2794ad}{
+static bool {\bfseries LoadCameraLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_acec8ee660cfd5b3e35c7f45fca2794ad}
+
+\item 
+\hypertarget{classFArchiveXML_aac999f8eb64c3c747f4dfd7224ba1abf}{
+static bool {\bfseries LoadControllerLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_aac999f8eb64c3c747f4dfd7224ba1abf}
+
+\item 
+\hypertarget{classFArchiveXML_a732a244adfa1ccb499d3272f7969792d}{
+static bool {\bfseries LoadEffectLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a732a244adfa1ccb499d3272f7969792d}
+
+\item 
+\hypertarget{classFArchiveXML_a00547f5cc81d25d6b3935523029bf4a3}{
+static bool {\bfseries LoadEmitterLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a00547f5cc81d25d6b3935523029bf4a3}
+
+\item 
+\hypertarget{classFArchiveXML_a2e9aaf9b0dd5aedc9850b186262a025a}{
+static bool {\bfseries LoadForceFieldLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a2e9aaf9b0dd5aedc9850b186262a025a}
+
+\item 
+\hypertarget{classFArchiveXML_a4427f2b8a567a3613d7a0244545db4aa}{
+static bool {\bfseries LoadGeometryLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a4427f2b8a567a3613d7a0244545db4aa}
+
+\item 
+\hypertarget{classFArchiveXML_a96422a34a7f453856cf6f45d49aabec2}{
+static bool {\bfseries LoadImageLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a96422a34a7f453856cf6f45d49aabec2}
+
+\item 
+\hypertarget{classFArchiveXML_a63dc58e9b11e7c7ee8be2c9a0d9ac581}{
+static bool {\bfseries LoadLightLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a63dc58e9b11e7c7ee8be2c9a0d9ac581}
+
+\item 
+\hypertarget{classFArchiveXML_afa15aa60106cba2de98e09e237e18dd4}{
+static bool {\bfseries LoadMaterialLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_afa15aa60106cba2de98e09e237e18dd4}
+
+\item 
+\hypertarget{classFArchiveXML_ad4f1cc28aa42bb78ba85b1ca5d087a50}{
+static bool {\bfseries LoadVisualSceneNodeLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_ad4f1cc28aa42bb78ba85b1ca5d087a50}
+
+\item 
+\hypertarget{classFArchiveXML_acbc677237e097554bb960022998575e0}{
+static bool {\bfseries LoadPhysicsModelLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_acbc677237e097554bb960022998575e0}
+
+\item 
+\hypertarget{classFArchiveXML_aae3b34c0bb8bf5fba3028bfb52d03755}{
+static bool {\bfseries LoadPhysicsMaterialLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_aae3b34c0bb8bf5fba3028bfb52d03755}
+
+\item 
+\hypertarget{classFArchiveXML_a8cf7879dc4f84137474fcb012374c22d}{
+static bool {\bfseries LoadPhysicsSceneLibrary} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$node)}
+\label{classFArchiveXML_a8cf7879dc4f84137474fcb012374c22d}
+
+\item 
+\hypertarget{classFArchiveXML_ad03e1e9e001d625c8438aa3a71d4d6d5}{
+static bool {\bfseries LoadExtraNodeChildren} (\hyperlink{classFCDENode}{FCDENode} $\ast$fcdenode, xmlNode $\ast$customNode)}
+\label{classFArchiveXML_ad03e1e9e001d625c8438aa3a71d4d6d5}
+
+\item 
+\hypertarget{classFArchiveXML_a8cec0caf19b3157792f9f1f5473110f2}{
+static bool {\bfseries ProcessChannels} (\hyperlink{classFCDAnimated}{FCDAnimated} $\ast$animated, \hyperlink{classfm_1_1pvector}{FCDAnimationChannelList} \&channels)}
+\label{classFArchiveXML_a8cec0caf19b3157792f9f1f5473110f2}
+
+\item 
+\hypertarget{classFArchiveXML_aeffdfc74a3cb92835bdbbc2c96f1baf4}{
+static void {\bfseries LoadAnimatable} (\hyperlink{classFCDParameterAnimatable}{FCDParameterAnimatable} $\ast$animatable, xmlNode $\ast$node)}
+\label{classFArchiveXML_aeffdfc74a3cb92835bdbbc2c96f1baf4}
+
+\item 
+\hypertarget{classFArchiveXML_ab26f7d5436249b4fdaa0aa156cc99d7c}{
+static void {\bfseries LoadAnimatable} (\hyperlink{classFCDocument}{FCDocument} $\ast$document, \hyperlink{classFCDParameterListAnimatable}{FCDParameterListAnimatable} $\ast$animatable, xmlNode $\ast$node)}
+\label{classFArchiveXML_ab26f7d5436249b4fdaa0aa156cc99d7c}
+
+\item 
+\hypertarget{classFArchiveXML_aa2c06cf876f47a3b7f95021ee117ba66}{
+static xmlNode $\ast$ {\bfseries FindChildByIdFCDAnimation} (\hyperlink{classFCDAnimation}{FCDAnimation} $\ast$animation, const \hyperlink{classfm_1_1stringT}{fm::string} \&\_\-id)}
+\label{classFArchiveXML_aa2c06cf876f47a3b7f95021ee117ba66}
+
+\item 
+\hypertarget{classFArchiveXML_a646a4f6aee23ef1cf9e1d6429f4dd4d8}{
+static void {\bfseries FindAnimationChannels} (\hyperlink{classFCDocument}{FCDocument} $\ast$fcdocument, const \hyperlink{classfm_1_1stringT}{fm::string} \&pointer, \hyperlink{classfm_1_1pvector}{FCDAnimationChannelList} \&channels)}
+\label{classFArchiveXML_a646a4f6aee23ef1cf9e1d6429f4dd4d8}
+
+\item 
+\hypertarget{classFArchiveXML_a95051bf5aa5dde518da9f7ebc04b5218}{
+static void {\bfseries FindAnimationChannels} (\hyperlink{classFCDAnimation}{FCDAnimation} $\ast$animation, const \hyperlink{classfm_1_1stringT}{fm::string} \&pointer, \hyperlink{classfm_1_1pvector}{FCDAnimationChannelList} \&targetChannels)}
+\label{classFArchiveXML_a95051bf5aa5dde518da9f7ebc04b5218}
+
+\item 
+\hypertarget{classFArchiveXML_aae1c100720d9186e6fbb4cd9001addff}{
+static \hyperlink{classFCDAnimatedCustom}{FCDAnimatedCustom} $\ast$ {\bfseries CreateFCDAnimatedCustom} (\hyperlink{classFCDObject}{FCDObject} $\ast$document, xmlNode $\ast$node)}
+\label{classFArchiveXML_aae1c100720d9186e6fbb4cd9001addff}
+
+\item 
+\hypertarget{classFArchiveXML_afe88d7151c32efa5d9889e5b1ed30a7b}{
+static bool {\bfseries LinkDriver} (\hyperlink{classFCDocument}{FCDocument} $\ast$fcdoument, \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$animated, const \hyperlink{classfm_1_1stringT}{fm::string} \&animatedTargetPointer)}
+\label{classFArchiveXML_afe88d7151c32efa5d9889e5b1ed30a7b}
+
+\item 
+\hypertarget{classFArchiveXML_a34091349172f576a2f02e3886dfc2595}{
+static bool {\bfseries LinkDriver} (\hyperlink{classFCDAnimation}{FCDAnimation} $\ast$animation, \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$animated, const \hyperlink{classfm_1_1stringT}{fm::string} \&animatedTargetPointer)}
+\label{classFArchiveXML_a34091349172f576a2f02e3886dfc2595}
+
+\item 
+\hypertarget{classFArchiveXML_ad52e6057fd19967cd5209e8987068821}{
+static bool {\bfseries LinkDriver} (\hyperlink{classFCDAnimationChannel}{FCDAnimationChannel} $\ast$animationChannel, \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$animated, const \hyperlink{classfm_1_1stringT}{fm::string} \&animatedTargetPointer)}
+\label{classFArchiveXML_ad52e6057fd19967cd5209e8987068821}
+
+\item 
+\hypertarget{classFArchiveXML_a0a7fe3e9e54cae1dd319d601410b40e1}{
+static bool {\bfseries LinkAnimated} (\hyperlink{classFCDAnimated}{FCDAnimated} $\ast$animated, xmlNode $\ast$node)}
+\label{classFArchiveXML_a0a7fe3e9e54cae1dd319d601410b40e1}
+
+\item 
+\hypertarget{classFArchiveXML_ae1b317ec797fa78504c1ec618dece108}{
+static bool {\bfseries LinkAnimatedCustom} (\hyperlink{classFCDAnimatedCustom}{FCDAnimatedCustom} $\ast$animatedCustom, xmlNode $\ast$node)}
+\label{classFArchiveXML_ae1b317ec797fa78504c1ec618dece108}
+
+\item 
+\hypertarget{classFArchiveXML_aa2283f0807dc7bd86d357678ea9f9fb4}{
+static bool {\bfseries LinkAnimation} (\hyperlink{classFCDAnimation}{FCDAnimation} $\ast$animation)}
+\label{classFArchiveXML_aa2283f0807dc7bd86d357678ea9f9fb4}
+
+\item 
+\hypertarget{classFArchiveXML_a2049189584d0b1efb47b793b16358b09}{
+static bool {\bfseries LinkTargetedEntity} (\hyperlink{classFCDTargetedEntity}{FCDTargetedEntity} $\ast$targetedEntity)}
+\label{classFArchiveXML_a2049189584d0b1efb47b793b16358b09}
+
+\item 
+\hypertarget{classFArchiveXML_a2a18b5e37b81d8912ae6b9910e953538}{
+static bool {\bfseries LinkSceneNode} (\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$sceneNode)}
+\label{classFArchiveXML_a2a18b5e37b81d8912ae6b9910e953538}
+
+\item 
+\hypertarget{classFArchiveXML_ad5a50dfd0cad6b09a6eb087554b1bb34}{
+static void {\bfseries LinkMaterial} (\hyperlink{classFCDMaterial}{FCDMaterial} $\ast$material)}
+\label{classFArchiveXML_ad5a50dfd0cad6b09a6eb087554b1bb34}
+
+\item 
+\hypertarget{classFArchiveXML_ae4a2da5304f0dbcae547bd12612ba201}{
+static void {\bfseries LinkEffect} (\hyperlink{classFCDEffect}{FCDEffect} $\ast$effect)}
+\label{classFArchiveXML_ae4a2da5304f0dbcae547bd12612ba201}
+
+\item 
+\hypertarget{classFArchiveXML_a5e1d8508feb0480b2af04f085f852644}{
+static void {\bfseries LinkEffectParameterSurface} (\hyperlink{classFCDEffectParameterSurface}{FCDEffectParameterSurface} $\ast$effectParameterSurface)}
+\label{classFArchiveXML_a5e1d8508feb0480b2af04f085f852644}
+
+\item 
+\hypertarget{classFArchiveXML_ae5e7f79e96acedf504819447f0a95e7d}{
+static void {\bfseries LinkEffectParameterSampler} (\hyperlink{classFCDEffectParameterSampler}{FCDEffectParameterSampler} $\ast$effectParameterSampler, \hyperlink{classfm_1_1pvector}{FCDEffectParameterList} \&parameters)}
+\label{classFArchiveXML_ae5e7f79e96acedf504819447f0a95e7d}
+
+\item 
+\hypertarget{classFArchiveXML_a220022712dbe7a2b82ae8c4b4263526d}{
+static void {\bfseries LinkEffectProfile} (\hyperlink{classFCDEffectProfile}{FCDEffectProfile} $\ast$effectProfile)}
+\label{classFArchiveXML_a220022712dbe7a2b82ae8c4b4263526d}
+
+\item 
+\hypertarget{classFArchiveXML_a5cd590dc516bb8685a91f3178995a549}{
+static void {\bfseries LinkEffectProfileFX} (\hyperlink{classFCDEffectProfileFX}{FCDEffectProfileFX} $\ast$effectProfileFX)}
+\label{classFArchiveXML_a5cd590dc516bb8685a91f3178995a549}
+
+\item 
+\hypertarget{classFArchiveXML_abfe6cf3544b64877e0860a129aa241c2}{
+static void {\bfseries LinkEffectStandard} (\hyperlink{classFCDEffectStandard}{FCDEffectStandard} $\ast$effectStandard)}
+\label{classFArchiveXML_abfe6cf3544b64877e0860a129aa241c2}
+
+\item 
+\hypertarget{classFArchiveXML_a6dc44608a425b4f5ba4c2e7f630e115d}{
+static void {\bfseries LinkEffectTechnique} (\hyperlink{classFCDEffectTechnique}{FCDEffectTechnique} $\ast$effectTechnique)}
+\label{classFArchiveXML_a6dc44608a425b4f5ba4c2e7f630e115d}
+
+\item 
+\hypertarget{classFArchiveXML_a2f06bd7040ce72f22da8b20de08083bc}{
+static void {\bfseries LinkTexture} (\hyperlink{classFCDTexture}{FCDTexture} $\ast$texture, \hyperlink{classfm_1_1pvector}{FCDEffectParameterList} \&effectParameters)}
+\label{classFArchiveXML_a2f06bd7040ce72f22da8b20de08083bc}
+
+\item 
+\hypertarget{classFArchiveXML_a5fee7c3ab0e0952e722c92a02cc96363}{
+static bool {\bfseries LinkController} (\hyperlink{classFCDController}{FCDController} $\ast$controller)}
+\label{classFArchiveXML_a5fee7c3ab0e0952e722c92a02cc96363}
+
+\item 
+\hypertarget{classFArchiveXML_a2a33aca1e78c523f54ca69efa136e08a}{
+static bool {\bfseries LinkSkinController} (\hyperlink{classFCDSkinController}{FCDSkinController} $\ast$skinController)}
+\label{classFArchiveXML_a2a33aca1e78c523f54ca69efa136e08a}
+
+\item 
+\hypertarget{classFArchiveXML_a79eb4da1ff65e11e1f0b56f2f9f5ed2f}{
+static bool {\bfseries LinkMorphController} (\hyperlink{classFCDMorphController}{FCDMorphController} $\ast$morphController)}
+\label{classFArchiveXML_a79eb4da1ff65e11e1f0b56f2f9f5ed2f}
+
+\item 
+\hypertarget{classFArchiveXML_a888d8c4cf531152d2f919bfdc67a4bc7}{
+static bool {\bfseries LinkGeometryMesh} (\hyperlink{classFCDGeometryMesh}{FCDGeometryMesh} $\ast$geometryMesh)}
+\label{classFArchiveXML_a888d8c4cf531152d2f919bfdc67a4bc7}
+
+\item 
+static xmlNode $\ast$ \hyperlink{classFArchiveXML_aa13b1e22f3b07d1323b3961d3e6b4ada}{WriteObject} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)
+\item 
+\hypertarget{classFArchiveXML_a79f1ae05b3aea45004211bd02a093966}{
+static xmlNode $\ast$ {\bfseries WriteExtraNode} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a79f1ae05b3aea45004211bd02a093966}
+
+\item 
+\hypertarget{classFArchiveXML_a4ec98e3e1b99d04e2e4def4817184426}{
+static xmlNode $\ast$ {\bfseries WriteExtra} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a4ec98e3e1b99d04e2e4def4817184426}
+
+\item 
+\hypertarget{classFArchiveXML_a2835381fb0d57fb58b4cdf9a48ab51e5}{
+static xmlNode $\ast$ {\bfseries WriteExtraTechnique} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a2835381fb0d57fb58b4cdf9a48ab51e5}
+
+\item 
+\hypertarget{classFArchiveXML_a8ce4a97e018d56ed68f44aa32d0d527d}{
+static xmlNode $\ast$ {\bfseries WriteExtraType} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a8ce4a97e018d56ed68f44aa32d0d527d}
+
+\item 
+\hypertarget{classFArchiveXML_aa62412ae97a0a975224c39ee62842f4a}{
+static xmlNode $\ast$ {\bfseries WriteScene} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aa62412ae97a0a975224c39ee62842f4a}
+
+\item 
+\hypertarget{classFArchiveXML_a7929891047fb78e39ce44c0e5db43c86}{
+static xmlNode $\ast$ {\bfseries WriteAsset} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a7929891047fb78e39ce44c0e5db43c86}
+
+\item 
+\hypertarget{classFArchiveXML_a61bc3951cbfde500ae7d40a52c1d3d02}{
+static xmlNode $\ast$ {\bfseries WriteAssetContributor} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a61bc3951cbfde500ae7d40a52c1d3d02}
+
+\item 
+\hypertarget{classFArchiveXML_a9a408594db2809e2d7631cbc417f91bd}{
+static xmlNode $\ast$ {\bfseries WriteEntityReference} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a9a408594db2809e2d7631cbc417f91bd}
+
+\item 
+\hypertarget{classFArchiveXML_a70b9fb9c35eb9631e441c8669c57f752}{
+static xmlNode $\ast$ {\bfseries WriteExternalReferenceManager} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a70b9fb9c35eb9631e441c8669c57f752}
+
+\item 
+\hypertarget{classFArchiveXML_a6d3e5c3d99ba03c269e3e15fbb38402a}{
+static xmlNode $\ast$ {\bfseries WritePlaceHolder} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a6d3e5c3d99ba03c269e3e15fbb38402a}
+
+\item 
+\hypertarget{classFArchiveXML_a018809fda406851712e0231eb8930861}{
+static void {\bfseries WriteChildrenFCDENode} (\hyperlink{classFCDENode}{FCDENode} $\ast$eNode, xmlNode $\ast$customNode)}
+\label{classFArchiveXML_a018809fda406851712e0231eb8930861}
+
+\item 
+\hypertarget{classFArchiveXML_a1b99653a7a756124d2879cfd68521943}{
+static void {\bfseries WriteTechniquesFCDEType} (\hyperlink{classFCDEType}{FCDEType} $\ast$eType, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a1b99653a7a756124d2879cfd68521943}
+
+\item 
+\hypertarget{classFArchiveXML_afac50dcd3e52cce8b94a810ea3f50234}{
+static void {\bfseries WriteTechniquesFCDExtra} (\hyperlink{classFCDExtra}{FCDExtra} $\ast$extra, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_afac50dcd3e52cce8b94a810ea3f50234}
+
+\item 
+\hypertarget{classFArchiveXML_a069847f89d00cb2b3e20f2f27933d755}{
+static xmlNode $\ast$ {\bfseries LetWriteObject} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, void $\ast$entityNode)}
+\label{classFArchiveXML_a069847f89d00cb2b3e20f2f27933d755}
+
+\item 
+\hypertarget{classFArchiveXML_a807a0857dcb5d4fe348010a1f10bfa02}{
+static xmlNode $\ast$ {\bfseries WriteEntity} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a807a0857dcb5d4fe348010a1f10bfa02}
+
+\item 
+\hypertarget{classFArchiveXML_a32954c23bd8602eee6aa0a8a64334923}{
+static xmlNode $\ast$ {\bfseries WriteTargetedEntity} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a32954c23bd8602eee6aa0a8a64334923}
+
+\item 
+\hypertarget{classFArchiveXML_a2ddd4c06e787a167f3f5797db1a43216}{
+static xmlNode $\ast$ {\bfseries WriteSceneNode} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a2ddd4c06e787a167f3f5797db1a43216}
+
+\item 
+\hypertarget{classFArchiveXML_a7a3d7ea3aec2b18562bf0203a56af303}{
+static xmlNode $\ast$ {\bfseries WriteTransform} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a7a3d7ea3aec2b18562bf0203a56af303}
+
+\item 
+\hypertarget{classFArchiveXML_a32ce577d0c71a7f753a03fcfb139449e}{
+static xmlNode $\ast$ {\bfseries WriteTransformLookAt} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a32ce577d0c71a7f753a03fcfb139449e}
+
+\item 
+\hypertarget{classFArchiveXML_aedf251f66e2ab6dc68d8041c4ac7a754}{
+static xmlNode $\ast$ {\bfseries WriteTransformMatrix} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aedf251f66e2ab6dc68d8041c4ac7a754}
+
+\item 
+\hypertarget{classFArchiveXML_aea7100c70dad99ff2ac5ad6e067de117}{
+static xmlNode $\ast$ {\bfseries WriteTransformRotation} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aea7100c70dad99ff2ac5ad6e067de117}
+
+\item 
+\hypertarget{classFArchiveXML_a63daeab153e77ba51ec8572490c90931}{
+static xmlNode $\ast$ {\bfseries WriteTransformScale} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a63daeab153e77ba51ec8572490c90931}
+
+\item 
+\hypertarget{classFArchiveXML_add94c40762481e636b6f5db574d30578}{
+static xmlNode $\ast$ {\bfseries WriteTransformSkew} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_add94c40762481e636b6f5db574d30578}
+
+\item 
+\hypertarget{classFArchiveXML_acb9a7d6c0bd6c96f5f36591991638375}{
+static xmlNode $\ast$ {\bfseries WriteTransformTranslation} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_acb9a7d6c0bd6c96f5f36591991638375}
+
+\item 
+\hypertarget{classFArchiveXML_a90a5b09426c94ede663cf714988fd37b}{
+static xmlNode $\ast$ {\bfseries WriteToEntityXMLFCDEntity} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$entity, xmlNode $\ast$parentNode, const char $\ast$nodeName, bool writeId=true)}
+\label{classFArchiveXML_a90a5b09426c94ede663cf714988fd37b}
+
+\item 
+\hypertarget{classFArchiveXML_ac9d27deb3f41a681b21a3319939162ed}{
+static void {\bfseries WriteEntityExtra} (\hyperlink{classFCDEntity}{FCDEntity} $\ast$entity, xmlNode $\ast$entityNode)}
+\label{classFArchiveXML_ac9d27deb3f41a681b21a3319939162ed}
+
+\item 
+\hypertarget{classFArchiveXML_a3823567796ad14b199aa0823a6c6c7df}{
+static void {\bfseries WriteEntityInstanceExtra} (\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$entityInstance, xmlNode $\ast$instanceNode)}
+\label{classFArchiveXML_a3823567796ad14b199aa0823a6c6c7df}
+
+\item 
+\hypertarget{classFArchiveXML_ad4b2d4193b9e44f8b922310d831eb04c}{
+static void {\bfseries WriteTargetedEntityExtra} (\hyperlink{classFCDTargetedEntity}{FCDTargetedEntity} $\ast$targetedEntity, xmlNode $\ast$entityNode)}
+\label{classFArchiveXML_ad4b2d4193b9e44f8b922310d831eb04c}
+
+\item 
+\hypertarget{classFArchiveXML_a3dd267983d86203d3ff1877a22320d3f}{
+static void {\bfseries WriteVisualScene} (\hyperlink{classFCDSceneNode}{FCDSceneNode} $\ast$sceneNode, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a3dd267983d86203d3ff1877a22320d3f}
+
+\item 
+\hypertarget{classFArchiveXML_a8359af935af1f842a275061ce869ff38}{
+static void {\bfseries WriteTransformBase} (\hyperlink{classFCDTransform}{FCDTransform} $\ast$transform, xmlNode $\ast$transformNode, const char $\ast$wantedSid)}
+\label{classFArchiveXML_a8359af935af1f842a275061ce869ff38}
+
+\item 
+\hypertarget{classFArchiveXML_aae6c98a03591fd28aec379fa0946a230}{
+static xmlNode $\ast$ {\bfseries WriteController} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aae6c98a03591fd28aec379fa0946a230}
+
+\item 
+\hypertarget{classFArchiveXML_a0554213a4ab113f7a7b8fa0e1d376bfd}{
+static xmlNode $\ast$ {\bfseries WriteSkinController} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a0554213a4ab113f7a7b8fa0e1d376bfd}
+
+\item 
+\hypertarget{classFArchiveXML_abfc73128f77a8248c441a941eaebba2d}{
+static xmlNode $\ast$ {\bfseries WriteMorphController} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_abfc73128f77a8248c441a941eaebba2d}
+
+\item 
+\hypertarget{classFArchiveXML_af7fc27ff38234f8237b658620e1ff6e8}{
+static xmlNode $\ast$ {\bfseries WriteEntityInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_af7fc27ff38234f8237b658620e1ff6e8}
+
+\item 
+\hypertarget{classFArchiveXML_ac11151ce93b520019166830033e7989d}{
+static xmlNode $\ast$ {\bfseries WriteEmitterInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_ac11151ce93b520019166830033e7989d}
+
+\item 
+\hypertarget{classFArchiveXML_a10f7dde0be8257ff5a05d9ab57f56d89}{
+static xmlNode $\ast$ {\bfseries WriteSpriteInstance} (\hyperlink{classFCDEntityInstance}{FCDEntityInstance} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a10f7dde0be8257ff5a05d9ab57f56d89}
+
+\item 
+\hypertarget{classFArchiveXML_aa7b0355376dd9371b9e737799c5d928e}{
+static xmlNode $\ast$ {\bfseries WriteGeometryInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aa7b0355376dd9371b9e737799c5d928e}
+
+\item 
+\hypertarget{classFArchiveXML_ac08fda654194cba9b0ae862bc8250639}{
+static xmlNode $\ast$ {\bfseries WriteControllerInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_ac08fda654194cba9b0ae862bc8250639}
+
+\item 
+\hypertarget{classFArchiveXML_a4daabc243b617a14c153eb156f6ddf87}{
+static xmlNode $\ast$ {\bfseries WriteMaterialInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a4daabc243b617a14c153eb156f6ddf87}
+
+\item 
+\hypertarget{classFArchiveXML_a5855343a9b949652a2724fe7cf875f79}{
+static xmlNode $\ast$ {\bfseries WritePhysicsForceFieldInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a5855343a9b949652a2724fe7cf875f79}
+
+\item 
+\hypertarget{classFArchiveXML_a59df97ff9d45ab17e6da0901a994291b}{
+static xmlNode $\ast$ {\bfseries WritePhysicsModelInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a59df97ff9d45ab17e6da0901a994291b}
+
+\item 
+\hypertarget{classFArchiveXML_a41b05d3777210a30a54e3df7adf70e66}{
+static xmlNode $\ast$ {\bfseries WritePhysicsRigidBodyInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a41b05d3777210a30a54e3df7adf70e66}
+
+\item 
+\hypertarget{classFArchiveXML_a845d89ce4d972c6a6aca584142839d5a}{
+static xmlNode $\ast$ {\bfseries WritePhysicsRigidConstraintInstance} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a845d89ce4d972c6a6aca584142839d5a}
+
+\item 
+\hypertarget{classFArchiveXML_a587633d804ab70a3dc481b36e7777faf}{
+static xmlNode $\ast$ {\bfseries WriteMaterial} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a587633d804ab70a3dc481b36e7777faf}
+
+\item 
+\hypertarget{classFArchiveXML_a6eb2fb9f1669841c99e85ffffe4ddeac}{
+static xmlNode $\ast$ {\bfseries WriteEffectCode} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a6eb2fb9f1669841c99e85ffffe4ddeac}
+
+\item 
+\hypertarget{classFArchiveXML_af5e0b9d2642a61b4145338beb8b9ac24}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameter} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_af5e0b9d2642a61b4145338beb8b9ac24}
+
+\item 
+\hypertarget{classFArchiveXML_a206c5709c42abd2b8cedd16547b244ba}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterBool} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a206c5709c42abd2b8cedd16547b244ba}
+
+\item 
+\hypertarget{classFArchiveXML_aa2a03375ecc3203a35b9906cdfe26572}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterFloat} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aa2a03375ecc3203a35b9906cdfe26572}
+
+\item 
+\hypertarget{classFArchiveXML_a78c5460e56cf167cdd13430e40a6f446}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterFloat2} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a78c5460e56cf167cdd13430e40a6f446}
+
+\item 
+\hypertarget{classFArchiveXML_a2fe5995652c9d7f0e87478c2df247d19}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterFloat3} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a2fe5995652c9d7f0e87478c2df247d19}
+
+\item 
+\hypertarget{classFArchiveXML_a759d33b6880a60cf180fee446a2a1604}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterInt} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a759d33b6880a60cf180fee446a2a1604}
+
+\item 
+\hypertarget{classFArchiveXML_af20dbc06500fc9db1a0401dad4b0e277}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterMatrix} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_af20dbc06500fc9db1a0401dad4b0e277}
+
+\item 
+\hypertarget{classFArchiveXML_a172090be69e194517e618dac85125112}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterSampler} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a172090be69e194517e618dac85125112}
+
+\item 
+\hypertarget{classFArchiveXML_afbbe4bd7c806738f10b0983dc3dcfb1e}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterString} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_afbbe4bd7c806738f10b0983dc3dcfb1e}
+
+\item 
+\hypertarget{classFArchiveXML_ab36dc90780f7e11286440560e65d6c10}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterSurface} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_ab36dc90780f7e11286440560e65d6c10}
+
+\item 
+\hypertarget{classFArchiveXML_a98909f975a7248398a4a6a1acc54ad8f}{
+static xmlNode $\ast$ {\bfseries WriteEffectParameterVector} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a98909f975a7248398a4a6a1acc54ad8f}
+
+\item 
+\hypertarget{classFArchiveXML_a6e11d622bef18fbcbac01a1fcbff58e7}{
+static xmlNode $\ast$ {\bfseries WriteEffectPass} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a6e11d622bef18fbcbac01a1fcbff58e7}
+
+\item 
+\hypertarget{classFArchiveXML_afbeb2fbcb6e08176a38fa7f73fbcc0df}{
+static xmlNode $\ast$ {\bfseries WriteEffectPassShader} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_afbeb2fbcb6e08176a38fa7f73fbcc0df}
+
+\item 
+\hypertarget{classFArchiveXML_a03b67e399940cd8b4c84a8247549aa1b}{
+static xmlNode $\ast$ {\bfseries WriteEffectPassState} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a03b67e399940cd8b4c84a8247549aa1b}
+
+\item 
+\hypertarget{classFArchiveXML_a8017fd5292b911ac9a83654f67926fcd}{
+static xmlNode $\ast$ {\bfseries WriteEffectProfile} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a8017fd5292b911ac9a83654f67926fcd}
+
+\item 
+\hypertarget{classFArchiveXML_acc902d6745cbe50e436ddbef3567d5b6}{
+static xmlNode $\ast$ {\bfseries WriteEffectProfileFX} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_acc902d6745cbe50e436ddbef3567d5b6}
+
+\item 
+\hypertarget{classFArchiveXML_af44165c1856eae4b5f5d7b376085d58c}{
+static xmlNode $\ast$ {\bfseries WriteEffectStandard} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_af44165c1856eae4b5f5d7b376085d58c}
+
+\item 
+\hypertarget{classFArchiveXML_ace2d8adb4c64a3d88025961559a3b384}{
+static xmlNode $\ast$ {\bfseries WriteEffectTechnique} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_ace2d8adb4c64a3d88025961559a3b384}
+
+\item 
+\hypertarget{classFArchiveXML_a57a0a0e7e147ad980c65b0fe5b664a84}{
+static xmlNode $\ast$ {\bfseries WriteEffect} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a57a0a0e7e147ad980c65b0fe5b664a84}
+
+\item 
+\hypertarget{classFArchiveXML_a4900426f253f5d3e6a727b29d89dfe95}{
+static xmlNode $\ast$ {\bfseries WriteTexture} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a4900426f253f5d3e6a727b29d89dfe95}
+
+\item 
+\hypertarget{classFArchiveXML_a3f29e73a10d24e2f5789eca954b69657}{
+static xmlNode $\ast$ {\bfseries WriteImage} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a3f29e73a10d24e2f5789eca954b69657}
+
+\item 
+\hypertarget{classFArchiveXML_a7bbad1ce83cb804ea01f1777db4c83c4}{
+static xmlNode $\ast$ {\bfseries WriteColorTextureParameter} (\hyperlink{classFCDEffectStandard}{FCDEffectStandard} $\ast$effectStandard, xmlNode $\ast$parentNode, const char $\ast$parameterNodeName, const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterColor4} $\ast$value, uint32 bucketIndex)}
+\label{classFArchiveXML_a7bbad1ce83cb804ea01f1777db4c83c4}
+
+\item 
+\hypertarget{classFArchiveXML_ad9620a4f4f9e23df04cca778ff391679}{
+static xmlNode $\ast$ {\bfseries WriteFloatTextureParameter} (\hyperlink{classFCDEffectStandard}{FCDEffectStandard} $\ast$effectStandard, xmlNode $\ast$parentNode, const char $\ast$parameterNodeName, const \hyperlink{classFCDEffectParameterAnimatableT}{FCDEffectParameterFloat} $\ast$value, uint32 bucketIndex)}
+\label{classFArchiveXML_ad9620a4f4f9e23df04cca778ff391679}
+
+\item 
+\hypertarget{classFArchiveXML_a2d69a87ce64757bc1a4e37ba3ff01354}{
+static xmlNode $\ast$ {\bfseries WriteTextureParameter} (\hyperlink{classFCDEffectStandard}{FCDEffectStandard} $\ast$effectStandard, xmlNode $\ast$parentNode, uint32 bucketIndex)}
+\label{classFArchiveXML_a2d69a87ce64757bc1a4e37ba3ff01354}
+
+\item 
+\hypertarget{classFArchiveXML_a930d5526059c9dcf0a352546d9b0bcd2}{
+static xmlNode $\ast$ {\bfseries WriteAnimated} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a930d5526059c9dcf0a352546d9b0bcd2}
+
+\item 
+\hypertarget{classFArchiveXML_a00eb2534a16d63608d3d5fbc1ac404b6}{
+static xmlNode $\ast$ {\bfseries WriteAnimationChannel} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a00eb2534a16d63608d3d5fbc1ac404b6}
+
+\item 
+\hypertarget{classFArchiveXML_a49da485e530c6945ef1294686a205a4c}{
+static xmlNode $\ast$ {\bfseries WriteAnimationCurve} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a49da485e530c6945ef1294686a205a4c}
+
+\item 
+\hypertarget{classFArchiveXML_a0161f4f73928164672f0a7a04c770790}{
+static xmlNode $\ast$ {\bfseries WriteAnimationMultiCurve} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a0161f4f73928164672f0a7a04c770790}
+
+\item 
+\hypertarget{classFArchiveXML_ad25b81e2dfcf019623b24c371508ce7f}{
+static xmlNode $\ast$ {\bfseries WriteAnimation} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_ad25b81e2dfcf019623b24c371508ce7f}
+
+\item 
+\hypertarget{classFArchiveXML_ad1cb7b03cf613abedcffd3aea4c1ab89}{
+static xmlNode $\ast$ {\bfseries WriteAnimationClip} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_ad1cb7b03cf613abedcffd3aea4c1ab89}
+
+\item 
+\hypertarget{classFArchiveXML_ab423b0ecc02eac4b4564b2237ec90472}{
+static bool {\bfseries WriteAnimatedValue} (const \hyperlink{classFCDParameterAnimatable}{FCDParameterAnimatable} $\ast$value, xmlNode $\ast$valueNode, const char $\ast$wantedSid, int32 arrayElement=-\/1)}
+\label{classFArchiveXML_ab423b0ecc02eac4b4564b2237ec90472}
+
+\item 
+\hypertarget{classFArchiveXML_ab5b9b9b9f6fcbc63dac0d59069c1d5c3}{
+static void {\bfseries WriteAnimatedValue} (const \hyperlink{classFCDAnimated}{FCDAnimated} $\ast$\_\-animated, xmlNode $\ast$valueNode, const char $\ast$wantedSid)}
+\label{classFArchiveXML_ab5b9b9b9f6fcbc63dac0d59069c1d5c3}
+
+\item 
+\hypertarget{classFArchiveXML_a7eb51648ebca63761f8e5030f7ff4f52}{
+static void {\bfseries WriteSourceFCDAnimationCurve} (\hyperlink{classFCDAnimationCurve}{FCDAnimationCurve} $\ast$animationCurve, xmlNode $\ast$parentNode, const \hyperlink{classfm_1_1stringT}{fm::string} \&baseId)}
+\label{classFArchiveXML_a7eb51648ebca63761f8e5030f7ff4f52}
+
+\item 
+\hypertarget{classFArchiveXML_a0581e30d1e2b17decc1a8646906c5667}{
+static xmlNode $\ast$ {\bfseries WriteSamplerFCDAnimationCurve} (\hyperlink{classFCDAnimationCurve}{FCDAnimationCurve} $\ast$animationCurve, xmlNode $\ast$parentNode, const \hyperlink{classfm_1_1stringT}{fm::string} \&baseId)}
+\label{classFArchiveXML_a0581e30d1e2b17decc1a8646906c5667}
+
+\item 
+\hypertarget{classFArchiveXML_a524dee9545f60b2969d6345585d6bd5e}{
+static xmlNode $\ast$ {\bfseries WriteChannelFCDAnimationCurve} (\hyperlink{classFCDAnimationCurve}{FCDAnimationCurve} $\ast$animationCurve, xmlNode $\ast$parentNode, const \hyperlink{classfm_1_1stringT}{fm::string} \&baseId, const char $\ast$targetPointer)}
+\label{classFArchiveXML_a524dee9545f60b2969d6345585d6bd5e}
+
+\item 
+\hypertarget{classFArchiveXML_a09423d223ef4e13a54fff41ded45ea40}{
+static void {\bfseries WriteSourceFCDAnimationMultiCurve} (\hyperlink{classFCDAnimationMultiCurve}{FCDAnimationMultiCurve} $\ast$animationMultiCurve, xmlNode $\ast$parentNode, const char $\ast$$\ast$qualifiers, const \hyperlink{classfm_1_1stringT}{fm::string} \&baseId)}
+\label{classFArchiveXML_a09423d223ef4e13a54fff41ded45ea40}
+
+\item 
+\hypertarget{classFArchiveXML_ab7d6348f3670dede6b5d4c74b624bf3a}{
+static xmlNode $\ast$ {\bfseries WriteSamplerFCDAnimationMultiCurve} (\hyperlink{classFCDAnimationMultiCurve}{FCDAnimationMultiCurve} $\ast$animationMultiCurve, xmlNode $\ast$parentNode, const \hyperlink{classfm_1_1stringT}{fm::string} \&baseId)}
+\label{classFArchiveXML_ab7d6348f3670dede6b5d4c74b624bf3a}
+
+\item 
+\hypertarget{classFArchiveXML_a8b0242d4d276202465dfdb0711e16597}{
+static xmlNode $\ast$ {\bfseries WriteChannelFCDAnimationMultiCurve} (\hyperlink{classFCDAnimationMultiCurve}{FCDAnimationMultiCurve} $\ast$animationMultiCurve, xmlNode $\ast$parentNode, const \hyperlink{classfm_1_1stringT}{fm::string} \&baseId, const \hyperlink{classfm_1_1stringT}{fm::string} \&pointer)}
+\label{classFArchiveXML_a8b0242d4d276202465dfdb0711e16597}
+
+\item 
+\hypertarget{classFArchiveXML_aa9ab0dfc88b8f3938f574a727ce0acbc}{
+static xmlNode $\ast$ {\bfseries WriteCamera} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aa9ab0dfc88b8f3938f574a727ce0acbc}
+
+\item 
+\hypertarget{classFArchiveXML_abab21e81e57c7aee216bdcb53aad0ff5}{
+static xmlNode $\ast$ {\bfseries WriteLight} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_abab21e81e57c7aee216bdcb53aad0ff5}
+
+\item 
+\hypertarget{classFArchiveXML_a5a5ee34dcc46b42be50c9465e40578b7}{
+static xmlNode $\ast$ {\bfseries WriteGeometry} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a5a5ee34dcc46b42be50c9465e40578b7}
+
+\item 
+\hypertarget{classFArchiveXML_a1e0c8374002209abf26706968992011e}{
+static xmlNode $\ast$ {\bfseries WriteGeometrySource} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a1e0c8374002209abf26706968992011e}
+
+\item 
+\hypertarget{classFArchiveXML_ae90893f8799568dca2ecbfe9fe7e7ae2}{
+static xmlNode $\ast$ {\bfseries WriteGeometryMesh} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_ae90893f8799568dca2ecbfe9fe7e7ae2}
+
+\item 
+\hypertarget{classFArchiveXML_aea52afa594e3ba2b4fec9d957e4f0852}{
+static xmlNode $\ast$ {\bfseries WriteGeometryPolygons} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aea52afa594e3ba2b4fec9d957e4f0852}
+
+\item 
+\hypertarget{classFArchiveXML_a410cc16f1df611a827df09d014e090bc}{
+static xmlNode $\ast$ {\bfseries WriteGeometrySpline} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a410cc16f1df611a827df09d014e090bc}
+
+\item 
+\hypertarget{classFArchiveXML_ace3dfa56ddb6c946e091ff8d660815f4}{
+static xmlNode $\ast$ {\bfseries WriteNURBSSpline} (\hyperlink{classFCDNURBSSpline}{FCDNURBSSpline} $\ast$nURBSSpline, xmlNode $\ast$parentNode, const \hyperlink{classfm_1_1stringT}{fm::string} \&parentId, const \hyperlink{classfm_1_1stringT}{fm::string} \&splineId)}
+\label{classFArchiveXML_ace3dfa56ddb6c946e091ff8d660815f4}
+
+\item 
+\hypertarget{classFArchiveXML_abcf93b607f671d8d78896642de2e7961}{
+static xmlNode $\ast$ {\bfseries WriteSpline} (\hyperlink{classFCDSpline}{FCDSpline} $\ast$spline, xmlNode $\ast$parentNode, const \hyperlink{classfm_1_1stringT}{fm::string} \&parentId, const \hyperlink{classfm_1_1stringT}{fm::string} \&splineId)}
+\label{classFArchiveXML_abcf93b607f671d8d78896642de2e7961}
+
+\item 
+\hypertarget{classFArchiveXML_a14bbd15a8629ef5cabded8c31f255e11}{
+static xmlNode $\ast$ {\bfseries WritePhysicsShape} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a14bbd15a8629ef5cabded8c31f255e11}
+
+\item 
+\hypertarget{classFArchiveXML_a04a77356b182ae7b11ceb0555383dd8c}{
+static xmlNode $\ast$ {\bfseries WritePhysicsAnalyticalGeometry} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a04a77356b182ae7b11ceb0555383dd8c}
+
+\item 
+\hypertarget{classFArchiveXML_aa791278978c08870c5e635223bda7efa}{
+static xmlNode $\ast$ {\bfseries WritePASBox} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aa791278978c08870c5e635223bda7efa}
+
+\item 
+\hypertarget{classFArchiveXML_a14d67110179c5b47581167ea87fc2561}{
+static xmlNode $\ast$ {\bfseries WritePASCapsule} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a14d67110179c5b47581167ea87fc2561}
+
+\item 
+\hypertarget{classFArchiveXML_aff6d80d14f259327443234f7c48c5ae2}{
+static xmlNode $\ast$ {\bfseries WritePASTaperedCapsule} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aff6d80d14f259327443234f7c48c5ae2}
+
+\item 
+\hypertarget{classFArchiveXML_a945d6e1751c201a5eeab8d7e6ba0b2f8}{
+static xmlNode $\ast$ {\bfseries WritePASCylinder} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a945d6e1751c201a5eeab8d7e6ba0b2f8}
+
+\item 
+\hypertarget{classFArchiveXML_abb256df79c4f773714a3aa4f78dcf4d5}{
+static xmlNode $\ast$ {\bfseries WritePASTaperedCylinder} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_abb256df79c4f773714a3aa4f78dcf4d5}
+
+\item 
+\hypertarget{classFArchiveXML_a0b92ff45f03e4cb17b25037053474ecb}{
+static xmlNode $\ast$ {\bfseries WritePASPlane} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a0b92ff45f03e4cb17b25037053474ecb}
+
+\item 
+\hypertarget{classFArchiveXML_a9715507d6f1e6c8b163d21fcd26ec83a}{
+static xmlNode $\ast$ {\bfseries WritePASSphere} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a9715507d6f1e6c8b163d21fcd26ec83a}
+
+\item 
+\hypertarget{classFArchiveXML_aa187f91bf2d3a6a802454705bb4889aa}{
+static xmlNode $\ast$ {\bfseries WritePhysicsMaterial} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_aa187f91bf2d3a6a802454705bb4889aa}
+
+\item 
+\hypertarget{classFArchiveXML_a490b0ec6047d14ad96653d57c978b133}{
+static xmlNode $\ast$ {\bfseries WritePhysicsModel} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a490b0ec6047d14ad96653d57c978b133}
+
+\item 
+\hypertarget{classFArchiveXML_a90eabd54daf9908c9c92740c244af39b}{
+static xmlNode $\ast$ {\bfseries WritePhysicsRigidBody} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a90eabd54daf9908c9c92740c244af39b}
+
+\item 
+\hypertarget{classFArchiveXML_afff2889527c35146cc597cb94b403270}{
+static xmlNode $\ast$ {\bfseries WritePhysicsRigidConstraint} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_afff2889527c35146cc597cb94b403270}
+
+\item 
+\hypertarget{classFArchiveXML_a15f11f679910779a3c6210444fe66c5c}{
+static xmlNode $\ast$ {\bfseries WritePhysicsScene} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a15f11f679910779a3c6210444fe66c5c}
+
+\item 
+\hypertarget{classFArchiveXML_a05898e1765f3ff98dbe0d4c35cd960c5}{
+static void {\bfseries WritePhysicsRigidBodyParameters} (\hyperlink{classFCDPhysicsRigidBodyParameters}{FCDPhysicsRigidBodyParameters} $\ast$physicsRigidBodyParameters, xmlNode $\ast$techniqueNode)}
+\label{classFArchiveXML_a05898e1765f3ff98dbe0d4c35cd960c5}
+
+\item 
+\hypertarget{classFArchiveXML_a4d9c42167dff390182688c8b0b553693}{
+{\footnotesize template$<$class TYPE , int QUAL$>$ }\\static xmlNode $\ast$ {\bfseries AddPhysicsParameter} (xmlNode $\ast$parentNode, const char $\ast$name, \hyperlink{classFCDParameterAnimatableT}{FCDParameterAnimatableT}$<$ TYPE, QUAL $>$ \&value)}
+\label{classFArchiveXML_a4d9c42167dff390182688c8b0b553693}
+
+\item 
+\hypertarget{classFArchiveXML_ab2fc171640ac284e1a8ccb82bfb4c93e}{
+static xmlNode $\ast$ {\bfseries WriteEmitter} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_ab2fc171640ac284e1a8ccb82bfb4c93e}
+
+\item 
+\hypertarget{classFArchiveXML_a81561f5cb4769c862a0ba58d5f17dfa3}{
+static xmlNode $\ast$ {\bfseries WriteForceField} (\hyperlink{classFCDObject}{FCDObject} $\ast$object, xmlNode $\ast$parentNode)}
+\label{classFArchiveXML_a81561f5cb4769c862a0ba58d5f17dfa3}
+
+\item 
+\hypertarget{classFArchiveXML_adc1373f3352980407c75d9a8e81d026d}{
+{\footnotesize template$<$class T $>$ }\\static xmlNode $\ast$ {\bfseries WriteLibrary} (\hyperlink{classFCDLibrary}{FCDLibrary}$<$ T $>$ $\ast$library, xmlNode $\ast$node)}
+\label{classFArchiveXML_adc1373f3352980407c75d9a8e81d026d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFArchiveXML_adb22e0884d6059ded32d194a8cdde4dc}{
+\index{FArchiveXML@{FArchiveXML}!AddExtraExtension@{AddExtraExtension}}
+\index{AddExtraExtension@{AddExtraExtension}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{AddExtraExtension}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::AddExtraExtension (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_adb22e0884d6059ded32d194a8cdde4dc}
+Adds an extra extension to the list of supported extension by this plugin. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ext}]The new extension to support. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the extension was added. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCPArchive_a94f402ab481e8ac8934de6869ea03902}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_ad9be9f3803f77996d7b155f2110a7105}{
+\index{FArchiveXML@{FArchiveXML}!ClearIntermediateData@{ClearIntermediateData}}
+\index{ClearIntermediateData@{ClearIntermediateData}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{ClearIntermediateData}]{\setlength{\rightskip}{0pt plus 5cm}void FArchiveXML::ClearIntermediateData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFArchiveXML_ad9be9f3803f77996d7b155f2110a7105}
+Clears intermediate data used in 2nd pass of the loading/writing process \hypertarget{classFArchiveXML_a877083fc6c055f24042dd50103fb00a4}{
+\index{FArchiveXML@{FArchiveXML}!EndExport@{EndExport}}
+\index{EndExport@{EndExport}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{EndExport}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::EndExport (
+\begin{DoxyParamCaption}
+\item[{{\bf fm::vector}$<$ uint8 $>$ \&}]{ outData}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a877083fc6c055f24042dd50103fb00a4}
+End the export of the current document started by 'StartExport()'. Only valid if 'IsPartlyExportSupported()' returns 'true'. This function will release any resources associated with the export. 
+\begin{DoxyParams}{Parameters}
+\item[{\em outData}]\mbox{[}out\mbox{]} Void pointer to recieve a pointer to the memory chunk to write \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the request is valid, and the outData has been filled. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_aa241d796f8be01183eabe8d5f1b3216f}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a19693477bc5410a640105cec37febdb6}{
+\index{FArchiveXML@{FArchiveXML}!EndExport@{EndExport}}
+\index{EndExport@{EndExport}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{EndExport}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FArchiveXML::EndExport (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ filePath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a19693477bc5410a640105cec37febdb6}
+End the export of the current document started by 'StartExport()'. Only valid if 'IsPartlyExportSupported()' returns 'true'. This function will release any resources associated with the export. 
+\begin{DoxyParams}{Parameters}
+\item[{\em filePath}]A full file path specifying the location to write the currently exported document too. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the call is valid, and the file is written to disk without error. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_ad252bed74284e1615cbfdfdcba054250}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a924a76fcef59b49c82ce323badbcc469}{
+\index{FArchiveXML@{FArchiveXML}!ExportDocument@{ExportDocument}}
+\index{ExportDocument@{ExportDocument}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{ExportDocument}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::ExportDocument (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ theDocument, }
+\item[{xmlNode $\ast$}]{ colladaNode}
+\end{DoxyParamCaption}
+)}}
+\label{classFArchiveXML_a924a76fcef59b49c82ce323badbcc469}
+Export the existing FCOLLADA document to the given xml node. 
+\begin{DoxyParams}{Parameters}
+\item[{\em theDocument.}]The FCOLLADA document to be exported. \item[{\em colladaNode.}]The root of the xml tree to be filled with the document content. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the document is exported correctly. 
+\end{DoxyReturn}
+\hypertarget{classFArchiveXML_ab7c6e1fab043617e8e6adebf947dcf7e}{
+\index{FArchiveXML@{FArchiveXML}!ExportFile@{ExportFile}}
+\index{ExportFile@{ExportFile}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{ExportFile}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::ExportFile (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{const fchar $\ast$}]{ filePath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_ab7c6e1fab043617e8e6adebf947dcf7e}
+Export a file from \hyperlink{namespaceFCollada}{FCollada}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]a document to be be exported. \item[{\em filePath}]full file path to the file to be exported. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the file is exported successfully. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_ad8450f07eca641209d2528f6e192b738}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a36eff362143c86cae961237d4923a35a}{
+\index{FArchiveXML@{FArchiveXML}!ExportObject@{ExportObject}}
+\index{ExportObject@{ExportObject}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{ExportObject}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::ExportObject (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDObject} $\ast$}]{ object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a36eff362143c86cae961237d4923a35a}
+Export one object in \hyperlink{namespaceFCollada}{FCollada}. Only valid if 'IsPartlyExportSupported()' returns 'true'. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]the \hyperlink{classFCDocument}{FCDocument} that contains the object to be exported. \item[{\em object}]the \hyperlink{classFCDObject}{FCDObject} to be exported to the file specified in 'StartExport()' \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the given object is successfully exported. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_af61f5a312713e2d3103bc803bf1df5ac}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_abd9ac092eff78dbc8f8249fa402fe644}{
+\index{FArchiveXML@{FArchiveXML}!GetPluginName@{GetPluginName}}
+\index{GetPluginName@{GetPluginName}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{GetPluginName}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ FArchiveXML::GetPluginName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFArchiveXML_abd9ac092eff78dbc8f8249fa402fe644}
+See \hyperlink{FUPlugin_8h_source}{FUPlugin.h} 
+
+Implements \hyperlink{classFUPlugin_a18b5c936391bcc0e44c9d0552ea5f99f}{FUPlugin}.
+
+\hypertarget{classFArchiveXML_a2fb1d4d2d6d862e023d8510ea404bd60}{
+\index{FArchiveXML@{FArchiveXML}!GetPluginVersion@{GetPluginVersion}}
+\index{GetPluginVersion@{GetPluginVersion}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{GetPluginVersion}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint32 FArchiveXML::GetPluginVersion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFArchiveXML_a2fb1d4d2d6d862e023d8510ea404bd60}
+Retrieves the version of the plug-\/in. For now, no version string formatting is suggested for this integer. It is unused and exists for future expansion only. \begin{DoxyReturn}{Returns}
+The version number of the plug-\/in. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFUPlugin_a65f40e837051a381b3922a0db8f871f7}{FUPlugin}.
+
+\hypertarget{classFArchiveXML_a3908cc84df654da0ded836afcfd7fab8}{
+\index{FArchiveXML@{FArchiveXML}!GetSupportedExtensionAt@{GetSupportedExtensionAt}}
+\index{GetSupportedExtensionAt@{GetSupportedExtensionAt}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{GetSupportedExtensionAt}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ FArchiveXML::GetSupportedExtensionAt (
+\begin{DoxyParamCaption}
+\item[{int}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a3908cc84df654da0ded836afcfd7fab8}
+Retrieve one supported extension. 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]the index at which the extension is to be retrieved. Ideally to be less then that returned by \hyperlink{classFArchiveXML_a0547ef1565f6543319b9aaad3eca8697}{GetSupportedExtensionsCount()}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string of the file extension at the given index. NULL is returned if the given index is invalid. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_a0ff34fd40e2df3f2521ff7f3c3ec9c3a}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a0547ef1565f6543319b9aaad3eca8697}{
+\index{FArchiveXML@{FArchiveXML}!GetSupportedExtensionsCount@{GetSupportedExtensionsCount}}
+\index{GetSupportedExtensionsCount@{GetSupportedExtensionsCount}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{GetSupportedExtensionsCount}]{\setlength{\rightskip}{0pt plus 5cm}virtual int FArchiveXML::GetSupportedExtensionsCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFArchiveXML_a0547ef1565f6543319b9aaad3eca8697}
+Determine the number of file extension this plug-\/in supports \begin{DoxyReturn}{Returns}
+number of supported file extensions. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_a20d84d32ee7f7fd24f1e5a2bfa18c641}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a31a7807261de79f1f8b9e539e7dff0ea}{
+\index{FArchiveXML@{FArchiveXML}!Import@{Import}}
+\index{Import@{Import}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{Import}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::Import (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ theDocument, }
+\item[{xmlNode $\ast$}]{ colladaNode}
+\end{DoxyParamCaption}
+)}}
+\label{classFArchiveXML_a31a7807261de79f1f8b9e539e7dff0ea}
+Imports the parsed xml data into the \hyperlink{classFCDocument}{FCDocument}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em theDocument}]the \hyperlink{classFCDocument}{FCDocument} to be filled with imported data. \item[{\em colladaNode}]the xmlNode containing the parsed data. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+'true' if the operation is successful. 
+\end{DoxyReturn}
+\hypertarget{classFArchiveXML_a10bc809b2a64d9df0cd83742bf0dc49a}{
+\index{FArchiveXML@{FArchiveXML}!ImportFile@{ImportFile}}
+\index{ImportFile@{ImportFile}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{ImportFile}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::ImportFile (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ filePath, }
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a10bc809b2a64d9df0cd83742bf0dc49a}
+Import a file into \hyperlink{namespaceFCollada}{FCollada}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em filePath}]full file path to the file to be imported. \item[{\em document}]an empty document to be filled with imported content. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the file is imported successfully. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_a039a693760cc352763c1f4ef4b6b1e1e}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a5a85deaaf25379ea56b30d5a602ae949}{
+\index{FArchiveXML@{FArchiveXML}!ImportFileFromMemory@{ImportFileFromMemory}}
+\index{ImportFileFromMemory@{ImportFileFromMemory}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{ImportFileFromMemory}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::ImportFileFromMemory (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ filePath, }
+\item[{{\bf FCDocument} $\ast$}]{ document, }
+\item[{const void $\ast$}]{ contents, }
+\item[{size\_\-t}]{ length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a5a85deaaf25379ea56b30d5a602ae949}
+Import a file from the given memory address. It is the plugin managers duty to ensure that the appropriate plugin is selected based on the content of this memory address. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]An empty document to load imported content into. \item[{\em contents}]The content to load into the document, in a format suitable to be read by this plugin. \item[{\em length}]The length of the content buffer. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the file is imported successfully. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_a5cb561c22100b8a80f2c377cd777743d}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a323f1807851e536b1c46f7583303518e}{
+\index{FArchiveXML@{FArchiveXML}!ImportObject@{ImportObject}}
+\index{ImportObject@{ImportObject}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{ImportObject}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::ImportObject (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDObject} $\ast$}]{ object, }
+\item[{const {\bf fm::vector}$<$ uint8 $>$ \&}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a323f1807851e536b1c46f7583303518e}
+Load the save data onto an object. This allows for loads of partial documents 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]The object to recieve the loaded data \item[{\em data}]The data to load \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the load was successful 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_a269b13b7c24086b5220fc81b1a08e173}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a9058483d29253567c3bbaa9e557e38b1}{
+\index{FArchiveXML@{FArchiveXML}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void FArchiveXML::Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFArchiveXML_a9058483d29253567c3bbaa9e557e38b1}
+Initializes the plug-\/in. Add function pointers into the map. \hypertarget{classFArchiveXML_adb1efee2caed4402a02dd20af432e5ef}{
+\index{FArchiveXML@{FArchiveXML}!IsExportSupported@{IsExportSupported}}
+\index{IsExportSupported@{IsExportSupported}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{IsExportSupported}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FArchiveXML::IsExportSupported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFArchiveXML_adb1efee2caed4402a02dd20af432e5ef}
+Determine if this plug-\/in supports export from \hyperlink{namespaceFCollada}{FCollada}. \begin{DoxyReturn}{Returns}
+Whether this plug-\/in supports export. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_aa05c42f9060a8e15e49b49444475e4fd}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a17673f93728bb30dedd2791473c4b14e}{
+\index{FArchiveXML@{FArchiveXML}!IsExtensionSupported@{IsExtensionSupported}}
+\index{IsExtensionSupported@{IsExtensionSupported}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{IsExtensionSupported}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::IsExtensionSupported (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ ext}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a17673f93728bb30dedd2791473c4b14e}
+Determine if this plug-\/in supports the given file extension. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ext}]string for the file extension \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+'true' if the given file extension is supported by this plug-\/in. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_aaab914c16d1f875202a345655de3da56}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_afaeaeb4ee3cd75bac1ad6a4c54c9b899}{
+\index{FArchiveXML@{FArchiveXML}!IsImportSupported@{IsImportSupported}}
+\index{IsImportSupported@{IsImportSupported}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{IsImportSupported}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FArchiveXML::IsImportSupported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFArchiveXML_afaeaeb4ee3cd75bac1ad6a4c54c9b899}
+See \hyperlink{FColladaPlugin_8h}{FColladaPlugin.h} 
+
+Implements \hyperlink{classFCPArchive_aa0b2959b608384df6886b4aa7ee86986}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_ad35bb5dd5d901c86edf794dda76bfc4d}{
+\index{FArchiveXML@{FArchiveXML}!IsPartialExportSupported@{IsPartialExportSupported}}
+\index{IsPartialExportSupported@{IsPartialExportSupported}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{IsPartialExportSupported}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FArchiveXML::IsPartialExportSupported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFArchiveXML_ad35bb5dd5d901c86edf794dda76bfc4d}
+Determine if this plug-\/in supports exporting part of the \hyperlink{namespaceFCollada}{FCollada} assets. \begin{DoxyReturn}{Returns}
+Whether partial export is supported. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_ac8098f0eee6da0e452e005993a994a34}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a262d6014344ef77f716e08e4149d4c16}{
+\index{FArchiveXML@{FArchiveXML}!LoadObject@{LoadObject}}
+\index{LoadObject@{LoadObject}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{LoadObject}]{\setlength{\rightskip}{0pt plus 5cm}static bool FArchiveXML::LoadObject (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDObject} $\ast$}]{ object, }
+\item[{xmlNode $\ast$}]{ node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFArchiveXML_a262d6014344ef77f716e08e4149d4c16}
+Functions to load FCOLLADA objects \hypertarget{classFArchiveXML_a6cc3fc2e4e1415c3c411a38f978c77ae}{
+\index{FArchiveXML@{FArchiveXML}!LoadSwitch@{LoadSwitch}}
+\index{LoadSwitch@{LoadSwitch}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{LoadSwitch}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::LoadSwitch (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDObject} $\ast$}]{ object, }
+\item[{const {\bf FUObjectType} $\ast$}]{ objectType, }
+\item[{xmlNode $\ast$}]{ node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFArchiveXML_a6cc3fc2e4e1415c3c411a38f978c77ae}
+Takes care of calling the right function to load the \hyperlink{classFCDObject}{FCDObject} 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]The base \hyperlink{classFCDObject}{FCDObject} \item[{\em objectType}]The correponding loading function will be called. \item[{\em node}]the xmlNode \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+'true' if the content is loaded correctly and 'false' otherwise. 
+\end{DoxyReturn}
+\hypertarget{classFArchiveXML_ad1e57b1a3067f88738ee7a2f0e6fc9ca}{
+\index{FArchiveXML@{FArchiveXML}!RemoveExtraExtension@{RemoveExtraExtension}}
+\index{RemoveExtraExtension@{RemoveExtraExtension}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{RemoveExtraExtension}]{\setlength{\rightskip}{0pt plus 5cm}bool FArchiveXML::RemoveExtraExtension (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_ad1e57b1a3067f88738ee7a2f0e6fc9ca}
+Removes an extension that has previously been added to the extra extension list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ext}]The extension to remove. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the extension was supported and can be removed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCPArchive_a7127cef7e60e6828a3bc5c3016adf058}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_a485fad9bad65ed0e6512f9713223982f}{
+\index{FArchiveXML@{FArchiveXML}!StartExport@{StartExport}}
+\index{StartExport@{StartExport}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{StartExport}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FArchiveXML::StartExport (
+\begin{DoxyParamCaption}
+\item[{const fchar $\ast$}]{ absoluteFilePath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFArchiveXML_a485fad9bad65ed0e6512f9713223982f}
+Start exporting parts of the \hyperlink{namespaceFCollada}{FCollada} assets. Only valid if 'IsPartlyExportSupported()' returns 'true'. 
+\begin{DoxyParams}{Parameters}
+\item[{\em filePath}]A full file path specifying the location of the target path This is in order to process relative file paths correctly. If this parameter is NULL then all paths will be exported absolutely. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the operation succeeded. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFCPArchive_a7d142d1ca5e47da608eb3257ae3f36ab}{FCPArchive}.
+
+\hypertarget{classFArchiveXML_aa13b1e22f3b07d1323b3961d3e6b4ada}{
+\index{FArchiveXML@{FArchiveXML}!WriteObject@{WriteObject}}
+\index{WriteObject@{WriteObject}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{WriteObject}]{\setlength{\rightskip}{0pt plus 5cm}static xmlNode$\ast$ FArchiveXML::WriteObject (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDObject} $\ast$}]{ object, }
+\item[{xmlNode $\ast$}]{ parentNode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFArchiveXML_aa13b1e22f3b07d1323b3961d3e6b4ada}
+Functions to export FCOLLADA objects \hypertarget{classFArchiveXML_a2b455f62993fdcc77200439fb917748e}{
+\index{FArchiveXML@{FArchiveXML}!WriteParentSwitch@{WriteParentSwitch}}
+\index{WriteParentSwitch@{WriteParentSwitch}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{WriteParentSwitch}]{\setlength{\rightskip}{0pt plus 5cm}xmlNode $\ast$ FArchiveXML::WriteParentSwitch (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDObject} $\ast$}]{ object, }
+\item[{const {\bf FUObjectType} $\ast$}]{ objectType, }
+\item[{xmlNode $\ast$}]{ parentNode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFArchiveXML_a2b455f62993fdcc77200439fb917748e}
+Takes care of calling the right function to export the parent class information 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]the base \hyperlink{classFCDObject}{FCDObject} whose parent information is to be exported. \item[{\em objectType}]The correponding exporting function will be called for the parent of 'objectType'. \item[{\em parentNode}]the parent xmlNode \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+'true' if the content is exported correctly and 'false' otherwise. 
+\end{DoxyReturn}
+\hypertarget{classFArchiveXML_aaf83155ae7183ba1b4b485fdd239c483}{
+\index{FArchiveXML@{FArchiveXML}!WriteSwitch@{WriteSwitch}}
+\index{WriteSwitch@{WriteSwitch}!FArchiveXML@{FArchiveXML}}
+\subsubsection[{WriteSwitch}]{\setlength{\rightskip}{0pt plus 5cm}xmlNode $\ast$ FArchiveXML::WriteSwitch (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDObject} $\ast$}]{ object, }
+\item[{const {\bf FUObjectType} $\ast$}]{ objectType, }
+\item[{xmlNode $\ast$}]{ parentNode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFArchiveXML_aaf83155ae7183ba1b4b485fdd239c483}
+Takes care of calling the right function to export the \hyperlink{classFCDObject}{FCDObject} 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]The base \hyperlink{classFCDObject}{FCDObject} \item[{\em objectType}]The correponding exporting function will be called. \item[{\em parentNode}]the parent xmlNode \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+'true' if the content is exported correctly and 'false' otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FColladaPlugins/FArchiveXML/FArchiveXML.h\item 
+FColladaPlugins/FArchiveXML/FArchiveXML.cpp\item 
+FColladaPlugins/FArchiveXML/FAXAnimationExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXAnimationImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXCameraExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXCameraImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXControllerExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXControllerImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXEmitterExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXEmitterImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXEntityExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXEntityImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXForceFieldExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXForceFieldImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXGeometryExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXGeometryImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXImportLinking.cpp\item 
+FColladaPlugins/FArchiveXML/FAXInstanceExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXInstanceImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXLightExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXLightImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXMaterialExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXMaterialImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXPhysicsExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXPhysicsImport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXSceneExport.cpp\item 
+FColladaPlugins/FArchiveXML/FAXSceneImport.cpp\end{DoxyCompactItemize}

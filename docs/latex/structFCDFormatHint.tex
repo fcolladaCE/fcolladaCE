@@ -1,0 +1,111 @@
+\hypertarget{structFCDFormatHint}{
+\section{FCDFormatHint Struct Reference}
+\label{structFCDFormatHint}\index{FCDFormatHint@{FCDFormatHint}}
+}
+
+
+{\ttfamily \#include $<$FCDEffectParameterSurface.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{structFCDFormatHint_a4c22503ef75be12aa19a582b88ce32c1}{channelValues} \{ \par
+{\bfseries CHANNEL\_\-UNKNOWN}, 
+{\bfseries CHANNEL\_\-RGB}, 
+{\bfseries CHANNEL\_\-RGBA}, 
+{\bfseries CHANNEL\_\-L}, 
+\par
+{\bfseries CHANNEL\_\-LA}, 
+{\bfseries CHANNEL\_\-D}, 
+{\bfseries CHANNEL\_\-XYZ}, 
+{\bfseries CHANNEL\_\-XYZW}
+ \}
+\item 
+enum \hyperlink{structFCDFormatHint_a28f1ee9691301b71d657b472689d77a9}{rangeValue} \{ \par
+{\bfseries RANGE\_\-UNKNOWN}, 
+{\bfseries RANGE\_\-SNORM}, 
+{\bfseries RANGE\_\-UNORM}, 
+{\bfseries RANGE\_\-SINT}, 
+\par
+{\bfseries RANGE\_\-UINT}, 
+{\bfseries RANGE\_\-FLOAT}, 
+{\bfseries RANGE\_\-LOW}
+ \}
+\item 
+enum \hyperlink{structFCDFormatHint_a720a2fffc66e38ba997c263e22ddc2c2}{precisionValue} \{ {\bfseries PRECISION\_\-UNKNOWN}, 
+{\bfseries PRECISION\_\-LOW}, 
+{\bfseries PRECISION\_\-MID}, 
+{\bfseries PRECISION\_\-HIGH}
+ \}
+\item 
+enum \hyperlink{structFCDFormatHint_a4777b8826090e9f6c9812711faf3ac66}{optionValue} \{ {\bfseries OPT\_\-SRGB\_\-GAMMA}, 
+{\bfseries OPT\_\-NORMALIZED3}, 
+{\bfseries OPT\_\-NORMALIZED4}, 
+{\bfseries OPT\_\-COMPRESSABLE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structFCDFormatHint_a4c22503ef75be12aa19a582b88ce32c1}{channelValues} \hyperlink{structFCDFormatHint_acfb2c3d8e09bcb65430d2d733ee2023c}{channels}
+\item 
+\hyperlink{structFCDFormatHint_a28f1ee9691301b71d657b472689d77a9}{rangeValue} \hyperlink{structFCDFormatHint_ab999301788a29244f9b81e9dd6fe4277}{range}
+\item 
+\hyperlink{structFCDFormatHint_a720a2fffc66e38ba997c263e22ddc2c2}{precisionValue} \hyperlink{structFCDFormatHint_ab9648a25aadd4c375d3b574f3c980d74}{precision}
+\item 
+\hyperlink{classfm_1_1vector}{fm::vector}$<$ \hyperlink{structFCDFormatHint_a4777b8826090e9f6c9812711faf3ac66}{optionValue} $>$ \hyperlink{structFCDFormatHint_aaa86d7af04b996fb90c551b2d401a0be}{options}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes a surface format by providing hints as to its properties. Used by the \hyperlink{classFCDEffectParameterSurface}{FCDEffectParameterSurface} class exclusively. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structFCDFormatHint_a4c22503ef75be12aa19a582b88ce32c1}{
+\index{FCDFormatHint@{FCDFormatHint}!channelValues@{channelValues}}
+\index{channelValues@{channelValues}!FCDFormatHint@{FCDFormatHint}}
+\subsubsection[{channelValues}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDFormatHint::channelValues}}}
+\label{structFCDFormatHint_a4c22503ef75be12aa19a582b88ce32c1}
+The color channels that the choosen format should have. \hypertarget{structFCDFormatHint_a4777b8826090e9f6c9812711faf3ac66}{
+\index{FCDFormatHint@{FCDFormatHint}!optionValue@{optionValue}}
+\index{optionValue@{optionValue}!FCDFormatHint@{FCDFormatHint}}
+\subsubsection[{optionValue}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDFormatHint::optionValue}}}
+\label{structFCDFormatHint_a4777b8826090e9f6c9812711faf3ac66}
+Additional options for the surface. \hypertarget{structFCDFormatHint_a720a2fffc66e38ba997c263e22ddc2c2}{
+\index{FCDFormatHint@{FCDFormatHint}!precisionValue@{precisionValue}}
+\index{precisionValue@{precisionValue}!FCDFormatHint@{FCDFormatHint}}
+\subsubsection[{precisionValue}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDFormatHint::precisionValue}}}
+\label{structFCDFormatHint_a720a2fffc66e38ba997c263e22ddc2c2}
+The precision of the color values for the choosen format. \hypertarget{structFCDFormatHint_a28f1ee9691301b71d657b472689d77a9}{
+\index{FCDFormatHint@{FCDFormatHint}!rangeValue@{rangeValue}}
+\index{rangeValue@{rangeValue}!FCDFormatHint@{FCDFormatHint}}
+\subsubsection[{rangeValue}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf FCDFormatHint::rangeValue}}}
+\label{structFCDFormatHint_a28f1ee9691301b71d657b472689d77a9}
+The range of the color values for the choosen format. 
+
+\subsection{Field Documentation}
+\hypertarget{structFCDFormatHint_acfb2c3d8e09bcb65430d2d733ee2023c}{
+\index{FCDFormatHint@{FCDFormatHint}!channels@{channels}}
+\index{channels@{channels}!FCDFormatHint@{FCDFormatHint}}
+\subsubsection[{channels}]{\setlength{\rightskip}{0pt plus 5cm}{\bf channelValues} {\bf FCDFormatHint::channels}}}
+\label{structFCDFormatHint_acfb2c3d8e09bcb65430d2d733ee2023c}
+The per-\/texel layout of the format \hypertarget{structFCDFormatHint_aaa86d7af04b996fb90c551b2d401a0be}{
+\index{FCDFormatHint@{FCDFormatHint}!options@{options}}
+\index{options@{options}!FCDFormatHint@{FCDFormatHint}}
+\subsubsection[{options}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fm::vector}$<${\bf optionValue}$>$ {\bf FCDFormatHint::options}}}
+\label{structFCDFormatHint_aaa86d7af04b996fb90c551b2d401a0be}
+Additional hints \hypertarget{structFCDFormatHint_ab9648a25aadd4c375d3b574f3c980d74}{
+\index{FCDFormatHint@{FCDFormatHint}!precision@{precision}}
+\index{precision@{precision}!FCDFormatHint@{FCDFormatHint}}
+\subsubsection[{precision}]{\setlength{\rightskip}{0pt plus 5cm}{\bf precisionValue} {\bf FCDFormatHint::precision}}}
+\label{structFCDFormatHint_ab9648a25aadd4c375d3b574f3c980d74}
+Precision (number of bits) of the texel channels \hypertarget{structFCDFormatHint_ab999301788a29244f9b81e9dd6fe4277}{
+\index{FCDFormatHint@{FCDFormatHint}!range@{range}}
+\index{range@{range}!FCDFormatHint@{FCDFormatHint}}
+\subsubsection[{range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rangeValue} {\bf FCDFormatHint::range}}}
+\label{structFCDFormatHint_ab999301788a29244f9b81e9dd6fe4277}
+The range format of the channels 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDEffectParameterSurface_8h}{FCDEffectParameterSurface.h}\end{DoxyCompactItemize}

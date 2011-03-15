@@ -1,0 +1,124 @@
+\hypertarget{classFCDPASTaperedCapsule}{
+\section{FCDPASTaperedCapsule Class Reference}
+\label{classFCDPASTaperedCapsule}\index{FCDPASTaperedCapsule@{FCDPASTaperedCapsule}}
+}
+
+
+{\ttfamily \#include $<$FCDPhysicsAnalyticalGeometry.h$>$}
+
+Inheritance diagram for FCDPASTaperedCapsule:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classFCDPASTaperedCapsule}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFCDPASTaperedCapsule_a5a5a7657f504e57f0f5ca6ed18e3ceb7}{FCDPASTaperedCapsule} (\hyperlink{classFCDocument}{FCDocument} $\ast$document)
+\item 
+virtual \hyperlink{classFCDPASTaperedCapsule_a20a5ff1a3168a6fecdbafd3edba1ab8c}{$\sim$FCDPASTaperedCapsule} ()
+\item 
+virtual \hyperlink{classFCDPhysicsAnalyticalGeometry_a511583406e5c6a1bb5bd84c0453a452c}{GeomType} \hyperlink{classFCDPASTaperedCapsule_aa971c4fe9208c0c5c1155b6ed8cd03a2}{GetGeomType} () const 
+\item 
+virtual float \hyperlink{classFCDPASTaperedCapsule_a4406ed34a211191bd43cc7aa4503f9db}{CalculateVolume} () const 
+\item 
+virtual \hyperlink{classFCDPhysicsAnalyticalGeometry}{FCDPhysicsAnalyticalGeometry} $\ast$ \hyperlink{classFCDPASTaperedCapsule_a102c149935a10a7af1f77f7a0a76649a}{Clone} (\hyperlink{classFCDPhysicsAnalyticalGeometry}{FCDPhysicsAnalyticalGeometry} $\ast$clone=NULL, bool cloneChildren=false) const 
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFMVector2}{FMVector2} \hyperlink{classFCDPASTaperedCapsule_a34e3bbbe3c80a574b69bb4e9e9a80016}{radius2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A COLLADA physics tapered capsule. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFCDPASTaperedCapsule_a5a5a7657f504e57f0f5ca6ed18e3ceb7}{
+\index{FCDPASTaperedCapsule@{FCDPASTaperedCapsule}!FCDPASTaperedCapsule@{FCDPASTaperedCapsule}}
+\index{FCDPASTaperedCapsule@{FCDPASTaperedCapsule}!FCDPASTaperedCapsule@{FCDPASTaperedCapsule}}
+\subsubsection[{FCDPASTaperedCapsule}]{\setlength{\rightskip}{0pt plus 5cm}FCDPASTaperedCapsule::FCDPASTaperedCapsule (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDocument} $\ast$}]{ document}
+\end{DoxyParamCaption}
+)}}
+\label{classFCDPASTaperedCapsule_a5a5a7657f504e57f0f5ca6ed18e3ceb7}
+Constructor: do not use directly. Create new analytical geometries by using \hyperlink{classFCDPhysicsShape_a0674443390f7c6426171fd4bc21187fb}{FCDPhysicsShape::CreateAnalyticalGeometry} function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em document}]The COLLADA document that contains this physics tapered capsule. \end{DoxyParams}
+\hypertarget{classFCDPASTaperedCapsule_a20a5ff1a3168a6fecdbafd3edba1ab8c}{
+\index{FCDPASTaperedCapsule@{FCDPASTaperedCapsule}!$\sim$FCDPASTaperedCapsule@{$\sim$FCDPASTaperedCapsule}}
+\index{$\sim$FCDPASTaperedCapsule@{$\sim$FCDPASTaperedCapsule}!FCDPASTaperedCapsule@{FCDPASTaperedCapsule}}
+\subsubsection[{$\sim$FCDPASTaperedCapsule}]{\setlength{\rightskip}{0pt plus 5cm}virtual FCDPASTaperedCapsule::$\sim$FCDPASTaperedCapsule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPASTaperedCapsule_a20a5ff1a3168a6fecdbafd3edba1ab8c}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFCDPASTaperedCapsule_a4406ed34a211191bd43cc7aa4503f9db}{
+\index{FCDPASTaperedCapsule@{FCDPASTaperedCapsule}!CalculateVolume@{CalculateVolume}}
+\index{CalculateVolume@{CalculateVolume}!FCDPASTaperedCapsule@{FCDPASTaperedCapsule}}
+\subsubsection[{CalculateVolume}]{\setlength{\rightskip}{0pt plus 5cm}float FCDPASTaperedCapsule::CalculateVolume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPASTaperedCapsule_a4406ed34a211191bd43cc7aa4503f9db}
+Calculates the volume of this analytical geometry. \begin{DoxyReturn}{Returns}
+The volume. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDPASCapsule_a7aa385c582b13979465e5cb6e3b8665e}{FCDPASCapsule}.
+
+\hypertarget{classFCDPASTaperedCapsule_a102c149935a10a7af1f77f7a0a76649a}{
+\index{FCDPASTaperedCapsule@{FCDPASTaperedCapsule}!Clone@{Clone}}
+\index{Clone@{Clone}!FCDPASTaperedCapsule@{FCDPASTaperedCapsule}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FCDPhysicsAnalyticalGeometry} $\ast$ FCDPASTaperedCapsule::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf FCDPhysicsAnalyticalGeometry} $\ast$}]{ clone = {\ttfamily NULL}, }
+\item[{bool}]{ cloneChildren = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFCDPASTaperedCapsule_a102c149935a10a7af1f77f7a0a76649a}
+Copies the physics tapered capsule into a clone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em clone}]The empty clone. If this pointer is NULL, a analytical geometry will be created and you will need to release the returned pointer manually. \item[{\em cloneChildren}]Whether to recursively clone this entity's children. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone. 
+\end{DoxyReturn}
+\hypertarget{classFCDPASTaperedCapsule_aa971c4fe9208c0c5c1155b6ed8cd03a2}{
+\index{FCDPASTaperedCapsule@{FCDPASTaperedCapsule}!GetGeomType@{GetGeomType}}
+\index{GetGeomType@{GetGeomType}!FCDPASTaperedCapsule@{FCDPASTaperedCapsule}}
+\subsubsection[{GetGeomType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf GeomType} FCDPASTaperedCapsule::GetGeomType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classFCDPASTaperedCapsule_aa971c4fe9208c0c5c1155b6ed8cd03a2}
+Retrieves the analytical geometry type for this class. \begin{DoxyReturn}{Returns}
+The analytical geometry type: TAPERED\_\-CAPSULE. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFCDPASCapsule_ad857a4a8159f4928d7260ed38fc46c22}{FCDPASCapsule}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classFCDPASTaperedCapsule_a34e3bbbe3c80a574b69bb4e9e9a80016}{
+\index{FCDPASTaperedCapsule@{FCDPASTaperedCapsule}!radius2@{radius2}}
+\index{radius2@{radius2}!FCDPASTaperedCapsule@{FCDPASTaperedCapsule}}
+\subsubsection[{radius2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector2} {\bf FCDPASTaperedCapsule::radius2}}}
+\label{classFCDPASTaperedCapsule_a34e3bbbe3c80a574b69bb4e9e9a80016}
+The second radius in the X direction and Z direction of the capsule. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FCDocument/\hyperlink{FCDPhysicsAnalyticalGeometry_8h}{FCDPhysicsAnalyticalGeometry.h}\item 
+FCollada/FCDocument/FCDPhysicsAnalyticalGeometry.cpp\end{DoxyCompactItemize}

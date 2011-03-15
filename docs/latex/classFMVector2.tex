@@ -1,0 +1,249 @@
+\hypertarget{classFMVector2}{
+\section{FMVector2 Class Reference}
+\label{classFMVector2}\index{FMVector2@{FMVector2}}
+}
+
+
+{\ttfamily \#include $<$FMVector2.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFMVector2_aa96a0629fd333f71e455fcc2069b3193}{FMVector2} ()
+\item 
+\hyperlink{classFMVector2_a29aeec6ea2cf4feb0375af535f8e7490}{FMVector2} (float \_\-u, float \_\-v)
+\item 
+float \hyperlink{classFMVector2_a9058c2c9c8d6f3904d1f830572269271}{LengthSquared} () const 
+\item 
+float \hyperlink{classFMVector2_ad59987a2ec38d77461b127c6774b2b2c}{Length} () const 
+\item 
+void \hyperlink{classFMVector2_a09f58542bf08b4e6e1f79881e7287057}{NormalizeIt} ()
+\item 
+\hyperlink{classFMVector2}{FMVector2} \hyperlink{classFMVector2_aecb7fbc50f98a61510a80b97c9b0ca64}{Normalize} () const 
+\item 
+\hyperlink{classFMVector2_ac7b603a55230c6f7d50a5706f5266c91}{operator float $\ast$} ()
+\item 
+\hyperlink{classFMVector2}{FMVector2} \& \hyperlink{classFMVector2_a10996ad35ebbe593238dd505232cbad9}{operator+=} (const \hyperlink{classFMVector2}{FMVector2} \&a)
+\item 
+\hyperlink{classFMVector2}{FMVector2} \& \hyperlink{classFMVector2_a694e6f2df85e23d500a0d7a6fa79d78f}{operator$\ast$=} (float a)
+\item 
+\hyperlink{classFMVector2}{FMVector2} \& \hyperlink{classFMVector2_aa4138ab608dde492d0f7fa5cb61b225c}{operator=} (const float $\ast$f)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFMVector2_a8022286014825126faa6122da6f3618a}{
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>float \hyperlink{classFMVector2_ae9271c21509c9a23fdeaacb30e3ec49f}{u}\\
+\>float \hyperlink{classFMVector2_add13f67c553344452ad5274297afeebf}{x}\\
+\}; }
+\label{classFMVector2_a8022286014825126faa6122da6f3618a}
+\\
+
+\end{tabbing}\item 
+\hypertarget{classFMVector2_ac40bad49e031da1ce98bcefdecd4cd23}{
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>float \hyperlink{classFMVector2_ad336a3412e6070c3419df8a82ccdfeac}{v}\\
+\>float \hyperlink{classFMVector2_a2220c4429844ade53dc10c5e8b1d87e0}{y}\\
+\}; }
+\label{classFMVector2_ac40bad49e031da1ce98bcefdecd4cd23}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classFMVector2}{FMVector2} \hyperlink{classFMVector2_aff17a6d216a00383aeeaf94655168bc8}{Zero}
+\item 
+static const \hyperlink{classFMVector2}{FMVector2} \hyperlink{classFMVector2_ac92a195612c79d7228214b8ad17d3c83}{Origin} = \hyperlink{classFMVector2_aff17a6d216a00383aeeaf94655168bc8}{FMVector2::Zero}
+\item 
+static const \hyperlink{classFMVector2}{FMVector2} \hyperlink{classFMVector2_af1e472e6de273133987bb212befb2615}{XAxis}
+\item 
+static const \hyperlink{classFMVector2}{FMVector2} \hyperlink{classFMVector2_ab5048e7e1432c3c0a96a84a91348830b}{YAxis}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 2 dimensional vector. Not used within \hyperlink{namespaceFCollada}{FCollada}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFMVector2_aa96a0629fd333f71e455fcc2069b3193}{
+\index{FMVector2@{FMVector2}!FMVector2@{FMVector2}}
+\index{FMVector2@{FMVector2}!FMVector2@{FMVector2}}
+\subsubsection[{FMVector2}]{\setlength{\rightskip}{0pt plus 5cm}FMVector2::FMVector2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_aa96a0629fd333f71e455fcc2069b3193}
+Creates an empty \hyperlink{classFMVector2}{FMVector2}. \hypertarget{classFMVector2_a29aeec6ea2cf4feb0375af535f8e7490}{
+\index{FMVector2@{FMVector2}!FMVector2@{FMVector2}}
+\index{FMVector2@{FMVector2}!FMVector2@{FMVector2}}
+\subsubsection[{FMVector2}]{\setlength{\rightskip}{0pt plus 5cm}FMVector2::FMVector2 (
+\begin{DoxyParamCaption}
+\item[{float}]{ \_\-u, }
+\item[{float}]{ \_\-v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_a29aeec6ea2cf4feb0375af535f8e7490}
+Creates the vector with the coordinates given. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-u}]The first coordinate. \item[{\em \_\-v}]The second coordinate. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFMVector2_ad59987a2ec38d77461b127c6774b2b2c}{
+\index{FMVector2@{FMVector2}!Length@{Length}}
+\index{Length@{Length}!FMVector2@{FMVector2}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float FMVector2::Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_ad59987a2ec38d77461b127c6774b2b2c}
+Retrieves the length of the vector. \begin{DoxyReturn}{Returns}
+The length of this vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector2_a9058c2c9c8d6f3904d1f830572269271}{
+\index{FMVector2@{FMVector2}!LengthSquared@{LengthSquared}}
+\index{LengthSquared@{LengthSquared}!FMVector2@{FMVector2}}
+\subsubsection[{LengthSquared}]{\setlength{\rightskip}{0pt plus 5cm}float FMVector2::LengthSquared (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_a9058c2c9c8d6f3904d1f830572269271}
+Retrieves the squared length of the vector. \begin{DoxyReturn}{Returns}
+The squared length of this vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector2_aecb7fbc50f98a61510a80b97c9b0ca64}{
+\index{FMVector2@{FMVector2}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!FMVector2@{FMVector2}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector2} FMVector2::Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_aecb7fbc50f98a61510a80b97c9b0ca64}
+Get a normalized vector with the same direction as this vector. \begin{DoxyReturn}{Returns}
+A vector with length 1 and same direction as this vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector2_a09f58542bf08b4e6e1f79881e7287057}{
+\index{FMVector2@{FMVector2}!NormalizeIt@{NormalizeIt}}
+\index{NormalizeIt@{NormalizeIt}!FMVector2@{FMVector2}}
+\subsubsection[{NormalizeIt}]{\setlength{\rightskip}{0pt plus 5cm}void FMVector2::NormalizeIt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_a09f58542bf08b4e6e1f79881e7287057}
+Normalizes this vector. \hypertarget{classFMVector2_ac7b603a55230c6f7d50a5706f5266c91}{
+\index{FMVector2@{FMVector2}!operator float $\ast$@{operator float $\ast$}}
+\index{operator float $\ast$@{operator float $\ast$}!FMVector2@{FMVector2}}
+\subsubsection[{operator float $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}FMVector2::operator float $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_ac7b603a55230c6f7d50a5706f5266c91}
+Get this vector as an array of {\ttfamily floats}. \begin{DoxyReturn}{Returns}
+The {\ttfamily float} array. 
+\end{DoxyReturn}
+\hypertarget{classFMVector2_a694e6f2df85e23d500a0d7a6fa79d78f}{
+\index{FMVector2@{FMVector2}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!FMVector2@{FMVector2}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector2}\& FMVector2::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{float}]{ a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_a694e6f2df85e23d500a0d7a6fa79d78f}
+Multiplies this vector by a scaler. Multiplies each of this vector's coordinates with the scaler and returns this vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The scalar to multiply with. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector2_a10996ad35ebbe593238dd505232cbad9}{
+\index{FMVector2@{FMVector2}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!FMVector2@{FMVector2}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector2}\& FMVector2::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf FMVector2} \&}]{ a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_a10996ad35ebbe593238dd505232cbad9}
+Adds two vector. Adds to this vector's coordinates the individual components of the given vector and returns this vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]The vector to add with this one. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+\hypertarget{classFMVector2_aa4138ab608dde492d0f7fa5cb61b225c}{
+\index{FMVector2@{FMVector2}!operator=@{operator=}}
+\index{operator=@{operator=}!FMVector2@{FMVector2}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FMVector2}\& FMVector2::operator= (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{ f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFMVector2_aa4138ab608dde492d0f7fa5cb61b225c}
+Assign this vector to the given float array. Assigns each coordinate of this vector to the elements in the {\ttfamily float} array. The first element to the first coordinate and the second to the second. It returns this vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em f}]The {\ttfamily float} array to assign with. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector. 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{classFMVector2_ac92a195612c79d7228214b8ad17d3c83}{
+\index{FMVector2@{FMVector2}!Origin@{Origin}}
+\index{Origin@{Origin}!FMVector2@{FMVector2}}
+\subsubsection[{Origin}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector2} {\bf FMVector2::Origin} = {\bf FMVector2::Zero}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector2_ac92a195612c79d7228214b8ad17d3c83}
+The zero vector. \hypertarget{classFMVector2_ae9271c21509c9a23fdeaacb30e3ec49f}{
+\index{FMVector2@{FMVector2}!u@{u}}
+\index{u@{u}!FMVector2@{FMVector2}}
+\subsubsection[{u}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FMVector2::u}}}
+\label{classFMVector2_ae9271c21509c9a23fdeaacb30e3ec49f}
+The first coordinate. \hypertarget{classFMVector2_ad336a3412e6070c3419df8a82ccdfeac}{
+\index{FMVector2@{FMVector2}!v@{v}}
+\index{v@{v}!FMVector2@{FMVector2}}
+\subsubsection[{v}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FMVector2::v}}}
+\label{classFMVector2_ad336a3412e6070c3419df8a82ccdfeac}
+The second coordinate. \hypertarget{classFMVector2_add13f67c553344452ad5274297afeebf}{
+\index{FMVector2@{FMVector2}!x@{x}}
+\index{x@{x}!FMVector2@{FMVector2}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FMVector2::x}}}
+\label{classFMVector2_add13f67c553344452ad5274297afeebf}
+The first coordinate. \hypertarget{classFMVector2_af1e472e6de273133987bb212befb2615}{
+\index{FMVector2@{FMVector2}!XAxis@{XAxis}}
+\index{XAxis@{XAxis}!FMVector2@{FMVector2}}
+\subsubsection[{XAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector2} {\bf FMVector2::XAxis}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector2_af1e472e6de273133987bb212befb2615}
+The 2D X axis. \hypertarget{classFMVector2_a2220c4429844ade53dc10c5e8b1d87e0}{
+\index{FMVector2@{FMVector2}!y@{y}}
+\index{y@{y}!FMVector2@{FMVector2}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf FMVector2::y}}}
+\label{classFMVector2_a2220c4429844ade53dc10c5e8b1d87e0}
+The second coordinate. \hypertarget{classFMVector2_ab5048e7e1432c3c0a96a84a91348830b}{
+\index{FMVector2@{FMVector2}!YAxis@{YAxis}}
+\index{YAxis@{YAxis}!FMVector2@{FMVector2}}
+\subsubsection[{YAxis}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector2} {\bf FMVector2::YAxis}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector2_ab5048e7e1432c3c0a96a84a91348830b}
+The 2D Y axis. \hypertarget{classFMVector2_aff17a6d216a00383aeeaf94655168bc8}{
+\index{FMVector2@{FMVector2}!Zero@{Zero}}
+\index{Zero@{Zero}!FMVector2@{FMVector2}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf FMVector2} {\bf FMVector2::Zero}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classFMVector2_aff17a6d216a00383aeeaf94655168bc8}
+The zero vector. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+FCollada/FMath/\hyperlink{FMVector2_8h}{FMVector2.h}\item 
+FCollada/FMath/FMVector3.cpp\end{DoxyCompactItemize}
