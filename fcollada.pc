@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: FCollada
+Description: FCollada, Community Edition
+Version: 0.0.0
+Libs: -L${libdir} -lfcollada
+Requires: libxml-2.0 >= 2.6.29
+Cflags: -I${includedir}/FCollada -I${includedir}/FColladaPlugins

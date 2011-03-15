@@ -1,0 +1,360 @@
+FColladaPlugins/FArchiveXML/libfcollada_la-StdAfx.lo: \
+ FColladaPlugins/FArchiveXML/StdAfx.cpp \
+ FColladaPlugins/FArchiveXML/StdAfx.h FCollada/FCollada.h \
+ FCollada/FUtils/FUtils.h FCollada/FUtils/Platforms.h /usr/include/math.h \
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/xlocale.h /usr/include/wctype.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/bits/unistd.h /usr/include/string.h \
+ /usr/include/bits/string3.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/bits/wchar2.h \
+ /usr/include/malloc.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/time.h /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib.h /usr/include/stdint.h \
+ /usr/include/c++/4.4/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/4.4.5/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.4.5/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ FCollada/FUtils/FUAssert.h FCollada/FUtils/FUFunctor.h \
+ FCollada/FMath/FMath.h FCollada/FMath/FMFloat.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/float.h \
+ FCollada/FMath/FMArray.h FCollada/FMath/FMAllocator.h \
+ /usr/include/c++/4.4/new /usr/include/c++/4.4/cstddef \
+ /usr/include/c++/4.4/x86_64-linux-gnu/bits/c++config.h \
+ /usr/include/c++/4.4/x86_64-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/4.4/x86_64-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/4.4/exception FCollada/FMath/FMSort.h \
+ FCollada/FMath/FMArrayPointer.h FCollada/FMath/FMTree.h \
+ FCollada/FMath/FMInteger.h FCollada/FMath/FMVector2.h \
+ FCollada/FMath/FMVector3.h FCollada/FMath/FMVector4.h \
+ FCollada/FMath/FMColor.h FCollada/FMath/FMMatrix33.h \
+ FCollada/FMath/FMMatrix44.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ FCollada/FUtils/FUObjectType.h FCollada/FUtils/FUObject.h \
+ FCollada/FUtils/FUTracker.h FCollada/FUtils/FUString.h \
+ FCollada/FUtils/FUStringBuilder.h FCollada/FUtils/FUString.h \
+ FCollada/FUtils/FUStringConversion.h FCollada/FUtils/FUCrc32.h \
+ FCollada/FUtils/FUDebug.h FCollada/FUtils/FUError.h \
+ FCollada/FUtils/FUEvent.h FCollada/FUtils/FUCriticalSection.h \
+ FColladaPlugins/FArchiveXML/FAXColladaParser.h \
+ FCollada/FUtils/FUDaeSyntax.h FCollada/FUtils/FUUri.h \
+ FCollada/FUtils/FUXmlParser.h \
+ FColladaPlugins/FArchiveXML/FAXColladaWriter.h \
+ FCollada/FUtils/FUDaeEnum.h FCollada/FUtils/FUXmlWriter.h \
+ FCollada/FUtils/FUXmlDocument.h FCollada/FUtils/FUFileManager.h \
+ FCollada/FUtils/FUUniqueStringMap.h \
+ FColladaPlugins/FArchiveXML/FAXStructures.h
+
+FColladaPlugins/FArchiveXML/StdAfx.h:
+
+FCollada/FCollada.h:
+
+FCollada/FUtils/FUtils.h:
+
+FCollada/FUtils/Platforms.h:
+
+/usr/include/math.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/wctype.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/bits/unistd.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string3.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/wchar2.h:
+
+/usr/include/malloc.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/bits/stdio2.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/4.4/climits:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include-fixed/limits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+FCollada/FUtils/FUAssert.h:
+
+FCollada/FUtils/FUFunctor.h:
+
+FCollada/FMath/FMath.h:
+
+FCollada/FMath/FMFloat.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/float.h:
+
+FCollada/FMath/FMArray.h:
+
+FCollada/FMath/FMAllocator.h:
+
+/usr/include/c++/4.4/new:
+
+/usr/include/c++/4.4/cstddef:
+
+/usr/include/c++/4.4/x86_64-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/4.4/x86_64-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/4.4/x86_64-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/4.4/exception:
+
+FCollada/FMath/FMSort.h:
+
+FCollada/FMath/FMArrayPointer.h:
+
+FCollada/FMath/FMTree.h:
+
+FCollada/FMath/FMInteger.h:
+
+FCollada/FMath/FMVector2.h:
+
+FCollada/FMath/FMVector3.h:
+
+FCollada/FMath/FMVector4.h:
+
+FCollada/FMath/FMColor.h:
+
+FCollada/FMath/FMMatrix33.h:
+
+FCollada/FMath/FMMatrix44.h:
+
+/usr/include/libxml2/libxml/tree.h:
+
+/usr/include/libxml2/libxml/xmlversion.h:
+
+/usr/include/libxml2/libxml/xmlexports.h:
+
+/usr/include/libxml2/libxml/xmlstring.h:
+
+/usr/include/libxml2/libxml/xmlregexp.h:
+
+/usr/include/libxml2/libxml/dict.h:
+
+/usr/include/libxml2/libxml/xmlmemory.h:
+
+/usr/include/libxml2/libxml/threads.h:
+
+/usr/include/libxml2/libxml/globals.h:
+
+/usr/include/libxml2/libxml/parser.h:
+
+/usr/include/libxml2/libxml/hash.h:
+
+/usr/include/libxml2/libxml/valid.h:
+
+/usr/include/libxml2/libxml/xmlerror.h:
+
+/usr/include/libxml2/libxml/list.h:
+
+/usr/include/libxml2/libxml/xmlautomata.h:
+
+/usr/include/libxml2/libxml/entities.h:
+
+/usr/include/libxml2/libxml/encoding.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libxml2/libxml/xmlIO.h:
+
+/usr/include/libxml2/libxml/SAX.h:
+
+/usr/include/libxml2/libxml/xlink.h:
+
+/usr/include/libxml2/libxml/SAX2.h:
+
+FCollada/FUtils/FUObjectType.h:
+
+FCollada/FUtils/FUObject.h:
+
+FCollada/FUtils/FUTracker.h:
+
+FCollada/FUtils/FUString.h:
+
+FCollada/FUtils/FUStringBuilder.h:
+
+FCollada/FUtils/FUString.h:
+
+FCollada/FUtils/FUStringConversion.h:
+
+FCollada/FUtils/FUCrc32.h:
+
+FCollada/FUtils/FUDebug.h:
+
+FCollada/FUtils/FUError.h:
+
+FCollada/FUtils/FUEvent.h:
+
+FCollada/FUtils/FUCriticalSection.h:
+
+FColladaPlugins/FArchiveXML/FAXColladaParser.h:
+
+FCollada/FUtils/FUDaeSyntax.h:
+
+FCollada/FUtils/FUUri.h:
+
+FCollada/FUtils/FUXmlParser.h:
+
+FColladaPlugins/FArchiveXML/FAXColladaWriter.h:
+
+FCollada/FUtils/FUDaeEnum.h:
+
+FCollada/FUtils/FUXmlWriter.h:
+
+FCollada/FUtils/FUXmlDocument.h:
+
+FCollada/FUtils/FUFileManager.h:
+
+FCollada/FUtils/FUUniqueStringMap.h:
+
+FColladaPlugins/FArchiveXML/FAXStructures.h:
