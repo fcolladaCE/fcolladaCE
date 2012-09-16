@@ -544,8 +544,8 @@ bool FArchiveXML::EndExport(fm::vector<uint8>& outData)
 	xmlOutputBufferPtr buf = xmlAllocOutputBuffer(NULL);
 	xmlNodeDumpOutput(buf, rootNode->doc, rootNode, 0, 0, NULL);
 
-	outData.resize(buf->buffer->use * sizeof(xmlChar));
-	memcpy(outData.begin(), buf->buffer->content, outData.size());
+	outData.resize(xmlBufUse(buf->buffer) * sizeof(xmlChar));
+	memcpy(outData.begin(), xmlBufContent(buf->buffer), outData.size());
 
 	xmlOutputBufferClose(buf);
 	daeDocument.ReleaseXmlData();
