@@ -4,7 +4,7 @@ pkgconfig_DATA = fcollada.pc
 lib_LTLIBRARIES = libfcollada.la
 
 libfcollada_la_CPPFLAGS = $(DEPS_CFLAGS) -DFCOLLADA_DLL -DFCOLLADA_INTERNAL \
- -DNDEBUG -DRETAIL -IFCollada
+ -DNDEBUG -DRETAIL -I$(srcdir)/FCollada
 libfcollada_la_LIBADD = $(DEPS_LIBS)
 
 #for headers: find . -name "*.h" -or -name "*.hpp" | awk '{ ORS=" \\\n"; print; }' manually delete tools and test

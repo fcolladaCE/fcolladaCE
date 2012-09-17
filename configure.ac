@@ -2,9 +2,10 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.67])
-AC_INIT([fparser], [0.0.0], [])
+AC_INIT([fcolladaCE], [1.0], [])
 AC_CONFIG_SRCDIR([FColladaPlugins/FArchiveXML/FAXGeometryExport.cpp])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign subdir-objects])
+AM_PROG_AR
 AC_PROG_LIBTOOL
 
 # Checks for programs.
