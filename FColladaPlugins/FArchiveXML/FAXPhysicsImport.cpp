@@ -24,6 +24,8 @@
 #include "FCDocument/FCDPhysicsScene.h"
 #include "FCDocument/FCDPhysicsShape.h"
 
+#include <cmath>
+
 bool FArchiveXML::LoadPhysicsRigidBodyParameters(FCDPhysicsRigidBodyParameters* parameters, xmlNode* techniqueNode, FCDPhysicsRigidBodyParameters* defaultParameters)
 {
 	bool status = true;
@@ -217,7 +219,7 @@ bool FArchiveXML::LoadPhysicsRigidBodyParameters(FCDPhysicsRigidBodyParameters* 
 		}
 
 		float radiusCubed = 0.75f * volume / (float)FMath::Pi;
-		float I = 0.4f * parameters->GetMass() * pow(radiusCubed, 2.0f / 3.0f);
+		float I = 0.4f * parameters->GetMass() * std::pow(radiusCubed, 2.0f / 3.0f);
 		parameters->SetInertia(FMVector3(I, I, I));
 		parameters->SetInertiaAccurate(false);
 	}

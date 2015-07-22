@@ -39,7 +39,7 @@ bool FUTestBed::RunTestbed(FUTestSuite* headTestSuite)
 
 #ifdef _WIN32
 		char sz[1024];
-		snprintf(sz, 1024, "Testbed score: [%u/%u]", testPassed, testFailed + testPassed);
+		snprintf(sz, 1024, "Testbed score: [%zu/%zu]", testPassed, testFailed + testPassed);
 		sz[1023] = 0;
 
 		size_t returnCode = IDOK;
