@@ -11,6 +11,8 @@
 #include "FMVector3.h"
 #include "FMVector4.h"
 
+#include <cmath>
+
 // Vector constants
 const FMVector2 FMVector2::Zero(0.0f, 0.0f);
 const FMVector2 FMVector2::Origin = FMVector2::Zero;
@@ -64,7 +66,7 @@ FMVector4 FMVector4::FromHSVColor(float hue, float saturation, float value)
 	if (!IsEquivalent(saturation, 0.0f)) 
 	{
 		hue *= 6.0f;						// sector 0 to 5
-		float sector = floor(hue);
+		float sector = std::floor(hue);
 		float f = hue - sector;				// factorial part of h
 		float p = value * (1.0f - saturation);
 		float q = value * (1.0f - saturation * f);

@@ -11,6 +11,8 @@
 #include "FMVector3.h"
 #include "FMQuaternion.h"
 
+#include <cmath>
+
 //
 // Helpers
 //
@@ -149,22 +151,22 @@ FMVector3 FMQuaternion::ToEuler(FMVector3* previousAngles) const
 	{ 
 		angles.y = (float) FMath::Pi / 2;
 
-		angles.x = 2 * atan2(x,w);
+		angles.x = 2 * std::atan2(x,w);
 		angles.z = 0;
 	}
 	else if (siny < -1.0f + FLT_TOLERANCE) // singularity at south pole
 	{
 		angles.y = (float) -FMath::Pi / 2;
 
-		angles.x = -2 * atan2(x,w);
+		angles.x = -2 * std::atan2(x,w);
 		angles.z = 0;
 	}
 	else
 	{
 		// [GLaforte] Derived on 18-07-2007.
-		angles.y = asinf(siny);
-		angles.x = atan2f((x*w-y*z), 1.0f - 2.0f * (x*x+y*y));
-		angles.z = atan2f(2.0f * (z*w-x*y), 1.0f - 2.0f * (y*y+z*z));
+		angles.y = std::asinf(siny);
+		angles.x = std::atan2f((x*w-y*z), 1.0f - 2.0f * (x*x+y*y));
+		angles.z = std::atan2f(2.0f * (z*w-x*y), 1.0f - 2.0f * (y*y+z*z));
 	}
 
 	// Patch to the closest Euler angles.
