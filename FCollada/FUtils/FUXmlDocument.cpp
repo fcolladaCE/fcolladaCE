@@ -51,11 +51,11 @@ FUXmlDocument::FUXmlDocument(FUFileManager* manager, const fchar* _filename, boo
       		char chars[1024];
       		xmlParserCtxtPtr ctxt;
 
-      		res = fread(chars, 1, 4, f);
+      		res = static_cast<int>(fread(chars, 1, 4, f));
 	      	if (res > 0) 
 			{
     		    ctxt = xmlCreatePushParserCtxt(NULL, NULL, chars, res, _filename);
-    		    while ((res = fread(chars, 1, size, f)) > 0) 
+    		    while ((res = static_cast<int>(fread(chars, 1, size, f))) > 0)
 				{
     		      xmlParseChunk(ctxt, chars, res, 0);
     		    }
