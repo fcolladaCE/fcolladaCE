@@ -13,6 +13,10 @@ endif(BUILD_SHARED_LIBS)
 # Let the sources know, that we're building FCollada now
 ADD_DEFINITIONS(-DFCOLLADA_INTERNAL)
 
+if(MSVC)
+	add_definitions(-DUNICODE -D_UNICODE)
+endif(MSVC)
+
 # Backwards compatibility with the old non-standard parameters
 if(DEFINED LIBXML2_INC)
 	set(LIBXML2_INCLUDE_DIR ${LIBXML2_INC})
