@@ -46,7 +46,8 @@ bool FUTestBed::RunTestbed(FUTestSuite* headTestSuite)
 		returnCode = MessageBox(NULL, TO_FSTRING(sz).c_str(), FC("Testbed"), MB_OKCANCEL);
 		if (returnCode == IDCANCEL)
 		{
-			snprintf(sz, 1024, "write %s ", filename.c_str());
+			const fm::string filenameUtf8 = FUStringConversion::ToString(filename);
+			snprintf(sz, 1024, "write %s ", filenameUtf8.c_str());
 			sz[1023] = 0;
 			system(sz);
 			return false;
