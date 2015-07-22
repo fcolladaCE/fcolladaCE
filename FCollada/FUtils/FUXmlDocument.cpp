@@ -42,9 +42,16 @@ FUXmlDocument::FUXmlDocument(FUFileManager* manager, const fchar* _filename, boo
 		}
 		SAFE_DELETE(file);
 #else
+		const fm::string filenameUtf8 = FUStringConversion::ToString(_filename);
 		//push 1kb of data at a time
 		FILE *f;
-    	f = fopen(_filename, "r");
+#if defined(_MSC_VER) && defined(UNICODE)
+		// On Windows fopen does not support UTF-8 and will always instead use the current local codepage.
+		// We use _wfopen instead to circumvent that limitation, since this one does use UCS-2 aka UTF-16 and thus supports all legal filenames on all systems
+		f = _wfopen(_filename, L"r");
+#else
+		f = fopen(filenameUtf8, "r");
+#endif
     	if (f != NULL) 
 		{
       		int res, size = 1024;
@@ -54,7 +61,7 @@ FUXmlDocument::FUXmlDocument(FUFileManager* manager, const fchar* _filename, boo
       		res = fread(chars, 1, 4, f);
 	      	if (res > 0) 
 			{
-    		    ctxt = xmlCreatePushParserCtxt(NULL, NULL, chars, res, _filename);
+    		    ctxt = xmlCreatePushParserCtxt(NULL, NULL, chars, res, filenameUtf8);
     		    while ((res = fread(chars, 1, size, f)) > 0) 
 				{
     		      xmlParseChunk(ctxt, chars, res, 0);
