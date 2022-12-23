@@ -1,7 +1,7 @@
-project(FCOLLADA)
+cmake_minimum_required(VERSION 3.15)
+cmake_policy(SET CMP0091 NEW)
 
-cmake_minimum_required(VERSION 2.4)
-cmake_policy(VERSION 2.4)
+project(FCOLLADA)
 
 find_package(LibXml2 REQUIRED)
 
