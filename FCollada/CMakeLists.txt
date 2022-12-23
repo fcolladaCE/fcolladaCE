@@ -1,5 +1,6 @@
-include_directories(${FCOLLADA_SOURCE_DIR}/FCollada
-                    ${FCOLLADA_BINARY_DIR})
+find_package(LibXml2 REQUIRED)
+
+include_directories(${FCOLLADA_SOURCE_DIR}/FCollada)
 
 set(FCOLLADA_SOURCES
 	FMath/FMInterpolation.cpp
@@ -153,4 +154,6 @@ set(FCOLLADA_SOURCES
 	FCollada.cpp
 )
 
-add_library(fcollada SHARED ${FCOLLADA_SOURCES})
+add_library(fcollada ${FCOLLADA_SOURCES})
+
+target_link_libraries(fcollada farchivexml LibXml2::LibXml2)

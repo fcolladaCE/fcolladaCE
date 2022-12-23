@@ -1,5 +1,6 @@
-include_directories(${FCOLLADA_SOURCE_DIR}/FCollada
-                    ${FCOLLADA_BINARY_DIR})
+find_package(LibXml2 REQUIRED)
+
+include_directories(${FCOLLADA_SOURCE_DIR}/FCollada ${LibXml2_INCLUDE_DIR})
 
 set(FARCHIVEXML_SOURCES
 	FAXGeometryExport.cpp
@@ -33,4 +34,6 @@ set(FARCHIVEXML_SOURCES
 	FAXEmitterImport.cpp
 )
 
-add_library(farchivexml SHARED ${FARCHIVEXML_SOURCES})
+add_library(farchivexml STATIC ${FARCHIVEXML_SOURCES})
+
+target_link_libraries(fcollada LibXml2::LibXml2)
