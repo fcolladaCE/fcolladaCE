@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.15)
-cmake_policy(SET CMP0091 NEW)
 
 project(FCOLLADA)
 
@@ -12,3 +11,7 @@ add_definitions(-DFCOLLADA_INTERNAL)
 add_subdirectory(FCollada)
 add_subdirectory(FColladaPlugins)
 
+install(DIRECTORY "${FCOLLADA_SOURCE_DIR}/FCollada"
+	TYPE INCLUDE
+	FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp")
+install(TARGETS fcollada LIBRARY RUNTIME)
