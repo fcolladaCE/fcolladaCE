@@ -11,7 +11,9 @@ add_definitions(-DFCOLLADA_INTERNAL)
 add_subdirectory(FCollada)
 add_subdirectory(FColladaPlugins)
 
-install(DIRECTORY "${FCOLLADA_SOURCE_DIR}/FCollada"
+install(DIRECTORY "${FCOLLADA_SOURCE_DIR}/FCollada/"
 	TYPE INCLUDE
-	FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp")
+	FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
+	EXCLUDE PATTERN "StdAfx.h"
+)
 install(TARGETS fcollada LIBRARY RUNTIME)
