@@ -156,8 +156,10 @@ set(FCOLLADA_SOURCES
 
 add_library(fcollada ${FCOLLADA_SOURCES})
 
+set_target_properties(fcollada PROPERTIES DEBUG_POSTFIX "d")
+
 if(BUILD_SHARED_LIBS)
 	target_compile_definitions(fcollada PUBLIC FCOLLADA_DLL)
 endif(BUILD_SHARED_LIBS)
 
-target_link_libraries(fcollada farchivexml LibXml2::LibXml2)
+target_link_libraries(fcollada PRIVATE farchivexml LibXml2::LibXml2)

@@ -36,4 +36,6 @@ set(FARCHIVEXML_SOURCES
 
 add_library(farchivexml STATIC ${FARCHIVEXML_SOURCES})
 
-target_link_libraries(fcollada LibXml2::LibXml2)
+set_target_properties(farchivexml PROPERTIES DEBUG_POSTFIX "d")
+
+target_link_libraries(fcollada PRIVATE LibXml2::LibXml2)
