@@ -9,7 +9,9 @@ add_subdirectory(FColladaPlugins)
 
 install(DIRECTORY "${FCOLLADA_SOURCE_DIR}/FCollada/"
 	TYPE INCLUDE
-	FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
-	EXCLUDE PATTERN "StdAfx.h"
+	FILES_MATCHING
+	PATTERN "*.h"
+	PATTERN "*.hpp"
+	PATTERN "StdAfx.h" EXCLUDE
 )
 install(TARGETS fcollada ARCHIVE LIBRARY RUNTIME)
