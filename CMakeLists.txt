@@ -2,6 +2,12 @@ cmake_minimum_required(VERSION 3.15)
 
 project(FCOLLADA)
 
+option(FCOLLADA_UNICODE "Build with unicode support" OFF)
+
+if(FCOLLADA_UNICODE)
+	add_definitions(-DUNICODE)
+endif()
+
 add_definitions(-DFCOLLADA_INTERNAL)
 
 add_subdirectory(FCollada)
