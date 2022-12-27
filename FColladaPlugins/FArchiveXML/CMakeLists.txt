@@ -38,4 +38,12 @@ add_library(farchivexml STATIC ${FARCHIVEXML_SOURCES})
 
 set_target_properties(farchivexml PROPERTIES DEBUG_POSTFIX "d")
 
+if(FCOLLADA_UNICODE)
+	target_compile_definitions(farchivexml PUBLIC UNICODE _UNICODE)
+endif()
+
+if(FCOLLADA_RETAIL)
+	target_compile_definitions(farchivexml PRIVATE RETAIL)
+endif()
+
 target_link_libraries(fcollada PRIVATE LibXml2::LibXml2)

@@ -158,6 +158,14 @@ add_library(fcollada ${FCOLLADA_SOURCES})
 
 set_target_properties(fcollada PROPERTIES DEBUG_POSTFIX "d")
 
+if(FCOLLADA_UNICODE)
+	target_compile_definitions(fcollada PUBLIC UNICODE _UNICODE)
+endif()
+
+if(FCOLLADA_RETAIL)
+	target_compile_definitions(fcollada PRIVATE RETAIL)
+endif()
+
 if(BUILD_SHARED_LIBS)
 	target_compile_definitions(fcollada PUBLIC FCOLLADA_DLL)
 endif(BUILD_SHARED_LIBS)
