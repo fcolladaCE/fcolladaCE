@@ -1,0 +1,49 @@
+find_package(LibXml2 REQUIRED)
+
+include_directories(${FCOLLADA_SOURCE_DIR}/FCollada ${LibXml2_INCLUDE_DIR})
+
+set(FARCHIVEXML_SOURCES
+	FAXGeometryExport.cpp
+	FAXPhysicsImport.cpp
+	FAXAnimationImport.cpp
+	FAXCameraImport.cpp
+	FAXSceneImport.cpp
+	FAXColladaParser.cpp
+	FAXCameraExport.cpp
+	FAXEntityExport.cpp
+	FAXEmitterExport.cpp
+	FAXControllerImport.cpp
+	FAXControllerExport.cpp
+	FAXSceneExport.cpp
+	FAXImportLinking.cpp
+	StdAfx.cpp
+	FAXInstanceImport.cpp
+	FAXPhysicsExport.cpp
+	FAXAnimationExport.cpp
+	FAXForceFieldImport.cpp
+	FAXGeometryImport.cpp
+	FAXColladaWriter.cpp
+	FAXMaterialExport.cpp
+	FAXMaterialImport.cpp
+	FArchiveXML.cpp
+	FAXLightImport.cpp
+	FAXLightExport.cpp
+	FAXEntityImport.cpp
+	FAXForceFieldExport.cpp
+	FAXInstanceExport.cpp
+	FAXEmitterImport.cpp
+)
+
+add_library(farchivexml STATIC ${FARCHIVEXML_SOURCES})
+
+set_target_properties(farchivexml PROPERTIES DEBUG_POSTFIX "d")
+
+if(FCOLLADA_UNICODE)
+	target_compile_definitions(farchivexml PUBLIC UNICODE _UNICODE)
+endif()
+
+if(FCOLLADA_RETAIL)
+	target_compile_definitions(farchivexml PRIVATE RETAIL)
+endif()
+
+target_link_libraries(fcollada PRIVATE LibXml2::LibXml2)

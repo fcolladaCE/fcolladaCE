@@ -469,7 +469,7 @@ bool FArchiveXML::LoadAnimationClip(FCDObject* object, xmlNode* clipNode)
 		animationClip->SetAnimationName(name, animationClip->GetAnimationCount() - 1);
 
 		FUUri animationId = ReadNodeUrl(*itI);
-		FCDAnimation* animation = animationClip->GetDocument()->FindAnimation(animationId.GetFragment());
+		FCDAnimation* animation = animationClip->GetDocument()->FindAnimation(FUStringConversion::ToString(animationId.GetFragment()));
 		if (animation == NULL) continue;
 
 		// Retrieve all the curves created under this animation node
